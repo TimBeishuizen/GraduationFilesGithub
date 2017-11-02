@@ -1,0 +1,31 @@
+\select@language {english}
+\contentsline {section}{\numberline {1}Introduction}{2}{section.1}
+\contentsline {section}{\numberline {2}Statistical Analysis}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}Statistical Research Topics}{4}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}Descriptive Statistics}{4}{subsubsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.2}Probability Concepts}{4}{subsubsection.2.1.2}
+\contentsline {subsubsection}{\numberline {2.1.3}Interval testing}{7}{subsubsection.2.1.3}
+\contentsline {subsubsection}{\numberline {2.1.4}Group comparisons}{7}{subsubsection.2.1.4}
+\contentsline {subsection}{\numberline {2.2}Statistical Programs}{9}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}SAS}{9}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}SPSS}{9}{subsubsection.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.3}R}{9}{subsubsection.2.2.3}
+\contentsline {subsubsection}{\numberline {2.2.4}Python}{9}{subsubsection.2.2.4}
+\contentsline {subsubsection}{\numberline {2.2.5}MATLAB}{9}{subsubsection.2.2.5}
+\contentsline {subsubsection}{\numberline {2.2.6}Comparisons programs}{9}{subsubsection.2.2.6}
+\contentsline {subsubsection}{\numberline {2.2.7}Personal comparisons}{10}{subsubsection.2.2.7}
+\contentsline {section}{\numberline {3}Deep Learning}{12}{section.3}
+\contentsline {subsection}{\numberline {3.1}Basic Machine Learning}{13}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Tasks}{13}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}Performance Measurement}{13}{subsubsection.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.3}Experience}{13}{subsubsection.3.1.3}
+\contentsline {subsubsection}{\numberline {3.1.4}Challenges}{14}{subsubsection.3.1.4}
+\contentsline {subsection}{\numberline {3.2}Neural Networks}{15}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Convolutional Neural Networks}{16}{subsubsection.3.2.1}
+\contentsline {subsection}{\numberline {3.3}Deep Learning Frameworks}{17}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}Skikit-learn Python}{17}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}Theano}{17}{subsubsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.3}TensorFlow}{18}{subsubsection.3.3.3}
+\contentsline {subsubsection}{\numberline {3.3.4}Caffe}{18}{subsubsection.3.3.4}
+\contentsline {subsubsection}{\numberline {3.3.5}Torch}{18}{subsubsection.3.3.5}
+\contentsline {subsubsection}{\numberline {3.3.6}Comparing Frameworks}{18}{subsubsection.3.3.6}

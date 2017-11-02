@@ -1,0 +1,157 @@
+\begin{thebibliography}{10}
+
+\bibitem{woolson2011statistical}
+R.~F. Woolson and W.~R. Clarke, {\em Statistical methods for the analysis of
+  biomedical data}, vol.~371.
+\newblock John Wiley \& Sons, 2011.
+
+\bibitem{sapsford2006data}
+R.~Sapsford and V.~Jupp, {\em Data collection and analysis}.
+\newblock Sage, 2006.
+
+\bibitem{heiberger2004statistical}
+R.~M. Heiberger and B.~Holland, {\em Statistical analysis and data display}.
+\newblock Springer, 2004.
+
+\bibitem{FISHER200993}
+M.~J. Fisher and A.~P. Marshall, ``Understanding descriptive statistics,'' {\em
+  Australian Critical Care}, vol.~22, no.~2, pp.~93 -- 97, 2009.
+
+\bibitem{dupont2009statistical}
+W.~D. Dupont and W.~D. Dupont, {\em Statistical modeling for biomedical
+  researchers: a simple introduction to the analysis of complex data}.
+\newblock Cambridge University Press, 2009.
+
+\bibitem{shiavi2010introduction}
+R.~Shiavi, {\em Introduction to applied statistical signal analysis: Guide to
+  biomedical and electrical engineering applications}.
+\newblock Academic Press, 2010.
+
+\bibitem{o2013step}
+N.~O'Rourke and L.~Hatcher, {\em A step-by-step approach to using SAS for
+  factor analysis and structural equation modeling}.
+\newblock Sas Institute, 2013.
+
+\bibitem{muijs2010doing}
+D.~Muijs, {\em Doing quantitative research in education with SPSS}.
+\newblock Sage, 2010.
+
+\bibitem{muenchen2011r}
+R.~A. Muenchen, {\em R for SAS and SPSS users}.
+\newblock Springer Science \& Business Media, 2011.
+
+\bibitem{mckinney2010data}
+W.~McKinney {\em et~al.}, ``Data structures for statistical computing in
+  python,'' in {\em Proceedings of the 9th Python in Science Conference},
+  vol.~445, pp.~51--56, SciPy Austin, TX, 2010.
+
+\bibitem{martinez2007computational}
+W.~L. Martinez and A.~R. Martinez, {\em Computational statistics handbook with
+  MATLAB}, vol.~22.
+\newblock CRC press, 2007.
+
+\bibitem{BlogKromme2017}
+J.~Kromme, ``Python \& r vs. spss \& sas,'' March 2017.
+\newblock https://www.r-bloggers.com/python-r-vs-spss-sas/.
+
+\bibitem{BlogJain2017}
+K.~Jain, ``Python vs. r (vs. sas) – which tool should i learn?,'' September
+  2017.
+\newblock
+  https://www.analyticsvidhya.com/blog/2017/09/sas-vs-vs-python-tool-learn/.
+
+\bibitem{BlogWillems2014}
+K.~Willems, ``What is the best statistical programming language? infograph,''
+  June 2014.
+\newblock
+  https://www.datacamp.com/community/tutorials/statistical-language-wars-the-infograph.
+
+\bibitem{BlogSupport2017}
+Support, ``R vs sas vs spss – top 3 data analytics tools comparison,'' March
+  2017.
+\newblock
+  http://data-flair.training/blogs/r-sas-spss-data-analytics-tools-comparison/.
+
+\bibitem{Goodfellow-et-al-2016}
+I.~Goodfellow, Y.~Bengio, and A.~Courville, {\em Deep Learning}.
+\newblock MIT Press, 2016.
+\newblock \url{http://www.deeplearningbook.org}.
+
+\bibitem{greenspan2016guest}
+H.~Greenspan, B.~van Ginneken, and R.~M. Summers, ``Guest editorial deep
+  learning in medical imaging: Overview and future promise of an exciting new
+  technique,'' {\em IEEE Transactions on Medical Imaging}, vol.~35, no.~5,
+  pp.~1153--1159, 2016.
+
+\bibitem{rojas2013neural}
+R.~Rojas, {\em Neural networks: a systematic introduction}.
+\newblock Springer Science \& Business Media, 2013.
+
+\bibitem{Wang2003}
+S.-C. Wang, {\em Artificial Neural Network}, pp.~81--100.
+\newblock Boston, MA: Springer US, 2003.
+
+\bibitem{pedregosa2011scikit}
+F.~Pedregosa, G.~Varoquaux, A.~Gramfort, V.~Michel, B.~Thirion, O.~Grisel,
+  M.~Blondel, P.~Prettenhofer, R.~Weiss, V.~Dubourg, {\em et~al.},
+  ``Scikit-learn: Machine learning in python,'' {\em Journal of Machine
+  Learning Research}, vol.~12, no.~Oct, pp.~2825--2830, 2011.
+
+\bibitem{bergstra2010theano}
+J.~Bergstra, O.~Breuleux, F.~Bastien, P.~Lamblin, R.~Pascanu, G.~Desjardins,
+  J.~Turian, D.~Warde-Farley, and Y.~Bengio, ``Theano: A cpu and gpu math
+  compiler in python,'' in {\em Proc. 9th Python in Science Conf}, pp.~1--7,
+  2010.
+
+\bibitem{rampasek2016tensorflow}
+L.~Rampasek and A.~Goldenberg, ``Tensorflow: Biology’s gateway to deep
+  learning?,'' {\em Cell systems}, vol.~2, no.~1, pp.~12--14, 2016.
+
+\bibitem{al2016theano}
+R.~Al-Rfou, G.~Alain, A.~Almahairi, C.~Angermueller, D.~Bahdanau, N.~Ballas,
+  F.~Bastien, J.~Bayer, A.~Belikov, A.~Belopolsky, {\em et~al.}, ``Theano: A
+  python framework for fast computation of mathematical expressions,'' {\em
+  arXiv preprint}, 2016.
+
+\bibitem{abadi2016tensorflow}
+M.~Abadi, P.~Barham, J.~Chen, Z.~Chen, A.~Davis, J.~Dean, M.~Devin,
+  S.~Ghemawat, G.~Irving, M.~Isard, {\em et~al.}, ``Tensorflow: A system for
+  large-scale machine learning.,'' in {\em OSDI}, vol.~16, pp.~265--283, 2016.
+
+\bibitem{DBLP:journals/corr/JiaSDKLGGD14}
+Y.~Jia, E.~Shelhamer, J.~Donahue, S.~Karayev, J.~Long, R.~B. Girshick,
+  S.~Guadarrama, and T.~Darrell, ``Caffe: Convolutional architecture for fast
+  feature embedding,'' {\em CoRR}, vol.~abs/1408.5093, 2014.
+
+\bibitem{collobert2002torch}
+R.~Collobert, S.~Bengio, and J.~Mari{\'e}thoz, ``Torch: a modular machine
+  learning software library,'' tech. rep., Idiap, 2002.
+
+\bibitem{kovalev2016deep}
+V.~Kovalev, A.~Kalinovsky, and S.~Kovalev, ``Deep learning with theano, torch,
+  caffe, tensorflow, and deeplearning4j: Which one is the best in speed and
+  accuracy?,'' 2016.
+
+\bibitem{bahrampour2016comparative}
+S.~Bahrampour, N.~Ramakrishnan, L.~Schott, and M.~Shah, ``Comparative study of
+  caffe, neon, theano, and torch for deep learning,'' 2016.
+
+\bibitem{DBLP:journals/corr/ShiWXC16}
+S.~Shi, Q.~Wang, P.~Xu, and X.~Chu, ``Benchmarking state-of-the-art deep
+  learning software tools,'' {\em CoRR}, vol.~abs/1608.07249, 2016.
+
+\bibitem{fox2016software}
+J.~Fox, Y.~Zou, and J.~Qiu, ``Software frameworks for deep learning at scale,''
+  {\em Internal Indiana University Technical Report}, 2016.
+
+\bibitem{parvat2017survey}
+A.~Parvat, J.~Chavan, S.~Kadam, S.~Dev, and V.~Pathak, ``A survey of
+  deep-learning frameworks,'' in {\em Inventive Systems and Control (ICISC),
+  2017 International Conference on}, pp.~1--7, IEEE, 2017.
+
+\bibitem{erickson2017toolkits}
+B.~J. Erickson, P.~Korfiatis, Z.~Akkus, T.~Kline, and K.~Philbrick, ``Toolkits
+  and libraries for deep learning,'' {\em Journal of Digital Imaging},
+  pp.~1--6, 2017.
+
+\end{thebibliography}
