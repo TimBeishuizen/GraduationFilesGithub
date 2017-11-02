@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2017.11.1)  2 NOV 2017 14:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2017.11.1)  2 NOV 2017 17:28
 entering extended mode
-**./BiomedicalDataAnalysis.tex
-(BiomedicalDataAnalysis.tex
+**./BariatricCoMorbidityThesis.tex
+(BariatricCoMorbidityThesis.tex
 LaTeX2e <2017-04-15>
 Babel <3.12> and hyphenation patterns for 75 language(s) loaded.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
@@ -765,25 +765,31 @@ File: listings.cfg 2003/08/13 1.1a listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
-(BiomedicalDataAnalysis.aux)
-\openout1 = `BiomedicalDataAnalysis.aux'.
+("C:\Program Files\MiKTeX 2.9\tex\latex\makecell\makecell.sty"
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+\rotheadsize=\dimen140
+\c@nlinenum=\count136
+\TeXr@lab=\toks35
+)
+(BariatricCoMorbidityThesis.aux)
+\openout1 = `BariatricCoMorbidityThesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
 \AtBeginShipoutBox=\box34
-Package hyperref Info: Link coloring OFF on input line 35.
+Package hyperref Info: Link coloring OFF on input line 36.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -791,30 +797,30 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count136
+\c@section@level=\count137
 )
-LaTeX Info: Redefining \ref on input line 35.
-LaTeX Info: Redefining \pageref on input line 35.
-LaTeX Info: Redefining \nameref on input line 35.
+LaTeX Info: Redefining \ref on input line 36.
+LaTeX Info: Redefining \pageref on input line 36.
+LaTeX Info: Redefining \nameref on input line 36.
 
-(BiomedicalDataAnalysis.out) (BiomedicalDataAnalysis.out)
+(BariatricCoMorbidityThesis.out) (BariatricCoMorbidityThesis.out)
 \@outlinefile=\write3
-\openout3 = `BiomedicalDataAnalysis.out'.
+\openout3 = `BariatricCoMorbidityThesis.out'.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count137
-\scratchdimen=\dimen140
+\scratchcounter=\count138
+\scratchdimen=\dimen141
 \scratchbox=\box35
-\nofMPsegments=\count138
-\nofMParguments=\count139
-\everyMPshowfont=\toks35
-\MPscratchCnt=\count140
-\MPscratchDim=\dimen141
-\MPnumerator=\count141
-\makeMPintoPDFobject=\count142
-\everyMPtoPDFconversion=\toks36
+\nofMPsegments=\count139
+\nofMParguments=\count140
+\everyMPshowfont=\toks36
+\MPscratchCnt=\count141
+\MPscratchDim=\dimen142
+\MPnumerator=\count142
+\makeMPintoPDFobject=\count143
+\everyMPtoPDFconversion=\toks37
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -828,316 +834,86 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-\c@lstlisting=\count143
+\c@lstlisting=\count144
  [1
 
 {C:/Users/s119104/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-(BiomedicalDataAnalysis.toc
-LaTeX Font Info:    Try loading font information for U+msa on input line 4.
+(BariatricCoMorbidityThesis.toc
+LaTeX Font Info:    Try loading font information for U+msa on input line 3.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 4.
+LaTeX Font Info:    Try loading font information for U+msb on input line 3.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ))
 \tf@toc=\write4
-\openout4 = `BiomedicalDataAnalysis.toc'.
+\openout4 = `BariatricCoMorbidityThesis.toc'.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.83 	\clearpage
-                 [1] [2
+l.84 	\clearpage
+                 [1]
 
-] [3
-
-]
-<./ThesisFigures/HistogramExample.PNG, id=190, 256.70906pt x 157.33781pt>
-File: ./ThesisFigures/HistogramExample.PNG Graphic file (type png)
-<use ./ThesisFigures/HistogramExample.PNG>
-Package pdftex.def Info: ./ThesisFigures/HistogramExample.PNG  used on input li
-ne 161. on input line 161.
-Package pdftex.def Info: Requested size: 256.70842pt x 157.33742pt on input lin
-e 161.
+LaTeX Warning: Reference `subsec:DataSet' on page 2 undefined on input line 92.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./ThesisFigures/BoxplotExample.PNG, id=194, 252.19218pt x 86.57344pt>
-File: ./ThesisFigures/BoxplotExample.PNG Graphic file (type png)
-<use ./ThesisFigures/BoxplotExample.PNG>
-Package pdftex.def Info: ./ThesisFigures/BoxplotExample.PNG  used on input line
- 167. on input line 167.
-Package pdftex.def Info: Requested size: 252.19156pt x 86.57321pt on input line
- 167.
+LaTeX Warning: Reference `tab:DataMarkers' on page 2 undefined on input line 11
+6.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[4
+Overfull \hbox (40.22025pt too wide) in paragraph at lines 120--133
+[][] 
+ []
 
-pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has
- been already used, duplicate ignored
+[2
 
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.201 
-      ]
-<./ThesisFigures/BinomDistExample.PNG, id=216, 392.96812pt x 281.55188pt>
-File: ./ThesisFigures/BinomDistExample.PNG Graphic file (type png)
-<use ./ThesisFigures/BinomDistExample.PNG>
-Package pdftex.def Info: ./ThesisFigures/BinomDistExample.PNG  used on input li
-ne 203. on input line 203.
-Package pdftex.def Info: Requested size: 196.48357pt x 140.77559pt on input lin
-e 203.
- [5pdfTeX warning (ext4): destination with the same identifier (name{figure.1})
+] [3pdfTeX warning (ext4): destination with the same identifier (name{table.1})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.217 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-2}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.217 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-3}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.217 
-       <./ThesisFigures/HistogramExample.PNG> <./ThesisFigures/BoxplotExample.P
-NG> <./ThesisFigures/BinomDistExample.PNG>]
-<./ThesisFigures/NormDistExample.PNG, id=231, 378.66469pt x 356.0803pt>
-File: ./ThesisFigures/NormDistExample.PNG Graphic file (type png)
-<use ./ThesisFigures/NormDistExample.PNG>
-Package pdftex.def Info: ./ThesisFigures/NormDistExample.PNG  used on input lin
-e 219. on input line 219.
-Package pdftex.def Info: Requested size: 189.33188pt x 178.03972pt on input lin
-e 219.
-<./ThesisFigures/StudTDistExample.PNG, id=236, 394.47375pt x 374.14781pt>
-File: ./ThesisFigures/StudTDistExample.PNG Graphic file (type png)
-<use ./ThesisFigures/StudTDistExample.PNG>
-Package pdftex.def Info: ./ThesisFigures/StudTDistExample.PNG  used on input li
-ne 239. on input line 239.
-Package pdftex.def Info: Requested size: 197.23639pt x 187.07344pt on input lin
-e 239.
- [6pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
- has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.266 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-5}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.266 
-       <./ThesisFigures/NormDistExample.PNG> <./ThesisFigures/StudTDistExample.
-PNG>]
-Overfull \hbox (33.3838pt too wide) in paragraph at lines 299--331
- [][] 
- []
-
-[7pdfTeX warning (ext4): destination with the same identifier (name{table.2}) h
-as been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.397 
-      pdfTeX warning (ext4): destination with the same identifier (name{table.3
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.397 
-      ] [8]
-<./ThesisFigures/StatProgComp.PNG, id=291, 634.62094pt x 219.82124pt>
-File: ./ThesisFigures/StatProgComp.PNG Graphic file (type png)
-<use ./ThesisFigures/StatProgComp.PNG>
-Package pdftex.def Info: ./ThesisFigures/StatProgComp.PNG  used on input line 4
-69. on input line 469.
-Package pdftex.def Info: Requested size: 424.58624pt x 147.07484pt on input lin
-e 469.
+l.140 
+      ] (BariatricCoMorbidityThesis.bbl)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 150.
+ [4]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 150.
+ (BariatricCoMorbidityThesis.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 150.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 150.
+Package rerunfilecheck Info: File `BariatricCoMorbidityThesis.out' has not chan
+ged.
+(rerunfilecheck)             Checksum: 42559B3C77917D27D21392673F56AC64;263.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Warning: There were undefined references.
 
-<./ThesisFigures/StatProgGrades.PNG, id=296, 770.88pt x 295.1025pt>
-File: ./ThesisFigures/StatProgGrades.PNG Graphic file (type png)
-<use ./ThesisFigures/StatProgGrades.PNG>
-Package pdftex.def Info: ./ThesisFigures/StatProgGrades.PNG  used on input line
- 483. on input line 483.
-Package pdftex.def Info: Requested size: 424.58624pt x 162.53651pt on input lin
-e 483.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[9
-
-] [10pdfTeX warning (ext4): destination with the same identifier (name{figure.6
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.535 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-7}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.535 
-       <./ThesisFigures/StatProgComp.PNG> <./ThesisFigures/StatProgGrades.PNG>]
-[11] [12
-
-] [13
-
-] [14]
-<./ThesisFigures/NeuronExample.PNG, id=364, 334.24875pt x 109.1578pt>
-File: ./ThesisFigures/NeuronExample.PNG Graphic file (type png)
-<use ./ThesisFigures/NeuronExample.PNG>
-Package pdftex.def Info: ./ThesisFigures/NeuronExample.PNG  used on input line 
-710. on input line 710.
-Package pdftex.def Info: Requested size: 334.24792pt x 109.15753pt on input lin
-e 710.
-<./ThesisFigures/NeuralNetworkExample.PNG, id=367, 390.70969pt x 204.765pt>
-File: ./ThesisFigures/NeuralNetworkExample.PNG Graphic file (type png)
-<use ./ThesisFigures/NeuralNetworkExample.PNG>
-Package pdftex.def Info: ./ThesisFigures/NeuralNetworkExample.PNG  used on inpu
-t line 718. on input line 718.
-Package pdftex.def Info: Requested size: 390.70872pt x 204.76448pt on input lin
-e 718.
- [15
-
-pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) ha
-s been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.738 
-      pdfTeX warning (ext4): destination with the same identifier (name{figure.
-9}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.738 
-       <./ThesisFigures/NeuronExample.PNG> <./ThesisFigures/NeuralNetworkExampl
-e.PNG>] [16]
-<./ThesisFigures/TheanoPipeline.PNG, id=394, 135.50626pt x 193.47281pt>
-File: ./ThesisFigures/TheanoPipeline.PNG Graphic file (type png)
-<use ./ThesisFigures/TheanoPipeline.PNG>
-Package pdftex.def Info: ./ThesisFigures/TheanoPipeline.PNG  used on input line
- 789. on input line 789.
-Package pdftex.def Info: Requested size: 135.5059pt x 193.47234pt on input line
- 789.
- [17
-
-pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) h
-as been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.819 
-       <./ThesisFigures/TheanoPipeline.PNG>]
-<./ThesisFigures/CaffeMachineLearningComparisons.PNG, id=418, 477.28313pt x 103
-.88812pt>
-File: ./ThesisFigures/CaffeMachineLearningComparisons.PNG Graphic file (type pn
-g)
-<use ./ThesisFigures/CaffeMachineLearningComparisons.PNG>
-Package pdftex.def Info: ./ThesisFigures/CaffeMachineLearningComparisons.PNG  u
-sed on input line 890. on input line 890.
-Package pdftex.def Info: Requested size: 477.28195pt x 103.88786pt on input lin
-e 890.
-
-Overfull \hbox (52.69571pt too wide) in paragraph at lines 890--893
-[][]
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[18]
-<./ThesisFigures/FrameworkComparisons.PNG, id=435, 550.30594pt x 315.42844pt>
-File: ./ThesisFigures/FrameworkComparisons.PNG Graphic file (type png)
-<use ./ThesisFigures/FrameworkComparisons.PNG>
-Package pdftex.def Info: ./ThesisFigures/FrameworkComparisons.PNG  used on inpu
-t line 930. on input line 930.
-Package pdftex.def Info: Requested size: 440.24535pt x 252.34308pt on input lin
-e 930.
-
-Overfull \hbox (15.6591pt too wide) in paragraph at lines 930--932
-[][]
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-(BiomedicalDataAnalysis.bbl [19pdfTeX warning (ext4): destination with the same
- identifier (name{figure.11}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1 \begin{thebibliography}{10}
-                                <./ThesisFigures/CaffeMachineLearningComparison
-s.PNG>] [20pdfTeX warning (ext4): destination with the same identifier (name{fi
-gure.12}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.56 
-      <./ThesisFigures/FrameworkComparisons.PNG>]
-Underfull \hbox (badness 1406) in paragraph at lines 58--62
-[]\OT1/cmr/m/n/10 K. Jain, ``Python vs. r (vs. sas) { which tool should i learn
-?,'' Septem-ber 2017.
- []
-
-[21])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 974.
- [22]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 974.
- (BiomedicalDataAnalysis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 974.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 974.
-Package rerunfilecheck Info: File `BiomedicalDataAnalysis.out' has not changed.
-
-(rerunfilecheck)             Checksum: 9B9915327A07ED58540D9C92D7305CFD;2129.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 974.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 150.
  ) 
 Here is how much of TeX's memory you used:
- 10624 strings out of 493318
- 152673 string characters out of 3139046
- 266614 words of memory out of 3000000
- 13879 multiletter control sequences out of 15000+200000
- 8495 words of font info for 33 fonts, out of 3000000 for 9000
+ 10558 strings out of 493318
+ 149328 string characters out of 3139046
+ 266376 words of memory out of 3000000
+ 13909 multiletter control sequences out of 15000+200000
+ 8327 words of font info for 32 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,14n,43p,653b,470s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 28i,15n,43p,746b,437s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cmextra/cmex7.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.p
-fb>
-Output written on BiomedicalDataAnalysis.pdf (23 pages, 688158 bytes).
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmtt12.pfb>
+Output written on BariatricCoMorbidityThesis.pdf (5 pages, 122145 bytes).
 PDF statistics:
- 550 PDF objects out of 1000 (max. 8388607)
- 105 named destinations out of 1000 (max. 500000)
- 301 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 102 PDF objects out of 1000 (max. 8388607)
+ 20 named destinations out of 1000 (max. 500000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,6 @@
+\select@language {english}
+\contentsline {section}{\numberline {1}Introduction}{2}{section.1}
+\contentsline {subsection}{\numberline {1.1}Data Sets}{2}{subsection.1.1}
+\contentsline {section}{\numberline {2}First Proposal}{4}{section.2}
+\contentsline {section}{\numberline {3}Proposal Comparisons}{4}{section.3}
+\contentsline {section}{\numberline {4}Final Proposal}{4}{section.4}

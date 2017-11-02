@@ -1,0 +1,150 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{a4wide} %Wider margins
+\usepackage[english]{babel} %English dictionary for hyphenation and definitions, e.g. Table vs. Tabel
+\usepackage[official]{eurosym} %Support for Euro-sign
+\usepackage[utf8]{inputenc} %Support for internationalization, e.g. é vs.\’e
+\usepackage{amsmath,amssymb,amsthm} %Support for mathematical formulas and symbols
+\usepackage{fancyhdr} %Fancy headers
+\usepackage{hyperref} %Creates clickable links
+\usepackage{graphicx} %Support for grahpics
+\usepackage{nopageno} %Support for removal of pagenumbers
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{xspace}
+\usepackage{algorithm,algpseudocode}
+\usepackage{float}
+\usepackage{mathtools}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[titletoc,toc,title]{appendix}
+\usepackage{listings}
+\usepackage{makecell}
+\graphicspath{ {./ThesisFigures/} }
+
+\hypersetup{
+    pdftitle={}, %PDF-file will be given a proper title when viewed in a reader
+    hidelinks %PDF-file will be given clickable, yet not visible links when viewed in a reader
+}
+\newcommand{\documenttitle}{Co-Morbidity in Bariatric Patients}
+\newcommand{\documentsubtitle}{A new approach in quantifying the severity}
+
+
+\newcommand{\true}{{\sc True}\xspace}
+\begin{document}
+	
+	\begin{titlepage}
+		
+		\center
+		
+		\vspace*{3cm}
+		
+		\textbf{\huge \documenttitle}
+		
+		\textit{\LARGE \documentsubtitle}
+		
+		\vspace*{2cm}
+		
+		\large
+		\centering
+		T.P.A.~\textsc{Beishuizen}~(0791613)\\
+		Biomedical Engineering - Computational Biology\\
+		Data Engineering - Information Systems\\
+		Eindhoven, University of Technology\\
+		Email: \texttt{t.p.a.beishuizen@student.tue.nl}
+		
+		\vfill
+		
+		\vspace*{1cm}
+		
+		\today
+		
+	\end{titlepage}
+	
+	\tableofcontents
+	
+	%\newpage
+	
+	\pagestyle{fancy}
+	%Abbreviations used by fancyhdr:
+	%E Even page
+	%O Odd page
+	%L Left ﬁeld
+	%C Center ﬁeld
+	%R Right ﬁeld
+	%H Header
+	%F Footer
+	\fancyhead{} % clear all header fields
+	\fancyfoot{} % clear all footer fields
+	\renewcommand{\headrulewidth}{0.4pt}
+	\renewcommand{\footrulewidth}{0.4pt}
+	
+	\clearpage
+	
+	\section{Introduction}
+	
+	% Introduction Deneer's project
+	Worldwide the number of bariatric surgeries is increasing. Although initially thought otherwise, this type of surgery has added benefits on top of losing weight, the primary reason. Among those benefits the remission of metabolic co-morbidities can be named. Due to binary labelling of those co-morbidities, valuable information is lost, while this labelling is not clearly defined either. To obtain more and better results, this binary labelling can be replaced by a continuous severity score. Ruben Deneer conducted a research on trying to achieve a successful replacement.\cite{Deneer2017Thesis}
+	
+	% First explanation data set
+	The available data used for the research stemmed from the Catharina Hospital in Eindhoven. This extensive data set consisted of 41 markers measured pre- and post-surgery for 2367 patients that underwent gastric sleeve or gastric bypass surgery. These 41 markers are divided in several sub-panels that each describe different processes in the body. Conditions for these co-morbidities that were tested for the severity score were type diabetes mellitus (T2DM), hypertension and dyslipidemia. Extensive literature research was done to connect them with 41 markers to find possible relations. \cite{Deneer2017Thesis} The data sets are described in more detail in subsection \ref{subsec:DataSet}
+
+	% The goal of the research
+	To better specify the research on the data, a main goal was created: \emph{to use data mining techniques to develop score that can objectively quantify the severity of co-morbidities present in bariatric patients based on biomarkers, both before and after surgery.} This means that it is not the goal to predict the outcome of the two types of surgery, but it is to quantify the improvement of the co-morbidities before and after the surgery. \cite{Deneer2017Thesis}
+
+	% Layout Report
+	Since the data is not available other than within the hospital, a figurative second study was conducted to complement Ruben Deneer's research. This study consists of three parts. The first part was creating a research question, hypothesis and an own analysis approach without the knowledge of Deneer's way. Since no data is available, this can only be made globally. It should be detailed enough, though, to compare it with Deneer's own approach. Secondly the two are compared and remarks are given on the original approach. At last both are combined to create a final proposal for a possible follow-up research. 
+	
+	\subsection{Data Sets}
+	\label{subsec:DATODataSet}
+	
+	% Introduction + first data set
+	Two data sets were used in the study. The first one is called "The Dutch Audit for Treatment of Obesity" (DATO). This data set is a national database that houses all registrations and health statuses of pre- and post treatment bariatric surgery patients in the Netherlands. Before surgery, the co-morbidities were given a binary label of "Yes/No". The co-morbidities after surgery were given one of the following labels:
+	
+	\begin{enumerate}
+		\item \textbf{Cured} No co-morbidity any more		
+		\item \textbf{Improved} Less affected by co-morbidity
+		\item \textbf{Same} No change in co-morbidity status
+		\item \textbf{Worse} More affected by co-morbidity
+		\item \textbf{Denovo} Diagnosed co-morbidity while not present before surgery
+		\item \textbf{Not present} No co-morbidity present				
+	\end{enumerate}
+
+	% Second data set
+	The second data set came from a laboratory database, stored in health records. This extensive data set consisted of 3 clinical and 38 blood markers measured pre- and 6, 12 and 24 months post-surgery. The tests pre-surgery had some additional markers on top of the 41 ones. These markers can be divided in the following categories: (Table \ref{tab:DataMarkers}) Complete blood count, liver function, kidney function, inflammation, lipid spectrum, coagulation, glucose metabolism, thyroid function and at last minerals and vitamins. The data sets of the patients that underwent bariatric surgery can be extracted from these.
+	
+	\begin{table}
+		\caption{The markers present in the bariatric laboratory data set \cite{Deneer2017Thesis}}
+		\begin{tabular}{lll}
+			\hline
+			~                     & Before Surgery/Pre-Op/Screening                                                                                                                     & After Surgery/Post-Op/Follow-up                                                                                                                     \\ \hline
+			Complete blood count  & \makecell{hemoglobin\\hematocrit\\erythrocytes\\mean corpuscular hemoglobin\\mean corpuscular volume\\thrombocytes\\leukocytes}                                & \makecell{hemoglobin\\hematocrit\\erythrocytes\\mean corpuscular hemoglobin\\mean corpuscular volume\\thrombocytes\\leukocytes}                                \\ \hline
+			Liver function        & \makecell{bilirubin\\aspartate aminotransferase\\alanine aminotransferase\\lactate dehydrogenase\\alkaline phosphatase\\gamma-glutamyltransferase}             & \makecell{bilirubin\\aspartate aminotransferase\\alanine aminotransferase\\lactate dehydrogenase\\alkaline phosphatase\\gamma-glutamyltransferase}             \\ \hline
+			Kidney function       & \makecell{urea\\creatinine\\potassium\\sodium\\calcium\\phosphate\\albumin}                                                                                    & \makecell{urea\\creatinine\\potassium\\sodium\\calcium\\phosphate\\albumin}                                                                                    \\ \hline
+			Inflammation          & C-reactive protein                                                                                                                                  & C-reactive protein                                                                                                                                  \\ \hline
+			Lipid spectrum        & total \makecell{cholesterol\\high-density lipoprotein-cholesterol\\total/high-density cholesterol ratio \\low-density lipoprotein-cholesterol \\triglycerides} & \makecell{total cholesterol\\high-density lipoprotein-cholesterol\\total/high-density cholesterol ratio \\low-density lipoprotein-cholesterol \\triglycerides} \\ \hline
+			Coagulation           & prothrombin time                                                                                                                                    & prothrombin time                                                                                                                                    \\ \hline
+			Glucose metabolism    & \makecell{hemoglobin A1c (IFCC)\\glucose\\insulin\\C-peptide}                                                                                                  & \makecell{hemoglobin A1c (IFCC)\\glucose\\-\\-}                                                                                                                \\ \hline
+			Thyroid function      & \makecell{parathyroid hormone\\thyroid-stimulating hormone\\free T4\\cortisol}                                                                                 & \makecell{parathyroid hormone\\-\\-\\-}                                                                                                                        \\ \hline
+			Minerals and vitamins & \makecell{iron\\ferritin\\folic acid\\zinc\\magnesium\\vitamin A\\vitamin B1\\vitamin B6\\25-OH vitamin D\\vitamin B12}                                        & \makecell{iron\\ferritin\\folic acid\\-\\-\\-\\vitamin B1\\vitamin B6\\25-OH vitamin D\\vitamin B12}                                                           \\ \hline
+		\end{tabular}
+	\end{table}
+	
+	% Data comibining challenge one
+	A smaller part of the research is to combine these two data sets. Some challenges arise when doing so. Such a challenge is obviously to find the right connection between them, using the survey and lab data of the same patient. What can the markers say about the severity of co-morbidities?
+	
+	% Data driven challenge two
+	A second challenge would be to define what to do with non-matching data. In the pre-treatment for example more markers were used than in the post-treatment. These missing ones might be more useful for scoring the co-morbidity severity than the known markers. There also might be measurements that were missing or corrupted, whereas other markers might still be useful enough for a result. How to tackle this missing data challenge should be defined properly.
+	
+	\section{First Proposal}
+	
+	\section{Proposal Comparisons}
+	
+	\section{Final Proposal}
+	
+	\bibliography{Citings} 
+	\bibliographystyle{ieeetr}
+	
+\end{document}
