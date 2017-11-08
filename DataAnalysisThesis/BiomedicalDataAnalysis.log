@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2017.11.1)  2 NOV 2017 14:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2017.11.1)  8 NOV 2017 15:08
 entering extended mode
 **./BiomedicalDataAnalysis.tex
 (BiomedicalDataAnalysis.tex
@@ -850,7 +850,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.83 	\clearpage
+l.88 	\clearpage
                  [1] [2
 
 ] [3
@@ -860,9 +860,9 @@ l.83 	\clearpage
 File: ./ThesisFigures/HistogramExample.PNG Graphic file (type png)
 <use ./ThesisFigures/HistogramExample.PNG>
 Package pdftex.def Info: ./ThesisFigures/HistogramExample.PNG  used on input li
-ne 161. on input line 161.
+ne 166. on input line 166.
 Package pdftex.def Info: Requested size: 256.70842pt x 157.33742pt on input lin
-e 161.
+e 166.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -871,9 +871,9 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: ./ThesisFigures/BoxplotExample.PNG Graphic file (type png)
 <use ./ThesisFigures/BoxplotExample.PNG>
 Package pdftex.def Info: ./ThesisFigures/BoxplotExample.PNG  used on input line
- 167. on input line 167.
+ 172. on input line 172.
 Package pdftex.def Info: Requested size: 252.19156pt x 86.57321pt on input line
- 167.
+ 172.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -884,64 +884,64 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.201 
+l.206 
       ]
 <./ThesisFigures/BinomDistExample.PNG, id=216, 392.96812pt x 281.55188pt>
 File: ./ThesisFigures/BinomDistExample.PNG Graphic file (type png)
 <use ./ThesisFigures/BinomDistExample.PNG>
 Package pdftex.def Info: ./ThesisFigures/BinomDistExample.PNG  used on input li
-ne 203. on input line 203.
+ne 208. on input line 208.
 Package pdftex.def Info: Requested size: 196.48357pt x 140.77559pt on input lin
-e 203.
+e 208.
  [5pdfTeX warning (ext4): destination with the same identifier (name{figure.1})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.217 
+l.222 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.217 
+l.222 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.217 
+l.222 
        <./ThesisFigures/HistogramExample.PNG> <./ThesisFigures/BoxplotExample.P
 NG> <./ThesisFigures/BinomDistExample.PNG>]
 <./ThesisFigures/NormDistExample.PNG, id=231, 378.66469pt x 356.0803pt>
 File: ./ThesisFigures/NormDistExample.PNG Graphic file (type png)
 <use ./ThesisFigures/NormDistExample.PNG>
 Package pdftex.def Info: ./ThesisFigures/NormDistExample.PNG  used on input lin
-e 219. on input line 219.
+e 224. on input line 224.
 Package pdftex.def Info: Requested size: 189.33188pt x 178.03972pt on input lin
-e 219.
+e 224.
 <./ThesisFigures/StudTDistExample.PNG, id=236, 394.47375pt x 374.14781pt>
 File: ./ThesisFigures/StudTDistExample.PNG Graphic file (type png)
 <use ./ThesisFigures/StudTDistExample.PNG>
 Package pdftex.def Info: ./ThesisFigures/StudTDistExample.PNG  used on input li
-ne 239. on input line 239.
+ne 244. on input line 244.
 Package pdftex.def Info: Requested size: 197.23639pt x 187.07344pt on input lin
-e 239.
+e 244.
  [6pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.266 
+l.271 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.266 
+l.271 
        <./ThesisFigures/NormDistExample.PNG> <./ThesisFigures/StudTDistExample.
 PNG>]
-Overfull \hbox (33.3838pt too wide) in paragraph at lines 299--331
+Overfull \hbox (33.3838pt too wide) in paragraph at lines 304--336
  [][] 
  []
 
@@ -950,21 +950,21 @@ as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.397 
+l.402 
       pdfTeX warning (ext4): destination with the same identifier (name{table.3
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.397 
+l.402 
       ] [8]
 <./ThesisFigures/StatProgComp.PNG, id=291, 634.62094pt x 219.82124pt>
 File: ./ThesisFigures/StatProgComp.PNG Graphic file (type png)
 <use ./ThesisFigures/StatProgComp.PNG>
 Package pdftex.def Info: ./ThesisFigures/StatProgComp.PNG  used on input line 4
-69. on input line 469.
+74. on input line 474.
 Package pdftex.def Info: Requested size: 424.58624pt x 147.07484pt on input lin
-e 469.
+e 474.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -973,9 +973,9 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: ./ThesisFigures/StatProgGrades.PNG Graphic file (type png)
 <use ./ThesisFigures/StatProgGrades.PNG>
 Package pdftex.def Info: ./ThesisFigures/StatProgGrades.PNG  used on input line
- 483. on input line 483.
+ 488. on input line 488.
 Package pdftex.def Info: Requested size: 424.58624pt x 162.53651pt on input lin
-e 483.
+e 488.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -986,13 +986,13 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.535 
+l.540 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.535 
+l.540 
        <./ThesisFigures/StatProgComp.PNG> <./ThesisFigures/StatProgGrades.PNG>]
 [11] [12
 
@@ -1003,16 +1003,16 @@ l.535
 File: ./ThesisFigures/NeuronExample.PNG Graphic file (type png)
 <use ./ThesisFigures/NeuronExample.PNG>
 Package pdftex.def Info: ./ThesisFigures/NeuronExample.PNG  used on input line 
-710. on input line 710.
+715. on input line 715.
 Package pdftex.def Info: Requested size: 334.24792pt x 109.15753pt on input lin
-e 710.
+e 715.
 <./ThesisFigures/NeuralNetworkExample.PNG, id=367, 390.70969pt x 204.765pt>
 File: ./ThesisFigures/NeuralNetworkExample.PNG Graphic file (type png)
 <use ./ThesisFigures/NeuralNetworkExample.PNG>
 Package pdftex.def Info: ./ThesisFigures/NeuralNetworkExample.PNG  used on inpu
-t line 718. on input line 718.
+t line 723. on input line 723.
 Package pdftex.def Info: Requested size: 390.70872pt x 204.76448pt on input lin
-e 718.
+e 723.
  [15
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) ha
@@ -1020,22 +1020,22 @@ s been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.738 
+l.743 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 9}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.738 
+l.743 
        <./ThesisFigures/NeuronExample.PNG> <./ThesisFigures/NeuralNetworkExampl
 e.PNG>] [16]
 <./ThesisFigures/TheanoPipeline.PNG, id=394, 135.50626pt x 193.47281pt>
 File: ./ThesisFigures/TheanoPipeline.PNG Graphic file (type png)
 <use ./ThesisFigures/TheanoPipeline.PNG>
 Package pdftex.def Info: ./ThesisFigures/TheanoPipeline.PNG  used on input line
- 789. on input line 789.
+ 794. on input line 794.
 Package pdftex.def Info: Requested size: 135.5059pt x 193.47234pt on input line
- 789.
+ 794.
  [17
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) h
@@ -1043,7 +1043,7 @@ as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.819 
+l.824 
        <./ThesisFigures/TheanoPipeline.PNG>]
 <./ThesisFigures/CaffeMachineLearningComparisons.PNG, id=418, 477.28313pt x 103
 .88812pt>
@@ -1051,11 +1051,11 @@ File: ./ThesisFigures/CaffeMachineLearningComparisons.PNG Graphic file (type pn
 g)
 <use ./ThesisFigures/CaffeMachineLearningComparisons.PNG>
 Package pdftex.def Info: ./ThesisFigures/CaffeMachineLearningComparisons.PNG  u
-sed on input line 890. on input line 890.
+sed on input line 895. on input line 895.
 Package pdftex.def Info: Requested size: 477.28195pt x 103.88786pt on input lin
-e 890.
+e 895.
 
-Overfull \hbox (52.69571pt too wide) in paragraph at lines 890--893
+Overfull \hbox (52.69571pt too wide) in paragraph at lines 895--898
 [][]
  []
 
@@ -1067,11 +1067,11 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: ./ThesisFigures/FrameworkComparisons.PNG Graphic file (type png)
 <use ./ThesisFigures/FrameworkComparisons.PNG>
 Package pdftex.def Info: ./ThesisFigures/FrameworkComparisons.PNG  used on inpu
-t line 930. on input line 930.
+t line 935. on input line 935.
 Package pdftex.def Info: Requested size: 440.24535pt x 252.34308pt on input lin
-e 930.
+e 935.
 
-Overfull \hbox (15.6591pt too wide) in paragraph at lines 930--932
+Overfull \hbox (15.6591pt too wide) in paragraph at lines 935--937
 [][]
  []
 
@@ -1098,22 +1098,22 @@ Underfull \hbox (badness 1406) in paragraph at lines 58--62
  []
 
 [21])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 974.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 979.
  [22]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 974.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 979.
  (BiomedicalDataAnalysis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 974.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 974.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 979.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 979.
 Package rerunfilecheck Info: File `BiomedicalDataAnalysis.out' has not changed.
 
 (rerunfilecheck)             Checksum: 9B9915327A07ED58540D9C92D7305CFD;2129.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 974.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 979.
  ) 
 Here is how much of TeX's memory you used:
- 10624 strings out of 493318
- 152673 string characters out of 3139046
+ 10625 strings out of 493318
+ 152687 string characters out of 3139046
  266614 words of memory out of 3000000
- 13879 multiletter control sequences out of 15000+200000
+ 13880 multiletter control sequences out of 15000+200000
  8495 words of font info for 33 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  28i,14n,43p,653b,470s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1135,7 +1135,7 @@ lic/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
 cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.p
 fb>
-Output written on BiomedicalDataAnalysis.pdf (23 pages, 688158 bytes).
+Output written on BiomedicalDataAnalysis.pdf (23 pages, 690087 bytes).
 PDF statistics:
  550 PDF objects out of 1000 (max. 8388607)
  105 named destinations out of 1000 (max. 500000)

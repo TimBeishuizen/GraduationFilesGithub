@@ -81,6 +81,10 @@
 	\renewcommand{\headrulewidth}{0.4pt}
 	\renewcommand{\footrulewidth}{0.4pt}
 	
+	\fancyhead[L]{\rightmark}
+	\fancyfoot[C]{\thepage}
+	\fancyhead[R]{T.P.A. Beishuizen}
+		
 	\clearpage
 	
 	\section{Introduction}
@@ -194,6 +198,8 @@
 		\end{tabular}
 	\end{table}
 	
+	\clearpage
+	
 	\section{First Proposal}
 	
 	% Research question
@@ -258,6 +264,8 @@
 	% Program second sub-question
 	At the start of researching this second sub-question a standard machine learning framework would suffice. This means that the aforementioned Python with the Scikit-learn package would be best to start with. When initial results indicate that a certain way of handling this data in another way would be more efficient, Python is used by many other machine learning programs, such as Theano, TensorFlow and both their packages. Therefore Python would be a great way to start the project of which the direction can change heavily.
 	
+	\clearpage
+	
 	\section{Original research}
 	
 	% Introduction original research
@@ -295,6 +303,8 @@
 	% Statistical models
 	To create a model in this research, a classification method should be used. A well known one for that is logistic regression. Maximum likelihood estimation is used to estimate regression coefficients for the variables. Multicollinearity must be limited as much as possible, as it is assumed to be absent for logistic regression. A correlation matrix is created to find multicollinearity. Special interactions are included as well, for example the Body mass index (BMI) and presence for co-morbidities as being a prerequisite for the surgery. For ordinal outcome of the logistic regression, both proportional odds (PO) as continuation ratio (CR) were used. 10-fold cross validation was done to validate the model and an assessment of model fit was done for discrimination, calibration and overall performance. Lastly the model is visualized with a nomogram, for further use.
 	
+	\clearpage
+	
 	\section{Proposal Comparisons}
 	
 	% Introduction propposal comparisons
@@ -319,7 +329,10 @@
 	\subsection{Scoring System}
 	
 	% Difference scoring system
-	At the project start a goal was made about creating a severity scoring system for co-morbidities. To achieve this goal of creating a score from categorical data, as little data reduction as possible should be done to keep the score quality as high as possible. The proposed ordinal system however actually reduces information. There is no distinction between two or three co-morbidities. The type of co-morbidity is removed, too, as well as its progress after surgery. This is a very counter intuitive way to correctly model a scoring system when these three decisions all could contribute to more efficient scale. 
+	At the project start a goal was made about creating a severity scoring system for co-morbidities. To achieve this goal of creating a score from categorical data, as little data reduction as possible should be done to keep the score quality as high as possible. The proposed ordinal system however actually reduces information. There is no distinction between two or three co-morbidities. The type of co-morbidity is removed, too, as well as its progress after surgery. This is a very counter intuitive way to correctly model a scoring system when these three decisions all could contribute to more efficient scale.
+	
+	% Final scoring system
+	The final scoring system is not really an answer to the original goal. This was to create a severity score, whereas the linear predictor score in the nomogram is originated from its probability counterpart and not really showing severity. As discussed earlier, it is hard to create a severity score from categorical labelling, so maybe this goal might be too ambitious. Using predictability score is a straightforward start for this, though, as those can be calculated. Further research may lead to a severity score from that. 
 	
 	% Better proposal
 	For this research it seems better to keep the three co-morbidities separate as long as possible. For every co-morbidity separately a score could be made which in the end can be joined together. This score would at start be best based on a probability, so how much chance there is to have a certain co-morbidity. After creating probability models for all of them, they can be combined in a joint probability model. When doing this obviously collinearity needs to be taken into account. 
@@ -331,6 +344,8 @@
 
 	% Used modelling tools
 	About every part of the original research is done in R. As discussed previously, especially the variable significance can be done efficiently in R, as it is one of the more advanced tools to do statistical analysis. For the modelling part however there are more advanced programs or frameworks that can be used. One of the reasons for this was to create a "white-box" answer, that every step of the process can be explained. The disadvantage in choosing a white-box model, however, is that the result can be worse than for a more traditional machine learning approach. Those approaches could lead to a better result and are therefore definitely worth to investigate. In R however, machine learning options are extremely limited if even available. Other programs or frameworks could facilitate that better than R, such as python, the Scikit-learn package, Theano or Tensorflow. This could also facilitate a better final visualization result for the scoring system than the nomogram, which is not very user-friendly and straightforward.
+	
+	\clearpage
 	
 	\section{Final Proposal}
 	
@@ -399,20 +414,48 @@
 	The third sub-question is partially answered in a specific direction by the original research. Logistic regression was extensively investigated, however other machine learning aspects were not used. The hypothesis is that most likely several machine learning methods should be sufficient to answer this question. With those machine learning methods a model can be derived for the co-morbidities to be found out of the available variables.
 	 
 	% Fourth sub-question
+	The fourth question is the also hardest. How can a score be added? The original research started first with an ordinal score, which is debatable for the information thrown away. When thinking ahead, the best idea for now is to start with a probability score. These probabilities usually also show the severity, as having a higher probability for a co-morbidity, the severity of it usually is bigger, too. After having a probability score further insights can be used to create a better score than probability. An example of such a score can be this:
+	
+	\begin{enumerate}
+		\item[] \textbf{Score proposal} At the start a score interval of 0\% to 100\% will be chosen, with 0\%-50\% being not having the disease and 50\%-100\% having it, with different severities. Binary cases will then be given 25\% and 75\% as absent and present co-morbidity respectively, knowing those as the values they should be closest to. The ordinal cases that showed improvement or deterioration will be given a score of 50\%. 
+	\end{enumerate}
 	
 	% Fifth sub-question
-	
-	% Second sub-question
-	%As for the second sub-question how a score can be defined from biomarkers, several different options are possible. When knowing there is a relation between biomarkers and the co-morbidity, with machine learning combined with regression a function can be made predicting a score outcome for the biomarkers. This score is then compared with the categorical labelling of co-morbidities to find out if they match. This way, through training the model and afterwards testing if that model could efficiently give a good score to the co-morbidities.
+	The last sub-question is bigger than only adding them together. Since the co-morbidities are also related to each other, these correlations have to be taken into account when creating a score. On the other side, when two co-morbidities are both present in a patient, they also have a bigger chance to be more severe, as they strengthen each other. Different additions or combinations can be tested to combine them.
 	
 	% Main research question
-	%With the hypotheses for both sub-questions the main research question can be answered, too. The hypothesis for this one would be that it is possible to find a severity score with the biomarkers. A model can made using the biomarkers as an input and retrieving a severity score as output.
-	
+	The hypotheses of most sub-questions are fairly straightforward and with the original research are known to give results already. The aim is however to create better answers than the already available ones. For the first two questions this is definitely possible, the last three depend whether the results will be improving the known ones already, mainly because it is a new area for researching. Still, though, as there is already one present, the main research question can be answered with a yes.
 	
 	\subsection{Methods}
+	\label{subsec:FinalMethods}
 	
+	% Introduction methods
+	This time the methods is changed a bit from the first proposal, as it would be better to line them up with the original research and show differences between those. So first we start with the preprocessing and every thing that is related to that. Secondly the modelling part will be discussed, together with the sub-questions that are answered in here.
 	
+	% Preprocessing
+	In preprocessing almost every thing will be done the same as in the original research. Most differences will be in not removing certain parts of the data set. This means that more than one data set can be made for the different instances. All differences will be discussed.
 	
+		\begin{enumerate}
+		\item \textbf{All paired DATO and lab set} All data that is available after pairing the DATO and lab set will be put in a data set. There will not be any distinction between data on predefined moments and not, because for modelling those do not matter at all. I case more results should be generated on those predefined moments, a separate attribute set will be made.
+		
+		\item \textbf{Variables omission} Not all variables will be omitted when a significant number of them is available. Relations between those variables and with the co-morbidities will be tested. When finding out that there are significant relations between them, possible further research will be done on both a set with and without them. Variables that fall into this category are the five that are only measured pre-surgery and LDL.
+		
+	\end{enumerate}
+	
+	% Modelling layout
+	Several steps should be taken to achieve the final goal. First the variables needs to be compared with the co-morbidities (sub-question 1) and themselves (sub-question 2). Next a model has to be found (sub-question 3) for all co-morbidities as well as a score added to the model (sub-question 4). Lastly the three models need to be combined (sub-question 5) to create a final answer to the main research question.
+	
+	% Variable exploration
+	To answer the first two sub-questions, statistical analysis must be done. Correlation matrices must be made to see whether two variables or one and a co-morbidity correlate significantly. Also the variables must be checked on their own population, whether they have a high variance and follow a statistical distribution. In case of high correlations between variables, a joint variable should be created if possible. At last, also combinations of variables should be created and tested for relations with co-morbidities. This all can efficiently be done in Python with the SciPy package.
+	
+	% Co-morbidity modelling
+	A co-morbidity can be modelled using different approaches in machine learning. Several classification techniques are available such as support vector machines (SVM), nearest neighbour (NN), stochastic gradient descent (SGD). Research must be done which is most applicable and testing must be done which gives the best results. This is repeated three times for every co-morbidity. Within Python the Scikit-learn package has the basics to create proper results and if needed, programs such as Theano or TensorFlow can be added. For testing, a similar approach as in the original result can be used, 10 fold cross-validation. The final model and the visualisation depends on the type of machine learning used, however graphs that show clusters of morbidities for several variables seems a good way to approach that.
+	
+	% Co-morbidity scoring
+	To add scoring in machine learning approaches is a challenge. At first tests can be done with changing the methods from classification approach to their regression counterpart, for example from SVC (Support Vector Classification) to SVR (-Regression). This can have major for now unknown implications. As discussed earlier (subsection \ref{subsec:FinalMethods}) setting up a score interval should be thought of before and also able to be implemented. The proposed score can be used as a base and be changed if advantageous.
+	
+	% Co-morbidity combination
+	The last challenge is to create a model that combines all three of the co-morbidities. To start this, all three separate models can be used to create the combination. If this does not give the desired results and makes scores much worse than initially thought, a similar ordinal system as used in the original approach can be used. Then sub-questions three and four are repeated only with co-morbidities combined, removing details from each different one.
 	
 	\bibliography{Citings} 
 	\bibliographystyle{ieeetr}
