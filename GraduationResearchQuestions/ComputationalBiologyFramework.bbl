@@ -1,0 +1,57 @@
+\begin{thebibliography}{10}
+
+\bibitem{bronzino2014biomedical}
+J.~D. Bronzino and D.~R. Peterson, {\em Biomedical engineering fundamentals}.
+\newblock CRC press, 2014.
+
+\bibitem{CIOS20021}
+K.~J. Cios and G.~W. Moore, ``Uniqueness of medical data mining,'' {\em
+  Artificial Intelligence in Medicine}, vol.~26, no.~1, pp.~1 -- 24, 2002.
+\newblock Medical Data Mining and Knowledge Discovery.
+
+\bibitem{PENG201015}
+Y.~Peng, Z.~Wu, and J.~Jiang, ``A novel feature selection approach for
+  biomedical data classification,'' {\em Journal of Biomedical Informatics},
+  vol.~43, no.~1, pp.~15 -- 23, 2010.
+
+\bibitem{Yoo2012}
+I.~Yoo, P.~Alafaireet, M.~Marinov, K.~Pena-Hernandez, R.~Gopidi, J.-F. Chang,
+  and L.~Hua, ``Data mining in healthcare and biomedicine: A survey of the
+  literature,'' {\em Journal of Medical Systems}, vol.~36, pp.~2431--2448, Aug
+  2012.
+
+\bibitem{Holzinger2014}
+A.~Holzinger and I.~Jurisica, {\em Knowledge Discovery and Data Mining in
+  Biomedical Informatics: The Future Is in Integrative, Interactive Machine
+  Learning Solutions}, pp.~1--18.
+\newblock Berlin, Heidelberg: Springer Berlin Heidelberg, 2014.
+
+\bibitem{Otasek2014}
+D.~Otasek, C.~Pastrello, A.~Holzinger, and I.~Jurisica, {\em Visual Data
+  Mining: Effective Exploration of the Biological Universe}, pp.~19--33.
+\newblock Berlin, Heidelberg: Springer Berlin Heidelberg, 2014.
+
+\bibitem{Turkay2014}
+C.~Turkay, F.~Jeanquartier, A.~Holzinger, and H.~Hauser, {\em On
+  Computationally-Enhanced Visual Analysis of Heterogeneous Data and Its
+  Application in Biomedical Informatics}, pp.~117--140.
+\newblock Berlin, Heidelberg: Springer Berlin Heidelberg, 2014.
+
+\bibitem{Windridge2014}
+D.~Windridge and M.~Bober, {\em A Kernel-Based Framework for Medical Big-Data
+  Analytics}, pp.~197--208.
+\newblock Berlin, Heidelberg: Springer Berlin Heidelberg, 2014.
+
+\bibitem{YANG2012S16}
+Y.~Yang, S.~J. Adelstein, and A.~I. Kassis, ``Target discovery from data mining
+  approaches,'' {\em Drug Discovery Today}, vol.~17, no.~Supplement, pp.~S16 --
+  S23, 2012.
+\newblock Strategic Approach to Target Identification and Validation: A
+  Supplement to Drug Discovery Today.
+
+\bibitem{Kobayashi2014}
+M.~Kobayashi, {\em Resources for Studying Statistical Analysis of Biomedical
+  Data and R}, pp.~183--195.
+\newblock Berlin, Heidelberg: Springer Berlin Heidelberg, 2014.
+
+\end{thebibliography}

@@ -314,7 +314,7 @@
 	\label{sec:ProposalComparisons}
 	
 	% Introduction propposal comparisons
-	A proposal was created after reading the introduction, background and material. The original research was also discussed and a summary was given. This new proposal should now be compared with the original research to find out when they match and when they have different approaches. Several topics should be discussed that differ greatly between the original and new proposal. These differences needed to be addressed to create a final proposal for a possible new research. The first difference was about data omission. Many aspects of the original data set were debatable whether they should be removed or not. A second difference was the final scoring system. The newly proposed one was vastly different then the original one.
+	A proposal was created after reading the introduction, background and material. The original research was also discussed and a summary was given. The new proposal should now be compared with the original research to find out when they match and when they do not. Several topics should be discussed that differ greatly between the original and new proposal. These differences should be addressed to create a final proposal for a new research. The first difference was about data omission. Many aspects of the original data set were debatable whether they should be removed or not. A second difference was the final scoring system. The newly proposed one was vastly different from the original one.
 	
 	\subsection{Data Omission}
 	
@@ -324,29 +324,29 @@
 	\begin{enumerate}
 		\item \textbf{Lab set without a close DATO set} Several lab sets were removed because no DATO set was close enough. This seemed logical as they should match for complete results. However the DATO set had many variables that are not subject to much change over time. If a lab set was squeezed in between DATO sets that were very similar, an estimate for the intermediate DATO set at that time could easily be made.
 		
-		\item \textbf{Predefined measuring moments} The DATO and lab sets were all measured on predefined moments. There were other times as well, though, were measurements took place. On those other times data was omitted. These omissions were too rigorous. These data sets were maybe not useful enough to show differences on those measuring moments, however this sets could be very helpful to create a model. These questionable omissions include pairs that were double on one moment and the ones on 36 or 48 months. 
+		\item \textbf{Predefined measuring moments} The DATO and lab sets were all measured on predefined moments. There were other times as well, though, were measurements took place. On those other times data was omitted. These omissions seemed too rigorous. These data sets were maybe not useful enough to show differences on those measuring moments, however these sets could be very helpful to create a model. These questionable omissions included pairs that were double at one moment and moments at 36 or 48 months. 
 		
-		\item \textbf{Markers only in pre-surgery measurements} Five of the biomarkers were only measured before surgery. The reason for this was not stated, however these markers were removed as only about half of the data sets had these. When almost 50\% of the data sets had these markers, there was enough available to check these variables on their relation with the co-morbidities. If all of them showed no significant difference in presence or absence of the co-morbidities, then they were not useful. If they would show a significant difference, they might be a good marker for further co-morbidity detection. Disregarding them only because half of the sets did not have the value seemed questionable.
+		\item \textbf{Markers only in pre-surgery measurements} Five of the biomarkers were only measured before surgery. The reason for this was not stated, however these markers were removed as about half of the data sets had these. When almost 50\% of the data sets had these markers, there was enough available to check these variables on their relation with the co-morbidities. If all of them showed no significant difference in presence or absence of the co-morbidities, then they were not useful. If they would show a significant difference, they might be a good marker for further co-morbidity detection. Disregarding them only because half of the sets did not have the value seemed questionable.
 		
-		\item \textbf{LDL-cholesterol} This marker from the lipid panel was removed due to the possible derivation of it from the same panel markers. The omission was discussed quite heavily in the thesis. Even though it was derived from other markers, the derivation was done in a very specific way. Maybe a description for one of the co-morbidities would benefit greatly of this specific derivation. Even though this was the weakest case where omission was questionable, at least some tests could be done to check the significance.
+		\item \textbf{LDL-cholesterol} This marker from the lipid panel was removed due to its possible derivation from the same panel markers. The omission was discussed quite heavily in the thesis. Even though it was derived from other markers, the derivation was done in a very specific way. Maybe a description for one of the co-morbidities would benefit greatly of this specific derivation. Omitting LDL-cholesterol was less questionable than the other cases, however at least some tests could be done to check the significance.
 		
 	\end{enumerate}
 	
 	\subsection{Scoring System}
 	
 	% Difference scoring system
-	At the project start a goal was made about creating a severity scoring system for co-morbidities. To achieve this goal of creating a score from categorical data, as little data reduction as possible should be done to keep the score quality as high as possible. The proposed ordinal system however actually reduces information. There is no distinction between two or three co-morbidities. The type of co-morbidity is removed, too, as well as its progress after surgery. This is a very counter intuitive way to correctly model a scoring system when these three decisions all could contribute to more efficient scale.
+	At the project start a goal was made about creating a severity scoring system for co-morbidities. To achieve that from categorical data, as little data reduction as possible should be done to keep the score quality as high as possible. The proposed ordinal system however actually reduces information. First there is no distinction between two or three co-morbidities. The type of co-morbidity is removed, too, as well as its progress after surgery. This is a very counter intuitive way to correctly model a scoring system when these three decisions all could contribute to a more efficient scale.
 	
 	% Final scoring system
-	The final scoring system was not really an answer to the original goal. The goal was to create a severity score, whereas the linear predictor score in the nomogram is originated from its probability counterpart and not really showing severity. As discussed earlier, it was hard to create a severity score from categorical labelling, so maybe this goal might be too ambitious. %Using predictability score was a straightforward start for this, though, as those could be calculated. Further research could lead to a severity score from that. 
+	A second remark about the scoring system is about the final product. The linear predictor score was not really an answer to the original goal. The goal was to create a severity score, whereas the linear predictor score in the nomogram is originated from its probability counterpart and not really showing severity. As discussed earlier, it was hard to create a severity score from categorical labelling, so maybe that goal might be too ambitious. %Using predictability score was a straightforward start for this, though, as those could be calculated. Further research could lead to a severity score from that. 
 	
 	% Better proposal
-	For this research it seemed better to keep the three co-morbidities separate as long as possible. For every co-morbidity separately a score could be made which in the end could be joined together. This score would at the start be best based on a probability, so how much chance there was to have a certain co-morbidity. After creating probability models for all of them, they could be combined in a joint probability model. While doing this obviously collinearity needed to be taken into account. As recently discussed, a probability model was not according to the goal. A score was wanted and not a probability. Since the data was not gathered in a way to find a score with the measured tasks, this was much harder. After possibly finding good results for a probability model, a next step could be to translate that model in a scoring system.
+	For this research it seemed better to keep the three co-morbidities separate as long as possible. For every co-morbidity separately a score could be made which in the end could be joined together. This score would be best based on a probability at the start, so how much chance there was to have a certain co-morbidity. After creating probability models for all of them, they could be combined in a joint probability model. While doing this, obviously collinearity needed to be taken into account. As recently discussed, a probability model was not according to the goal. A score was desired and not a probability. Since the data was not gathered in a way to find a score with the measured tasks, this was much harder. After possibly finding good results for a probability model, a next step could be to translate that model in a scoring system.
 	
 	\subsection{Modelling Tools}
 
 	% Used modelling tools
-	About every part of the original research was done in R. As discussed previously, especially the variable significance could be done efficiently in R, as it was one of the more advanced tools to do statistical analysis. For the modelling part however there were more advanced programs or frameworks that could be used. One of the reasons for this was to create a "white-box" answer, that every step of the process could be explained. The disadvantage in choosing a white-box model, however, was that the result could be worse than for a more traditional machine learning approach. Those approaches could lead to a better result and were therefore definitely worth to investigate. In R however, machine learning options were extremely limited if even available. Other programs or frameworks could facilitate that better than R, such as python, the Scikit-learn package, Theano or Tensorflow. This could also facilitate a better final visualization result for the scoring system than the nomogram, which was not very user-friendly and straightforward.
+	About every part of the original research was done in R. As discussed previously, especially the variable significance could be done efficiently in R, as it was one of the more advanced tools to do statistical analysis with. For the modelling part however there were more advanced programs or frameworks that could be used. One of the reasons to choose R was to create a "white-box" answer, that every step of the process could be explained. The disadvantage in choosing a white-box model, however, was that the result could be worse than for a more traditional machine learning approach. Those approaches could lead to a better result and were therefore definitely worth to investigate. In R however, machine learning options were extremely limited if even available. Other programs or frameworks could facilitate that better than R, such as Python with the Scikit-learn package, Theano or Tensorflow. This could also facilitate a better final visualization result for the scoring system than the nomogram, which was not very user-friendly and straightforward.
 	
 	\clearpage
 	
@@ -354,54 +354,54 @@
 	\label{sec:FinalProposal}
 	
 	% Introduction final proposal
-	The final proposal combines the first one and the original research for optimization. The research questions from the first proposal are re-used, with some modifications and additions. The hypotheses are changed accordingly. The methods for answering the research questions are similar to the ones in the first proposal, however, they are extended after more information from the original research is added. 
+	The final proposal combined the first one and the original research for optimization. Questions from the first proposal were re-used, with some modifications and additions. The hypotheses were changed accordingly. The methods for answering the research questions were similar to the ones in the first proposal, however, they were extended after more information from the original research was added. 
 	
 	\subsection{Research Questions}
 	
 	% Main research question
-	The main research questions stays the same as the main one of the first proposal. This is the main goal of the research and therefore is a good all-encompassing question for it. 
+	The main research question stayed the same as the one from the first proposal. This was the main goal of the research and therefore was a good all-encompassing question for it. 
 	
 	\begin{enumerate}
 		\item[] \emph{Can a severity score for co-morbidities present in bariatric patients based on biomarkers be developed?}
 	\end{enumerate}
 	
 	% First sub-question
-	The first sub-question also stays mostly the same. It was a bit unclear that there was relevant data in the DATO set. Therefore instead of saying biomarkers, the term "available variables" will be used. The word available is added due to not immediately omitting some of the variables, so their relation to co-morbidities is still investigated.
+	The first sub-question also stayed mostly the same. It was a bit unclear that there was relevant data in the DATO set. Therefore instead of saying biomarkers, the term "available variables" would be used. The word available was added due to not immediately omitting some of the variables, so their relation to co-morbidities would still investigated.
 	
 	\begin{enumerate}
 		\item \emph{Which relations are present between co-morbidities and the available variables?}
 	\end{enumerate}
 	
 	% Addition to first sub-question
-	One thing the original research correctly investigated that was not thought of, was collinearity. This was already investigated for most variables, however the ones then removed might still have collinearity characteristics. Therefore a new sub-question is added to find those characteristics.
+	One thing the original research correctly investigated that was not thought of, was collinearity. This was already investigated for most variables, however the ones then removed might still have collinearity characteristics. Therefore a new sub-question was added to find those.
 	
 	\begin{enumerate}[resume]
 		\item \emph{Which collinearity relations are present within the available variables?}
 	\end{enumerate}
 		
 	% Second sub-question I
-	The other sub-question was about adding a score to the co-morbidities with the variables. This question was quite vague and with the help of the original research it is split up in three separate questions. The first one is about modelling the co-morbidities with variables.
+	The other sub-question was about adding a score to the co-morbidities originated from variables. This question was quite vague and with the help of the original research it was split up in three separate questions. The first one was about modelling the co-morbidities with variables.
 	
 	\begin{enumerate}[resume]
 		\item \emph{How are the co-morbidities best modelled with the available variables?}
 	\end{enumerate}
 	
 	% Second sub-question II
-	The second part of the split sub-question is about the scoring part. Eventually a score should be given to the co-morbidities, which  must be investigated thoroughly.
+	The second part of the split sub-question was about the scoring part. Eventually a score should be given to the co-morbidities, which must be investigated thoroughly.
 	
 	\begin{enumerate}[resume]
 		\item \emph{How can scores best be added to the available co-morbidity models?}
 	\end{enumerate}
 	
 	% Second sub-question III
-	The last part is about combining the co-morbidities together. Until now they are regarded separately, but the eventual result should have these scores combined. Therefore the third one of the split sub-question is about combining those.
+	The last part was about combining the co-morbidities together. Until now they were regarded separately, but the eventual result should have these scores combined. Therefore the third one of the split sub-question was about combining those.
 	
 	\begin{enumerate}[resume]
 		\item \emph{How can the co-morbidity models best be combined?}
 	\end{enumerate}
 	
 	% Final thoughts
-	This main question and the five sub-question should cover all aspects in this research. If all questions are answered, one by one, a scoring model for the co-morbidities should be available for bariatric patients.
+	This main question and the five sub-question should cover all aspects in this research. If all questions were answered one by one, a scoring model for the co-morbidities should be available for bariatric patients.
 	
 	\subsection{Hypotheses}
 	
@@ -440,7 +440,7 @@
 	In preprocessing almost every thing will be done the same as in the original research. Most differences will be in not removing certain parts of the data set. This means that more than one data set can be made for the different instances. All differences will be discussed.
 	
 		\begin{enumerate}
-		\item \textbf{All paired DATO and lab set} All data that is available after pairing the DATO and lab set will be put in a data set. There will not be any distinction between data on predefined moments and not, because for modelling those do not matter at all. I case more results should be generated on those predefined moments, a separate attribute set will be made.
+		\item \textbf{All paired DATO and lab set} All data that is available after pairing the DATO and lab set will be put in a data set. There will not be any distinction between data on predefined moments and not, because for modelling those do not matter at all. In case more results should be generated only on those predefined moments, a separate attribute set will be made to extract those.
 		
 		\item \textbf{Variables omission} Not all variables will be omitted when a significant number of them is available. Relations between those variables and with the co-morbidities will be tested. When finding out that there are significant relations between them, possible further research will be done on both a set with and without them. Variables that fall into this category are the five that are only measured pre-surgery and LDL.
 		
@@ -453,10 +453,10 @@
 	To answer the first two sub-questions, statistical analysis must be done. Correlation matrices must be made to see whether two variables or one and a co-morbidity correlate significantly. Also the variables must be checked on their own population, whether they have a high variance and follow a statistical distribution. In case of high correlations between variables, a joint variable should be created if possible. At last, also combinations of variables should be created and tested for relations with co-morbidities. This all can efficiently be done in Python with the SciPy package.
 	
 	% Co-morbidity modelling
-	A co-morbidity can be modelled using different approaches in machine learning. Several classification techniques are available such as support vector machines (SVM), nearest neighbour (NN), stochastic gradient descent (SGD). Research must be done which is most applicable and testing must be done which gives the best results. This is repeated three times for every co-morbidity. Within Python the Scikit-learn package has the basics to create proper results and if needed, programs such as Theano or TensorFlow can be added. For testing, a similar approach as in the original result can be used, 10 fold cross-validation. The final model and the visualisation depends on the type of machine learning used, however graphs that show clusters of morbidities for several variables seems a good way to approach that.
+	A co-morbidity can be modelled using different approaches in machine learning. Several classification techniques are available such as support vector machines (SVM), nearest neighbour (NN), stochastic gradient descent (SGD). Research must be done which is most applicable and testing must be done which gives the best results. This is repeated three times for every co-morbidity. Within Python the Scikit-learn package has the basics to create proper results and if needed, programs such as Theano or TensorFlow can be used within Python for more extensive research. For testing, a similar approach as in the original result can be used, called 10 fold cross-validation. The final model and the visualisation depends on the type of machine learning used, however graphs that show clusters of morbidities for several variables seems a good way to approach that.
 	
 	% Co-morbidity scoring
-	To add scoring in machine learning approaches is a challenge. At first tests can be done with changing the methods from classification approach to their regression counterpart, for example from SVC (Support Vector Classification) to SVR (-Regression). This can have major for now unknown implications. As discussed earlier (subsection \ref{subsec:FinalMethods}) setting up a score interval should be thought of before and also able to be implemented. The proposed score can be used as a base and be changed if advantageous.
+	Scoring addition in machine learning approaches is a challenge. At first tests can be done with changing the methods from classification approach to their regression counterpart, for example from SVC (Support Vector Classification) to SVR (-Regression). This can have major for now unknown implications. As discussed earlier (subsection \ref{subsec:FinalMethods}) setting up a score interval should be thought of before and also able to be implemented. The proposed score can be used as a base and be changed if advantageous.
 	
 	% Co-morbidity combination
 	The last challenge is to create a model that combines all three of the co-morbidities. To start this, all three separate models can be used to create the combination. If this does not give the desired results and makes scores much worse than initially thought, a similar ordinal system as used in the original approach can be used. Then sub-questions three and four are repeated only with co-morbidities combined, removing details from each different one.
