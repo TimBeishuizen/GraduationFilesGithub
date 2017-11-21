@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2017.11.1)  14 NOV 2017 15:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2017.11.1)  21 NOV 2017 16:53
 entering extended mode
 **./ComputationalBiologyFramework.tex
 (ComputationalBiologyFramework.tex
@@ -853,44 +853,53 @@ been already used, duplicate ignored
 l.88 	\clearpage
                  [1] [2
 
-]
-Overfull \hbox (6.15526pt too wide) in paragraph at lines 134--143
+] [3]
+Overfull \hbox (6.15526pt too wide) in paragraph at lines 138--147
 []\OT1/cmr/m/n/10 Interactive vi-sual meth-ods have been uti-lized within a wid
 e spec-trum of do-mains. In biomedicine,
  []
 
-[3] [4] (ComputationalBiologyFramework.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 209.
- [5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 209.
+[4] [5]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 271.
 
-(ComputationalBiologyFramework.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 209.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 209.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 271.
+ [6]
+(ComputationalBiologyFramework.bbl [7])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 283.
+ [8]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 283.
+ (ComputationalBiologyFramework.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 283.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 283.
 Package rerunfilecheck Info: File `ComputationalBiologyFramework.out' has not c
 hanged.
-(rerunfilecheck)             Checksum: 8F43EE00B8728CD3EE035A6BE9C5CB9A;620.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 209.
+(rerunfilecheck)             Checksum: 9EF75D074C93EC8170A2C0634F746592;707.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 283.
  ) 
 Here is how much of TeX's memory you used:
- 10420 strings out of 493318
- 148058 string characters out of 3139046
- 257894 words of memory out of 3000000
- 13767 multiletter control sequences out of 15000+200000
+ 10461 strings out of 493318
+ 148783 string characters out of 3139046
+ 258319 words of memory out of 3000000
+ 13793 multiletter control sequences out of 15000+200000
  8327 words of font info for 32 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,11n,43p,1688b,437s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 28i,11n,43p,1689b,466s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiK
 TeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/f
 onts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmtt12.pfb>
-Output written on ComputationalBiologyFramework.pdf (6 pages, 146739 bytes).
+1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmt
+t12.pfb>
+Output written on ComputationalBiologyFramework.pdf (9 pages, 172539 bytes).
 PDF statistics:
- 146 PDF objects out of 1000 (max. 8388607)
- 28 named destinations out of 1000 (max. 500000)
- 81 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 206 PDF objects out of 1000 (max. 8388607)
+ 40 named destinations out of 1000 (max. 500000)
+ 89 words of extra memory for PDF output out of 10000 (max. 10000000)
 

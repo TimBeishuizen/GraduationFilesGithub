@@ -88,49 +88,53 @@
 	\clearpage
 	
 	\section{Introduction}
+	\label{sec:Introduction}
 	
 	% Quick explanation for graduation project
-	At the Computational Biology department (cBio) of Biomedical Engineering (BME), many requests are made to analyse gathered data. This data usually stems from research in hospitals, but can also be from other BME groups and publicly available. Currently a standard is missing to efficiently analyse those data sets. With the vast number of data sets that are available, such a standard in the form of a framework on data analysis would be valuable. It would speed up projects and give them a higher chance to succeed the goal, due to improved efficiency. Before a framework can be made however a research must be done on all aspects that influence a research.
+	At the Computational Biology department (cBio) of Biomedical Engineering (BME), many requests are made to analyse gathered data. This data usually stems from research in hospitals, but can also be from other BME groups and publicly available. Currently a standard is missing to efficiently analyse those data sets. With the vast number of data sets that are available, such a standard in the form of a framework on data analysis would be valuable. It would speed up projects and give them a higher chance to succeed the goal, due to improved efficiency. Before a framework can be made however a research must be done on all aspects that influence data analysis.
 	
 	% Layout graduation project
-	First an extensive background on important topics for such a framework will be discussed. Four different parts are explained why they are important for the creation of such a framework. These parts are: biomedical data (data used for analysis), data analysis goal (how does a goal influence the choice of analysis), data analysis frameworks (which programs and frameworks can be used for analysis) and at last biomedical knowledge (what engineers of BME already know about data analysis). After the extensive background research, a research question will be formulated with several sub-questions for each of the four parts and a hypothesis as an answer for each of the four questions.
+	First an extensive background on important topics for such a framework will be discussed. Four different parts are explained why they are important for the creation of such a framework. These parts are: biomedical data (data used for analysis), data analysis goal (how does a goal influence the choice of analysis), data analysis tools (which ones are usable) and at last biomedical knowledge (what engineers of BME and third parties already know about data analysis). After the extensive background research, a research question will be formulated with several sub-questions for each of the four parts and a hypothesis as an answer for each of the four questions.
 	
 	\section{Background}
+	\label{sec:Background}
 	
 	% Biomedical engineering description.
 	Biomedical engineering can be seen as a specific part of engineering with a wide variety of topics. These topics can be theoretical, non-experimental undertakings, but also state-of-the-art applications. Not only research and development can be used, but also implementation and operation. Combining all of these different parts in one definition is hard. \cite{bronzino2014biomedical} For this project, the focus is mainly on research and development and a layout for such a biomedical project can be given.
 	
 	% Biomedical research summary
-	When a biomedical engineer starts a project, at the start usually only a data set and the research goal are known. To achieve that certain goal from the data set, several different aspects influence the project's course and development. At first obviously the data itself is a big part of such an influencer as the research is restricted to limitations from it. Examples of such restrictions are multidimensionality, set size, data heterogeneity and missing feature values. The other obvious influencer is the main research goal. Since the biomedical engineer wants to achieve a certain goal, the approach outcome must match that goal for the research to be successful. Most goals are focused around either data mining, extracting relations from available data, or modelling, creating a model within data features. A third influencer is the availability of data analysis frameworks. The steps to take from data to goal do not only include an approach, but also a framework to execute it. The choice of a certain framework has a big impact on the project, as each one of them has its own advantages and disadvantages. The two most well known frameworks within BME are MATLAB and Python, however some engineers have used R, Java or C++ and there are still other possibilities. A last big influencer is the biomedical knowledge. What experience the scientist already has with similar projects can greatly influence the choice of approach and framework. Knowledge of the supervisor and publicly known information on the research subject from books and articles also influence the approach, as already known outcomes do not have to be researched again. 
+	When a biomedical engineer starts a project, at the start usually only a data set and the research goal are known. To achieve that certain goal from the data set, several different aspects influence the project's course and development. At first obviously the data itself is a big part of such an influencer as the research is restricted to limitations from it. Examples of such restrictions are multidimensionality, set size, data heterogeneity, missing feature values and population handling. The other obvious influencer is the main research goal. Since the biomedical engineer wants to achieve a certain goal, the approach outcome must match that goal for the research to be successful. Most goals are focused around either data mining, extracting relations from available data, or modelling, creating a model within data features. A third influencer is the availability of data analysis tools. The steps to take from data to goal do not only include an approach, but also a tool to execute it. The choice of a certain tool has a big impact on the project, as each one of them has its own advantages and disadvantages. The two most well known tools within BME are MATLAB and Python, however some engineers have used R, Java or C++ and there are still other possibilities. A last big influencer is the biomedical knowledge. What experience the scientist already has with similar projects can greatly influence the choice of approach and framework. Knowledge of the supervisor and publicly known information on the research subject from books and articles also influence the approach, as already known outcomes do not have to be researched again. 
 	
 	% Process steps for biomedical research
-	Knowledge discovery is a non-trivial process of identifying valid, novel, potentially useful and ultimately understandable patterns from large collections of data [18]. One of the knowledge discovery steps is the data mining step concerned with actual extraction of knowledge from data. Design of a framework for a knowledge discovery process is important. Researchers have described a series of steps that constitute the KD process, which range from few steps that usually include data collection and understanding, data mining and implementation, to more sophisticated models like the nine-step model proposed by Fayyad et al. [19], or the six-step DMKD process model by Cios et al. [13] and Cios and Moore [14]. The latter model has been successfully applied to several medical problem domains [24,40]; it added several extensions to the CRISP-DM model [17]. \cite{CIOS20021}
+	Previous research projects on data mining have called for a model how to retrieve patterns from data collections. Frameworks to effectively do that have been proposed, usually with a number of steps.\cite{CIOS20021} These suggested frameworks do not specifically fit the cBio group though for being to broad \cite{fayyad1996knowledge} or being to specific. \cite{cios2000knowledge} A customized framework is needed. 
 	
-	\subsection{Biomedical data}
+	\subsection{Biomedical Data}
+	\label{subsec:BiomedicalData}
 	
-	% High dimensionality
-	One of the core issues in biomedical data analysis and mining is the so-called ‘curse of dimensionality’ [5–7], particularly the biomedical data are characterized by relatively few instances and presented in a high-dimensional feature space. Irrelevant features not only lead to insufficient classification accuracy, but also add extra difficulties in finding potentially useful knowledge [8,9]. Excluding irrelevant features facilitates data visualization and improves the understanding of the computational models, the feature selection has thus become one of the main sub-fields in biomedical data mining [10–12]. In addition, appropriate feature selection is able to reduce the requirements of measurement and storage and thus minimize the cost in database storage and management [10,13]. In the context of classification, the main goal of feature selection is to search for an optimal feature subset from the initial feature set that lead to improved classification performance and efficiency in generating classification model. \cite{PENG201015}
+	% Introduction biomedical data
+	A big aspect of choosing how to set up the data analysis is the data itself. The amount of data in the biomedical world is growing at an enormous rate, faster than biomedical engineers can analyse. Due to this rapid growth being uncontrollable, several additional challenges arose, aside being more than the biomedical world can handle. These challenges are mainly focused around data volume, dimensionality, complexity, heterogeneity and quality.\cite{chen2006medical}
 	
-	% Data set problems (many differnt ones)
+	% Volume challenge
+	Collecting data because it is possible can make data sets bigger than needed. Both in number of instances and features, data sets can be harder to understand or analyse when more is available.\cite{chen2006medical} This volume problem usually is tackled by taking sub-populations of the complete set. These sub-sets can either be focused around a part of the population (gender, age, race) or taken at random to still represent all of it. Due to the efficiency of analysis techniques and the rise in computational speed of servers\cite{blythe2008rise}, volume on its own becomes less of an issue. Volume does however become an issue when combining with heterogeneity and quality. \cite{Turkay2014, Holzinger2014} 
+	
+	% Dimensionality challenge
+	Not all data sets have a high number of instances that cause a big data volume. Sometimes there are relatively few instances, while the number of features is proportionally high. Usually many of those features are not relevant enough for the research, however are still used for testing. Trying to remove features that are not important, will greatly help finding relations between the others and create more knowledge about the research topic. Lowering the number of features also makes the data volume go down, so analysis should be easier. Mainly an optimal features set should be selected to obtain the best results. \cite{PENG201015}
+	
+	% Complexity challenge
+	Biomedical data can also be very complex. Useful results may be present, however it can be very hard to obtain it. Examples of complex data are images, several biomedical signals and temporal data. Details of the useful results that are present in images can for example be very hard to detect, the temporal data can vary quite much over time and the biomedical signals can be hard to combine with static biomarkers. This aspect can benefit from exchanging knowledge with other research areas that specialize in mining of those complex data sets. \cite{Turkay2014, bellazzi2011data}
+	
+	% Heterogeneity challenge
+	The biggest challenge encompasses aligning different data sets. No standard for data sets is available and therefore data sets differ greatly from each other. Data is weakly structured or even unstructured \cite{Holzinger2014} and variables are processed differently due to other protocols or the collectors' preference of representation.\cite{Otasek2014} Also the variety of data is hard to combine when sources are fundamentally different. When parts of the data are images, another part is a table from the laboratory and a third part is textual remarks of the doctor, standardizing merging those three is much harder than merging three lab sets. Those merges are also very prone to errors, as imprecisions can be vastly different between those data sets. No tool can work directly with these raw data sets and preprocessing must almost definitely occur beforehand.\cite{CIOS20021, Turkay2014}
+	
+	% Quality challenge
+	
+	% Data set heterogeneity and quailty
 	Raw medical data are voluminous and heterogeneous. Medical data may be collected from various images, interviews with the patient, laboratory data, and the physician’s observations and interpretations. All these components may bear upon the diagnosis, prognosis, and treatment of the patient, and cannot be ignored.  This heterogeneity requires high capacity data storage devices and new tools to analyze such data. he physician’s interpretation of images, signals, or any other clinical data, is written in unstructured free-text English, that is very difficult to standardize and thus difficult to mine. Nearly all diagnoses and treatments in medicine are imprecise, and are subject to rates of error. Another unique feature of medical data mining is that the underlying data structures of medicine are poorly characterized mathematically, as compared to many areas of the physical sciences. Because of the sheer volume and heterogeneity of medical databases, it is unlikely that any current data mining tool can succeed with raw data. In any large database, we encounter a problem of missing values. The medical data set may contain redundant, insignificant, or inconsistent data objects and/or attributes. \cite{CIOS20021}
 	
-	% Data complexities
+	% Data quality
 	First, in many cases, the quality of data in the biomedical and healthcare fields is inferior to that found in other fields because of many reasons: (1) Medical data inevitably contains many missing values [Ichise, R., and Numao Learning, M., First-order rules to handle medical data. NII Journal]. This occurs because even patients with the same disease(s) do not always undergo identical examinations and lab tests (due to different ages, symptoms, family histories, and/or risks of complications) which results in different, and sometimes more or less, data sets being generated. In addition, medical data often contains time-series attributes (meaning that dates of examinations and lab tests are very important from a clinical perspective) so researchers must handle these data sets with special consideration of the time element. (2) Because hospital information systems or hospital databases are primarily designed for financial/billing purposes and not for medical/clinical purposes [24, 25], it can be especially challenging to obtain high quality data for clinical data mining. (3) In the United States, for example, many hospitals do not use full (i.e., no-paper) EMR systems. Thus, much of medical data (especially lab test results) are paper-based which, in turn, results in medical data that are often incomplete in terms of electronic availability [26]. In addition, much of the historical patient data are paper-based or in scanned-digital format so those data cannot be used for data mining without significant data preparation. \cite{Yoo2012}
 	
-	% Data heterogeneity
-	There is the pressing need to combine vast amounts of diverse data, including
-	structured, semi-structured and weakly structured data and unstructured information
-	[11]. \cite{Holzinger2014}
-	
-	% Data heterogeneity
-	The problem is that these data sets are characterized by heterogeneous and
-	diverse features. Individual data collectors prefer their own different schema or
-	protocols for data recording, and the diverse nature of the applications used results in
-	various data representations. Data heterogeneity and diverse
-	dimensionality issues then become major challenges if we are trying to enable data
-	aggregation by combining data from all sources [8], [9]. \cite{Otasek2014}
-	
-	
+	% Data complexity
 	Interactive visual methods have been utilized within a wide spectrum of domains.
 	In biomedicine, visualization is specifically required to support data analysts in
 	tackling with problems inherent in this domain [19–21]. These can be summarized
@@ -141,7 +145,19 @@
 	increasing amounts of unstructured information. biomedical data analysts have to deal with results from various sources in different
 	structural dimensions \cite{Turkay2014}
 	
-	Even if a variety of methods is available to deal with biomedical signals and timevarying data, none of these tools is able alone to cope with the inherent complexity of temporal information and temporal reasoning\cite{bellazzi2011data}
+	It has been generally recognized that patient record management systems
+	is highly desired in clinical settings (Heathfield and Louw, 1999; Jackson,
+	2000; Abidi, 2001). The major reasons include physicians' significant
+	information needs (Dawes and Sampson, 2003) and clinical information
+	overload. Hersh (1996) classified textual health information into two main
+	categories: patient-specific clinical information and knowledge-based
+	information, which includes research reported in academic journals, books,
+	technical reports, and other sources. Both types of information are growing
+	at an overwhelming pace. \cite{chen2006medical}
+	
+	 In particular, exploring the associations among all the different pieces of information in these data sets is a fundamental problem to develop reliable medical tools based on data-driven approaches and machine learning.  \cite{doi:10.1093/bib/bbx044}
+	 
+	Although existing models demonstrate great promises (e.g. [7–11]), predictive tools based on machine learning techniques have not been widely applied in medicine [12]. In fact, there remain many challenges in making full use of the biomedical data, owing to their high-dimensionality, heterogeneity, temporal dependency, sparsity and  \cite{doi:10.1093/bib/bbx044}
 	
 	\subsection{Data Analysis Goals}
 	
@@ -159,11 +175,13 @@
 	data derived from different experiments, and they emphasize the importance of
 	network analysis for the recognition of interaction context-specific features. \cite{Holzinger2014}
 	
+	% Approaches for efficient data sharing
 	The ability to share data effectively and efficiently is the starting point for successful
 	analysis, and thus several attempts have been made to standardize formats for such
 	data exchange: PSI-MI [35], BioPAX [42], KGML, SBML [40], GML, CML, and
 	CellML [30]. \cite{Otasek2014}
 	
+	% Way to combine data
 	Kernel methods [6–8] incorporate important distinctions from traditional statistical
 	pattern recognition approaches, which typically involve an analysis of
 	object clustering within a measurement space. Rather, kernel-based approaches
@@ -187,10 +205,38 @@
 	% Two data mining types (read the article for further interest! - http://www.sciencedirect.com/science/article/pii/S1359644611004338)
 	In response to the huge demand of data mining for target discovery in the ‘omics’ era, this review explicates various data mining approaches and their applications to target discovery with emphasis on text and microarray data analysis. \cite{YANG2012S16}
 	
+	% Data warehouse creation
 	Once these data have been collected, we
 	can create a data warehouse and retrieve
 	special case data or apply data mining to
 	find hidden facts and rules \cite{bellazzi2011data}
+	
+	 Data mining
+	aims to analyze a set of given data or information in order to identify novel
+	and potentially useful patterns \cite{chen2006medical}
+	
+	Especially in high-dimensional biomedical data sets, it is of great importance to find underlying patterns in the data. In this work we present an intuitive and easy-to-compute method that finds groups of similar objects by utilizing a network structure of the data. The key idea is that every object first ranks its neighbors and in a second step, the overlap of nearest neighbors between all objects is computed and stored in a sparse adjacency matrix. \cite{7024124}
+	
+	\subsubsection{Machine Learning}
+	
+	% part of machine learning
+	A machine learning technique gaining increasing recognition and
+	popularity in recent years is the support vector machines (SVMs). SVM is
+	based on statistical learning theory that tries to find a hyperplane to best
+	separate two or multiple classes (Vapnik, 1998). This statistical learning
+	model has been applied in different applications and the results have been
+	encouraging. For example, it has been shown that SVM achieved the best
+	performance among several learning methods in document classification
+	(Joachims, 1998; Yang and Liu, 1999). SVM is also suitable for various
+	biomedical classification problems, such as disease state classification based
+	on genetic variables or medical diagnosis based on patient indicators. \cite{chen2006medical}
+	
+	The accuracy of a learning system needs to be evaluated before it can
+	become useful. Limited availability of data often makes estimating accuracy
+	a difficult task (Kohavi, 1995). Choosing a good evaluation methodology is
+	very important for machine learning systems development. \cite{chen2006medical}
+	
+	Machine learning is a general-purpose method of artificial intelligence that can learn relationships from the data without the need to define them a priori \cite{doi:10.1093/bib/bbx044}
 	
 	\subsection{Data Analysis Frameworks}
 	
@@ -217,6 +263,15 @@
 	
 	The traditional approach in biomedical science has been knowledge-driven and aimed at generating hypotheses from domain knowledge in a top-down fashion. Within biomedical data mining, one of the most
 	interesting aspects is the exploitation of domain knowledge and the integration of different data sources in the data analysis process. As a matter of fact, data analysis is strongly empowered by the knowledge available in electronic format, which can be either already formalized, say through ontology and annotation repositories, or still informal but novel, as, for example, the one reported in Pubmed abstracts and papers\cite{bellazzi2011data}
+	
+	Perhaps the most distinctive feature that accompanies medical data analysis is knowledge; data analysis in medicine strives to discover new and useful knowledge, while using available knowledge to guide the process and incorporate it into discovered models. In these terms, we perform data analysis to extract new findings that either refine or supplement existing knowledge on the problem domain, a population of patients, or a specific patient under consideration. \cite{zupan2006knowledge}
+	
+	In data analysis, knowledge is represented either implicitly or explicitly. By explicit knowledge we refer to knowledge already established, formalized and coded within some knowledge base. Such knowledge is used in some way in the process of data analysis. Researchers in machine learning often refer to such knowledge as “background knowledge,” and use it in learning either in data preprocessing, feature selection or modeling. While this approach seems very promising in medical applications, the number of methods, tools and applications of such an approach are few. Most applications of data mining in medicine, for instance, have focused on building models directly from data and do not consider any explicitly represented knowledge in the process. These applications leave the interpretation of the models and the placement of any new information found in this way within the context of the available knowledge to analysts and domain experts. \cite{zupan2006knowledge}
+	
+	•The process of feature selection, or determining the set of variables that are thought best, a priori, to contribute to an analysis depends on an intimate familiarity with the problem domain. Numerous methods are available for reducing the feature space. Some are cognitive, such as expert panel verification, while others are computational. Results of either type of approach may be combined with existing knowledge to select most informative and interesting features that cover the problem from various angles.
+	•The selection of preprocessing methods that may be required for certain data mining tasks depends on expertise in using not only the preprocessing methods but the data mining tools that may require the use of such methods. Discretization of continuous variables is an example of such a method. While the knowledge required for this task would appear to be primarily analytic, problem domain knowledge is needed as well, since some methods (such as discretization) can cause the loss of important scientific or clinical information.
+	•The selection of an appropriate modeling methodology would also appear to be primarily in the analytic domain. However, the contribution of clinical or scientific knowledge to the modeling process cannot be underestimated. Examples of this are knowing when and how to model feature interactions. The selection and creation of these models requires collaboration between domain and analytic experts, due to the domain-specific realities of complex interactions and analysis-specific realities (and constraints) of computational complexity.
+	•Finally, the selection of an appropriate methodology for presenting the results of an analysis requires expertise in such methodologies, but also in the clinical and scientific domain experts to whom the presentation is targeted. The primary goal of these methods is to reveal discovered knowledge in the optimal way to facilitate its communication to all members of the research team.\cite{zupan2006knowledge}
 	
 	\section{Research Question}
 	

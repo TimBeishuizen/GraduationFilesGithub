@@ -9,16 +9,31 @@ K.~J. Cios and G.~W. Moore, ``Uniqueness of medical data mining,'' {\em
   Artificial Intelligence in Medicine}, vol.~26, no.~1, pp.~1 -- 24, 2002.
 \newblock Medical Data Mining and Knowledge Discovery.
 
-\bibitem{PENG201015}
-Y.~Peng, Z.~Wu, and J.~Jiang, ``A novel feature selection approach for
-  biomedical data classification,'' {\em Journal of Biomedical Informatics},
-  vol.~43, no.~1, pp.~15 -- 23, 2010.
+\bibitem{fayyad1996knowledge}
+U.~M. Fayyad, G.~Piatetsky-Shapiro, P.~Smyth, {\em et~al.}, ``Knowledge
+  discovery and data mining: Towards a unifying framework.,'' in {\em KDD},
+  vol.~96, pp.~82--88, 1996.
 
-\bibitem{Yoo2012}
-I.~Yoo, P.~Alafaireet, M.~Marinov, K.~Pena-Hernandez, R.~Gopidi, J.-F. Chang,
-  and L.~Hua, ``Data mining in healthcare and biomedicine: A survey of the
-  literature,'' {\em Journal of Medical Systems}, vol.~36, pp.~2431--2448, Aug
-  2012.
+\bibitem{cios2000knowledge}
+K.~J. Cios, A.~Teresinska, S.~Konieczna, J.~Potocka, and S.~Sharma, ``A
+  knowledge discovery approach to diagnosing myocardial perfusion,'' {\em IEEE
+  Engineering in Medicine and Biology Magazine}, vol.~19, no.~4, pp.~17--25,
+  2000.
+
+\bibitem{chen2006medical}
+H.~Chen, S.~S. Fuller, C.~Friedman, and W.~Hersh, {\em Medical informatics:
+  knowledge management and data mining in biomedicine}, vol.~8.
+\newblock Springer Science \& Business Media, 2006.
+
+\bibitem{blythe2008rise}
+D.~Blythe, ``Rise of the graphics processor,'' {\em Proceedings of the IEEE},
+  vol.~96, no.~5, pp.~761--778, 2008.
+
+\bibitem{Turkay2014}
+C.~Turkay, F.~Jeanquartier, A.~Holzinger, and H.~Hauser, {\em On
+  Computationally-Enhanced Visual Analysis of Heterogeneous Data and Its
+  Application in Biomedical Informatics}, pp.~117--140.
+\newblock Berlin, Heidelberg: Springer Berlin Heidelberg, 2014.
 
 \bibitem{Holzinger2014}
 A.~Holzinger and I.~Jurisica, {\em Knowledge Discovery and Data Mining in
@@ -26,16 +41,32 @@ A.~Holzinger and I.~Jurisica, {\em Knowledge Discovery and Data Mining in
   Learning Solutions}, pp.~1--18.
 \newblock Berlin, Heidelberg: Springer Berlin Heidelberg, 2014.
 
+\bibitem{PENG201015}
+Y.~Peng, Z.~Wu, and J.~Jiang, ``A novel feature selection approach for
+  biomedical data classification,'' {\em Journal of Biomedical Informatics},
+  vol.~43, no.~1, pp.~15 -- 23, 2010.
+
+\bibitem{bellazzi2011data}
+R.~Bellazzi, M.~Diomidous, I.~N. Sarkar, K.~Takabayashi, A.~Ziegler, A.~T.
+  McCray, {\em et~al.}, ``Data analysis and data mining: current issues in
+  biomedical informatics,'' {\em Methods of information in medicine}, vol.~50,
+  no.~6, p.~536, 2011.
+
 \bibitem{Otasek2014}
 D.~Otasek, C.~Pastrello, A.~Holzinger, and I.~Jurisica, {\em Visual Data
   Mining: Effective Exploration of the Biological Universe}, pp.~19--33.
 \newblock Berlin, Heidelberg: Springer Berlin Heidelberg, 2014.
 
-\bibitem{Turkay2014}
-C.~Turkay, F.~Jeanquartier, A.~Holzinger, and H.~Hauser, {\em On
-  Computationally-Enhanced Visual Analysis of Heterogeneous Data and Its
-  Application in Biomedical Informatics}, pp.~117--140.
-\newblock Berlin, Heidelberg: Springer Berlin Heidelberg, 2014.
+\bibitem{Yoo2012}
+I.~Yoo, P.~Alafaireet, M.~Marinov, K.~Pena-Hernandez, R.~Gopidi, J.-F. Chang,
+  and L.~Hua, ``Data mining in healthcare and biomedicine: A survey of the
+  literature,'' {\em Journal of Medical Systems}, vol.~36, pp.~2431--2448, Aug
+  2012.
+
+\bibitem{doi:10.1093/bib/bbx044}
+R.~Miotto, F.~Wang, S.~Wang, X.~Jiang, and J.~T. Dudley, ``Deep learning for
+  healthcare: review, opportunities and challenges,'' {\em Briefings in
+  Bioinformatics}, p.~bbx044, 2017.
 
 \bibitem{Windridge2014}
 D.~Windridge and M.~Bober, {\em A Kernel-Based Framework for Medical Big-Data
@@ -49,9 +80,19 @@ Y.~Yang, S.~J. Adelstein, and A.~I. Kassis, ``Target discovery from data mining
 \newblock Strategic Approach to Target Identification and Validation: A
   Supplement to Drug Discovery Today.
 
+\bibitem{7024124}
+J.~E. Vogt, ``Unsupervised structure detection in biomedical data,'' {\em
+  IEEE/ACM Transactions on Computational Biology and Bioinformatics}, vol.~12,
+  pp.~753--760, July 2015.
+
 \bibitem{Kobayashi2014}
 M.~Kobayashi, {\em Resources for Studying Statistical Analysis of Biomedical
   Data and R}, pp.~183--195.
 \newblock Berlin, Heidelberg: Springer Berlin Heidelberg, 2014.
+
+\bibitem{zupan2006knowledge}
+B.~Zupan, J.~H. Holmes, and R.~Bellazzi, ``Knowledge-based data analysis and
+  interpretation,'' {\em Artificial Intelligence in Medicine}, vol.~37, no.~3,
+  pp.~163--165, 2006.
 
 \end{thebibliography}
