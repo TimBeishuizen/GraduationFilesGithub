@@ -4,6 +4,10 @@
 J.~D. Bronzino and D.~R. Peterson, {\em Biomedical engineering fundamentals}.
 \newblock CRC press, 2014.
 
+\bibitem{bramer2007principles}
+M.~Bramer, {\em Principles of data mining}, vol.~180.
+\newblock Springer, 2007.
+
 \bibitem{CIOS20021}
 K.~J. Cios and G.~W. Moore, ``Uniqueness of medical data mining,'' {\em
   Artificial Intelligence in Medicine}, vol.~26, no.~1, pp.~1 -- 24, 2002.
@@ -25,6 +29,11 @@ H.~Chen, S.~S. Fuller, C.~Friedman, and W.~Hersh, {\em Medical informatics:
   knowledge management and data mining in biomedicine}, vol.~8.
 \newblock Springer Science \& Business Media, 2006.
 
+\bibitem{doi:10.1093/bib/bbx044}
+R.~Miotto, F.~Wang, S.~Wang, X.~Jiang, and J.~T. Dudley, ``Deep learning for
+  healthcare: review, opportunities and challenges,'' {\em Briefings in
+  Bioinformatics}, p.~bbx044, 2017.
+
 \bibitem{blythe2008rise}
 D.~Blythe, ``Rise of the graphics processor,'' {\em Proceedings of the IEEE},
   vol.~96, no.~5, pp.~761--778, 2008.
@@ -41,10 +50,21 @@ A.~Holzinger and I.~Jurisica, {\em Knowledge Discovery and Data Mining in
   Learning Solutions}, pp.~1--18.
 \newblock Berlin, Heidelberg: Springer Berlin Heidelberg, 2014.
 
+\bibitem{dubitzky2007fundamentals}
+W.~Dubitzky, M.~Granzow, and D.~P. Berrar, {\em Fundamentals of data mining in
+  genomics and proteomics}.
+\newblock Springer Science \& Business Media, 2007.
+
 \bibitem{PENG201015}
 Y.~Peng, Z.~Wu, and J.~Jiang, ``A novel feature selection approach for
   biomedical data classification,'' {\em Journal of Biomedical Informatics},
   vol.~43, no.~1, pp.~15 -- 23, 2010.
+
+\bibitem{Yoo2012}
+I.~Yoo, P.~Alafaireet, M.~Marinov, K.~Pena-Hernandez, R.~Gopidi, J.-F. Chang,
+  and L.~Hua, ``Data mining in healthcare and biomedicine: A survey of the
+  literature,'' {\em Journal of Medical Systems}, vol.~36, pp.~2431--2448, Aug
+  2012.
 
 \bibitem{bellazzi2011data}
 R.~Bellazzi, M.~Diomidous, I.~N. Sarkar, K.~Takabayashi, A.~Ziegler, A.~T.
@@ -57,21 +77,37 @@ D.~Otasek, C.~Pastrello, A.~Holzinger, and I.~Jurisica, {\em Visual Data
   Mining: Effective Exploration of the Biological Universe}, pp.~19--33.
 \newblock Berlin, Heidelberg: Springer Berlin Heidelberg, 2014.
 
-\bibitem{Yoo2012}
-I.~Yoo, P.~Alafaireet, M.~Marinov, K.~Pena-Hernandez, R.~Gopidi, J.-F. Chang,
-  and L.~Hua, ``Data mining in healthcare and biomedicine: A survey of the
-  literature,'' {\em Journal of Medical Systems}, vol.~36, pp.~2431--2448, Aug
-  2012.
+\bibitem{marenco2004qis}
+L.~Marenco, T.-Y. Wang, G.~Shepherd, P.~L. Miller, and P.~Nadkarni, ``Qis: A
+  framework for biomedical database federation,'' {\em Journal of the American
+  Medical Informatics Association}, vol.~11, no.~6, pp.~523--534, 2004.
 
-\bibitem{doi:10.1093/bib/bbx044}
-R.~Miotto, F.~Wang, S.~Wang, X.~Jiang, and J.~T. Dudley, ``Deep learning for
-  healthcare: review, opportunities and challenges,'' {\em Briefings in
-  Bioinformatics}, p.~bbx044, 2017.
+\bibitem{bichutskiy2006heterogeneous}
+V.~Y. Bichutskiy, R.~Colman, R.~K. Brachmann, and R.~H. Lathrop,
+  ``Heterogeneous biomedical database integration using a hybrid strategy: a
+  p53 cantcer research database,'' {\em Cancer informatics}, vol.~2, p.~277,
+  2006.
+
+\bibitem{sperzel1991biomedical}
+W.~Sperzel, R.~Abarbanel, S.~Nelson, M.~Erlbaum, D.~Sherertz, M.~Tuttle,
+  N.~Olson, and L.~Fuller, ``Biomedical database inter-connectivity: an
+  experiment linking mim, genbank, and meta-1 via medline.,'' in {\em
+  Proceedings of the Annual Symposium on Computer Application in Medical Care},
+  p.~190, American Medical Informatics Association, 1991.
+
+\bibitem{aubry1988design}
+F.~Aubry, S.~Badaoui, H.~Kaplan, and R.~D. Paola, ``Design and implementation
+  of a biomedical image database (bdim),'' {\em Medical Informatics}, vol.~13,
+  no.~4, pp.~241--248, 1988.
 
 \bibitem{Windridge2014}
 D.~Windridge and M.~Bober, {\em A Kernel-Based Framework for Medical Big-Data
   Analytics}, pp.~197--208.
 \newblock Berlin, Heidelberg: Springer Berlin Heidelberg, 2014.
+
+\bibitem{hand2001principles}
+D.~J. Hand, H.~Mannila, and P.~Smyth, {\em Principles of data mining}.
+\newblock MIT press, 2001.
 
 \bibitem{YANG2012S16}
 Y.~Yang, S.~J. Adelstein, and A.~I. Kassis, ``Target discovery from data mining

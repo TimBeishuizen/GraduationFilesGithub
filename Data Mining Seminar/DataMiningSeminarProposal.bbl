@@ -1,0 +1,202 @@
+\begin{thebibliography}{10}
+
+\bibitem{Deneer2017Thesis}
+R.~Deneer, ``Scoring co-morbidity severity in bariatric patients based on
+  biomarkers: a data mining approach,'' 2017.
+
+\bibitem{feurer2015efficient}
+M.~Feurer, A.~Klein, K.~Eggensperger, J.~Springenberg, M.~Blum, and F.~Hutter,
+  ``Efficient and robust automated machine learning,'' in {\em Advances in
+  Neural Information Processing Systems}, pp.~2962--2970, 2015.
+
+\bibitem{thornton2013auto}
+C.~Thornton, F.~Hutter, H.~H. Hoos, and K.~Leyton-Brown, ``Auto-weka: Combined
+  selection and hyperparameter optimization of classification algorithms,'' in
+  {\em Proceedings of the 19th ACM SIGKDD international conference on Knowledge
+  discovery and data mining}, pp.~847--855, ACM, 2013.
+
+\bibitem{kotthoff2016auto}
+L.~Kotthoff, C.~Thornton, H.~H. Hoos, F.~Hutter, and K.~Leyton-Brown,
+  ``Auto-weka 2.0: Automatic model selection and hyperparameter optimization in
+  weka,'' {\em Journal of Machine Learning Research}, vol.~17, pp.~1--5, 2016.
+
+\bibitem{olson2016tpot}
+R.~S. Olson and J.~H. Moore, ``Tpot: A tree-based pipeline optimization tool
+  for automating machine learning,'' in {\em Workshop on Automatic Machine
+  Learning}, pp.~66--74, 2016.
+
+\bibitem{banzhaf1998genetic}
+W.~Banzhaf, P.~Nordin, R.~E. Keller, and F.~D. Francone, {\em Genetic
+  programming: an introduction}, vol.~1.
+\newblock Morgan Kaufmann San Francisco, 1998.
+
+\bibitem{olson2016evaluation}
+R.~S. Olson, N.~Bartley, R.~J. Urbanowicz, and J.~H. Moore, ``Evaluation of a
+  tree-based pipeline optimization tool for automating data science,'' in {\em
+  Proceedings of the 2016 on Genetic and Evolutionary Computation Conference},
+  pp.~485--492, ACM, 2016.
+
+\bibitem{Gijsbers2017Thesis}
+P.~Gijsbers, ``Automatic construction of machine learning pipelines,'' 2017.
+
+\bibitem{bronzino2014biomedical}
+J.~D. Bronzino and D.~R. Peterson, {\em Biomedical engineering fundamentals}.
+\newblock CRC press, 2014.
+
+\bibitem{bramer2007principles}
+M.~Bramer, {\em Principles of data mining}, vol.~180.
+\newblock Springer, 2007.
+
+\bibitem{chen2006medical}
+H.~Chen, S.~S. Fuller, C.~Friedman, and W.~Hersh, {\em Medical informatics:
+  knowledge management and data mining in biomedicine}, vol.~8.
+\newblock Springer Science \& Business Media, 2006.
+
+\bibitem{doi:10.1093/bib/bbx044}
+R.~Miotto, F.~Wang, S.~Wang, X.~Jiang, and J.~T. Dudley, ``Deep learning for
+  healthcare: review, opportunities and challenges,'' {\em Briefings in
+  Bioinformatics}, p.~bbx044, 2017.
+
+\bibitem{blythe2008rise}
+D.~Blythe, ``Rise of the graphics processor,'' {\em Proceedings of the IEEE},
+  vol.~96, no.~5, pp.~761--778, 2008.
+
+\bibitem{Turkay2014}
+C.~Turkay, F.~Jeanquartier, A.~Holzinger, and H.~Hauser, {\em On
+  Computationally-Enhanced Visual Analysis of Heterogeneous Data and Its
+  Application in Biomedical Informatics}, pp.~117--140.
+\newblock Berlin, Heidelberg: Springer Berlin Heidelberg, 2014.
+
+\bibitem{Holzinger2014}
+A.~Holzinger and I.~Jurisica, {\em Knowledge Discovery and Data Mining in
+  Biomedical Informatics: The Future Is in Integrative, Interactive Machine
+  Learning Solutions}, pp.~1--18.
+\newblock Berlin, Heidelberg: Springer Berlin Heidelberg, 2014.
+
+\bibitem{dubitzky2007fundamentals}
+W.~Dubitzky, M.~Granzow, and D.~P. Berrar, {\em Fundamentals of data mining in
+  genomics and proteomics}.
+\newblock Springer Science \& Business Media, 2007.
+
+\bibitem{PENG201015}
+Y.~Peng, Z.~Wu, and J.~Jiang, ``A novel feature selection approach for
+  biomedical data classification,'' {\em Journal of Biomedical Informatics},
+  vol.~43, no.~1, pp.~15 -- 23, 2010.
+
+\bibitem{Yoo2012}
+I.~Yoo, P.~Alafaireet, M.~Marinov, K.~Pena-Hernandez, R.~Gopidi, J.-F. Chang,
+  and L.~Hua, ``Data mining in healthcare and biomedicine: A survey of the
+  literature,'' {\em Journal of Medical Systems}, vol.~36, pp.~2431--2448, Aug
+  2012.
+
+\bibitem{bellazzi2011data}
+R.~Bellazzi, M.~Diomidous, I.~N. Sarkar, K.~Takabayashi, A.~Ziegler, A.~T.
+  McCray, {\em et~al.}, ``Data analysis and data mining: current issues in
+  biomedical informatics,'' {\em Methods of information in medicine}, vol.~50,
+  no.~6, p.~536, 2011.
+
+\bibitem{Otasek2014}
+D.~Otasek, C.~Pastrello, A.~Holzinger, and I.~Jurisica, {\em Visual Data
+  Mining: Effective Exploration of the Biological Universe}, pp.~19--33.
+\newblock Berlin, Heidelberg: Springer Berlin Heidelberg, 2014.
+
+\bibitem{CIOS20021}
+K.~J. Cios and G.~W. Moore, ``Uniqueness of medical data mining,'' {\em
+  Artificial Intelligence in Medicine}, vol.~26, no.~1, pp.~1 -- 24, 2002.
+\newblock Medical Data Mining and Knowledge Discovery.
+
+\bibitem{marenco2004qis}
+L.~Marenco, T.-Y. Wang, G.~Shepherd, P.~L. Miller, and P.~Nadkarni, ``Qis: A
+  framework for biomedical database federation,'' {\em Journal of the American
+  Medical Informatics Association}, vol.~11, no.~6, pp.~523--534, 2004.
+
+\bibitem{bichutskiy2006heterogeneous}
+V.~Y. Bichutskiy, R.~Colman, R.~K. Brachmann, and R.~H. Lathrop,
+  ``Heterogeneous biomedical database integration using a hybrid strategy: a
+  p53 cantcer research database,'' {\em Cancer informatics}, vol.~2, p.~277,
+  2006.
+
+\bibitem{sperzel1991biomedical}
+W.~Sperzel, R.~Abarbanel, S.~Nelson, M.~Erlbaum, D.~Sherertz, M.~Tuttle,
+  N.~Olson, and L.~Fuller, ``Biomedical database inter-connectivity: an
+  experiment linking mim, genbank, and meta-1 via medline.,'' in {\em
+  Proceedings of the Annual Symposium on Computer Application in Medical Care},
+  p.~190, American Medical Informatics Association, 1991.
+
+\bibitem{aubry1988design}
+F.~Aubry, S.~Badaoui, H.~Kaplan, and R.~D. Paola, ``Design and implementation
+  of a biomedical image database (bdim),'' {\em Medical Informatics}, vol.~13,
+  no.~4, pp.~241--248, 1988.
+
+\bibitem{Windridge2014}
+D.~Windridge and M.~Bober, {\em A Kernel-Based Framework for Medical Big-Data
+  Analytics}, pp.~197--208.
+\newblock Berlin, Heidelberg: Springer Berlin Heidelberg, 2014.
+
+\bibitem{brazdil1994characterizing}
+P.~Brazdil, J.~Gama, and B.~Henery, ``Characterizing the applicability of
+  classification algorithms using meta-level learning,'' in {\em European
+  conference on machine learning}, pp.~83--102, Springer, 1994.
+
+\bibitem{vilalta2004using}
+R.~Vilalta, C.~G. Giraud-Carrier, P.~Brazdil, and C.~Soares, ``Using
+  meta-learning to support data mining.,'' {\em IJCSA}, vol.~1, no.~1,
+  pp.~31--45, 2004.
+
+\bibitem{brazdil2009development}
+P.~Brazdil, C.~Giraud-Carrier, C.~Soares, and R.~Vilalta, ``Development of
+  metalearning systems for algorithm recommendation,'' {\em Metalearning:
+  Applications to Data Mining}, pp.~31--59, 2009.
+
+\bibitem{claesen2015hyperparameter}
+M.~Claesen and B.~De~Moor, ``Hyperparameter search in machine learning,'' {\em
+  arXiv preprint arXiv:1502.02127}, 2015.
+
+\bibitem{hsu2003practical}
+C.-W. Hsu, C.-C. Chang, C.-J. Lin, {\em et~al.}, ``A practical guide to support
+  vector classification,'' 2003.
+
+\bibitem{bergstra2012random}
+J.~Bergstra and Y.~Bengio, ``Random search for hyper-parameter optimization,''
+  {\em Journal of Machine Learning Research}, vol.~13, no.~Feb, pp.~281--305,
+  2012.
+
+\bibitem{snoek2012practical}
+J.~Snoek, H.~Larochelle, and R.~P. Adams, ``Practical bayesian optimization of
+  machine learning algorithms,'' in {\em Advances in neural information
+  processing systems}, pp.~2951--2959, 2012.
+
+\bibitem{famili1997data}
+A.~Famili, W.-M. Shen, R.~Weber, and E.~Simoudis, ``Data preprocessing and
+  intelligent data analysis,'' {\em Intelligent data analysis}, vol.~1,
+  no.~1-4, pp.~3--23, 1997.
+
+\bibitem{somorjai2004data}
+R.~Somorjai, M.~Alexander, R.~Baumgartner, S.~Booth, C.~Bowman, A.~Demko,
+  B.~Dolenko, M.~Mandelzweig, A.~Nikulin, N.~Pizzi, {\em et~al.}, ``A
+  data-driven, flexible machine learning strategy for the classification of
+  biomedical data,'' {\em Artificial intelligence methods and tools for systems
+  biology}, pp.~67--85, 2004.
+
+\bibitem{karagiannis2011noise}
+A.~Karagiannis and P.~Constantinou, ``Noise-assisted data processing with
+  empirical mode decomposition in biomedical signals,'' {\em IEEE Transactions
+  on Information Technology in Biomedicine}, vol.~15, no.~1, pp.~11--18, 2011.
+
+\bibitem{gamberger2000noise}
+D.~Gamberger, N.~Lavrac, and S.~Dzeroski, ``Noise detection and elimination in
+  data preprocessing: experiments in medical domains,'' {\em Applied Artificial
+  Intelligence}, vol.~14, no.~2, pp.~205--223, 2000.
+
+\bibitem{duszak1994using}
+Z.~Duszak and W.~Koczkodaj, ``Using principal component transformation in
+  machine learning,'' in {\em Proceedings of International Conference on
+  Systems Research, Informatics and Cybernetics, Baden-Baden Germany},
+  pp.~125--129, 1994.
+
+\bibitem{zhu2011missing}
+X.~Zhu, S.~Zhang, Z.~Jin, Z.~Zhang, and Z.~Xu, ``Missing value estimation for
+  mixed-attribute data sets,'' {\em IEEE Transactions on Knowledge and Data
+  Engineering}, vol.~23, no.~1, pp.~110--121, 2011.
+
+\end{thebibliography}

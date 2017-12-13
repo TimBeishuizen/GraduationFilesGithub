@@ -1,0 +1,11 @@
+\select@language {english}
+\contentsline {section}{\numberline {1}Introduction}{2}{section.1}
+\contentsline {section}{\numberline {2}Background}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}Biomedical data}{3}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Bariatric Data Set}{4}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Automated Machine Learning}{6}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}Meta-Learning}{7}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}Hyperparameter Optimization}{8}{subsubsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.3}Preprocessing}{9}{subsubsection.2.3.3}
+\contentsline {subsection}{\numberline {2.4}Tree-based Pipeline Optimization Tool}{11}{subsection.2.4}
+\contentsline {section}{\numberline {3}Research Question}{12}{section.3}
