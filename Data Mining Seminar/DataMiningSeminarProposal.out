@@ -1,10 +1,20 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
 \BOOKMARK [1][-]{section.2}{Background}{}% 2
 \BOOKMARK [2][-]{subsection.2.1}{Biomedical data}{section.2}% 3
-\BOOKMARK [2][-]{subsection.2.2}{Bariatric Data Set}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.2}{Skin Diseases Data sets}{section.2}% 4
 \BOOKMARK [2][-]{subsection.2.3}{Automated Machine Learning}{section.2}% 5
 \BOOKMARK [3][-]{subsubsection.2.3.1}{Meta-Learning}{subsection.2.3}% 6
 \BOOKMARK [3][-]{subsubsection.2.3.2}{Hyperparameter Optimization}{subsection.2.3}% 7
 \BOOKMARK [3][-]{subsubsection.2.3.3}{Preprocessing}{subsection.2.3}% 8
 \BOOKMARK [2][-]{subsection.2.4}{Tree-based Pipeline Optimization Tool}{section.2}% 9
 \BOOKMARK [1][-]{section.3}{Research Question}{}% 10
+\BOOKMARK [2][-]{subsection.3.1}{Hypothesis}{section.3}% 11
+\BOOKMARK [1][-]{section.4}{Methods}{}% 12
+\BOOKMARK [2][-]{subsection.4.1}{Preprocessing}{section.4}% 13
+\BOOKMARK [2][-]{subsection.4.2}{TPOT}{section.4}% 14
+\BOOKMARK [2][-]{subsection.4.3}{Data Set Combination}{section.4}% 15
+\BOOKMARK [1][-]{section.5}{Results}{}% 16
+\BOOKMARK [2][-]{subsection.5.1}{TPOT}{section.5}% 17
+\BOOKMARK [2][-]{subsection.5.2}{Data Set Combination}{section.5}% 18
+\BOOKMARK [1][-]{section.6}{Conclusion}{}% 19
+\BOOKMARK [1][-]{section.7}{Discussion}{}% 20

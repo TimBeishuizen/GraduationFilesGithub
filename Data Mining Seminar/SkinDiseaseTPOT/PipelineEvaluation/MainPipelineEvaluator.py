@@ -50,7 +50,8 @@ scores = scores[:, order]
 
 plot_figure = ['-.o', 's-.', 'p-.', '*-.', 'h-.', '<-.', 'D-.', '>-.']
 
-legend_names = ['RandomForest', 'LinearSVC', 'DecisionTree', 'KNearestNeighbor', 'GradientBoosting','RandomForest', 'LinearSVC', 'RandomForest']
+legend_names = ['GSE13355 RandomForest', 'GSE30999 LinearSVC', 'GSE34248 DecisionTree', 'GSE 41662 KNearestNeighbor',
+                'GSE78097 GradientBoosting', 'GSE14905RandomForest', 'GSE32924 LinearSVC', 'GSE27887 RandomForest']
 
 for i in range(scores.shape[0]):
     plt.plot(np.array(data_names)[order], scores[:, i], 'o-.', ms=15-2*i)

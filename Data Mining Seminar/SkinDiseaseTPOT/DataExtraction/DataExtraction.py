@@ -146,13 +146,13 @@ def encode_output(skin_types, disease_type):
         raise NotImplementedError("This disease is not implemented")
 
     for i in range(skin_types.shape[0]):
-        if skin_types[i] in ['NN', 'Normal', 'PRE, ANL']:
+        if skin_types[i] in ['NN', 'Normal']:
             encoding[i] = 0
-        elif disease_type == 'psoriasis' and skin_types[i] in ['NL', 'PN', 'non-lesional', 'NS', 'NLS', 'Mild psoriasis']  or (disease_type == 'AD' and skin_types[i] in ['ANL', 'NLS', 'NL', 'POST, ANL']):
+        elif disease_type == 'psoriasis' and skin_types[i] in ['NL', 'PN', 'non-lesional', 'NS', 'NLS'] or (disease_type == 'AD' and skin_types[i] in ['ANL', 'NLS', 'NL', 'POST, ANL']):
             encoding[i] = 1
-        elif (disease_type == 'psoriasis' and skin_types[i] in ['PP', 'lesional', 'LS', 'Severe psoriasis']) or (disease_type == 'AD' and skin_types[i] in ['ALS', 'AL', 'PRE, AL']):
+        elif (disease_type == 'psoriasis' and skin_types[i] in ['PP', 'lesional', 'LS', 'Mild psoriasis']) or (disease_type == 'AD' and skin_types[i] in ['ALS', 'AL', 'PRE, AL']):
             encoding[i] = 2
-        elif disease_type == 'AD' and skin_types[i] in ['CLS', 'POST, AL']:
+        elif disease_type == 'AD' and skin_types[i] in ['CLS', 'POST, AL', 'Severe psoriasis']:
             encoding[i] = 3
         else:
             raise NotImplementedError("The label " + skin_types[i] + " is not implemented")

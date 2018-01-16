@@ -94,8 +94,11 @@
 	% Quick explanation for biomedical data
 	At the Computational Biology department (cBio) of Biomedical Engineering (BME), many requests are made to analyse gathered data. This data usually stems from research in hospitals, but can also be from other BME groups and publicly available data. Currently a standard is missing to efficiently analyse those data sets. With the vast number of data sets that are available, such a standard in the form of a framework on data analysis would be valuable. It would speed up projects and give them a higher chance to succeed the goal, due to improved efficiency.
 	
-	% Quick explanation bariatric data
-	An example of biomedical data sets from cBio stemmed from the Catharina Hospital in Eindhoven. This extensive data set was a combination of two data sets. The first is a data set filled out by a doctor that analysed basic human features as well as the presence of co-morbidities. The second data set consisted of 41 markers measured pre- and post-surgery for 2367 patients that underwent gastric sleeve or gastric bypass surgery, also known as bariatric surgeries. The number of bariatric surgeries is increasing worldwide. Although initially thought otherwise, this type of surgery has added benefits on top of losing weight. Among those benefits the remission of metabolic co-morbidities can be named. Due to binary labelling of those co-morbidities, valuable information is lost. On top of that the labelling is not clearly defined either. To obtain more and better results, this binary labelling could be replaced by a continuous severity score. Ruben Deneer conducted a research on trying to achieve a successful replacement. This data set is a prime example of a data set that is not trivially preprocessed, when looking at multiple data sets, missing values and erroneous data.\cite{Deneer2017Thesis}
+	% Explanation skin disease data
+	An example of biomedical data sets was based around gene expression of skin diseases. Two skin diseases were tested, psoriasis and atopic dermatitis, the latter one better known as a form of eczema. The expression of a big number of genes was tested for skin disease patients on skin affected by the disease (lesional skin) and skin not affected by the disease (non-lesional skin). At last there were normal patients, that did not suffer from the skin disease. Nine data sets were available for these data set, six for psoriasis and three for atopic dermatitis. The number of tested skin plaques ranged from 28 to 180 whereas the number of tested genes is the same for every set, namely 54675.
+	
+%	% Quick explanation bariatric data
+%	An example of biomedical data sets from cBio stemmed from the Catharina Hospital in Eindhoven. This extensive data set was a combination of two data sets. The first is a data set filled out by a doctor that analysed basic human features as well as the presence of co-morbidities. The second data set consisted of 41 markers measured pre- and post-surgery for 2367 patients that underwent gastric sleeve or gastric bypass surgery, also known as bariatric surgeries. The number of bariatric surgeries is increasing worldwide. Although initially thought otherwise, this type of surgery has added benefits on top of losing weight. Among those benefits the remission of metabolic co-morbidities can be named. Due to binary labelling of those co-morbidities, valuable information is lost. On top of that the labelling is not clearly defined either. To obtain more and better results, this binary labelling could be replaced by a continuous severity score. Ruben Deneer conducted a research on trying to achieve a successful replacement. This data set is a prime example of a data set that is not trivially preprocessed, when looking at multiple data sets, missing values and erroneous data.\cite{Deneer2017Thesis}
 	
 	% Quick explanation for automated machine learning
 	A possible solution for partly providing a framework for cBio can be found in automated machine learning (autoML). This relatively new extension to machine learning tries to automatically search the best combination of preprocessing, feature selection and machine learning algorithms to efficiently describe a data set. CPU or actual time and memory usage are the two main constraints for autoML, due to testing different methods with varying parameters taking up time and space. These autoML algorithms usually are made with the combined algorithm selection and hyperparameter optimization (CASH) challenge in mind.\cite{feurer2015efficient} 
@@ -144,69 +147,108 @@
 	These challenges within the data are greatly discussed.\cite{bellazzi2011data} Many proposals to tackle them are made, however none is actually widely adopted, yet, as a global standard for databases. Also, with the uncontrolled growth in biomedical data, it will become hard to have such a standard recognised all over the world. \cite{Otasek2014, marenco2004qis, bichutskiy2006heterogeneous, sperzel1991biomedical, aubry1988design, Windridge2014}  
 	
 	
-	\subsection{Bariatric Data Set}
-	\label{subsec:BariatricDataSet}
+%	\subsection{Bariatric Data Set}
+%	\label{subsec:BariatricDataSet}
+%	
+%	% Introduction + first data set
+%	To test the autoML tool, data based on bariatric patients are used. This data consist of two separate data sets. The first one is called "The Dutch Audit for Treatment of Obesity" (DATO). This data set is a national database that houses all registrations and health statuses of pre- and post treatment bariatric surgery patients in the Netherlands. Several basic variables are noted, such as height, weight, BMI, age and date. Before surgery, the co-morbidities T2DM, hypertension and dyslipidemia were given a binary label of "Yes/No". After surgery they were given one of the following labels:
+%
+%	\begin{enumerate}
+%	\item \textbf{Cured} No co-morbidity any more		
+%	\item \textbf{Improved} Less affected by co-morbidity
+%	\item \textbf{Same} No change in co-morbidity status
+%	\item \textbf{Worse} More affected by co-morbidity
+%	\item \textbf{Denovo} Diagnosed co-morbidity while not present before surgery
+%	\item \textbf{Not present} No co-morbidity present				
+%	\end{enumerate}
+%
+%	% Second data set
+%	The second data set came from a laboratory database, stored in health records. This extensive data set consisted of 3 clinical and 38 blood markers measured pre- and 6, 12 and 24 months post-surgery. The tests pre-surgery had some additional markers on top of the 41 ones. These markers can be divided in the following categories: (Table \ref{tab:DataMarkers}) Complete blood count, liver function, kidney function, inflammation, lipid spectrum, coagulation, glucose metabolism, thyroid function and at last minerals and vitamins. The data sets of the patients that underwent bariatric surgery can be extracted from these. 
+%
+%	\begin{table}
+%	\label{tab:DataMarkers}
+%	\caption{The markers present in the bariatric laboratory data set \cite{Deneer2017Thesis}}
+%	\begin{tabular}{lll}
+%		\hline
+%		~                     & Before Surgery/Pre-Op/Screening                                                                                                                     & After Surgery/Post-Op/Follow-up                                                                                                                     \\ \hline
+%		Complete blood count  & \makecell{hemoglobin\\hematocrit\\erythrocytes\\mean corpuscular hemoglobin\\mean corpuscular volume\\thrombocytes\\leukocytes}                                & \makecell{hemoglobin\\hematocrit\\erythrocytes\\mean corpuscular hemoglobin\\mean corpuscular volume\\thrombocytes\\leukocytes}                                \\ \hline
+%		Liver function        & \makecell{bilirubin\\aspartate aminotransferase\\alanine aminotransferase\\lactate dehydrogenase\\alkaline phosphatase\\gamma-glutamyltransferase}             & \makecell{bilirubin\\aspartate aminotransferase\\alanine aminotransferase\\lactate dehydrogenase\\alkaline phosphatase\\gamma-glutamyltransferase}             \\ \hline
+%		Kidney function       & \makecell{urea\\creatinine\\potassium\\sodium\\calcium\\phosphate\\albumin}                                                                                    & \makecell{urea\\creatinine\\potassium\\sodium\\calcium\\phosphate\\albumin}                                                                                    \\ \hline
+%		Inflammation          & \makecell{C-reactive protein}                                                                                                                                  & \makecell{C-reactive protein}                                                                                                                                   \\ \hline
+%		Lipid spectrum        &  \makecell{total cholesterol\\high-density lipoprotein-cholesterol\\total/high-density cholesterol ratio \\low-density lipoprotein-cholesterol \\triglycerides} & \makecell{total cholesterol\\high-density lipoprotein-cholesterol\\total/high-density cholesterol ratio \\low-density lipoprotein-cholesterol \\triglycerides} \\ \hline
+%		Coagulation           & \makecell{prothrombin time}                                                                                                                                    & \makecell{prothrombin time}                                                                                                                                   \\ \hline
+%		Glucose metabolism    & \makecell{hemoglobin A1c (IFCC)\\glucose\\insulin\\C-peptide}                                                                                                  & \makecell{hemoglobin A1c (IFCC)\\glucose\\-\\-}                                                                                                                \\ \hline
+%		Thyroid function      & \makecell{parathyroid hormone\\thyroid-stimulating hormone\\free T4\\cortisol}                                                                                 & \makecell{parathyroid hormone\\-\\-\\-}                                                                                                                        \\ \hline
+%		Minerals and vitamins & \makecell{iron\\ferritin\\folic acid\\zinc\\magnesium\\vitamin A\\vitamin B1\\vitamin B6\\25-OH vitamin D\\vitamin B12}                                        & \makecell{iron\\ferritin\\folic acid\\-\\-\\-\\vitamin B1\\vitamin B6\\25-OH vitamin D\\vitamin B12}                                                           \\ \hline
+%	\end{tabular}
+%	\end{table}
+%
+%	% Data comibining challenge one
+%	A first challenge of the two data sets is to combine these two data sets. Some challenges arise when doing so. Such a challenge is obviously to find the right connection between them, using the survey and lab data of the same patient. Since most likely they are not always made available on the same day, possible extrapolation needs to be used to properly link them. These challenges must be solved before asking the question what markers can say about the severity of co-morbidities.
+%
+%	% Data driven challenge two
+%	A second challenge lies in the absence of several values. Some blood markers pre-surgery were not measured post-surgery and some of them were discarded from the marker panel after doctors disregarded them as not useful. This missing values can be preprocessed different ways, for example changing their values the median value of the set, or to the value of a or multiple nearest neighbours. Also a decision must be made when to discard measurements if too many values are missing.
+%	
+%	% Data driven challenge three
+%	A third challenge is to actively cope with human input errors. The hospital estimated 5\% of all values added by medical staff has an error, which means one in twenty values is erroneous, a non disregarding amount. An example of this would be the weight of a person. It was 632kg, which should actually be 63.2 kg. More of those errors are present, which can be partially filtered by for example outlier detection.\cite{Deneer2017Thesis}
+%	
+%	% Challenge tackled by previous project
+%	A Graduation project of Ruben Deneer was done to add a severity score to the co-morbidities of this data set. This project used the following pipeline to obtain results:
+%	
+%	\begin{enumerate}
+%		\item \textit{Merging data sets.} The lab and DATO sets were matched when they were data of the same patient and in timespan closer to each other than three months. For possible double matches only the closest one was taken and matchin data set outside the predefined measurement dates (pre-surgery and 6, 12 and 24 months post surgery) were removed as well.
+%		\item \textit{Removing missing values.} Data features were removed when roughly more than 30\% of the data was missing. Data entries were removed when missing values were present.
+%		\item \textit{Feature preprocessing} Several data features were preprocessed to closer resemble values that are known useful for biomedical research.
+%		\item \textit{Logistic regression} Logistic regression was used to create a model that gave a severity score to the bariatric values. Two types of logistic regression were used, proportional odds and continuation ratio. This logistic regression was done with a 10-fold cross validation and its assessment of fit was measured by an ROC-curve.
+%		\item \textit{Model visualization} The model was at last visualized by a nomogram, an old fashioned table that doctors can quickly understand how the model can be explained (Figure \ref{fig:BariatricNomogram}).
+%	\end{enumerate}
+%	
+%	\begin{figure}[h!]
+%		\includegraphics[scale=0.8]{BariatricNomogram.png}
+%		\caption{The nomogram that explained the created comorbidity severity score of bariatric patients.\cite{Deneer2017Thesis}}
+%		\label{fig:BariatricNomogram}
+%	\end{figure}
 	
-	% Introduction + first data set
-	To test the autoML tool, data based on bariatric patients are used. This data consist of two separate data sets. The first one is called "The Dutch Audit for Treatment of Obesity" (DATO). This data set is a national database that houses all registrations and health statuses of pre- and post treatment bariatric surgery patients in the Netherlands. Several basic variables are noted, such as height, weight, BMI, age and date. Before surgery, the co-morbidities T2DM, hypertension and dyslipidemia were given a binary label of "Yes/No". After surgery they were given one of the following labels:
+	
+	\subsection{Skin Diseases Data sets}
+	\label{subsect:SkinDiseasesDataSet}
+	
+	% Introduction
+	Skin diseases could form a major disability in someone's life. Whereas skin diseases were not as life threatening as diseases such as Cancer, Alzheimer and AIDS, the could lower quality of life significantly. When looking at health-related quality of life (HRQL), patients with psoriasis showed same problems as patients with other major chronic health conditions.\cite{rapp1999psoriasis} Patients with both psoriasis and eczema suffered from severe itching symptoms and possibly even severe pains. Further insights in these skin diseases could help alleviate their unwanted side-effects and help improve the patients' quality of life.\cite{JOWETT1985425}
+	
+	% Data set introduction
+	Information on both of these skin diseases could be found from nine data sets. The data sets consisted of information on skin of patients with the disease (lesional skin) and skin without the disease (non-lesional skin). In several experiments this skin was taken from the same patient. Also some skin was taken from patients not suffering from the diseases at all. Six data sets focused on Psoriasis and three focused on atopic dermatitis. These data sets consisted of a total number of 54675 features, each of them corresponding to a specific gene. Not many skin samples were taken, ranging from 28 to 180. Also, since every data set was created by different people, some minor differences were present in them as well (Table \ref{tab:SkinDiseasesDataSets}).
+	
+	\begin{table}[h!]
+		\centering
+		\caption{Details of the nine skin disease data sets. The number of samples and features has been given, as well as remarks of the skin types.}
+		\label{tab:SkinDiseasesDataSets}
+\begin{tabular}{cc|ccl}
+	\textbf{Disease}                                                     & \textbf{Data set name} & \textbf{Sample size} & \textbf{Features} & \textbf{Remarks}                                                                                                                                                                                                                                        \\ \hline
+	\textbf{Psoriasis}                                                   & \textbf{GSE13355}\cite{nair2009genome}      & 180                  & 54676             & \begin{tabular}[c]{@{}l@{}}Three skin types: \\ - NN (normal, 64 samples)\\ - PN  (non-lesional, 58 samples) \\ - PP (lesional, 58 samples)\end{tabular} \\ \cline{3-5} 
+	\textbf{}                                                            & \textbf{GSE30999}\cite{suarez2012expanding}      & 170                  & 54676             & \begin{tabular}[c]{@{}l@{}}- No normal patients\\ - Non-lesional (85 samples)\\ - Lesional (85 samples)\end{tabular}                                                                                                                    \\ \cline{3-5} 
+	\textbf{}                                                            & \textbf{GSE34248}\cite{bigler2013cross}      & 28                   & 54676             & \begin{tabular}[c]{@{}l@{}}- No normal patients\\ - Non-lesional (14 samples)\\ - Lesional (14 samples)\end{tabular}                                                                                                                              \\ \cline{3-5} 
+	\textbf{}                                                            & \textbf{GSE41662}\cite{bigler2013cross}      & 48                   & 54676             & \begin{tabular}[c]{@{}l@{}}- No normal patients\\ - Non-lesional (24 samples)\\ - Lesional (24 samples)\end{tabular}                                                                                                                               \\ \cline{3-5} 
+	\textbf{}                                                            & \textbf{GSE78097}\cite{kim2016spectrum}      & 33                   & 54676             & \begin{tabular}[c]{@{}l@{}}Different types of skin samples: \\ - Normal (6 samples)\\ - Mild Psoriasis (14 samples) \\ - Severe Psoriasis (13 samples)\end{tabular}                                                                                \\ \cline{3-5} 
+	\textbf{}                                                            & \textbf{GSE14905}\cite{yao2008type}     & 82                   & 54676             & \begin{tabular}[c]{@{}l@{}}- Normal skin (21 samples), \\ - Non-lesional skin (28 samples)\\ - Lesional skin (33 samples)\end{tabular}                                                                                                                 \\ \hline
+	\textbf{\begin{tabular}[c]{@{}c@{}}Atopic\\ Dermatitis\end{tabular}} & \textbf{GSE32924}\cite{suarez2011nonlesional}      & 33                   & 54676             & \begin{tabular}[c]{@{}l@{}}- Normal skin (8 samples) \\ - Non-lesional skin (12 samples)\\ - Lesional skin (13 samples)\end{tabular}                                                                                                         \\ \cline{3-5} 
+	\textbf{}                                                            & \textbf{GSE27887}\cite{tintle2011reversal}      & 35                   & 54676             & \begin{tabular}[c]{@{}l@{}}Different type of skin samples, \\ pre and post treatment of skin: \\ - Pre non-lesional (8 samples)\\ - Post non-lesional (9 samples)\\ - Pre lesional (9 samples)\\ - Post lesional (9 samples)\end{tabular}       \\ \cline{3-5} 
+	\textbf{}                                                            & \textbf{GSE36842}\cite{gittler2012progressive}      & 39                   & 54676             & \begin{tabular}[c]{@{}l@{}}Also difference between \\ acute and chronic dermatitis. \\ - Normal (15 samples)\\ - Non-lesional (8 samples) \\ - Acute lesional (8 samples) \\ - Chronic lesional (8 samples)\end{tabular}                    \\ \cline{1-5} 
+\end{tabular}
+\end{table}
 
-	\begin{enumerate}
-	\item \textbf{Cured} No co-morbidity any more		
-	\item \textbf{Improved} Less affected by co-morbidity
-	\item \textbf{Same} No change in co-morbidity status
-	\item \textbf{Worse} More affected by co-morbidity
-	\item \textbf{Denovo} Diagnosed co-morbidity while not present before surgery
-	\item \textbf{Not present} No co-morbidity present				
-	\end{enumerate}
+	% Introduction challenges
+	The nine data sets are rich in information. The dimensionality is very high and if combined also houses a decent number of samples. Several challenges arise in the data set, too, as biomedical data sets often have (subsection \ref{subsec:BiomedicalData}). Three of these challenges are discussed for this case.
+	
+	% Challenge 1: Data heterogeneity
+	At first the challenge of handling nine different data sets was important. Even though the sets awee created based on the NCBI database\cite{edgar2002gene}, the layouts were not identical. These difference originated from the intended research goals and the data availability. It is not possible to just concatenate samples without some form of preprocessing. Only the parts that are the same all over the data sets should be taken and all other parts omitted. A first look would be best on the nine data sets separately so initial ideas found with as less bias from combining them as possible.
+	
+	% Challenge 2: Data dimensionality
+	A second challenge could be found in the high number of features. There were 74676 featured measured, averaged a 1000 times the number of samples. The genes that actually were significanlty involved in the skin diseases however should be about $1/1000^{th}$ of the total number of measured genes. Many features should be redundant and removed during preprocessing, a valuable and complex step in biomedical data mining.
+	
+	% Challenge 3: Data Quality
+	 The third challenge was about data quality. The data was gathered from eight different groups with different standards. Some groups had taken the lesional and non-lesional skin from the same patient, whereas others did not. Also, there might also be different conditions per experiment, for example different measuring equipment. This could mean that the data would be more set specific and create bias in the data. This all diminished the quality, something that could hinder finding results in the process
 
-	% Second data set
-	The second data set came from a laboratory database, stored in health records. This extensive data set consisted of 3 clinical and 38 blood markers measured pre- and 6, 12 and 24 months post-surgery. The tests pre-surgery had some additional markers on top of the 41 ones. These markers can be divided in the following categories: (Table \ref{tab:DataMarkers}) Complete blood count, liver function, kidney function, inflammation, lipid spectrum, coagulation, glucose metabolism, thyroid function and at last minerals and vitamins. The data sets of the patients that underwent bariatric surgery can be extracted from these. 
-
-	\begin{table}
-	\label{tab:DataMarkers}
-	\caption{The markers present in the bariatric laboratory data set \cite{Deneer2017Thesis}}
-	\begin{tabular}{lll}
-		\hline
-		~                     & Before Surgery/Pre-Op/Screening                                                                                                                     & After Surgery/Post-Op/Follow-up                                                                                                                     \\ \hline
-		Complete blood count  & \makecell{hemoglobin\\hematocrit\\erythrocytes\\mean corpuscular hemoglobin\\mean corpuscular volume\\thrombocytes\\leukocytes}                                & \makecell{hemoglobin\\hematocrit\\erythrocytes\\mean corpuscular hemoglobin\\mean corpuscular volume\\thrombocytes\\leukocytes}                                \\ \hline
-		Liver function        & \makecell{bilirubin\\aspartate aminotransferase\\alanine aminotransferase\\lactate dehydrogenase\\alkaline phosphatase\\gamma-glutamyltransferase}             & \makecell{bilirubin\\aspartate aminotransferase\\alanine aminotransferase\\lactate dehydrogenase\\alkaline phosphatase\\gamma-glutamyltransferase}             \\ \hline
-		Kidney function       & \makecell{urea\\creatinine\\potassium\\sodium\\calcium\\phosphate\\albumin}                                                                                    & \makecell{urea\\creatinine\\potassium\\sodium\\calcium\\phosphate\\albumin}                                                                                    \\ \hline
-		Inflammation          & \makecell{C-reactive protein}                                                                                                                                  & \makecell{C-reactive protein}                                                                                                                                   \\ \hline
-		Lipid spectrum        &  \makecell{total cholesterol\\high-density lipoprotein-cholesterol\\total/high-density cholesterol ratio \\low-density lipoprotein-cholesterol \\triglycerides} & \makecell{total cholesterol\\high-density lipoprotein-cholesterol\\total/high-density cholesterol ratio \\low-density lipoprotein-cholesterol \\triglycerides} \\ \hline
-		Coagulation           & \makecell{prothrombin time}                                                                                                                                    & \makecell{prothrombin time}                                                                                                                                   \\ \hline
-		Glucose metabolism    & \makecell{hemoglobin A1c (IFCC)\\glucose\\insulin\\C-peptide}                                                                                                  & \makecell{hemoglobin A1c (IFCC)\\glucose\\-\\-}                                                                                                                \\ \hline
-		Thyroid function      & \makecell{parathyroid hormone\\thyroid-stimulating hormone\\free T4\\cortisol}                                                                                 & \makecell{parathyroid hormone\\-\\-\\-}                                                                                                                        \\ \hline
-		Minerals and vitamins & \makecell{iron\\ferritin\\folic acid\\zinc\\magnesium\\vitamin A\\vitamin B1\\vitamin B6\\25-OH vitamin D\\vitamin B12}                                        & \makecell{iron\\ferritin\\folic acid\\-\\-\\-\\vitamin B1\\vitamin B6\\25-OH vitamin D\\vitamin B12}                                                           \\ \hline
-	\end{tabular}
-	\end{table}
-
-	% Data comibining challenge one
-	A first challenge of the two data sets is to combine these two data sets. Some challenges arise when doing so. Such a challenge is obviously to find the right connection between them, using the survey and lab data of the same patient. Since most likely they are not always made available on the same day, possible extrapolation needs to be used to properly link them. These challenges must be solved before asking the question what markers can say about the severity of co-morbidities.
-
-	% Data driven challenge two
-	A second challenge lies in the absence of several values. Some blood markers pre-surgery were not measured post-surgery and some of them were discarded from the marker panel after doctors disregarded them as not useful. This missing values can be preprocessed different ways, for example changing their values the median value of the set, or to the value of a or multiple nearest neighbours. Also a decision must be made when to discard measurements if too many values are missing.
-	
-	% Data driven challenge three
-	A third challenge is to actively cope with human input errors. The hospital estimated 5\% of all values added by medical staff has an error, which means one in twenty values is erroneous, a non disregarding amount. An example of this would be the weight of a person. It was 632kg, which should actually be 63.2 kg. More of those errors are present, which can be partially filtered by for example outlier detection.\cite{Deneer2017Thesis}
-	
-	% Challenge tackled by previous project
-	A Graduation project of Ruben Deneer was done to add a severity score to the co-morbidities of this data set. This project used the following pipeline to obtain results:
-	
-	\begin{enumerate}
-		\item \textit{Merging data sets.} The lab and DATO sets were matched when they were data of the same patient and in timespan closer to each other than three months. For possible double matches only the closest one was taken and matchin data set outside the predefined measurement dates (pre-surgery and 6, 12 and 24 months post surgery) were removed as well.
-		\item \textit{Removing missing values.} Data features were removed when roughly more than 30\% of the data was missing. Data entries were removed when missing values were present.
-		\item \textit{Feature preprocessing} Several data features were preprocessed to closer resemble values that are known useful for biomedical research.
-		\item \textit{Logistic regression} Logistic regression was used to create a model that gave a severity score to the bariatric values. Two types of logistic regression were used, proportional odds and continuation ratio. This logistic regression was done with a 10-fold cross validation and its assessment of fit was measured by an ROC-curve.
-		\item \textit{Model visualization} The model was at last visualized by a nomogram, an old fashioned table that doctors can quickly understand how the model can be explained (Figure \ref{fig:BariatricNomogram}).
-	\end{enumerate}
-	
-	\begin{figure}[h!]
-		\includegraphics[scale=0.8]{BariatricNomogram.png}
-		\caption{The nomogram that explained the created comorbidity severity score of bariatric patients.\cite{Deneer2017Thesis}}
-		\label{fig:BariatricNomogram}
-	\end{figure}
-	
-	
 	\subsection{Automated Machine Learning}
 	\label{subsec:AutomatedMachineLearning}
 	
@@ -228,7 +270,7 @@
 
 	\begin{figure}
 		\label{fig:Meta-LearningLayout}
-		\includegraphics[scale=1]{Meta-LearningLayout.png}[h!]
+		\includegraphics[scale=1]{Meta-LearningLayout.png}
 		\caption{A layout of how meta-learning works. 1. Data sets are collected. 2. Meta-data is computed for each dataset. 3. A meta-dataset is created and a meta-model is learned.\cite{Gijsbers2017Thesis}}
 	\end{figure}
 	
@@ -252,7 +294,7 @@
 	
 	\begin{figure}
 		\label{fig:HyperparameterOptimization}
-		\includegraphics[scale=0.8]{HyperparameterOptimization.png}[H!]
+		\includegraphics[scale=0.8]{HyperparameterOptimization.png}
 		\caption{Examples of the three explained hyperparameter optimization techniques. The numbers in the bayesan optimization show the iteration of sampling.\cite{Gijsbers2017Thesis}}
 	\end{figure}
 	
@@ -260,7 +302,7 @@
 	\label{subsubsec:Preprocessing}
 	
 	% Introduction preprocessing
- 	Preprocessing is one of the three aspects of autoML. Whereas the goal is important when choosing a type of machine learning algorithm, preprocessing algorithms always need to be fine-tuned for the available data set, as every set is different. Data sets, and specially biomedical ones for this project, have specific challenges that can be solved using preprocessing (subsection \ref{subsec:BiomedicalData}). These challenges can be classified in two regions. The first one is about problems with the data, Tye second one is data preparation.\cite{famili1997data}
+ 	Preprocessing is one of the three aspects of autoML. Whereas the goal is important when choosing a type of machine learning algorithm, preprocessing algorithms always need to be fine-tuned for the available data set, as every set is different. Data sets, and specially biomedical ones for this project, have specific challenges that can be solved using preprocessing (subsection \ref{subsec:BiomedicalData}). These challenges can be classified in two regions. The first one is about problems with the data, The second one is data preparation.\cite{famili1997data}
  	
  	% Too much data
  	From a preprocessing point of view, there can be three different types of problems with data (Figure \ref{fig:DataPreprocessing}). The first problem is that there is too much data. The data can be noisy, irrelevant, too big, different types of data can be present and feature extraction still has to be done. The data for this project is an example for noisy data (subsection \ref{subsec:BiomedicalData}), as 5\% of the data is estimated to be wrong.
@@ -326,14 +368,189 @@
 	Comparing the possibilities from TPOT and the challenges in biomedical data, it seems that TPOT has some implementations to tackle them. It has several different scalers (StandardScaler, RobustScaler, MinMaxScaler) to tackle feature heterogeneity between different data sets and errors. It also has some feature selection operators to tackle errors (VarianceThreshold, SelectKBest, SelectPercentile). For missing values, the algorithm imputes the median as estimation for the missing value.
 	
 	\section{Research Question}
+	\label{sec:ResearchQuestion}
 	
 	%Introduction research question
-	TPOT has shown to give promising results for several different data sets.\cite{Gijsbers2017Thesis} For this project the focus will be on biomedical data sets (subsection \ref{subsec:BiomedicalData}) and how it handles specific problems in these data sets. An example data set (subsection \ref{subsec:BariatricDataSet}) is taken for analysis and to create suggestions for future extensions of TPOT. The research question for TPOT will be the following.\\
+	TPOT has shown to give promising results for several different data sets.\cite{Gijsbers2017Thesis} For this project the focus will be on biomedical data sets (subsection \ref{subsec:BiomedicalData}) and how it handles specific problems in these data sets. An example data set (subsection \ref{subsect:SkinDiseasesDataSet}) is taken for analysis and to create suggestions for future extensions of TPOT. The research question for TPOT will be the following.\\
 	
 	How does TPOT perform on specific biomedical data set problems and how can it be improved on them?\\
 	
+	\subsection{Hypothesis}
+	\label{subsec:Hypothesis}
+	
 	% Hypothesis
-	Knowing that some algorithms exist to tackle the problems with biomedical data sets, the first step should be to find out whether all problems can already be tackled by TPOT. This seems the case for fractured data and errors in the data, both challenges seem to have some way to be handled. Missing values however do not seem to be targeted. There are no ways to have value imputation and the only way this seems to be tackled is by giving it the median value. It seems improvement on that part would be beneficial and examples such as extrapolation and nearest neighbour algorithms seem good approach to tackle that.
+	Knowing that some algorithms exist to tackle the problems with biomedical data sets, the first step should be to find out whether all problems can already be tackled by TPOT. The skin disease data set (subsection \ref{subsect:SkinDiseasesDataSet}) had three biomedical data challenges: data heterogeneity, high dimensionality and data quality. 
+
+	% Challenge 1
+	With regards to data heterogeneity, TPOT has no ways to use multiple data sets as an input and aligning them. This needs to be done manually. 
+	
+	% Challenge 2
+	TPOT has ways to tackle high dimensionality with preprocessing. Principal Components Analysis (PCA), Feature Agglomeration, Independent Components Analysis (ICA), Recursive Feature Eliminations (RFE) are four examples of dimensionality reduction. These dimensionality reductions are often used in biomedical data analysis and could prove useful. A benefit of these methods to reduce high dimensionality is the simplicity to extract important genes from the pool after being preprocessed. Other ways TPOT tackles the high dimensionality is with several machine learning techniques as decision trees and random forests. These techniques filter out the best genes for classifications.
+	
+	% Challenge 3
+	The third challenge was about data quality. Since the data stems from different experiments, bias should be present. This bias can be tackled by some forms of preprocessing that are available in TPOT. Examples are using normalizers, several types of scalers, thresholds and binarizers. These preprocessors are done only after merging the data sets though, which could hinder the effectivity.
+	
+	% Summary
+	All things considered TPOT should be able to handle several biomedical data set problems sufficiently, whereas others are probably not present at all. Future development can be suggested to improve TPOT and have it sufficiently tackle those biomedical data problems, as well.
+	
+	\section{Methods}
+	\label{sec:Methods}
+	
+	% Introduction Methods
+	The approach to answer the research question was split in three different parts. At first preprocessing was done to align the nine data sets as much as possible. Secondly the data sets were used as input in the TPOT classifier to find the best possible pipeline and some analysis was done to evaluate that. Third and last the data set was combined as much as possible and run through the model again. 
+	
+	% Software
+	All programming in this project has been done using Python, with the help of anaconda. TPOT was written in python and therefore using Python would seriously reduce compatibility issues. Anaconda was used for for the same reasons, as with anaconda it is fairly simple to import packages for the TPOT package. Jetbrains Pycharm was used as an environment mainly because of coding assistance and previous experience with it.
+	
+	
+	% Hardware
+	For running the experiments only a cpu was available. This meant that memory issues could be present. After some testing on basic data sets (e.g. MNIST), memory gave no issues and was not expected to give issues after using data sets of a similar size.
+	
+	\subsection{Preprocessing}
+	\label{subsec:Preprocessing}
+	
+	% Introduction preprocessing
+	Preprocessing was a big part of the project. Even though all data was generated with the NCBI database\cite{edgar2002gene} in mind, the raw data had to be pruned and all of them in a different way. This pruning consisted of removing irrelevant data, extracting essential data and prepraring it for tpot to use. 
+	
+	% Downloading data
+	To download the data, the NCBI database was used (Table \ref{tab:SkinDiseasesDataSets}).  An advantage of the NCBI database is that the data is made available in different file types. The base type is a  \textit{.cel} type and all other types were based on that one. Other types were \textit{SOFT}, \textit{MINiML} and also just a regular matrix (\textit{.txt}) file. Since only a matrix with the data and type of skin for each sample was needed, the most basic (\textit{.txt}) file was used. Nine different (\textit{.txt}) files were downloaded from the database and stored for preprocessing
+	
+	% Removing irrelevant data
+	The data was one big matrix with for every row an undetermined number of columns. The rows could be split into four different parts: title, set attributes, sample attributes and experiment values. Each part had their own starting row followed by one specific attribute every row. Therefore at first the data was split into these four sections, so further pruning could be done on every section separately. The title and set attributes only consisted of information how to manually locate relevant data locations. Therefore after reading them, these two parts were discarded for future preprocessing.
+	
+	% Extracting relevant data
+	The sample details contained several attributes for every sample. This part consisted of much irrelevant data, as well, with the exception of skin type. This skin type therefore needed to be extracted first before discarding this part. This skin type had to be manually extracted out of every sample title, as no attribute for skin type was present. The experiment values were more straightforward. The first row consisted of the sample IDs, that could be linked to the sample IDs of the sample details. Every following row consisted of a specific gen as well as the values of every sample.
+	
+	% Preparing data
+	Preparation of the data was minor due to efficient data extraction. The experiment values were extracted as a matrix and therefore immediately available for the TPOT classifier. For the skin types, three categories were made and a list was made with those categories, corresponding to the samples and their experiment values. The data sets and available skin types (table \ref{tab:SkinDiseasesDataSets}) were mapped as good as possible on the list: 
+	
+	\begin{enumerate}
+		\item[(0)] Normal skin. The normal skin values were extracted from patients not suffering from a skin disease. In case of no mention whether skin was normal or non-lesional, it was expected to be normal
+		\item[(1)] Non-lesional skin. Skin of a skin disease patient not affected by it.
+		\item[(2)] Lesional skin. Skin of a skin disease patient that is affected by it.
+		\item[(3)] Dummy variable. Variable specific for that data set that is not compatible with the others
+	\end{enumerate}
+
+	% Mapping mismatches
+	Not all data sets could efficiently be mapped. The 'GSE78097' set had two types of lesional (mild and severe) and no normal skin. The 'GSE27887' had pre- and post treatment non-lesional and lesional skin. For both of these sets, a manual ordering was made, so these data sets should be treated differently when combined
+	
+	
+	\subsection{TPOT}
+	\label{subsec:MethodsTPOT}
+	
+	% Creating training and test set
+	After the data sets had been preprocessed, they were available for TPOT calculations. The experimental values and skin types should be used as input for the TPOT classifier whereas the values are the input features and the skin types the output. Before actually using the data, first it should be split into a training and test set. Even though TPOT itself also uses a training and test set to prevent overfitting of data, a small test set still was used to calculate the score on data TPOT had not seen itself, yet. Since the number of samples was very low to begin with, only 0\% of the data was regarded as training data and only 10\% as test data.
+	
+	% TPOT setup
+	 Since classification was needed, the TPOT classifier was used which made use of several algorithms. These algorithms were mostly borrowed from sklearn and some were created by TPOT itself (Table \ref{tab:TPOTAlgorithms}). Before using TPOT, several parameters had to be selected. The selected parameters all revolve around the genetic algorithm used for selecting the best machine learning pipeline (subsection \ref{subsec:AutomatedMachineLearning}):
+	 
+	 \begin{enumerate}
+	 	\item[-] \textit{generations}, the number of generations the genetic algorithm should run before terminating. If the number of generations had been reach the TPOT classifier ended. the number of generations was set on 100.
+	 	\item[-] \textit{population\_size}, the number of pipelines that needed to be stored for further generations. After every generation the worst pipelines were discarded. The number of modifications was also linked to the number of modifications to the pipelines, so every generations 10 modifications were made. The population size was set on 10.
+	 	\item[-] \textit{max\_time\_mins}, the time limit the TPOT classifier is allowed to find the best pipeline. If it still runs when the time limit has been reached it will end pre-emptively. Due to severe time constraints, the time limit was set on 120 minutes. 
+	 \end{enumerate}
+	
+\begin{table}[]
+	\centering
+	\caption{All TPOT Algorithms used for the TPOT classifier function. Not only the algorithms differ, but also the hyperparameters within these algorithms.}
+	\label{tab:TPOTAlgorithms}
+	\begin{tabular}{ll|l}
+		\textbf{Algorithm type} & \textbf{Specification}  & \textbf{Algorithms}                                                                                                        \\ \hline
+		\textbf{Classifier}     & Naïve Bayes             & GaussianNB, BernoulliNB, MultinomialNB                                                                                     \\
+		\textbf{}               & Decision Tree           & \begin{tabular}[c]{@{}l@{}}DecisionTree, ExtraTrees, RandomForest, \\ GradientBoosting\end{tabular}                        \\
+		\textbf{}               & Nearest Neighbor        & KNeighbors                                                                                                                 \\
+		\textbf{}               & Support Vector Machines & LinearSVC                                                                                                                  \\
+		\textbf{}               & Logistic Regression     & Logistic Regression                                                                                                        \\ \hline
+		\textbf{Preprocessors}  & Scaler                  & \begin{tabular}[c]{@{}l@{}}Binarizer, MaxAbsScaler, MinMaxScaler, \\ Normalizer, RobustScaler, StandardScaler\end{tabular} \\
+		\textbf{}               & Feature reduction       & \begin{tabular}[c]{@{}l@{}}PCA, FastICA, RBFSampler, Nystroem,\\ FeatureAgglomeration\end{tabular}                         \\
+		\textbf{}               & Feature Modifier        & Polynomial, OneHotEncoder,ZeroCount                                                                                        \\
+		\textbf{}               & Feature Selectors       & \begin{tabular}[c]{@{}l@{}}SelectFwe, SelectPercentile, VarianceThreshold, \\ RFE, SelectFromModel\end{tabular}           
+	\end{tabular}
+\end{table}
+		
+	% Pipeline storage
+	After the best pipelines had been chosen, they were stored in a separate file. These files consisted of both the chosen algorithms and their hyperparameters as well as the score after fitting the test size on it. Since TPOT only chose the best possible pipeline, if it would be used it should be fitted another time for the data set for further calculations.
+		
+	% Introduction analysis
+	To analyse the created pipelines, every data set was fitted on every pipeline. Again a training and test set was created to find out how well the pipelines would behave for very data set. The acquired score could be used to show how well that pipeline would behave for every data set. Every data set was fitted 10 times and the acquired scores were averaged to better represent the actually quality of the pipeline.
+	
+	\subsection{Data Set Combination}
+	\label{subsec:MethodsDataSetCombination}
+	
+	\section{Results}
+	\label{sec:Results}
+	
+	%Introduction results
+	The results were split into two parts. Since preprocessing did not have any results to be presented (the preprocessed dataset itself was the result), only TPOT and the combining of the data sets were presented.
+	
+	\subsection{TPOT}
+	\label{subsec:ResultsTPOT}
+
+	% Problems TPOT
+	Before acquiring the results there were several problems with using the data set in TPOT. At first several TPOT algorithms had trouble with using several algorithms on the high dimensional data set. Some required almost all memory making the TPOT classifier much slower than needed. The preprocessing algorithm \textit{FeatureAgglomeration} even froze the computer, requiring it to restart. Therefore this algorithm was manually removed from all possibilities in the TPOT classifier. The data set 'GSE36842' also had problems finding an optimal pipeline because of unknown reasons and therefore was also removed from the pipeline selection.
+	
+	% Results TPOT
+	The results for the eight remaining data sets were different from each other (Table \ref{tab:ResultingPipelines}). The most picked classifier seemed to be \textit{RandomForestClassifier}, being picked three times. The hyperparameters did not seem very similar for these three though. \textit{LinearSVC} was also picked twice, with different hyperparameters. Interestingly enough a preprocessing algorithm was used only once, which was the \textit{Binarizer} algorithm. This preprocessing alogrithm was not a feature reduction algorithm, while those algorithms were more expected to be present in the final pipelines. Looking at final scores of these pipelines, most of them were close to a perfect score, two of them even being a perfect classification score. Data sets 'GSE13355' and 'GSE32924' settled for a far lower score around $0.83$ and for data set 'GSE27887'a score of only $0.51$ was the best the TPOT classifier could find.
+
+\begin{table}[h!]
+	\centering
+	\caption{All discovered pipelines with the TPOT classifiers for the mentioned data sets as well as the scores for those pipelines. The sample size is given for comparison, too.}
+	\label{tab:ResultingPipelines}
+	\begin{tabular}{c|c|c|r}
+		\textbf{Data set} & \textbf{Sample size} & \textbf{Score}     & \multicolumn{1}{c}{\textbf{Pipeline}}                                                                                                                                                                                                \\ \hline
+		\textbf{GSE13355} & 180                  & 0.8333793341383474 & \begin{tabular}[c]{@{}r@{}}Binarizer(threshold=0.7)\\ RandomForestClassifier(bootstrap=False, \\ criterion="entropy", \\ max\_features=0.35, \\ min\_samples\_leaf=3, \\ min\_samples\_split=18, \\ n\_estimators=100))\end{tabular} \\ \hline
+		\textbf{GSE30999} & 170                  & 0.9804301075268818 & \begin{tabular}[c]{@{}r@{}}KNeighborsClassifier(n\_neighbors=9, \\ p=2, \\ weights="distance")\end{tabular}                                                                                                                          \\ \hline
+		\textbf{GSE34248} & 28                   & 0.9666666666666668 & \begin{tabular}[c]{@{}r@{}}RandomForestClassifier(bootstrap=True, \\ criterion="entropy", \\ max\_features=0.9, \\ min\_samples\_leaf=3, \\ min\_samples\_split=6,\\  n\_estimators=100)\end{tabular}                                \\ \hline
+		\textbf{GSE41662} & 48                   & 1.0                & \begin{tabular}[c]{@{}r@{}}LinearSVC(C=0.001, \\ dual=True, \\ loss="hinge", \\ penalty="l2", \\ tol=0.01)\end{tabular}                                                                                                              \\ \hline
+		\textbf{GSE78097} & 33                   & 1.0                & \begin{tabular}[c]{@{}r@{}}RandomForestClassifier(bootstrap=False, \\ criterion="gini", \\ max\_features=1.0, \\ min\_samples\_leaf=4, \\ min\_samples\_split=10,\\  n\_estimators=100)\end{tabular}                                 \\ \hline
+		\textbf{GSE14905} & 82                   & 0.9733333333333334 & \begin{tabular}[c]{@{}r@{}}LinearSVC(C=5.0, \\ dual=True, \\ loss="squared\_hinge", \\ penalty="l2", \\ tol=0.001)\end{tabular}                                                                                                      \\ \hline
+		\textbf{GSE32924} & 33                   & 0.8283333333333334 & \begin{tabular}[c]{@{}r@{}}GradientBoostingClassifier(learning\_rate=1.0, \\ max\_depth=8, \\ max\_features=0.75, \\ min\_samples\_leaf=4, \\ min\_samples\_split=3, \\ n\_estimators=100, \\ subsample=0.7)\end{tabular}            \\ \hline
+		\textbf{GSE27887} & 35                   & 0.5142857142857142 & \begin{tabular}[c]{@{}r@{}}DecisionTreeClassifier(criterion="gini", \\ max\_depth=4, \\ min\_samples\_leaf=1, \\ min\_samples\_split=10)\end{tabular}                                                                               
+	\end{tabular}
+\end{table}
+
+	% Results analysis
+	Since the data sets were similar. The data sets were tested on each other multiple times to find out which pipeline worked best on which data set (Figure \ref{fig:DataPipelineScores}). Those scores showed that no pipeline is best for any data set. Furthermore, they showed that even after trying different pipelines, they show very similar behaviour. For almost every data set no clear best or for example top three could be chosen. 
+	
+	\begin{figure}[h!]
+		\includegraphics[scale=0.6]{DataPipelineScores.png}
+		\caption{The scores of the pipelines after fitting them on every data set.}
+		\label{fig:DataPipelineScores}
+	\end{figure}
+
+	\subsection{Data Set Combination}
+	\label{subsec:ResultsDataSetCombination}
+	
+	\section{Conclusion}
+	\label{sec:Conclusion}
+	
+	% Conclusion based on research question
+	To give an answer to the research question (section \ref{sec:ResearchQuestion}) how TPOT would perform with typical biomedical data set problems, a two sided answer should be given. It is able to cope with some data set problems, however also shows issues with them.
+	
+	% Memory issues
+	A first issue came up when running the high dimensional data. TPOT had memory issues when using several algorithms, even concluding in one algorithm being excluded from the possible outcomes. With time being a constraint for finding the best possible pipeline, it is not desired that several options take much longer to compute. 
+	
+	% When already knowing several parts of the data, a more supervised look for the best pipeline could result in a more effective search. 
+	
+	% Low sample number
+	Where on the one hand, the high dimensionality was an issue, the low number of samples seemed an issue, as well. Test sets could accidentally satisfy the fitted pipeline much easier when only a small subset was used. No really possibilities are available to tackle that. An example would be to create more samples using the known ones.
+	
+	% Data combination problem
+	
+	% Good actions TPOT 
+	TPOT did, however find good pipelines. Five of the 8 data sets in the end had a pipeline with a scoring of (close to) 1. This means that it did succeed finding good pipelines for more than half of the data sets. This shows that there definitely is potential for TPOT to be used for biomedical data sets.
+	
+	% Concluding conclusion
+	All things considered TPOT did perform reasonably well for these biomedical data sets. It showed results that are definitely usable for further research. When some more changes would be added to address memory issues, adding the options of choosing possible algorithms and adding the possibility of creating more samples, TPOT become a very good tool for biomedical engineers to use.
+	
+	\section{Discussion}
+	\label{sec:Discussion}
+	
+	% Time constrains weighed heavily
+	
+	% Other biomedical data set issues
+	
+	% No possibility to look at the features
 	
 	\bibliography{../References/Citings} 
 	\bibliographystyle{ieeetr}

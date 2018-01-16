@@ -1,24 +1,9 @@
 \begin{thebibliography}{10}
 
-\bibitem{Deneer2017Thesis}
-R.~Deneer, ``Scoring co-morbidity severity in bariatric patients based on
-  biomarkers: a data mining approach,'' 2017.
-
 \bibitem{feurer2015efficient}
 M.~Feurer, A.~Klein, K.~Eggensperger, J.~Springenberg, M.~Blum, and F.~Hutter,
   ``Efficient and robust automated machine learning,'' in {\em Advances in
   Neural Information Processing Systems}, pp.~2962--2970, 2015.
-
-\bibitem{thornton2013auto}
-C.~Thornton, F.~Hutter, H.~H. Hoos, and K.~Leyton-Brown, ``Auto-weka: Combined
-  selection and hyperparameter optimization of classification algorithms,'' in
-  {\em Proceedings of the 19th ACM SIGKDD international conference on Knowledge
-  discovery and data mining}, pp.~847--855, ACM, 2013.
-
-\bibitem{kotthoff2016auto}
-L.~Kotthoff, C.~Thornton, H.~H. Hoos, F.~Hutter, and K.~Leyton-Brown,
-  ``Auto-weka 2.0: Automatic model selection and hyperparameter optimization in
-  weka,'' {\em Journal of Machine Learning Research}, vol.~17, pp.~1--5, 2016.
 
 \bibitem{olson2016tpot}
 R.~S. Olson and J.~H. Moore, ``Tpot: A tree-based pipeline optimization tool
@@ -132,6 +117,81 @@ F.~Aubry, S.~Badaoui, H.~Kaplan, and R.~D. Paola, ``Design and implementation
 D.~Windridge and M.~Bober, {\em A Kernel-Based Framework for Medical Big-Data
   Analytics}, pp.~197--208.
 \newblock Berlin, Heidelberg: Springer Berlin Heidelberg, 2014.
+
+\bibitem{rapp1999psoriasis}
+S.~R. Rapp, S.~R. Feldman, M.~L. Exum, A.~B. Fleischer, and D.~M. Reboussin,
+  ``Psoriasis causes as much disability as other major medical diseases,'' {\em
+  Journal of the American Academy of Dermatology}, vol.~41, no.~3,
+  pp.~401--407, 1999.
+
+\bibitem{nair2009genome}
+R.~P. Nair, K.~C. Duffin, C.~Helms, J.~Ding, P.~E. Stuart, D.~Goldgar, J.~E.
+  Gudjonsson, Y.~Li, T.~Tejasvi, B.-J. Feng, {\em et~al.}, ``Genome-wide scan
+  reveals association of psoriasis with il-23 and nf-$\kappa$b pathways,'' {\em
+  Nature genetics}, vol.~41, no.~2, pp.~199--204, 2009.
+
+\bibitem{suarez2012expanding}
+M.~Su{\'a}rez-Farinas, K.~Li, J.~Fuentes-Duculan, K.~Hayden, C.~Brodmerkel, and
+  J.~G. Krueger, ``Expanding the psoriasis disease profile: interrogation of
+  the skin and serum of patients with moderate-to-severe psoriasis,'' {\em
+  Journal of Investigative Dermatology}, vol.~132, no.~11, pp.~2552--2564,
+  2012.
+
+\bibitem{bigler2013cross}
+J.~Bigler, H.~A. Rand, K.~Kerkof, M.~Timour, and C.~B. Russell, ``Cross-study
+  homogeneity of psoriasis gene expression in skin across a large expression
+  range,'' {\em PLoS One}, vol.~8, no.~1, p.~e52242, 2013.
+
+\bibitem{kim2016spectrum}
+J.~Kim, R.~Bissonnette, J.~Lee, J.~C. da~Rosa, M.~Su{\'a}rez-Fari{\~n}as, M.~A.
+  Lowes, and J.~G. Krueger, ``The spectrum of mild to severe psoriasis vulgaris
+  is defined by a common activation of il-17 pathway genes, but with key
+  differences in immune regulatory genes,'' {\em Journal of Investigative
+  Dermatology}, vol.~136, no.~11, pp.~2173--2182, 2016.
+
+\bibitem{yao2008type}
+Y.~Yao, L.~Richman, C.~Morehouse, M.~De~Los~Reyes, B.~W. Higgs, A.~Boutrin,
+  B.~White, A.~Coyle, J.~Krueger, P.~A. Kiener, {\em et~al.}, ``Type i
+  interferon: potential therapeutic target for psoriasis?,'' {\em PloS one},
+  vol.~3, no.~7, p.~e2737, 2008.
+
+\bibitem{suarez2011nonlesional}
+M.~Su{\'a}rez-Fari{\~n}as, S.~J. Tintle, A.~Shemer, A.~Chiricozzi, K.~Nograles,
+  I.~Cardinale, S.~Duan, A.~M. Bowcock, J.~G. Krueger, and E.~Guttman-Yassky,
+  ``Nonlesional atopic dermatitis skin is characterized by broad terminal
+  differentiation defects and variable immune abnormalities,'' {\em Journal of
+  Allergy and Clinical Immunology}, vol.~127, no.~4, pp.~954--964, 2011.
+
+\bibitem{tintle2011reversal}
+S.~Tintle, A.~Shemer, M.~Su{\'a}rez-Fari{\~n}as, H.~Fujita, P.~Gilleaudeau,
+  M.~Sullivan-Whalen, L.~Johnson-Huang, A.~Chiricozzi, I.~Cardinale, S.~Duan,
+  {\em et~al.}, ``Reversal of atopic dermatitis with narrow-band uvb
+  phototherapy and biomarkers for therapeutic response,'' {\em Journal of
+  Allergy and Clinical Immunology}, vol.~128, no.~3, pp.~583--593, 2011.
+
+\bibitem{gittler2012progressive}
+J.~K. Gittler, A.~Shemer, M.~Su{\'a}rez-Fari{\~n}as, J.~Fuentes-Duculan, K.~J.
+  Gulewicz, C.~Q. Wang, H.~Mitsui, I.~Cardinale, C.~de~Guzman~Strong, J.~G.
+  Krueger, {\em et~al.}, ``Progressive activation of t h 2/t h 22 cytokines and
+  selective epidermal proteins characterizes acute and chronic atopic
+  dermatitis,'' {\em Journal of Allergy and Clinical Immunology}, vol.~130,
+  no.~6, pp.~1344--1354, 2012.
+
+\bibitem{edgar2002gene}
+R.~Edgar, M.~Domrachev, and A.~E. Lash, ``Gene expression omnibus: Ncbi gene
+  expression and hybridization array data repository,'' {\em Nucleic acids
+  research}, vol.~30, no.~1, pp.~207--210, 2002.
+
+\bibitem{thornton2013auto}
+C.~Thornton, F.~Hutter, H.~H. Hoos, and K.~Leyton-Brown, ``Auto-weka: Combined
+  selection and hyperparameter optimization of classification algorithms,'' in
+  {\em Proceedings of the 19th ACM SIGKDD international conference on Knowledge
+  discovery and data mining}, pp.~847--855, ACM, 2013.
+
+\bibitem{kotthoff2016auto}
+L.~Kotthoff, C.~Thornton, H.~H. Hoos, F.~Hutter, and K.~Leyton-Brown,
+  ``Auto-weka 2.0: Automatic model selection and hyperparameter optimization in
+  weka,'' {\em Journal of Machine Learning Research}, vol.~17, pp.~1--5, 2016.
 
 \bibitem{brazdil1994characterizing}
 P.~Brazdil, J.~Gama, and B.~Henery, ``Characterizing the applicability of

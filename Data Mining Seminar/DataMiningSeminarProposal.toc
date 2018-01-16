@@ -1,11 +1,21 @@
 \select@language {english}
 \contentsline {section}{\numberline {1}Introduction}{2}{section.1}
-\contentsline {section}{\numberline {2}Background}{3}{section.2}
-\contentsline {subsection}{\numberline {2.1}Biomedical data}{3}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Bariatric Data Set}{4}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Automated Machine Learning}{6}{subsection.2.3}
-\contentsline {subsubsection}{\numberline {2.3.1}Meta-Learning}{7}{subsubsection.2.3.1}
-\contentsline {subsubsection}{\numberline {2.3.2}Hyperparameter Optimization}{8}{subsubsection.2.3.2}
-\contentsline {subsubsection}{\numberline {2.3.3}Preprocessing}{9}{subsubsection.2.3.3}
-\contentsline {subsection}{\numberline {2.4}Tree-based Pipeline Optimization Tool}{11}{subsection.2.4}
-\contentsline {section}{\numberline {3}Research Question}{12}{section.3}
+\contentsline {section}{\numberline {2}Background}{2}{section.2}
+\contentsline {subsection}{\numberline {2.1}Biomedical data}{2}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Skin Diseases Data sets}{4}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Automated Machine Learning}{4}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}Meta-Learning}{6}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}Hyperparameter Optimization}{7}{subsubsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.3}Preprocessing}{7}{subsubsection.2.3.3}
+\contentsline {subsection}{\numberline {2.4}Tree-based Pipeline Optimization Tool}{8}{subsection.2.4}
+\contentsline {section}{\numberline {3}Research Question}{10}{section.3}
+\contentsline {subsection}{\numberline {3.1}Hypothesis}{11}{subsection.3.1}
+\contentsline {section}{\numberline {4}Methods}{11}{section.4}
+\contentsline {subsection}{\numberline {4.1}Preprocessing}{12}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}TPOT}{13}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Data Set Combination}{14}{subsection.4.3}
+\contentsline {section}{\numberline {5}Results}{14}{section.5}
+\contentsline {subsection}{\numberline {5.1}TPOT}{14}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Data Set Combination}{14}{subsection.5.2}
+\contentsline {section}{\numberline {6}Conclusion}{14}{section.6}
+\contentsline {section}{\numberline {7}Discussion}{16}{section.7}
