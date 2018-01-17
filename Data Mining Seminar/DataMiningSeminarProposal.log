@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2017.11.1)  16 JAN 2018 22:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2017.11.1)  17 JAN 2018 12:28
 entering extended mode
 **./DataMiningSeminarProposal.tex
 (DataMiningSeminarProposal.tex
@@ -860,10 +860,6 @@ l.89 	\clearpage
                  [1] [2
 
 ] [3]
-
-LaTeX Warning: Citation `JOWETT1985425' on page 4 undefined on input line 217.
-
-
 Overfull \hbox (3.50575pt too wide) in paragraph at lines 226--238
  [][] 
  []
@@ -878,7 +874,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
                                                   \fi \fi 
 l.263 
       ]
-<./ThesisFigures/Meta-LearningLayout.png, id=224, 343.2825pt x 258.21469pt>
+<./ThesisFigures/Meta-LearningLayout.png, id=226, 343.2825pt x 258.21469pt>
 File: ./ThesisFigures/Meta-LearningLayout.png Graphic file (type png)
 <use ./ThesisFigures/Meta-LearningLayout.png>
 Package pdftex.def Info: ./ThesisFigures/Meta-LearningLayout.png  used on input
@@ -892,7 +888,7 @@ e 273.
                                                   \fi \fi 
 l.288 
        <./ThesisFigures/Meta-LearningLayout.png>]
-<./ThesisFigures/HyperparameterOptimization.png, id=246, 371.88937pt x 310.1587
+<./ThesisFigures/HyperparameterOptimization.png, id=248, 371.88937pt x 310.1587
 5pt>
 File: ./ThesisFigures/HyperparameterOptimization.png Graphic file (type png)
 <use ./ThesisFigures/HyperparameterOptimization.png>
@@ -907,7 +903,7 @@ e 297.
                                                   \fi \fi 
 l.306 
        <./ThesisFigures/HyperparameterOptimization.png>]
-<./ThesisFigures/DataPreprocessing.png, id=268, 350.05782pt x 430.60875pt>
+<./ThesisFigures/DataPreprocessing.png, id=270, 350.05782pt x 430.60875pt>
 File: ./ThesisFigures/DataPreprocessing.png Graphic file (type png)
 <use ./ThesisFigures/DataPreprocessing.png>
 Package pdftex.def Info: ./ThesisFigures/DataPreprocessing.png  used on input l
@@ -918,7 +914,7 @@ e 326.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./ThesisFigures/MachineLearningPipeline.png, id=272, 370.38374pt x 182.18062pt
+<./ThesisFigures/MachineLearningPipeline.png, id=274, 370.38374pt x 182.18062pt
 >
 File: ./ThesisFigures/MachineLearningPipeline.png Graphic file (type png)
 <use ./ThesisFigures/MachineLearningPipeline.png>
@@ -930,7 +926,7 @@ e 344.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [8]
-<./ThesisFigures/TPOTMutations.png, id=288, 354.57469pt x 247.67531pt>
+<./ThesisFigures/TPOTMutations.png, id=290, 354.57469pt x 247.67531pt>
 File: ./ThesisFigures/TPOTMutations.png Graphic file (type png)
 <use ./ThesisFigures/TPOTMutations.png>
 Package pdftex.def Info: ./ThesisFigures/TPOTMutations.png  used on input line 
@@ -941,7 +937,7 @@ Package pdftex.def Info: Requested size: 354.57382pt x 247.6747pt on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./ThesisFigures/TPOTCrossover.png, id=292, 372.64218pt x 142.28156pt>
+<./ThesisFigures/TPOTCrossover.png, id=294, 372.64218pt x 142.28156pt>
 File: ./ThesisFigures/TPOTCrossover.png Graphic file (type png)
 <use ./ThesisFigures/TPOTCrossover.png>
 Package pdftex.def Info: ./ThesisFigures/TPOTCrossover.png  used on input line 
@@ -985,9 +981,8 @@ he same identifier (name{figure.6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.407 	F
-        or running the experiments only a cpu was available. This meant that...
- <./ThesisFigures/TPOTCrossover.png>] [12]
+l.404 
+       <./ThesisFigures/TPOTCrossover.png>] [12]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 453.
@@ -1002,62 +997,76 @@ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.485 
+l.482 
       ]
-Overfull \hbox (22.4097pt too wide) in paragraph at lines 499--510
+Overfull \hbox (22.4097pt too wide) in paragraph at lines 521--532
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./ThesisFigures/DataPipelineScores.png, id=334, 573.1011pt x 453.1329pt>
+[14]
+<./ThesisFigures/DataPipelineScores.png, id=341, 573.1011pt x 453.1329pt>
 File: ./ThesisFigures/DataPipelineScores.png Graphic file (type png)
 <use ./ThesisFigures/DataPipelineScores.png>
 Package pdftex.def Info: ./ThesisFigures/DataPipelineScores.png  used on input 
-line 516. on input line 516.
+line 538. on input line 538.
 Package pdftex.def Info: Requested size: 343.86331pt x 271.88184pt on input lin
-e 516.
+e 538.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[14] (DataMiningSeminarProposal.bbl [15pdfTeX warning (ext4): destination with 
-the same identifier (name{table.3}) has been already used, duplicate ignored
+[15pdfTeX warning (ext4): destination with the same identifier (name{table.3}) 
+has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.7 
-    ] [16pdfTeX warning (ext4): destination with the same identifier (name{figu
-re.7}) has been already used, duplicate ignored
+l.548 
+      ]
+Overfull \hbox (71.50378pt too wide) in paragraph at lines 550--554
+\OT1/cmr/m/n/10 Clas-si-fier(learning[]rate=0.1, max[]depth=5, max[]features=0.
+05, min[]samples[]leaf=12, min[]samples[]split=19,
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[16pdfTeX warning (ext4): destination with the same identifier (name{figure.7})
+ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.54 
-      <./ThesisFigures/DataPipelineScores.png>] [17] [18])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 558.
- [19]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 558.
+l.588 
+       <./ThesisFigures/DataPipelineScores.png>] [17pdfTeX warning (ext4): dest
+ination with the same identifier (name{table.4}) has been already used, duplica
+te ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.616 
+      ] (DataMiningSeminarProposal.bbl [18] [19] [20])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 620.
+ [21]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 620.
 
 (DataMiningSeminarProposal.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 558.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 558.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 620.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 620.
 Package rerunfilecheck Info: File `DataMiningSeminarProposal.out' has not chang
 ed.
 (rerunfilecheck)             Checksum: 771B112F212757CF58DBFC5AEC5AB936;1241.
-
-
-LaTeX Warning: There were undefined references.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 558.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 620.
  ) 
 Here is how much of TeX's memory you used:
- 10771 strings out of 493318
- 153912 string characters out of 3139046
- 269290 words of memory out of 3000000
- 14032 multiletter control sequences out of 15000+200000
+ 10778 strings out of 493318
+ 154021 string characters out of 3139046
+ 269552 words of memory out of 3000000
+ 14034 multiletter control sequences out of 15000+200000
  8495 words of font info for 33 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,15n,43p,1672b,472s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 28i,15n,43p,1672b,466s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiK
@@ -1065,12 +1074,13 @@ TeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
 e1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
 /amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti
-12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on DataMiningSeminarProposal.pdf (20 pages, 563883 bytes).
+/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on DataMiningSeminarProposal.pdf (22 pages, 580640 bytes).
 PDF statistics:
- 423 PDF objects out of 1000 (max. 8388607)
- 100 named destinations out of 1000 (max. 500000)
+ 442 PDF objects out of 1000 (max. 8388607)
+ 105 named destinations out of 1000 (max. 500000)
  196 words of extra memory for PDF output out of 10000 (max. 10000000)
 

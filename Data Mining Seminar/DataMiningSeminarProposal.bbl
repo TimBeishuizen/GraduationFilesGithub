@@ -124,6 +124,11 @@ S.~R. Rapp, S.~R. Feldman, M.~L. Exum, A.~B. Fleischer, and D.~M. Reboussin,
   Journal of the American Academy of Dermatology}, vol.~41, no.~3,
   pp.~401--407, 1999.
 
+\bibitem{jowett1985skin}
+S.~Jowett and T.~Ryan, ``Skin disease and handicap: an analysis of the impact
+  of skin conditions,'' {\em Social science \& medicine}, vol.~20, no.~4,
+  pp.~425--429, 1985.
+
 \bibitem{nair2009genome}
 R.~P. Nair, K.~C. Duffin, C.~Helms, J.~Ding, P.~E. Stuart, D.~Goldgar, J.~E.
   Gudjonsson, Y.~Li, T.~Tejasvi, B.-J. Feng, {\em et~al.}, ``Genome-wide scan
@@ -258,5 +263,9 @@ Z.~Duszak and W.~Koczkodaj, ``Using principal component transformation in
 X.~Zhu, S.~Zhang, Z.~Jin, Z.~Zhang, and Z.~Xu, ``Missing value estimation for
   mixed-attribute data sets,'' {\em IEEE Transactions on Knowledge and Data
   Engineering}, vol.~23, no.~1, pp.~110--121, 2011.
+
+\bibitem{Deneer2017Thesis}
+R.~Deneer, ``Scoring co-morbidity severity in bariatric patients based on
+  biomarkers: a data mining approach,'' 2017.
 
 \end{thebibliography}

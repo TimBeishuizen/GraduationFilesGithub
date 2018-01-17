@@ -104,7 +104,7 @@
 	A possible solution for partly providing a framework for cBio can be found in automated machine learning (autoML). This relatively new extension to machine learning tries to automatically search the best combination of preprocessing, feature selection and machine learning algorithms to efficiently describe a data set. CPU or actual time and memory usage are the two main constraints for autoML, due to testing different methods with varying parameters taking up time and space. These autoML algorithms usually are made with the combined algorithm selection and hyperparameter optimization (CASH) challenge in mind.\cite{feurer2015efficient} 
 	
 	% Introduction of TPOT
-	Olson and Moore proposed a tool for autoML, a Tree-based Pipeline Optimization Tool (TPOT).\cite{olson2016tpot} This tool also tries to find the best classifier by creating pipelines for the different algorithms. The pipelines are evaluated and branched or altered according to the evaluation. It makes use of genetic programming, a technique used for evolutionary computations.\cite{banzhaf1998genetic} Evaluation of several TPOT approaches are proven better than doing a basic machine learning analysis and are therefore a promising approach for implementation. \cite{olson2016evaluation} Several projects used layering and meta-learning techniques to tackle the time and space constraints.\cite{Gijsbers2017Thesis}
+	Olson and Moore proposed a tool for autoML, a Tree-based Pipeline Optimization Tool (TPOT).\cite{olson2016tpot} This tool also tries to find the best classifier by creating pipelines for the different algorithms. The pipelines are evaluated and branched or altered according to the evaluation. It makes use of genetic programming, a technique used for evolutionary computations.\cite{banzhaf1998genetic} Evaluation of several TPOT approaches are proven better than doing a basic machine learning analysis and are therefore a promising approach for implementation.\cite{olson2016evaluation} Several projects used layering and meta-learning techniques to tackle the time and space constraints.\cite{Gijsbers2017Thesis}
 	
 	% TPOT and biomedical data
 	To test if TPOT is also suitable for biomedical data, it must be tested by a specific set, such as the bariatric data set. This data consists of several biomedical data challenges only some of which seem solvable by TPOT. A research must be done to find out whether TPOT can manage to retrieve good results from this data set and may benefit of some improvements.
@@ -120,7 +120,7 @@
 	\label{subsec:BiomedicalData}
 	
 	% Biomedical engineering description.
-	Biomedical engineering can be seen as a specific part of engineering with a wide variety of topics. These topics can be theoretical, non-experimental undertakings, but also state-of-the-art applications. Not only research and development can be used, but also implementation and operation. Combining all of these different parts in one definition is hard. \cite{bronzino2014biomedical} For this project, the focus is mainly on research and development, also known as knowledge discovery. \cite{bramer2007principles} 
+	Biomedical engineering can be seen as a specific part of engineering with a wide variety of topics. These topics can be theoretical, non-experimental undertakings, but also state-of-the-art applications. Not only research and development can be used, but also implementation and operation. Combining all of these different parts in one definition is hard.\cite{bronzino2014biomedical} For this project, the focus is mainly on research and development, also known as knowledge discovery.\cite{bramer2007principles} 
 
 	% Biomedical research summary
 	When a biomedical engineer starts a project, at the start usually only a data set and the research goal are known. To achieve that certain goal from the data set, four aspects influence the project's course and development. At first obviously the data itself is a big part of such an influencer as the research is restricted to limitations from it. Examples of such restrictions are multidimensionality, set size, data heterogeneity, missing feature values and population handling. The other obvious influencer is the main research goal. Since the biomedical engineer wants to achieve a certain goal, the approach outcome must match that goal for the research to be successful. Most goals are focused around either data mining, extracting relations from available data, or modelling, creating a model within data features. A third influencer is the availability of data analysis tools. The steps to take from data to goal do not only include an approach, but also a tool to execute it. The choice of a certain tool has a big impact on the project, as each one of them has its own advantages and disadvantages. The two most well known tools within BME are MATLAB and Python, however some engineers have used R, Java or C++ and there are still other possibilities. A last big influencer is the biomedical knowledge. What experience the scientist already has with similar projects can greatly influence the choice of approach and framework. Knowledge of the supervisor and publicly known information on the research subject from books and articles also influence the approach, as already known outcomes do not have to be researched again. 
@@ -129,22 +129,22 @@
 	For data engineers the main focus lies in trying to find patterns in the data. Therefore in this seminar the focus will mainly be on the data driven aspect of a biomedical project. Characteristics of such a data driven approach (as mentioned before) are mainly focused around data volume, dimensionality, complexity, heterogeneity and quality.\cite{chen2006medical, doi:10.1093/bib/bbx044}
 	
 	% Volume challenge
-	Collecting data because it is possible can make data sets bigger than needed. Both in number of instances and features, data sets can be harder to understand or analyse when more is available.\cite{chen2006medical} This volume problem usually is tackled by taking sub-populations of the complete set. These sub-sets can either be focused around a part of the population (gender, age, race) or taken at random to still represent all of it. Due to the efficiency of analysis techniques and the rise in computational speed of servers\cite{blythe2008rise}, volume on its own becomes less of an issue. Volume does however become an issue when combining with heterogeneity and quality. \cite{Turkay2014, Holzinger2014} 
+	Collecting data because it is possible can make data sets bigger than needed. Both in number of instances and features, data sets can be harder to understand or analyse when more is available.\cite{chen2006medical} This volume problem usually is tackled by taking sub-populations of the complete set. These sub-sets can either be focused around a part of the population (gender, age, race) or taken at random to still represent all of it. Due to the efficiency of analysis techniques and the rise in computational speed of servers\cite{blythe2008rise}, volume on its own becomes less of an issue. Volume does however become an issue when combining with heterogeneity and quality.\cite{Turkay2014, Holzinger2014} 
 	
 	% Dimensionality challenge
-	Not all data sets have a high number of instances that cause a big data volume. Sometimes there are relatively few instances, while the number of features is proportionally high. \cite{dubitzky2007fundamentals} Usually many of those features are not relevant enough for the research, however are still used for testing. Trying to remove features that are not important, will greatly help finding relations between the others and create more knowledge about the research topic. Lowering the number of features also makes the data volume go down, so analysis should be easier. Mainly an optimal features set should be selected to obtain the best results. \cite{PENG201015}
+	Not all data sets have a high number of instances that cause a big data volume. Sometimes there are relatively few instances, while the number of features is proportionally high.\cite{dubitzky2007fundamentals} Usually many of those features are not relevant enough for the research, however are still used for testing. Trying to remove features that are not important, will greatly help finding relations between the others and create more knowledge about the research topic. Lowering the number of features also makes the data volume go down, so analysis should be easier. Mainly an optimal features set should be selected to obtain the best results.\cite{PENG201015}
 	
 	% Complexity challenge
-	Biomedical data can also be very complex. Useful results may be present, however it can be very hard to obtain it. Examples of complex data are images, several biomedical signals and temporal data. Details of the useful results that are present in images can for example be very hard to detect, the temporal data can vary quite much over time and the biomedical signals can be hard to combine with static biomarkers. \cite{Yoo2012} This aspect can benefit from exchanging knowledge with other research areas that specialize in mining of those complex data sets. \cite{Turkay2014, bellazzi2011data}
+	Biomedical data can also be very complex. Useful results may be present, however it can be very hard to obtain it. Examples of complex data are images, several biomedical signals and temporal data. Details of the useful results that are present in images can for example be very hard to detect, the temporal data can vary quite much over time and the biomedical signals can be hard to combine with static biomarkers.\cite{Yoo2012} This aspect can benefit from exchanging knowledge with other research areas that specialize in mining of those complex data sets.\cite{Turkay2014, bellazzi2011data}
 	
 	% Heterogeneity challenge
-	The biggest challenge encompasses aligning different data sets. No standard for data sets is available and therefore data sets differ greatly from each other. Data is weakly structured or even unstructured \cite{Holzinger2014} and variables are processed differently due to other protocols or the collectors' preference of representation.\cite{Otasek2014} Also the variety of data is hard to combine when sources are fundamentally different. When parts of the data are images, another part is a table from the laboratory and a third part is textual remarks of the doctor, standardizing merging those three is much harder than merging three lab sets. Those merges are also very prone to errors, as imprecisions can be vastly different between those data sets. No tool can work directly with these raw data sets and preprocessing must almost definitely occur beforehand.\cite{Turkay2014, CIOS20021}
+	The biggest challenge encompasses aligning different data sets. No standard for data sets is available and therefore data sets differ greatly from each other. Data is weakly structured or even unstructured\cite{Holzinger2014} and variables are processed differently due to other protocols or the collectors' preference of representation.\cite{Otasek2014} Also the variety of data is hard to combine when sources are fundamentally different. When parts of the data are images, another part is a table from the laboratory and a third part is textual remarks of the doctor, standardizing merging those three is much harder than merging three lab sets. Those merges are also very prone to errors, as imprecisions can be vastly different between those data sets. No tool can work directly with these raw data sets and preprocessing must almost definitely occur beforehand.\cite{Turkay2014, CIOS20021}
 	
 	% Quality challenge
-	A last challenge is about data quality. The data is usually gathered by doctors and laboratory workers. Since the data is manually gathered by humans, the data have a relatively high error rate. Therefore the data can be quite noisy, values can be inconsistent, wrongly entered or even missing.\cite{CIOS20021} Not only human errors cause the data quality to drop, but the heterogeneity, as well. Two hospitals might have different protocols for the same treatment and sample different biomarkers for that protocol. Due to that difference, biomarkers may be missing for some of the entries. The time of data gathering is also a big factor as some biomarkers change greatly over time. The databases are usually also built for financial purposes and not for research, which can hurt the quality. \cite{Yoo2012}
+	A last challenge is about data quality. The data is usually gathered by doctors and laboratory workers. Since the data is manually gathered by humans, the data have a relatively high error rate. Therefore the data can be quite noisy, values can be inconsistent, wrongly entered or even missing.\cite{CIOS20021} Not only human errors cause the data quality to drop, but the heterogeneity, as well. Two hospitals might have different protocols for the same treatment and sample different biomarkers for that protocol. Due to that difference, biomarkers may be missing for some of the entries. The time of data gathering is also a big factor as some biomarkers change greatly over time. The databases are usually also built for financial purposes and not for research, which can hurt the quality.\cite{Yoo2012}
 	
 	% Standardized database
-	These challenges within the data are greatly discussed.\cite{bellazzi2011data} Many proposals to tackle them are made, however none is actually widely adopted, yet, as a global standard for databases. Also, with the uncontrolled growth in biomedical data, it will become hard to have such a standard recognised all over the world. \cite{Otasek2014, marenco2004qis, bichutskiy2006heterogeneous, sperzel1991biomedical, aubry1988design, Windridge2014}  
+	These challenges within the data are greatly discussed.\cite{bellazzi2011data} Many proposals to tackle them are made, however none is actually widely adopted, yet, as a global standard for databases. Also, with the uncontrolled growth in biomedical data, it will become hard to have such a standard recognised all over the world.\cite{Otasek2014, marenco2004qis, bichutskiy2006heterogeneous, sperzel1991biomedical, aubry1988design, Windridge2014}  
 	
 	
 %	\subsection{Bariatric Data Set}
@@ -214,7 +214,7 @@
 	\label{subsect:SkinDiseasesDataSet}
 	
 	% Introduction
-	Skin diseases could form a major disability in someone's life. Whereas skin diseases were not as life threatening as diseases such as Cancer, Alzheimer and AIDS, the could lower quality of life significantly. When looking at health-related quality of life (HRQL), patients with psoriasis showed same problems as patients with other major chronic health conditions.\cite{rapp1999psoriasis} Patients with both psoriasis and eczema suffered from severe itching symptoms and possibly even severe pains. Further insights in these skin diseases could help alleviate their unwanted side-effects and help improve the patients' quality of life.\cite{JOWETT1985425}
+	Skin diseases could form a major disability in someone's life. Whereas skin diseases were not as life threatening as diseases such as Cancer, Alzheimer and AIDS, the could lower quality of life significantly. When looking at health-related quality of life (HRQL), patients with psoriasis showed same problems as patients with other major chronic health conditions.\cite{rapp1999psoriasis} Patients with both psoriasis and eczema suffered from severe itching symptoms and possibly even severe pains. Further insights in these skin diseases could help alleviate their unwanted side-effects and help improve the patients' quality of life.\cite{jowett1985skin}
 	
 	% Data set introduction
 	Information on both of these skin diseases could be found from nine data sets. The data sets consisted of information on skin of patients with the disease (lesional skin) and skin without the disease (non-lesional skin). In several experiments this skin was taken from the same patient. Also some skin was taken from patients not suffering from the diseases at all. Six data sets focused on Psoriasis and three focused on atopic dermatitis. These data sets consisted of a total number of 54675 features, each of them corresponding to a specific gene. Not many skin samples were taken, ranging from 28 to 180. Also, since every data set was created by different people, some minor differences were present in them as well (Table \ref{tab:SkinDiseasesDataSets}).
@@ -241,7 +241,7 @@
 	The nine data sets are rich in information. The dimensionality is very high and if combined also houses a decent number of samples. Several challenges arise in the data set, too, as biomedical data sets often have (subsection \ref{subsec:BiomedicalData}). Three of these challenges are discussed for this case.
 	
 	% Challenge 1: Data heterogeneity
-	At first the challenge of handling nine different data sets was important. Even though the sets awee created based on the NCBI database\cite{edgar2002gene}, the layouts were not identical. These difference originated from the intended research goals and the data availability. It is not possible to just concatenate samples without some form of preprocessing. Only the parts that are the same all over the data sets should be taken and all other parts omitted. A first look would be best on the nine data sets separately so initial ideas found with as less bias from combining them as possible.
+	At first the challenge of handling nine different data sets was important. Even though the sets were created based on the NCBI database\cite{edgar2002gene}, the layouts were not identical. These difference originated from the intended research goals and the data availability. It is not possible to just concatenate samples without some form of preprocessing. Only the parts that are the same all over the data sets should be taken and all other parts omitted. A first look would be best on the nine data sets separately so initial ideas found with as less bias from combining them as possible.
 	
 	% Challenge 2: Data dimensionality
 	A second challenge could be found in the high number of features. There were 74676 featured measured, averaged a 1000 times the number of samples. The genes that actually were significanlty involved in the skin diseases however should be about $1/1000^{th}$ of the total number of measured genes. Many features should be redundant and removed during preprocessing, a valuable and complex step in biomedical data mining.
@@ -379,19 +379,19 @@
 	\label{subsec:Hypothesis}
 	
 	% Hypothesis
-	Knowing that some algorithms exist to tackle the problems with biomedical data sets, the first step should be to find out whether all problems can already be tackled by TPOT. The skin disease data set (subsection \ref{subsect:SkinDiseasesDataSet}) had three biomedical data challenges: data heterogeneity, high dimensionality and data quality. 
+	Knowing that some algorithms exist to tackle the problems with biomedical data sets, the first step should be to find out whether TPOT can process the data set without any problems. It is expected to succeed in that, as TPOT showed good results for nono-biomedical data sets. The skin disease data set (subsection \ref{subsect:SkinDiseasesDataSet}) had three biomedical data challenges: data heterogeneity, high dimensionality and data quality. These challenges are discussed separately
 
 	% Challenge 1
-	With regards to data heterogeneity, TPOT has no ways to use multiple data sets as an input and aligning them. This needs to be done manually. 
+	With regards to data heterogeneity, TPOT has no ways to use multiple data sets as an input and aligning them. This needs to be done manually by preprocessing. 
 	
 	% Challenge 2
 	TPOT has ways to tackle high dimensionality with preprocessing. Principal Components Analysis (PCA), Feature Agglomeration, Independent Components Analysis (ICA), Recursive Feature Eliminations (RFE) are four examples of dimensionality reduction. These dimensionality reductions are often used in biomedical data analysis and could prove useful. A benefit of these methods to reduce high dimensionality is the simplicity to extract important genes from the pool after being preprocessed. Other ways TPOT tackles the high dimensionality is with several machine learning techniques as decision trees and random forests. These techniques filter out the best genes for classifications.
 	
 	% Challenge 3
-	The third challenge was about data quality. Since the data stems from different experiments, bias should be present. This bias can be tackled by some forms of preprocessing that are available in TPOT. Examples are using normalizers, several types of scalers, thresholds and binarizers. These preprocessors are done only after merging the data sets though, which could hinder the effectivity.
+	The third challenge was about data quality. Since the data stems from different experiments, bias should be present. This bias can be tackled by some forms of preprocessing that are available in TPOT. Examples are using normalizers, several types of scalers, thresholds and binarizers. These preprocessors are done only after merging the data sets though, which could hinder the effectivity. This challenge would not be tested on specifically, however could hinder the final scoring of pipelines.
 	
 	% Summary
-	All things considered TPOT should be able to handle several biomedical data set problems sufficiently, whereas others are probably not present at all. Future development can be suggested to improve TPOT and have it sufficiently tackle those biomedical data problems, as well.
+	All things considered TPOT should be able to handle several biomedical data set challenges sufficiently, whereas others are probably not present at all. Future development can be suggested to improve TPOT and have it sufficiently tackle those biomedical data problems, as well.
 	
 	\section{Methods}
 	\label{sec:Methods}
@@ -400,7 +400,7 @@
 	The approach to answer the research question was split in three different parts. At first preprocessing was done to align the nine data sets as much as possible. Secondly the data sets were used as input in the TPOT classifier to find the best possible pipeline and some analysis was done to evaluate that. Third and last the data set was combined as much as possible and run through the model again. 
 	
 	% Software
-	All programming in this project has been done using Python, with the help of anaconda. TPOT was written in python and therefore using Python would seriously reduce compatibility issues. Anaconda was used for for the same reasons, as with anaconda it is fairly simple to import packages for the TPOT package. Jetbrains Pycharm was used as an environment mainly because of coding assistance and previous experience with it.
+	All programming in this project has been done using Python, with the help of anaconda. TPOT was written in python and therefore using Python would seriously reduce compatibility issues. Anaconda was used for for the same reasons, as with anaconda it is fairly simple to import packages used by TPOT and packages that are imported for preprocessing and analysis. Jetbrains Pycharm was used as an environment mainly because of coding assistance and previous experience with it.
 	
 	
 	% Hardware
@@ -477,11 +477,33 @@
 	\subsection{Data Set Combination}
 	\label{subsec:MethodsDataSetCombination}
 	
+	% Introduction data set combination
+	At last all possible data sets were combined to create one big data set with more samples. Since not all of them were applicable to add, only the data sets with the names 'GSE13355', 'GSE30999', 'GSE34248', 'GSE41662' and 'GSE14905' were chosen. Psoriasis data sets were chosen instead of atopic dermatitis simply because more of those were available. After combining these data sets the final number of samples was 508 with the following distribution:
+	
+	\begin{enumerate}
+		\item[-] \textit{Normal skin:} 85 samples
+		\item[-] \textit{Non-lesional skin:} 209 samples
+		\item[-] \textit{Lesional skin:} 214 samples
+	\end{enumerate}
+
+	% Running in TPOT
+	To run this with TPOT classifiers new input parameters should be chosen. Since this data set was about three times larger than the largest data set run so far and the differences between data sets had to be overcome as well, a larger running time had to be given for this case. The following parameters were given:
+	
+	 \begin{enumerate}
+		\item[-] \textit{generations:} 100
+		\item[-] \textit{population\_size:} 40
+		\item[-] \textit{max\_time\_mins:} 480 
+	\end{enumerate}
+
+	% Analysis
+	After the TPOT classification had been run, it was analysed for the data set. This was done by fitting it ten times and averaging the acquired scores. The eight original pipelines were all being fitted for the data set the same way, to find out if they still produced good results with more data points from different data sets.
+
+	
 	\section{Results}
 	\label{sec:Results}
 	
 	%Introduction results
-	The results were split into two parts. Since preprocessing did not have any results to be presented (the preprocessed dataset itself was the result), only TPOT and the combining of the data sets were presented.
+	The results were split into two parts. Since preprocessing did not have any results to be presented (the preprocessed dataset itself was the result), only TPOT and combination of the data sets were presented.
 	
 	\subsection{TPOT}
 	\label{subsec:ResultsTPOT}
@@ -490,7 +512,7 @@
 	Before acquiring the results there were several problems with using the data set in TPOT. At first several TPOT algorithms had trouble with using several algorithms on the high dimensional data set. Some required almost all memory making the TPOT classifier much slower than needed. The preprocessing algorithm \textit{FeatureAgglomeration} even froze the computer, requiring it to restart. Therefore this algorithm was manually removed from all possibilities in the TPOT classifier. The data set 'GSE36842' also had problems finding an optimal pipeline because of unknown reasons and therefore was also removed from the pipeline selection.
 	
 	% Results TPOT
-	The results for the eight remaining data sets were different from each other (Table \ref{tab:ResultingPipelines}). The most picked classifier seemed to be \textit{RandomForestClassifier}, being picked three times. The hyperparameters did not seem very similar for these three though. \textit{LinearSVC} was also picked twice, with different hyperparameters. Interestingly enough a preprocessing algorithm was used only once, which was the \textit{Binarizer} algorithm. This preprocessing alogrithm was not a feature reduction algorithm, while those algorithms were more expected to be present in the final pipelines. Looking at final scores of these pipelines, most of them were close to a perfect score, two of them even being a perfect classification score. Data sets 'GSE13355' and 'GSE32924' settled for a far lower score around $0.83$ and for data set 'GSE27887'a score of only $0.51$ was the best the TPOT classifier could find.
+	The results for the eight remaining data sets were different from each other (Table \ref{tab:ResultingPipelines}). In all cases the running time was the biggest constraint, so new runs should be done in longer time. The most picked classifier seemed to be \textit{RandomForestClassifier}, being picked three times to find possible better results. The hyperparameters did not seem very similar for these three though. \textit{LinearSVC} was also picked twice, with different hyperparameters. Interestingly enough a preprocessing algorithm was used only once, which was the \textit{Binarizer} algorithm. This preprocessing alogrithm was not a feature reduction algorithm, while those algorithms were more expected to be present in the final pipelines. Looking at final scores of these pipelines, most of them were close to a perfect score, two of them even being a perfect classification score. Data sets 'GSE13355' and 'GSE32924' settled for a far lower score around $0.83$ and for data set 'GSE27887'a score of only $0.51$ was the best the TPOT classifier could find.
 
 \begin{table}[h!]
 	\centering
@@ -521,6 +543,40 @@
 	\subsection{Data Set Combination}
 	\label{subsec:ResultsDataSetCombination}
 	
+	% Introduction TPOT combinations
+	Also when combining the data set combinations, TPOT stopped trying to find the best pipeline after the time limit has been reached. The time limit should be a factor $10^2$ higher it seems to fit the number generations. The final pipeline was the following:
+	
+	\begin{enumerate}
+		\item[] \textit{Best pipeline:}  LogisticRegression(C=0.0001, dual=True, penalty='l2'),
+		GradientBoostingClassifier(learning\_rate=0.1, max\_depth=5, max\_features=0.05,
+		min\_samples\_leaf=12,
+		min\_samples\_split=19, n\_estimators=100, subsample=0.5)
+		
+	\end{enumerate}
+
+	% Discussing this pipeline
+	The best pipeline being a combination of logistic regression and gradient boosting classifier seems like a plausible best pipeline. Both are often used for high dimensional data. Also, when looking at the hyperparameters of the gradient boosting classifier, the decision trees made for it can become quite big (a minimum of 5 depth and 12 leaf nodes). The logistic regression could make choices for the decision tree easier.
+	
+	% Analysis
+	The score for the newly created pipeline is 0.913725490196. This score is not as high as the score for some data sets separately, which can be explained by the bias entered when combining them. The score has a high success rate, though, so it definitely is not bad. The pipelines created for the original data sets were also checked for the combined set to find a difference (Table \ref{tab:ScoresCombinedPipelines}). These show that the final created data set did show better results.
+	
+	\begin{table}[h!]
+		\centering
+		\caption{The scores when using the pipelines from the separate data sets with the combined set. The score for their own data set set are added as well as the algorithms used.}
+		\label{tab:ScoresCombinedPipelines}
+		\begin{tabular}{l|lll}
+			\textbf{Data set} & \textbf{Algorithms}                                              & \textbf{Own score} & \textbf{Combined Data set score} \\ \hline
+			\textbf{GSE13355} & \begin{tabular}[c]{@{}l@{}}Binarizer\\ RandomForest\end{tabular} & 0.8333793341383474 & 0.674509803922                   \\
+			\textbf{GSE30999} & KNearestNeighbor                                                 & 0.9804301075268818 & 0.860784313725                   \\
+			\textbf{GSE34248} & RandomForest                                                     & 0.9666666666666668 & NOG NIET BEKEND                  \\
+			\textbf{GSE41662} & LinearSVC                                                        & 1.0                & NOG NIET BEKEND                  \\
+			\textbf{GSE78097} & RandomForest                                                     & 1.0                & NOG NIET BEKEND                  \\
+			\textbf{GSE14905} & LinearSVC                                                        & 0.9733333333333334 & NOG NIET BEKEND                  \\
+			\textbf{GSE32924} & GradientBoosting                                                 & 0.8283333333333334 & NOG NIET BEKEND                  \\
+			\textbf{GSE27887} & DecisionTree                                                     & 0.5142857142857142 & NOG NIET BEKEND                 
+		\end{tabular}
+	\end{table}
+	
 	\section{Conclusion}
 	\label{sec:Conclusion}
 	
@@ -546,11 +602,17 @@
 	\section{Discussion}
 	\label{sec:Discussion}
 	
+	% Introduction discussion
+	The biomedical world strongly benefits from using the advanced techniques created by the data mining world. These techniques usually enter the biomedical data analysis projects later, due to a gap between them. This can be achieved by creating better communication between the worlds, so the data miners understand and implement important aspects of the biomedical research and the biomedical engineers do the same with data mining techniques. Projects like this one help filling that gap. Continuing this more breakthroughs can be achieved for better understanding and treatments in the hospital.
+	
 	% Time constrains weighed heavily
+	During this project time was a severe constraint. At first different data was supposed to be made available. This data was bariatric data from the Catharina Hospital in Eindhoven, which focussed on different biomedical data challenges.\cite{Deneer2017Thesis} When it became clear that it was not possible to have this data in time, new data had to be searched. This meant that the implementation phase of the project did start in January instead of November. On top of that, the preprocessing took up quite some time as did solving the memory issues and finding out which algorithm froze the cpu. Because of that the experiments were run much shorter than initially planned to run. This worsened the results as TPOT is not expected to successfully find an optimization. A future work on this project extending it for a period of time would be of great benefit.
 	
 	% Other biomedical data set issues
+	Only a selection of biomedical data set issues were present for this skin disease data set. Issues such as data complexity, volume or different aspects of quality could be addressed with a different data set. A clinical data set with blood markers and manual subscriptions would be an example of a data set with quality challenges, whereas a data set with MRI images would be interesting for testing complexity. Future projects could be based around those.
 	
 	% No possibility to look at the features
+	A last not discussed characteristic is showing the links between input with output. Creating a model that correctly links input and output is nice, however in the biomedical world there is more to it than only creating this model. For the skin disease data set it would be very helpful if the conclusion would have given several genes that were important for diagnosing psoriasis or atopic dermatitis. Those genes can be further tested in what way they stimulate the expression of those diseases to gain more insights to possibly find a remedies for that. Whereas some classification techniques clearly show which features were used (decision trees, random forests), others create a swamp in which it is much harder to find them (support vector machines). A possible extension for TPOT to address this characteristic would be very beneficial.
 	
 	\bibliography{../References/Citings} 
 	\bibliographystyle{ieeetr}

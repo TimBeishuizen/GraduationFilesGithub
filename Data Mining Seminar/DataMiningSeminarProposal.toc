@@ -16,6 +16,6 @@
 \contentsline {subsection}{\numberline {4.3}Data Set Combination}{14}{subsection.4.3}
 \contentsline {section}{\numberline {5}Results}{14}{section.5}
 \contentsline {subsection}{\numberline {5.1}TPOT}{14}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Data Set Combination}{14}{subsection.5.2}
-\contentsline {section}{\numberline {6}Conclusion}{14}{section.6}
-\contentsline {section}{\numberline {7}Discussion}{16}{section.7}
+\contentsline {subsection}{\numberline {5.2}Data Set Combination}{16}{subsection.5.2}
+\contentsline {section}{\numberline {6}Conclusion}{16}{section.6}
+\contentsline {section}{\numberline {7}Discussion}{17}{section.7}
