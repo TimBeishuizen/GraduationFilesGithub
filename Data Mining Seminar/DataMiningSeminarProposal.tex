@@ -382,13 +382,13 @@
 	Knowing that some algorithms exist to tackle the problems with biomedical data sets, the first step should be to find out whether TPOT can process the data set without any problems. It is expected to succeed in that, as TPOT showed good results for nono-biomedical data sets. The skin disease data set (subsection \ref{subsect:SkinDiseasesDataSet}) had three biomedical data challenges: data heterogeneity, high dimensionality and data quality. These challenges are discussed separately
 
 	% Challenge 1
-	With regards to data heterogeneity, TPOT has no ways to use multiple data sets as an input and aligning them. This needs to be done manually by preprocessing. 
+	With regards to data heterogeneity, TPOT has no ways to use multiple data sets as an input and aligning them. This needs to be done manually by preprocessing. Since the data stems from different experiments, bias should be present. This bias can be tackled by some forms of preprocessing that are available in TPOT. Examples are using normalizers, several types of scalers, thresholds and binarizers. These preprocessors are done only after merging the data sets though, which could hinder the effectivity. This challenge would not be tested on specifically, however could hinder the final scoring of pipelines.
 	
 	% Challenge 2
 	TPOT has ways to tackle high dimensionality with preprocessing. Principal Components Analysis (PCA), Feature Agglomeration, Independent Components Analysis (ICA), Recursive Feature Eliminations (RFE) are four examples of dimensionality reduction. These dimensionality reductions are often used in biomedical data analysis and could prove useful. A benefit of these methods to reduce high dimensionality is the simplicity to extract important genes from the pool after being preprocessed. Other ways TPOT tackles the high dimensionality is with several machine learning techniques as decision trees and random forests. These techniques filter out the best genes for classifications.
 	
 	% Challenge 3
-	The third challenge was about data quality. Since the data stems from different experiments, bias should be present. This bias can be tackled by some forms of preprocessing that are available in TPOT. Examples are using normalizers, several types of scalers, thresholds and binarizers. These preprocessors are done only after merging the data sets though, which could hinder the effectivity. This challenge would not be tested on specifically, however could hinder the final scoring of pipelines.
+	The third challenge was about the number of samples. There was a very low number of samples which could cause problems for the machine learning algorithm to correctly find an output. No algorithms were present in TPOT to tackle that, so this could cause issues.
 	
 	% Summary
 	All things considered TPOT should be able to handle several biomedical data set challenges sufficiently, whereas others are probably not present at all. Future development can be suggested to improve TPOT and have it sufficiently tackle those biomedical data problems, as well.
@@ -439,7 +439,7 @@
 	\label{subsec:MethodsTPOT}
 	
 	% Creating training and test set
-	After the data sets had been preprocessed, they were available for TPOT calculations. The experimental values and skin types should be used as input for the TPOT classifier whereas the values are the input features and the skin types the output. Before actually using the data, first it should be split into a training and test set. Even though TPOT itself also uses a training and test set to prevent overfitting of data, a small test set still was used to calculate the score on data TPOT had not seen itself, yet. Since the number of samples was very low to begin with, only 0\% of the data was regarded as training data and only 10\% as test data.
+	After the data sets had been preprocessed, they were available for TPOT calculations. The experimental values and skin types should be used as input for the TPOT classifier whereas the values are the input features and the skin types the output. Before actually using the data, first it should be split into a training and test set. Even though TPOT itself also uses a training and test set to prevent overfitting of data, a small test set still was used to calculate the score on data TPOT had not seen itself, yet. Since the number of samples was very low to begin with, only 90\% of the data was regarded as training data and only 10\% as test data.
 	
 	% TPOT setup
 	 Since classification was needed, the TPOT classifier was used which made use of several algorithms. These algorithms were mostly borrowed from sklearn and some were created by TPOT itself (Table \ref{tab:TPOTAlgorithms}). Before using TPOT, several parameters had to be selected. The selected parameters all revolve around the genetic algorithm used for selecting the best machine learning pipeline (subsection \ref{subsec:AutomatedMachineLearning}):
@@ -558,7 +558,7 @@
 	The best pipeline being a combination of logistic regression and gradient boosting classifier seems like a plausible best pipeline. Both are often used for high dimensional data. Also, when looking at the hyperparameters of the gradient boosting classifier, the decision trees made for it can become quite big (a minimum of 5 depth and 12 leaf nodes). The logistic regression could make choices for the decision tree easier.
 	
 	% Analysis
-	The score for the newly created pipeline is 0.913725490196. This score is not as high as the score for some data sets separately, which can be explained by the bias entered when combining them. The score has a high success rate, though, so it definitely is not bad. The pipelines created for the original data sets were also checked for the combined set to find a difference (Table \ref{tab:ScoresCombinedPipelines}). These show that the final created data set did show better results.
+	The score for the newly created pipeline is 0.913725490196. This score is not as high as the score for some data sets separately, which can be explained by the bias entered when combining them. The score has a high success rate, though, so it definitely is not bad. The pipelines created for the original data sets were also checked for the combined set to find a difference (Table \ref{tab:ScoresCombinedPipelines}). These show that the final created data set did show better results, although several algorithms came close.
 	
 	\begin{table}[h!]
 		\centering
@@ -568,12 +568,12 @@
 			\textbf{Data set} & \textbf{Algorithms}                                              & \textbf{Own score} & \textbf{Combined Data set score} \\ \hline
 			\textbf{GSE13355} & \begin{tabular}[c]{@{}l@{}}Binarizer\\ RandomForest\end{tabular} & 0.8333793341383474 & 0.674509803922                   \\
 			\textbf{GSE30999} & KNearestNeighbor                                                 & 0.9804301075268818 & 0.860784313725                   \\
-			\textbf{GSE34248} & RandomForest                                                     & 0.9666666666666668 & NOG NIET BEKEND                  \\
-			\textbf{GSE41662} & LinearSVC                                                        & 1.0                & NOG NIET BEKEND                  \\
-			\textbf{GSE78097} & RandomForest                                                     & 1.0                & NOG NIET BEKEND                  \\
-			\textbf{GSE14905} & LinearSVC                                                        & 0.9733333333333334 & NOG NIET BEKEND                  \\
-			\textbf{GSE32924} & GradientBoosting                                                 & 0.8283333333333334 & NOG NIET BEKEND                  \\
-			\textbf{GSE27887} & DecisionTree                                                     & 0.5142857142857142 & NOG NIET BEKEND                 
+			\textbf{GSE34248} & RandomForest                                                     & 0.9666666666666668 & 0.911764705882                  \\
+			\textbf{GSE41662} & LinearSVC                                                        & 1.0                & 0.901960784314                  \\
+			\textbf{GSE78097} & RandomForest                                                     & 1.0                & 0.858823529412                  \\
+			\textbf{GSE14905} & LinearSVC                                                        & 0.9733333333333334 & 0.905882352941                 \\
+			\textbf{GSE32924} & GradientBoosting                                                 & 0.8283333333333334 & 0.835294117647                  \\
+			\textbf{GSE27887} & DecisionTree                                                     & 0.5142857142857142 & 0.882352941176                 
 		\end{tabular}
 	\end{table}
 	
@@ -591,10 +591,11 @@
 	% Low sample number
 	Where on the one hand, the high dimensionality was an issue, the low number of samples seemed an issue, as well. Test sets could accidentally satisfy the fitted pipeline much easier when only a small subset was used. No really possibilities are available to tackle that. An example would be to create more samples using the known ones.
 	
-	% Data combination problem
-	
 	% Good actions TPOT 
-	TPOT did, however find good pipelines. Five of the 8 data sets in the end had a pipeline with a scoring of (close to) 1. This means that it did succeed finding good pipelines for more than half of the data sets. This shows that there definitely is potential for TPOT to be used for biomedical data sets.
+	TPOT found good pipelines despite the issues. Five of the 8 data sets in the end had a pipeline with a scoring of (close to) 1. This means that it did succeed finding good pipelines for more than half of the data sets. This shows that there definitely is potential for TPOT to be used for biomedical data sets.
+	
+	% Combined data
+	TPOT also found a good pipeline for the combined data set. The score was reasonable and that pipeline outperformed most of the pipelines generated for the separate data sets.
 	
 	% Concluding conclusion
 	All things considered TPOT did perform reasonably well for these biomedical data sets. It showed results that are definitely usable for further research. When some more changes would be added to address memory issues, adding the options of choosing possible algorithms and adding the possibility of creating more samples, TPOT become a very good tool for biomedical engineers to use.
