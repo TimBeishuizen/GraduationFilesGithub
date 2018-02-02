@@ -21,6 +21,8 @@
 \usepackage[dvipsnames]{xcolor}
 \usepackage[titletoc,toc,title]{appendix}
 \usepackage{listings}
+\usepackage{pdfpages}
+\usepackage{attachfile2}
 \graphicspath{ {./ThesisFigures/} }
 
 \hypersetup{
@@ -140,7 +142,7 @@
 	Not only the data itself is important, but also the goal of a project. The data is analysed with a certain target in mind. This target off course heavily influences the data analysis approach that is taken. Two major aspects can be done for data analysis, data mining and modelling. For this project, the focus will be on data mining.
 	
 	% Data mining definition
-	Data Mining has gained multiple definitions over the year. The best adopted definition is the following: “Data mining is the analysis of (often large) observational data sets to find unsuspected relationships and to summarize the data in novel ways that are both understandable and useful to the data owner." \cite{hand2001principles} As can be read in this definition, the main goal is find new and useful insights through datasets, that can be used in further decisions or hypotheses. It is one of the links that brings data and knowledge together.\cite{Yoo2012} A data mining project follows a certain layout. (Figure \ref{fig:ResearchSteps}), which in the end leads to further knowledge that aids the medical world.\cite{bramer2007principles} 
+	Data Mining has gained multiple definitions over the year. The most adopted definition is the following: “Data mining is the analysis of (often large) observational data sets to find unsuspected relationships and to summarize the data in novel ways that are both understandable and useful to the data owner." \cite{hand2001principles} As can be read in this definition, the main goal is find new and useful insights and patterns through datasets, that can be used in further decisions or hypotheses.\cite{chen2006medical, 7024124} It is one of the links that brings data and knowledge together.\cite{Yoo2012} A data mining project follows a certain layout. (Figure \ref{fig:ResearchSteps}), which in the end leads to further knowledge that aids the medical world.\cite{bramer2007principles} 
 	
 	\begin{figure}
 		\includegraphics[scale=1.0]{ResearchSteps.png}
@@ -149,19 +151,10 @@
 	\end{figure}
 	
 	% Types of data mining
-	To find new insights in data, several a
+	Since biomedical data is a wide scope, data mining has several specialisations in different direction. An example would be text data mining, used to find related articles with websites such as Pubmed and Google Scholar. These articles can mention similar genes, diseases or proteins and give additional information about them. Another examples would be microarray data mining. This type of data mining focuses on extracting entities and pathways that define a disease or other phenotype. Two other data mining types are proposed. One focuses on extracting useful information out of mass spectrometry data points, called proteomic data mining. A second focuses more on a molecular level and how these molecules would affect different cell types.\cite{YANG2012S16}
 	
-
-	
-	% Two data mining types (read the article for further interest! - http://www.sciencedirect.com/science/article/pii/S1359644611004338)
-	In response to the huge demand of data mining for target discovery in the ‘omics’ era, this review explicates various data mining approaches and their applications to target discovery with emphasis on text and microarray data analysis. \cite{YANG2012S16}
-
-	
-	 Data mining
-	aims to analyze a set of given data or information in order to identify novel
-	and potentially useful patterns \cite{chen2006medical}
-	
-	Especially in high-dimensional biomedical data sets, it is of great importance to find underlying patterns in the data. In this work we present an intuitive and easy-to-compute method that finds groups of similar objects by utilizing a network structure of the data. The key idea is that every object first ranks its neighbors and in a second step, the overlap of nearest neighbors between all objects is computed and stored in a sparse adjacency matrix. \cite{7024124}
+	% Reference to earlier made report
+	Whichever splits are made in the data mining term for different areas in biomedical data analysis, the techniques are mostly based on statistical analysis and machine learning. A discussion of these two types has been made earlier (Appendix \ref{sec:BiomedicalDataAnalysis})
 	
 	\subsubsection{Machine Learning}
 	
@@ -225,5 +218,14 @@
 	
 	\bibliography{../References/Citings} 
 	\bibliographystyle{ieeetr}
+	
+	\appendix
+	
+	\clearpage
+	
+	\section{Biomedical Data Analysis}
+	\label{sec:BiomedicalDataAnalysis}
+	
+	\includepdf[pages={1-22}]{../DataAnalysisThesis/BiomedicalDataAnalysis.pdf}
 	
 \end{document}

@@ -4,7 +4,8 @@
 \contentsline {subsection}{\numberline {2.1}Biomedical Data}{2}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Data Mining}{3}{subsection.2.2}
 \contentsline {subsubsection}{\numberline {2.2.1}Machine Learning}{4}{subsubsection.2.2.1}
-\contentsline {subsection}{\numberline {2.3}Data Analysis Frameworks}{4}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.3}Data Analysis Frameworks}{5}{subsection.2.3}
 \contentsline {subsection}{\numberline {2.4}Biomedical Knowledge}{5}{subsection.2.4}
 \contentsline {section}{\numberline {3}Research Question}{6}{section.3}
 \contentsline {subsection}{\numberline {3.1}Hypotheses}{6}{subsection.3.1}
+\contentsline {section}{\numberline {A}Biomedical Data Analysis}{8}{appendix.A}
