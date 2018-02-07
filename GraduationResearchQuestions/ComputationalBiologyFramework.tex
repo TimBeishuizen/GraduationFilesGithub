@@ -154,32 +154,20 @@
 	Since biomedical data is a wide scope, data mining has several specialisations in different direction. An example would be text data mining, used to find related articles with websites such as Pubmed and Google Scholar. These articles can mention similar genes, diseases or proteins and give additional information about them. Another examples would be microarray data mining. This type of data mining focuses on extracting entities and pathways that define a disease or other phenotype. Two other data mining types are proposed. One focuses on extracting useful information out of mass spectrometry data points, called proteomic data mining. A second focuses more on a molecular level and how these molecules would affect different cell types.\cite{YANG2012S16}
 	
 	% Reference to earlier made report
-	Whichever splits are made in the data mining term for different areas in biomedical data analysis, the techniques are mostly based on statistical analysis and machine learning. A discussion of these two types has been made earlier (Appendix \ref{sec:BiomedicalDataAnalysis})
+	Whichever splits are made in the data mining term for different areas in biomedical data analysis, the techniques are mostly based on statistical analysis and machine learning. A discussion of these two types has been made earlier (Appendix \ref{app:BiomedicalDataAnalysis}).
 	
-	\subsubsection{Machine Learning}
+	\subsection{Data Mining Tools}
+	\label{subsec:DataMiningTools}
 	
-	% part of machine learning
-	A machine learning technique gaining increasing recognition and
-	popularity in recent years is the support vector machines (SVMs). SVM is
-	based on statistical learning theory that tries to find a hyperplane to best
-	separate two or multiple classes (Vapnik, 1998). This statistical learning
-	model has been applied in different applications and the results have been
-	encouraging. For example, it has been shown that SVM achieved the best
-	performance among several learning methods in document classification
-	(Joachims, 1998; Yang and Liu, 1999). SVM is also suitable for various
-	biomedical classification problems, such as disease state classification based
-	on genetic variables or medical diagnosis based on patient indicators. \cite{chen2006medical}
+	% Introduction data mining tools
+	When applying several data mining algorithms to extract results from a data set, a certain tool has to be used that facilitates use of those algorithms. Several basic tools are available and widely used for this (Appendix \ref{app:BiomedicalDataAnalysis}). Since biomedical data has specific characteristics, separate tools or frameworks consisting of those tools are made. These are usually either made to create a database with a certain lay-out to put it in or to collect multiple algorithms and alter them specifically for biomedical cases. Many times both are connected as well, to optimize use.
 	
-	The accuracy of a learning system needs to be evaluated before it can
-	become useful. Limited availability of data often makes estimating accuracy
-	a difficult task (Kohavi, 1995). Choosing a good evaluation methodology is
-	very important for machine learning systems development. \cite{chen2006medical}
+	% Data set storage
+	To store the data several projects are started. Famous project examples are the Human Genome Project (HGP) that tries to sequence the entire human genome\cite{sawicki1993human} or the Human Connectome Project (HCP) that focuses on the brain connectivity.\cite{van2012human} Both consist of an enormous amount of data that need to be stored and a tool is created for use in these project, for instance the ConnectomeDB for the HCP.\cite{marcus2011informatics}
 	
-	Machine learning is a general-purpose method of artificial intelligence that can learn relationships from the data without the need to define them a priori \cite{doi:10.1093/bib/bbx044}
+	% Data set analysis
 	
-	\subsection{Data Analysis Frameworks}
 	
-	One of the technologies that can help in carrying out the DMKD process is XML (eXtensible Markup Language) [6]. All formatted text documents consist of text and markup. Markup is the set of commands, or tags, placed within the text, that control spacing, pagination, linkages to other documents, font style, size, color, and foreign alphabets. On the Internet, the most popular markup language is the Hypertext Markup Language (HTML). In HTML, each start-tag begins with <and ends with>; each end-tag begins with </and ends with>. Thus, for example, the sequence <B> … TEXT … </B> causes the computer monitor or printer to display … TEXT … in boldface. \cite{CIOS20021}
 	
 	The ability to share data effectively and efficiently is the starting point for successful
 	analysis, and thus several attempts have been made to standardize formats for such
@@ -224,7 +212,7 @@
 	\clearpage
 	
 	\section{Biomedical Data Analysis}
-	\label{sec:BiomedicalDataAnalysis}
+	\label{app:BiomedicalDataAnalysis}
 	
 	\includepdf[pages={1-22}]{../DataAnalysisThesis/BiomedicalDataAnalysis.pdf}
 	
