@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2017.11.1)  17 JAN 2018 17:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2017.11.1)  9 FEB 2018 16:38
 entering extended mode
 **./DataMiningSeminarProposal.tex
 (DataMiningSeminarProposal.tex
@@ -1047,22 +1047,22 @@ te ignored
                                                   \fi \fi 
 l.614 
       ] (DataMiningSeminarProposal.bbl [18] [19] [20])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 621.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 624.
  [21]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 621.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 624.
 
 (DataMiningSeminarProposal.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 621.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 621.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 624.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 624.
 Package rerunfilecheck Info: File `DataMiningSeminarProposal.out' has not chang
 ed.
 (rerunfilecheck)             Checksum: 771B112F212757CF58DBFC5AEC5AB936;1241.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 621.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 624.
  ) 
 Here is how much of TeX's memory you used:
  10778 strings out of 493318
  154021 string characters out of 3139046
- 269552 words of memory out of 3000000
+ 269556 words of memory out of 3000000
  14034 multiletter control sequences out of 15000+200000
  8495 words of font info for 33 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1078,9 +1078,9 @@ e1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
 .pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:
 /Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program
  Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on DataMiningSeminarProposal.pdf (22 pages, 580972 bytes).
+Output written on DataMiningSeminarProposal.pdf (22 pages, 581954 bytes).
 PDF statistics:
- 442 PDF objects out of 1000 (max. 8388607)
+ 443 PDF objects out of 1000 (max. 8388607)
  105 named destinations out of 1000 (max. 500000)
  196 words of extra memory for PDF output out of 10000 (max. 10000000)
 

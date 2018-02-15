@@ -24,15 +24,13 @@ def read_data(name):
 
     line = file.readline()
 
-    n = 0
-
     while line[0:24] != "!series_matrix_table_end":
 
         # Series data
         if line[0:7] == "!Series":
             series_data.append(line)
 
-          # Sample data
+        # Sample data
         elif line[0:7] == "!Sample":
             sample_data.append(line)
 
@@ -169,7 +167,7 @@ def extract_data(name):
 
     # Read and extract all viable data
     series_data, sample_data, sample_matrix = read_data(name)
-    # series = extract_series_data(series_data)
+    series = extract_series_data(series_data)
     samples = extract_sample_data(sample_data)
     sample_ids, gene_ids, sample_values = extract_sample_matrix(sample_matrix)
 
@@ -211,4 +209,6 @@ def extract_data(name):
     # Hot encode the data
     skin_types = encode_output(np.asarray(skin_types), disease_type)
 
-    return sample_values, skin_types, gene_ids, sample_ids
+    print("Data extracted for the %s data set" % name)
+
+    return sample_values, skin_types, gene_ids, sample_ids, series

@@ -11,39 +11,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SkinDataExtraction.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DataExtraction/SkinDataExtraction.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="116" column="64" lean-forward="false" selection-start-line="116" selection-start-column="64" selection-end-line="116" selection-end-column="64" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-                <element signature="e#66#997#0" expanded="false" />
-                <element signature="e#1042#1420#0" expanded="false" />
-                <element signature="e#1465#2308#0" expanded="false" />
-                <element signature="e#3355#4645#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="InitialTesting.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/StatisticalAnalysis/InitialTesting.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#52#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="306">
+              <caret line="19" column="15" lean-forward="true" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BasicStatisticalTesting.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/StatisticalAnalysis/BasicStatisticalTesting.py">
+      <file leaf-file-name="tree_data.dot" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StatisticalAnalysis/tree_data.dot">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="56" column="41" lean-forward="false" selection-start-line="56" selection-start-column="41" selection-end-line="56" selection-end-column="41" />
+            <state relative-caret-position="340">
+              <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BasicTesting.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StatisticalAnalysis/BasicTesting.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="27" column="93" lean-forward="false" selection-start-line="27" selection-start-column="93" selection-end-line="27" selection-end-column="93" />
               <folding>
                 <element signature="e#0#52#0" expanded="true" />
               </folding>
@@ -54,8 +46,79 @@
       <file leaf-file-name="SignificanceExtraction.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/StatisticalAnalysis/SignificanceExtraction.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="47" column="22" lean-forward="true" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
+            <state relative-caret-position="483">
+              <caret line="77" column="25" lean-forward="true" selection-start-line="77" selection-start-column="25" selection-end-line="77" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GeneClustering.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StatisticalAnalysis/GeneClustering.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="177">
+              <caret line="67" column="57" lean-forward="true" selection-start-line="67" selection-start-column="57" selection-end-line="67" selection-end-column="57" />
+              <folding>
+                <element signature="e#0#52#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MulticollinearityTesting.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StatisticalAnalysis/MulticollinearityTesting.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="561">
+              <caret line="61" column="20" lean-forward="true" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RelationTesting.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StatisticalAnalysis/RelationTesting.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="38" column="80" lean-forward="false" selection-start-line="38" selection-start-column="80" selection-end-line="38" selection-end-column="80" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GeneDataExtraction.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DataExtraction/GeneDataExtraction.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="132" column="19" lean-forward="true" selection-start-line="132" selection-start-column="19" selection-end-line="132" selection-end-column="19" />
+              <folding>
+                <element signature="e#57#725#0" expanded="false" />
+                <element signature="e#764#1176#0" expanded="false" />
+                <element signature="e#1222#1519#0" expanded="false" />
+                <element signature="e#1563#1865#0" expanded="false" />
+                <element signature="e#1916#2267#0" expanded="false" />
+                <element signature="e#2299#3253#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NormalLesionalRelationTesting.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StatisticalAnalysis/NormalLesionalRelationTesting.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NonLesionalLesionalRelationTesting.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/StatisticalAnalysis/NonLesionalLesionalRelationTesting.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="24" column="93" lean-forward="false" selection-start-line="24" selection-start-column="93" selection-end-line="24" selection-end-column="93" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -72,6 +135,16 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>stand_values</find>
+      <find>values</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>gene_values</replace>
+      <replace>process</replace>
+    </replaceStrings>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -79,13 +152,23 @@
         <option value="$PROJECT_DIR$/DataExtraction/PreprocessGeneData.py" />
         <option value="$PROJECT_DIR$/DataExtraction/SkinDataDetailsFinder.py" />
         <option value="$PROJECT_DIR$/StatisticalAnalysis/InitialTesting.py" />
+        <option value="$PROJECT_DIR$/StatisticalAnalysis/MulticollinearityTesting.py" />
+        <option value="$PROJECT_DIR$/StatisticalAnalysis/BasicStatisticalTesting.py" />
+        <option value="$PROJECT_DIR$/StatisticalAnalysis/tree_data.dot" />
+        <option value="$PROJECT_DIR$/OpenMLUploading.py" />
+        <option value="$PROJECT_DIR$/OpenMLUploading/OpenMLUploading.py" />
+        <option value="$PROJECT_DIR$/DataExtraction/GeneDataExtraction.py" />
+        <option value="$PROJECT_DIR$/StatisticalAnalysis/GeneClustering.py" />
+        <option value="$PROJECT_DIR$/StatisticalAnalysis/BasicTesting.py" />
         <option value="$PROJECT_DIR$/DataExtraction/SkinDataExtraction.py" />
         <option value="$PROJECT_DIR$/StatisticalAnalysis/SignificanceExtraction.py" />
-        <option value="$PROJECT_DIR$/StatisticalAnalysis/BasicStatisticalTesting.py" />
+        <option value="$PROJECT_DIR$/StatisticalAnalysis/RelationTesting.py" />
+        <option value="$PROJECT_DIR$/StatisticalAnalysis/BasicRelationTesting.py" />
+        <option value="$PROJECT_DIR$/StatisticalAnalysis/NonLesionalLesionalRelationTesting.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="960" />
     <option name="width" value="960" />
     <option name="height" value="1160" />
@@ -105,6 +188,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -121,18 +205,12 @@
             <path>
               <item name="Testing" type="b2602c69:ProjectViewProjectNode" />
               <item name="Testing" type="462c0819:PsiDirectoryNode" />
-              <item name="DataSets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Testing" type="462c0819:PsiDirectoryNode" />
               <item name="StatisticalAnalysis" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -149,6 +227,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\s119104\Documents\GitHub\GraduationFilesGithub\Testing\OpenMLUploading" />
       <recent name="C:\Users\s119104\Documents\GitHub\GraduationFilesGithub\Testing" />
       <recent name="C:\Users\s119104\Documents\GitHub\GraduationFilesGithub\Testing\DataExtraction" />
     </key>
@@ -165,8 +244,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.BasicStatisticalTesting">
-    <configuration name="BasicStatisticalTesting" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.NonLesionalLesionalRelationTesting">
+    <configuration name="BasicRelationTesting" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -178,12 +257,12 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Testing" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/StatisticalAnalysis/BasicStatisticalTesting.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\s119104\Documents\GitHub\GraduationFilesGithub\Testing\StatisticalAnalysis\NormalLesionalRelationTesting.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="InitialTesting" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="BasicTesting" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -195,12 +274,12 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Testing" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/StatisticalAnalysis/InitialTesting.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/StatisticalAnalysis/BasicTesting.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="SignificanceExtraction" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="GeneClustering" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -212,21 +291,59 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Testing" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/StatisticalAnalysis/SignificanceExtraction.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/StatisticalAnalysis/GeneClustering.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="Python.InitialTesting" />
-      <item index="1" class="java.lang.String" itemvalue="Python.BasicStatisticalTesting" />
-      <item index="2" class="java.lang.String" itemvalue="Python.SignificanceExtraction" />
+    <configuration name="GeneDataExtraction" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DataExtraction" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Testing" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataExtraction/GeneDataExtraction.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="NonLesionalLesionalRelationTesting" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/StatisticalAnalysis" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Testing" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/StatisticalAnalysis/NonLesionalLesionalRelationTesting.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Python.GeneDataExtraction" />
+      <item index="1" class="java.lang.String" itemvalue="Python.GeneClustering" />
+      <item index="2" class="java.lang.String" itemvalue="Python.BasicRelationTesting" />
+      <item index="3" class="java.lang.String" itemvalue="Python.BasicTesting" />
+      <item index="4" class="java.lang.String" itemvalue="Python.NonLesionalLesionalRelationTesting" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python.BasicStatisticalTesting" />
-        <item index="1" class="java.lang.String" itemvalue="Python.SignificanceExtraction" />
-        <item index="2" class="java.lang.String" itemvalue="Python.InitialTesting" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.NonLesionalLesionalRelationTesting" />
+        <item index="1" class="java.lang.String" itemvalue="Python.BasicRelationTesting" />
+        <item index="2" class="java.lang.String" itemvalue="Python.BasicTesting" />
+        <item index="3" class="java.lang.String" itemvalue="Python.GeneClustering" />
+        <item index="4" class="java.lang.String" itemvalue="Python.GeneDataExtraction" />
       </list>
     </recent_temporary>
   </component>
@@ -247,18 +364,18 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="960" y="0" width="960" height="1160" extended-state="0" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26666668" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.155527" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3330078" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4581081" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910156" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39941406" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39903846" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -273,7 +390,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -282,11 +401,12 @@
         <state relative-caret-position="544">
           <caret line="116" column="64" lean-forward="false" selection-start-line="116" selection-start-column="64" selection-end-line="116" selection-end-column="64" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <element signature="e#66#997#0" expanded="false" />
-            <element signature="e#1042#1420#0" expanded="false" />
-            <element signature="e#1465#2308#0" expanded="false" />
-            <element signature="e#3355#4645#0" expanded="false" />
+            <element signature="e#0#9#0" expanded="false" />
+            <element signature="e#66#984#0" expanded="false" />
+            <element signature="e#1029#1407#0" expanded="false" />
+            <element signature="e#1452#2295#0" expanded="false" />
+            <element signature="e#2344#3290#0" expanded="false" />
+            <element signature="e#3342#4632#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -296,7 +416,53 @@
         <state relative-caret-position="238">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
+            <element signature="e#0#52#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StatisticalAnalysis/SignificanceExtraction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="47" column="22" lean-forward="true" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#18#0" expanded="false" />
+            <element signature="e#233#2693#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StatisticalAnalysis/BasicTesting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1241">
+          <caret line="81" column="0" lean-forward="true" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+          <folding>
             <element signature="e#0#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataExtraction/SkinDataExtraction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="116" column="64" lean-forward="false" selection-start-line="116" selection-start-column="64" selection-end-line="116" selection-end-column="64" />
+          <folding>
+            <element signature="e#0#9#0" expanded="false" />
+            <element signature="e#66#984#0" expanded="false" />
+            <element signature="e#1029#1407#0" expanded="false" />
+            <element signature="e#1452#2295#0" expanded="false" />
+            <element signature="e#2344#3290#0" expanded="false" />
+            <element signature="e#3342#4632#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StatisticalAnalysis/InitialTesting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#52#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -306,12 +472,13 @@
         <state relative-caret-position="782">
           <caret line="47" column="55" lean-forward="false" selection-start-line="47" selection-start-column="55" selection-end-line="47" selection-end-column="55" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="false" />
+            <element signature="e#233#2693#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/StatisticalAnalysis/BasicStatisticalTesting.py">
+    <entry file="file://$PROJECT_DIR$/StatisticalAnalysis/BasicTesting.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="39" column="37" lean-forward="false" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
@@ -326,11 +493,12 @@
         <state relative-caret-position="544">
           <caret line="116" column="64" lean-forward="false" selection-start-line="116" selection-start-column="64" selection-end-line="116" selection-end-column="64" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <element signature="e#66#997#0" expanded="false" />
-            <element signature="e#1042#1420#0" expanded="false" />
-            <element signature="e#1465#2308#0" expanded="false" />
-            <element signature="e#3355#4645#0" expanded="false" />
+            <element signature="e#0#9#0" expanded="false" />
+            <element signature="e#66#984#0" expanded="false" />
+            <element signature="e#1029#1407#0" expanded="false" />
+            <element signature="e#1452#2295#0" expanded="false" />
+            <element signature="e#2344#3290#0" expanded="false" />
+            <element signature="e#3342#4632#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -340,7 +508,7 @@
         <state relative-caret-position="238">
           <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
-            <element signature="e#0#52#0" expanded="true" />
+            <element signature="e#0#52#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -350,12 +518,13 @@
         <state relative-caret-position="782">
           <caret line="47" column="55" lean-forward="false" selection-start-line="47" selection-start-column="55" selection-end-line="47" selection-end-column="55" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="false" />
+            <element signature="e#233#2693#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/StatisticalAnalysis/BasicStatisticalTesting.py">
+    <entry file="file://$PROJECT_DIR$/StatisticalAnalysis/BasicTesting.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
           <caret line="50" column="35" lean-forward="true" selection-start-line="50" selection-start-column="35" selection-end-line="50" selection-end-column="35" />
@@ -391,19 +560,13 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <element signature="e#66#997#0" expanded="false" />
-            <element signature="e#1042#1420#0" expanded="false" />
-            <element signature="e#1465#2308#0" expanded="false" />
-            <element signature="e#3355#4645#0" expanded="false" />
+            <element signature="e#0#9#0" expanded="false" />
+            <element signature="e#66#984#0" expanded="false" />
+            <element signature="e#1029#1407#0" expanded="false" />
+            <element signature="e#1452#2295#0" expanded="false" />
+            <element signature="e#2344#3290#0" expanded="false" />
+            <element signature="e#3342#4632#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataExtraction/ExtractGeneFiles.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -416,51 +579,143 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DataExtraction/SkinDataDetailsFinder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
+        <state relative-caret-position="170">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="13" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenMLUploading/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataExtraction/ExtractGeneFiles.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenMLUploading/OpenMLUploading.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="549">
+          <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StatisticalAnalysis/tree_data.dot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StatisticalAnalysis/BasicTesting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="27" column="93" lean-forward="false" selection-start-line="27" selection-start-column="93" selection-end-line="27" selection-end-column="93" />
+          <folding>
+            <element signature="e#0#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StatisticalAnalysis/GeneClustering.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="67" column="57" lean-forward="true" selection-start-line="67" selection-start-column="57" selection-end-line="67" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#52#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DataExtraction/SkinDataExtraction.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="116" column="64" lean-forward="false" selection-start-line="116" selection-start-column="64" selection-end-line="116" selection-end-column="64" />
+        <state relative-caret-position="532">
+          <caret line="211" column="15" lean-forward="false" selection-start-line="211" selection-start-column="15" selection-end-line="211" selection-end-column="15" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <element signature="e#66#997#0" expanded="false" />
-            <element signature="e#1042#1420#0" expanded="false" />
-            <element signature="e#1465#2308#0" expanded="false" />
-            <element signature="e#3355#4645#0" expanded="false" />
+            <element signature="e#66#984#0" expanded="false" />
+            <element signature="e#1029#1407#0" expanded="false" />
+            <element signature="e#1452#2295#0" expanded="false" />
+            <element signature="e#2344#3290#0" expanded="false" />
+            <element signature="e#3342#4632#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/StatisticalAnalysis/InitialTesting.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#52#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="306">
+          <caret line="19" column="15" lean-forward="true" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/StatisticalAnalysis/SignificanceExtraction.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="47" column="22" lean-forward="true" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
+        <state relative-caret-position="483">
+          <caret line="77" column="25" lean-forward="true" selection-start-line="77" selection-start-column="25" selection-end-line="77" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataExtraction/GeneDataExtraction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="132" column="19" lean-forward="true" selection-start-line="132" selection-start-column="19" selection-end-line="132" selection-end-column="19" />
+          <folding>
+            <element signature="e#57#725#0" expanded="false" />
+            <element signature="e#764#1176#0" expanded="false" />
+            <element signature="e#1222#1519#0" expanded="false" />
+            <element signature="e#1563#1865#0" expanded="false" />
+            <element signature="e#1916#2267#0" expanded="false" />
+            <element signature="e#2299#3253#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StatisticalAnalysis/MulticollinearityTesting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="61" column="20" lean-forward="true" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StatisticalAnalysis/NormalLesionalRelationTesting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/StatisticalAnalysis/BasicStatisticalTesting.py">
+    <entry file="file://$PROJECT_DIR$/StatisticalAnalysis/RelationTesting.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="56" column="41" lean-forward="false" selection-start-line="56" selection-start-column="41" selection-end-line="56" selection-end-column="41" />
+        <state relative-caret-position="85">
+          <caret line="38" column="80" lean-forward="false" selection-start-line="38" selection-start-column="80" selection-end-line="38" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StatisticalAnalysis/NonLesionalLesionalRelationTesting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="93" lean-forward="false" selection-start-line="24" selection-start-column="93" selection-end-line="24" selection-end-column="93" />
           <folding>
-            <element signature="e#0#52#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
