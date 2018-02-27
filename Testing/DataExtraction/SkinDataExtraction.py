@@ -212,3 +212,21 @@ def extract_data(name):
     print("Data extracted for the %s data set" % name)
 
     return sample_values, skin_types, gene_ids, sample_ids, series
+
+
+def extract_multiple_data_sets(names):
+    """ Extracts multiple data sets and adds them together
+
+    :param names: The names of the added data sets
+    :return: the values of the samples, the skin type fo the samples, the ids of the genes and the ids of the samples
+    """
+
+    sample_values, skin_types, gene_ids, sample_ids, series = extract_data(names[0])
+
+    for name in names[1:]:
+        curr_sample_values, curr_skin_types, curr_gene_ids, curr_sample_ids, curr_series = extract_data(name)
+
+        sample_values = np.append(sample_values, curr_sample_values, axis=0)
+        skin_types = np.append(skin_types, curr_skin_types)
+
+    return sample_values, skin_types, gene_ids

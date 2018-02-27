@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="NM_005927 <= -0.3102\nimpurity = 0.4992\nsamples = 317\nvalue = [152, 165]", fillcolor="#399de514"] ;
+1 [label="NM_144637 <= -0.3889\nimpurity = 0.0632\nsamples = 153\nvalue = [148, 5]", fillcolor="#e58139f6"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="impurity = 0.0\nsamples = 2\nvalue = [0, 2]", fillcolor="#399de5ff"] ;
+1 -> 2 ;
+3 [label="NM_145206 <= 1.2176\nimpurity = 0.0389\nsamples = 151\nvalue = [148, 3]", fillcolor="#e58139fa"] ;
+1 -> 3 ;
+4 [label="NM_032908 <= 2.118\nimpurity = 0.0263\nsamples = 150\nvalue = [148, 2]", fillcolor="#e58139fc"] ;
+3 -> 4 ;
+5 [label="BC032248 <= -0.6304\nimpurity = 0.0133\nsamples = 149\nvalue = [148, 1]", fillcolor="#e58139fd"] ;
+4 -> 5 ;
+6 [label="impurity = 0.0\nsamples = 1\nvalue = [0, 1]", fillcolor="#399de5ff"] ;
+5 -> 6 ;
+7 [label="impurity = 0.0\nsamples = 148\nvalue = [148, 0]", fillcolor="#e58139ff"] ;
+5 -> 7 ;
+8 [label="impurity = 0.0\nsamples = 1\nvalue = [0, 1]", fillcolor="#399de5ff"] ;
+4 -> 8 ;
+9 [label="impurity = 0.0\nsamples = 1\nvalue = [0, 1]", fillcolor="#399de5ff"] ;
+3 -> 9 ;
+10 [label="BC040695 <= -1.4442\nimpurity = 0.0476\nsamples = 164\nvalue = [4, 160]", fillcolor="#399de5f9"] ;
+0 -> 10 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+11 [label="impurity = 0.0\nsamples = 2\nvalue = [2, 0]", fillcolor="#e58139ff"] ;
+10 -> 11 ;
+12 [label="BC013905 <= 2.324\nimpurity = 0.0244\nsamples = 162\nvalue = [2, 160]", fillcolor="#399de5fc"] ;
+10 -> 12 ;
+13 [label="impurity = 0.0\nsamples = 160\nvalue = [0, 160]", fillcolor="#399de5ff"] ;
+12 -> 13 ;
+14 [label="impurity = 0.0\nsamples = 2\nvalue = [2, 0]", fillcolor="#e58139ff"] ;
+12 -> 14 ;
+}

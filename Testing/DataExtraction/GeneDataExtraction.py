@@ -124,7 +124,16 @@ def extract_gene_data():
                 # Find the relations of the gene
                 gene_details['Process Relations'] = extract_gene_relations(gene[i])
                 continue
+            elif gene_spec[i] == "Gene Ontology Cellular Component":
 
+                # Find the relations of the gene
+                gene_details['Cellular Relations'] = extract_gene_relations(gene[i])
+                continue
+            elif gene_spec[i] == "Gene Ontology Molecular Function":
+
+                # Find the relations of the gene
+                gene_details['Molecular Relations'] = extract_gene_relations(gene[i])
+                continue
             gene_details[gene_spec[i]] = gene[i]
 
         # Add the set to the gene pool
