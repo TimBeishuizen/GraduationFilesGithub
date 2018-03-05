@@ -11,3 +11,4 @@
 \contentsline {subsection}{\numberline {3.3}Tool Availability Driven Hypothesis}{7}{subsection.3.3}
 \contentsline {subsection}{\numberline {3.4}Tool Extension Driven Hypothesis}{7}{subsection.3.4}
 \contentsline {subsection}{\numberline {3.5}Knowledge Driven Hypothesis}{7}{subsection.3.5}
+\contentsline {section}{\numberline {4}Methods}{8}{section.4}

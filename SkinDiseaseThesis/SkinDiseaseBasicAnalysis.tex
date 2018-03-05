@@ -1,0 +1,232 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{a4wide} %Wider margins
+\usepackage[english]{babel} %English dictionary for hyphenation and definitions, e.g. Table vs. Tabel
+\usepackage[official]{eurosym} %Support for Euro-sign
+\usepackage[utf8]{inputenc} %Support for internationalization, e.g. é vs.\’e
+\usepackage{amsmath,amssymb,amsthm} %Support for mathematical formulas and symbols
+\usepackage{fancyhdr} %Fancy headers
+\usepackage{hyperref} %Creates clickable links
+\usepackage{graphicx} %Support for grahpics
+\usepackage{nopageno} %Support for removal of pagenumbers
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{xspace}
+\usepackage{algorithm,algpseudocode}
+\usepackage{float}
+\usepackage{mathtools}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[titletoc,toc,title]{appendix}
+\usepackage{listings}
+\usepackage{pdfpages}
+\usepackage{footmisc}
+\usepackage{attachfile2}
+\graphicspath{ {./ThesisFigures/} }
+
+\hypersetup{
+    pdftitle={}, %PDF-file will be given a proper title when viewed in a reader
+    hidelinks %PDF-file will be given clickable, yet not visible links when viewed in a reader
+}
+\newcommand{\documenttitle}{Skin Disease Basic Analysis}
+\newcommand{\documentsubtitle}{Analysing gene expresseion for Psoriasis and Atopic Dermatitis}
+
+
+\newcommand{\true}{{\sc True}\xspace}
+\begin{document}
+	
+	\begin{titlepage}
+		
+		\center
+		
+		\vspace*{3cm}
+		
+		\textbf{\huge \documenttitle}
+		
+		\textit{\LARGE \documentsubtitle}
+		
+		\vspace*{2cm}
+		
+		\large
+		\centering
+		T.P.A.~\textsc{Beishuizen}~(0791613)\\
+		Biomedical Engineering - Computational Biology\\
+		Computer Science - Data Mining\\
+		Eindhoven, University of Technology\\
+		Email: \texttt{t.p.a.beishuizen@student.tue.nl}
+		
+		\vfill
+		
+		\vspace*{1cm}
+		
+		\today
+		
+	\end{titlepage}
+	
+	\tableofcontents
+	
+	%\newpage
+	
+	\pagestyle{fancy}
+	%Abbreviations used by fancyhdr:
+	%E Even page
+	%O Odd page
+	%L Left ﬁeld
+	%C Center ﬁeld
+	%R Right ﬁeld
+	%H Header
+	%F Footer
+	\fancyhead{} % clear all header fields
+	\fancyfoot{} % clear all footer fields
+	\renewcommand{\headrulewidth}{0.4pt}
+	\renewcommand{\footrulewidth}{0.4pt}
+	
+	\fancyhead[L]{\rightmark}
+	\fancyfoot[C]{\thepage}
+	\fancyhead[R]{T.P.A. Beishuizen}
+	
+	
+	\clearpage
+	
+	\section{Introduction}
+	\label{sec:Introduction}
+	
+	% Quick explanation for biomedical data
+	At the Computational Biology department (cBio) of Biomedical Engineering (BME), many requests are made to analyse gathered data. This data usually stems from research in hospitals, but can also be from other BME groups and publicly available data. Currently a standard is missing to efficiently analyse those data sets. With the vast number of data sets that are available, such a standard in the form of a framework on data analysis would be valuable. It would speed up projects and give them a higher chance to succeed the goal, due to improved efficiency.
+
+	% Explanation skin disease data
+	An example of biomedical data sets was based around gene expression of skin diseases. Two skin diseases were tested, psoriasis and atopic dermatitis, the latter one better known as a form of eczema. The expression of a big number of genes was tested for skin disease patients on skin affected by the disease (lesional skin) and skin not affected by the disease (non-lesional skin). At last there were normal patients, that did not suffer from the skin disease. Nine data sets were available for these data set, six for psoriasis and three for atopic dermatitis. The number of tested skin plaques ranged from 28 to 180 whereas the number of tested genes is the same for every set, namely 54675.
+
+	% Explanation skin data analysis
+	
+	
+	
+	\section{Skin Diseases Data Sets}
+	\label{sec:SkinDiseasesDataSet}
+	
+	% Introduction
+	Skin diseases could form a major disability in someone's life. Whereas skin diseases were not as life threatening as diseases such as Cancer, Alzheimer and AIDS, the could lower quality of life significantly. When looking at health-related quality of life (HRQL), patients with psoriasis showed same problems as patients with other major chronic health conditions.\cite{rapp1999psoriasis} Patients with both psoriasis and eczema suffered from severe itching symptoms and possibly even severe pains. Further insights in these skin diseases could help alleviate their unwanted side-effects and help improve the patients' quality of life.\cite{jowett1985skin}
+	
+	% Data set introduction
+	Information on both of these skin diseases could be found from nine data sets from the NCBI database\cite{edgar2002gene}. The data sets consisted of information on skin of patients with the disease (lesional skin) and skin without the disease (non-lesional skin). In several experiments this skin was taken from the same patient. Also some skin was taken from patients not suffering from the diseases at all. Six data sets focused on Psoriasis and three focused on atopic dermatitis. These data sets consisted of a total number of 54675 features, each of them corresponding to a specific gene. Not many skin samples were taken, ranging from 28 to 180. Also, since every data set was created by different people, some minor differences were present in them as well (Table \ref{tab:SkinDiseasesDataSets}).
+	
+	\begin{table}[h!]
+		\centering
+		\caption{Details of the nine skin disease data sets. The number of samples and features has been given, as well as remarks of the skin types.}
+		\label{tab:SkinDiseasesDataSets}
+		\begin{tabular}{cc|ccl}
+			\textbf{Disease}                                                     & \textbf{Data set name} & \textbf{Sample size} & \textbf{Features} & \textbf{Remarks}                                                                                                                                                                                                                                        \\ \hline
+			\textbf{Psoriasis}                                                   & \textbf{GSE13355} \cite{nair2009genome}      & 180                  & 54676             & \begin{tabular}[c]{@{}l@{}}Three skin types: \\ - NN (normal, 64 samples)\\ - PN  (non-lesional, 58 samples) \\ - PP (lesional, 58 samples)\end{tabular} \\ \cline{3-5} 
+			\textbf{}                                                            & \textbf{GSE30999} \cite{suarez2012expanding}      & 170                  & 54676             & \begin{tabular}[c]{@{}l@{}}- No normal patients\\ - Non-lesional (85 samples)\\ - Lesional (85 samples)\end{tabular}                                                                                                                    \\ \cline{3-5} 
+			\textbf{}                                                            & \textbf{GSE34248} \cite{bigler2013cross}      & 28                   & 54676             & \begin{tabular}[c]{@{}l@{}}- No normal patients\\ - Non-lesional (14 samples)\\ - Lesional (14 samples)\end{tabular}                                                                                                                              \\ \cline{3-5} 
+			\textbf{}                                                            & \textbf{GSE41662} \cite{bigler2013cross}      & 48                   & 54676             & \begin{tabular}[c]{@{}l@{}}- No normal patients\\ - Non-lesional (24 samples)\\ - Lesional (24 samples)\end{tabular}                                                                                                                               \\ \cline{3-5} 
+			\textbf{}                                                            & \textbf{GSE78097} \cite{kim2016spectrum}      & 33                   & 54676             & \begin{tabular}[c]{@{}l@{}}Different types of skin samples: \\ - Normal (6 samples)\\ - Mild Psoriasis (14 samples) \\ - Severe Psoriasis (13 samples)\end{tabular}                                                                                \\ \cline{3-5} 
+			\textbf{}                                                            & \textbf{GSE14905} \cite{yao2008type}     & 82                   & 54676             & \begin{tabular}[c]{@{}l@{}}- Normal skin (21 samples), \\ - Non-lesional skin (28 samples)\\ - Lesional skin (33 samples)\end{tabular}                                                                                                                 \\ \hline
+			\textbf{\begin{tabular}[c]{@{}c@{}}Atopic\\ Dermatitis\end{tabular}} & \textbf{GSE32924} \cite{suarez2011nonlesional}      & 33                   & 54676             & \begin{tabular}[c]{@{}l@{}}- Normal skin (8 samples) \\ - Non-lesional skin (12 samples)\\ - Lesional skin (13 samples)\end{tabular}                                                                                                         \\ \cline{3-5} 
+			\textbf{}                                                            & \textbf{GSE27887} \cite{tintle2011reversal}      & 35                   & 54676             & \begin{tabular}[c]{@{}l@{}}Different type of skin samples, \\ pre and post treatment of skin: \\ - Pre non-lesional (8 samples)\\ - Post non-lesional (9 samples)\\ - Pre lesional (9 samples)\\ - Post lesional (9 samples)\end{tabular}       \\ \cline{3-5} 
+			\textbf{}                                                            & \textbf{GSE36842} \cite{gittler2012progressive}      & 39                   & 54676             & \begin{tabular}[c]{@{}l@{}}Also difference between \\ acute and chronic dermatitis. \\ - Normal (15 samples)\\ - Non-lesional (8 samples) \\ - Acute lesional (8 samples) \\ - Chronic lesional (8 samples)\end{tabular}                    \\ \cline{1-5} 
+		\end{tabular}
+	\end{table}
+	
+	% Introduction challenges
+	The nine data sets are rich in information. The dimensionality is very high and if combined also houses a decent number of samples. Several challenges arise in the data set, too, as biomedical data sets often have. Three of these challenges are discussed for this case.
+	
+	% Challenge 1: Data heterogeneity
+	At first the challenge of handling nine different data sets was important. Even though the sets were created based on the NCBI database\cite{edgar2002gene}, the layouts were not identical. These difference originated from the intended research goals and the data availability. It is not possible to just concatenate samples without some form of preprocessing. Only the parts that are the same all over the data sets should be taken and all other parts omitted. A first look would be best on the nine data sets separately so initial ideas found with as less bias from combining them as possible.
+	
+	% Challenge 2: Data dimensionality
+	A second challenge could be found in the high number of features. There were 74675 featured measured, averaged a 1000 times the number of samples. The genes that actually were significantly involved in the skin diseases however should be about $1/1000^{th}$ of the total number of measured genes. Many features should be redundant and removed during preprocessing, a valuable and complex step in biomedical data mining.
+	
+	% Challenge 4: Data Volume
+	The third challenge was about data volume. The number of samples differed from 28 to 180, all of them being a very low number compared with the number of features. This indicates that the number of samples represent the complete sample space poorly, not clearly showing the boundaries between the areas. This could create problems during machine learning with such a low training and test set. Several cases will arise where accidentally all training and test set agree with the algorithm, whereas other samples from the sample space would not.
+	
+	\subsection{Additional Data}
+	\label{subsec:AdditionalData}
+	
+	% To write: Something about the additional data
+	The genes were the same for all of these nine different data sets. The NCBI database\cite{edgar2002gene} also provided separate data containing various information for every gene. This information included gene ID, commonly known name and abbreviation and which gene bank it originated from. Aside from this general knowledge it also contained processes the gene was involved with, cellular locations of the gene as well as molecular reactions they are involved in. This data could be used to find relations between several processes and their corresponding genes.
+	
+	\section{Methods}
+	\label{sec:Methods}
+	
+	% Methods introduction
+	Several techniques were used to achieve 
+	
+	% Only best Psoriasis sets
+	
+	\subsection{Feature Reduction}
+	\label{subsec:MethodsFeatureReduction}
+	
+	% T-test SciPy
+	
+	% Multicollinearity
+	
+	% Machine Learning RandomForest
+	
+	% Improvements with significance testing
+	
+	\subsection{Clustering}
+	\label{subsec:MethodsPositionalClustering}
+	
+	% Clustering types
+	
+	% Process/Cellular/Molecular
+	
+	% Specific Look at interesting clusters
+	
+	\subsection{Psoriasis Versus Atopic Dermatitis}
+	\label{subsec:MethodsPsoriasisVersusAtopicDermatitis}
+	
+	% Also took AD sets
+	
+	\section{Results}
+	\label{sec:Results}
+	Results introduction
+	
+	\subsection{Feature Reduction}
+	\label{subsec:ResultsFeatureResuction}
+	
+		% T-test SciPy
+	
+	% Multicollinearity
+	
+	% Machine Learning RandomForest
+	
+	% Improvements with significance testing
+	
+	\subsection{Clustering}
+	\label{subsec:ResultsPositionalClustering}
+	
+	% Clustering types
+	
+	% Process/Cellular/Molecular
+	
+	% Specific Look at interesting clusters
+	
+	\subsection{Psoriasis Versus Atopic Dermatitis}
+	\label{subsec:ResultsPsoriasisVersusAtopicDermatitis}
+	
+	% Also took AD sets
+	
+	\section{Conclusion}
+	\label{sec:Conclusion}
+	
+	% Conclusion for every part
+	
+	\section{Discussion for Framework}
+	\label{sec:DiscussionForFramework}
+	
+	% Global analysis
+	
+	% Feature dimensionality reduction ideas
+	
+	% Database integration
+	
+	\bibliography{../References/Citings} 
+	\bibliographystyle{ieeetr}
+	
+	\appendix
+	
+\end{document}

@@ -124,7 +124,7 @@
 	Not all data sets had a high number of instances that cause a big data volume. Sometimes there were relatively few instances, while the number of features was proportionally high.\cite{dubitzky2007fundamentals} Usually many of those features were not relevant enough for the research, however were still used for testing. Trying to remove features that were not important would greatly help finding relations between the others and create more knowledge about the research topic. Lowering the number of features also made the data volume go down, so analysis should be easier. Mainly an optimal features set should be selected to obtain the best results.\cite{PENG201015}
 	
 	% Low data volume challenge
-	Another way to approach a high number of features for a low number of samples would be that the number of samples were too low. If data was gathered for only a couple patients, results would hardly ever be consistent. Most analyses required more samples and would give biased results because of that. There were two ways of dealing with this low number of samples, the first one being generating more samples\ref{dunbar2006spatial, devroye1986sample} and the second one using the samples highly efficient\cite{van2002gene, roff1989statistical}. Most likely a combination fo both would give the best results. 
+	Another way to approach a high number of features for a low number of samples would be that the number of samples were too low. If data was gathered for only a couple patients, results would hardly ever be consistent. Most analyses required more samples and would give biased results because of that. There were two ways of dealing with this low number of samples, the first one being generating more samples\cite{dunbar2006spatial, devroye1986sample} and the second one using the samples highly efficient\cite{van2002gene, roff1989statistical}. Most likely a combination fo both would give the best results. 
 	
 	% Complexity challenge
 	Biomedical data could also be very complex. Useful results could be present, however it was very hard to obtain it. Examples of complex data were images, several biomedical signals and temporal data. Details of the useful results that were present in images was for example very hard to detect, the temporal data could vary quite much over time and the biomedical signals could be hard to combine with static biomarkers.\cite{Yoo2012} This aspect could benefit from exchanging knowledge with other research areas that specialize in mining of those complex data sets.\cite{Turkay2014, bellazzi2011data}
@@ -198,7 +198,7 @@
 	The main goal was to create a framework for more efficient data analysis. Based around the four main influencers of data analysis, a main research question was made and divided in five separate sub-questions. The main question would be:\\
 	\\
 	% Main question
-	\emph{What aspects are of importance to include in a framework for Biomedical Engineers to do data analysis more efficient?}\\
+	\emph{What aspects are of importance to include in a framework for Biomedical Engineers for more efficient data analysis?}\\
 	\\
 	As discussed earlier the main question could be divided in five different sub-questions. These five sub-questions would have their separate hypothesis. The five questions were:
 	
@@ -277,6 +277,17 @@
 	
 	% Create a user manual with also examples how to use everything
 	To understand everything without too much difficulty a user manual should be made. This user manual should include (publicly available) data sets and show how the framework should be used exemplary with these data sets. This manual and explanations would make the framework more accessible for both inexperienced and experienced programmers and would help them understand it quicker.
+	
+	\section{Methods}
+	\label{sec: Methods}
+	
+	To Dragan: This will be written after the report of the basic analysis of the skin disease data set. This picture shows how I want the framework to be built up (Figure \ref{fig:FrameworkImage}).	
+	
+	\begin{figure}
+		\includegraphics[scale=1.0]{FrameworkImage.png}
+		\label{fig:FrameworkImage}
+		\caption{A schematic overview of how the framework eventually should look like. Every colour implied a different aspect of the framework: (blue) data mining, (yellow) data driven preprocessing, (red) data mining tools, (purple) tool extensions}
+	\end{figure}
 	
 	\bibliography{../References/Citings} 
 	\bibliographystyle{ieeetr}

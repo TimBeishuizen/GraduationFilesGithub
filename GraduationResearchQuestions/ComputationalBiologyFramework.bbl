@@ -60,6 +60,16 @@ Y.~Peng, Z.~Wu, and J.~Jiang, ``A novel feature selection approach for
   biomedical data classification,'' {\em Journal of Biomedical Informatics},
   vol.~43, no.~1, pp.~15 -- 23, 2010.
 
+\bibitem{dunbar2006spatial}
+D.~Dunbar and G.~Humphreys, ``A spatial data structure for fast poisson-disk
+  sample generation,'' in {\em ACM Transactions on Graphics (TOG)}, vol.~25,
+  pp.~503--508, ACM, 2006.
+
+\bibitem{devroye1986sample}
+L.~Devroye, ``Sample-based non-uniform random variate generation,'' in {\em
+  Proceedings of the 18th conference on Winter simulation}, pp.~260--265, ACM,
+  1986.
+
 \bibitem{van2002gene}
 L.~J. Van't~Veer, H.~Dai, M.~J. Van De~Vijver, Y.~D. He, A.~A. Hart, M.~Mao,
   H.~L. Peterse, K.~Van Der~Kooy, M.~J. Marton, A.~T. Witteveen, {\em et~al.},
