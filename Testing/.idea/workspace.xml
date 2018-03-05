@@ -14,8 +14,52 @@
       <file leaf-file-name="MultipleSetsClustering.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/StatisticalAnalysisTesting/MultipleSetsClustering.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="536">
-              <caret line="119" column="50" lean-forward="false" selection-start-line="119" selection-start-column="50" selection-end-line="119" selection-end-column="76" />
+            <state relative-caret-position="340">
+              <caret line="97" column="9" lean-forward="true" selection-start-line="97" selection-start-column="9" selection-end-line="97" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InitialTesting.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StatisticalAnalysisTesting/InitialTesting.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="218">
+              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="114" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BasicTesting.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StatisticalAnalysisTesting/BasicTesting.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="79" lean-forward="true" selection-start-line="18" selection-start-column="79" selection-end-line="18" selection-end-column="79" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BasicClassification.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/StatisticalAnalysisTesting/BasicClassification.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="388">
+              <caret line="104" column="109" lean-forward="false" selection-start-line="104" selection-start-column="109" selection-end-line="104" selection-end-column="109" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tree_data.dot" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StatisticalAnalysisTesting/tree_data.dot">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -24,43 +68,9 @@
       <file leaf-file-name="MultipleSetsRelationTesting.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/StatisticalAnalysisTesting/MultipleSetsRelationTesting.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
+            <state relative-caret-position="493">
               <caret line="43" column="42" lean-forward="false" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="QuickRelationTesting.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/StatisticalAnalysisTesting/QuickRelationTesting.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProcessClustering.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/StatisticalAnalysisTesting/ProcessClustering.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="31">
-              <caret line="39" column="28" lean-forward="true" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SkincellRelationTesting.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/StatisticalAnalysisTesting/SkincellRelationTesting.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1088">
-              <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#104#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -78,42 +88,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AtopicDermatitisTesting.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/StatisticalAnalysisTesting/AtopicDermatitisTesting.py">
+      <file leaf-file-name="QuickRelationTesting.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StatisticalAnalysisTesting/QuickRelationTesting.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="92" column="0" lean-forward="true" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="714">
+              <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ExpressionDifferencePlotting.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VisualisationMethods/ExpressionDifferencePlotting.py">
+      <file leaf-file-name="ProcessClustering.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StatisticalAnalysisTesting/ProcessClustering.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="867">
-              <caret line="52" column="126" lean-forward="false" selection-start-line="52" selection-start-column="126" selection-end-line="52" selection-end-column="126" />
+            <state relative-caret-position="499">
+              <caret line="39" column="28" lean-forward="false" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
               <folding>
-                <element signature="e#2600#3542#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SkinDataExtraction.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DataExtraction/SkinDataExtraction.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1258">
-              <caret line="216" column="38" lean-forward="false" selection-start-line="216" selection-start-column="38" selection-end-line="216" selection-end-column="38" />
-              <folding>
-                <element signature="e#66#984#0" expanded="false" />
-                <element signature="e#1029#1407#0" expanded="false" />
-                <element signature="e#1452#2295#0" expanded="false" />
-                <element signature="e#2344#3290#0" expanded="false" />
-                <element signature="e#3342#4632#0" expanded="false" />
-                <element signature="e#6895#7537#0" expanded="false" />
+                <element signature="e#0#18#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -122,9 +113,11 @@
       <file leaf-file-name="SignificanceExtraction.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/StatisticalAnalysisMethods/SignificanceExtraction.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="24" />
-              <folding />
+            <state relative-caret-position="433">
+              <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -143,10 +136,14 @@
       <find>stand_values</find>
       <find>values</find>
       <find>process</find>
+      <find>sign_group_1</find>
+      <find>sign_group_2</find>
     </findStrings>
     <replaceStrings>
       <replace>gene_values</replace>
       <replace>process</replace>
+      <replace>sign_group_values</replace>
+      <replace>skin_type_values</replace>
     </replaceStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -173,7 +170,6 @@
         <option value="$PROJECT_DIR$/DataExtraction/SkinDataExtraction.py" />
         <option value="$PROJECT_DIR$/StatisticalAnalysisTesting/MultipleSetsTesting.py" />
         <option value="$PROJECT_DIR$/StatisticalAnalysisTesting/GeneClustering.py" />
-        <option value="$PROJECT_DIR$/StatisticalAnalysisTesting/tree_data.dot" />
         <option value="$PROJECT_DIR$/StatisticalAnalysisTesting/MultipleSetsRelationTesting.py" />
         <option value="$PROJECT_DIR$/DataExtraction/GeneDataExtraction.py" />
         <option value="$PROJECT_DIR$/StatisticalAnalysisTesting/InterestingClusterPlotting.py" />
@@ -182,17 +178,19 @@
         <option value="$PROJECT_DIR$/VisualisationMethods/MultipleProcessPlotting.py" />
         <option value="$PROJECT_DIR$/StatisticalAnalysisMethods/ForwardBackWardSelection.py" />
         <option value="$PROJECT_DIR$/StatisticalAnalysisTesting/QuickRelationTesting.py" />
-        <option value="$PROJECT_DIR$/StatisticalAnalysisTesting/MultipleSetsClustering.py" />
-        <option value="$PROJECT_DIR$/StatisticalAnalysisTesting/BasicTesting.py" />
         <option value="$PROJECT_DIR$/StatisticalAnalysisTesting/SkincellRelationTesting.py" />
         <option value="$PROJECT_DIR$/VisualisationMethods/ExpressionDifferencePlotting.py" />
         <option value="$PROJECT_DIR$/StatisticalAnalysisTesting/AtopicDermatitisTesting.py" />
         <option value="$PROJECT_DIR$/StatisticalAnalysisTesting/ProcessClustering.py" />
+        <option value="$PROJECT_DIR$/StatisticalAnalysisTesting/MultipleSetsClustering.py" />
+        <option value="$PROJECT_DIR$/StatisticalAnalysisTesting/BasicTesting.py" />
+        <option value="$PROJECT_DIR$/StatisticalAnalysisTesting/tree_data.dot" />
+        <option value="$PROJECT_DIR$/StatisticalAnalysisMethods/SignificanceExtraction.py" />
+        <option value="$PROJECT_DIR$/StatisticalAnalysisTesting/BasicClassification.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="960" />
     <option name="width" value="960" />
     <option name="height" value="1160" />
   </component>
@@ -278,7 +276,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.AtopicDermatitisTesting">
+  <component name="RunManager" selected="Python.BasicClassification">
     <configuration name="AtopicDermatitisTesting" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -292,6 +290,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Testing" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/StatisticalAnalysisTesting/AtopicDermatitisTesting.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="BasicClassification" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/StatisticalAnalysisTesting" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Testing" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/StatisticalAnalysisTesting/BasicClassification.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -347,37 +362,20 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="SkincellRelationTesting" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/StatisticalAnalysisTesting" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Testing" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/StatisticalAnalysisTesting/SkincellRelationTesting.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.SkincellRelationTesting" />
-      <item index="1" class="java.lang.String" itemvalue="Python.MultipleSetsClustering" />
-      <item index="2" class="java.lang.String" itemvalue="Python.BasicTesting" />
-      <item index="3" class="java.lang.String" itemvalue="Python.ProcessClustering" />
-      <item index="4" class="java.lang.String" itemvalue="Python.AtopicDermatitisTesting" />
+      <item index="0" class="java.lang.String" itemvalue="Python.MultipleSetsClustering" />
+      <item index="1" class="java.lang.String" itemvalue="Python.BasicTesting" />
+      <item index="2" class="java.lang.String" itemvalue="Python.ProcessClustering" />
+      <item index="3" class="java.lang.String" itemvalue="Python.AtopicDermatitisTesting" />
+      <item index="4" class="java.lang.String" itemvalue="Python.BasicClassification" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.AtopicDermatitisTesting" />
-        <item index="1" class="java.lang.String" itemvalue="Python.ProcessClustering" />
-        <item index="2" class="java.lang.String" itemvalue="Python.SkincellRelationTesting" />
-        <item index="3" class="java.lang.String" itemvalue="Python.BasicTesting" />
-        <item index="4" class="java.lang.String" itemvalue="Python.MultipleSetsClustering" />
+        <item index="0" class="java.lang.String" itemvalue="Python.BasicClassification" />
+        <item index="1" class="java.lang.String" itemvalue="Python.BasicTesting" />
+        <item index="2" class="java.lang.String" itemvalue="Python.MultipleSetsClustering" />
+        <item index="3" class="java.lang.String" itemvalue="Python.AtopicDermatitisTesting" />
+        <item index="4" class="java.lang.String" itemvalue="Python.ProcessClustering" />
       </list>
     </recent_temporary>
   </component>
@@ -400,10 +398,10 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16204691" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16364606" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.45" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -452,18 +450,11 @@
           <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="7" />
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/StatisticalAnalysisTesting/BasicTesting.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="27" column="93" lean-forward="false" selection-start-line="27" selection-start-column="93" selection-end-line="27" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/StatisticalAnalysisMethods/SignificanceExtraction.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1292">
@@ -743,27 +734,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/StatisticalAnalysisTesting/tree_data.dot">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="8" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="32" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StatisticalAnalysisTesting/InitialTesting.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="114" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StatisticalAnalysisTesting/BasicTesting.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="66" column="24" lean-forward="true" selection-start-line="66" selection-start-column="24" selection-end-line="66" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/StatisticalAnalysisTesting/InterestingClusterPlotting.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-836">
@@ -778,14 +748,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/StatisticalAnalysisMethods/SignificanceExtraction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DataExtraction/SkinDataExtraction.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1258">
@@ -797,25 +759,6 @@
             <element signature="e#2344#3290#0" expanded="false" />
             <element signature="e#3342#4632#0" expanded="false" />
             <element signature="e#6895#7537#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StatisticalAnalysisTesting/QuickRelationTesting.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StatisticalAnalysisMethods/RelationTesting.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="94" column="4" lean-forward="false" selection-start-line="94" selection-start-column="4" selection-end-line="94" selection-end-column="4" />
-          <folding>
-            <element signature="e#112#3215#0" expanded="false" />
-            <element signature="e#3292#3948#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -835,43 +778,108 @@
         <state relative-caret-position="1088">
           <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
           <folding>
-            <element signature="e#0#104#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StatisticalAnalysisTesting/MultipleSetsClustering.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="536">
-          <caret line="119" column="50" lean-forward="false" selection-start-line="119" selection-start-column="50" selection-end-line="119" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StatisticalAnalysisTesting/MultipleSetsRelationTesting.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="43" column="42" lean-forward="false" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StatisticalAnalysisTesting/ProcessClustering.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="39" column="28" lean-forward="true" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#104#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/StatisticalAnalysisTesting/AtopicDermatitisTesting.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="92" column="0" lean-forward="true" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+        <state relative-caret-position="533">
+          <caret line="43" column="48" lean-forward="true" selection-start-line="43" selection-start-column="48" selection-end-line="43" selection-end-column="48" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StatisticalAnalysisTesting/QuickRelationTesting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StatisticalAnalysisTesting/ProcessClustering.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="499">
+          <caret line="39" column="28" lean-forward="false" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StatisticalAnalysisTesting/MultipleSetsClustering.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="97" column="9" lean-forward="true" selection-start-line="97" selection-start-column="9" selection-end-line="97" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StatisticalAnalysisTesting/BasicTesting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="79" lean-forward="true" selection-start-line="18" selection-start-column="79" selection-end-line="18" selection-end-column="79" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StatisticalAnalysisTesting/InitialTesting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="114" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StatisticalAnalysisTesting/MultipleSetsRelationTesting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="43" column="42" lean-forward="false" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StatisticalAnalysisMethods/SignificanceExtraction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StatisticalAnalysisTesting/tree_data.dot">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StatisticalAnalysisMethods/RelationTesting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="94" column="4" lean-forward="false" selection-start-line="94" selection-start-column="4" selection-end-line="94" selection-end-column="4" />
+          <folding>
+            <element signature="e#112#3215#0" expanded="false" />
+            <element signature="e#3292#3948#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StatisticalAnalysisTesting/BasicClassification.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="104" column="109" lean-forward="false" selection-start-line="104" selection-start-column="109" selection-end-line="104" selection-end-column="109" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>

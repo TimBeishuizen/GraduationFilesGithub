@@ -36,16 +36,20 @@ sign_NL_values, sign_L_values, sign_gene_ids = SE.extract_significant_genes(samp
                                                                          target_groups=[1, 2], threshold=0.001,
                                                                          relation_groups='unequal variance', sorting=True)
 
+
+
 # Scale the values
 print("Scaling the significant values...")
 print("%i Non-Lesional, %i Lesional skin samples" %(len(sign_NL_values[0]), len(sign_L_values[0])))
-values = np.concatenate((np.array(sign_NL_values), np.array(sign_L_values)), axis=1)
-scaler = SP.StandardScaler()
-scaler.fit(values)
-stand_values = scaler.transform(values)
+non_stand_values = np.concatenate((np.array(sign_NL_values), np.array(sign_L_values)), axis=1)
+print(non_stand_values.shape)
+print("values, Max: %f, Min: %f" % (np.max(non_stand_values), np.min(non_stand_values)))
+scaler = SP.StandardScaler(with_mean=True)
+stand_values = scaler.fit_transform(non_stand_values.T)
+stand_values = stand_values.T
 
-clustering_type = "Aggl"
-n_clust = 10
+clustering_type = "Kmeans"
+n_clust = 30
 
 if clustering_type == "Kmeans":
     # Cluster using Kmeans
@@ -93,7 +97,7 @@ for i in range(n_clust):
             print("Gene %i, name: %s, description: %s" %(j, gene_set[spec_gene_ids[i][j]]['Representative Public ID'], gene_set[spec_gene_ids[j]]['Gene Title']))
     else:
         clust_sign_process = RT.testing_gene_relations(np.extract(clust_labels == i, sign_gene_ids), gene_set,
-                                                       printing=0.5, relation_type=testing)
+                                                       printing=0.3, relation_type=testing)
     sign_process.append(clust_sign_process)
 
 # Plotting a single one
@@ -124,14 +128,14 @@ for j in range(n_clust):
             solo_plot.annotate('B', xy=(NL_avg[i], L_avg[i]), textcoords='offset points')
         elif gene_name in ["NM_006945", "AF061812", "BG327863", "BF575466", "AI923984", "AB049591", "AB049591", "AB048288", "J00269", "NM_005987", "L42612", "AL569511", "NM_001878", "NM_003125", "NM_005130", "AJ243672", "NM_004942", "L10343", "NM_002638"]:
             solo_plot.annotate('C', xy=(NL_avg[i], L_avg[i]), textcoords='offset points')
-        elif j == 5 or j == 8:
-            solo_plot.annotate('D', xy=(NL_avg[i], L_avg[i]), textcoords='offset points')
+    #     elif j == 5 or j == 8:
+    #        solo_plot.annotate('D', xy=(NL_avg[i], L_avg[i]), textcoords='offset points')
 
 # Add plot specifics
 solo_plot.set_title('Clustering of expression difference between non-lesional and lesional skin')
-solo_plot.plot([-1.5, 6], [-1.5, 6])
+# solo_plot.plot([-0.5, 0.5], [-0.5, 0.5])
 clust_legend = [("Cluster %i " % i) for i in range(n_clust)]
-print(clust_legend.append("Average line"))
+# print(clust_legend.append("Average line"))
 count_dict = Counter(clust_labels)
 plt.legend(["Average line"] + [("Cluster %i with %i genes" % (i, count_dict[i])) for i in range(n_clust)])
 plt.xlabel("Non-lesional values (avg expression)")

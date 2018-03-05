@@ -1,11 +1,13 @@
 \select@language {english}
 \contentsline {section}{\numberline {1}Introduction}{2}{section.1}
-\contentsline {section}{\numberline {2}Background}{2}{section.2}
+\contentsline {section}{\numberline {2}Biomedical Research Projects}{2}{section.2}
 \contentsline {subsection}{\numberline {2.1}Biomedical Data}{2}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Data Mining}{3}{subsection.2.2}
-\contentsline {subsubsection}{\numberline {2.2.1}Machine Learning}{4}{subsubsection.2.2.1}
-\contentsline {subsection}{\numberline {2.3}Data Analysis Frameworks}{5}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.2}Research goal: Data Mining}{4}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Data Mining Tools}{4}{subsection.2.3}
 \contentsline {subsection}{\numberline {2.4}Biomedical Knowledge}{5}{subsection.2.4}
 \contentsline {section}{\numberline {3}Research Question}{6}{section.3}
-\contentsline {subsection}{\numberline {3.1}Hypotheses}{6}{subsection.3.1}
-\contentsline {section}{\numberline {A}Biomedical Data Analysis}{8}{appendix.A}
+\contentsline {subsection}{\numberline {3.1}Data Driven Hypothesis}{6}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Target Driven Hypothesis}{6}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Tool Availability Driven Hypothesis}{7}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Tool Extension Driven Hypothesis}{7}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Knowledge Driven Hypothesis}{7}{subsection.3.5}

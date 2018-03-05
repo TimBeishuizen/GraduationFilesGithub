@@ -60,6 +60,17 @@ Y.~Peng, Z.~Wu, and J.~Jiang, ``A novel feature selection approach for
   biomedical data classification,'' {\em Journal of Biomedical Informatics},
   vol.~43, no.~1, pp.~15 -- 23, 2010.
 
+\bibitem{van2002gene}
+L.~J. Van't~Veer, H.~Dai, M.~J. Van De~Vijver, Y.~D. He, A.~A. Hart, M.~Mao,
+  H.~L. Peterse, K.~Van Der~Kooy, M.~J. Marton, A.~T. Witteveen, {\em et~al.},
+  ``Gene expression profiling predicts clinical outcome of breast cancer,''
+  {\em nature}, vol.~415, no.~6871, p.~530, 2002.
+
+\bibitem{roff1989statistical}
+D.~A. Roff and P.~Bentzen, ``The statistical analysis of mitochondrial dna
+  polymorphisms: chi 2 and the problem of small samples.,'' {\em Molecular
+  biology and evolution}, vol.~6, no.~5, pp.~539--545, 1989.
+
 \bibitem{Yoo2012}
 I.~Yoo, P.~Alafaireet, M.~Marinov, K.~Pena-Hernandez, R.~Gopidi, J.-F. Chang,
   and L.~Hua, ``Data mining in healthcare and biomedicine: A survey of the
@@ -109,6 +120,11 @@ D.~Windridge and M.~Bober, {\em A Kernel-Based Framework for Medical Big-Data
 D.~J. Hand, H.~Mannila, and P.~Smyth, {\em Principles of data mining}.
 \newblock MIT press, 2001.
 
+\bibitem{7024124}
+J.~E. Vogt, ``Unsupervised structure detection in biomedical data,'' {\em
+  IEEE/ACM Transactions on Computational Biology and Bioinformatics}, vol.~12,
+  pp.~753--760, July 2015.
+
 \bibitem{YANG2012S16}
 Y.~Yang, S.~J. Adelstein, and A.~I. Kassis, ``Target discovery from data mining
   approaches,'' {\em Drug Discovery Today}, vol.~17, no.~Supplement, pp.~S16 --
@@ -116,15 +132,95 @@ Y.~Yang, S.~J. Adelstein, and A.~I. Kassis, ``Target discovery from data mining
 \newblock Strategic Approach to Target Identification and Validation: A
   Supplement to Drug Discovery Today.
 
-\bibitem{7024124}
-J.~E. Vogt, ``Unsupervised structure detection in biomedical data,'' {\em
-  IEEE/ACM Transactions on Computational Biology and Bioinformatics}, vol.~12,
-  pp.~753--760, July 2015.
+\bibitem{sawicki1993human}
+M.~P. Sawicki, G.~Samara, M.~Hurwitz, and E.~Passaro, ``Human genome project,''
+  {\em The American journal of surgery}, vol.~165, no.~2, pp.~258--264, 1993.
 
-\bibitem{Kobayashi2014}
-M.~Kobayashi, {\em Resources for Studying Statistical Analysis of Biomedical
-  Data and R}, pp.~183--195.
-\newblock Berlin, Heidelberg: Springer Berlin Heidelberg, 2014.
+\bibitem{van2012human}
+D.~C. Van~Essen, K.~Ugurbil, E.~Auerbach, D.~Barch, T.~Behrens, R.~Bucholz,
+  A.~Chang, L.~Chen, M.~Corbetta, S.~W. Curtiss, {\em et~al.}, ``The human
+  connectome project: a data acquisition perspective,'' {\em Neuroimage},
+  vol.~62, no.~4, pp.~2222--2231, 2012.
+
+\bibitem{marcus2011informatics}
+D.~Marcus, J.~Harwell, T.~Olsen, M.~Hodge, M.~Glasser, F.~Prior, M.~Jenkinson,
+  T.~Laumann, S.~Curtiss, and D.~Van~Essen, ``Informatics and data mining tools
+  and strategies for the human connectome project,'' {\em Frontiers in
+  neuroinformatics}, vol.~5, p.~4, 2011.
+
+\bibitem{kanehisa2000kegg}
+M.~Kanehisa and S.~Goto, ``Kegg: kyoto encyclopedia of genes and genomes,''
+  {\em Nucleic acids research}, vol.~28, no.~1, pp.~27--30, 2000.
+
+\bibitem{joshi2005reactome}
+G.~Joshi-Tope, M.~Gillespie, I.~Vastrik, P.~D'Eustachio, E.~Schmidt,
+  B.~de~Bono, B.~Jassal, G.~Gopinath, G.~Wu, L.~Matthews, {\em et~al.},
+  ``Reactome: a knowledgebase of biological pathways,'' {\em Nucleic acids
+  research}, vol.~33, no.~suppl\_1, pp.~D428--D432, 2005.
+
+\bibitem{edgar2002gene}
+R.~Edgar, M.~Domrachev, and A.~E. Lash, ``Gene expression omnibus: Ncbi gene
+  expression and hybridization array data repository,'' {\em Nucleic acids
+  research}, vol.~30, no.~1, pp.~207--210, 2002.
+
+\bibitem{safran2010genecards}
+M.~Safran, I.~Dalah, J.~Alexander, N.~Rosen, T.~Iny~Stein, M.~Shmoish,
+  N.~Nativ, I.~Bahir, T.~Doniger, H.~Krug, {\em et~al.}, ``Genecards version 3:
+  the human gene integrator,'' {\em Database}, vol.~2010, 2010.
+
+\bibitem{wishart2007hmdb}
+D.~S. Wishart, D.~Tzur, C.~Knox, R.~Eisner, A.~C. Guo, N.~Young, D.~Cheng,
+  K.~Jewell, D.~Arndt, S.~Sawhney, {\em et~al.}, ``Hmdb: the human metabolome
+  database,'' {\em Nucleic acids research}, vol.~35, no.~suppl\_1,
+  pp.~D521--D526, 2007.
+
+\bibitem{schindelin2015imagej}
+J.~Schindelin, C.~T. Rueden, M.~C. Hiner, and K.~W. Eliceiri, ``The imagej
+  ecosystem: An open platform for biomedical image analysis,'' {\em Molecular
+  reproduction and development}, vol.~82, no.~7-8, pp.~518--529, 2015.
+
+\bibitem{sturn2002genesis}
+A.~Sturn, J.~Quackenbush, and Z.~Trajanoski, ``Genesis: cluster analysis of
+  microarray data,'' {\em Bioinformatics}, vol.~18, no.~1, pp.~207--208, 2002.
+
+\bibitem{tabas2012genecodis3}
+D.~Tabas-Madrid, R.~Nogales-Cadenas, and A.~Pascual-Montano, ``Genecodis3: a
+  non-redundant and modular enrichment analysis tool for functional genomics,''
+  {\em Nucleic acids research}, vol.~40, no.~W1, pp.~W478--W483, 2012.
+
+\bibitem{al2004fatigo}
+F.~Al-Shahrour, R.~D{\'\i}az-Uriarte, and J.~Dopazo, ``Fatigo: a web tool for
+  finding significant associations of gene ontology terms with groups of
+  genes,'' {\em Bioinformatics}, vol.~20, no.~4, pp.~578--580, 2004.
+
+\bibitem{zeeberg2003gominer}
+B.~R. Zeeberg, W.~Feng, G.~Wang, M.~D. Wang, A.~T. Fojo, M.~Sunshine,
+  S.~Narasimhan, D.~W. Kane, W.~C. Reinhold, S.~Lababidi, {\em et~al.},
+  ``Gominer: a resource for biological interpretation of genomic and proteomic
+  data,'' {\em Genome biology}, vol.~4, no.~4, p.~R28, 2003.
+
+\bibitem{karnovsky2011metscape}
+A.~Karnovsky, T.~Weymouth, T.~Hull, V.~G. Tarcea, G.~Scardoni, C.~Laudanna,
+  M.~A. Sartor, K.~A. Stringer, H.~Jagadish, C.~Burant, {\em et~al.},
+  ``Metscape 2 bioinformatics tool for the analysis and visualization of
+  metabolomics and gene expression data,'' {\em Bioinformatics}, vol.~28,
+  no.~3, pp.~373--380, 2011.
+
+\bibitem{xia2015metaboanalyst}
+J.~Xia, I.~V. Sinelnikov, B.~Han, and D.~S. Wishart, ``Metaboanalyst
+  3.0—making metabolomics more meaningful,'' {\em Nucleic acids research},
+  vol.~43, no.~W1, pp.~W251--W257, 2015.
+
+\bibitem{faul2007g}
+F.~Faul, E.~Erdfelder, A.-G. Lang, and A.~Buchner, ``G* power 3: A flexible
+  statistical power analysis program for the social, behavioral, and biomedical
+  sciences,'' {\em Behavior research methods}, vol.~39, no.~2, pp.~175--191,
+  2007.
+
+\bibitem{teodoro2009biomedical}
+D.~Teodoro, R.~Choquet, E.~Pasche, J.~Gobeill, C.~Daniel, P.~Ruch, and
+  C.~Lovis, ``Biomedical data management: a proposal framework.,'' in {\em
+  MIE}, pp.~175--179, Citeseer, 2009.
 
 \bibitem{zupan2006knowledge}
 B.~Zupan, J.~H. Holmes, and R.~Bellazzi, ``Knowledge-based data analysis and

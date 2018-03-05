@@ -44,12 +44,11 @@ sign_group_1, sign_group_2, sign_gene_ids = SE.extract_significant_genes(sample_
 # Scale the values
 values = np.concatenate((np.array(sign_group_1), np.array(sign_group_2)), axis=1)
 scaler = SP.StandardScaler()
-scaler.fit(values)
-stand_values = scaler.transform(values)
+stand_values = scaler.fit_transform(values.T).T
 
 # Greedy cluster the genes
 uncorr_values, uncorr_gene_ids, corr_values, corr_gene_ids = \
-    MT.greedy_cluster_genes(stand_values[:2000,:], gene_ids, corr_threshold=0.7, info_print=False)
+    MT.greedy_cluster_genes(stand_values[:2000, :], gene_ids, corr_threshold=0.7, info_print=False)
 
 # Change gene IDs to names
 uncorr_gene_names = []
@@ -69,11 +68,16 @@ print(pca.n_components_)
 # Train test split the data
 X_train, X_test, y_train, y_test = SMS.train_test_split(stand_values.T, np.concatenate(([1] * 210, [2]*213)))
 
+print(X_train.shape)
+
 # Find a random forest
 print("Fitting in Decision Tree...")
 rf = ST.DecisionTreeClassifier()
+scores = SMS.cross_val_score(rf, X_train, y_train, cv=X_train.shape[0]-1)
+print("Validation score of the Decision Tree: %f:" % np.mean(scores))
+
 rf.fit(X_train, y_train)
-print("Score of the Decision Tree: %s" % rf.score(X_test, y_test))
+print("Test Score of the Decision Tree: %f" % rf.score(X_test, y_test))
 ST.export_graphviz(rf.tree_, out_file='tree_data.dot', feature_names=uncorr_gene_names, filled=True,
                           rounded=True)
 
