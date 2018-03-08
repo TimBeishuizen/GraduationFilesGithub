@@ -5,9 +5,9 @@
 \contentsline {section}{\numberline {3}Methods}{4}{section.3}
 \contentsline {subsection}{\numberline {3.1}Feature Reduction}{4}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Clustering}{4}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Psoriasis Versus Atopic Dermatitis}{5}{subsection.3.3}
-\contentsline {section}{\numberline {4}Results}{5}{section.4}
-\contentsline {subsection}{\numberline {4.1}Feature Reduction}{5}{subsection.4.1}
+\contentsline {subsection}{\numberline {3.3}Psoriasis Versus Atopic Dermatitis}{6}{subsection.3.3}
+\contentsline {section}{\numberline {4}Results}{6}{section.4}
+\contentsline {subsection}{\numberline {4.1}Feature Reduction}{6}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Clustering}{7}{subsection.4.2}
 \contentsline {subsection}{\numberline {4.3}Psoriasis Versus Atopic Dermatitis}{9}{subsection.4.3}
 \contentsline {section}{\numberline {5}Discussion}{10}{section.5}
