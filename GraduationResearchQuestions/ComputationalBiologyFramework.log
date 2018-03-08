@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2017.11.1)  5 MAR 2018 17:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2017.11.1)  7 MAR 2018 19:20
 entering extended mode
 **./ComputationalBiologyFramework.tex
 (ComputationalBiologyFramework.tex
@@ -909,64 +909,91 @@ l.91 	\clearpage
                  [1] [2
 
 ] [3]
-<./ThesisFigures/ResearchSteps.png, id=155, 339.51843pt x 140.02313pt>
+<./ThesisFigures/ResearchSteps.png, id=160, 339.51843pt x 140.02313pt>
 File: ./ThesisFigures/ResearchSteps.png Graphic file (type png)
 <use ./ThesisFigures/ResearchSteps.png>
 Package pdftex.def Info: ./ThesisFigures/ResearchSteps.png  used on input line 
-151. on input line 151.
+158. on input line 158.
 Package pdftex.def Info: Requested size: 339.5176pt x 140.02278pt on input line
- 151.
+ 158.
  [4pdfTeX warning (ext4): destination with the same identifier (name{figure.1})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.170 
+l.177 
        <./ThesisFigures/ResearchSteps.png>] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 198--204
+Underfull \hbox (badness 10000) in paragraph at lines 207--213
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 198--204
+Underfull \hbox (badness 10000) in paragraph at lines 207--213
 
  []
 
-[6] [7]
-<./ThesisFigures/FrameworkImage.png, id=236, 381.1038pt x 331.2375pt>
-File: ./ThesisFigures/FrameworkImage.png Graphic file (type png)
-<use ./ThesisFigures/FrameworkImage.png>
-Package pdftex.def Info: ./ThesisFigures/FrameworkImage.png  used on input line
- 287. on input line 287.
-Package pdftex.def Info: Requested size: 381.10286pt x 331.23668pt on input lin
-e 287.
- (ComputationalBiologyFramework.bbl [8pdfTeX warning (ext4): destination with t
-he same identifier (name{figure.2}) has been already used, duplicate ignored
+<./ThesisFigures/FrameworkScheme5i5.png, id=231, 889.8846pt x 720.7728pt>
+File: ./ThesisFigures/FrameworkScheme5i5.png Graphic file (type png)
+<use ./ThesisFigures/FrameworkScheme5i5.png>
+Package pdftex.def Info: ./ThesisFigures/FrameworkScheme5i5.png  used on input 
+line 265. on input line 265.
+Package pdftex.def Info: Requested size: 424.58624pt x 343.89937pt on input lin
+e 265.
+[6]
+
+LaTeX Warning: Reference `fig:FrameworkImage' on page 7 undefined on input line
+ 274.
+
+[7pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) 
+has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.15 
-      <./ThesisFigures/FrameworkImage.png>] [9] [10])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 297.
- [11]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 297.
+l.276 	\subsection
+                  {Target Driven Approach} <./ThesisFigures/FrameworkScheme5i5.
+png>]
+
+LaTeX Warning: Reference `fig:FrameworkImage' on page 8 undefined on input line
+ 289.
+
+
+LaTeX Warning: Reference `fig:FrameworkImage' on page 8 undefined on input line
+ 304.
+
+[8]
+
+LaTeX Warning: Reference `fig:FrameworkImage' on page 9 undefined on input line
+ 322.
+
+
+LaTeX Warning: Reference `fig:FrameworkImage' on page 9 undefined on input line
+ 337.
+
+(ComputationalBiologyFramework.bbl [9] [10] [11])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 344.
+ [12]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 344.
 
 (ComputationalBiologyFramework.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 297.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 297.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 344.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 344.
 Package rerunfilecheck Info: File `ComputationalBiologyFramework.out' has not c
 hanged.
-(rerunfilecheck)             Checksum: 22F12B94FAE025545AB292327A520D23;880.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 297.
+(rerunfilecheck)             Checksum: 68542FF245FD585696F979BB7338FB51;915.
+
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 344.
  ) 
 Here is how much of TeX's memory you used:
- 11510 strings out of 493318
- 166290 string characters out of 3139046
- 282549 words of memory out of 3000000
- 14765 multiletter control sequences out of 15000+200000
+ 11515 strings out of 493318
+ 166355 string characters out of 3139046
+ 282843 words of memory out of 3000000
+ 14768 multiletter control sequences out of 15000+200000
  11779 words of font info for 45 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,11n,43p,1699b,470s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 28i,12n,43p,1098b,467s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -984,9 +1011,9 @@ mr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Prog
 ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti8.pfb><C:/Program Files
 /MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on ComputationalBiologyFramework.pdf (12 pages, 357591 bytes).
+Output written on ComputationalBiologyFramework.pdf (13 pages, 547587 bytes).
 PDF statistics:
- 313 PDF objects out of 1000 (max. 8388607)
- 76 named destinations out of 1000 (max. 500000)
- 115 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 323 PDF objects out of 1000 (max. 8388607)
+ 78 named destinations out of 1000 (max. 500000)
+ 123 words of extra memory for PDF output out of 10000 (max. 10000000)
 

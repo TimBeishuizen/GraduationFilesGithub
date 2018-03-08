@@ -102,5 +102,5 @@ sort_gene_counter = [gene_counter[i] for i in sorting]
 sort_used_genes = [used_genes[i] for i in sorting]
 
 for gene in sort_used_genes:
-    print("Gene ID %s with name %s is used %i times" % (gene_set[gene]["GB_ACC"], gene_set[gene]["Gene Symbol"],
+    print("Gene ID %s with name %s is used %i times" % (gene_set[gene]["GB_ACC"], gene_set[gene]["Gene Title"],
                                                           sort_gene_counter[sort_used_genes.index(gene)]))

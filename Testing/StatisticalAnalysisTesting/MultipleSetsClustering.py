@@ -32,7 +32,7 @@ gene_set = GDE.extract_gene_data()
 
 # Only use the significant values
 print("Calculating significant values...")
-sign_NL_values, sign_L_values, sign_gene_ids = SE.extract_significant_genes(sample_values, skin_type_values, gene_ids,
+sign_values, sign_skin_types, sign_gene_ids = SE.extract_significant_genes(sample_values, skin_type_values, gene_ids,
                                                                          target_groups=[1, 2], threshold=0.001,
                                                                          relation_groups='unequal variance', sorting=True)
 
@@ -40,16 +40,14 @@ sign_NL_values, sign_L_values, sign_gene_ids = SE.extract_significant_genes(samp
 
 # Scale the values
 print("Scaling the significant values...")
-print("%i Non-Lesional, %i Lesional skin samples" %(len(sign_NL_values[0]), len(sign_L_values[0])))
-non_stand_values = np.concatenate((np.array(sign_NL_values), np.array(sign_L_values)), axis=1)
+non_stand_values = np.array(sign_values)
 print(non_stand_values.shape)
 print("values, Max: %f, Min: %f" % (np.max(non_stand_values), np.min(non_stand_values)))
-scaler = SP.StandardScaler(with_mean=True)
-stand_values = scaler.fit_transform(non_stand_values.T)
-stand_values = stand_values.T
+scaler = SP.StandardScaler()
+stand_values = scaler.fit_transform(non_stand_values)
 
 clustering_type = "Kmeans"
-n_clust = 30
+n_clust = 10
 
 if clustering_type == "Kmeans":
     # Cluster using Kmeans
@@ -133,7 +131,7 @@ for j in range(n_clust):
 
 # Add plot specifics
 solo_plot.set_title('Clustering of expression difference between non-lesional and lesional skin')
-# solo_plot.plot([-0.5, 0.5], [-0.5, 0.5])
+solo_plot.plot([-0.5, 0.5], [-0.5, 0.5])
 clust_legend = [("Cluster %i " % i) for i in range(n_clust)]
 # print(clust_legend.append("Average line"))
 count_dict = Counter(clust_labels)

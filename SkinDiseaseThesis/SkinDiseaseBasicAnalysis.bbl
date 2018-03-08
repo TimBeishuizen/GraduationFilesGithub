@@ -1,16 +1,5 @@
 \begin{thebibliography}{10}
 
-\bibitem{rapp1999psoriasis}
-S.~R. Rapp, S.~R. Feldman, M.~L. Exum, A.~B. Fleischer, and D.~M. Reboussin,
-  ``Psoriasis causes as much disability as other major medical diseases,'' {\em
-  Journal of the American Academy of Dermatology}, vol.~41, no.~3,
-  pp.~401--407, 1999.
-
-\bibitem{jowett1985skin}
-S.~Jowett and T.~Ryan, ``Skin disease and handicap: an analysis of the impact
-  of skin conditions,'' {\em Social science \& medicine}, vol.~20, no.~4,
-  pp.~425--429, 1985.
-
 \bibitem{nair2009genome}
 R.~P. Nair, K.~C. Duffin, C.~Helms, J.~Ding, P.~E. Stuart, D.~Goldgar, J.~E.
   Gudjonsson, Y.~Li, T.~Tejasvi, B.-J. Feng, {\em et~al.}, ``Genome-wide scan
@@ -64,9 +53,26 @@ J.~K. Gittler, A.~Shemer, M.~Su{\'a}rez-Fari{\~n}as, J.~Fuentes-Duculan, K.~J.
   dermatitis,'' {\em Journal of Allergy and Clinical Immunology}, vol.~130,
   no.~6, pp.~1344--1354, 2012.
 
+\bibitem{rapp1999psoriasis}
+S.~R. Rapp, S.~R. Feldman, M.~L. Exum, A.~B. Fleischer, and D.~M. Reboussin,
+  ``Psoriasis causes as much disability as other major medical diseases,'' {\em
+  Journal of the American Academy of Dermatology}, vol.~41, no.~3,
+  pp.~401--407, 1999.
+
+\bibitem{jowett1985skin}
+S.~Jowett and T.~Ryan, ``Skin disease and handicap: an analysis of the impact
+  of skin conditions,'' {\em Social science \& medicine}, vol.~20, no.~4,
+  pp.~425--429, 1985.
+
 \bibitem{edgar2002gene}
 R.~Edgar, M.~Domrachev, and A.~E. Lash, ``Gene expression omnibus: Ncbi gene
   expression and hybridization array data repository,'' {\em Nucleic acids
   research}, vol.~30, no.~1, pp.~207--210, 2002.
+
+\bibitem{dixon2007genome}
+A.~L. Dixon, L.~Liang, M.~F. Moffatt, W.~Chen, S.~Heath, K.~C. Wong, J.~Taylor,
+  E.~Burnett, I.~Gut, M.~Farrall, {\em et~al.}, ``A genome-wide association
+  study of global gene expression,'' {\em Nature genetics}, vol.~39, no.~10,
+  p.~1202, 2007.
 
 \end{thebibliography}

@@ -45,30 +45,25 @@ skin_type_values = np.append(skin_type_values, [2]*len(group_values_2[1]))
 
 # Only use the significant values of non-lesional skin
 print("Calculating significant values...")
-sign_group_1, sign_group_2, sign_gene_ids = SE.extract_significant_genes(sample_values, skin_type_values, gene_ids,
+sign_values, sign_skin_types, sign_gene_ids = SE.extract_significant_genes(sample_values, skin_type_values, gene_ids,
                                                                          target_groups=[1, 2], threshold=0.001,
                                                                          relation_groups='unequal variance', sorting=True)
 
 # Scale the values
 print("Scaling the significant values...")
-print("%i Non-Lesional, %i Lesional skin samples" %(len(sign_group_1[0]), len(sign_group_2[0])))
-values = np.concatenate((np.array(sign_group_1), np.array(sign_group_2)), axis=1)
+values = np.array(sign_values)
 scaler = SP.StandardScaler()
-scaler.fit(values)
-stand_values = scaler.transform(values)
+stand_values = scaler.fit_transform(values.T).T
 
 # Extract the data
 print("Extracting data...")
 ps_sample_values, ps_skin_type_values, ps_gene_ids = SDE.extract_multiple_data_sets(psoriasis_names)
-gene_set = GDE.extract_gene_data()
 
 # Only use the significant values of non-lesional skin
 print("Calculating significant values...")
-ps_sign_group_1, ps_sign_group_2, ps_sign_gene_ids = SE.extract_significant_genes(ps_sample_values, ps_skin_type_values, ps_gene_ids,
+ps_sign_values, ps_sign_skin_types, ps_sign_gene_ids = SE.extract_significant_genes(ps_sample_values, ps_skin_type_values, ps_gene_ids,
                                                                          target_groups=[1, 2], threshold=0.001,
                                                                          relation_groups='unequal variance', sorting=True)
-
-print("%i Non-Lesional, %i Lesional skin samples" %(len(ps_sign_group_1[0]), len(ps_sign_group_2[0])))
 
 joint_genes = []
 

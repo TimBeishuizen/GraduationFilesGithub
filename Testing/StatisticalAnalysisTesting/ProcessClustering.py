@@ -29,21 +29,19 @@ gene_set = GDE.extract_gene_data()
 
 # Only use the significant values
 print("Calculating significant values...")
-sign_NL_values, sign_L_values, sign_gene_ids = SE.extract_significant_genes(sample_values, skin_type_values, gene_ids,
+sign_values, sign_skin_types, sign_gene_ids = SE.extract_significant_genes(sample_values, skin_type_values, gene_ids,
                                                                          target_groups=[1, 2], threshold=0.001,
                                                                          relation_groups='unequal variance', sorting=True)
 
 # Scale the values
 print("Scaling the significant values...")
-print("%i Non-Lesional, %i Lesional skin samples" %(len(sign_NL_values[0]), len(sign_L_values[0])))
-values = np.concatenate((np.array(sign_NL_values), np.array(sign_L_values)), axis=1)
-scaler = SP.StandardScaler()
-scaler.fit(values)
-stand_values = scaler.transform(values)
+values = np.array(sign_values)
+scaler = SP.StandardScaler(with_mean=False)
+stand_values = scaler.fit_transform(values.T).T
 
-testing = "Process"
+# testing = "Process"
 # testing = "Cellular"
-# testing = "Molecular"
+testing = "Molecular"
 
 # Find all processes
 print("Finding all %s relations..." % testing)
@@ -56,8 +54,8 @@ L_avg = np.average(stand_values[:, 210:], 1)
 # Find significance between processes
 print("Remove insignificant %s aspects..." % testing)
 processes, sign_values = RT.remove_insignificant_processes(processes, process_genes, sign_gene_ids, L_avg, NL_avg,
-                                                           ordering=True)
+                                                           ordering=True, sign_threshold=0.01)
 
 # Plotting the division of processes
 print("Plotting the different %s aspects..." % testing)
-EDP.plot_multiple_processes(processes, process_genes, sign_gene_ids, L_avg, NL_avg, sign_values=sign_values, frame_size=4)
+EDP.plot_multiple_processes(processes, process_genes, sign_gene_ids, L_avg, NL_avg, frame_size=4)

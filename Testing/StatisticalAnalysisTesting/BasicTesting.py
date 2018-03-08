@@ -41,8 +41,11 @@ sign_group_1, sign_group_2, sign_gene_ids = SE.extract_significant_genes(sample_
                                                                          target_groups=[1, 2], threshold=0.001,
                                                                          relation_groups='unequal variance', sorting=True)
 
+order = np.argsort(skin_type_values)
+new_group_2 = [skin_type_values[i] for i in np.flip(order, 0)]
+
 # Scale the values
-values = np.concatenate((np.array(sign_group_1), np.array(sign_group_2)), axis=1)
+values = sample_values[:, -order]
 scaler = SP.StandardScaler()
 stand_values = scaler.fit_transform(values.T).T
 
@@ -66,14 +69,15 @@ print(pca.explained_variance_ratio_)
 print(pca.n_components_)
 
 # Train test split the data
-X_train, X_test, y_train, y_test = SMS.train_test_split(stand_values.T, np.concatenate(([1] * 210, [2]*213)))
+print(stand_values.shape)
+X_train, X_test, y_train, y_test = SMS.train_test_split(stand_values[:, :423].T, sign_group_2[:423])
 
 print(X_train.shape)
 
 # Find a random forest
 print("Fitting in Decision Tree...")
 rf = ST.DecisionTreeClassifier()
-scores = SMS.cross_val_score(rf, X_train, y_train, cv=X_train.shape[0]-1)
+scores = SMS.cross_val_score(rf, X_train, y_train, cv=100)
 print("Validation score of the Decision Tree: %f:" % np.mean(scores))
 
 rf.fit(X_train, y_train)
