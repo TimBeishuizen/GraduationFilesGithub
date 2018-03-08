@@ -263,7 +263,7 @@
 	
 	\begin{figure}
 		\includegraphics[width=\textwidth]{FrameworkScheme5i5.png}
-		\caption{A schematic overview of how the framework eventually should look like. Every colour implied a different layer of implementation and corresponds to different approaches: (red) data driven and target driven, (blue) tool availability driven, (yellow) extension driven and knowledge driven.}
+		\caption{A schematic overview of how the framework eventually should look like. Every colour implied a different layer of implementation and corresponds to different approaches: (red) data driven and target driven, (blue) tool availability driven, (yellow) extension driven and (purple) knowledge driven.}
 		\label{fig:FrameworkTree}
 	\end{figure}
 	
@@ -271,7 +271,7 @@
 	\label{subsec:DataDrivenApproach}
 
 	% Data challenges hypotheses
-	A major part in a data driven analysis approach is the presence of challenges with preprocessing the data. Data volume, dimensionality, complexity, heterogeneity and quality challenges all are issues to be tackled, some of them more interesting than others. The most approachable three challenges are the data volume, dimensionality and quality challenges. These three problems were well known defined problems with various ways to deal with them, however no perfect answer existed yet. Data dimensionality can be tackled by various feature selection and reduction algorithms, such as principal component analysis, significance testing and clustering. Low data volume can be tackled by various data generation algorithms based on nearest neighbours and interpolation. At last data quality can be improved by handling for example missing values with interpolation and outliers with outlier detection. These three preprocessing aspects all are separately addressed in the framework at the concepts section (Figure \ref{fig:FrameworkImage}).
+	A major part in a data driven analysis approach is the presence of challenges with preprocessing the data. Data volume, dimensionality, complexity, heterogeneity and quality challenges all are issues to be tackled, some of them more interesting than others. The most approachable three challenges are the data volume, dimensionality and quality challenges. These three problems were well known defined problems with various ways to deal with them, however no perfect answer existed yet. Data dimensionality can be tackled by various feature selection and reduction algorithms, such as principal component analysis, significance testing and clustering. Low data volume can be tackled by various data generation algorithms based on nearest neighbours and interpolation. At last data quality can be improved by handling for example missing values with interpolation and outliers with outlier detection. These three preprocessing aspects all are separately addressed in the framework at the concepts section (Figure \ref{fig:FrameworkTree}).
 	
 	\subsection{Target Driven Approach}
 	\label{subsec:TargetDrivenApproach}
@@ -286,7 +286,7 @@
 	The final steps to achieve the goal is very personalized for every project. To approach these final steps earlier results are used to obtain a final idea. This means that the scientist itself has the best idea how to achieve that goal with the knowledge gathered from the first couple of steps. Therefore it is not useful to guide someone in this part of the data analysis and no special focus is needed for this step.
 	
 	% Explanation of figure
-	A small summary: he global analysis and basic techniques are part of data mining. Three parts are addressed for data mining: machine learning, statistics and database relation testing. These three data mining aspects all are separately addressed in the framework at the concepts section (Figure \ref{fig:FrameworkImage}).
+	A small summary: he global analysis and basic techniques are part of data mining. Three parts are addressed for data mining: machine learning, statistics and database relation testing. These three data mining aspects all are separately addressed in the framework at the concepts section (Figure \ref{fig:FrameworkTree}).
 		
 	\subsection{Tool Availability Approach}
 	\label{subsec:ToolAvailabilityDrivenApproach}
@@ -301,7 +301,7 @@
 	Both scikit-learn and TPOT are packages for Python. Another Python package that is helpful for the project is the SciPy package. SciPy is very useful for statistical analysis, due to the broad level of available statistical algorithms in it. Those algorithms can be used for global analysis and outlier detection as well as possible feature reduction. Anaconda is a Python distribution that could help you automatically download multiple packages, among others scikit-learn, SciPy and the widely used NumPy. This Anaconda is therefore a welcome addition, too.
 	
 	% Explanation of figure
-	To summarize, the three tools that will be a big part of the framework are scikit-learn, SciPy and TPOT. These three are addressed at the tools section (Figure \ref{fig:FrameworkImage}).
+	To summarize, the three tools that will be a big part of the framework are scikit-learn, SciPy and TPOT. These three are addressed at the tools section (Figure \ref{fig:FrameworkTree}).
 	
 	\subsection{Tool Extension Approach}
 	\label{subsec:ToolExtensionDrivenApproach}
@@ -319,7 +319,7 @@
 	At last numerous online databases are available with both genomic and metabolic data in them, such as NCBI and KEGG. Some people make some possible integration packages for these databases, however these are not widely known or used. A possible tool extension for the framework is a possibility to download specific parts of these databases that contain useful information, so these can be used for further investigation of the genomic or metabolic data.
 	
 	% Explanation of figure
-	The four different extensions are: preprocessing extension, TPOT extension, global analysis and database integration. All four are added to the framework at the extension section (Figure \ref{fig:FrameworkImage}).
+	The four different extensions are: preprocessing extension, TPOT extension, global analysis and database integration. All four are added to the framework at the extension section (Figure \ref{fig:FrameworkTree}).
 	
 	\subsection{Knowledge Driven Approach}
 	\label{subsec:KnowledgeDrivenApproach}
@@ -334,7 +334,7 @@
 	To understand everything without too much difficulty a user manual will be made. This user manual will include (publicly available) data sets and show how the framework can be used exemplary with these data sets. This manual will make the framework more accessible for both inexperienced and experienced programmers and help them understand it quicker.
 	
 	% Explanation of figure
-	The GUI, user manual and exemplary data set handling are the three ways to approach the knowledge driven aspects. These three are added to the framework at the Usability section (Figure \ref{fig:FrameworkImage}).
+	The GUI, user manual and exemplary data set handling are the three ways to approach the knowledge driven aspects. These three are added to the framework at the Usability section (Figure \ref{fig:FrameworkTree}).
 	
 	\bibliography{../References/Citings} 
 	\bibliographystyle{ieeetr}

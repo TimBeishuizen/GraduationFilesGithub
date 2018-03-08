@@ -18,8 +18,8 @@ def plot_multiple_processes(processes, process_genes, gene_ids, values_1, values
     # For number of plot range
     for p in range(int(math.ceil(len(processes) / (frame_size * frame_size)))):
         f, plots = plt.subplots(frame_size, frame_size)
-        f.text(0.5, 0.06, 'non-lesional skin (avg expression)', ha='center')
-        f.text(0.1, 0.5, 'lesional skin (avg expression)', va='center', rotation='vertical')
+        f.text(0.5, 0.08, 'non-lesional skin (avg expression)', ha='center', fontsize=12)
+        f.text(0.1, 0.5, 'lesional skin (avg expression)', va='center', rotation='vertical', fontsize=12)
 
         # For subplot range within plot
         for i in range(frame_size * frame_size):
@@ -55,7 +55,7 @@ def plot_multiple_processes(processes, process_genes, gene_ids, values_1, values
 
                 # Add significance values to the plots
                 if sign_values is None:
-                    plots[i % frame_size, math.floor(i / frame_size)].set_title("%s" % process, fontsize=8)
+                    plots[i % frame_size, math.floor(i / frame_size)].set_title("%s" % process, fontsize=12)
                 else:
                     sign_value = sign_values[p * (frame_size * frame_size) + i]
                     plots[i % frame_size, math.floor(i / frame_size)].set_title("%s, (%f)" % (process, sign_value), fontsize=8)

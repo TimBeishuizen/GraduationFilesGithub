@@ -36,12 +36,12 @@ sign_values, sign_skin_types, sign_gene_ids = SE.extract_significant_genes(sampl
 # Scale the values
 print("Scaling the significant values...")
 values = np.array(sign_values)
-scaler = SP.StandardScaler(with_mean=False)
-stand_values = scaler.fit_transform(values.T).T
+scaler = SP.StandardScaler()
+stand_values = scaler.fit_transform(values)
 
-# testing = "Process"
+testing = "Process"
 # testing = "Cellular"
-testing = "Molecular"
+# testing = "Molecular"
 
 # Find all processes
 print("Finding all %s relations..." % testing)
@@ -58,4 +58,4 @@ processes, sign_values = RT.remove_insignificant_processes(processes, process_ge
 
 # Plotting the division of processes
 print("Plotting the different %s aspects..." % testing)
-EDP.plot_multiple_processes(processes, process_genes, sign_gene_ids, L_avg, NL_avg, frame_size=4)
+EDP.plot_multiple_processes(processes, process_genes, sign_gene_ids, L_avg, NL_avg, frame_size=3)

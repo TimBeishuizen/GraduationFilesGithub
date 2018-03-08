@@ -184,6 +184,11 @@ D.~S. Wishart, D.~Tzur, C.~Knox, R.~Eisner, A.~C. Guo, N.~Young, D.~Cheng,
   database,'' {\em Nucleic acids research}, vol.~35, no.~suppl\_1,
   pp.~D521--D526, 2007.
 
+\bibitem{teodoro2009biomedical}
+D.~Teodoro, R.~Choquet, E.~Pasche, J.~Gobeill, C.~Daniel, P.~Ruch, and
+  C.~Lovis, ``Biomedical data management: a proposal framework.,'' in {\em
+  MIE}, pp.~175--179, Citeseer, 2009.
+
 \bibitem{schindelin2015imagej}
 J.~Schindelin, C.~T. Rueden, M.~C. Hiner, and K.~W. Eliceiri, ``The imagej
   ecosystem: An open platform for biomedical image analysis,'' {\em Molecular
@@ -226,11 +231,6 @@ F.~Faul, E.~Erdfelder, A.-G. Lang, and A.~Buchner, ``G* power 3: A flexible
   statistical power analysis program for the social, behavioral, and biomedical
   sciences,'' {\em Behavior research methods}, vol.~39, no.~2, pp.~175--191,
   2007.
-
-\bibitem{teodoro2009biomedical}
-D.~Teodoro, R.~Choquet, E.~Pasche, J.~Gobeill, C.~Daniel, P.~Ruch, and
-  C.~Lovis, ``Biomedical data management: a proposal framework.,'' in {\em
-  MIE}, pp.~175--179, Citeseer, 2009.
 
 \bibitem{zupan2006knowledge}
 B.~Zupan, J.~H. Holmes, and R.~Bellazzi, ``Knowledge-based data analysis and
