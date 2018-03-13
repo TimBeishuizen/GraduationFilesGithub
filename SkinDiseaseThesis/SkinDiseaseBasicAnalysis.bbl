@@ -1,5 +1,99 @@
 \begin{thebibliography}{10}
 
+\bibitem{gehlenborg2010visualization}
+N.~Gehlenborg, S.~I. O'donoghue, N.~S. Baliga, A.~Goesmann, M.~A. Hibbs,
+  H.~Kitano, O.~Kohlbacher, H.~Neuweger, R.~Schneider, D.~Tenenbaum, {\em
+  et~al.}, ``Visualization of omics data for systems biology,'' {\em Nature
+  methods}, vol.~7, no.~3s, p.~S56, 2010.
+
+\bibitem{brazma2001minimum}
+A.~Brazma, P.~Hingamp, J.~Quackenbush, G.~Sherlock, P.~Spellman, C.~Stoeckert,
+  J.~Aach, W.~Ansorge, C.~A. Ball, H.~C. Causton, {\em et~al.}, ``Minimum
+  information about a microarray experiment (miame)—toward standards for
+  microarray data,'' {\em Nature genetics}, vol.~29, no.~4, p.~365, 2001.
+
+\bibitem{cottrell1999probability}
+J.~S. Cottrell and U.~London, ``Probability-based protein identification by
+  searching sequence databases using mass spectrometry data,'' {\em
+  electrophoresis}, vol.~20, no.~18, pp.~3551--3567, 1999.
+
+\bibitem{dettmer2007mass}
+K.~Dettmer, P.~A. Aronov, and B.~D. Hammock, ``Mass spectrometry-based
+  metabolomics,'' {\em Mass spectrometry reviews}, vol.~26, no.~1, pp.~51--78,
+  2007.
+
+\bibitem{capitani2017nuclear}
+D.~Capitani, A.~P. Sobolev, and L.~Mannina, ``Nuclear magnetic
+  resonance--metabolomics,'' {\em Food Authentication: Management, Analysis and
+  Regulation}, p.~177, 2017.
+
+\bibitem{liu2012data}
+B.~Liu, X.~Zhou, Y.~Wang, J.~Hu, L.~He, R.~Zhang, S.~Chen, and Y.~Guo, ``Data
+  processing and analysis in real-world traditional chinese medicine clinical
+  data: challenges and approaches,'' {\em Statistics in medicine}, vol.~31,
+  no.~7, pp.~653--660, 2012.
+
+\bibitem{sittig2008grand}
+D.~F. Sittig, A.~Wright, J.~A. Osheroff, B.~Middleton, J.~M. Teich, J.~S. Ash,
+  E.~Campbell, and D.~W. Bates, ``Grand challenges in clinical decision
+  support,'' {\em Journal of biomedical informatics}, vol.~41, no.~2,
+  pp.~387--392, 2008.
+
+\bibitem{bertolazzi2008logic}
+P.~Bertolazzi, G.~Felici, P.~Festa, and G.~Lancia, ``Logic classification and
+  feature selection for biomedical data,'' {\em Computers \& Mathematics with
+  Applications}, vol.~55, no.~5, pp.~889--899, 2008.
+
+\bibitem{piatetsky2003microarray}
+G.~Piatetsky-Shapiro and P.~Tamayo, ``Microarray data mining: facing the
+  challenges,'' {\em ACM SIGKDD Explorations Newsletter}, vol.~5, no.~2,
+  pp.~1--5, 2003.
+
+\bibitem{lommen2009metalign}
+A.~Lommen, ``Metalign: interface-driven, versatile metabolomics tool for
+  hyphenated full-scan mass spectrometry data preprocessing,'' {\em Analytical
+  chemistry}, vol.~81, no.~8, pp.~3079--3086, 2009.
+
+\bibitem{holzinger2014knowledge}
+A.~Holzinger, M.~Dehmer, and I.~Jurisica, ``Knowledge discovery and interactive
+  data mining in bioinformatics-state-of-the-art, future challenges and
+  research directions,'' {\em BMC bioinformatics}, vol.~15, no.~6, p.~I1, 2014.
+
+\bibitem{wilkins2009proteomics}
+M.~Wilkins, ``Proteomics data mining,'' {\em Expert review of proteomics},
+  vol.~6, no.~6, pp.~599--603, 2009.
+
+\bibitem{teodoro2009biomedical}
+D.~Teodoro, R.~Choquet, E.~Pasche, J.~Gobeill, C.~Daniel, P.~Ruch, and
+  C.~Lovis, ``Biomedical data management: a proposal framework.,'' in {\em
+  MIE}, pp.~175--179, Citeseer, 2009.
+
+\bibitem{doi:10.1093/nar/gkm1037}
+M.~Y. Galperin, ``The molecular biology database collection: 2008 update,''
+  {\em Nucleic Acids Research}, vol.~36, no.~suppl1, pp.~D2--D4, 2008.
+
+\bibitem{sturn2002genesis}
+A.~Sturn, J.~Quackenbush, and Z.~Trajanoski, ``Genesis: cluster analysis of
+  microarray data,'' {\em Bioinformatics}, vol.~18, no.~1, pp.~207--208, 2002.
+
+\bibitem{karnovsky2011metscape}
+A.~Karnovsky, T.~Weymouth, T.~Hull, V.~G. Tarcea, G.~Scardoni, C.~Laudanna,
+  M.~A. Sartor, K.~A. Stringer, H.~Jagadish, C.~Burant, {\em et~al.},
+  ``Metscape 2 bioinformatics tool for the analysis and visualization of
+  metabolomics and gene expression data,'' {\em Bioinformatics}, vol.~28,
+  no.~3, pp.~373--380, 2011.
+
+\bibitem{tabas2012genecodis3}
+D.~Tabas-Madrid, R.~Nogales-Cadenas, and A.~Pascual-Montano, ``Genecodis3: a
+  non-redundant and modular enrichment analysis tool for functional genomics,''
+  {\em Nucleic acids research}, vol.~40, no.~W1, pp.~W478--W483, 2012.
+
+\bibitem{faul2007g}
+F.~Faul, E.~Erdfelder, A.-G. Lang, and A.~Buchner, ``G* power 3: A flexible
+  statistical power analysis program for the social, behavioral, and biomedical
+  sciences,'' {\em Behavior research methods}, vol.~39, no.~2, pp.~175--191,
+  2007.
+
 \bibitem{nair2009genome}
 R.~P. Nair, K.~C. Duffin, C.~Helms, J.~Ding, P.~E. Stuart, D.~Goldgar, J.~E.
   Gudjonsson, Y.~Li, T.~Tejasvi, B.-J. Feng, {\em et~al.}, ``Genome-wide scan
@@ -74,5 +168,131 @@ A.~L. Dixon, L.~Liang, M.~F. Moffatt, W.~Chen, S.~Heath, K.~C. Wong, J.~Taylor,
   E.~Burnett, I.~Gut, M.~Farrall, {\em et~al.}, ``A genome-wide association
   study of global gene expression,'' {\em Nature genetics}, vol.~39, no.~10,
   p.~1202, 2007.
+
+\bibitem{roberson2010psoriasis}
+E.~D. Roberson and A.~M. Bowcock, ``Psoriasis genetics: breaking the barrier,''
+  {\em Trends in Genetics}, vol.~26, no.~9, pp.~415--423, 2010.
+
+\bibitem{leigh1995keratins}
+I.~Leigh, H.~Navsaria, P.~Purkis, I.~McKay, P.~Bowden, and P.~Riddle,
+  ``Keratins (kl6 and kl7) as markers of keratinocyte hyperproliferation in
+  psoriasis in vivo and in vitro,'' {\em British Journal of Dermatology},
+  vol.~133, no.~4, pp.~501--511, 1995.
+
+\bibitem{vegfors2012expression}
+J.~Vegfors, S.~Petersson, A.~Kovacs, K.~Polyak, and C.~Enerb{\"a}ck, ``The
+  expression of psoriasin (s100a7) and cd24 is linked and related to the
+  differentiation of mammary epithelial cells,'' {\em PloS one}, vol.~7,
+  no.~12, p.~e53119, 2012.
+
+\bibitem{kainu2009association}
+K.~Kainu, K.~Kivinen, M.~Zucchelli, S.~Suomela, J.~Kere, A.~Inerot, B.~S.
+  Baker, A.~V. Powles, L.~Fry, L.~Samuelsson, {\em et~al.}, ``Association of
+  psoriasis to pglyrp and sprr genes at psors4 locus on 1q shows heterogeneity
+  between finnish, swedish and irish families,'' {\em Experimental
+  dermatology}, vol.~18, no.~2, pp.~109--115, 2009.
+
+\bibitem{bergboer2012genetics}
+J.~G. Bergboer, P.~L. Zeeuwen, and J.~Schalkwijk, ``Genetics of psoriasis:
+  evidence for epistatic interaction between skin barrier abnormalities and
+  immune deviation,'' {\em Journal of Investigative Dermatology}, vol.~132,
+  no.~10, pp.~2320--2331, 2012.
+
+\bibitem{michibata2004identification}
+H.~Michibata, H.~Chiba, K.~Wakimoto, M.~Seishima, S.~Kawasaki, K.~Okubo,
+  H.~Mitsui, H.~Torii, and Y.~Imai, ``Identification and characterization of a
+  novel component of the cornified envelope, cornifelin,'' {\em Biochemical and
+  biophysical research communications}, vol.~318, no.~4, pp.~803--813, 2004.
+
+\bibitem{marrakchi2011interleukin}
+S.~Marrakchi, P.~Guigue, B.~R. Renshaw, A.~Puel, X.-Y. Pei, S.~Fraitag,
+  J.~Zribi, E.~Bal, C.~Cluzeau, M.~Chrabieh, {\em et~al.},
+  ``Interleukin-36--receptor antagonist deficiency and generalized pustular
+  psoriasis,'' {\em New England Journal of Medicine}, vol.~365, no.~7,
+  pp.~620--628, 2011.
+
+\bibitem{niehues2017psoriasis}
+H.~Niehues, L.~C. Tsoi, D.~A. van~der Krieken, P.~A. Jansen, M.~A. Oortveld,
+  D.~Rodijk-Olthuis, I.~M. van Vlijmen, W.~J. Hendriks, R.~W. Helder, J.~A.
+  Bouwstra, {\em et~al.}, ``Psoriasis-associated late cornified envelope (lce)
+  proteins have antibacterial activity,'' {\em Journal of Investigative
+  Dermatology}, vol.~137, no.~11, pp.~2380--2388, 2017.
+
+\bibitem{jiang2015biomarkers}
+S.~Jiang, T.~E. Hinchliffe, and T.~Wu, ``Biomarkers of an autoimmune skin
+  disease—psoriasis,'' {\em Genomics, proteomics \& bioinformatics}, vol.~13,
+  no.~4, pp.~224--233, 2015.
+
+\bibitem{sun2010association}
+L.-D. Sun, H.~Cheng, Z.-X. Wang, A.-P. Zhang, P.-G. Wang, J.-H. Xu, Q.-X. Zhu,
+  H.-S. Zhou, E.~Ellinghaus, F.-R. Zhang, {\em et~al.}, ``Association analyses
+  identify six new psoriasis susceptibility loci in the chinese population,''
+  {\em Nature genetics}, vol.~42, no.~11, p.~1005, 2010.
+
+\bibitem{djalilian2006connexin}
+A.~R. Djalilian, D.~McGaughey, S.~Patel, E.~Y. Seo, C.~Yang, J.~Cheng,
+  M.~Tomic, S.~Sinha, A.~Ishida-Yamamoto, and J.~A. Segre, ``Connexin 26
+  regulates epidermal barrier and wound remodeling and promotes psoriasiform
+  response,'' {\em The Journal of clinical investigation}, vol.~116, no.~5,
+  pp.~1243--1253, 2006.
+
+\bibitem{algermissen1996differential}
+B.~Algermissen, J.~Sitzmann, P.~LeMotte, and B.~Czarnetzki, ``Differential
+  expression of crabp ii, psoriasin and cytokeratin 1 mrna in human skin
+  diseases,'' {\em Archives of dermatological research}, vol.~288, no.~8,
+  p.~426, 1996.
+
+\bibitem{bruch2003arginase}
+D.~Bruch-Gerharz, O.~Schnorr, C.~Suschek, K.-F. Beck, J.~Pfeilschifter,
+  T.~Ruzicka, and V.~Kolb-Bachofen, ``Arginase 1 overexpression in psoriasis:
+  limitation of inducible nitric oxide synthase activity as a molecular
+  mechanism for keratinocyte hyperproliferation,'' {\em The American journal of
+  pathology}, vol.~162, no.~1, pp.~203--211, 2003.
+
+\bibitem{nestle2005plasmacytoid}
+F.~O. Nestle, C.~Conrad, A.~Tun-Kyi, B.~Homey, M.~Gombert, O.~Boyman, G.~Burg,
+  Y.-J. Liu, and M.~Gilliet, ``Plasmacytoid predendritic cells initiate
+  psoriasis through interferon-$\alpha$ production,'' {\em Journal of
+  Experimental Medicine}, vol.~202, no.~1, pp.~135--143, 2005.
+
+\bibitem{suomela2004interferon}
+S.~Suomela, L.~Cao, A.~Bowcock, and U.~Saarialho-Kere, ``Interferon
+  $\alpha$-inducible protein 27 (ifi27) is upregulated in psoriatic skin and
+  certain epithelial cancers,'' {\em Journal of Investigative Dermatology},
+  vol.~122, no.~3, pp.~717--721, 2004.
+
+\bibitem{chiricozzi2011integrative}
+A.~Chiricozzi, E.~Guttman-Yassky, M.~Su{\'a}rez-Farinas, K.~E. Nograles,
+  S.~Tian, I.~Cardinale, S.~Chimenti, and J.~G. Krueger, ``Integrative
+  responses to il-17 and tnf-$\alpha$ in human keratinocytes account for key
+  inflammatory pathogenic circuits in psoriasis,'' {\em Journal of
+  Investigative Dermatology}, vol.~131, no.~3, pp.~677--687, 2011.
+
+\bibitem{lowes2008psoriasis}
+M.~A. Lowes, T.~Kikuchi, J.~Fuentes-Duculan, I.~Cardinale, L.~C. Zaba, A.~S.
+  Haider, E.~P. Bowman, and J.~G. Krueger, ``Psoriasis vulgaris lesions contain
+  discrete populations of th1 and th17 t cells,'' {\em Journal of Investigative
+  Dermatology}, vol.~128, no.~5, pp.~1207--1211, 2008.
+
+\bibitem{jansen2009beta}
+P.~A. Jansen, D.~Rodijk-Olthuis, E.~J. Hollox, M.~Kamsteeg, G.~S. Tjabringa,
+  G.~J. de~Jongh, I.~M. van Vlijmen-Willems, J.~G. Bergboer, M.~M. van Rossum,
+  E.~M. de~Jong, {\em et~al.}, ``$\beta$-defensin-2 protein is a serum
+  biomarker for disease activity in psoriasis and reaches biologically relevant
+  concentrations in lesional skin,'' {\em PloS one}, vol.~4, no.~3, p.~e4725,
+  2009.
+
+\bibitem{gudjonsson2010assessment}
+J.~E. Gudjonsson, J.~Ding, A.~Johnston, T.~Tejasvi, A.~M. Guzman, R.~P. Nair,
+  J.~J. Voorhees, G.~R. Abecasis, and J.~T. Elder, ``Assessment of the
+  psoriatic transcriptome in a large sample: additional regulated genes and
+  comparisons with in vitro models,'' {\em Journal of Investigative
+  Dermatology}, vol.~130, no.~7, pp.~1829--1840, 2010.
+
+\bibitem{roesner2017inflammatory}
+L.~M. Roesner, P.~Kienlin, G.~Begemann, O.~Dittrich-Breiholz, and T.~Werfel,
+  ``Inflammatory marker analysis in psoriatic skin under topical
+  phosphodiesterase 4 inhibitor treatment,'' {\em Journal of Allergy and
+  Clinical Immunology}, vol.~140, no.~4, pp.~1184--1187, 2017.
 
 \end{thebibliography}

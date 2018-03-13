@@ -27,6 +27,14 @@ for i in range(8):
     sample_values, skin_type_values, gene_ids, sample_ids, series = SDE.extract_data(data_names[i])
     gene_set = GDE.extract_gene_data()
 
+    for gene in gene_ids:
+        if gene_set[gene]["GB_ACC"] == 'AI286239':
+            print('TITLE')
+            print(gene_set[gene]["Process Relations"])
+            # print(gene_set[gene]["Target Description"])
+            print(gene_set[gene]["Cellular Relations"])
+    break
+
 # # Extract multiple data sets
 # print("Extracting data...")
 # sample_values, skin_type_values, gene_ids = SDE.extract_multiple_data_sets(suitable_names)
