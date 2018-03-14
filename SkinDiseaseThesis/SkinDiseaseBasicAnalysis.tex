@@ -238,6 +238,15 @@
 	\end{pmatrix}
 	$$
 	
+	
+	\begin{equation}
+	x'_{a,b} = \frac{x_{a,b} - \text{mean}(x_b)}{\text{std}(x_b)}
+	\end{equation}
+	
+	\begin{equation}
+	x'_{a,b} = \frac{x_{a,b} - \text{mean}(x_a)}{\text{std}(x_a)}
+	\end{equation}
+	
 	% Clustering types
 	The first type of clustering is done by using basic clustering methods. Three different types of clustering were used: K-means, Agglomerative and DBSCAN, all three of them methods in scikit-learn. K-means tries to cluster the genes in $k$ groups of equal variance. Agglomerative clustering is also known as hierarchical bottom-up clustering, in which clusters are merged until the desired number of clusters is left. DBSCAN tries to divide the genes in clusters with high density and works best with a high number of values combined with a low number of clusters. For both K-means and agglomerative clustering a variation of cluster numbers is chosen to find the best possible selection. 
 	

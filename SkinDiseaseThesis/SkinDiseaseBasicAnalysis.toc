@@ -9,8 +9,8 @@
 \contentsline {section}{\numberline {4}Results}{9}{section.4}
 \contentsline {subsection}{\numberline {4.1}Feature Reduction}{9}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Clustering}{11}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Psoriasis Versus Atopic Dermatitis}{12}{subsection.4.3}
-\contentsline {section}{\numberline {5}Discussion}{13}{section.5}
-\contentsline {section}{\numberline {6}Conclusion for Framework}{13}{section.6}
-\contentsline {section}{\numberline {A}Biomedical relation graphs}{17}{appendix.A}
-\contentsline {section}{\numberline {B}Cluster Gene Specifications}{21}{appendix.B}
+\contentsline {subsection}{\numberline {4.3}Psoriasis Versus Atopic Dermatitis}{13}{subsection.4.3}
+\contentsline {section}{\numberline {5}Discussion}{14}{section.5}
+\contentsline {section}{\numberline {6}Conclusion for Framework}{14}{section.6}
+\contentsline {section}{\numberline {A}Biomedical relation graphs}{18}{appendix.A}
+\contentsline {section}{\numberline {B}Cluster Gene Specifications}{22}{appendix.B}
