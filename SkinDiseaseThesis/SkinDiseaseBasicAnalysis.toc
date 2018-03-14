@@ -8,7 +8,7 @@
 \contentsline {subsection}{\numberline {3.3}Psoriasis Versus Atopic Dermatitis}{9}{subsection.3.3}
 \contentsline {section}{\numberline {4}Results}{9}{section.4}
 \contentsline {subsection}{\numberline {4.1}Feature Reduction}{9}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Clustering}{10}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.2}Clustering}{11}{subsection.4.2}
 \contentsline {subsection}{\numberline {4.3}Psoriasis Versus Atopic Dermatitis}{12}{subsection.4.3}
 \contentsline {section}{\numberline {5}Discussion}{13}{section.5}
 \contentsline {section}{\numberline {6}Conclusion for Framework}{13}{section.6}

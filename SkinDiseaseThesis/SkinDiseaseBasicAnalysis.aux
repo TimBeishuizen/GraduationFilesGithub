@@ -87,8 +87,8 @@
 \newlabel{eq:PairedTTest}{{1}{5}{Feature Reduction}{equation.3.1}{}}
 \newlabel{eq:UnequalVarianceTTest}{{2}{5}{Feature Reduction}{equation.3.2}{}}
 \newlabel{fn:BDA}{{2}{5}{Feature Reduction}{figure.caption.3}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces A flowchart layout how the gene correlation clustering algorithm worked. The correlation coefficient is iteratively computed between a new gene and the uncorrelated set of genes. If all correlation coefficients are lower than $0.7$, the new gene did not correlate enough with the set of genes and therefore is added to the uncorrelated set of genes. If it had a correlation of higher than 0.7 for another gene, it was added to that cluster.\relax }}{6}{figure.caption.4}}
-\newlabel{fig:GreedyCorrelationClustering}{{2}{6}{A flowchart layout how the gene correlation clustering algorithm worked. The correlation coefficient is iteratively computed between a new gene and the uncorrelated set of genes. If all correlation coefficients are lower than $0.7$, the new gene did not correlate enough with the set of genes and therefore is added to the uncorrelated set of genes. If it had a correlation of higher than 0.7 for another gene, it was added to that cluster.\relax }{figure.caption.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces A flowchart layout how the gene multicollinearity removal algorithm worked. The correlation coefficient is iteratively computed between a new gene and the uncorrelated set of genes. If all correlation coefficients are lower than $0.7$, the new gene did not correlate enough with the set of genes and therefore is added to the uncorrelated set of genes. If it had a correlation of higher than 0.7 for another gene, it was added to that the list for the gene it is correlated with.\relax }}{6}{figure.caption.4}}
+\newlabel{fig:GreedyCorrelationClustering}{{2}{6}{A flowchart layout how the gene multicollinearity removal algorithm worked. The correlation coefficient is iteratively computed between a new gene and the uncorrelated set of genes. If all correlation coefficients are lower than $0.7$, the new gene did not correlate enough with the set of genes and therefore is added to the uncorrelated set of genes. If it had a correlation of higher than 0.7 for another gene, it was added to that the list for the gene it is correlated with.\relax }{figure.caption.4}{}}
 \newlabel{fig:DTFeatureSpace}{{3a}{7}{Subfigure 3a}{subfigure.3.1}{}}
 \newlabel{sub@fig:DTFeatureSpace}{{(a)}{a}{Subfigure 3a\relax }{subfigure.3.1}{}}
 \newlabel{fig:DTExample}{{3b}{7}{Subfigure 3b}{subfigure.3.2}{}}
@@ -101,37 +101,39 @@
 \newlabel{subsec:MethodsPositionalClustering}{{3.2}{7}{Clustering}{subsection.3.2}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces A flowchart layout how clustering was done. Two types of clustering were used, by biomedical relation and by value. For the clustering by value, first a normalization was done. After both types of clustering were done, they were combined and biomedical relations within the clusters were shown.\relax }}{8}{figure.caption.6}}
 \newlabel{fig:ClusteringLayout}{{4}{8}{A flowchart layout how clustering was done. Two types of clustering were used, by biomedical relation and by value. For the clustering by value, first a normalization was done. After both types of clustering were done, they were combined and biomedical relations within the clusters were shown.\relax }{figure.caption.6}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces The three biomedical relation types available in the database (subsection \ref  {subsec:AdditionalData}) with a description and several examples.\relax }}{9}{table.caption.7}}
+\newlabel{tab:BiomedicalRelationTypes}{{2}{9}{The three biomedical relation types available in the database (subsection \ref {subsec:AdditionalData}) with a description and several examples.\relax }{table.caption.7}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Psoriasis Versus Atopic Dermatitis}{9}{subsection.3.3}}
 \newlabel{subsec:MethodsPsoriasisVersusAtopicDermatitis}{{3.3}{9}{Psoriasis Versus Atopic Dermatitis}{subsection.3.3}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {4}Results}{9}{section.4}}
 \newlabel{sec:Results}{{4}{9}{Results}{section.4}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Feature Reduction}{9}{subsection.4.1}}
 \newlabel{subsec:ResultsFeatureResuction}{{4.1}{9}{Feature Reduction}{subsection.4.1}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces The results of using the t-test for genes in all relevant Psoriasis datasets separately and combined. A paired t-test is done if applicable, otherwise an unknown variance unpaired t-test is done. The number of samples for both lesional and non-lesional skin is shown additionally.\relax }}{9}{table.caption.7}}
-\newlabel{tab:FeatureReduction}{{2}{9}{The results of using the t-test for genes in all relevant Psoriasis datasets separately and combined. A paired t-test is done if applicable, otherwise an unknown variance unpaired t-test is done. The number of samples for both lesional and non-lesional skin is shown additionally.\relax }{table.caption.7}{}}
 \citation{suarez2012expanding}
 \citation{suarez2012expanding}
 \citation{suarez2012expanding}
 \citation{suarez2012expanding}
 \citation{suarez2012expanding}
 \citation{suarez2012expanding}
-\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces The results of the decision tree classifier for different sets of genes: all genes, only the significant genes and the uncorrelated genes. The decision tree was cross validated by division in 100 different subsets and afterwards tested by a separate test set.\relax }}{10}{table.caption.8}}
-\newlabel{tab:DecisionTreeResults}{{3}{10}{The results of the decision tree classifier for different sets of genes: all genes, only the significant genes and the uncorrelated genes. The decision tree was cross validated by division in 100 different subsets and afterwards tested by a separate test set.\relax }{table.caption.8}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces The six most used genes as splitting criteria for the random forest classifier. The genes are also compared with literature.\relax }}{10}{table.caption.9}}
-\newlabel{tab:GeneRandomForestOccurence}{{4}{10}{The six most used genes as splitting criteria for the random forest classifier. The genes are also compared with literature.\relax }{table.caption.9}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Clustering}{10}{subsection.4.2}}
-\newlabel{subsec:ResultsPositionalClustering}{{4.2}{10}{Clustering}{subsection.4.2}{}}
-\newlabel{fn:Felix}{{3}{10}{Clustering}{subsection.4.2}{}}
-\newlabel{fig:ProcessesScaledBySample}{{\caption@xref {fig:ProcessesScaledBySample}{ on input line 326}}{11}{Clustering}{figure.caption.10}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces The 16 processes that show the highest difference in gene expression between lesional and non-lesional data. The data is standardized by sample and orange points are genes that are related to the process, Blue dots are genes unrelated to the process\relax }}{11}{figure.caption.10}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces 10 different clusters found by agglomerative clustering for the Psoriasis dataset. The data points are genes that showed a significant difference in expression between lesional (y-axis) and non-lesional (x-axis) skin and standardized per sample. Cluster 5 and 8 show the most useful genes and are also marked for Psoriasis relevance: Known Psoriasis marker (A), Known to be upregulated for Psoriasis (B), Known to be upregulated for uncontrollable growth (C) and unknown relation (D)\relax }}{12}{figure.caption.11}}
-\newlabel{fig:ClusteredGenes}{{6}{12}{10 different clusters found by agglomerative clustering for the Psoriasis dataset. The data points are genes that showed a significant difference in expression between lesional (y-axis) and non-lesional (x-axis) skin and standardized per sample. Cluster 5 and 8 show the most useful genes and are also marked for Psoriasis relevance: Known Psoriasis marker (A), Known to be upregulated for Psoriasis (B), Known to be upregulated for uncontrollable growth (C) and unknown relation (D)\relax }{figure.caption.11}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces The results of using the t-test for genes in all relevant Psoriasis datasets separately and combined. A paired t-test is done if applicable, otherwise an unknown variance unpaired t-test is done. The number of samples for both lesional and non-lesional skin is shown additionally.\relax }}{10}{table.caption.8}}
+\newlabel{tab:FeatureReduction}{{3}{10}{The results of using the t-test for genes in all relevant Psoriasis datasets separately and combined. A paired t-test is done if applicable, otherwise an unknown variance unpaired t-test is done. The number of samples for both lesional and non-lesional skin is shown additionally.\relax }{table.caption.8}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces The results of the decision tree classifier for different sets of genes: all genes, only the significant genes and the uncorrelated genes. The decision tree was cross validated by division in 100 different subsets and afterwards tested by a separate test set.\relax }}{10}{table.caption.9}}
+\newlabel{tab:DecisionTreeResults}{{4}{10}{The results of the decision tree classifier for different sets of genes: all genes, only the significant genes and the uncorrelated genes. The decision tree was cross validated by division in 100 different subsets and afterwards tested by a separate test set.\relax }{table.caption.9}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces The six most used genes as splitting criteria for the random forest classifier. The genes are also compared with literature.\relax }}{10}{table.caption.10}}
+\newlabel{tab:GeneRandomForestOccurence}{{5}{10}{The six most used genes as splitting criteria for the random forest classifier. The genes are also compared with literature.\relax }{table.caption.10}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Clustering}{11}{subsection.4.2}}
+\newlabel{subsec:ResultsPositionalClustering}{{4.2}{11}{Clustering}{subsection.4.2}{}}
+\newlabel{fig:ProcessesScaledBySample}{{\caption@xref {fig:ProcessesScaledBySample}{ on input line 349}}{11}{Clustering}{figure.caption.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces The 16 processes that show the highest difference in gene expression between lesional and non-lesional data. The data is standardized by sample and orange points are genes that are related to the process, Blue dots are genes unrelated to the process\relax }}{11}{figure.caption.11}}
+\newlabel{fn:Felix}{{3}{11}{Clustering}{subsection.4.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces 10 different clusters found by agglomerative clustering for the Psoriasis dataset. The data points are genes that showed a significant difference in expression between lesional (y-axis) and non-lesional (x-axis) skin and standardized per sample. Cluster 5 and 8 show the most useful genes and are also marked for Psoriasis relevance: Known Psoriasis marker (A), Known to be upregulated for Psoriasis (B), Known to be upregulated for uncontrollable growth (C) and unknown relation (D)\relax }}{12}{figure.caption.12}}
+\newlabel{fig:ClusteredGenes}{{6}{12}{10 different clusters found by agglomerative clustering for the Psoriasis dataset. The data points are genes that showed a significant difference in expression between lesional (y-axis) and non-lesional (x-axis) skin and standardized per sample. Cluster 5 and 8 show the most useful genes and are also marked for Psoriasis relevance: Known Psoriasis marker (A), Known to be upregulated for Psoriasis (B), Known to be upregulated for uncontrollable growth (C) and unknown relation (D)\relax }{figure.caption.12}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Psoriasis Versus Atopic Dermatitis}{12}{subsection.4.3}}
 \newlabel{subsec:ResultsPsoriasisVersusAtopicDermatitis}{{4.3}{12}{Psoriasis Versus Atopic Dermatitis}{subsection.4.3}{}}
 \bibdata{../References/Citings}
 \bibcite{gehlenborg2010visualization}{1}
-\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces The initial conditions of the Psoriasis and Atopic Dermatitis datasets\relax }}{13}{table.caption.12}}
-\newlabel{tab:ConditionsPsoriasisAD}{{5}{13}{The initial conditions of the Psoriasis and Atopic Dermatitis datasets\relax }{table.caption.12}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces The initial conditions of the Psoriasis and Atopic Dermatitis datasets\relax }}{13}{table.caption.13}}
+\newlabel{tab:ConditionsPsoriasisAD}{{6}{13}{The initial conditions of the Psoriasis and Atopic Dermatitis datasets\relax }{table.caption.13}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {5}Discussion}{13}{section.5}}
 \newlabel{sec:Conclusion}{{5}{13}{Discussion}{section.5}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {6}Conclusion for Framework}{13}{section.6}}
@@ -188,18 +190,18 @@
 \bibstyle{ieeetr}
 \@writefile{toc}{\contentsline {section}{\numberline {A}Biomedical relation graphs}{17}{appendix.A}}
 \newlabel{app:BiomedicalClusters}{{A}{17}{Biomedical relation graphs}{appendix.A}{}}
-\newlabel{fig:ProcessesScaledByFeature}{{\caption@xref {fig:ProcessesScaledByFeature}{ on input line 410}}{18}{Biomedical relation graphs}{figure.caption.14}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces The 16 processes that showed the highest difference in gene expression between lesional and non-lesional data. The data is standardized by feature and orange points are genes that are related to the process, Blue dots are genes unrelated to the process\relax }}{18}{figure.caption.14}}
-\newlabel{fig:ProcessesScaledBySample1}{{\caption@xref {fig:ProcessesScaledBySample1}{ on input line 416}}{18}{Biomedical relation graphs}{figure.caption.15}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces The 16 processes that showed the highest difference in gene expression between lesional and non-lesional data. The data is standardized by sample and orange points are genes that are related to the process, Blue dots are genes unrelated to the process\relax }}{18}{figure.caption.15}}
-\newlabel{fig:CellularScaledBySample}{{\caption@xref {fig:CellularScaledBySample}{ on input line 422}}{19}{Biomedical relation graphs}{figure.caption.16}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces The 16 cellular locations that showed the highest difference in gene expression between lesional and non-lesional data. The data is standardized by sample and orange points are genes that are related to the cellular location, Blue dots are genes unrelated to the cellular location\relax }}{19}{figure.caption.16}}
-\newlabel{fig:CellularScaledByFeature1}{{\caption@xref {fig:CellularScaledByFeature1}{ on input line 429}}{19}{Biomedical relation graphs}{figure.caption.17}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces The 16 cellular locations that showed the highest difference in gene expression between lesional and non-lesional data. The data is standardized by feature and orange points are genes that are related to the cellular location, Blue dots are genes unrelated to the cellular location\relax }}{19}{figure.caption.17}}
-\newlabel{fig:MolecularScaledBySample}{{\caption@xref {fig:MolecularScaledBySample}{ on input line 435}}{20}{Biomedical relation graphs}{figure.caption.18}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces The 16 molecular relations that showed the highest difference in gene expression between lesional and non-lesional data. The data is standardized by sample and orange points are genes that are related to the molecular relation, Blue dots are genes unrelated to the molecular relation\relax }}{20}{figure.caption.18}}
-\newlabel{fig:MolecularScaledByFeature1}{{\caption@xref {fig:MolecularScaledByFeature1}{ on input line 442}}{20}{Biomedical relation graphs}{figure.caption.19}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces The 16 molecular reactions that showed the highest difference in gene expression between lesional and non-lesional data. The data is standardized by feature and orange points are genes that are related to the molecular relation, Blue dots are genes unrelated to the molecular relation\relax }}{20}{figure.caption.19}}
+\newlabel{fig:ProcessesScaledByFeature}{{\caption@xref {fig:ProcessesScaledByFeature}{ on input line 433}}{18}{Biomedical relation graphs}{figure.caption.15}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces The 16 processes that showed the highest difference in gene expression between lesional and non-lesional data. The data is standardized by feature and orange points are genes that are related to the process, Blue dots are genes unrelated to the process\relax }}{18}{figure.caption.15}}
+\newlabel{fig:ProcessesScaledBySample1}{{\caption@xref {fig:ProcessesScaledBySample1}{ on input line 439}}{18}{Biomedical relation graphs}{figure.caption.16}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces The 16 processes that showed the highest difference in gene expression between lesional and non-lesional data. The data is standardized by sample and orange points are genes that are related to the process, Blue dots are genes unrelated to the process\relax }}{18}{figure.caption.16}}
+\newlabel{fig:CellularScaledBySample}{{\caption@xref {fig:CellularScaledBySample}{ on input line 445}}{19}{Biomedical relation graphs}{figure.caption.17}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces The 16 cellular locations that showed the highest difference in gene expression between lesional and non-lesional data. The data is standardized by sample and orange points are genes that are related to the cellular location, Blue dots are genes unrelated to the cellular location\relax }}{19}{figure.caption.17}}
+\newlabel{fig:CellularScaledByFeature1}{{\caption@xref {fig:CellularScaledByFeature1}{ on input line 452}}{19}{Biomedical relation graphs}{figure.caption.18}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces The 16 cellular locations that showed the highest difference in gene expression between lesional and non-lesional data. The data is standardized by feature and orange points are genes that are related to the cellular location, Blue dots are genes unrelated to the cellular location\relax }}{19}{figure.caption.18}}
+\newlabel{fig:MolecularScaledBySample}{{\caption@xref {fig:MolecularScaledBySample}{ on input line 458}}{20}{Biomedical relation graphs}{figure.caption.19}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces The 16 molecular relations that showed the highest difference in gene expression between lesional and non-lesional data. The data is standardized by sample and orange points are genes that are related to the molecular relation, Blue dots are genes unrelated to the molecular relation\relax }}{20}{figure.caption.19}}
+\newlabel{fig:MolecularScaledByFeature1}{{\caption@xref {fig:MolecularScaledByFeature1}{ on input line 465}}{20}{Biomedical relation graphs}{figure.caption.20}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces The 16 molecular reactions that showed the highest difference in gene expression between lesional and non-lesional data. The data is standardized by feature and orange points are genes that are related to the molecular relation, Blue dots are genes unrelated to the molecular relation\relax }}{20}{figure.caption.20}}
 \citation{roberson2010psoriasis}
 \citation{leigh1995keratins}
 \citation{vegfors2012expression}
@@ -238,7 +240,7 @@
 \citation{roesner2017inflammatory}
 \@writefile{toc}{\contentsline {section}{\numberline {B}Cluster Gene Specifications}{21}{appendix.B}}
 \newlabel{app:ClusterGeneSpecifications}{{B}{21}{Cluster Gene Specifications}{appendix.B}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces All genes in the highlighted cluster 5 with their link to psoriasis\relax }}{22}{table.caption.20}}
-\newlabel{tab:GenesCluster5}{{6}{22}{All genes in the highlighted cluster 5 with their link to psoriasis\relax }{table.caption.20}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces All genes in the highlighted cluster 8 with their link to psoriasis\relax }}{23}{table.caption.21}}
-\newlabel{tab:GenesCluster8}{{7}{23}{All genes in the highlighted cluster 8 with their link to psoriasis\relax }{table.caption.21}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces All genes in the highlighted cluster 5 with their link to psoriasis\relax }}{22}{table.caption.21}}
+\newlabel{tab:GenesCluster5}{{7}{22}{All genes in the highlighted cluster 5 with their link to psoriasis\relax }{table.caption.21}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces All genes in the highlighted cluster 8 with their link to psoriasis\relax }}{23}{table.caption.22}}
+\newlabel{tab:GenesCluster8}{{8}{23}{All genes in the highlighted cluster 8 with their link to psoriasis\relax }{table.caption.22}{}}
