@@ -154,22 +154,29 @@
 	\label{sec:Methods}
 	
 	% Methods introduction
-	Three different aspects are investigated with the dataset. At first several techniques are used to reduce the high number of genes. Secondly the genes (either before feature reduction or after) are clustered. Thirdly all genes of psoriasis and atopic dermatitis are compared after reducing them to a lower number of genes, to find whether genes were over expressed in both of them.
+	Three different aspects were investigated with the dataset. At first several techniques were used to reduce the high number of genes. Secondly the genes (either before feature reduction or after) were clustered. Thirdly all genes of psoriasis and atopic dermatitis were compared after reducing them to a lower number of genes, to find whether genes had been overexpressed in both of them.
 	
 	% Non-Lesional vs Lesional
-	A previous project\footnote{BEP Project -\textit{ Manouk Groels}} found out that healthy and non-lesional skin do not show many differences and after some testing, the same conclusion is reached in teh current study. Aside from this, the difference between lesional and non-lesional skin is the most important for skin diseases to compute, as that difference shows which genes are over- or underexpressed in lesional skin. Therefore the main focus of the project was showing the difference between non-lesional and lesional skin in terms of genes. 
+	A previous project\footnote{BEP Project -\textit{ Manouk Groels}} found out that healthy and non-lesional skin do not show many differences and after some testing, the same conclusion was reached in the current study. Aside from this, the difference between lesional and non-lesional skin was the most important for skin diseases to compute, as that difference showed which genes are over- or underexpressed in lesional skin. Therefore the main focus of the project was showing the difference between non-lesional and lesional skin in terms of genes. 
 	
 	% Only best Psoriasis sets
-	For the computation of feature reduction, the largest possible dataset was created with only non-lesional and lesional skin samples. The biggest dataset that could be created was with the Psoriasis sets that had both non-lesional and lesional skin (table \ref{tab:SkinDiseasesDataSets}), good for a total of 423 samples. When comparing Psoriasis and Atopic Dermatitis, all suitable samples of Atopic Dermatitis were collected for a total of 58 samples. In gene reduction and clustering only the Psoriasis dataset is used, due to its bigger size. When comparing Psoriasis and Atopic Dermatitis, both are used.
+	For the computation of feature reduction, the largest possible dataset was created with only non-lesional and lesional skin samples. The biggest dataset that could be created was with the Psoriasis sets that had both non-lesional and lesional skin (table \ref{tab:SkinDiseasesDataSets}), good for a total of 423 samples. When comparing Psoriasis and Atopic Dermatitis, all suitable samples of Atopic Dermatitis were collected for a total of 58 samples. In gene reduction and clustering only the Psoriasis dataset was used, due to its bigger sample size. When comparing Psoriasis and Atopic Dermatitis, both were used.
 	
 	\subsection{Feature Reduction}
 	\label{subsec:MethodsFeatureReduction}
 	
 	% Introduction
-	Since the number of features in the data is 54675 (the number of genes), a significant feature reduction is needed before any meaningful computations could be done. Therefore two different ways of feature reduction were explored. The first one was doing a simple t-test to find all genes that were significantly different. The second one was testing correlation between all genes, also known as multicollinearity testing.
+	Since the number of features in the data was 54675 (the number of genes), a significant feature reduction was needed before any meaningful computations could be done. Therefore two different ways of feature reduction were explored. The first one was doing a simple t-test to find all genes that were significantly different. The second one was testing correlation between all genes, also known as multicollinearity testing. The complete layout of the feature reduction was visualized for understanding (figure \ref{fig:FeatureReductionLayout}).
+	
+	\begin{figure}[H]
+		\includegraphics[width=0.8\textwidth]{FeatureReductionLayout.png}
+		\caption{A flowchart layout of the feature reduction. The complete data set first was reduced by using a t-test and next by the greedy clustering algorithm. the three feature set representations were all three tested by a decision tree classifier and the one with the best results was chosen. At last the best feature set representation was classified with a random forest classifier and the genes that were most used in the final random forest were selected.}
+		\label{fig:FeatureReductionLayout}
+	\end{figure}
+		
 	
 	% T-test SciPy
-	For using a t-test, the SciPy package is used. For the t-test three different possibilities were available, one for paired data, one for data with equal unknown variance and one for data with unequal unknown variance \footnote{\label{fn:BDA}Biomedical Data Analysis - \textit{Tim Beishuizen}}. In this case, all but one dataset (GSE14905) were paired, in those cases the paired t-test was used (equation \ref{eq:PairedTTest}) and in the other set plus the combined set the unequal variance t-test was used (equation \ref{eq:UnequalVarianceTTest}). In these equations $\bar{y}$ is the mean of a distribution, $s$ the standard deviation, $n$ the number of samples, $\bar{d}$ the average value for difference in paired samples and $t$ is the normalized version of the gene to be checked ($t = \frac{y - \bar{y}}{s/\sqrt{n}}$).  
+	For using a t-test, the SciPy package was used. Three different t-test possibilities were available, one for paired data, one for data with equal unknown variance and one for data with unequal unknown variance\footnote{\label{fn:BDA}Biomedical Data Analysis - \textit{Tim Beishuizen}}. Two of these t-tests were used, the paired t-test and the t-test for unequal unknown variance. Almost all datasets (GSE13355, GSE30999, GSE34248 and GSE41662) were paired, in those cases the paired t-test was used (equation \ref{eq:PairedTTest}) and in the remainin set (GSE14905) plus the combined set (all GSE datasets together) the unequal variance t-test were used (equation \ref{eq:UnequalVarianceTTest}). In these equations $\bar{y}$ was the mean of a distribution, $s$ the standard deviation, $n$ the number of samples, $\bar{d}$ the average value for difference in paired samples and $t$ was the normalized version of the gene to be checked ($t = \frac{y - \bar{y}}{s/\sqrt{n}}$).  
 	
 	\begin{equation}
 	\label{eq:PairedTTest}
@@ -183,22 +190,40 @@
 	\end{equation}
 	
 	% Multicollinearity
-	To test whether genes are correlated, multicollinearity should be tested. Usually this would be computed by calculating the correlation coefficient between all genes. This coefficient however was computationally quite heavy to compute and therefore an alternative approach was used. A greedy hands on approach to remove multicollinearity is done by testing all genes for their correlation coefficient and removing the least significant one if they correlate high enough (Figure \ref{fig:GreedyCorrelationClustering}).
+	A further reduction could be done by removing multicollinearity. Multicollinearity showed the correlation between genes. Usually this would be computed by calculating the correlation coefficient between all genes. This coefficient however was computationally quite heavy to compute and therefore an alternative approach was used. A greedy hands on approach to remove multicollinearity was done by testing all genes for their correlation coefficient and removing the least significant one if they correlate high enough (Figure \ref{fig:GreedyCorrelationClustering}).
 	
-	\begin{figure}
-		\includegraphics[width=1\textwidth]{GreedyClustering.png}
+	\begin{figure}[H]
+		\includegraphics[width=0.8\textwidth]{GreedyClustering.png}
 		\caption{A flowchart layout how the gene correlation clustering algorithm worked. The correlation coefficient is iteratively computed between a new gene and the uncorrelated set of genes. If all correlation coefficients are lower than $0.7$, the new gene did not correlate enough with the set of genes and therefore is added to the uncorrelated set of genes. If it had a correlation of higher than 0.7 for another gene, it was added to that cluster.}
 		\label{fig:GreedyCorrelationClustering}
 	\end{figure}
 	
-	% Machine Learning RandomForest
-	After removing the unuseable genes and multicollinearity, a random forest classifier from the scikit-learn package is used to find out whether removing unuseable genes and multicollinearity actually improves the possibility to better classify lesional skin. Both the gene sets before and after removal are tested with a decision tree classifier. For this classification a cross validation is done with 100 different subsets. After testing with a decision tree classifier a random forest classifier was also used. From the random forest classifier, all genes that were used multiple times as a splitting criterium were extracted to find out if the classifier used genes multiple times.
+	% Machine Learning Decision Tree
+	After removing the unusable genes and multicollinearity, a decision tree classifier (figure \ref{fig:DecisionTree}) from the scikit-learn package was used to find out whether removing unusable genes and multicollinearity actually improved the possibility to better classify lesional skin. All three gene sets (all genes, significant genes and greedy clustered genes) were used for decision tree classification and split in 80\% training and 20\% test set. A cross validation was done with 100 different subsets for this classification, dividing the 80\% training set into 100 subsets that all were used as a validation set once. With the cross validation, both a validation score and a test score were made to evaluate the performance with the three gene datasets.
+	
+		\begin{figure}[H]
+		\centering
+		\subfloat[A two dimensional sample space divided in three regions.]{\includegraphics[width=0.6\textwidth]{DecisionTreeFeatureSpace.png}\label{fig:DTFeatureSpace}}
+		\hfill
+		\subfloat[The corresponding decision tree]{\includegraphics[width=0.3\textwidth]{DecisionTreeExample.png}\label{fig:DTExample}}
+		\caption{An example of how a decision tree divides a sample space in different regions. A sample space (figure \ref{fig:DTFeatureSpace}) with features ($x_1$ and $x_2$) is divided in regions ($\omega_1$, $\omega_1$ and $\omega_1$). A decision tree (figure \ref{fig:DTExample}) shows how this division is done using thresholds for the features. Every node in the tree corresponds to dividing the sample space in different regions using a threshold for a feature and every leaf corresponds to a region. The classifier tries to divide the sample space in regions finding the best feature threshold combinations, until boundary conditions are met.}
+		\label{fig:DecisionTree}
+	\end{figure}
+	
+	% Random Forest Classification
+	After testing with a decision tree classifier a random forest classifier was used. A random forest classifier creates not one, but multiple decision tree classifiers on subsets of the complete sample space and averages the outcome, for this case 1000 decision trees were created. The input of the random forest classifier was the best gene dataset of the three tested gene sets (all genes, significant genes, uncorrelated genes), according to the decision tree classifier. Aside from the input, the decision trees were only allowed to have a depth of two, as only the genes that show the biggest changes are important. Genes that were used multiple times as a splitting criterium in the created decision trees were extracted from the random forest classifiers. These genes occurred most frequently as the best splitting criterium and therefore had the best relation with the skin disease. The six genes that occurred most were selected.
 	
 	\subsection{Clustering}
 	\label{subsec:MethodsPositionalClustering}
 	
 	% Introduction
-	Given the high number of genes even after feature reduction, clustering is a good way to find whether genes show similar behaviour. This clustering can be done in two different ways. The first way is based the values of the genes, clustering genes that show the same behaviour. A second way is clustering them based on biomedical relations between the genes. Both possibilities were used to find interesting results.
+	Given the high number of genes even after feature reduction, clustering is a good way to find whether genes show similar behaviour. This clustering can be done in two different ways. The first way is based the values of the genes, clustering genes that show the same behaviour. A second way is clustering them based on biomedical relations between the genes. Both possibilities were used to find interesting results and later combined. A complete layout of every thing done during this clustering is visualized (figure \ref{fig:ClusteringLayout}).
+	
+		\begin{figure}[H]
+		\includegraphics[width=0.7\textwidth]{ClusteringLayout.png}
+		\caption{A flowchart layout how clustering was done. Two types of clustering were used, by biomedical relation and by value. For the clustering by value, first a normalization was done. After both types of clustering were done, they were combined and biomedical relations within the clusters were shown.}
+		\label{fig:ClusteringLayout}
+	\end{figure}
 	
 	% Standardization
 	Before clustering was done, the values were normalized per sample. This normalisation is done to remove high differences in especially variation. Two types of standardization are done: by gene and by sample. At first standardization per genes is done, so every gene is treated equally. Relative big differences in gene expression were observed that way. Standardization of variance per sample gives skin cell specific genes higher values than non-skin cell specific genes, because their expression should be higher overall. This way genes known to be more prevalent in skin cells have a higher chance to be noticed for the difference between lesional and non-lesional skin.
