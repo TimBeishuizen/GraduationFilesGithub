@@ -27,7 +27,10 @@
 \usepackage{attachfile2}
 \usepackage{subfig}
 \usepackage{amsmath}
+\usepackage{algorithm}
+
 \graphicspath{ {./ThesisFigures/} }
+\usepackage{algpseudocode}
 
 \hypersetup{
     pdftitle={}, %PDF-file will be given a proper title when viewed in a reader
@@ -155,29 +158,29 @@
 	\label{sec:Methods}
 	
 	% Methods introduction
-	Three different aspects were investigated with the dataset. At first several techniques were used to reduce the high number of genes. Secondly the genes (either before feature reduction or after) were clustered. Thirdly all genes of psoriasis and atopic dermatitis were compared after reducing them to a lower number of genes, to find whether genes had been overexpressed in both of them.
+	Three different aspects were investigated with the dataset. At first several techniques were used to reduce the high number of genes. Secondly the genes (either before feature reduction or after) were clustered. Thirdly all genes of psoriasis and atopic dermatitis were compared after reducing them to a lower number of genes, to find out whether genes had been over- or underexpressed in both of them.
 	
 	% Non-Lesional vs Lesional
 	A previous project\footnote{BEP Project -\textit{ Manouk Groels}} found out that healthy and non-lesional skin do not show many differences and after some testing, the same conclusion was reached in the current study. Aside from this, the difference between lesional and non-lesional skin was the most important for skin diseases to compute, as that difference showed which genes are over- or underexpressed in lesional skin. Therefore the main focus of the project was showing the difference between non-lesional and lesional skin in terms of genes. 
 	
 	% Only best Psoriasis sets
-	For the computation of feature reduction, the largest possible dataset was created with only non-lesional and lesional skin samples. The biggest dataset that could be created was with the Psoriasis sets that had both non-lesional and lesional skin (table \ref{tab:SkinDiseasesDataSets}), good for a total of 423 samples. When comparing Psoriasis and Atopic Dermatitis, all suitable samples of Atopic Dermatitis were collected for a total of 58 samples. In gene reduction and clustering only the Psoriasis dataset was used, due to its bigger sample size. When comparing Psoriasis and Atopic Dermatitis, both were used.
+	For the computation of feature reduction, the largest possible dataset was created with only non-lesional and lesional skin samples. The biggest dataset that could be created was with the Psoriasis sets that had both non-lesional and lesional skin (table \ref{tab:SkinDiseasesDataSets}), good for a total of 423 samples. When comparing Psoriasis and Atopic Dermatitis, all suitable samples of Atopic Dermatitis were collected for a total of 58 samples. In gene reduction and clustering only the psoriasis dataset was used, due to its bigger sample size. When comparing pPsoriasis and atopic dermatitis, both were used.
 	
 	\subsection{Feature Reduction}
 	\label{subsec:MethodsFeatureReduction}
 	
 	% Introduction
-	Since the number of features in the data was 54675 (the number of genes), a significant feature reduction was needed before any meaningful computations could be done. Therefore two different ways of feature reduction were explored. The first one was doing a simple t-test to find all genes that were significantly different. The second one was testing correlation between all genes, also known as multicollinearity testing. The complete layout of the feature reduction was visualized for understanding (figure \ref{fig:FeatureReductionLayout}).
+	Since the number of features in the data was 54675 (the number of genes), a significant feature reduction was needed before any meaningful computations could be done. Therefore two different ways of feature reduction were explored. The first one was doing a simple t-test to find all genes that were significantly different. The second one was testing correlation between all genes, also known as multicollinearity testing. The complete layout of the feature reduction was visualized for understanding (Figure \ref{fig:FeatureReductionLayout}).
 	
 	\begin{figure}[H]
 		\includegraphics[width=0.9\textwidth]{FeatureReductionLayout.png}
-		\caption{A flowchart layout of the feature reduction. The complete data set first was reduced by using a t-test and next by the greedy clustering algorithm. the three feature set representations were all three tested by a decision tree classifier and the one with the best results was chosen. At last the best feature set representation was classified with a random forest classifier and the genes that were most used in the final random forest were selected.}
+		\caption{A flowchart layout of the feature reduction. The complete data set first was reduced by using a t-test and next by the greedy clustering algorithm. The three feature set representations were all three tested by a decision tree classifier and the one with the best results was chosen. At last the best feature set representation was classified with a random forest classifier and the genes that were most used in the final random forest were selected.}
 		\label{fig:FeatureReductionLayout}
 	\end{figure}
 		
 	
 	% T-test SciPy
-	For using a t-test, the SciPy package was used. Three different t-test possibilities were available, one for paired data, one for data with equal unknown variance and one for data with unequal unknown variance\footnote{\label{fn:BDA}Biomedical Data Analysis - \textit{Tim Beishuizen}}. Two of these t-tests were used, the paired t-test and the t-test for unequal unknown variance. Almost all datasets (GSE13355, GSE30999, GSE34248 and GSE41662) were paired, in those cases the paired t-test was used (equation \ref{eq:PairedTTest}) and in the remainin set (GSE14905) plus the combined set (all GSE datasets together) the unequal variance t-test were used (equation \ref{eq:UnequalVarianceTTest}). In these equations $\bar{y}$ was the mean of a distribution, $s$ the standard deviation, $n$ the number of samples, $\bar{d}$ the average value for difference in paired samples and $t$ was the normalized version of the gene to be checked ($t = \frac{y - \bar{y}}{s/\sqrt{n}}$).  
+	For using a t-test, the SciPy package was used. Three different t-test possibilities are available, one for paired data, one for data with equal unknown variance and one for data with unequal unknown variance\footnote{\label{fn:BDA}Biomedical Data Analysis - \textit{Tim Beishuizen}}. Two of these t-tests were used, the paired t-test and the t-test for unequal unknown variance. Almost all datasets (GSE13355, GSE30999, GSE34248 and GSE41662) were paired, in those cases the paired t-test was used (Equation \ref{eq:PairedTTest}) and in the remaining set (GSE14905) plus the combined set (all datasets together) the unequal variance t-test were used (Equation \ref{eq:UnequalVarianceTTest}). In these equations $\bar{y}$ was the mean of a distribution, $s$ the standard deviation, $n$ the number of samples, $\bar{d}$ the average value for difference in paired samples and $t$ was the normalized version of the gene to be checked ($t = \frac{y - \bar{y}}{s/\sqrt{n}}$).  
 	
 	\begin{equation}
 	\label{eq:PairedTTest}
@@ -191,8 +194,30 @@
 	\end{equation}
 	
 	% Multicollinearity
-	A further reduction could be done by removing multicollinearity. Multicollinearity showed the correlation between genes. Usually this would be computed by calculating the correlation coefficient between all genes. This coefficient however was computationally quite heavy to compute and therefore an alternative approach was used. A greedy hands on approach to remove multicollinearity was done by testing all genes for their correlation coefficient and removing the least significant one if they correlate high enough (Figure \ref{fig:GreedyCorrelationClustering}).
-	
+	A further reduction could be done by removing multicollinearity. Multicollinearity means that multiple genes are highly correlated with each other. Usually this would be computed by calculating the correlation coefficient between all genes. This coefficient however was computationally quite heavy to compute and therefore an alternative approach was used (Algorithm \ref{alg:GreedyCorrelationRemoval} and Gigure \ref{fig:GreedyCorrelationClustering}). A greedy hands on approach computed correlation between genes and removed multicollinearity. For this greedy hands on approach a list of genes was used, ordered on the significant difference of gene expression between non-lesional and lesional skin data, computed by the t-test.
+
+	\begin{algorithm}[H]
+			\caption{The greedy multicollinearity removal algorithm}\label{alg:GreedyCorrelationRemoval}
+			\begin{algorithmic}[1]
+				\Procedure{GreedyMulticollinearityRemoval($\textit{SortedGenes}$)}{}
+				\State $\textit{UncorrelatedGenes} \gets \textit{emptyList}$
+				\State $\textit{correlationValue} \gets 0$
+				\For {$newGene \textbf{ in } \textit{SortedGenes}$}
+				\For {$\textit{oldGene} \textbf{ in } \textit{UncorrelatedGenes}$}
+				\If {$\text{correlation}(\textit{oldGene}, newGene) > \textit{correlationValue}$}
+				\State $\textit{correlationValue} \gets \text{correlation}(\textit{oldGene}, newGene)$
+				\EndIf
+				\EndFor
+				\If {$\textit{correlationValue} < 0.7$}
+				\State $\textit{UncorrelatedGenes} \gets \textit{UncorrelatedGenes } \cup newGene$
+				\EndIf
+				\State $\textit{correlation} \gets 0$
+				\EndFor
+				\State $\textbf{return } \emph{UncorrelatedGenes}$
+				\EndProcedure
+			\end{algorithmic}
+	\end{algorithm}
+
 	\begin{figure}[H]
 		\includegraphics[width=0.9\textwidth]{GreedyClustering.png}
 		\caption{A flowchart layout how the gene multicollinearity removal algorithm worked. The correlation coefficient is iteratively computed between a new gene and the uncorrelated set of genes. If all correlation coefficients are lower than $0.7$, the new gene did not correlate enough with the set of genes and therefore is added to the uncorrelated set of genes. If it had a correlation of higher than 0.7 for another gene, it was added to that the list for the gene it is correlated with.}
@@ -200,14 +225,14 @@
 	\end{figure}
 	
 	% Machine Learning Decision Tree
-	After removing the unusable genes and multicollinearity, a decision tree classifier (figure \ref{fig:DecisionTree}) from the scikit-learn package was used to find out whether removing unusable genes and multicollinearity actually improved the possibility to better classify lesional skin. All three gene sets (all genes, significant genes and greedy clustered genes) were used for decision tree classification and split in 80\% training and 20\% test set. A cross validation was done with 100 different subsets for this classification, dividing the 80\% training set into 100 subsets that all were used as a validation set once. With the cross validation, both a validation score and a test score were made to evaluate the performance with the three gene datasets.
+	After removing the unsignificant genes and multicollinearity, a decision tree classifier (Figure \ref{fig:DecisionTree}) from the scikit-learn package was used to find out whether removing unusable genes and multicollinearity actually improved the possibility to better classify lesional skin. All three gene sets (all genes, significant genes and greedy clustered genes) were used for decision tree classification and split in 80\% training and 20\% test set. A cross validation was done with 100 different subsets for this classification, dividing the 80\% training set into 100 subsets that all were used as a validation set once. With the cross validation, both a validation score and a test score were made to evaluate the performance with the three gene datasets.
 	
 		\begin{figure}[H]
 		\centering
 		\subfloat[A two dimensional sample space divided in three regions.]{\includegraphics[width=0.6\textwidth]{DecisionTreeFeatureSpace.png}\label{fig:DTFeatureSpace}}
 		\hfill
 		\subfloat[The corresponding decision tree]{\includegraphics[width=0.3\textwidth]{DecisionTreeExample.png}\label{fig:DTExample}}
-		\caption{An example of how a decision tree divides a sample space in different regions. A sample space (figure \ref{fig:DTFeatureSpace}) with features ($x_1$ and $x_2$) is divided in regions ($\omega_1$, $\omega_1$ and $\omega_1$). A decision tree (figure \ref{fig:DTExample}) shows how this division is done using thresholds for the features. Every node in the tree corresponds to dividing the sample space in different regions using a threshold for a feature and every leaf corresponds to a region. The classifier tries to divide the sample space in regions finding the best feature threshold combinations, until boundary conditions are met.}
+		\caption{An example of how a decision tree divides a sample space in different regions. A sample space (Figure \ref{fig:DTFeatureSpace}) with features ($x_1$ and $x_2$) is divided in regions ($\omega_1$, $\omega_1$ and $\omega_1$). A decision tree (Figure \ref{fig:DTExample}) shows how this division is done using thresholds for the features. Every node in the tree corresponds to dividing the sample space in different regions using a threshold for a feature and every leaf corresponds to a region. The classifier tries to divide the sample space in regions finding the best feature threshold combinations, until boundary conditions are met.}
 		\label{fig:DecisionTree}
 	\end{figure}
 	
@@ -218,7 +243,7 @@
 	\label{subsec:MethodsPositionalClustering}
 	
 	% Introduction
-	Given the high number of genes even after feature reduction, clustering is a good way to find whether genes show similar behaviour. This clustering can be done in two different ways. The first way is based the values of the genes, clustering genes that show the same behaviour. A second way is clustering them based on biomedical relations between the genes. Both possibilities were used to find interesting results and later combined. A complete layout of every thing done during this clustering is visualized (figure \ref{fig:ClusteringLayout}).
+	Given the high number of genes even after feature reduction, clustering is a good way to find whether genes show similar behaviour. Two different ways of clustering were explored. The first way is based on the values of the genes, clustering genes that showed the same behaviour. A second way is clustering them based on biomedical relations between the genes. After exploring these two ways, the interesting results were combined. A complete layout of every thing done during this clustering was visualized (Figure \ref{fig:ClusteringLayout}).
 	
 		\begin{figure}[H]
 		\includegraphics[width=0.7\textwidth]{ClusteringLayout.png}
@@ -227,70 +252,75 @@
 	\end{figure}
 	
 	% Standardization
-	Before clustering was done, the values were normalized per sample. This normalisation is done to remove high differences in especially variation. Two types of standardization are done: by gene and by sample. At first standardization per genes is done, so every gene is treated equally. Relative big differences in gene expression were observed that way. Standardization of variance per sample gives skin cell specific genes higher values than non-skin cell specific genes, because their expression should be higher overall. This way genes known to be more prevalent in skin cells have a higher chance to be noticed for the difference between lesional and non-lesional skin.
+	Before clustering was done, the values were normalized. This normalisation was done to remove high differences in especially variation. Two types of normalization were done (Figure \ref{fig:Normalization}). At first normalization per genes was done, so every gene was treated equally. Relatively big differences in gene expression were observed that way. Normalization per sample gives skin cell specific genes higher values than non-skin cell specific genes, because their expression should be higher overall. This way genes known to be more prevalent in skin cells had a higher chance to be noticed for the difference between lesional and non-lesional skin.
 	
-	$$
-	\begin{pmatrix}
-		x_{1,1} & x_{1,2} & ... & x_{1,m} \\
-		x_{2,1} & x_{2,2} & ... & x_{2,m} \\
-		... & ... & ... & ... \\
-		x_{n,1} & x_{n,2} & ... & x_{n,m} \\
-	\end{pmatrix}
-	$$
-	
-	
-	\begin{equation}
-	x'_{a,b} = \frac{x_{a,b} - \text{mean}(x_b)}{\text{std}(x_b)}
-	\end{equation}
-	
-	\begin{equation}
-	x'_{a,b} = \frac{x_{a,b} - \text{mean}(x_a)}{\text{std}(x_a)}
-	\end{equation}
+	\begin{figure}[H]
+		\includegraphics[width=1\textwidth]{Normalization.png}
+		\caption{An explanation of the difference between normalization per feature and normalization per sample. $x_{a,b}$ is value $x$ for sample $a$ and feature $b$, mean() gives the mean of the values given (either a sample row or feature column) and std() gives the standard deviation for the values given. For both the formula of how to compute the normalized value $x'_{a,b}$ is given.}
+		\label{fig:Normalization}
+	\end{figure}
 	
 	% Clustering types
-	The first type of clustering is done by using basic clustering methods. Three different types of clustering were used: K-means, Agglomerative and DBSCAN, all three of them methods in scikit-learn. K-means tries to cluster the genes in $k$ groups of equal variance. Agglomerative clustering is also known as hierarchical bottom-up clustering, in which clusters are merged until the desired number of clusters is left. DBSCAN tries to divide the genes in clusters with high density and works best with a high number of values combined with a low number of clusters. For both K-means and agglomerative clustering a variation of cluster numbers is chosen to find the best possible selection. 
+	The first type of clustering was done by using basic clustering methods. Three different types of clustering were used (Table \ref{tab:ClusteringTypes}): K-means, Agglomerative and DBSCAN, all three of them methods in scikit-learn. For both K-means and agglomerative clustering a variation of cluster numbers is chosen to find the best possible selection.
+	
+	\begin{table}[H]
+		\centering
+		\caption{The three different clustering types for clustering by value.}
+		\label{tab:ClusteringTypes}
+		\begin{tabular}{l|l}
+			\textbf{Clustering type}                                               & \textbf{Explanation and parameters (if applicable)}                                                                                                                                                             \\ \hline
+			K-means                                                                & \begin{tabular}[c]{@{}l@{}}Assigns genes to clusters closest to cluster centers\\ Changes cluster centers after new genes are assigned\\ \\ Tested number of clusters: 5, 8, 9 10, 11, 12, 15, 20.\end{tabular} \\ \hline
+			\begin{tabular}[c]{@{}l@{}}Agglomerative\\ (Hierarchical)\end{tabular} & \begin{tabular}[c]{@{}l@{}}Adds genes closest to each other together in a cluster\\ until only the desired number of clusters are left.\\ \\ Tested number of clusters: 5, 8, 9 10, 11, 12, 15, 20\end{tabular} \\ \hline
+			DBSCAN                                                                 & \begin{tabular}[c]{@{}l@{}}Clusters gene groups with high density together.\\ Good with data with high number of features \\ and low number of samples\end{tabular}                                            
+		\end{tabular}
+	\end{table} 
 	
 	% Process/Cellular/Molecular
-	Aside from clustering the genes by values, another way is clustering by biomedical relations. The additional dataset (subsection \ref{subsec:AdditionalData}) links genes to three different biomedical components (table \ref{tab:BiomedicalRelationTypes}): processes, cellular locations and molecular reactions. Genes linked to the same biomedical relation means the genes are involved in that particular process and therefore can be clustered together. Since genes can be linked to multiple processes, locations and reactions, they can be put in multiple clusters for all three. To visualize this clusters, ...
+	Aside from clustering the genes by values, another way was clustering by biomedical relations. The additional dataset (Subsection \ref{subsec:AdditionalData}) links genes to three different biomedical components (Table \ref{tab:BiomedicalRelationTypes}): processes, cellular locations and molecular reactions. Genes linked to the same biomedical relation means the genes are involved in that particular process and therefore can be clustered together. Since genes can be linked to multiple processes, locations and reactions, they were put in multiple clusters for all three.
 	
-	
-	\begin{table}[]
+	\begin{table}[H]
 		\centering
 		\caption{The three biomedical relation types available in the database (subsection \ref{subsec:AdditionalData}) with a description and several examples.}
 		\label{tab:BiomedicalRelationTypes}
 		\begin{tabular}{l|ll}
-			\textbf{Biomedical relation} & \textbf{Explanation}                                                 & \textbf{\begin{tabular}[c]{@{}l@{}}Examples for gene \\ "discoidin domain receptor tyrosine kinase 1"\end{tabular}}                      \\ \hline
-			Process                      & Biomedical processes the gene product is involved with               & \begin{tabular}[c]{@{}l@{}}- regulation of cell growth\\ - peptidyl-tyrosine autophosphorylation\\ - lactation\end{tabular}              \\
-			Cellular location            & The gene product is located in or part of certain cellular locations & \begin{tabular}[c]{@{}l@{}}- extracellular region \\ - plasma membrane \\ - extracellular vesicular exosome\end{tabular}                 \\
-			Molecular reaction           & A molecular reaction the gene product is involved with               & \begin{tabular}[c]{@{}l@{}}- nucleotide binding\\ - collagen binding\\ - protein tyrosine kinase collagen receptor activity\end{tabular}
+			\textbf{\begin{tabular}[c]{@{}l@{}}Biomedical \\ relation\end{tabular}} & \textbf{Explanation}                                                 & \begin{tabular}[c]{@{}l@{}}\textbf{Examples for gene:} \\ \emph{discoidin domain receptor tyrosine kinase 1}\end{tabular}                      \\ \hline
+			Process                      & \begin{tabular}[c]{@{}l@{}}Biomedical processes the gene \\ product is involved with\end{tabular}               & \begin{tabular}[c]{@{}l@{}}- regulation of cell growth\\ - peptidyl-tyrosine autophosphorylation\\ - lactation\end{tabular}              \\ \hline
+			Cellular location            & \begin{tabular}[c]{@{}l@{}}The gene product is located in \\ or part of certain cellular locations\end{tabular} & \begin{tabular}[c]{@{}l@{}}- extracellular region \\ - plasma membrane \\ - extracellular vesicular exosome\end{tabular}                 \\ \hline
+			Molecular reaction           & \begin{tabular}[c]{@{}l@{}}A molecular reaction the \\ gene product is involved with\end{tabular}               & \begin{tabular}[c]{@{}l@{}}- nucleotide binding\\ - collagen binding\\ - protein tyrosine kinase collagen \\ receptor activity\end{tabular}
 		\end{tabular}
 	\end{table}
 	
 	% Combining clusters
-	Both types of clustering should give different results, as one of them only takes into account the values and while the other focuses on biomedical relations. A good way to find results is to combine both clustering types, to find out which value clusters also are involved in similar biomedical processes. This is done by first selecting value dependent clusters and then searching for matching biomedical relations within the clusters.
+	Both types of clustering should give different results, as one of them only took into account the values and while the other focused on biomedical relations. A good way to find results was to combine both clustering types, to find out which value clusters were also involved in similar biomedical processes and vice versa. This was done in two different ways. The first way was done by ordering the biomedical relation dependent clusters by their difference between lesional and non-lesional gene expression. More difference between these expressions means it is regarded as showing a bigger difference between lesional and non-lesional skin.
+	
+	% Second cluster combination
+	The second one was by selecting all value dependent clusters. For all of these clusters biomedical relations were investigated. If clusters showed that multiple genes in that cluster were related to an interesting process, cellular location or molecular reaction, the cluster would be taken as more interesting.
+	
+	% Visualization of the clusters
+	At last it is important how to visualize the clusters. Every gene has 423 different values, one for every sample. this however is hard to visualize. Therefore, the gene values were averaged in two different values, one value corresponding to lesional skin and one to non-lesional skin. Gene plots were made with every gene being a data point with the x-value being the non-lesional skin gene expression and for the y-value the average lesional skin gene expression.
 	
 	\subsection{Psoriasis Versus Atopic Dermatitis}
 	\label{subsec:MethodsPsoriasisVersusAtopicDermatitis}
 	
 	% Also took AD sets
-	At last a brief search for the difference between Psoriasis and Atopic Dermatitis is done. Since up- and down regulations for both of these diseases are more interested, first feature reduction is done by only choosing the ones that showed a significant difference. The genes for both diseases are then compared and for all genes that are up- or down regulated for both diseases, all biomedical processes, cellular locations and molecular reactions are extracted and counted how many times they were present for both diseases. 
+	At last a brief search for the difference between Psoriasis and Atopic Dermatitis is done. Since up- and down regulations for both of these diseases are more interesting, first feature reduction is done by only choosing the ones that showed a significant difference. The genes for both diseases are then compared and for all genes that are up- or down regulated for both diseases, all biomedical processes, cellular locations and molecular reactions are extracted and counted how many times they were present for both diseases. The five most occurring processes, cellular locations and molecular reactions were given, if interesting enough.
 	
 	\section{Results}
 	\label{sec:Results}
 	
 	% Results introduction
-	The results are presented in the same way as the methods were. First, the results for feature reduction are shown for t-test, multicollinearity as well as for the machine learning improvements. Then, the results for clustering are shown. Emphasis was put on combining clustering by value and clustering by biomedical relations. Finally, the similarities between Psoriasis and Atopic Dermatitis were shown to see if genes, processes, cellular locations and molecular reactions are involved in both diseases. 
+	The results were presented in the same order as the methods. First, the results for feature reduction were shown for the t-test, multicollinearity reduction as well as for the machine learning improvements. Then, the results for clustering were shown. Emphasis was put on combining clustering by value and clustering by biomedical relations. Finally, the similarities between Psoriasis and Atopic Dermatitis were shown to see if genes, processes, cellular locations and molecular reactions are involved in both diseases. 
 	
 	
 	\subsection{Feature Reduction}
 	\label{subsec:ResultsFeatureResuction}
 	
 	% T-test SciPy
-	The t-test is used between non-lesional and lesional skin for every dataset separately and combined (Table \ref{tab:FeatureReduction}). A low p-value of $p=0.001$ is chosen by trial and error. Interestingly enough when all datasets are combined, the number of significant features is lower than when looking at the datasets separately. This can indicate that dataset specific noise is present in the datasets and heterogeneity actually improves noise reduction. After this feature reduction, further computation is done with the 1768 genes left.
+	The t-test was used between non-lesional and lesional skin for every dataset separately and combined (Table \ref{tab:FeatureReduction}). A low p-value of $p=0.001$ was chosen by trial and error. Interestingly enough when all datasets were combined, the number of significant features was lower than when looking at the datasets separately. This could indicate that dataset specific noise was present in the datasets and heterogeneity actually improved noise reduction. After this feature reduction, further computation was done with the 1768 genes left.
 	
 	\begin{table}[H]
 		\centering
-		\caption{The results of using the t-test for genes in all relevant Psoriasis datasets separately and combined. A paired t-test is done if applicable, otherwise an unknown variance unpaired t-test is done. The number of samples for both lesional and non-lesional skin is shown additionally.}
+		\caption{The results of using the t-test for genes in all relevant psoriasis datasets separately and combined. A paired t-test was done if applicable, otherwise an unknown variance unpaired t-test was done. The number of samples for both lesional and non-lesional skin were shown additionally.}
 		\label{tab:FeatureReduction}
 		\begin{tabular}{l|ccc|cc}
 			\textbf{Dataset} & \textbf{\begin{tabular}[c]{@{}c@{}}Samples \\ Lesional Skin\end{tabular}}                                  & \textbf{\begin{tabular}[c]{@{}c@{}}Samples\\ Non-Lesional Skin\end{tabular}}  & \textbf{Paired} & \textbf{All Genes} & \textbf{\begin{tabular}[c]{@{}c@{}}Significant\\ Genes\end{tabular}} \\ \hline
@@ -305,7 +335,7 @@
 	
 	
 	% Multicollinearity
-	Computing multicollinearity after some testing and literature research a value of $0.7$ is chosen as a threshold whether two values showed enough correlation. Greedy clustering yields 335 clusters for the combined dataset, so for 335 genes the correlation coefficient is lower than $0.7$ between all of them. The ability to find the difference between lesional and non lesional skin with a decision tree classifier shows that only using significant genes gives the best results, whereas using the uncorrelated genes makes both the validation and test score worse. (Table \ref{tab:DecisionTreeResults}).
+	Computing multicollinearity was done next. Greedy clustering yielded 335 clusters for the combined dataset, so for 335 genes the correlation coefficient was lower than $0.7$ between all of them. The ability to find the difference between lesional and non lesional skin with a decision tree classifier showed that only using significant genes gave the best results, whereas using the uncorrelated genes made both the validation and test score worse. (Table \ref{tab:DecisionTreeResults}).
 	
 	\begin{table}[H]
 		\centering
@@ -320,12 +350,12 @@
 	\end{table}
 	
 	% RandomForest
-	With a validation and test score of around 0.95, the significant gene set is used for a random forest classification consisting of a 1000 decision trees. The genes that were used as splitting criteria for these decision trees are collected to find out whether the same genes pop up multiple times as the best splitting criteria (Table \ref{tab:GeneRandomForestOccurence}). While the number of multiple occurrences is not as high as expected, the six most occurring genes already show to have a relation with skin diseases. 
+	With a validation and test score of around 0.95, the significant gene set was used for a random forest classification consisting of 1000 decision trees. The genes that were used as splitting criteria for these decision trees were collected to find out whether the same genes pop up multiple times as the best splitting criteria (Table \ref{tab:GeneRandomForestOccurence}). While the number of multiple occurrences was not as high as expected, the six most occurring genes already showed to have a relation with skin diseases. 
 	
 
 \begin{table}[H]
 	\centering
-	\caption{The six most used genes as splitting criteria for the random forest classifier. The genes are also compared with literature.}
+	\caption{The six most used genes as splitting criteria for the random forest classifier. The genes were also compared with literature.}
 	\label{tab:GeneRandomForestOccurence}
 	\begin{tabular}{l|ccc}
 		\textbf{Gene ID} & \textbf{Gene Title}                                                                                        & \multicolumn{1}{l}{\textbf{\begin{tabular}[c]{@{}l@{}}Times used in\\ random forest\end{tabular}}} & \textbf{Link with Psoriasis}                                                                                         \\ \hline
@@ -342,11 +372,10 @@
 	\label{subsec:ResultsPositionalClustering}
 	
 	% Process/Cellular/Molecular clustering
-	Only the 1768 significant genes found from feature reduction are used for clustering. The genes are clustered per process, cellular location and molecular reaction they are linked to, so if two genes are both related to a certain process, they are clustered together. Since a gene can be linked to multiple processes, it can also be present in multiple clusters. The processes, cellular locations and molecular reactions are ordered by averaging the difference in gene expression for the genes in their cluster, meaning a higher averaging difference corresponds to a higher score. The sixteen highest scoring processes (appendix \ref{app:BiomedicalClusters} and figure \ref{fig:ProcessesScaledBySample}), cellular locations (appendix \ref{app:BiomedicalClusters}) and molecular reactions (appendix \ref{app:BiomedicalClusters}) are shown for scaling per gene and scaling per sample. After showing these results to an expert\footnote{\label{fn:Felix}MsC. Felix Garza - University of Technology Eindhoven}, the cellular locations and molecular reaction did not show any interesting results. The interesting results were found in several interesting processes, related to inflammatory response:
+	Only the 1768 significant genes found from feature reduction were used for clustering. The genes were clustered per process, cellular location and molecular reaction they were linked to, so if two genes were both related to a certain process, they were clustered together. Since a gene could be linked to multiple processes, it could also be present in multiple clusters. The sixteen highest scoring processes (Appendix \ref{app:BiomedicalClusters} and Figure \ref{fig:ProcessesScaledBySample}), cellular locations (Appendix \ref{app:BiomedicalClusters}) and molecular reactions (Appendix \ref{app:BiomedicalClusters}) were shown for scaling per gene and scaling per sample. The findings on the cellular locations and molecular reactions of the genes did not show any interesting results. The interesting results were found in several interesting processes, related to inflammatory response. All of these showed up regulation in the sample and were plotted to show their gene locations (Figure \ref{fig:ProcessesScaledBySample})
 	
 	\begin{enumerate}
 		\item[-] acute inflammatory response
-		\item[-] regulation of inflammatory response 
 		\item[-] response to interferon gamma 
 		\item[-] chronic inflammatory response
 		\item[-] oxidative stress.
@@ -354,29 +383,29 @@
 	
 	% Insert figures
 	\begin{figure}[H]
-	\includegraphics[width=1\textwidth]{Sign_Processes_Psoriasis3x3.png}
+	\includegraphics[width=1\textwidth]{Sign_Processes_Psoriasis.png}
+	\caption{Four examples of processes that showed a high difference in gene expression between lesional and non-lesional data. The data was normalized per gene and orange points are genes that were related to the process, blue points were genes unrelated to the process}
 	\label{fig:ProcessesScaledBySample}
-	\caption{The 16 processes that show the highest difference in gene expression between lesional and non-lesional data. The data is standardized by sample and orange points are genes that are related to the process, Blue dots are genes unrelated to the process}
 \end{figure}	
 	
 	% Clustering types
-	Cross-referencing the value-based clustering and the biomedical relation clustering, agglomerative clustering with ten clusters gives the best results.(Figure \ref{fig:ClusteredGenes}). After linking the genes with biochemical processes, cluster 5 and cluster 8 show interesting links in results. Cluster 5 is linked to multiple processes typically occurring in skin cells, for example involving keratin and the epidermis. Cluster 8 is linked to multiple processes related to negative regulation of several enzymes, for example endopeptidase, peptidase and proteolysis. Other clusters are linked to less specific processes, e.g. transport and protein binding.
+	Cross-referencing the value-based clustering and the biomedical relation clustering, agglomerative clustering with ten clusters gave the best results (Figure \ref{fig:ClusteredGenes}). After linking the genes with biochemical processes, cluster 5 and cluster 8 showed interesting links in results. Cluster 5 was linked to multiple processes typically occurring in skin cells, for example involving keratin and the epidermis. Cluster 8 was linked to multiple processes related to negative regulation of several enzymes, for example endopeptidase, peptidase and proteolysis. Other clusters were linked to less specific processes, e.g. transport and protein binding.
 	
 	\begin{figure}[H]
-		\includegraphics[width=\textwidth]{10_Clusters_Psoriasis_Results.png}
+		\includegraphics[width=\textwidth]{Cluster_Results.png}
 	
-		\caption{10 different clusters found by agglomerative clustering for the Psoriasis dataset. The data points are genes that showed a significant difference in expression between lesional (y-axis) and non-lesional (x-axis) skin and standardized per sample. Cluster 5 and 8 show the most useful genes and are also marked for Psoriasis relevance: Known Psoriasis marker (A), Known to be upregulated for Psoriasis (B), Known to be upregulated for uncontrollable growth (C) and unknown relation (D)}
+		\caption{10 different clusters found by agglomerative clustering for the Psoriasis dataset. The data points were genes that showed a significant difference in expression between lesional (y-axis) and non-lesional (x-axis) skin and normalized per sample. Cluster 5 and 8 showed the most useful genes and its genes were therefore also marked for Psoriasis relevance: Known Psoriasis marker (A), Known to be upregulated for Psoriasis (B), Known to be upregulated for uncontrollable growth (C) and unknown relation (D)}
 		\label{fig:ClusteredGenes}
 	\end{figure}
 	
 	% Specific look at interesting clusters
-	Since cluster 5 and 8 give interesting results on a process level, literature was used to link them to Psoriasis as much as possilbe (Appendix \ref{app:ClusterGeneSpecifications}). Most of the genes in these clusters can be linked to Psoriasis directly or indirectly (Figure \ref{fig:ClusteredGenes}).
+	Since cluster 5 and 8 gave interesting results on a process level, literature was used to link them to psoriasis as much as possible (Appendix \ref{app:ClusterGeneSpecifications}). Most of the genes in these clusters were linked to psoriasis directly or indirectly (Figure \ref{fig:ClusteredGenes}).
 	
 	\subsection{Psoriasis Versus Atopic Dermatitis}
 	\label{subsec:ResultsPsoriasisVersusAtopicDermatitis}
 	
 	% Also took AD sets
-	At last the significant genes for Atopic Dermatitis are compared with the significant genes of Psoriasis (Table \ref{tab:ConditionsPsoriasisAD}). After matching both datasets to find out whether any genes are significant in both datasets, 96 genes are left. These genes are linked to processes to find processes that show differences between lesional and non-lesional skin in both Psoriasis and Atopic Dermatitis. Five processes give the most prominent result. However, all of these processes seem fundamental and therefore not useful for further investigation:
+	At last the significant genes for atopic dermatitis were compared with the significant genes of psoriasis (Table \ref{tab:ConditionsPsoriasisAD}). After matching both datasets to find out whether any genes were significant in both datasets, 96 genes were left. These genes were linked to processes, cellular locations and molecular relations to find biomedical relations that showed differences between lesional and non-lesional skin in both psoriasis and atopic dermatitis. Whereas the results from cellular locations and molecular reactions were inconclusive, the processes gave some more results. Of these, five processes were related to biggest number of genes. All of these processes, however, seemed fundamental and therefore not useful for further investigation:
 	
 	\begin{enumerate}
 		\item[-] metabolic process
@@ -441,12 +470,6 @@
 		\includegraphics[width=1\textwidth]{Sign_Processes_Psoriasis_Scaled.png}
 		\label{fig:ProcessesScaledByFeature}
 		\caption{The 16 processes that showed the highest difference in gene expression between lesional and non-lesional data. The data is standardized by feature and orange points are genes that are related to the process, Blue dots are genes unrelated to the process}
-	\end{figure}
-
-	\begin{figure}[H]
-		\includegraphics[width=1\textwidth]{Sign_Processes_Psoriasis.png}
-		\label{fig:ProcessesScaledBySample1}
-		\caption{The 16 processes that showed the highest difference in gene expression between lesional and non-lesional data. The data is standardized by sample and orange points are genes that are related to the process, Blue dots are genes unrelated to the process}
 	\end{figure}
 	
 	\begin{figure}[H]

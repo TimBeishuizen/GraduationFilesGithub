@@ -47,6 +47,10 @@ testing = "Process"
 print("Finding all %s relations..." % testing)
 processes, process_genes = PE.extract_processes(sign_gene_ids, gene_set, relation_type=testing)
 
+for process in processes:
+        if "response to oxidative stress" in process:
+            print(process)
+
 # Averaging results
 NL_avg = np.average(stand_values[:, :210], 1)
 L_avg = np.average(stand_values[:, 210:], 1)

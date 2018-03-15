@@ -33,7 +33,7 @@ gene_set = GDE.extract_gene_data()
 # Only use the significant values
 print("Calculating significant values...")
 sign_values, sign_skin_types, sign_gene_ids = SE.extract_significant_genes(sample_values, skin_type_values, gene_ids,
-                                                                         target_groups=[1, 2], threshold=0.001,
+                                                                         target_groups=[2, 1], threshold=0.001,
                                                                          relation_groups='unequal variance', sorting=True)
 
 
@@ -44,9 +44,10 @@ non_stand_values = np.array(sign_values)
 print(non_stand_values.shape)
 print("values, Max: %f, Min: %f" % (np.max(non_stand_values), np.min(non_stand_values)))
 scaler = SP.StandardScaler()
-stand_values = scaler.fit_transform(non_stand_values)
+scaler.fit(non_stand_values)
+stand_values = scaler.transform(non_stand_values)
 
-clustering_type = "Kmeans"
+clustering_type = "Aggl"
 n_clust = 10
 
 if clustering_type == "Kmeans":
@@ -73,9 +74,9 @@ elif clustering_type == "Aggl":
 else:
     raise("Not implemented error")
 
-# testing = "Process"
+testing = "Process"
 # testing = "Cellular"
-testing = "Molecular"
+# testing = "Molecular"
 
 # Find processes with similar relation
 print("Searching for %s relations between genes..." % testing)
@@ -107,9 +108,9 @@ for j in range(n_clust):
     # Divide values in NL and L
     for k in range(stand_values.shape[1]):
         values = np.extract(clust_labels == j, stand_values[:, k])
-        if k < 210:
+        if k > 213:
             NL_values.append(values)
-        elif k >= 210:
+        elif k <= 213:
             L_values.append(values)
 
     # Average values
