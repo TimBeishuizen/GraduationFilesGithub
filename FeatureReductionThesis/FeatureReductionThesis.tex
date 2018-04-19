@@ -1,0 +1,764 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{a4wide} %Wider margins
+\usepackage[english]{babel} %English dictionary for hyphenation and definitions, e.g. Table vs. Tabel
+\usepackage[official]{eurosym} %Support for Euro-sign
+\usepackage[utf8]{inputenc} %Support for internationalization, e.g. é vs.\’e
+\usepackage{amsmath,amssymb,amsthm} %Support for mathematical formulas and symbols
+\usepackage{fancyhdr} %Fancy headers
+\usepackage{hyperref} %Creates clickable links
+\usepackage{graphicx} %Support for grahpics
+\usepackage{nopageno} %Support for removal of pagenumbers
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{xspace}
+\usepackage{array}
+\usepackage{algorithm,algpseudocode}
+\usepackage{float}
+\usepackage{mathtools}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[titletoc,toc,title]{appendix}
+\usepackage{listings}
+\usepackage{pdfpages}
+\usepackage{footmisc}
+\usepackage{attachfile2}
+\usepackage{subfig}
+\usepackage{amsmath}
+\usepackage{algorithm}
+\usepackage{multirow}
+\graphicspath{ {./ThesisFigures/} }
+\usepackage{algpseudocode}
+
+\hypersetup{
+    pdftitle={}, %PDF-file will be given a proper title when viewed in a reader
+    hidelinks %PDF-file will be given clickable, yet not visible links when viewed in a reader
+}
+\newcommand{\documenttitle}{Dimensionality Reduction Analysis}
+\newcommand{\documentsubtitle}{A case study for a computational biology framework}
+
+
+\newcommand{\true}{{\sc True}\xspace}
+\begin{document}
+	
+	\begin{titlepage}
+		
+		\center
+		
+		\vspace*{3cm}
+		
+		\textbf{\huge \documenttitle}
+		
+		\textit{\LARGE \documentsubtitle}
+		
+		\vspace*{2cm}
+		
+		\large
+		\centering
+		T.P.A.~\textsc{Beishuizen}~(0791613)\\
+		Biomedical Engineering - Computational Biology\\
+		Computer Science - Data Mining\\
+		Eindhoven, University of Technology\\
+		Email: \texttt{t.p.a.beishuizen@student.tue.nl}
+		
+		\vfill
+		
+		\vspace*{1cm}
+		
+		\today
+		
+	\end{titlepage}
+	
+	\tableofcontents
+	
+	%\newpage
+	
+	\pagestyle{fancy}
+	%Abbreviations used by fancyhdr:
+	%E Even page
+	%O Odd page
+	%L Left ﬁeld
+	%C Center ﬁeld
+	%R Right ﬁeld
+	%H Header
+	%F Footer
+	\fancyhead{} % clear all header fields
+	\fancyfoot{} % clear all footer fields
+	\renewcommand{\headrulewidth}{0.4pt}
+	\renewcommand{\footrulewidth}{0.4pt}
+	
+	\fancyhead[L]{\rightmark}
+	\fancyfoot[C]{\thepage}
+	\fancyhead[R]{T.P.A. Beishuizen}
+	
+	
+	\clearpage
+	
+	\section{Introduction}
+	\label{sec:Introduction}
+	
+	% Quick explanation for biomedical data
+	Many biomedical datasets are created to use for expansion of biomedical knowledge and improvement of healthcare. Biomedical data is a generalizing term that describes multiple data types\cite{gehlenborg2010visualization}. Examples of biomedical data are micro-array data\cite{brazma2001minimum}, mass spectrometry data\cite{cottrell1999probability, dettmer2007mass} and nuclear magnetic resonance data\cite{capitani2017nuclear}, but also clinically derived data\cite{liu2012data, sittig2008grand}. From a bio-informatics perspective these biomedical data types vary significantly\cite{gehlenborg2010visualization} and therefore extracting information out of biomedical data is not a trivial task. A framework for biomedical data analysis can help guiding biomedical engineers in their process of information extraction from their biomedical datasets. The framework can provide different options in processing the data, taking into account common dataset issues\cite{bertolazzi2008logic, piatetsky2003microarray,lommen2009metalign} and approaches to reach a certain goal\cite{holzinger2014knowledge, wilkins2009proteomics}. Such frameworks are proposed and discussed, however mainly focus on the integration of databases\cite{teodoro2009biomedical, doi:10.1093/nar/gkm1037}, are made specifically for one research area\cite{sturn2002genesis, karnovsky2011metscape, tabas2012genecodis3} or are limited to one specific type of analysis\cite{faul2007g}. A framework that combines database integration, multiple research areas and multiple types of data analysis would be very beneficial for biomedical engineers, guiding them through their biomedical data analysis projects.
+	
+	% Topic dimensionality reduction
+	For such a framework dimensionality reduction is important. Some biomedical datasets contain a high number of features, whereas only a selection of those features are interesting. Multiple projects attempted to reduce the number of features\cite{baumgartner2006data, welthagen2005comprehensive} which resulted in multiple algorithm proposals for future research\cite{lim2003planar, peng2010novel, biesiada2007feature, ding2005minimum} and tests on their performance\cite{catal2009investigating, liu2002comparative}. Basic dimensionality reduction algorithms should be present in the framework and are therefore tested on the available data sets. Therefore the research goal is \emph{to evaluate the performance of dimensionality reduction methods and make a choice on which methods should be added to the framework}. In this document we therefore present several of those algorithms and test their quality.
+	
+	% Data sets	
+	Four data sets were used as a case study for the dimensionality reduction algorithms. Two sets are micro-array datasets that are used for research on psoriasis\cite{nair2009genome, suarez2012expanding, bigler2013cross, yao2008type} and cancer\cite{wojnarski2010rsctc}. Two other sets are mass spectrometry data sets, used for research on cancer\cite{NIPS2004_2728} and micro organisms\cite{doi:10.1093/bioinformatics/btu022}. These four datasets all have a high number of features varying from 1000 to 54675 features with a number of samples varying from 200 to 580 samples. All of these datasets are based on classification as tests are done for different test subject groups, therefore the focus on dimensionality reduction algorithms will also be based on on classification. Many features are expected to be irrelevant in this classification and therefore could be removed with dimensionality reduction.	
+	
+	\section{Background}
+	\label{sec:Background}
+	
+	% Introduction background & layout background
+	Before testing several dimensionality reduction methods, first the background of the study is explained. Firstly, the datasets used as a case study and their characteristics are briefly given. Secondly, dimensionality reduction methods are developed, which are divided in two parts. The dimensionality reduction methods discussed are feature selection methods, methods used to select a subset of features from the complete feature space. 
+	% The second discussed methods are about feature extraction, a technique that creates a new smaller set of features derived from the old feature space.
+	
+	% Regression: https://www.sciencedirect.com/science/article/pii/S0169743905000031
+	% Ridge regression: https://amstat.tandfonline.com/doi/abs/10.1080/00401706.2000.10485983?src=recsys#aHR0cHM6Ly9hbXN0YXQudGFuZGZvbmxpbmUuY29tL2RvaS9wZGYvMTAuMTA4MC8wMDQwMTcwNi4yMDAwLjEwNDg1OTgzP25lZWRBY2Nlc3M9dHJ1ZUBAQDA=
+	
+	\subsection{Datasets}
+	\label{subsec:Datasets}
+	
+	% Introduction
+	Four datasets were used to test dimensionality reduction algorithms. The micro-array cancer dataset and both mass spectrometry datasets were found with the help of OpenML\cite{OpenML2013}, whereas the psoriasis dataset was proposed by a project based on psoriasis\cite{felix2017dynamic}. All four of these datasets can be used for classification, as all of them were tested on two or multiple test subject groups. Also, all of them have a high number of features from which most are expected to be irrelevant, so classification would benefit from feature reduction. A schematic overview of the datasets is made (Table \ref{tab:DataSetDescriptions}).
+	
+	\begin{itemize}
+		% Psoriasis
+		\item \textit{Psoriasis micro-array dataset} \\ This dataset is comprised of five different data sets\cite{nair2009genome, suarez2012expanding, bigler2013cross, yao2008type}. These five different datasets consist of 54675 features, all corresponding to gene expression. Samples were collected from three different test subject groups: affected skin from test subjects suffering from psoriasis (214 samples), unaffected skin from test subjects suffering from psoriasis (209 samples) and skin from healthy test subjects (167 samples). Combining these three samples types gives 580 samples. Since the data comes from five different experiments, the data is normalized for every experiment.
+		% Cancer
+		\item \textit{Cancer micro-array dataset} \\ This dataset is used in a challenge focussing on classification problems with a low number of samples, but a high number of features.\cite{wojnarski2010rsctc}. It consists of the same number of features as the Psoriasis data set, 54675 features corresponding to gene expression. It also has 383 samples corresponding to nine different test subject groups. The challenge did not provide labels for the test subject groups. Also these groups differ in size, one group corresponding to 150 samples and the others varying from 16 to 47 samples.
+		% Arcene
+		\item \textit{Cancer mass spectrometry dataset} \\ This dataset was created as a classification problem to distinguish cancer patterns from normal patterns\cite{NIPS2004_2728}. It is created for the 'Neural Information Processing Systems' conference by merging three mass spectrometry datasets. It consists of 10000 features corresponding to either spectra of the mass spectrometry or probe variables without any predictive power. Samples from two groups are taken, from patients with ovarian or prostate cancer and from control patients. No labels are given to the groups, however it is known that one of the groups has 88 samples and the other 112 samples, combined in a total of 200 samples.
+		% MicroOrganisms
+		\item \textit{Micro organisms mass spectrometry dataset} \\ This dataset is created to back up a proposed method for routinely performing direct mass spectrometry based bacterial species identification\cite{doi:10.1093/bioinformatics/btu022}. It consists of 1300 features corresponding to different spectra of the mass spectrometry data and 20 test subject groups corresponding to Gram positive and negative bacterial species. Gram classification is a result of a Gram stain test\cite{madigan2017brock}. The groups differ in size varying from 11 to 60 samples, making a total of 571 samples.	
+	\end{itemize}
+
+	\begin{table}[]
+	\centering
+	\caption{A schematic overview of the four datasets.}
+	\label{tab:DataSetDescriptions}
+	\begin{tabular}{ll|llll}
+	\textbf{Dataset focus} & \textbf{Data type}                                          & \textbf{Features} & \textbf{Samples} & \textbf{Classes} & \textbf{Remarks}                                                                                                        \\ \hline
+	Psoriasis        & Micro-array                                                 & 54675             & 580              & 3                & \begin{tabular}[c]{@{}l@{}}- Derived from five \\ different datasets\cite{nair2009genome, suarez2012expanding, bigler2013cross, yao2008type} \\ -- \end{tabular}                                       \\
+	Cancer           & Micro-array                                                 & 54675             & 383              & 9                & \begin{tabular}[c]{@{}l@{}}- Used in a data \\ mining challenge\cite{wojnarski2010rsctc}\end{tabular}                                            \\ \hline
+	Cancer           & \begin{tabular}[c]{@{}l@{}}Mass\\ Spectrometry\end{tabular} & 10000             & 200              & 2                & \begin{tabular}[c]{@{}l@{}}- Created for the \\ NIPS conference\cite{NIPS2004_2728}\\ - Several probe \\ features are present \\ -- \end{tabular} \\
+	Micro Organisms  & \begin{tabular}[c]{@{}l@{}}Mass\\ Spectrometry\end{tabular} & 1300              & 571              & 20               & \begin{tabular}[c]{@{}l@{}}- Originates from a \\ micro organisms study\cite{doi:10.1093/bioinformatics/btu022}\end{tabular}                                                                                                                       
+	\end{tabular}
+	\end{table}
+		
+	\subsection{Feature Selection}
+	\label{subsec:FeatureSelection}
+	
+	% Introduction feature selection
+	Feature selection is a way to perform dimensionality reduction. In feature selection a subset of features is chosen to represent the complete sample space\cite{Guyon2006}. Several techniques are available to choose a representation subset and the effectiveness of these techniques is tested multiple times\cite{CATAL20091040, molina2002feature, chandrashekar2014survey}. These techniques can be grouped in accordingly in three different categories: filter methods, wrapper methods and embedded methods\cite{saeys2007review}. Each of these methods is explained in more detail.
+
+	% Pseudo-algorithms
+	Since these filter methods can usually be best explained by showing example algorithms, several pseudo-algorithms were created for visual clarity. Variables used in these algorithms include:
+	\begin{itemize}
+		\item \textit{$X$}: A matrix that contains all sample values for every feature. It is an $n$ by $m$ matrix with $n$ being the number of samples and $m$ being the number of features. If the values of a specific feature $f$ or a subset of features $F_x$ are used this is written as $X_f$ and $X_{F_x}$ respectively.
+		\item \textit{$y$}: A vector that contains all class labels for every sample. It is a vector of size $n$ with $n$ being the number of samples
+		\item \textit{$F$}: A list that contains all the features. It is a list of size $m$ with $m$ being the number of features. A subset of $F$ is written as $F_x$.
+		\item \textit{$\alpha$}: A threshold value used for ranking and evaluation methods to find out whether a feature should be selected or not in feature selection.
+		\item \textit{$W$}: Weights given to a feature after training a machine learning algorithm. The weight of feature $f$ or set of features $F_x$ is called $W_f$ and $W_{F_x}$ respectively.
+	\end{itemize}
+	
+	\subsubsection{Filter Methods}
+	\label{subsec:FilterMethods}
+	
+	% Introduction filter methods
+	Filter methods are based on ranking the available features in a feature space. All features are given a value based on their performance and are ranked by those values\cite{Duch2006, saeys2007review}. Several methods can be used to rank the features. For illustration an a ranking method collection is given:
+	
+	\begin{itemize}
+	% T-test binary
+	\item \textit{T-test statistics} \\ 
+	Statistics can be used to compare groups with each other. In statistics these groups are seen as separate distributions, which may or may not be seen as independent distributions. Between two of those groups a t-test can be done to find the chance fo these groups to originate form the same distributions\cite{heiberger2004statistical} (Table \ref{tab:IndepTest}). This t-test gives a probability value (p-value) on interval $[0,1]$, representing the chance the two groups originate from the same distribution. The p-value for the datasets is computed by creating a distribution for every class. Every feature is assigned a different p-value using the distributions created per class for that feature. 
+	The t-test is mainly focused on the difference between two groups and has different formulas to measure it: A paired t-test if the data can be paired between the two classes, an equal variance t-test and an unequal variance t-test for which it is assumed the variances of the two groups are equal or not equal respectively\cite{heiberger2004statistical} (Table \ref{tab:sdyandtcalc}).
+	
+	\begin{table}[h!]
+		\centering
+		\caption{T-test formulas to compute whether two samples are independent by means. 
+			The parameters $s_{\Delta\bar{y}}$ and $t_{calc}$ can be three different 
+			values (Table \ref{tab:sdyandtcalc})\cite{heiberger2004statistical}. This is calculated with the values for the mean $\mu$, significance level $\alpha$, average $\bar{y}$.}
+		\label{tab:IndepTest}
+		\begin{tabular}{llllll}
+			\hline
+			&  & 
+			\multicolumn{2}{l}{\textbf{Tests}} & 
+			\textbf{Confidence Interval} & \textbf{}               \\ \cline{3-6} 
+			\textbf{H0}              & \textbf{H1}              & \textbf{Rejection 
+				region}   & $p$-value                      & 
+			\textbf{Lower}               & \textbf{Upper}          \\ \hline
+			$\mu_1 \leq \mu_2$                  & $\mu_1 > \mu_2$       & 
+			$t_{calc} 
+			> t_\alpha$       & $P(t > t_{calc})$      & 
+			$((\bar{y}_1 
+			- \bar{y}_2) - t_\alpha s_{\Delta \bar{y}}$,       & 
+			$\infty)$                     \\
+			$\mu_1 \geq \mu_2$                  & $\mu_1 < \mu_2$          & 
+			$t_{calc} 
+			< -t_\alpha$          & $P(t < t_{calc})$         & 
+			$(-\infty$,                        & $(\bar{y}_1 - \bar{y}_2) + 
+			t_\alpha 
+			s_{\Delta \bar{y}})$ \\
+			$\mu_1 = \mu_2$                  & $\mu_1 \neq \mu_2$                  
+			& 
+			$|t_{calc}| > t_{\frac{\alpha}{2}}$     & $P(t >
+			|t_{calc}|)$  & $((\bar{y}_1 - \bar{y}_2) - 
+			t_{\frac{\alpha}{2}} 
+			s_{\Delta\bar{y}}$ 
+			,     & $(\bar{y}_1 - \bar{y}_2) + t_{\frac{\alpha}{2}} 
+			s_{\Delta 
+				\bar{y}})$  
+			\\ 
+			\hline
+		\end{tabular}
+	\end{table}
+	
+	\begin{table}[h!]
+		\centering
+		\caption{The values of $s_{\Delta\bar{y}}$ and $t_{calc}$ for data sets 
+			with common unknown variance, uncommon unknown variance and paired 
+			data. \cite{heiberger2004statistical}. This is calculated with the values for the average $\bar{y}$, variance $s$, population size $n$ and average paired data difference $\hat{d}$.}
+		\label{tab:sdyandtcalc}
+		\begin{tabular}{lll}
+			\hline
+			\textbf{Data set}  & \textbf{$s_{\Delta\bar{y}}$}     & 
+			\textbf{$t_{calc}$}                                                
+			\\ \hline
+			Common variance    & $s_{\Delta\bar{y}} = s_p \sqrt{\frac{1}{n_1} + 
+				\frac{1}{n_2}}$ & 
+			$t_{calc} = \frac{\bar{y}_1-\bar{y}_2}{s_p \sqrt{\frac{1}{n_1} + 
+					\frac{1}{n_2}}}         $                                      \\
+			Different variance & $s_{\Delta\bar{y}} = s_{\bar{y}_1 - 
+				\bar{y}_2}$    & 
+			$s_{(\bar{y}_1-\bar{y}_2)} =\sqrt{\frac{s^2_1}{n_1} + 
+				\frac{s^2_2}{n_2}}$, and $t_{calc} = \frac{\bar{y}_1 - 
+				\bar{y}_2}{s_{(\bar{y}_1-\bar{y}_2)}}$ \\
+			Paired data        & $s_{\Delta\bar{y}} = \bar{s}_d$           & 
+			$s_{\bar{d}} = s_d / \sqrt{n}$, and $t_{calc} 	
+			=\frac{\bar{d}}{s_{\bar{d}}}$                                       
+			
+			
+			\\
+			\hline
+		\end{tabular}
+	\end{table}
+	
+	A disadvantage of statistics is that it is mainly focused on binary testing of and not on testing of multiple groups. Several options are available for a multiple group testing, also called analysis of variance (ANOVA). ANOVA needs equal group sizes, otherwise the results of the tests are less reliable. The less powerful Kruskall Wallis test can be used if this reliability is needed. Another disadvantage is that the t-test assumes the groups follow a certain distribution, which might not be the case\cite{heiberger2004statistical}.
+	
+	% Mutual information
+	\item \textit{Mutual information} \\
+	Mutual information is another way of matching features with the results. The relevance of using one variable to predict the other variable is used in the equation to compute mutual information (Equation \ref{eq:MutualInformation}). In this equation the probability density function $p$ is used to find the mutual information $MI$ between variables $x$ and $y$\cite{peng2005feature}. Mutual information can be used for both classification and regression. It was initially meant for using in communication channels, however its statistical decision making capabilities makes it a good filter method\cite{battiti1994using}.
+	
+
+	\begin{equation}\label{eq:MutualInformation}
+	MI(x, y) = \int \int p(x, y) \log{\frac{p(x, y)}{p(x)p(y)}} dxdy
+	\end{equation}
+	
+	% Correlation
+	\item \textit{Correlation} \\
+	Correlation, similarly to mutual information, computes the expressibility of two variables for each other. A variable is relevant if it can predict the outcome of the target variable. One way of computing this relevance for a variable $x_i$ with mean $\bar{x }_i$ and target variable $y_i$ with mean $\bar{y}_i$ is by using the linear correlation coefficient $r$, also known as Pearson' correlation\cite{yu2003feature} (Equation \ref{eq:Correlation}). The correlation filter methods seem to be a good alternative for continuous data, but not for discrete data. With continuous data, the correlation between feature $x$ and the output $y$ is used to compute the ranks\cite{hall2000correlation}.
+		
+	\begin{equation}\label{eq:Correlation}
+	r(x,y) = \frac{\sum_{i}(x_i - \bar{x}_i)(y_i -\bar{y}_i)}{\sum_{i}(x_i - \bar{x}_i)\sum_{i}(y_i -\bar{y}_i)}
+	\end{equation}
+	
+	\end{itemize}
+	
+	% Feature selection thresholding criteria
+	These ranking methods $R$ to rank the features are only the first step in the filter methods. The next step is choose which features to filter out based on $R$. A quick approach would be to choose a number or fraction $n$ and select the top $n$ ranked features from the complete space (Algorithm \ref{alg:FilterTopNAlgorithm}). Another approach would be to use thresholds derived from literature\cite{donoho2008higher} (Algorithm \ref{alg:FilterAlgorithm}). For the t-test, a p-value of $0.05$ is often chosen as an example\cite{storey2003statistical, higgins2003measuring}.
+	
+	\begin{algorithm}[H]
+		\caption{A basic top $n$ filter algorithm\cite{Duch2006}}\label{alg:FilterTopNAlgorithm}
+		\begin{algorithmic}[1]
+			\Procedure{FilterSelection($X, y, F, R, n$)}{}
+			\State $F_{\textit{selected}} \gets \O$ 	\Comment{Start with empty feature set}
+			\State $Z \gets \O$							\Comment{Start with empty set of ranking values}
+			\For {$f \textbf{ in } F$} 					\Comment{For all features in $F$}
+			\State $Z_f \gets R(X_f, y)$ 				\Comment{Compute the ranking value between feature and output} 			
+			\State $Z \gets Z \cup Z_f$ 				\Comment{Add the ranking value to the set of ranking values}
+			\EndFor
+			\State $\textbf{Sort } F \textbf{ by } Z$ \Comment{Sort the features by their ranking value}
+			\State $F_{}selected \gets F_{[1,n]}$ \Comment{Select the top n features from the sorted feature set}
+			\State $\textbf{return } F_{\textit{selected}}$
+			\EndProcedure
+		\end{algorithmic}
+	\end{algorithm}	
+	
+	\begin{algorithm}[H]
+		\caption{A basic filter algorithm\cite{Duch2006}}\label{alg:FilterAlgorithm}
+		\begin{algorithmic}[1]
+			\Procedure{FilterSelection($X, y, F, R, \alpha$)}{}
+			\State $F_{\textit{selected}} \gets \O$ 	\Comment{Start with empty feature set}
+			\For {$f \textbf{ in } F$} 					\Comment{For all features in $F$}
+			\If {$\text{R}(X_f, y) > \alpha$}			\Comment{Check if ranking value is higher than threshold $\alpha$}
+			\State $F_{\textit{selected}} \gets F_{\textit{selected}} \cup f$ \Comment{Add $f$ to selected features}
+			\EndIf
+			\EndFor
+			\State $\textbf{return } F_{\textit{selected}}$
+			\EndProcedure
+		\end{algorithmic}
+	\end{algorithm}
+	
+	% Advantages, disdavantages filter methods	
+	Using filter methods has its advantages and disadvantages. These filter methods are very computationally efficient. Every feature is given a value for its rank and then a subset is selected based on those ranks. These filter methods however do not take into account dependencies between features. These dependencies could make the final feature subset worse, as maybe some features are related. Other methods are better at handling those dependencies\cite{Duch2006, saeys2007review}.
+	
+	\subsubsection{Wrapper Methods}
+	\label{subsec:WrapperMethods}
+	
+	% Introduction wrapper methods
+	Filter methods take into account the direct relation between features and the output classes, whereas wrapper methods focus more on the subsets of features and their ability to classify the data. Wrapper methods try to find the best combination of features to classify the given data and take into account the change when adding or removing features from a candidate subset\cite{Reunanen2006}. Since an exhaustive search of trying out all possible subsets would span a computation time of $2^n$ with $n$ being the number of features\cite{Alsallakh2016PowerSet}. This combinatorial explosion should be avoided and therefore less computationally intensive approximation concepts have been constructed. Three of those concepts are explained, focusing on basic sequential search, extensions of sequential search and stochastic search.
+	
+	% Evaluation method
+	Before explaining the possible wrapper methods, first the evaluation function $J$ should be discussed. To find out which subset of features can classify the data the best way, a function should be used to evaluate the performance of the subset\cite{Reunanen2006}. Evaluation functions can be based on conditional independence\cite{Reunanen2006,tsamardinos2017massively}, showing the difference in performance for a subset with and without a certain feature. Other evaluation functions are based on machine learning techniques\cite{huang2013automated, saeys2007review}, rating the ability to classify the outcome. Several interesting approaches for evaluation functions are shown in maximum relevance, minimum redundancy algorithms\cite{SENAWI201747, el2009new, radovic2017minimum} (MRMR algorithms). In these MRMR algorithms, several different evaluation functions are used based on the ability of features to classify the outcome (relevance) and the presence of correlation between features (redundancy).
+	
+	\begin{itemize}
+		% Sequential search
+		\item \textit{Sequential search} \\
+		The first concept to be explained is sequential search. This wrapper method tries to improve a candidate subset by evaluating the change of the sequential addition or removal of a specific feature. Therefore, two types of sequential search are possible, known as forward selection and backward selection. Forward selection starts with the empty subset. Every feature is iteratively evaluated and added to the feature subset if the evaluation function shows an increase in prediction. A maximum feature subset selection size $l$  can be defined if needed, as well. The layout of forward selection is shown as a pseudo algorithm (Algorithm \ref{alg:ForwardSelection}) for understanding\cite{Reunanen2006}.
+		
+		% Backward selection
+		Backward selection does the opposite of forward selection. It starts with the complete feature set in which every feature is iteratively evaluated by the evaluation function for its contribution. If the evaluation function shows that its contribution is very small, it is removed. This way only features with a high impact will remain in the subset. The maximum number features that can be removed $r$ can be defined if needed, as well. give can be A layout of backward selection is shown as a pseudo algorithm (Algorithm \ref{alg:BackwardSelection}) for understanding, as well\cite{Reunanen2006}.
+		
+		% Order discussion
+		In both forward and backward selection the sequence order is important. Different feature subsets will be made for different order of features. The ordering can be changed in a specific way if needed. Examples would be using the ranking concepts used by filter methods. Another possibility would be to randomize the order andrun the algorithm multiple times to find the best subset\cite{Reunanen2006}.
+		
+		% Insert pseudoalgorithm for forward and backward sequential search
+		\begin{algorithm}[H]
+			\caption{A forward selection sequential search algorithm\cite{Reunanen2006}}\label{alg:ForwardSelection}
+			\begin{algorithmic}[1]
+				\Procedure{SequentialForwardSelection($X, y, F, J, \alpha, l$)}{}
+				\State $F_{\textit{selected}} \gets \O$				\Comment{Start with empty feature set selection}
+				\For {$f \textbf{ in } F$}							\Comment{For all features in $F$}
+				\If {$J(X_{F_\textit{selected}}, y, X_f) > \alpha$}	\Comment{Check if evaluation is higher than $\alpha$ with feature $f$}
+				\State $F_{\textit{selected}} \gets F_{\textit{selected}} \cup f$	\Comment{Add $f$ to the feature set selection}
+				\EndIf
+				\If {$\text{length}(F_{\textit{selected}}) = l$}	\Comment{Stop if size of feature set selection has been reached}	
+				\State $\textbf{break}$
+				\EndIf
+				\EndFor
+				\State $\textbf{return } F_{\textit{selected}}$
+				\EndProcedure
+			\end{algorithmic}
+		\end{algorithm}
+	
+		\begin{algorithm}[H]
+		\caption{A backward selection sequential search algorithm\cite{Reunanen2006}}\label{alg:BackwardSelection}
+		\begin{algorithmic}[1]
+				\Procedure{SequentialBackwardSelection($X, y, F, J, \alpha, r$)}{}
+				\State $F_{\textit{selected}} \gets F$				\Comment{Start with complete feature set selection}
+				\For {$f \textbf{ in } F_{\textit{selected}}$}		\Comment{For all features in $F_{\textit{selected}}$}
+				\If {$J(X_{F_{\textit{selected}} \backslash f} , y, f) < \alpha$} \Comment{Check if evaluation is higher than $\alpha$ without $f$}
+				\State $F_{\textit{selected}} \gets F_{\textit{selected}} \backslash f$ \Comment{Remove $f$ from the feature set selection}
+				\EndIf
+				\If {$\text{length}(F \backslash F_{\textit{selected}}) = r$} \Comment{Stop if feature removal limit has been reached}
+				\State $\textbf{break}$
+				\EndIf
+				\EndFor
+				\State $\textbf{return } F_{\textit{selected}}$
+				\EndProcedure
+		\end{algorithmic}
+		\end{algorithm}
+		
+		% Extension sequential search
+		\item \textit{Sequential search extension} \\
+		The two basic sequential search algorithms forward and backward selection can be altered for better use. An intuitive idea would be to combine the two algorithms, creating an algorithm that first selects features with the evaluation function followed by removing them according to the evaluation function or the other way around. Also there is no restriction on only doing one iteration of both forward and backward selection, giving rise to "plus l-take away r" selection (PTA, algorithm \ref{alg:PTA}). $\text{PTA}(l, r)$ adds $l$ features with forward selection and removes $r$ features with backward selection per iteration, eventually converging to an optimum. 
+		These found optima in both sequential search algorithms and possible extensions can converge to local optima, beam search is an example that also collects suboptimal branches for possible better optima, instead of only keeping the best possible outcome at all times\cite{Reunanen2006}.
+		
+		\begin{algorithm}[H]
+			\caption{A plus l-take away r sequential search algorithm\cite{Reunanen2006}}\label{alg:PTA}
+			\begin{algorithmic}[1]
+				\Procedure{PTA($X, y, F, J, \alpha, l, r$)}{}
+				\State $F_{\textit{selected}} \gets \O$			\Comment{Start with empty feature set selection}
+				\State $i \gets 0$								\Comment{Initialize feature index}
+				\While {$i < \text{length}(F)$}					\Comment{Continue while not all features are evaluated}
+				\State $\textit{size} \gets \text{length}(F_{\textit{selected}})$ \Comment{Update size of feature set selection}
+				\For {$k \textbf{ in } [i, \text{length}(F)]$}	\Comment{For features in $F$ with index higher than $i$}
+				\If {$J(X_{F_{\textit{selected}}}, y, X_{F_k}) > \alpha$}	\Comment{Check if evaluation is higher than $\alpha$ with $f$}
+				\State $F_{\textit{selected}} \gets F_{\textit{selected}} \cup F_k$ \Comment{Add $f$ to the feature set selection}
+				\EndIf
+				\State $i \gets k$						\Comment{Update feature index}
+				\If {$ \textit{size} + \text{length}(F_{\textit{selected}}) = l$} \Comment{Stop if feature addition limit has been reached}	
+				\State $\textbf{break}$
+				\EndIf
+				\EndFor
+				\State $\textit{size} \gets \text{length}(F_{\textit{selected}})$ \Comment{Update size of feature set selection}
+				\For {$f \textbf{ in } F_{\textit{selected}}$}	\Comment{For features in $F_{\textit{selected}}$}
+				\If {$J(X_{F_{\textit{selected}} \backslash f} , y, X_f) < \alpha$}	\Comment{Check if evaluation is higher than $\alpha$ without $f$}
+				\State $F_{\textit{selected}} \gets F_{\textit{selected}} \backslash f$ \Comment{Remove $f$ from the feature set selection}
+				\EndIf
+				\If {$ \textit{size} - \text{length}(F_{\textit{selected}}) = r$} \Comment{Stop if feature removal limit has been reached}	
+				\State $\textbf{break}$
+				\EndIf
+				\EndFor
+				\EndWhile
+				\State $\textbf{return } F_{\textit{selected}}$
+				\EndProcedure
+			\end{algorithmic}
+		\end{algorithm}
+		
+		A last example of a sequential search extension is called floating search. Instead of adding and removing a set number of features as in PTA, floating search continues to add and remove features until the best subset is found (Algorithm \ref{alg:FloatingSearch}). Since feature relevance and redundance changes for every new subset, all features are continuously evaluated to find out if they must be added to or removed from the subset. This way an optimal subset can be found\cite{Reunanen2006}.
+		
+		\begin{algorithm}[h]
+		\caption{A floating search algorithm\cite{Reunanen2006}}\label{alg:FloatingSearch}
+		\begin{algorithmic}[1]
+				\Procedure{FloatingSearchSelection($X, y, F, J, \alpha$)}{}
+				\State $F_{\textit{selected}} \gets \O$			\Comment{Start with empty feature set}
+				\While {$F_{\textit{selected}} \textbf{ changes}$}	\Comment{Continue while the feature set selection changes}
+				\For {$f \textbf{ in } F$}	\Comment{For features in $F$}
+				\If {$f \not \in F_{\textit{selected}} \textbf{ and }J(X_{F_{\textit{selected}}}, y, X_f) > \alpha$} \Comment{Check if evaluation is higher than $\alpha$ with feature $f$}
+				\State $F_{\textit{selected}} \gets F_{\textit{selected}} \cup f$ \Comment{Add $f$ to the feature set selection}
+				\EndIf
+				\EndFor
+				\For {$f \textbf{ in } F_{\textit{selected}}$} \Comment{For features in $F_{\textit{selected}}$}
+				\If {$J(X_{F_{\textit{selected}} \backslash f}, y, X_f) < \alpha$} \Comment{Check if evaluation is higher than $\alpha$ without feature $f$}
+				\State $F_{\textit{selected}} \gets F_{\textit{selected}} \backslash f$ \Comment{Remove $f$ from the feature set selection}
+				\EndIf
+				\EndFor
+				\EndWhile
+				\State $\textbf{return } F_{\textit{selected}}$
+				\EndProcedure
+			\end{algorithmic}
+		\end{algorithm}
+		
+		% Stochastic search
+		\item \textit{Stochastic search} \\
+		
+		% Intro + Simulated annealing
+		Stochastic search uses random mutations in a candidate subset to achieve an optimal subset. One interesting approach of stochastic search is simulated annealing (SA), a search algorithm based on the cooling down of physical matter\cite{kirkpatrick1983optimization}. This search algorithm tries new feature subsets constantly until the temperature is 'cooled down' or an optimal solution is found (Algorithm \ref{alg:SASearch}). This is done by choosing a new feature every time regardless of whether it is in the subset, or not. If adding or removing the new feature improves the performance of the subset, it will be added or removed. If it worsens the subset, it may be added or removed depending on the quality of deterioration and the temperature. The temperature is lowered after a number iterations of adding or removing features, until it is completely 'cooled down' and the final subset had been made.\cite{Reunanen2006} A second example of a stochastic search algorithm is a genetic algorithm, that collects multiple subsets and mutates them in an evolutionary way\cite{Jirapech-Umpai2005}.
+		
+		\begin{algorithm}[h]
+			\caption{Simulated Annealing search algorithm\cite{Reunanen2006}}\label{alg:SASearch}
+			\begin{algorithmic}[1]
+				\Procedure{SA($X, y, F, J, T_0, T_1, m, v$)}{}
+				\State $F_{\textit{selected}} \gets \text{randomSubset}(F)$	\Comment{Start with random feature subset}
+				\State $T \gets T_0$			\Comment{Initialize simulation temperature $T$ with $T_0$}
+				\While {$T_0 \geq t_1$}			\Comment{While temperature is not cold enough ($T_1$), yet}
+				\State $i \gets 0$				\Comment{Initialize counter for not improvements}
+				\While {$i < m$}				\Comment{While not improvements is lower than maximum $m$}
+				\State $f \gets \text{randomFeature}(F)$	\Comment{Select random feature $f$}
+				\If {$f \in F_{\textit{selected}}$}	\Comment{Check if $f$ is in feature set selection}
+				\State $F_{\textit{candidate}} \gets  F_{\textit{selected}} \backslash f$ \Comment{create candidate feature subset selection}
+				\State $\Delta = J(X_{F_{\textit{selected}} \backslash f}, y, X_f)$ \Comment{Calculate evaluation difference without feature $f$}
+				\Else	\Comment{Check if $f$ is not in feature set selection}
+				\State $F_{\textit{candidate}} \gets  F_{\textit{selected}} \cup f$	\Comment{create candidate feature subset selection}			
+				\State $\Delta = J(X_{F_{\textit{selected}}} , y, X_f)$ \Comment{Calculate evaluation difference with feature $f$}
+				\EndIf
+				\If {$\Delta > 0$} \Comment{Check if change is positive}
+				\State $F_{\textit{selected}} \gets F_{\textit{candidate}}$ \Comment{Use candidate as feature subset selection}
+				\Else
+				\State $r \gets randomReal(0, 1)$ \Comment{Get a random value $r \in [0, 1]$}
+				\If {$r < \text{exp}(\Delta / T)$}  \Comment{Check if a random change should occur}
+				\State $F_{\textit{selected}} \gets F_{\textit{candidate}}$ \Comment{Use candidate as feature subset selection}
+				\EndIf
+				\State $i \gets i + 1$ \Comment{Increment counter for no improvement}
+				\EndIf				
+				\EndWhile
+				\State $T \gets T \times v$ \Comment{Lower the temperature with $v \in [0,1]$} 
+				\EndWhile
+				\State $\textbf{return } F_{\textit{selected}}$
+				\EndProcedure
+			\end{algorithmic}
+		\end{algorithm}
+		 
+	\end{itemize}
+
+	% Advantages/Disadvantages
+	The major advantage of using wrapper methods is that it also takes into account possible dependencies between features. The computation time of wrapper methods usually is higher than of filter methods, but still relatively short as it should always converge to an optimum. These optima can be local however, so the result may not be the optimal, due to its greedy character. The stochastic search algorithms provide a way find a global optimum at the cost of being more computationally intensive. Also, these methods are dependent on the evaluation function and are known to be prone for overfitting\cite{Reunanen2006, saeys2007review}.
+	
+	\subsubsection{Embedded Methods}
+	\label{subsec:EmbeddedMethods}
+	
+	% Introduction Embedded methods
+	In both filter and wrapper methods, machine learning plays little to no role in selecting features. Filter methods do not use learning at all and a wrapper method can only use machine learning for the performance of subsets. Machine learning however has multiple attributes that can be used directly to select or eliminate features from the ideal feature set selection. Embedded methods combine feature selection with a machine learning algorithm $M$, in contrast of wrapper methods in which these are separated\cite{Lal2006}. Usually this combination involves using the weights given to features by machine learning algorithms\cite{blum1997selection}.
+	
+	Embedded methods usually solve feature selection by using one of two possible solution. The first solution is based on contribution relaxation minimization and the second solution is based on convex function minimization. Since the theoretical approach can be very computationally intensive, approximations of the minimization problems are given, showing exemplary embedded methods\cite{Lal2006}.
+	
+	
+	\begin{itemize}
+		\item \textit{Contribution relaxation minimization} \\
+		
+		% Explanation contribution relaxation
+		Contribution relaxation is based on giving every feature $f$ a contribution factor $\sigma_f \in [0, 1]$. This contribution factor shows the contribution of a feature to the preferred outcome. The final goal is to select a subset of features, though, and not use all features with a contribution factor. To achieve that a minimization function is used in which all contribution factors become $\sigma_f \in \{0, 1\}$. With contribution factors in $\{0, 1\}$, a subset with all features having $\sigma_f = 1$ can be selected as the ideal subset\cite{Lal2006}. 
+		
+		% Approximation of methods
+		The minimization can be implemented with a feature selection method. This method would however be computationally intensive and therefore approximations are used. The most used approximation is similar to the filter methods, ranking each feature and choosing features based on rank. This embedded method is also called a forward selection method. A machine learning algorithm $M$ assigns a weight to each feature, which can be used as a rank (Algorithm \ref{alg:FilterAlgorithm}). The difference between a ranking method $R$ of the filter methods and the weights of a machine learning algorithm $M$ is that $M$ also take into account the dependency between features\cite{Lal2006}.
+		
+		\begin{algorithm}[H]
+			\caption{An embedded forward selection algorithm\cite{Lal2006}}\label{alg:EmbeddedForwardSelectionAlgorithm}
+			\begin{algorithmic}[1]
+				\Procedure{EmbeddedForwardSelection($X, y, F, M, \alpha$)}{}
+				\State $F_{\textit{selected}} \gets \O$ 	\Comment{Start with empty feature set}
+				\State $W \gets M(X, y)$					\Comment{Extract the weights for every feature}
+				\For {$f \textbf{ in } F$} 					\Comment{For all features in $F$}
+				\If {$W_f > \alpha$}			\Comment{Check if weight is higher than threshold $\alpha$}
+				\State $F_{\textit{selected}} \gets F_{\textit{selected}} \cup f$ \Comment{Add $f$ to selected features}
+				\EndIf
+				\EndFor
+				\State $\textbf{return } F_{\textit{selected}}$
+				\EndProcedure
+			\end{algorithmic}
+		\end{algorithm}
+		
+		\item \textit{Convex function minimization} \\
+		
+		% Explanation convex function minimization
+		The convex function minimization focuses on the trade-off between prediction quality and feature subset size. Convex function minimization combines a loss function, used for quality measurements, with a penalty term for the number of features used. This results checking for which features the quality increase is lower than the penalty term, so it should be removed. There are many different loss functions that can be used for this case, all with their own advantages and disadvantages\cite{Lal2006}.
+		
+		% Approximation with methods
+		For approximation of this minimization, an embedded method closely related to the backward selection wrapper method can be used called Recursive Backward Elimination (RBE, Algorithm \ref{alg:EmbeddedBackwardEliminationAlgorithm}). In RBE a machine learning method gives weights for every feature. The feature with the lowest weight is then compared with a threshold and removed if too low for the threshold. Since weights of a machine learning algorithm change when features are removed, this should be done recursively until no feature can be found any more with a weight lower than the threshold\cite{Lal2006}.
+		
+		\begin{algorithm}[H]
+			\caption{An embedded backward elimination algorithm\cite{Lal2006} }\label{alg:EmbeddedBackwardEliminationAlgorithm}
+			\begin{algorithmic}[1]
+				\Procedure{RecursiveBackwardElimination($X, y, F, M, \alpha$)}{}
+				\State $F_{\textit{selected}} \gets F$ 	\Comment{Start with complete feature set selection}
+				\While {$F_{\textit{selected}} \textbf{ changes }$} \Comment{While the feature set selection changes}
+				\State $W_{F_{\textit{selected}}} \gets M(X_{F_{\textit{selected}}}, y)$\Comment{Extract the weights for every feature}
+				\State $f_{\textit{min}} \gets f \in F_{\textit{selected}} \textbf{ with } W_f = \text{min}(W_{F_{\textit{selected}}})$ \Comment{Find the feature with the lowest weight}
+				\If {$W_{f_{\textit{min}}} < \alpha$}	\Comment{Check if weight is lower than threshold $\alpha$}
+				\State $F_{\textit{selected}} \gets F_{\textit{selected}} \backslash f$ \Comment{Remove $f$ from selected features}					
+				\EndIf
+				\EndWhile
+				\State $\textbf{return } F_{\textit{selected}}$
+				\EndProcedure
+			\end{algorithmic}
+		\end{algorithm}
+			
+	\end{itemize}
+
+	% Examples of weights
+	The weights given by machine learning are different for every algorithm. A first and most obvious example of an algorithm giving weights are algorithms based on support vector machines (SVM). The weights given by SVM give the features a contribution factor in the outcome\cite{jong2004feature, prados2004mining, zhang2006recursive, guyon2002gene}. A second example would be using decision trees and random forests. Decision trees use features to reduce the entropy between a set by splitting it in two subsets with a threshold and a feature. These splitting features can be used as a subset to create an effective feature selection outcome\cite{geurts2005proteomic, wu2003comparison, Duch2006}. To overcome an overfitting problem, commonly occuring in decision trees, random forests can be used instead and the best splitting features can be used\cite{liaw2002classification}.
+
+	% \subsection{Feature Extraction}
+	% \label{subsec:FeatureExtraction}
+	
+	% PCA
+	% LDA
+	
+	% extraction algorithms: https://link.springer.com/book/10.1007/978-3-540-35488-8?page=1#toc	
+	
+	\section{Methods}
+	\label{sec:Methods}
+
+	% Introduction methods
+	To test the collection of dimensionality reduction methods experiments are done. To test the quality of the dimensionality reduction a definition of quality is formulated first. After that an exploration of feature selection is done with filter methods, followed by comparisons of multiple feature selection methods. The tests are done in Python, using the Anaconda distribution for the easy of using packages. Methods that can be used for dimensionality reduction are from the packages scikit-learn\cite{pedregosa2011scikit}, SciPy\cite{jones2014scipy} and NumPy\cite{walt2011numpy}. The four example data sets were used as exemplary datasets for the experiments.
+	
+	\subsection{Dimensionality Reduction Quality}
+	\label{subsec:DimensionalityReductionQuality}
+	
+	% Machine learning for testing
+	To find out the quality of the dimensionality reduction, multiple machine learning algorithms are used\cite{hall1998practical}.  Classification of the datasets can be done with several machine learning algorithms and validation and tests scores show how well the data can be classified after dimensionality reduction. The quality will be described with the accuracy of machine learning algorithms: the number of right classifications divided by the total number of classifications. Five different machine learning classifiers are used from scikit-learn: logistic regression, decision trees, nearest neighbour, support vector machines and Naive Bayes. Better dimensionality reduction algorithms have relatively higher accuracy, as they are better at removing the right features. Since overfitting sometimes happens when fitting data in a machine learning algorithm, bot a validation and a test score is computed for the accuracy. For every experiment a training set and a test set is created, making the test set 20\% of the complete dataset. A validation score is computed by using leave one out (scikit-learn) on the training set and a test score is computed by testing the classification score of the test set.
+	
+	\subsection{Feature Selection Exploration}
+	\label{subsec:FeatureSelectionExploration}
+	
+	% First experiment
+	The first set of experiments is used to explore a combination of the basic filter method combined with the quality measurements. The basic filter method algorithm selecting the top $n$ features (Algorithm \ref{alg:FilterTopNAlgorithm}) is used. The changing variables are the dataset, the ranking method, the feature preservation values and the accuracy computation methods (Table \ref{tab:FirstExperimentRequirements}). All of this together means a total of $4 (\text{datasets}) \times 2 (\text{ranking methods}) \times 11 (\text{top } n \text{ features}) \times 5 (\text{accuracy computation methods}) = 440$ experiments are conducted. These experiments are visualized in eight plots, one plot for every combination of data set and ranking method. These plots then show the change in quality for different number of preserved features.
+	
+	\begin{table}[]
+	\centering
+	\caption{The four variables with their possible values in the first experiment.}
+	\label{tab:FirstExperimentRequirements}
+	\begin{tabular}{l|ll}
+		\textbf{Variable} & \textbf{Description}                                                                              & \textbf{Values}                                                                                                                         \\ \hline
+		Dataset           & The datasets used (subsection \ref{subsec:Datasets})                                                                                 & \begin{tabular}[c]{@{}l@{}}Psoriasis\\ RSCTC\\ Arcene\\ Micro-Organisms\\ --\end{tabular}                                               \\
+		Ranking method    & \begin{tabular}[c]{@{}l@{}}The method used for ranking \\ the features (subsection \ref{subsec:FilterMethods})\end{tabular}               & \begin{tabular}[c]{@{}l@{}}T-test (SciPy)\\ Mutual Information (scikit-learn)\\ --\end{tabular}                                                                \\
+		Feature preservation values & \begin{tabular}[c]{@{}l@{}}The fixed size of the feature subset \\ after feature selection\end{tabular} & \begin{tabular}[c]{@{}l@{}}1, 5, 10, 25, 50, 75, \\ 100, 150, 250, 500, 1000\\ --\end{tabular}                                          \\
+		Accuracy computation & \begin{tabular}[c]{@{}l@{}}The machine learning algorithms \\ used to compute accuracy (subsection \ref{subsec:DimensionalityReductionQuality})\end{tabular}   & \begin{tabular}[c]{@{}l@{}}Naive Bayes\\ Logistic Regression\\ Support Vector Machine\\ Decision Tree\\ Nearest Neighbours\end{tabular}
+	\end{tabular}
+	\end{table}
+	
+	\subsection{Feature Selection Algorithms Evaluation}
+	\label{subsec:FeatureSelectionAlgorithmsEvaluation}
+
+	% Second experiment
+	The second set of experiments compares the feature selection methods in both dimensionality reduction and quality. For this experiment the four datasets are used with the logistic regression quality measurement, since the logistic regression gave the most consistent result of the five machine learning algorithms. A overview of feature selection methods is made (table \ref{tab:SecondExperimentMethods}). A spectrum is made with the results of the experiment that shows the performance of all different combinations.
+
+	\begin{table}[]
+		\centering
+		\caption{The methods that are evaluated in the second experiment setup.}
+		\label{tab:SecondExperimentMethods}
+		\begin{tabular}{l|ll}
+			\textbf{Type}                     & \textbf{Method}                                                                              & \textbf{Parameters}                                                                                                                                                                          \\ \hline
+			\multirow{2}{*}{Filter methods}   & \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}Basic Filter Methods\\ (Algorithm \ref{alg:FilterAlgorithm})\end{tabular}} & \begin{tabular}[c]{@{}l@{}}- T-test\\ - Thresholds: 0.05, 0.01\\ --\end{tabular}                                                                                                             \\
+			&                                                                                              & \begin{tabular}[c]{@{}l@{}}- Mutual Information\\ - Thresholds: 0.1, 0.2\end{tabular}                                                                                                        \\ \hline
+			\multirow{5}{*}{Wrapper methods}  & \begin{tabular}[c]{@{}l@{}}Forward selection\\ (Algorithm \ref{alg:ForwardSelection})\end{tabular}                     & \begin{tabular}[c]{@{}l@{}}- Order: Random, Mutual Information\\ - Evaluation function: Naive Bayes\\ - Alpha: 0.01, 0.001\\ --\end{tabular}                                                 \\
+			& \begin{tabular}[c]{@{}l@{}}Backward selection\\ (Algorithm \ref{alg:BackwardSelection})\end{tabular}                    & \begin{tabular}[c]{@{}l@{}}- Order: Random, Mutual Information\\ - Evaluation function: Naive Bayes\\ - Alpha: 0.01, 0.001\\ --\end{tabular}                                                 \\
+			& \begin{tabular}[c]{@{}l@{}}PTA\\ (Algorithm \ref{alg:PTA})\end{tabular}                                   & \begin{tabular}[c]{@{}l@{}}- Order: Random, Mutual Information\\ - Evaluation function: Naive Bayes\\ - {[}l, r{]} = {[}20, 10{]}, {[}5, 2{]}\\ - Alpha: 0.01, 0.001\\ --\end{tabular} \\
+			& \begin{tabular}[c]{@{}l@{}}Floating search\\ (Algorithm \ref{alg:FloatingSearch})\end{tabular}                       & \begin{tabular}[c]{@{}l@{}}- Order: Random\\ - Evaluation function: Naive Bayes\\ - Alpha: 0.01\end{tabular}                                                                                 \\
+			& \begin{tabular}[c]{@{}l@{}}Simulated Annealing\\ (Algorithm \ref{alg:SASearch})\end{tabular}                   & - \textit{Testing needs to occur to find good parameter values}                                                                                                                                                                                           \\ \hline
+			\multirow{2}{*}{Embedded methods} & \begin{tabular}[c]{@{}l@{}}Forward selection\\ (Algorithm \ref{alg:EmbeddedForwardSelectionAlgorithm})\end{tabular}                     & - \textit{Testing needs to occur to find good parameter values}                                                                                                                                                                                            \\
+			& \begin{tabular}[c]{@{}l@{}}Backward elimination\\ (Algorithm \ref{alg:EmbeddedBackwardEliminationAlgorithm})\end{tabular}                  & - \textit{Testing needs to occur to find good parameter values}                                                                                                                                                                                           
+		\end{tabular}
+	\end{table}
+	
+	% \subsection{Feature Extraction Algorithms}
+	% \label{subsec:FeatureExtractionAlgorithmsEvaluation}
+	
+	\section{Results}
+	\label{sec:Results}
+	
+	The different experiments were all explained in their own subsections. First the results of the minimum feature preservation experiment were shown, followed by the feature selection algorithms evaluation.
+	
+	\subsection{Feature Selection Exploration Results}
+	\label{subsec:FeatureReductionExplorationResults}
+	
+	The results were plotted for every dataset separately (Appendix \ref{app:FeatureSelectionExplorationPlots}). An average of the four datasets was also created to show the difference between validation and test score (Figure \ref{fig:ValTestScores}), between machine learning quality measures (Figure \ref{fig:MachineLearningQualityScores}) and between data sets with ranking methods (Figure \ref{fig:DatasetRankScores}).
+	
+	% Insert figures
+	\begin{figure}[H]
+		\includegraphics[width=0.7\textwidth]{Val_Test_Scores.png}
+		\caption{The average validation and test scores after averaging the scores for the data sets and ranking methods.}
+		\label{fig:ValTestScores}
+	\end{figure}
+	
+	% Discussion result validation and test scores
+	As could be seen (Figure \ref{fig:ValTestScores}) the difference between the validation and the test scores was very low. The average almost showed two identical curves which indicates that there was hardly any overfitting present for filter methods. The test error should not be higher than the validation error usually, but in this case the test error had a higher variance. The test error was only one measurement (after splitting the data into training and test set) and the validation error was found with leave-one-out, which should have a much lower variance. Because of the lower variance, the validation score was used in the other two figures (Figures \ref{fig:MachineLearningQualityScores} and \ref{fig:DatasetRankScores}).
+	
+	% Insert figures
+	\begin{figure}[H]
+		\includegraphics[width=0.7\textwidth]{Machine_Learning_Val_Scores.png}
+		\caption{The average validation scores shown per machine learning quality measurement.}
+		\label{fig:MachineLearningQualityScores}
+	\end{figure}
+
+	% Discussion machine learning quality scores
+	Logistic regression gave the best validation scores taking all data sets combined, followed by SVM. Also, when looking at all eight plots separately (Appendix \ref{app:FeatureSelectionExplorationPlots}), logistic regression also showed the most consistent behaviour. All five of the machine learning algorithms showed an 'elbow', an area in the graph for which the score stops growing as much when more features are used. This 'elbow' was located around 100 features with 200 features being the end for almost every 'elbow'.
+
+	% Insert figures
+	\begin{figure}[H]
+		\includegraphics[width=0.7\textwidth]{Data_Rank_Val_Scores.png}
+		\caption{The average validation scores shown per dataset and rank.}
+		\label{fig:DatasetRankScores}
+	\end{figure}
+	
+	% Discussion machine learning quality scores
+	A difference in score quality for the datasets was visible (Figure \ref{fig:DatasetRankScores}). The difference between using Mutual Information and T-test was not, as for only the Arcene dataset there was a significant difference between the two. Therefore it seems that the ranking method type has less influence on the measurement quality. One interesting aspect was that methods using Mutual Information had a longer computation time than methods using the T-test.
+	
+	\subsection{Preliminary Feature Selection Algorithms Evaluation Results}
+	\label{subsec:FeatureSelectionAlgorithmsEvaluationResults}
+	
+	\textit{Not all tests are done, yet. Several combinations take a long time (e.g. the backwards algorithm for 10000+ genes).}
+	
+	The spectrum using all basic filter methods and wrapper sequential search methods was shown for the Micro Organisms dataset (Figure \ref{fig:MO_Test_Spectrum}). The figure showed that all wrapper algorithms preserved at most 15\% of the features for these settings, while usually not showing a significant decrease in quality. The differences between the wrapper methods individually were more subtle than the differences between the group wrapper methods and the group filter methods.
+	
+	% Insert figures
+	\begin{figure}[H]
+		\includegraphics[width=1\textwidth]{MO_Test_Spectrum.png}
+		\caption{The spectrum for the micro organisms dataset. The x-axis shows the fraction of features that are preserved and the y-axis shows the test score of logistic regression.}
+		\label{fig:MO_Test_Spectrum}
+	\end{figure}
+
+	% Only wrapper methods
+	To better show the differences between the wrapper methods, the part of the spectrum with only the wrapper methods was visualized (Figure \ref{fig:MO_Test_Wrapper_Spectrum}). Ordering the features before using a wrapper method (diamonds and crosses) structurally gave a better result than using a random ordering (squares and circles). Also a threshold of $\alpha = 0.001$ (circles and crosses) resulted in more features and in a higher test scores in comparison with a threshold of $\alpha = 0.01$ (squares and diamonds). Comparing the algorithms, the floating search (magenta), the PTA with smaller $l$ and $r$ (cyan) and the simple forward selection algorithms with ranked ordering (blue diamond and cross) gave the best results, outperforming the backward selection (yellow), PTA with higher $l$ and $r$ (green) and forward selection without ranking (blue square and circle).
+	
+	% Insert figures
+	\begin{figure}[H]
+		\includegraphics[width=1\textwidth]{MO_Test_Wrapper_Spectrum.png}
+		\caption{The spectrum for the micro organisms dataset using only the wrapper methods. The x-axis shows the fraction of features that are preserved and the y-axis shows the test score of logistic regression.}
+		\label{fig:MO_Test_Wrapper_Spectrum}
+	\end{figure}
+
+	% Validation versus testing
+	Not only the test score, but also the validation scores were computed. To find out whether the wrapper functions suffered from overfitting or not, these validation scores were also shown in a spectrum (Figure \ref{fig:MO_Val_Wrapper_Spectrum}). Comparing this spectrum with the spectrum with test scores (Figure \ref{fig:MO_Test_Wrapper_Spectrum}), both PTA (green and cyan) and floating search (magenta) were most affected by overfitting, structurally having a test score lower than the validation score. The algorithms with an ordering by Mutual Information (diamonds and crosses) also showed signs of overfitting for the wrapper methods.
+
+	% Insert figures
+	\begin{figure}[H]
+		\includegraphics[width=1\textwidth]{MO_Val_Wrapper_Spectrum.png}
+		\caption{The spectrum for the micro organisms dataset using only the wrapper methods. The x-axis shows the fraction of features that are preserved and the y-axis shows the validation score of logistic regression.}
+		\label{fig:MO_Val_Wrapper_Spectrum}
+	\end{figure}
+	
+	
+	\subsection{Preliminary Conclusions}
+	
+	\textit{The research is not finished, yet. However some of the conclusions could be taken.}
+	
+	% Filter method exploration
+	After evaluation of the results in the first experiment set-up, it can be concluded that there is not a big difference between using T-test or Mutual Information as a ranking method. Both seem to give similar results, with the exception of one dataset (Figure \ref{fig:DatasetRankScores}). The T-test is computationally faster than Mutual Information, however also works with the assumption that the classes are normally distributed. This may not always be the case. A rule of thumb for choice of ranking method would be to use t-test, except for when the data is not normally distributed. Both of them should definitely be considered to be used in the framework.
+	
+	% Second conclusion exploration
+	A second conclusion can be drawn from looking at the accuracy with the number of features preserved. After a threshold of 200 features, additional features do not raise the validation score as much as the first 200 features seem to do. This can indicate a second rule of thumb, that at least 200 features must be preserved after using a filter method.
+	
+	% Second experiment - filter vs wrapper methods
+	After evaluation of both filter and wrapper methods, wrapper methods seem to be significantly better at selecting a smaller fraction of features while preserving a similar test score. Since wrapper methods take dependencies between features into account, they are able to keep these dependencies at a minimum. If these dependencies are unwanted, wrapper methods seem to be more useful than filter methods and should be recommended. A downside of the wrapper methods however is that they take much more computation time than the filter methods. Therefore if it does not matter if features have dependencies with each other, a filter method should be recommended
+	
+	% Wrapper methods with each other
+	There is a difference in quality within the wrapper methods. The forward selection, floating search and PTA all showed promising results and therefore should be considered for the framework. For forward selection an ordering is recommended,  for PTA low $l$ and $r$ values combined with ordering is also recommended, whereas for floating search it is not. The backward selection algorithm was outperformed by other algorithms and therefore is debatable whether it should be included in the framework.
+	
+	% Threshold wrapper methods
+	A recommendation for the threshold is not trivial. A higher threshold of $\alpha = 0.01$ gives a smaller feature subset at the cost of a lower classification score. If a smaller subset is desired of high influence features is needed, a bigger threshold should be chosen, whereas it should be smaller if the quality of the feature subset must be better.
+	
+	\bibliography{../References/Citings} 
+	\bibliographystyle{ieeetr}
+	
+	\appendix
+	
+	\section{Feature Selection Exploration Plots}
+	\label{app:FeatureSelectionExplorationPlots}
+	
+	The validation and test score for all combinations of dataset, ranking method and machine learning quality measure (Table \ref{tab:FirstExperimentRequirements}) in figures (Figures \ref{fig:MO_MI_Val_Test_Score}, \ref{fig:MO_T_Val_Test_Score}, \ref{fig:Arcene_MI_Val_Test_Score}, \ref{fig:Arcene_T_Val_Test_Score}, \ref{fig:RSCTC_MI_Val_Test_Score}, \ref{fig:RSCTC_T_Val_Test_Score}, \ref{fig:Psoriasis_MI_Val_Test_Score} and \ref{fig:Psoriasis_T_Val_Test_Score}). 
+	
+	% Insert figures
+	\begin{figure}[H]
+		\includegraphics[width=0.7\textwidth]{MO_MI_Val_Test_Score.png}
+		\caption{The validation and test score per feature preserved for the micro organisms data setwith ranking method mutual information. Five different classification algorithms are used to define this classification and test score.}
+		\label{fig:MO_MI_Val_Test_Score}
+	\end{figure}
+	
+	% Insert figures
+	\begin{figure}[H]
+		\includegraphics[width=0.7\textwidth]{MO_T_Val_Test_Score.png}
+		\caption{The validation and test score per feature preserved for the micro organisms dataset with ranking method T-test. Five different classification algorithms are used to define this classification and test score.}
+		\label{fig:MO_T_Val_Test_Score}
+	\end{figure}
+
+	% Insert figures
+	\begin{figure}[H]
+		\includegraphics[width=0.7\textwidth]{Arcene_MI_Val_Test_Score.png}
+		\caption{The validation and test score per feature preserved for the Arcene dataset with ranking method mutual information. Five different classification algorithms are used to define this classification and test score.}
+		\label{fig:Arcene_MI_Val_Test_Score}
+	\end{figure}
+
+	% Insert figures
+	\begin{figure}[H]
+		\includegraphics[width=0.7\textwidth]{Arcene_T_Val_Test_Score.png}
+		\caption{The validation and test score per feature preserved for the Arcene dataset with ranking method T-test. Five different classification algorithms are used to define this classification and test score.}
+		\label{fig:Arcene_T_Val_Test_Score}
+	\end{figure}
+
+	% Insert figures
+	\begin{figure}[H]
+		\includegraphics[width=0.7\textwidth]{RSCTC_MI_Val_Test_Score.png}
+		\caption{The validation and test score per feature preserved for the RSCTC dataset with ranking method mutual information. Five different classification algorithms are used to define this classification and test score.}
+		\label{fig:RSCTC_MI_Val_Test_Score}
+	\end{figure}
+
+	% Insert figures
+	\begin{figure}[H]
+		\includegraphics[width=0.7\textwidth]{RSCTC_T_Val_Test_Score.png}
+		\caption{The validation and test score per feature preserved for the RSCTC dataset with ranking method T-test. Five different classification algorithms are used to define this classification and test score.}
+		\label{fig:RSCTC_T_Val_Test_Score}
+	\end{figure}
+	
+	% Insert figures
+	\begin{figure}[H]
+		\includegraphics[width=0.7\textwidth]{Psoriasis_MI_Val_Test_Score.png}
+		\caption{The validation and test score per feature preserved for the Psoriasis dataset with ranking method mutual information. Five different classification algorithms are used to define this classification and test score.}
+		\label{fig:Psoriasis_MI_Val_Test_Score}
+	\end{figure}
+	
+	% Insert figures
+	\begin{figure}[H]
+		\includegraphics[width=0.7\textwidth]{Psoriasis_T_Val_Test_Score.png}
+		\caption{The validation and test score per feature preserved for the Psoriasis dataset with ranking method T-test. Five different classification algorithms are used to define this classification and test score.}
+		\label{fig:Psoriasis_T_Val_Test_Score}
+	\end{figure}
+	
+	%\section{Feature Selection Evaluation Spectra}
+	%\label{app:FeatureSelectionEvaluationSpectra}
+	
+\end{document}

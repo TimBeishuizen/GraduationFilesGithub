@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2017.11.1)  14 MAR 2018 19:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2017.11.1)  24 MAR 2018 15:44
 entering extended mode
 **./SkinDiseaseBasicAnalysis.tex
 (SkinDiseaseBasicAnalysis.tex
@@ -948,247 +948,257 @@ been already used, duplicate ignored
                    \relax 
 l.97 	\clearpage
                  [1]
+Overfull \hbox (27.88083pt too wide) in paragraph at lines 125--137
+ [][] 
+ []
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[2
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 144.
 
-] [3]
-<./ThesisFigures/FeatureReductionLayout.png, id=186, 780.0342pt x 408.3255pt>
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 144.
+ [2
+
+] [3] [4]
+<./ThesisFigures/FeatureReductionLayout.png, id=197, 780.0342pt x 408.3255pt>
 File: ./ThesisFigures/FeatureReductionLayout.png Graphic file (type png)
 <use ./ThesisFigures/FeatureReductionLayout.png>
 Package pdftex.def Info: ./ThesisFigures/FeatureReductionLayout.png  used on in
-put line 176. on input line 176.
+put line 193. on input line 193.
 Package pdftex.def Info: Requested size: 382.12502pt x 200.03139pt on input lin
-e 176.
- [4]
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 200.
+e 193.
  [5 <./ThesisFigures/FeatureReductionLayout.png>]
-<./ThesisFigures/GreedyClustering.png, id=220, 601.2864pt x 310.761pt>
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
+put line 217.
+<./ThesisFigures/GreedyClustering.png, id=219, 601.2864pt x 310.761pt>
 File: ./ThesisFigures/GreedyClustering.png Graphic file (type png)
 <use ./ThesisFigures/GreedyClustering.png>
 Package pdftex.def Info: ./ThesisFigures/GreedyClustering.png  used on input li
-ne 222. on input line 222.
+ne 239. on input line 239.
 Package pdftex.def Info: Requested size: 382.12502pt x 197.49226pt on input lin
-e 222.
-<./ThesisFigures/DecisionTreeFeatureSpace.png, id=222, 317.68687pt x 180.675pt>
+e 239.
+ [6 <./ThesisFigures/GreedyClustering.png>]
+<./ThesisFigures/DecisionTreeFeatureSpace.png, id=230, 317.68687pt x 180.675pt>
 
 File: ./ThesisFigures/DecisionTreeFeatureSpace.png Graphic file (type png)
 <use ./ThesisFigures/DecisionTreeFeatureSpace.png>
 Package pdftex.def Info: ./ThesisFigures/DecisionTreeFeatureSpace.png  used on 
-input line 232. on input line 232.
+input line 249. on input line 249.
 Package pdftex.def Info: Requested size: 254.75433pt x 144.8903pt on input line
- 232.
-<./ThesisFigures/DecisionTreeExample.png, id=223, 134.00063pt x 178.41656pt>
+ 249.
+<./ThesisFigures/DecisionTreeExample.png, id=231, 134.00063pt x 178.41656pt>
 File: ./ThesisFigures/DecisionTreeExample.png Graphic file (type png)
 <use ./ThesisFigures/DecisionTreeExample.png>
 Package pdftex.def Info: ./ThesisFigures/DecisionTreeExample.png  used on input
- line 234. on input line 234.
+ line 251. on input line 251.
 Package pdftex.def Info: Requested size: 127.37717pt x 169.59547pt on input lin
-e 234.
+e 251.
 
-Underfull \hbox (badness 2142) in paragraph at lines 234--234
+Underfull \hbox (badness 2142) in paragraph at lines 251--251
 []\OT1/cmr/m/n/8 (b) |The cor-re-spond-ing de-ci-sion
  []
 
-[6 <./ThesisFigures/GreedyClustering.png>]
 <./ThesisFigures/ClusteringLayout.png, id=237, 553.1064pt x 564.4287pt>
 File: ./ThesisFigures/ClusteringLayout.png Graphic file (type png)
 <use ./ThesisFigures/ClusteringLayout.png>
 Package pdftex.def Info: ./ThesisFigures/ClusteringLayout.png  used on input li
-ne 249. on input line 249.
+ne 266. on input line 266.
 Package pdftex.def Info: Requested size: 297.20906pt x 303.297pt on input line 
-249.
- [7 <./ThesisFigures/DecisionTreeFeatureSpace.png> <./ThesisFigures/DecisionTre
-eExample.png>]
+266.
+[7 <./ThesisFigures/DecisionTreeFeatureSpace.png> <./ThesisFigures/DecisionTree
+Example.png>]
 <./ThesisFigures/Normalization.png, id=248, 1188.8415pt x 523.4757pt>
 File: ./ThesisFigures/Normalization.png Graphic file (type png)
 <use ./ThesisFigures/Normalization.png>
 Package pdftex.def Info: ./ThesisFigures/Normalization.png  used on input line 
-258. on input line 258.
+275. on input line 275.
 Package pdftex.def Info: Requested size: 424.58624pt x 186.95743pt on input lin
-e 258.
+e 275.
  [8 <./ThesisFigures/ClusteringLayout.png>]
-Overfull \hbox (36.24069pt too wide) in paragraph at lines 285--291
+Overfull \hbox (36.24069pt too wide) in paragraph at lines 302--308
  [][] 
  []
 
 [9 <./ThesisFigures/Normalization.png>] [10]
-Overfull \hbox (56.07529pt too wide) in paragraph at lines 360--369
+Overfull \hbox (56.07529pt too wide) in paragraph at lines 381--390
  [][] 
  []
 
 [11]
-<./ThesisFigures/Sign_Processes_Psoriasis.png, id=292, 1271.2293pt x 732.0951pt
+<./ThesisFigures/Sign_Processes_Psoriasis.png, id=294, 1271.2293pt x 732.0951pt
 >
 File: ./ThesisFigures/Sign_Processes_Psoriasis.png Graphic file (type png)
 <use ./ThesisFigures/Sign_Processes_Psoriasis.png>
 Package pdftex.def Info: ./ThesisFigures/Sign_Processes_Psoriasis.png  used on 
-input line 386. on input line 386.
+input line 407. on input line 407.
 Package pdftex.def Info: Requested size: 424.58624pt x 244.50772pt on input lin
-e 386.
+e 407.
  [12]
-<./ThesisFigures/Cluster_Results.png, id=300, 1175.8329pt x 659.5842pt>
+<./ThesisFigures/Cluster_Results.png, id=302, 1175.8329pt x 659.5842pt>
 File: ./ThesisFigures/Cluster_Results.png Graphic file (type png)
 <use ./ThesisFigures/Cluster_Results.png>
 Package pdftex.def Info: ./ThesisFigures/Cluster_Results.png  used on input lin
-e 395. on input line 395.
+e 416. on input line 416.
 Package pdftex.def Info: Requested size: 424.58624pt x 238.17476pt on input lin
-e 395.
+e 416.
  [13 <./ThesisFigures/Sign_Processes_Psoriasis.png>]
-Overfull \hbox (9.36641pt too wide) in paragraph at lines 422--427
+Overfull \hbox (9.36641pt too wide) in paragraph at lines 443--448
  [][] 
  []
 
-[14 <./ThesisFigures/Cluster_Results.png>] (SkinDiseaseBasicAnalysis.bbl
-[15] [16] [17] [18])
-<./ThesisFigures/Sign_Processes_Psoriasis_Scaled.png, id=348, 1387.584pt x 771.
+[14 <./ThesisFigures/Cluster_Results.png>] [15] (SkinDiseaseBasicAnalysis.bbl
+[16] [17] [18])
+<./ThesisFigures/Sign_Processes_Psoriasis_Scaled.png, id=350, 1387.584pt x 771.
 1209pt>
 File: ./ThesisFigures/Sign_Processes_Psoriasis_Scaled.png Graphic file (type pn
 g)
 <use ./ThesisFigures/Sign_Processes_Psoriasis_Scaled.png>
 Package pdftex.def Info: ./ThesisFigures/Sign_Processes_Psoriasis_Scaled.png  u
-sed on input line 470. on input line 470.
+sed on input line 493. on input line 493.
 Package pdftex.def Info: Requested size: 424.58624pt x 235.95045pt on input lin
-e 470.
+e 493.
  [19]
-<./ThesisFigures/Sign_Organelles_Psoriasis.png, id=359, 1194.6231pt x 663.4386p
+<./ThesisFigures/Sign_Organelles_Psoriasis.png, id=363, 1194.6231pt x 663.4386p
 t>
 File: ./ThesisFigures/Sign_Organelles_Psoriasis.png Graphic file (type png)
 <use ./ThesisFigures/Sign_Organelles_Psoriasis.png>
 Package pdftex.def Info: ./ThesisFigures/Sign_Organelles_Psoriasis.png  used on
- input line 476. on input line 476.
+ input line 499. on input line 499.
 Package pdftex.def Info: Requested size: 424.58624pt x 235.80074pt on input lin
-e 476.
-<./ThesisFigures/Sign_Organelles_Psoriasis_Scaled.png, id=360, 1387.584pt x 771
+e 499.
+<./ThesisFigures/Sign_Organelles_Psoriasis_Scaled.png, id=364, 1387.584pt x 771
 .1209pt>
 File: ./ThesisFigures/Sign_Organelles_Psoriasis_Scaled.png Graphic file (type p
 ng)
 <use ./ThesisFigures/Sign_Organelles_Psoriasis_Scaled.png>
 Package pdftex.def Info: ./ThesisFigures/Sign_Organelles_Psoriasis_Scaled.png  
-used on input line 483. on input line 483.
+used on input line 506. on input line 506.
 Package pdftex.def Info: Requested size: 424.58624pt x 235.95045pt on input lin
-e 483.
+e 506.
  [20 <./ThesisFigures/Sign_Processes_Psoriasis_Scaled.png> <./ThesisFigures/Sig
 n_Organelles_Psoriasis.png>]
-<./ThesisFigures/Sign_Molecular_Psoriasis.png, id=369, 1206.909pt x 670.6656pt>
+<./ThesisFigures/Sign_Molecular_Psoriasis.png, id=373, 1206.909pt x 670.6656pt>
 
 File: ./ThesisFigures/Sign_Molecular_Psoriasis.png Graphic file (type png)
 <use ./ThesisFigures/Sign_Molecular_Psoriasis.png>
 Package pdftex.def Info: ./ThesisFigures/Sign_Molecular_Psoriasis.png  used on 
-input line 489. on input line 489.
+input line 512. on input line 512.
 Package pdftex.def Info: Requested size: 424.58624pt x 235.93379pt on input lin
-e 489.
-<./ThesisFigures/Sign_Molecular_Psoriasis_Scaled.png, id=370, 1387.584pt x 768.
+e 512.
+<./ThesisFigures/Sign_Molecular_Psoriasis_Scaled.png, id=374, 1387.584pt x 768.
 2301pt>
 File: ./ThesisFigures/Sign_Molecular_Psoriasis_Scaled.png Graphic file (type pn
 g)
 <use ./ThesisFigures/Sign_Molecular_Psoriasis_Scaled.png>
 Package pdftex.def Info: ./ThesisFigures/Sign_Molecular_Psoriasis_Scaled.png  u
-sed on input line 496. on input line 496.
+sed on input line 519. on input line 519.
 Package pdftex.def Info: Requested size: 424.58624pt x 235.06592pt on input lin
-e 496.
+e 519.
  [21 <./ThesisFigures/Sign_Organelles_Psoriasis_Scaled.png> <./ThesisFigures/Si
 gn_Molecular_Psoriasis.png>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 507.
+               Default added (so using `tbp') on input line 530.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 527--527
+Underfull \hbox (badness 10000) in paragraph at lines 550--550
 []|\OT1/cmr/m/n/10 serpin pep-ti-dase in-hibitor
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 532--532
+Underfull \hbox (badness 10000) in paragraph at lines 555--555
 []|\OT1/cmr/m/n/10 interferon, alpha-inducible
  []
 
 
-Overfull \hbox (38.33817pt too wide) in paragraph at lines 511--537
+Overfull \hbox (38.33817pt too wide) in paragraph at lines 534--560
  [][] 
  []
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 539.
+               Default added (so using `tbp') on input line 562.
 
 
-Underfull \hbox (badness 2409) in paragraph at lines 545--545
+Underfull \hbox (badness 2409) in paragraph at lines 568--568
 []|\OT1/cmr/m/n/10 S100 cal-cium bind-ing pro-tein
  []
 
 
-Underfull \hbox (badness 1102) in paragraph at lines 550--551
+Underfull \hbox (badness 1102) in paragraph at lines 573--574
 []|\OT1/cmr/m/n/10 antibiotic pep-tide which is lo-cally reg-u-lated by
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 551--551
+Underfull \hbox (badness 10000) in paragraph at lines 574--574
 []|\OT1/cmr/m/n/10 peptidase in-hibitor 3 skin-
  []
 
 
-Underfull \hbox (badness 2401) in paragraph at lines 551--552
+Underfull \hbox (badness 2401) in paragraph at lines 574--575
 []|\OT1/cmr/m/n/10 Upregulated in pso-ri-a-sis, his gene en-codes an
  []
 
 
-Underfull \hbox (badness 3514) in paragraph at lines 551--552
+Underfull \hbox (badness 3514) in paragraph at lines 574--575
 \OT1/cmr/m/n/10 elastase-specific in-hibitor that func-tions as an
  []
 
 
-Underfull \hbox (badness 1112) in paragraph at lines 551--552
+Underfull \hbox (badness 1112) in paragraph at lines 574--575
 \OT1/cmr/m/n/10 an-timi-cro-bial pep-tide against Gram-positive and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 552--552
+Underfull \hbox (badness 10000) in paragraph at lines 575--575
 []|\OT1/cmr/m/n/10 peptidase in-hibitor 3 skin-
  []
 
 
-Underfull \hbox (badness 2401) in paragraph at lines 552--552
+Underfull \hbox (badness 2401) in paragraph at lines 575--575
 []|\OT1/cmr/m/n/10 Upregulated in pso-ri-a-sis, his gene en-codes an
  []
 
 
-Underfull \hbox (badness 3514) in paragraph at lines 552--552
+Underfull \hbox (badness 3514) in paragraph at lines 575--575
 \OT1/cmr/m/n/10 elastase-specific in-hibitor that func-tions as an
  []
 
 
-Underfull \hbox (badness 1112) in paragraph at lines 552--552
+Underfull \hbox (badness 1112) in paragraph at lines 575--575
 \OT1/cmr/m/n/10 an-timi-cro-bial pep-tide against Gram-positive and
  []
 
 
-Overfull \hbox (38.33817pt too wide) in paragraph at lines 543--554
+Overfull \hbox (38.33817pt too wide) in paragraph at lines 566--577
  [][] 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 556.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 579.
 [22 <./ThesisFigures/Sign_Molecular_Psoriasis_Scaled.png>] [23] [24]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 556.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 579.
 
 (SkinDiseaseBasicAnalysis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 556.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 556.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 579.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 579.
 Package rerunfilecheck Info: File `SkinDiseaseBasicAnalysis.out' has not change
 d.
 (rerunfilecheck)             Checksum: A89D584E5D0CCE2F5D2F23EBABB79B41;918.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 556.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 579.
  ) 
 Here is how much of TeX's memory you used:
- 12866 strings out of 493318
- 192289 string characters out of 3139046
- 320028 words of memory out of 3000000
- 16053 multiletter control sequences out of 15000+200000
+ 12884 strings out of 493318
+ 192586 string characters out of 3139046
+ 320144 words of memory out of 3000000
+ 16067 multiletter control sequences out of 15000+200000
  13999 words of font info for 52 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,15n,49p,1698b,469s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,15n,49p,1732b,467s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -1212,9 +1222,9 @@ lic/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
 cmti8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pf
 b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on SkinDiseaseBasicAnalysis.pdf (25 pages, 2009261 bytes).
+Output written on SkinDiseaseBasicAnalysis.pdf (25 pages, 2014989 bytes).
 PDF statistics:
- 520 PDF objects out of 1000 (max. 8388607)
- 120 named destinations out of 1000 (max. 500000)
+ 525 PDF objects out of 1000 (max. 8388607)
+ 121 named destinations out of 1000 (max. 500000)
  186 words of extra memory for PDF output out of 10000 (max. 10000000)
 

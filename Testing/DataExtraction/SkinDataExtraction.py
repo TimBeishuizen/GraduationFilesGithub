@@ -1,7 +1,7 @@
 import os
 import re
 import numpy as np
-
+from sklearn import preprocessing as PP
 
 def read_data(name):
     """ Reads the data from a data set
@@ -214,10 +214,11 @@ def extract_data(name):
     return sample_values, skin_types, gene_ids, sample_ids, series
 
 
-def extract_multiple_data_sets(names):
+def extract_multiple_data_sets(names, normalization=True):
     """ Extracts multiple data sets and adds them together
 
     :param names: The names of the added data sets
+    :param normalization: Whether the data sets need to be normalized at the start
     :return: the values of the samples, the skin type fo the samples, the ids of the genes and the ids of the samples
     """
 
@@ -226,7 +227,11 @@ def extract_multiple_data_sets(names):
     for name in names[1:]:
         curr_sample_values, curr_skin_types, curr_gene_ids, curr_sample_ids, curr_series = extract_data(name)
 
+        if normalization:
+            scaler = PP.StandardScaler()
+            curr_sample_values = scaler.fit_transform(curr_sample_values)
+
         sample_values = np.append(sample_values, curr_sample_values, axis=0)
         skin_types = np.append(skin_types, curr_skin_types)
 
-    return sample_values, skin_types, gene_ids
+    return sample_values, skin_types.astype(int), np.asarray(gene_ids)

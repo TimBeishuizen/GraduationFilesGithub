@@ -1,0 +1,15 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: FeatureReductionThesis.aux
+The style file: ieeetr.bst
+Database file #1: ../References/Citings.bib
+Repeated entry---line 1789 of file ../References/Citings.bib
+ : @article{pedregosa2011scikit
+ :                             ,
+I'm skipping whatever remains of this entry
+Warning--empty journal in felix2017dynamic
+Warning--empty journal in hall2000correlation
+Warning--can't use both author and editor fields in Reunanen2006
+Warning--empty journal in Alsallakh2016PowerSet
+Warning--can't use both author and editor fields in Lal2006
+Warning--empty journal in jones2014scipy
+Warning--empty journal in hall1998practical
+(There was 1 error message)

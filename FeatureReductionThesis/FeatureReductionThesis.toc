@@ -1,0 +1,17 @@
+\select@language {english}
+\contentsline {section}{\numberline {1}Introduction}{2}{section.1}
+\contentsline {section}{\numberline {2}Background}{2}{section.2}
+\contentsline {subsection}{\numberline {2.1}Datasets}{2}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Feature Selection}{3}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Filter Methods}{4}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}Wrapper Methods}{6}{subsubsection.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.3}Embedded Methods}{9}{subsubsection.2.2.3}
+\contentsline {section}{\numberline {3}Methods}{11}{section.3}
+\contentsline {subsection}{\numberline {3.1}Dimensionality Reduction Quality}{11}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Feature Selection Exploration}{12}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Feature Selection Algorithms Evaluation}{12}{subsection.3.3}
+\contentsline {section}{\numberline {4}Results}{12}{section.4}
+\contentsline {subsection}{\numberline {4.1}Feature Selection Exploration Results}{14}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Preliminary Feature Selection Algorithms Evaluation Results}{16}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Preliminary Conclusions}{18}{subsection.4.3}
+\contentsline {section}{\numberline {A}Feature Selection Exploration Plots}{23}{appendix.A}
