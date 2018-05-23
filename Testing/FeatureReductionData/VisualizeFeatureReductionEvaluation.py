@@ -2,11 +2,11 @@ import numpy as np
 import csv
 import matplotlib.pyplot as PLT
 
-data_name = 'Psoriasis'
+data_name = 'RSCTC'
 
 filter_values = []
 
-# with open('Filter_T_values.csv', 'r', newline='') as csv_file:
+# with open('New_Filter_values.csv', 'r', newline='') as csv_file:
 #     csv_reader = csv.reader(csv_file)
 #     for row in csv_reader:
 #         filter_values.append(row)
@@ -48,7 +48,7 @@ def return_label(rank, threshold):
     elif rank in ['T-test', 'Random'] and threshold == '0.01':
         label = label + 's'
     elif rank == 'MI' and threshold in ['0.1', '0.001']:
-        label = label + 'x'
+        label = label + '^'
     elif rank == 'MI' and threshold in ['0.2', '0.01']:
         label = label + 'd'
     else:
@@ -106,14 +106,18 @@ for i in range(wrapper_values.shape[1]):
         else:
             raise ValueError
 
-        val_score = float(wrapper_values[10, i])
-        fraction = compute_fraction(wrapper_values[0, i], int(wrapper_values[6, i]))
-        PLT.plot(fraction, val_score, style_label, label=legend_label)
+        val_score = float(wrapper_values[4, i])
+        test_score = float(wrapper_values[5, i])
+        n_feat = int(wrapper_values[6, i])
+        comp_time = float(wrapper_values[7, i])
+        F1_score = float(wrapper_values[10, i])
+        # fraction = compute_fraction(wrapper_values[0, i], int(wrapper_values[6, i]))
+        PLT.plot(comp_time,test_score, style_label, label=legend_label, markersize=10 * test_score)
 
 # PLT.axis([0, 1, 0, 1])
 # PLT.axis([0, 0.2, 0.4, 1])
-PLT.xlabel("The feature fraction")
-PLT.ylabel("The F1 score")
+PLT.xlabel("Computation time")
+PLT.ylabel("F1_score")
 PLT.title("The spectrum for all sequential wrapper methods for the %s dataset" % (data_name))
 PLT.legend(loc='center left', bbox_to_anchor=(0.7, 0.3))
 PLT.show()

@@ -36,7 +36,7 @@
     pdftitle={}, %PDF-file will be given a proper title when viewed in a reader
     hidelinks %PDF-file will be given clickable, yet not visible links when viewed in a reader
 }
-\newcommand{\documenttitle}{Dimensionality Reduction Analysis}
+\newcommand{\documenttitle}{Dimensionality Reduction (Attrition/Compression) Analysis}
 \newcommand{\documentsubtitle}{A case study for a computational biology framework}
 
 
@@ -168,13 +168,14 @@
 	\label{subsec:FilterMethods}
 	
 	% Introduction filter methods
-	Filter methods are based on ranking the available features in a feature space. All features are given a value based on their performance and are ranked by those values\cite{Duch2006, saeys2007review}. Several methods can be used to rank the features. For illustration an a ranking method collection is given:
+	Filter methods are based on giving relative ranks to the features in a feature space. All features are given a value based on their performance and are ranked by those values\cite{Duch2006, saeys2007review}. Several methods can be used to rank the features. For illustration an a ranking method collection is given:
 	
 	\begin{itemize}
 	% T-test binary
-	\item \textit{T-test statistics} \\ 
-	Statistics can be used to compare groups with each other. In statistics these groups are seen as separate distributions, which may or may not be seen as independent distributions. Between two of those groups a t-test can be done to find the chance fo these groups to originate form the same distributions\cite{heiberger2004statistical} (Table \ref{tab:IndepTest}). This t-test gives a probability value (p-value) on interval $[0,1]$, representing the chance the two groups originate from the same distribution. The p-value for the datasets is computed by creating a distribution for every class. Every feature is assigned a different p-value using the distributions created per class for that feature. 
+	\item \textit{T-test and ANOVA statistics} \\ 
+	Statistics can be used to compare groups with each other. In statistics these groups are seen as separate distributions, which may or may not be seen as independent distributions. If there are two groups a t-test can be done to find the chance for these groups to originate form the same distribution\cite{heiberger2004statistical} (Table \ref{tab:IndepTest}), based on computations on their mean and variance. This t-test gives a probability value (p-value) on interval $[0,1]$, representing the chance the two groups originate from the same distribution. The p-value for the datasets is computed by creating a distribution for every class. Every feature is assigned a different p-value using the distributions for the groups.
 	The t-test is mainly focused on the difference between two groups and has different formulas to measure it: A paired t-test if the data can be paired between the two classes, an equal variance t-test and an unequal variance t-test for which it is assumed the variances of the two groups are equal or not equal respectively\cite{heiberger2004statistical} (Table \ref{tab:sdyandtcalc}).
+	For sample classifications, the groups would consist of samples with the same label. For example, the t-test can be done between group 1 with classification label "patient" and group 2 with label "normal". If the values of a certain feature from these groups are highly unlikely to follow the same distribution, the p-value will be very low and therefore the rank to be higher.
 	
 	\begin{table}[h!]
 		\centering
@@ -246,11 +247,13 @@
 		\end{tabular}
 	\end{table}
 	
-	A disadvantage of statistics is that it is mainly focused on binary testing of and not on testing of multiple groups. Several options are available for a multiple group testing, also called analysis of variance (ANOVA). ANOVA needs equal group sizes, otherwise the results of the tests are less reliable. The less powerful Kruskall Wallis test can be used if this reliability is needed. Another disadvantage is that the t-test assumes the groups follow a certain distribution, which might not be the case\cite{heiberger2004statistical}.
+	If there are more than two groups that must be checked whether they are from the same distribution, a t-test cannot be used. In those case the option is available available for a multiple group testing, also called analysis of variance (ANOVA). ANOVA computes whether not only two, but multiple groups can originate from the same distribution. ANOVA needs equal group sizes, otherwise the results of the tests are less reliable. The less powerful Kruskall Wallis test can be used if this reliability is needed. Another disadvantage is that t-test and ANOVA assumes the groups follow a certain distribution, which might not be the case\cite{heiberger2004statistical}.
+	Most analysis tools have a built-in package for statistics that include T-test and ANOVA. An example for this would be the SciPy\cite{jones2014scipy} package for Python.
 	
 	% Mutual information
 	\item \textit{Mutual information} \\
 	Mutual information is another way of matching features with the results. The relevance of using one variable to predict the other variable is used in the equation to compute mutual information (Equation \ref{eq:MutualInformation}). In this equation the probability density function $p$ is used to find the mutual information $MI$ between variables $x$ and $y$\cite{peng2005feature}. Mutual information can be used for both classification and regression. It was initially meant for using in communication channels, however its statistical decision making capabilities makes it a good filter method\cite{battiti1994using}.
+	For mutual information packages are commonly available as well. An example would be the mutual information methods for discrete and continuous data in Scikit-Learn\cite{pedregosa2011scikit} for Python.
 	
 
 	\begin{equation}\label{eq:MutualInformation}
@@ -259,7 +262,8 @@
 	
 	% Correlation
 	\item \textit{Correlation} \\
-	Correlation, similarly to mutual information, computes the expressibility of two variables for each other. A variable is relevant if it can predict the outcome of the target variable. One way of computing this relevance for a variable $x_i$ with mean $\bar{x }_i$ and target variable $y_i$ with mean $\bar{y}_i$ is by using the linear correlation coefficient $r$, also known as Pearson' correlation\cite{yu2003feature} (Equation \ref{eq:Correlation}). The correlation filter methods seem to be a good alternative for continuous data, but not for discrete data. With continuous data, the correlation between feature $x$ and the output $y$ is used to compute the ranks\cite{hall2000correlation}.
+	Correlation, similarly to mutual information, computes the expressibility of two variables for each other. A variable is relevant if it can predict the outcome of the target variable. One way of computing this relevance for a variable $x_i$ of feature $i$ with mean $\bar{x }_i$ and target variable $y_i$ with mean $\bar{y}_i$ is by using the linear correlation coefficient $r$, also known as Pearson' correlation\cite{yu2003feature} (Equation \ref{eq:Correlation}). The correlation filter methods seem to be a good alternative for continuous data, but not for discrete data. With continuous data, the correlation between feature $x$ and the output $y$ is used to compute the ranks\cite{hall2000correlation}.
+	Also for correlation methods packages are commonly availabe. An example is Scikit-Learn\cite{pedregosa2011scikit} again for Python.
 		
 	\begin{equation}\label{eq:Correlation}
 	r(x,y) = \frac{\sum_{i}(x_i - \bar{x}_i)(y_i -\bar{y}_i)}{\sum_{i}(x_i - \bar{x}_i)\sum_{i}(y_i -\bar{y}_i)}
@@ -435,7 +439,7 @@
 				\Procedure{SA($X, y, F, J, T_0, T_1, m, v$)}{}
 				\State $F_{\textit{selected}} \gets \text{randomSubset}(F)$	\Comment{Start with random feature subset}
 				\State $T \gets T_0$			\Comment{Initialize simulation temperature $T$ with $T_0$}
-				\While {$T_0 \geq t_1$}			\Comment{While temperature is not cold enough ($T_1$), yet}
+				\While {$T_0 \geq T_1$}			\Comment{While temperature is not cold enough ($T_1$), yet}
 				\State $i \gets 0$				\Comment{Initialize counter for not improvements}
 				\While {$i < m$}				\Comment{While not improvements is lower than maximum $m$}
 				\State $f \gets \text{randomFeature}(F)$	\Comment{Select random feature $f$}
@@ -450,7 +454,7 @@
 				\State $F_{\textit{selected}} \gets F_{\textit{candidate}}$ \Comment{Use candidate as feature subset selection}
 				\Else
 				\State $r \gets randomReal(0, 1)$ \Comment{Get a random value $r \in [0, 1]$}
-				\If {$r < \text{exp}(\Delta / T)$}  \Comment{Check if a random change should occur}
+				\If {$r < \text{exp}(-\Delta / T)$}  \Comment{Check if a random change should occur}
 				\State $F_{\textit{selected}} \gets F_{\textit{candidate}}$ \Comment{Use candidate as feature subset selection}
 				\EndIf
 				\State $i \gets i + 1$ \Comment{Increment counter for no improvement}
@@ -540,6 +544,12 @@
 	
 	% extraction algorithms: https://link.springer.com/book/10.1007/978-3-540-35488-8?page=1#toc	
 	
+	\subsection{Feature Selection Frameworks}
+	\label{subsec:FeatureSelectionFrameworks}
+	
+	% https://arxiv.org/pdf/1610.09543.pdf
+	
+	
 	\section{Methods}
 	\label{sec:Methods}
 
@@ -556,7 +566,7 @@
 	\label{subsec:FeatureSelectionExploration}
 	
 	% First experiment
-	The first set of experiments is used to explore a combination of the basic filter method combined with the quality measurements. The basic filter method algorithm selecting the top $n$ features (Algorithm \ref{alg:FilterTopNAlgorithm}) is used. The changing variables are the dataset, the ranking method, the feature preservation values and the accuracy computation methods (Table \ref{tab:FirstExperimentRequirements}). All of this together means a total of $4 (\text{datasets}) \times 2 (\text{ranking methods}) \times 11 (\text{top } n \text{ features}) \times 5 (\text{accuracy computation methods}) = 440$ experiments are conducted. These experiments are visualized in eight plots, one plot for every combination of data set and ranking method. These plots then show the change in quality for different number of preserved features.
+	The first set of experiments is used to explore a combination of the basic filter method combined with the quality measurements. The basic filter method algorithm selecting the top $n$ features (Algorithm \ref{alg:FilterTopNAlgorithm}) is used. The changing variables are the dataset, the ranking method, the feature preservation values and the accuracy computation methods (Table \ref{tab:FirstExperimentRequirements}). The range of chosen feature preservation values comes from both its ability to show impact of separate features (more impact from fewer features) and the relevance of keeping that number of features (irrelevant feature selection with more than 1000 features). All of this together means a total of $4 (\text{datasets}) \times 2 (\text{ranking methods}) \times 11 (\text{top } n \text{ features}) \times 5 (\text{accuracy computation methods}) = 440$ experiments are conducted. These experiments are visualized in eight plots, one plot for every combination of data set and ranking method. These plots then show the change in quality for different number of preserved features.
 	
 	\begin{table}[]
 	\centering
@@ -577,23 +587,19 @@
 	% Second experiment
 	The second set of experiments compares the feature selection methods in both dimensionality reduction and quality. For this experiment the four datasets are used with the logistic regression quality measurement, since the logistic regression gave the most consistent result of the five machine learning algorithms. A overview of feature selection methods is made (table \ref{tab:SecondExperimentMethods}). A spectrum is made with the results of the experiment that shows the performance of all different combinations.
 
-	\begin{table}[]
-		\centering
-		\caption{The methods that are evaluated in the second experiment setup.}
-		\label{tab:SecondExperimentMethods}
-		\begin{tabular}{l|ll}
-			\textbf{Type}                     & \textbf{Method}                                                                              & \textbf{Parameters}                                                                                                                                                                          \\ \hline
-			\multirow{2}{*}{Filter methods}   & \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}Basic Filter Methods\\ (Algorithm \ref{alg:FilterAlgorithm})\end{tabular}} & \begin{tabular}[c]{@{}l@{}}- T-test\\ - Thresholds: 0.05, 0.01\\ --\end{tabular}                                                                                                             \\
-			&                                                                                              & \begin{tabular}[c]{@{}l@{}}- Mutual Information\\ - Thresholds: 0.1, 0.2\end{tabular}                                                                                                        \\ \hline
-			\multirow{5}{*}{Wrapper methods}  & \begin{tabular}[c]{@{}l@{}}Forward selection\\ (Algorithm \ref{alg:ForwardSelection})\end{tabular}                     & \begin{tabular}[c]{@{}l@{}}- Order: Random, Mutual Information\\ - Evaluation function: Naive Bayes\\ - Alpha: 0.01, 0.001\\ --\end{tabular}                                                 \\
-			& \begin{tabular}[c]{@{}l@{}}Backward selection\\ (Algorithm \ref{alg:BackwardSelection})\end{tabular}                    & \begin{tabular}[c]{@{}l@{}}- Order: Random, Mutual Information\\ - Evaluation function: Naive Bayes\\ - Alpha: 0.01, 0.001\\ --\end{tabular}                                                 \\
-			& \begin{tabular}[c]{@{}l@{}}PTA\\ (Algorithm \ref{alg:PTA})\end{tabular}                                   & \begin{tabular}[c]{@{}l@{}}- Order: Random, Mutual Information\\ - Evaluation function: Naive Bayes\\ - {[}l, r{]} = {[}20, 10{]}, {[}5, 2{]}\\ - Alpha: 0.01, 0.001\\ --\end{tabular} \\
-			& \begin{tabular}[c]{@{}l@{}}Floating search\\ (Algorithm \ref{alg:FloatingSearch})\end{tabular}                       & \begin{tabular}[c]{@{}l@{}}- Order: Random\\ - Evaluation function: Naive Bayes\\ - Alpha: 0.01\end{tabular}                                                                                 \\
-			& \begin{tabular}[c]{@{}l@{}}Simulated Annealing\\ (Algorithm \ref{alg:SASearch})\end{tabular}                   & - \textit{Testing needs to occur to find good parameter values}                                                                                                                                                                                           \\ \hline
-			\multirow{2}{*}{Embedded methods} & \begin{tabular}[c]{@{}l@{}}Forward selection\\ (Algorithm \ref{alg:EmbeddedForwardSelectionAlgorithm})\end{tabular}                     & - \textit{Testing needs to occur to find good parameter values}                                                                                                                                                                                            \\
-			& \begin{tabular}[c]{@{}l@{}}Backward elimination\\ (Algorithm \ref{alg:EmbeddedBackwardEliminationAlgorithm})\end{tabular}                  & - \textit{Testing needs to occur to find good parameter values}                                                                                                                                                                                           
-		\end{tabular}
-	\end{table}
+\begin{table}[]
+	\centering
+	\caption{The methods that are evaluated in the second experiment setup.}
+	\label{tab:SecondExperimentMethods}
+	\begin{tabular}{l|ll}
+		\textbf{Type}                    & \textbf{Method}                                                             & \textbf{Parameters}                                                                                                                                                                          \\ \hline
+		Filter methods                   & \begin{tabular}[c]{@{}l@{}}Basic Filter Methods\\ (Algorithm \ref{alg:FilterTopNAlgorithm})\end{tabular} & \begin{tabular}[c]{@{}l@{}}- Rank: T-test, Mutual Information\\ - Thresholds: 50, 100, 150 features\end{tabular}                                                                             \\ \hline
+		\multirow{3}{*}{Wrapper methods} & \begin{tabular}[c]{@{}l@{}}Forward selection\\ (Algorithm \ref{alg:ForwardSelection})\end{tabular}    & \begin{tabular}[c]{@{}l@{}}- Order: Random, Mutual Information\\ - Evaluation: Naive Bayes\\ - Alpha: 0.01, 0.001\\ --\end{tabular}                                             \\
+		& \begin{tabular}[c]{@{}l@{}}PTA\\ (Algorithm \ref{alg:PTA})\end{tabular}                  & \begin{tabular}[c]{@{}l@{}}- Order: Random, Mutual Information\\ - Evaluation: Naive Bayes\\ - {[}l, r{]} = {[}20, 10{]}, {[}10, 5{]}, {[}5, 2{]}\\ - Alpha: 0.01, 0.001\\ --\end{tabular} \\
+		& \begin{tabular}[c]{@{}l@{}}Floating search\\ (Algorithm \ref{alg:FloatingSearch})\end{tabular}      & \begin{tabular}[c]{@{}l@{}}- Order: Random, Mutual Information\\ - Evaluation: Naive Bayes\\ - Alpha: 0.01, 0.001\end{tabular}                                                                                 \\ \hline 
+		Embedded methods                 & \begin{tabular}[c]{@{}l@{}}Forward selection\\ (Algorithm \ref{alg:EmbeddedForwardSelectionAlgorithm})\end{tabular}    & \begin{tabular}[c]{@{}l@{}}- Machine Learning: SVM, RandomForests\\ - Threshold: 50, 100, 150 features\end{tabular}                                                                         
+	\end{tabular}
+\end{table}
 	
 	% \subsection{Feature Extraction Algorithms}
 	% \label{subsec:FeatureExtractionAlgorithmsEvaluation}
@@ -672,8 +678,12 @@
 		\label{fig:MO_Val_Wrapper_Spectrum}
 	\end{figure}
 	
+	\subsection{Discussion}
+	\label{subsec:Discussion}
 	
-	\subsection{Preliminary Conclusions}
+	
+	\subsection{Preliminary Conclusions}	
+	\label{subsec:Conclusions}
 	
 	\textit{The research is not finished, yet. However some of the conclusions could be taken.}
 	

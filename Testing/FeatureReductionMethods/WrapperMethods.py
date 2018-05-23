@@ -1,5 +1,8 @@
 import numpy as np
 import random
+import math
+
+from matplotlib import pyplot as plt
 
 from FeatureReductionMethods import FilterMethods as FM
 
@@ -7,6 +10,7 @@ from sklearn import svm as SVM
 from sklearn import model_selection as MS
 from sklearn import tree as T
 from sklearn import naive_bayes as NB
+from sklearn import linear_model as LM
 
 def wrapper_methods_classifier():
     return None
@@ -274,6 +278,79 @@ def backward_selection(X, y, features, scoring_method="svm", improvement_thresho
     return selected_X, selected_features
 
 
+def simulated_annealing(X, y, features, scoring_method="svm", T0=8, T1=1, m=10, v=0.5, cv=10, penalty=0.01,
+                        subset_size=None, p_selected=None):
+    """ Performs simulated annealing feature selection for the available features
+
+    :param X: A numpy matrix with the values for the features for every sample
+    :param y: The classes of every sample
+    :param features: The names of the features
+    :param scoring_method: The method to be used to select features for removal
+    :param scoring_threshold: The threshold for the scoring method to be higher fir
+    :param T0: The starting temperature
+    :param T1: The final temperature
+    :param m: The number of wrong classifications per temperature
+    :param v: The fraction to lower the temperature with
+    :param penalty: A penalty term to reduce the number of features
+    :param subset_size: The size of the original random subset
+    :param p_selected: The chance of the random feature being selected to be of the already selected subset
+    :return:
+    """
+
+    # Create numpy arrays
+    y = np.asarray(y)
+    features = np.asarray(features)
+
+    # Compute random selection
+    X_selected, F_selected = random_subset(X, features, subset_size=subset_size)
+    score = compute_score(X_selected, y, scoring_method=scoring_method, cv=cv, penalty=penalty)
+    scores = [score]
+    T = T0
+
+    while T > T1:
+        i = 0
+
+        while i < m:
+            print("T: %f, i: %i, nr. of features: %i, score: %f" % (T, i, F_selected.shape[0], score))
+            scores.append(score)
+
+            # Select new candidate set and compute new score
+            f = random_features(features, F_selected, p_selected)
+            if features[f] in F_selected:
+                loc = np.argwhere(F_selected == features[f])
+                X_candidate = np.delete(X_selected, loc, 1)
+                F_candidate = np.delete(F_selected, loc, 0)
+                delta = compute_score(X_candidate, y, scoring_method=scoring_method, cv=cv, penalty=penalty)
+            else:
+                X_candidate = np.append(X_selected, X[:, f], axis=1)
+                F_candidate = np.append(F_selected, features[f])
+                delta = compute_score(X_candidate, y, scoring_method=scoring_method, cv=cv, penalty=penalty)
+
+            # Find out if candidate set is new set
+            if delta - score > 0:
+                X_selected = X_candidate
+                F_selected = F_candidate
+                score = delta
+            else:
+                i += 1
+                r = random.random()
+                if r < math.exp(10 * (delta - score) / T):
+                    print(math.exp(10 * (delta - score) / T))
+                    X_selected = X_candidate
+                    F_selected = F_candidate
+                    score = delta
+
+        # Update T
+        T *= v
+
+    plt.plot(scores)
+    plt.show()
+
+    return X_selected, F_selected
+
+
+
+
 def order_features(X, y, features, ranking_method=None):
     """ Order the features by means of ranking method
 
@@ -301,7 +378,7 @@ def order_features(X, y, features, ranking_method=None):
     return ordered_X, ordered_features
 
 
-def compute_score(X, y, scoring_method="svm", cv=10):
+def compute_score(X, y, scoring_method="svm", cv=10, penalty=0.00):
     """ Computes the score of X predicting y
 
     :param X: A numpy matrix with the values for the features for every sample
@@ -311,14 +388,70 @@ def compute_score(X, y, scoring_method="svm", cv=10):
     :return: the score of X's ability to predict y
     """
 
+    if X.shape[1] == 0:
+        return 0
+
     if scoring_method == "svm":
         alg = SVM.LinearSVC()
     elif scoring_method == 'dt':
         alg = T.DecisionTreeClassifier()
     elif scoring_method == 'nb':
         alg = NB.GaussianNB()
+    elif scoring_method == 'lr':
+        alg = LM.LogisticRegression()
     else:
         raise ValueError("No such scoring method known")
 
-    return np.mean(MS.cross_val_score(alg, X, y, cv=cv))
+    return np.mean(MS.cross_val_score(alg, X, y, cv=cv)) - X.shape[1] * penalty
 
+
+def random_subset(X, features, subset_size=None):
+    """ Gives a random subset of the features
+
+    :param X: A numpy matrix with the values for the features for every sample
+    :param features: The names of the features
+    :param subset_size: The size of the random subset
+    :return: The random subset of features
+    """
+
+    features = np.asarray(features)
+
+
+    if subset_size is None:
+        subset_size = random.randint(0, features.shape[0])
+
+    indices = random.sample(range(features.shape[0]), subset_size)
+    subset_X = X[:, indices]
+    subset_features = features[indices]
+
+    return subset_X, subset_features
+
+
+def random_features(features, F_selected, p_selected=None):
+    """
+
+    :param features: The names of the features
+    :param F_selected: The names of the selected features
+    :param p_selected: The chance to pick a feature that is not selected, yet
+    :return: the selected features
+    """
+
+    if p_selected is not None and type(p_selected) is not float:
+        raise ValueError("p_selected should be None or a float")
+    elif type(p_selected) is float and not 0 <= p_selected <= 1:
+        raise ValueError("The value of p_selected should be between 0 and 1")
+
+    if p_selected is None:
+        return np.random.randint(features.shape[0], size=1)
+    else:
+        selection = np.random.sample()
+        # If it needs to come from
+        if (selection < p_selected and F_selected.shape[0] > 0) or features.shape[0] == F_selected.shape[0]:
+            feature = F_selected[np.random.randint(F_selected.shape[0], size=1)]
+        else:
+            F_unselected = []
+            for f in features:
+                if f not in F_selected:
+                    F_unselected.append(f)
+            feature = F_unselected[int(np.random.randint(len(F_unselected), size=1))]
+        return np.asarray(np.argwhere(features == feature)[0])

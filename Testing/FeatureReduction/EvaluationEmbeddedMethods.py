@@ -1,16 +1,17 @@
-from FeatureReductionMethods import WrapperMethods as WM
+from FeatureReductionMethods import EmbeddedMethods as EM
 from DataExtraction import DataSetExtraction as DSE
 from sklearn import model_selection as SMS
 from sklearn import linear_model as SLM
 from sklearn import metrics as SME
+from sklearn import preprocessing as PP
 import numpy as np
 import csv
 import time
 
-used_data = ["MicroOrganisms", "Arcene", "RSCTC", "Psoriasis"]
-algorithms = ["forward", "floating", [20, 10], [5, 2]]
-orders = ["Random", "MI"]
-thresholds = [0.01, 0.001]
+used_data = ["MicroOrganisms", "Arcene", "RSCTC", "Psoriasis", ]
+algorithms = ["forward"] # , "backward"]
+orders = ["svm", 'rf']
+thresholds = [50, 100, 150]
 
 test_name = []
 data_name = []
@@ -30,37 +31,32 @@ for name in used_data:
     for test in algorithms:
         for order in orders:
             for threshold in thresholds:
-                print("Currently at test %i of 12, data %s, test %s, ordering %s, and threshold %f" % (index, name, test, order, threshold))
+                print("Currently at test %i of %i, data %s, test %s, ordering %s, and threshold %f" % (index, len(used_data) * len(algorithms) * len(orders) * len(thresholds),name, test, order, threshold))
                 index += 1
-
-                data_name.append(name)
-                threshold_name.append(threshold)
-                test_name.append(test)
-                order_name.append(order)
 
                 # Extract data
                 X, y, features = DSE.import_example_data(name)
+
+                X = PP.normalize(X)
+
+                data_name.append(name)
+                test_name.append(test)
+                order_name.append(order)
 
                 # Split data in training and test data.
                 X_train, X_test, y_train, y_test = SMS.train_test_split(X, y)
 
                 start_time = time.clock()
                 if test == 'forward':
-                    X_new, feat_new, _ = WM.forward_selection(X_train, y_train, features, ranking_method=order,
-                                                           scoring_method='nb', improvement_threshold=threshold, scoring_cv=5)
-                elif test == 'backward':
-                    X_new, feat_new = WM.backward_selection(X_train, y_train, features, ranking_method=order,
-                                                           scoring_method='nb', improvement_threshold=threshold, scoring_cv=5)
-                elif type(test) == list:
-                    X_new, feat_new = WM.sequential_search(X_train, y_train, features, sel_seq='FB', n_sel_seq=test,
-                                                           scoring_method='nb', scoring_cv=5,
-                                                           improvement_threshold=threshold,
-                                                           ranking_method=order, continued_search=True)
 
-                elif test == 'floating':
-                    X_new, feat_new = WM.sequential_search(X_train, y_train, features, sel_seq='FB', n_sel_seq=[1300 - 1, 1300 - 1],
-                                         scoring_method='nb', scoring_cv=5, improvement_threshold=threshold,
-                                         ranking_method=order, continued_search=False)
+                    X_new, feat_new, alt_threshold = EM.embedded_forward_selection(X_train, y_train, features, ML_alg=order,
+                                                                       filter_method="Population", threshold=threshold)
+                elif test == 'backward':
+                    X_new, feat_new, alt_threshold = EM.embedded_backward_elimination(X_train, y_train, features, ML_alg=order,
+                                                                    filter_method="Population", threshold=threshold)
+
+                threshold_name.append(alt_threshold)
+                print("The alternative threshold is %f" % alt_threshold)
 
                 elapsed = time.clock() - start_time
                 T_time.append(elapsed)
@@ -95,16 +91,15 @@ for name in used_data:
                 ml.fit(X_new, y_train)
                 T_test.append(ml.score(X_test_new, y_test))
                 y_pred = ml.predict(X_test_new)
-
                 prec, rec, Fbeta, _ = SME.precision_recall_fscore_support(y_test, y_pred, average='weighted')
 
                 precision.append(prec)
                 recall.append(rec)
                 F1.append(Fbeta)
 
-                print("Validation score is %f, test score is %f, F1 score is %f" % (T_val[-1], T_test[-1], F1[-1]))
+                print("Validation score is %f,  test score is %f, precision is %f, recall is %f, F1 is %f" % (T_val[-1], T_test[-1], precision[-1], recall[-1], F1[-1]))
 
-with open('New_Wrapper_values.csv', 'w', newline='') as csv_file:
+with open('New_Embedded_values.csv', 'w', newline='') as csv_file:
     csv_writer = csv.writer(csv_file)
     csv_writer.writerow(data_name)
     csv_writer.writerow(test_name)

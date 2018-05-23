@@ -46,21 +46,25 @@ def filter_methods_classifier(X, y, features, ranking_method='T-test', filter_me
         n_features = np.count_nonzero(ranks <= threshold)
         X_new = X[:, :n_features]
         features_new = features[:n_features]
+        alt_threshold = ranks[n_features]
     elif filter_method == 'Rank' and ranking_method in ["Mutual information", "MI"]:
         n_features = np.count_nonzero(ranks >= threshold)
         X_new = X[:, :n_features]
         features_new = features[:n_features]
+        alt_threshold = ranks[n_features]
     elif filter_method == 'Population' and 0 < threshold < 1:
         X_new = X[:, :int(threshold * X.shape[1])]
         features_new = features[:int(threshold * X.shape[1])]
+        alt_threshold = features_new.shape[0]
     elif filter_method == 'Population' and type(threshold) == int:
         X_new = X[:, :threshold]
         features_new = features[:threshold]
+        alt_threshold = features_new.shape[0]
     else:
         raise ValueError("No known filter method combination with threshold")
 
     # Return reduced matrix and feature array
-    return X_new, features_new
+    return X_new, features_new, alt_threshold
 
 
 def order_ranks(X, y, features, ranking_method="T-test", ranking_settings='Default'):
@@ -95,8 +99,9 @@ def order_ranks(X, y, features, ranking_method="T-test", ranking_settings='Defau
     # Order them by rank
     ordered_X = np.squeeze(X[:, order])
     ordered_features = np.squeeze(features[order])
+    ordered_ranks = ranks[order]
 
-    return ordered_X, ordered_features, ranks
+    return ordered_X, ordered_features, ordered_ranks
 
 
 def compute_rank_ttest(X, y, test_type="Unequal"):

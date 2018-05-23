@@ -229,6 +229,10 @@ W.~Duch, {\em Filter Methods}, pp.~89--117.
 R.~M. Heiberger and B.~Holland, {\em Statistical analysis and data display}.
 \newblock Springer, 2004.
 
+\bibitem{jones2014scipy}
+E.~Jones, T.~Oliphant, and P.~Peterson, ``$\{$SciPy$\}$: open source scientific
+  tools for $\{$Python$\}$,'' 2014.
+
 \bibitem{peng2005feature}
 H.~Peng, F.~Long, and C.~Ding, ``Feature selection based on mutual information
   criteria of max-dependency, max-relevance, and min-redundancy,'' {\em IEEE
@@ -361,10 +365,6 @@ F.~Pedregosa, G.~Varoquaux, A.~Gramfort, V.~Michel, B.~Thirion, O.~Grisel,
   M.~Blondel, P.~Prettenhofer, R.~Weiss, V.~Dubourg, {\em et~al.},
   ``Scikit-learn: Machine learning in python,'' {\em Journal of Machine
   Learning Research}, vol.~12, no.~Oct, pp.~2825--2830, 2011.
-
-\bibitem{jones2014scipy}
-E.~Jones, T.~Oliphant, and P.~Peterson, ``$\{$SciPy$\}$: open source scientific
-  tools for $\{$Python$\}$,'' 2014.
 
 \bibitem{walt2011numpy}
 S.~v.~d. Walt, S.~C. Colbert, and G.~Varoquaux, ``The numpy array: a structure
