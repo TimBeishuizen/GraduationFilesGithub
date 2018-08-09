@@ -5,6 +5,7 @@ import sklearn.neighbors as SN
 import sklearn.svm as SVM
 import sklearn.tree as ST
 import sklearn.naive_bayes as NB
+from sklearn import metrics as SME
 
 from FeatureReductionMethods import FilterMethods as FM
 
@@ -24,33 +25,47 @@ def test_filter_methods_classifier(X, y, features, filter_values, ranking_method
     """
 
     # Testing regular score without classifiers
-    print("Testing without feature selection...")
-    val_reg, test_reg = test_method(X, y, ML_algorithm=ML_algorithm)
-    print("Validation score: %f, Test score: %f" % (float(val_reg), test_reg))
+    # print("Testing without feature selection...")
+    # val_reg, test_reg, prec, rec, Fbeta = test_method(X, y, ML_algorithm=ML_algorithm)
+    # print("Validation score: %f, Test score: %f" % (float(val_reg), test_reg))
 
     # Initializing values for number of features and the validation and test score
-    val_score = [val_reg]
-    test_score = [test_reg]
-    feat = [X.shape[1]]
+    # val_score = [val_reg]
+    # test_score = [test_reg]
+    # prec_score = [prec]
+    # rec_score = [rec]
+    # Fbeta_score = [Fbeta]
+    # feat = [X.shape[1]]
+
+    val_score = []
+    test_score = []
+    prec_score = []
+    rec_score = []
+    Fbeta_score = []
+    feat = []
+
 
     # Testing after feature selection
     for value in filter_values:
         print("Filtering with ranking method %s and filter method %s on value %f" % (ranking_method, filter_method, value))
 
         # Feature selection
-        X_new, features_new = FM.filter_methods_classifier(X, y, features, ranking_method=ranking_method,
+        X_new, features_new, _ = FM.filter_methods_classifier(X, y, features, ranking_method=ranking_method,
                                                            filter_method=filter_method,
                                                            threshold=value)
 
         # Testing after feature selection
-        new_val, new_test = test_method(X_new, y, ML_algorithm=ML_algorithm)
+        new_val, new_test, prec, rec, Fbeta = test_method(X_new, y, ML_algorithm=ML_algorithm)
         val_score.append(new_val)
         test_score.append(new_test)
+        prec_score.append(prec)
+        rec_score.append(rec)
+        Fbeta_score.append(Fbeta)
         feat.append(X_new.shape[1])
         print("Features left: %i, Validation score: %f, Test score: %f" % (X_new.shape[1], float(new_val), new_test))
 
     # Return the number of features and the validation and test score
-    return val_score, test_score, feat
+    return val_score, test_score, feat, prec_score, rec_score, Fbeta_score
 
 
 
@@ -99,4 +114,7 @@ def test_method(X, y, ML_algorithm = 'svm'):
     ml.fit(X_train, y_train)
     test_score = ml.score(X_test, y_test)
 
-    return val_score, test_score
+    y_pred = ml.predict(X_test)
+    prec, rec, Fbeta, _ = SME.precision_recall_fscore_support(y_test, y_pred, average='weighted')
+
+    return val_score, test_score, prec, rec, Fbeta

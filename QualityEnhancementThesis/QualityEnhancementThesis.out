@@ -1,0 +1,15 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Background}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Datasets}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Missing Values}{section.2}% 4
+\BOOKMARK [3][-]{subsubsection.2.2.1}{List Deletion}{subsection.2.2}% 5
+\BOOKMARK [3][-]{subsubsection.2.2.2}{Single Imputation}{subsection.2.2}% 6
+\BOOKMARK [3][-]{subsubsection.2.2.3}{Multiple Imputation}{subsection.2.2}% 7
+\BOOKMARK [1][-]{section.3}{Methods}{}% 8
+\BOOKMARK [2][-]{subsection.3.1}{Bias Evaluation}{section.3}% 9
+\BOOKMARK [2][-]{subsection.3.2}{Quality Evaluation}{section.3}% 10
+\BOOKMARK [1][-]{section.4}{Results}{}% 11
+\BOOKMARK [2][-]{subsection.4.1}{Bias Evaluation Results}{section.4}% 12
+\BOOKMARK [1][-]{section.5}{Conclusions}{}% 13
+\BOOKMARK [1][-]{section.6}{Discussion}{}% 14
+\BOOKMARK [1][-]{appendix.A}{Feature Distribution Tables}{}% 15

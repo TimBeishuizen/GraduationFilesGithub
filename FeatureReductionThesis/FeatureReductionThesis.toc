@@ -5,15 +5,15 @@
 \contentsline {subsection}{\numberline {2.2}Feature Selection}{3}{subsection.2.2}
 \contentsline {subsubsection}{\numberline {2.2.1}Filter Methods}{4}{subsubsection.2.2.1}
 \contentsline {subsubsection}{\numberline {2.2.2}Wrapper Methods}{6}{subsubsection.2.2.2}
-\contentsline {subsubsection}{\numberline {2.2.3}Embedded Methods}{9}{subsubsection.2.2.3}
-\contentsline {subsection}{\numberline {2.3}Feature Selection Frameworks}{12}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.2.3}Embedded Methods}{10}{subsubsection.2.2.3}
 \contentsline {section}{\numberline {3}Methods}{12}{section.3}
-\contentsline {subsection}{\numberline {3.1}Dimensionality Reduction Quality}{12}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Feature Selection Exploration}{12}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Feature Selection Algorithms Evaluation}{12}{subsection.3.3}
-\contentsline {section}{\numberline {4}Results}{12}{section.4}
+\contentsline {subsection}{\numberline {3.1}Feature Selection Quality}{12}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Feature Selection Exploration}{13}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Feature Selection Algorithms Evaluation}{13}{subsection.3.3}
+\contentsline {section}{\numberline {4}Results}{14}{section.4}
 \contentsline {subsection}{\numberline {4.1}Feature Selection Exploration Results}{14}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Preliminary Feature Selection Algorithms Evaluation Results}{16}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Discussion}{18}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Preliminary Conclusions}{18}{subsection.4.4}
-\contentsline {section}{\numberline {A}Feature Selection Exploration Plots}{23}{appendix.A}
+\contentsline {subsection}{\numberline {4.2}Feature Selection Algorithms Evaluation Results}{17}{subsection.4.2}
+\contentsline {section}{\numberline {5}Discussion}{24}{section.5}
+\contentsline {section}{\numberline {6}Conclusions}{24}{section.6}
+\contentsline {section}{\numberline {A}Feature Selection Exploration Plots}{29}{appendix.A}
+\contentsline {section}{\numberline {B}Feature Selection Exploration Precision And Recall}{33}{appendix.B}

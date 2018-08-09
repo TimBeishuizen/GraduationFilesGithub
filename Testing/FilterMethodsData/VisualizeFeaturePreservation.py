@@ -9,6 +9,9 @@ data_type = ['feat', 'test', 'val']
 feat_complete = []
 test_complete = []
 val_complete = []
+F1_complete = []
+rec_complete = []
+prec_complete = []
 legend_complete = []
 
 for used_data in data_names:
@@ -19,6 +22,9 @@ for used_data in data_names:
         feat = []
         test = []
         val = []
+        prec = []
+        rec = []
+        F1 = []
 
         legend_complete.append(used_data + ' ' + used_test)
 
@@ -37,6 +43,21 @@ for used_data in data_names:
             for row in csv_reader:
                 feat.append(row)
 
+        with open(used_data + '_' + used_test + '_prec_values.csv', 'r', newline='') as csv_file:
+            csv_reader = csv.reader(csv_file)
+            for row in csv_reader:
+                prec.append(row)
+
+        with open(used_data + '_' + used_test + '_rec_values.csv', 'r', newline='') as csv_file:
+            csv_reader = csv.reader(csv_file)
+            for row in csv_reader:
+                rec.append(row)
+
+        with open(used_data + '_' + used_test + '_F1_values.csv', 'r', newline='') as csv_file:
+            csv_reader = csv.reader(csv_file)
+            for row in csv_reader:
+                F1.append(row)
+
         if used_data != 'MO':
             feat_complete.append(np.array(feat, dtype=int)[:, 1:])
             test_complete.append(np.array(test, dtype=float)[:, 1:])
@@ -46,9 +67,18 @@ for used_data in data_names:
             test_complete.append(np.array(test, dtype=float)[:, 1:-1])
             val_complete.append(np.array(val, dtype=float)[:, 1:-1])
 
+        prec_complete.append(np.array(prec, dtype=float)[:, -11:])
+        rec_complete.append(np.array(rec, dtype=float)[:, -11:])
+        F1_complete.append(np.array(F1, dtype=float)[:, -11:])
+
 feat_complete = np.asarray(feat_complete)
 test_complete = np.asarray(test_complete)
 val_complete = np.asarray(val_complete)
+prec_complete = np.asarray(prec_complete)
+rec_complete = np.asarray(rec_complete)
+F1_complete = np.asarray(F1_complete)
+
+print(prec_complete.shape)
 
 feat_viz = []
 test_viz = []
@@ -61,32 +91,32 @@ line_arg = ['-g', '--g', '-b', '--b', '-y', '--y', '-r', '--r', '-c', '--c']
 #     test_viz.append(np.mean(test_complete[:, i, :], axis=0))
 #     val_viz.append(np.mean(val_complete[:, i, :], axis=0))
 #     PLT.plot(feat_viz[i], val_viz[i], line_arg[2 * i])
-# legend_final = ['Logistic Regression', 'Decision Tree', 'Nearest Neighbours', 'SVM', 'Naïve Bayes']
+# legend_final = ['Logistic Regression', 'Decision Tree', 'Nearest Neighbours', 'SVM', 'Naive Bayes']
 
 
-# for i in range(feat_complete.shape[0]):
-#     feat_viz.append(np.mean(feat_complete[i, :, :], axis=0))
-#     test_viz.append(np.mean(test_complete[i, :, :], axis=0))
-#     val_viz.append(np.mean(val_complete[i, :, :], axis=0))
-#     PLT.plot(feat_viz[i], val_viz[i], line_arg[i])
-# legend_final = legend_complete
+for i in range(feat_complete.shape[0]):
+    feat_viz.append(np.mean(feat_complete[i, :, :], axis=0))
+    test_viz.append(np.mean(test_complete[i, :, :], axis=0))
+    val_viz.append(np.mean(rec_complete[i, :, :], axis=0))
+    PLT.plot(feat_viz[i], val_viz[i], line_arg[i])
+legend_final = legend_complete
 
 
-feat_viz = np.mean(feat_complete[:, :, :], axis=tuple([0, 1])).tolist()
-test_viz = np.mean(test_complete[:, :, :], axis=tuple([0, 1])).tolist()
-val_viz = np.mean(val_complete[:, :, :], axis=tuple([0, 1])).tolist()
+# feat_viz = np.mean(feat_complete[:, :, :], axis=tuple([0, 1])).tolist()
+# test_viz = np.mean(test_complete[:, :, :], axis=tuple([0, 1])).tolist()
+# val_viz = np.mean(val_complete[:, :, :], axis=tuple([0, 1])).tolist()
+#
+# print(test_viz)
+#
+# PLT.plot(feat_viz, val_viz, 'r')
+# PLT.plot(feat_viz, test_viz, 'b')
+# legend_final = ['Validation score', 'Test score']
 
-print(test_viz)
-
-PLT.plot(feat_viz, val_viz, 'r')
-PLT.plot(feat_viz, test_viz, 'b')
-legend_final = ['Validation score', 'Test score']
-
-print(feat_viz)
+# print(feat_viz)
 PLT.legend(legend_final)
 PLT.xlabel('Number of features preserved')
-PLT.ylabel('Scores for validation')
-PLT.title('The validation score by number of features preserved')
+PLT.ylabel('Scores for recall')
+PLT.title('The recall score by number of features preserved')
 
 PLT.show()
 

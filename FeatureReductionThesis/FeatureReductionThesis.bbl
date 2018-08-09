@@ -244,6 +244,12 @@ R.~Battiti, ``Using mutual information for selecting features in supervised
   neural net learning,'' {\em IEEE Transactions on neural networks}, vol.~5,
   no.~4, pp.~537--550, 1994.
 
+\bibitem{pedregosa2011scikit}
+F.~Pedregosa, G.~Varoquaux, A.~Gramfort, V.~Michel, B.~Thirion, O.~Grisel,
+  M.~Blondel, P.~Prettenhofer, R.~Weiss, V.~Dubourg, {\em et~al.},
+  ``Scikit-learn: Machine learning in python,'' {\em Journal of Machine
+  Learning Research}, vol.~12, no.~Oct, pp.~2825--2830, 2011.
+
 \bibitem{yu2003feature}
 L.~Yu and H.~Liu, ``Feature selection for high-dimensional data: A fast
   correlation-based filter solution,'' in {\em Proceedings of the 20th
@@ -286,6 +292,10 @@ Y.-J. Huang, D.-Y. Chan, D.-C. Cheng, Y.-J. Ho, P.-P. Tsai, W.-C. Shen, and
   R.-F. Chen, ``Automated feature set selection and its application to mcc
   identification in digital mammograms for breast cancer detection,'' {\em
   Sensors}, vol.~13, no.~4, pp.~4855--4875, 2013.
+
+\bibitem{zhang2004optimality}
+H.~Zhang, ``The optimality of naive bayes,'' {\em AA}, vol.~1, no.~2, p.~3,
+  2004.
 
 \bibitem{SENAWI201747}
 A.~Senawi, H.-L. Wei, and S.~A. Billings, ``A new maximum relevance-minimum
@@ -359,12 +369,6 @@ B.~Wu, T.~Abbott, D.~Fishman, W.~McMurray, G.~Mor, K.~Stone, D.~Ward,
 \bibitem{liaw2002classification}
 A.~Liaw, M.~Wiener, {\em et~al.}, ``Classification and regression by
   randomforest,'' {\em R news}, vol.~2, no.~3, pp.~18--22, 2002.
-
-\bibitem{pedregosa2011scikit}
-F.~Pedregosa, G.~Varoquaux, A.~Gramfort, V.~Michel, B.~Thirion, O.~Grisel,
-  M.~Blondel, P.~Prettenhofer, R.~Weiss, V.~Dubourg, {\em et~al.},
-  ``Scikit-learn: Machine learning in python,'' {\em Journal of Machine
-  Learning Research}, vol.~12, no.~Oct, pp.~2825--2830, 2011.
 
 \bibitem{walt2011numpy}
 S.~v.~d. Walt, S.~C. Colbert, and G.~Varoquaux, ``The numpy array: a structure

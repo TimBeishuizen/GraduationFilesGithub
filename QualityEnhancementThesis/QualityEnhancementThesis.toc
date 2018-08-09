@@ -1,0 +1,16 @@
+\select@language {english}
+\contentsline {section}{\numberline {1}Introduction}{2}{section.1}
+\contentsline {section}{\numberline {2}Background}{2}{section.2}
+\contentsline {subsection}{\numberline {2.1}Datasets}{2}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Missing Values}{3}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}List Deletion}{5}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}Single Imputation}{6}{subsubsection.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.3}Multiple Imputation}{10}{subsubsection.2.2.3}
+\contentsline {section}{\numberline {3}Methods}{11}{section.3}
+\contentsline {subsection}{\numberline {3.1}Bias Evaluation}{11}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Quality Evaluation}{12}{subsection.3.2}
+\contentsline {section}{\numberline {4}Results}{12}{section.4}
+\contentsline {subsection}{\numberline {4.1}Bias Evaluation Results}{12}{subsection.4.1}
+\contentsline {section}{\numberline {5}Conclusions}{17}{section.5}
+\contentsline {section}{\numberline {6}Discussion}{17}{section.6}
+\contentsline {section}{\numberline {A}Feature Distribution Tables}{20}{appendix.A}

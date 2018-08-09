@@ -11,33 +11,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="EvaluationEmbeddedMethods.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FeatureReduction/EvaluationEmbeddedMethods.py">
+      <file leaf-file-name="PipelineSelection.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Testing_TPOT/PipelineSelection.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1207">
-              <caret line="92" column="47" lean-forward="false" selection-start-line="92" selection-start-column="47" selection-end-line="97" selection-end-column="32" />
-              <folding>
-                <element signature="e#0#57#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="New_Embedded_values.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FeatureReductionData/New_Embedded_values.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="765">
+              <caret line="60" column="59" lean-forward="true" selection-start-line="60" selection-start-column="59" selection-end-line="60" selection-end-column="59" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Plotly Visualization.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/FeatureReductionData/Plotly Visualization.py">
+      <file leaf-file-name="TPOT_test.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Testing_TPOT/TPOT_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="69" column="50" lean-forward="false" selection-start-line="69" selection-start-column="50" selection-end-line="69" selection-end-column="50" />
+            <state relative-caret-position="102">
+              <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TPOT_MicroOrganisms_FS_selection_FS_algorithms_pipeline.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Pipelines/TPOT_MicroOrganisms_FS_selection_FS_algorithms_pipeline.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -45,43 +43,47 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EvaluationFilterMethods.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FeatureReduction/EvaluationFilterMethods.py">
+      <file leaf-file-name="TPOT_MicroOrganisms_FS_selection_regular_algorithms_pipeline.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Pipelines/TPOT_MicroOrganisms_FS_selection_regular_algorithms_pipeline.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="17" column="14" lean-forward="false" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <element signature="e#0#55#0" expanded="true" />
+                <element signature="e#0#18#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EvaluationWrapperMethods.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FeatureReduction/EvaluationWrapperMethods.py">
+      <file leaf-file-name="PlotDistributionResults.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MissingValueHandling/PlotDistributionResults.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="24" column="7" lean-forward="false" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="New_Wrapper_values.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FeatureReductionData/New_Wrapper_values.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="445">
+              <caret line="94" column="10" lean-forward="true" selection-start-line="94" selection-start-column="10" selection-end-line="94" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="base.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../tpot/tpot/base.py">
+        <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/tpot/base.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="308">
+              <caret line="1594" column="7" lean-forward="true" selection-start-line="1594" selection-start-column="7" selection-end-line="1594" selection-end-column="7" />
+              <folding>
+                <element signature="e#17035#18962#0" expanded="false" />
+                <element signature="e#19014#20523#0" expanded="false" />
+                <element signature="e#20579#21316#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gp_deap.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/tpot/gp_deap.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="156">
+              <caret line="433" column="30" lean-forward="false" selection-start-line="433" selection-start-column="30" selection-end-line="433" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -98,21 +100,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>stand_values</find>
-      <find>values</find>
-      <find>process</find>
-      <find>sign_group_1</find>
-      <find>sign_group_2</find>
-      <find>svm</find>
-      <find>continue</find>
-      <find>continue_s</find>
-      <find>continue_sear</find>
-      <find>data</find>
-      <find>algorithm</find>
-      <find>float</find>
-      <find>plotly</find>
-      <find>wrapper_values</find>
+      <find>selectKbest</find>
+      <find>selectK</find>
+      <find>SelectKBest</find>
+      <find>Selectk</find>
+      <find>_get</find>
+      <find>check_array</find>
+      <find>default_con</find>
+      <find>classification</find>
+      <find>baseEs</find>
+      <find>GaussianNB</find>
+      <find>fs_config</find>
+      <find>estimator</find>
+      <find>[8:-2</find>
+      <find>Selector</find>
+      <find>copy</find>
+      <find>cross_val_score</find>
+      <find>None</find>
+      <find>evaluate</find>
+      <find>ARG0</find>
+      <find>Input_Array</find>
+      <find>square</find>
+      <find>unique_individuals</find>
+      <find>START ADDITIONAL FS code</find>
       <find>print</find>
+      <find>0.931034</find>
+      <find>0.5647</find>
+      <find>generate</find>
+      <find>wrapp</find>
+      <find>print(&quot;pr</find>
+      <find>0.440666</find>
     </findStrings>
     <replaceStrings>
       <replace>gene_values</replace>
@@ -123,62 +140,66 @@
       <replace>name</replace>
       <replace>test</replace>
       <replace>values</replace>
+      <replace>min_steps</replace>
+      <replace>score_func</replace>
+      <replace>selection_type</replace>
+      <replace>algorithm_type</replace>
     </replaceStrings>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/StatisticalAnalysisTesting/BasicClassification.py" />
-        <option value="$PROJECT_DIR$/StatisticalAnalysisMethods/RelationTesting.py" />
-        <option value="$PROJECT_DIR$/StatisticalAnalysisTesting/AtopicDermatitisTesting.py" />
-        <option value="$PROJECT_DIR$/VisualisationMethods/ExpressionDifferencePlotting.py" />
-        <option value="$PROJECT_DIR$/StatisticalAnalysisTesting/InitialTesting.py" />
-        <option value="$PROJECT_DIR$/StatisticalAnalysisTesting/MultipleSetsClustering.py" />
-        <option value="$PROJECT_DIR$/StatisticalAnalysisTesting/ProcessClustering.py" />
-        <option value="$PROJECT_DIR$/FeatureReduction/EvolutionarySelection.py" />
-        <option value="$PROJECT_DIR$/FeatureReduction/MutualInformation.py" />
-        <option value="$PROJECT_DIR$/FeatureReduction/SVM.py" />
-        <option value="$PROJECT_DIR$/FeatureReduction/RidgeRegression.py" />
-        <option value="$PROJECT_DIR$/FeatureReduction/bla.py" />
-        <option value="$PROJECT_DIR$/FeatureReduction/ImportCovariance.py" />
-        <option value="$PROJECT_DIR$/FeatureReduction/FindCorrelationGroupings.py" />
-        <option value="$PROJECT_DIR$/FeatureReduction/CovarianceComputation.py" />
-        <option value="$PROJECT_DIR$/ImportDataSets/ImportMassSpectometry.py" />
-        <option value="$PROJECT_DIR$/DataSets/MassSpectometrySet/ImportMassSpectometry.py" />
-        <option value="$PROJECT_DIR$/DataSets/ImportCancerMicroArraySet.py" />
-        <option value="$PROJECT_DIR$/DataExtraction/SkinDataExtraction.py" />
-        <option value="$PROJECT_DIR$/DataSets/BioMassSpectometrySet/ImportBioMassSpectometry.py" />
-        <option value="$PROJECT_DIR$/DataSets/CancerMicroArraySet/ImportCancerMicroArraySet.py" />
-        <option value="$PROJECT_DIR$/DataExtraction/DataSetExtraction.py" />
-        <option value="$PROJECT_DIR$/FeatureReduction/FeatureSelectionTesting.py" />
-        <option value="$PROJECT_DIR$/FeatureReduction/FilterMethods.py" />
-        <option value="$PROJECT_DIR$/FeatureReduction/FilterMethodsTests.py" />
-        <option value="$PROJECT_DIR$/FeatureReductionMethods.py" />
-        <option value="$PROJECT_DIR$/FeatureReductionMethods/SequentialMethods.py" />
-        <option value="$PROJECT_DIR$/FeatureReductionMethods/FilterMethodsTests.py" />
-        <option value="$PROJECT_DIR$/FeatureReduction/Tryoutfile2.py" />
-        <option value="$PROJECT_DIR$/FeatureReduction/TestingFilterMethods.py" />
-        <option value="$PROJECT_DIR$/FeatureReduction/PlotFilterMethods.py" />
-        <option value="$PROJECT_DIR$/FilterMethodsData/VisualizeFeaturePreservation.py" />
-        <option value="$PROJECT_DIR$/FilterMethodsData/PlotFilterMethods.py" />
-        <option value="$PROJECT_DIR$/FeatureReduction/VisualizeFeatureReductionEvaluation.py" />
-        <option value="$PROJECT_DIR$/FeatureReduction/EvaluationFeatureSelectionMethods.py" />
-        <option value="$PROJECT_DIR$/FeatureReduction/EvaluationPTAMethod.py" />
-        <option value="$PROJECT_DIR$/FeatureReduction/EvaluationFloatingMethod.py" />
-        <option value="$PROJECT_DIR$/FeatureReductionData/Floating_values.csv" />
-        <option value="$PROJECT_DIR$/FeatureReduction/SendingFinishMail.py" />
-        <option value="$PROJECT_DIR$/MailSenderMethod/SendingFinishMail.py" />
-        <option value="$PROJECT_DIR$/FeatureReductionMethods/WrapperMethods.py" />
-        <option value="$PROJECT_DIR$/FeatureReduction/TryoutFile.py" />
-        <option value="$PROJECT_DIR$/FeatureReductionData/VisualizeFeatureReductionEvaluation.py" />
-        <option value="$PROJECT_DIR$/FeatureReductionMethods/EmbeddedMethods.py" />
-        <option value="$PROJECT_DIR$/FeatureReductionMethods/FilterMethods.py" />
-        <option value="$PROJECT_DIR$/FeatureReductionData/Embedded_values.csv" />
-        <option value="$PROJECT_DIR$/FeatureReduction/EvaluationEmbeddedMethods.py" />
-        <option value="$PROJECT_DIR$/FeatureReduction/EvaluationFilterMethods.py" />
-        <option value="$PROJECT_DIR$/FeatureReduction/EvaluationWrapperMethods.py" />
-        <option value="$PROJECT_DIR$/FeatureReductionData/New_Embedded_values.csv" />
         <option value="$PROJECT_DIR$/FeatureReductionData/Plotly Visualization.py" />
+        <option value="$PROJECT_DIR$/FeatureReductionData/PlotlyVisScatter.py" />
+        <option value="$PROJECT_DIR$/FeatureReductionData/PlotlyVisBar.py" />
+        <option value="$PROJECT_DIR$/FilterMethodsData/PlotFilterMethods.py" />
+        <option value="$PROJECT_DIR$/FeatureReductionMethods/FilterMethodsTests.py" />
+        <option value="$PROJECT_DIR$/FeatureReduction/TestingFilterMethods.py" />
+        <option value="$PROJECT_DIR$/FilterMethodsData/VisualizeFeaturePreservation.py" />
+        <option value="$PROJECT_DIR$/Testing TPOT/TPOT_test.py" />
+        <option value="$PROJECT_DIR$/Testing_TPOT/MainPipelineFinder.py" />
+        <option value="$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/deap/tools/emo.py" />
+        <option value="$PROJECT_DIR$/../../tpot/tpot/base.py" />
+        <option value="$PROJECT_DIR$/Testing_TPOT/TPOTFeatureReduction.py" />
+        <option value="$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/tpot/tpot_fs.py" />
+        <option value="$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/tpot/setup_fs.py" />
+        <option value="$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/tpot/feature_selection/setup_fs.py" />
+        <option value="$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/tpot/gp_types.py" />
+        <option value="$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/tpot/config/setup_fs.py" />
+        <option value="$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/deap/gp.py" />
+        <option value="$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/sklearn/model_selection/_validation.py" />
+        <option value="$PROJECT_DIR$/Pipelines/__init__.py" />
+        <option value="$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/tpot/builtins/select_from_model.py" />
+        <option value="$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/tpot/builtins/Tryout.py" />
+        <option value="$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/tpot/tpot.py" />
+        <option value="$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/tpot/__init__.py" />
+        <option value="$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/tpot/config/classifier.py" />
+        <option value="$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/tpot/config/feature_selection.py" />
+        <option value="$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/tpot/builtins/wrapper_methods.py" />
+        <option value="$PROJECT_DIR$/Pipelines/TPOT_GSE13355_pipeline.py" />
+        <option value="$PROJECT_DIR$/MissingValueHandlingMethods.py" />
+        <option value="$PROJECT_DIR$/StatisticalAnalysisMethods/ForwardBackWardSelection.py" />
+        <option value="$PROJECT_DIR$/MissingValueHandling/Tryout.py" />
+        <option value="$PROJECT_DIR$/MissingValueHandlingMethods/ListDeletionMethods.py" />
+        <option value="$PROJECT_DIR$/DataExtraction/DataSetExtraction.py" />
+        <option value="$PROJECT_DIR$/MissingValueHandlingMethods/MultipleImputationMethods.py" />
+        <option value="$PROJECT_DIR$/DataSets/EchoDataSet/ImportEchoData.py" />
+        <option value="$PROJECT_DIR$/DataSets/HepatitisSet/ImportHepatitis.py" />
+        <option value="$PROJECT_DIR$/DataSets/CirrhosisSet/CirrhosisDataset.csv" />
+        <option value="$PROJECT_DIR$/DataSets/CirrhosisSet/ImportCirrhosis.py" />
+        <option value="$PROJECT_DIR$/MissingValueHandlingMethods/SingleImputationMethods.py" />
+        <option value="$PROJECT_DIR$/DataSets/CervicalCancerSet/ImportCervicalCancerSet.py" />
+        <option value="$PROJECT_DIR$/StatisticalAnalysisMethods/FeatureDistributionMethods.py" />
+        <option value="$PROJECT_DIR$/MissingValueHandling/Cirrhosis_p_val.csv" />
+        <option value="$PROJECT_DIR$/MissingValueHandling/FeatureDistributionTesting.py" />
+        <option value="$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/tpot/gp_deap.py" />
+        <option value="$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/tpot/builtins/order_methods.py" />
+        <option value="$PROJECT_DIR$/Testing_TPOT/PipelineSelection.py" />
+        <option value="$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/tpot/config/classifier_high_fs.py" />
+        <option value="$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/tpot/export_utils.py" />
+        <option value="$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/tpot/base.py" />
+        <option value="$PROJECT_DIR$/MissingValueHandling/PlotDistributionResults.py" />
+        <option value="$PROJECT_DIR$/Testing_TPOT/TPOT_test.py" />
       </list>
     </option>
   </component>
@@ -201,7 +222,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -212,27 +232,48 @@
             <path>
               <item name="Testing" type="b2602c69:ProjectViewProjectNode" />
               <item name="Testing" type="462c0819:PsiDirectoryNode" />
-              <item name="FeatureReduction" type="462c0819:PsiDirectoryNode" />
+              <item name="DataExtraction" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Testing" type="b2602c69:ProjectViewProjectNode" />
               <item name="Testing" type="462c0819:PsiDirectoryNode" />
-              <item name="FeatureReductionData" type="462c0819:PsiDirectoryNode" />
+              <item name="DataSets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Testing" type="b2602c69:ProjectViewProjectNode" />
               <item name="Testing" type="462c0819:PsiDirectoryNode" />
               <item name="FeatureReductionMethods" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Testing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Testing" type="462c0819:PsiDirectoryNode" />
+              <item name="MissingValueHandling" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Testing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Testing" type="462c0819:PsiDirectoryNode" />
+              <item name="MissingValueHandlingMethods" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Testing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Testing" type="462c0819:PsiDirectoryNode" />
+              <item name="Pipelines" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Testing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Testing" type="462c0819:PsiDirectoryNode" />
+              <item name="Testing_TPOT" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../tpot/tpot/base.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Data Mining Seminar/SkinDiseaseTPOT/PipelineFinder/PipelineSelection.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -245,11 +286,15 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\s119104\Documents\GitHub\GraduationFilesGithub\Testing" />
+      <recent name="C:\Users\s119104\Documents\GitHub\GraduationFilesGithub\Testing\FilterMethodsData" />
       <recent name="C:\Users\s119104\Documents\GitHub\GraduationFilesGithub\Testing\FeatureReductionData" />
       <recent name="C:\Users\s119104\Documents\GitHub\GraduationFilesGithub\Testing\MailSenderMethod" />
-      <recent name="C:\Users\s119104\Documents\GitHub\GraduationFilesGithub\Testing\FilterMethodsData" />
       <recent name="C:\Users\s119104\Documents\GitHub\GraduationFilesGithub\Testing\FeatureReductionMethods" />
-      <recent name="C:\Users\s119104\Documents\GitHub\GraduationFilesGithub\Testing\DataSets\CancerMicroArraySet" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\s119104\AppData\Local\Continuum\anaconda3\Lib\site-packages\tpot" />
+      <recent name="C:\Users\s119104\Documents\GitHub\GraduationFilesGithub\Testing\Testing TPOT" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -264,106 +309,106 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Plotly Visualization">
-    <configuration name="EvaluationEmbeddedMethods" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.TPOT_test">
+    <configuration name="FeatureDistributionTesting" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/FeatureReduction" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MissingValueHandling" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Testing" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FeatureReduction/EvaluationEmbeddedMethods.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MissingValueHandling/FeatureDistributionTesting.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="EvaluationFilterMethods" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="ImportCervicalCancerSet" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/FeatureReduction" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DataSets/CervicalCancerSet" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Testing" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FeatureReduction/EvaluationFilterMethods.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataSets/CervicalCancerSet/ImportCervicalCancerSet.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="EvaluationWrapperMethods" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="ImportCirrhosis" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/FeatureReduction" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DataSets/CirrhosisSet" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Testing" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FeatureReduction/EvaluationWrapperMethods.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataSets/CirrhosisSet/ImportCirrhosis.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="Plotly Visualization" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="PlotDistributionResults" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/FeatureReductionData" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MissingValueHandling" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Testing" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FeatureReductionData/Plotly Visualization.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MissingValueHandling/PlotDistributionResults.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="VisualizeFeatureReductionEvaluation" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="TPOT_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/FeatureReductionData" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Testing_TPOT" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Testing" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FeatureReductionData/VisualizeFeatureReductionEvaluation.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Testing_TPOT/TPOT_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.VisualizeFeatureReductionEvaluation" />
-      <item index="1" class="java.lang.String" itemvalue="Python.EvaluationWrapperMethods" />
-      <item index="2" class="java.lang.String" itemvalue="Python.EvaluationEmbeddedMethods" />
-      <item index="3" class="java.lang.String" itemvalue="Python.Plotly Visualization" />
-      <item index="4" class="java.lang.String" itemvalue="Python.EvaluationFilterMethods" />
+      <item index="0" class="java.lang.String" itemvalue="Python.ImportCirrhosis" />
+      <item index="1" class="java.lang.String" itemvalue="Python.ImportCervicalCancerSet" />
+      <item index="2" class="java.lang.String" itemvalue="Python.FeatureDistributionTesting" />
+      <item index="3" class="java.lang.String" itemvalue="Python.PlotDistributionResults" />
+      <item index="4" class="java.lang.String" itemvalue="Python.TPOT_test" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.Plotly Visualization" />
-        <item index="1" class="java.lang.String" itemvalue="Python.EvaluationWrapperMethods" />
-        <item index="2" class="java.lang.String" itemvalue="Python.EvaluationFilterMethods" />
-        <item index="3" class="java.lang.String" itemvalue="Python.EvaluationEmbeddedMethods" />
-        <item index="4" class="java.lang.String" itemvalue="Python.VisualizeFeatureReductionEvaluation" />
+        <item index="0" class="java.lang.String" itemvalue="Python.TPOT_test" />
+        <item index="1" class="java.lang.String" itemvalue="Python.PlotDistributionResults" />
+        <item index="2" class="java.lang.String" itemvalue="Python.FeatureDistributionTesting" />
+        <item index="3" class="java.lang.String" itemvalue="Python.ImportCervicalCancerSet" />
+        <item index="4" class="java.lang.String" itemvalue="Python.ImportCirrhosis" />
       </list>
     </recent_temporary>
   </component>
@@ -390,17 +435,18 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13166311" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2585288" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44230768" sideWeight="0.510661" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43066406" sideWeight="0.51555556" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3375" sideWeight="0.48933902" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4278846" sideWeight="0.48444444" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910156" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39903846" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3984375" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -415,19 +461,19 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44230768" sideWeight="0.510661" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43066406" sideWeight="0.51555556" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3375" sideWeight="0.48933902" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43066406" sideWeight="0.48444444" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910156" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13166311" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17222223" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298077" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39903846" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3984375" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -441,207 +487,87 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="20" />
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/tpot/builtins/__init__.py</url>
+          <line>25</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="30" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/DataSets/RSCTCMicroArraySet/ImportCancerMicroArraySet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="24" lean-forward="true" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FeatureReductionMethods.py" />
-    <entry file="file://$PROJECT_DIR$/DataSets/ArceneMassSpectometrySet/ImportArceneMassSpectometry.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="27" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FeatureReduction/candidate_X.csv" />
-    <entry file="file://$PROJECT_DIR$/DataExtraction/DataSetExtraction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="37" column="30" lean-forward="true" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FeatureReduction/MO_MI_test_values.csv" />
-    <entry file="file://$PROJECT_DIR$/FeatureReduction/MO_MI_val_values.csv" />
-    <entry file="file://$PROJECT_DIR$/FeatureReduction/MO_MI_feat_values.csv" />
-    <entry file="file://$PROJECT_DIR$/FeatureReduction/Tryoutfile2.py" />
-    <entry file="file://$PROJECT_DIR$/FilterMethodsData/candidate_X.csv">
+    <entry file="file://$PROJECT_DIR$/StatisticalAnalysisMethods/ForwardBackWardSelection.py" />
+    <entry file="file://$PROJECT_DIR$/StatisticalAnalysisMethods/SignificanceExtraction.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FilterMethodsData/Psoriasis_MI_feat_values.csv">
+    <entry file="file://$PROJECT_DIR$/StatisticalAnalysisMethods/MulticollinearityTesting.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FilterMethodsData/PlotFilterMethods.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="24" column="21" lean-forward="false" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FeatureReductionMethods/FilterMethodsTests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-471">
-          <caret line="22" column="49" lean-forward="false" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FeatureReductionData/Filter_T_values.csv" />
-    <entry file="file://$PROJECT_DIR$/FilterMethodsData/VisualizeFeaturePreservation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-641">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="27" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FeatureReductionData/Floating_values.csv" />
-    <entry file="file://$PROJECT_DIR$/MailSenderMethod/SendingFinishMail.py" />
-    <entry file="file://$PROJECT_DIR$/FeatureReductionData/Arcene_Wrapper_values.csv" />
-    <entry file="file://$PROJECT_DIR$/FeatureReductionData/PTA_values.csv" />
-    <entry file="file://$PROJECT_DIR$/FeatureReductionMethods/WrapperMethods.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="641">
-          <caret line="456" column="62" lean-forward="true" selection-start-line="456" selection-start-column="62" selection-end-line="456" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FeatureReductionData/Psoriasis_Wrapper_Float_values.csv" />
-    <entry file="file://$PROJECT_DIR$/FeatureReductionData/Psoriasis_Wrapper_Quick_values.csv" />
-    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/plotly/plotly/plotly.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="121" column="59" lean-forward="true" selection-start-line="121" selection-start-column="59" selection-end-line="121" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FeatureReductionData/RSCTC_Wrapper_Quick_values.csv" />
-    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/plotly/api/v1/clientresp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FeatureReductionData/MO_Wrapper_values.csv" />
-    <entry file="file://$PROJECT_DIR$/FeatureReductionData/RSCTC_Wrapper_Float_values.csv" />
-    <entry file="file://$PROJECT_DIR$/FeatureReductionData/VisualizeFeatureReductionEvaluation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="107" column="0" lean-forward="true" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#18#0" expanded="false" />
-            <element signature="e#1230#1694#0" expanded="false" />
-            <element signature="e#1742#2052#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FeatureReduction/FeatureSelectionTesting.py" />
-    <entry file="file://$PROJECT_DIR$/FeatureReduction/ImportCovariance.py" />
-    <entry file="file://$PROJECT_DIR$/FeatureReduction/RidgeRegression.py" />
-    <entry file="file://$PROJECT_DIR$/FeatureReduction/TestingFilterMethods.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" column="61" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FeatureReduction/SVM.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="35" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FeatureReduction/MutualInformation.py">
+    <entry file="file://$PROJECT_DIR$/StatisticalAnalysisMethods/RelationTesting.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FeatureReduction/EvaluationFloatingMethod.py">
+    <entry file="file://$PROJECT_DIR$/DataSets/CirrhosisSet/pbcseq.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="38" selection-start-column="34" selection-end-line="41" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FeatureReductionData/Wrapper_values.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FeatureReductionMethods/EmbeddedMethods.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="188" column="9" lean-forward="true" selection-start-line="188" selection-start-column="9" selection-end-line="188" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FeatureReductionData/MO_Embedded_values.csv" />
-    <entry file="file://$PROJECT_DIR$/FeatureReductionMethods/FilterMethods.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="62" column="9" lean-forward="true" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FeatureReductionData/MO_Embedded_Forward_values.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FeatureReductionData/Filter_values.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="7" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FeatureReductionData/Embedded_values.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="17">
+          <caret line="1" column="37" lean-forward="true" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FeatureReduction/TryoutFile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FeatureReduction/EvaluationPTAMethod.py">
+    <entry file="file://$PROJECT_DIR$/FeatureReduction/EvaluationWrapperMethods.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="46" column="28" lean-forward="false" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
+        <state relative-caret-position="-1417">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../tpot/tpot/base.py">
+    <entry file="file://$PROJECT_DIR$/FeatureReduction/SVM.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#79#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FeatureReduction/EvaluationFloatingMethod.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-975">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#56#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FeatureReduction/CovarianceComputation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-278">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -649,55 +575,361 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/FeatureReduction/EvaluationFilterMethods.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="17" column="14" lean-forward="false" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+        <state relative-caret-position="-1502">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#55#0" expanded="true" />
+            <element signature="e#0#55#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FeatureReduction/EvaluationWrapperMethods.py">
+    <entry file="file://$PROJECT_DIR$/FeatureReductionData/PlotlyVisBar.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="24" column="7" lean-forward="false" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FeatureReductionData/New_Wrapper_values.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="466">
+          <caret line="158" column="44" lean-forward="true" selection-start-line="158" selection-start-column="44" selection-end-line="158" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#18#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FeatureReduction/EvaluationEmbeddedMethods.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1207">
-          <caret line="92" column="47" lean-forward="false" selection-start-line="92" selection-start-column="47" selection-end-line="97" selection-end-column="32" />
+        <state relative-caret-position="-1472">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#57#0" expanded="true" />
+            <element signature="e#0#57#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FeatureReductionData/New_Embedded_values.csv">
+    <entry file="file://$PROJECT_DIR$/VisualisationMethods/ExpressionDifferencePlotting.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="1326">
+          <caret line="78" column="21" lean-forward="true" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#11#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MissingValueHandlingMethods/ListDeletionMethods.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="138" column="74" lean-forward="false" selection-start-line="138" selection-start-column="74" selection-end-line="138" selection-end-column="74" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FeatureReductionData/Plotly Visualization.py">
+    <entry file="file://$PROJECT_DIR$/MissingValueHandling/Tryout.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="31" column="31" lean-forward="false" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#51#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FeatureReductionMethods/FilterMethods.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="134" column="32" lean-forward="true" selection-start-line="134" selection-start-column="32" selection-end-line="134" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#18#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MissingValueHandlingMethods/MultipleImputationMethods.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataSets/HepatitisSet/HepatitisDataset.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataSets/HepatitisSet/dataset_55_hepatitis.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="75" lean-forward="false" selection-start-line="22" selection-start-column="75" selection-end-line="22" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataExtraction/DataSetExtraction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="59" column="31" lean-forward="true" selection-start-line="59" selection-start-column="31" selection-end-line="59" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataSets/EchoDataSet/ImportEchoData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataSets/HepatitisSet/ImportHepatitis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="26" column="36" lean-forward="true" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataSets/CirrhosisSet/CirrhosisDataset.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="70" lean-forward="false" selection-start-line="15" selection-start-column="70" selection-end-line="15" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataSets/CirrhosisSet/ImportCirrhosis.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="69" column="50" lean-forward="false" selection-start-line="69" selection-start-column="50" selection-end-line="69" selection-end-column="50" />
+          <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataSets/EchoDataSet/EchoDataset.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" column="45" lean-forward="true" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MissingValueHandlingMethods/SingleImputationMethods.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="66" column="26" lean-forward="true" selection-start-line="66" selection-start-column="26" selection-end-line="66" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataSets/CervicalCancerSet/CervicalCancerData.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="38" lean-forward="false" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MissingValueHandling/Cirrhosis_p_val.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MissingValueHandling/Cervical_p_val.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StatisticalAnalysisMethods/FeatureDistributionMethods.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="204" column="0" lean-forward="true" selection-start-line="204" selection-start-column="0" selection-end-line="204" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="false" />
+            <element signature="e#146#1239#0" expanded="false" />
+            <element signature="e#1325#2136#0" expanded="false" />
+            <element signature="e#2229#4178#0" expanded="false" />
+            <element signature="e#4259#5700#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataSets/CervicalCancerSet/ImportCervicalCancerSet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1159">
+          <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="81" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing_TPOT/MainPipelineFinder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MissingValueHandling/FeatureDistributionTesting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#51#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pipelines/TPOT_Arcene_FS_selection_regular_algorithms_pipeline.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/tpot/builtins/order_methods.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-524">
+          <caret line="23" column="3" lean-forward="true" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/tpot/export_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="146" column="43" lean-forward="false" selection-start-line="146" selection-start-column="43" selection-end-line="146" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/tpot/tpot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="33" column="24" lean-forward="false" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/tpot/builtins/wrapper_methods.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-697">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/tpot/config/classifier.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1530">
+          <caret line="210" column="0" lean-forward="true" selection-start-line="210" selection-start-column="0" selection-end-line="210" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/tpot/config/classifier_high_fs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="802">
+          <caret line="188" column="28" lean-forward="false" selection-start-line="188" selection-start-column="28" selection-end-line="188" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/tpot/config/feature_selection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="30" column="58" lean-forward="true" selection-start-line="30" selection-start-column="58" selection-end-line="30" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/tpot/gp_deap.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="433" column="30" lean-forward="false" selection-start-line="433" selection-start-column="30" selection-end-line="433" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/tpot/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="1594" column="7" lean-forward="true" selection-start-line="1594" selection-start-column="7" selection-end-line="1594" selection-end-column="7" />
+          <folding>
+            <element signature="e#17035#18962#0" expanded="false" />
+            <element signature="e#19014#20523#0" expanded="false" />
+            <element signature="e#20579#21316#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MissingValueHandling/PlotDistributionResults.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="94" column="10" lean-forward="true" selection-start-line="94" selection-start-column="10" selection-end-line="94" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing_TPOT/PipelineSelection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="60" column="59" lean-forward="true" selection-start-line="60" selection-start-column="59" selection-end-line="60" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pipelines/TPOT_MicroOrganisms_regular_selection_regular_algorithms_pipeline.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pipelines/TPOT_MicroOrganisms_regular_selection_FS_algorithms_pipeline.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pipelines/TPOT_MicroOrganisms_FS_selection_regular_algorithms_pipeline.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Pipelines/TPOT_MicroOrganisms_FS_selection_FS_algorithms_pipeline.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing_TPOT/TPOT_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>

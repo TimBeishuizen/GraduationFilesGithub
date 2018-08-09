@@ -1,0 +1,280 @@
+\begin{thebibliography}{10}
+
+\bibitem{gehlenborg2010visualization}
+N.~Gehlenborg, S.~I. O'donoghue, N.~S. Baliga, A.~Goesmann, M.~A. Hibbs,
+  H.~Kitano, O.~Kohlbacher, H.~Neuweger, R.~Schneider, D.~Tenenbaum, {\em
+  et~al.}, ``Visualization of omics data for systems biology,'' {\em Nature
+  methods}, vol.~7, no.~3s, p.~S56, 2010.
+
+\bibitem{brazma2001minimum}
+A.~Brazma, P.~Hingamp, J.~Quackenbush, G.~Sherlock, P.~Spellman, C.~Stoeckert,
+  J.~Aach, W.~Ansorge, C.~A. Ball, H.~C. Causton, {\em et~al.}, ``Minimum
+  information about a microarray experiment (miame)—toward standards for
+  microarray data,'' {\em Nature genetics}, vol.~29, no.~4, p.~365, 2001.
+
+\bibitem{cottrell1999probability}
+J.~S. Cottrell and U.~London, ``Probability-based protein identification by
+  searching sequence databases using mass spectrometry data,'' {\em
+  electrophoresis}, vol.~20, no.~18, pp.~3551--3567, 1999.
+
+\bibitem{dettmer2007mass}
+K.~Dettmer, P.~A. Aronov, and B.~D. Hammock, ``Mass spectrometry-based
+  metabolomics,'' {\em Mass spectrometry reviews}, vol.~26, no.~1, pp.~51--78,
+  2007.
+
+\bibitem{capitani2017nuclear}
+D.~Capitani, A.~P. Sobolev, and L.~Mannina, ``Nuclear magnetic
+  resonance--metabolomics,'' {\em Food Authentication: Management, Analysis and
+  Regulation}, p.~177, 2017.
+
+\bibitem{liu2012data}
+B.~Liu, X.~Zhou, Y.~Wang, J.~Hu, L.~He, R.~Zhang, S.~Chen, and Y.~Guo, ``Data
+  processing and analysis in real-world traditional chinese medicine clinical
+  data: challenges and approaches,'' {\em Statistics in medicine}, vol.~31,
+  no.~7, pp.~653--660, 2012.
+
+\bibitem{sittig2008grand}
+D.~F. Sittig, A.~Wright, J.~A. Osheroff, B.~Middleton, J.~M. Teich, J.~S. Ash,
+  E.~Campbell, and D.~W. Bates, ``Grand challenges in clinical decision
+  support,'' {\em Journal of biomedical informatics}, vol.~41, no.~2,
+  pp.~387--392, 2008.
+
+\bibitem{magni1990chronic}
+G.~Magni, C.~Caldieron, S.~Rigatti-Luchini, and H.~Merskey, ``Chronic
+  musculoskeletal pain and depressive symptoms in the general population. an
+  analysis of the 1st national health and nutrition examination survey data,''
+  {\em Pain}, vol.~43, no.~3, pp.~299--307, 1990.
+
+\bibitem{bertolazzi2008logic}
+P.~Bertolazzi, G.~Felici, P.~Festa, and G.~Lancia, ``Logic classification and
+  feature selection for biomedical data,'' {\em Computers \& Mathematics with
+  Applications}, vol.~55, no.~5, pp.~889--899, 2008.
+
+\bibitem{piatetsky2003microarray}
+G.~Piatetsky-Shapiro and P.~Tamayo, ``Microarray data mining: facing the
+  challenges,'' {\em ACM SIGKDD Explorations Newsletter}, vol.~5, no.~2,
+  pp.~1--5, 2003.
+
+\bibitem{lommen2009metalign}
+A.~Lommen, ``Metalign: interface-driven, versatile metabolomics tool for
+  hyphenated full-scan mass spectrometry data preprocessing,'' {\em Analytical
+  chemistry}, vol.~81, no.~8, pp.~3079--3086, 2009.
+
+\bibitem{holzinger2014knowledge}
+A.~Holzinger, M.~Dehmer, and I.~Jurisica, ``Knowledge discovery and interactive
+  data mining in bioinformatics-state-of-the-art, future challenges and
+  research directions,'' {\em BMC bioinformatics}, vol.~15, no.~6, p.~I1, 2014.
+
+\bibitem{wilkins2009proteomics}
+M.~Wilkins, ``Proteomics data mining,'' {\em Expert review of proteomics},
+  vol.~6, no.~6, pp.~599--603, 2009.
+
+\bibitem{teodoro2009biomedical}
+D.~Teodoro, R.~Choquet, E.~Pasche, J.~Gobeill, C.~Daniel, P.~Ruch, and
+  C.~Lovis, ``Biomedical data management: a proposal framework.,'' in {\em
+  MIE}, pp.~175--179, Citeseer, 2009.
+
+\bibitem{doi:10.1093/nar/gkm1037}
+M.~Y. Galperin, ``The molecular biology database collection: 2008 update,''
+  {\em Nucleic Acids Research}, vol.~36, no.~suppl1, pp.~D2--D4, 2008.
+
+\bibitem{sturn2002genesis}
+A.~Sturn, J.~Quackenbush, and Z.~Trajanoski, ``Genesis: cluster analysis of
+  microarray data,'' {\em Bioinformatics}, vol.~18, no.~1, pp.~207--208, 2002.
+
+\bibitem{karnovsky2011metscape}
+A.~Karnovsky, T.~Weymouth, T.~Hull, V.~G. Tarcea, G.~Scardoni, C.~Laudanna,
+  M.~A. Sartor, K.~A. Stringer, H.~Jagadish, C.~Burant, {\em et~al.},
+  ``Metscape 2 bioinformatics tool for the analysis and visualization of
+  metabolomics and gene expression data,'' {\em Bioinformatics}, vol.~28,
+  no.~3, pp.~373--380, 2011.
+
+\bibitem{tabas2012genecodis3}
+D.~Tabas-Madrid, R.~Nogales-Cadenas, and A.~Pascual-Montano, ``Genecodis3: a
+  non-redundant and modular enrichment analysis tool for functional genomics,''
+  {\em Nucleic acids research}, vol.~40, no.~W1, pp.~W478--W483, 2012.
+
+\bibitem{faul2007g}
+F.~Faul, E.~Erdfelder, A.-G. Lang, and A.~Buchner, ``G* power 3: A flexible
+  statistical power analysis program for the social, behavioral, and biomedical
+  sciences,'' {\em Behavior research methods}, vol.~39, no.~2, pp.~175--191,
+  2007.
+
+\bibitem{dracopoli1991ceph}
+N.~C. Dracopoli, P.~O'Connell, T.~I. Elsner, J.-M. Lalouel, R.~L. White, K.~H.
+  Buetow, D.~Y. Nishimura, J.~C. Murray, C.~Helms, S.~K. Mishra, {\em et~al.},
+  ``The ceph consortium linkage map of human chromosome 1,'' {\em Genomics},
+  vol.~9, no.~4, pp.~686--700, 1991.
+
+\bibitem{goldberg2008analysis}
+S.~I. Goldberg, A.~Niemierko, and A.~Turchin, ``Analysis of data errors in
+  clinical research databases,'' in {\em AMIA annual symposium proceedings},
+  vol.~2008, p.~242, American Medical Informatics Association, 2008.
+
+\bibitem{stibor2005negative}
+T.~Stibor, P.~Mohr, J.~Timmis, and C.~Eckert, ``Is negative selection
+  appropriate for anomaly detection?,'' in {\em Proceedings of the 7th annual
+  conference on Genetic and evolutionary computation}, pp.~321--328, ACM, 2005.
+
+\bibitem{chandola2009anomaly}
+V.~Chandola, A.~Banerjee, and V.~Kumar, ``Anomaly detection: A survey,'' {\em
+  ACM computing surveys (CSUR)}, vol.~41, no.~3, p.~15, 2009.
+
+\bibitem{roberts2000extreme}
+S.~J. Roberts, ``Extreme value statistics for novelty detection in biomedical
+  data processing,'' {\em IEE Proceedings-Science, Measurement and Technology},
+  vol.~147, no.~6, pp.~363--367, 2000.
+
+\bibitem{donders2006gentle}
+A.~R.~T. Donders, G.~J. Van Der~Heijden, T.~Stijnen, and K.~G. Moons, ``A
+  gentle introduction to imputation of missing values,'' {\em Journal of
+  clinical epidemiology}, vol.~59, no.~10, pp.~1087--1091, 2006.
+
+\bibitem{cartwright2003dealing}
+M.~H. Cartwright, M.~J. Shepperd, and Q.~Song, ``Dealing with missing software
+  project data,'' in {\em Software Metrics Symposium, 2003. Proceedings. Ninth
+  International}, pp.~154--165, IEEE, 2003.
+
+\bibitem{haukoos2007advanced}
+J.~S. Haukoos and C.~D. Newgard, ``Advanced statistics: missing data in
+  clinical research—part 1: an introduction and conceptual framework,'' {\em
+  Academic Emergency Medicine}, vol.~14, no.~7, pp.~662--668, 2007.
+
+\bibitem{kan1986short}
+G.~Kan, C.~A. Visser, J.~J. Koolen, and A.~J. Dunning, ``Short and long term
+  predictive value of admission wall motion score in acute myocardial
+  infarction. a cross sectional echocardiographic study of 345 patients.,''
+  {\em Heart}, vol.~56, no.~5, pp.~422--427, 1986.
+
+\bibitem{diaconis1983computer}
+P.~Diaconis and B.~Efron, ``Computer-intensive methods in statistics,'' {\em
+  Scientific American}, vol.~248, no.~5, pp.~116--131, 1983.
+
+\bibitem{cestnikkononenkoj}
+B.~Cestnik, ``Kononenkoj., bratkoj.(1987): Assistant-86: A knowledge
+  elicitation tool for sophisticated users,'' {\em Progress in machine
+  learning}.
+
+\bibitem{murtaugh1994primary}
+P.~A. Murtaugh, E.~R. Dickson, G.~M. Van~Dam, M.~Malinchoc, P.~M. Grambsch,
+  A.~L. Langworthy, and C.~H. Gips, ``Primary biliary cirrhosis: prediction of
+  short-term survival based on repeated patient visits,'' {\em Hepatology},
+  vol.~20, no.~1, pp.~126--134, 1994.
+
+\bibitem{fernandes2017transfer}
+K.~Fernandes, J.~S. Cardoso, and J.~Fernandes, ``Transfer learning with partial
+  observability applied to cervical cancer screening,'' in {\em Iberian
+  conference on pattern recognition and image analysis}, pp.~243--250,
+  Springer, 2017.
+
+\bibitem{patrician2002multiple}
+P.~A. Patrician, ``Multiple imputation for missing data,'' {\em Research in
+  Nursing \& Health}, vol.~25, no.~1, pp.~76--84, 2002.
+
+\bibitem{sterne2009multiple}
+J.~A. Sterne, I.~R. White, J.~B. Carlin, M.~Spratt, P.~Royston, M.~G. Kenward,
+  A.~M. Wood, and J.~R. Carpenter, ``Multiple imputation for missing data in
+  epidemiological and clinical research: potential and pitfalls,'' {\em Bmj},
+  vol.~338, p.~b2393, 2009.
+
+\bibitem{myrtveit2001analyzing}
+I.~Myrtveit, E.~Stensrud, and U.~H. Olsson, ``Analyzing data sets with missing
+  data: An empirical evaluation of imputation methods and likelihood-based
+  methods,'' {\em IEEE Transactions on Software Engineering}, vol.~27, no.~11,
+  pp.~999--1013, 2001.
+
+\bibitem{pedersen2017missing}
+A.~B. Pedersen, E.~M. Mikkelsen, D.~Cronin-Fenton, N.~R. Kristensen, T.~M.
+  Pham, L.~Pedersen, and I.~Petersen, ``Missing data and multiple imputation in
+  clinical epidemiological research,'' {\em Clinical Epidemiology}, vol.~9,
+  p.~157, 2017.
+
+\bibitem{raghunathan2001multivariate}
+T.~E. Raghunathan, J.~M. Lepkowski, J.~Van~Hoewyk, and P.~Solenberger, ``A
+  multivariate technique for multiply imputing missing values using a sequence
+  of regression models,'' {\em Survey methodology}, vol.~27, no.~1, pp.~85--96,
+  2001.
+
+\bibitem{chevret2015multiple}
+S.~Chevret, S.~Seaman, and M.~Resche-Rigon, ``Multiple imputation: a mature
+  approach to dealing with missing data,'' {\em Intensive care medicine},
+  vol.~41, no.~2, pp.~348--350, 2015.
+
+\bibitem{rubin1976inference}
+D.~B. Rubin, ``Inference and missing data,'' {\em Biometrika}, vol.~63, no.~3,
+  pp.~581--592, 1976.
+
+\bibitem{white2011multiple}
+I.~R. White, P.~Royston, and A.~M. Wood, ``Multiple imputation using chained
+  equations: issues and guidance for practice,'' {\em Statistics in medicine},
+  vol.~30, no.~4, pp.~377--399, 2011.
+
+\bibitem{he2010multiple}
+Y.~He, A.~M. Zaslavsky, M.~Landrum, D.~Harrington, and P.~Catalano, ``Multiple
+  imputation in a large-scale complex survey: a practical guide,'' {\em
+  Statistical methods in medical research}, vol.~19, no.~6, pp.~653--670, 2010.
+
+\bibitem{van2007multiple}
+S.~Van~Buuren, ``Multiple imputation of discrete and continuous data by fully
+  conditional specification,'' {\em Statistical methods in medical research},
+  vol.~16, no.~3, pp.~219--242, 2007.
+
+\bibitem{van1999multiple}
+S.~Van~Buuren, H.~C. Boshuizen, D.~L. Knook, {\em et~al.}, ``Multiple
+  imputation of missing blood pressure covariates in survival analysis,'' {\em
+  Statistics in medicine}, vol.~18, no.~6, pp.~681--694, 1999.
+
+\bibitem{van2006imputation}
+G.~J. Van~der Heijden, A.~R.~T. Donders, T.~Stijnen, and K.~G. Moons,
+  ``Imputation of missing values is superior to complete case analysis and the
+  missing-indicator method in multivariable diagnostic research: a clinical
+  example,'' {\em Journal of clinical epidemiology}, vol.~59, no.~10,
+  pp.~1102--1109, 2006.
+
+\bibitem{azur2011multiple}
+M.~J. Azur, E.~A. Stuart, C.~Frangakis, and P.~J. Leaf, ``Multiple imputation
+  by chained equations: what is it and how does it work?,'' {\em International
+  journal of methods in psychiatric research}, vol.~20, no.~1, pp.~40--49,
+  2011.
+
+\bibitem{royston2004multiple}
+P.~Royston {\em et~al.}, ``Multiple imputation of missing values,'' {\em Stata
+  journal}, vol.~4, no.~3, pp.~227--41, 2004.
+
+\bibitem{martin2018impact}
+E.~Mart{\'\i}n-Merino, A.~Calder{\'o}n-Larra{\~n}aga, S.~Hawley,
+  B.~Poblador-Plou, A.~Llorente-Garc{\'\i}a, I.~Petersen, and
+  D.~Prieto-Alhambra, ``The impact of different strategies to handle missing
+  data on both precision and bias in a drug safety study: a multidatabase
+  multinational population-based cohort study,'' {\em Clinical epidemiology},
+  vol.~10, p.~643, 2018.
+
+\bibitem{horton2001multiple}
+N.~J. Horton and S.~R. Lipsitz, ``Multiple imputation in practice: comparison
+  of software packages for regression models with missing variables,'' {\em The
+  American Statistician}, vol.~55, no.~3, pp.~244--254, 2001.
+
+\bibitem{allison2000multiple}
+P.~D. Allison, ``Multiple imputation for missing data: A cautionary tale,''
+  {\em Sociological methods \& research}, vol.~28, no.~3, pp.~301--309, 2000.
+
+\bibitem{royston2011multiple}
+P.~Royston, I.~R. White, {\em et~al.}, ``Multiple imputation by chained
+  equations (mice): implementation in stata,'' {\em J Stat Softw}, vol.~45,
+  no.~4, pp.~1--20, 2011.
+
+\bibitem{heiberger2004statistical}
+R.~M. Heiberger and B.~Holland, {\em Statistical analysis and data display}.
+\newblock Springer, 2004.
+
+\bibitem{brown1974robust}
+M.~B. Brown and A.~B. Forsythe, ``Robust tests for the equality of variances,''
+  {\em Journal of the American Statistical Association}, vol.~69, no.~346,
+  pp.~364--367, 1974.
+
+\bibitem{satorra2001scaled}
+A.~Satorra and P.~M. Bentler, ``A scaled difference chi-square test statistic
+  for moment structure analysis,'' {\em Psychometrika}, vol.~66, no.~4,
+  pp.~507--514, 2001.
+
+\end{thebibliography}
