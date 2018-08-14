@@ -79,7 +79,7 @@ for j in range(7):
     plt.title('Probability of the mean originating from both the old and new distribution')
     plt.xlabel('Missing values (%)')
     plt.ylabel('p-value mean distribution')
-    plt.legend(All_names, loc='center left', bbox_to_anchor=(0.95, 0.5))
+    plt.legend(All_names[j], loc='center left', bbox_to_anchor=(0.95, 0.5))
     plt.show()
 
 for j in range(7):
@@ -88,8 +88,8 @@ for j in range(7):
     fit_output2 = poly_fit(x, fit2)
     plt.plot(x * 100, fit_output2)
 
-plt.title('Probability of the variance originating from both the old and new distribution')
-plt.xlabel('Missing values (%)')
-plt.ylabel('p-value variance distribution')
-plt.legend(All_names, loc='center left', bbox_to_anchor=(0.95, 0.5))
-plt.show()
+    plt.title('Probability of the variance originating from both the old and new distribution')
+    plt.xlabel('Missing values (%)')
+    plt.ylabel('p-value variance distribution')
+    plt.legend(All_names[j], loc='center left', bbox_to_anchor=(0.95, 0.5))
+    plt.show()

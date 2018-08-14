@@ -267,7 +267,21 @@
 	
 	% Weighted case analysis -> Interesting for unit non responsiveness
 	\item \textit{Weighted case analysis} \\
-	A third type of LD is WCA. WCA tries to overcome bias from CCA by assigning weights to every value. If a sample is removed, the nearest complete neighbour is searched for. This closest complete sample can be found by using one, multiple or available features. This complete sample is then given a higher weight corresponding to the number of closest omitted samples. A simple approach for giving a higher weight is simply by adding an additional complete case to the existing complete cases, choosing the one that is closest to the incomplete case (Algorithm \ref{alg:WCA}). This technique tries to remove the bias as much as possible by maintaining the distribution of the samples. This technique specifically does not assume MCAR values, but MAR values\cite{haukoos2007advanced, donders2006gentle}. Also this technique is specifically useful for unit non-responsiveness for its simplicity to cope with multiple missing values in one sample\cite{patrician2002multiple}.
+	A third type of LD is WCA. WCA tries to overcome bias from CCA by assigning 
+	weights to every value (Algorithm \ref{alg:WCA}). If a sample is removed, 
+	the nearest complete neighbour is searched for (Algorithm \ref{alg:WCA} -  
+	row 5). This closest complete sample can be found by using one, multiple or 
+	available features. The complete sample is then given a higher weight 
+	corresponding to the number of closest omitted samples. A simple approach 
+	for giving a higher weight is simply by adding an additional complete case 
+	to the existing complete cases, choosing the one that is closest to the 
+	incomplete case. This technique tries to remove the bias as much as 
+	possible by maintaining the distribution of the samples. This technique 
+	specifically does not assume MCAR values, but MAR 
+	values\cite{haukoos2007advanced, donders2006gentle}. Also this 
+	technique is specifically useful for unit non-responsiveness for its 
+	simplicity to cope with multiple missing values in one 
+	sample\cite{patrician2002multiple}.
 	\end{itemize}
 	
 	\begin{algorithm}[H]
