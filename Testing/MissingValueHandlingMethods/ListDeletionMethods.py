@@ -25,7 +25,7 @@ def cca(X, y, missing_values=None):
     return new_X, new_y
 
 
-def aca(X, y, missing_values=None, important_features=None, removal_fraction=None):
+def aca(X, missing_values=None, important_features=None, removal_fraction=None):
     """
 
     :param X:
@@ -45,7 +45,6 @@ def aca(X, y, missing_values=None, important_features=None, removal_fraction=Non
 
     # Make np arrays of the input
     X = np.asarray(X)
-    y = np.asarray(y)
 
     # find missing locations
     missing_loc = np.argwhere(X == missing_values)
@@ -61,10 +60,10 @@ def aca(X, y, missing_values=None, important_features=None, removal_fraction=Non
             new_X = np.delete(new_X, i, axis=1)
 
     # Return deleted data, after removing last missing values with CCA
-    return cca(new_X, y, missing_values)
+    return new_X
 
 
-def wca(X, y, missing_values=None):
+def wca(X, missing_values=None):
     """
 
     :param X:
@@ -75,7 +74,6 @@ def wca(X, y, missing_values=None):
 
     # Make np arrays of the input
     X = np.asarray(X)
-    y = np.asarray(y)
 
     # Find missing locations
     missing_loc = np.argwhere(X == missing_values)
@@ -101,7 +99,7 @@ def wca(X, y, missing_values=None):
     # Find complete rows and scale data
     complete_rows = np.delete(np.asarray(range(X.shape[0])), missing_rows, axis=0)
     scaler = PP.StandardScaler()
-    complete_data = np.append(X, np.reshape(y, [-1, 1]), axis=1)[complete_rows, :]
+    complete_data = X[complete_rows, :]
 
     scaled_data = scaler.fit_transform(convert_bool(np.copy(complete_data)).astype(float))
 
@@ -121,7 +119,7 @@ def wca(X, y, missing_values=None):
     neighbours = []
 
     for row in missing_rows:
-        missing_row = np.reshape(np.append(X[row, :], y[row]), [1, -1])
+        missing_row = np.asarray([X[row, :]])
 
         # Find missing locations and store non-missing locations
         missing_locs = missing_loc[np.argwhere(missing_loc[:, 0] == row), 1]
@@ -140,5 +138,4 @@ def wca(X, y, missing_values=None):
 
     new_data = np.append(complete_data, complete_data[neighbours, :], axis=0)
 
-
-    return new_data[:, :-1], new_data[:, -1]
+    return new_data

@@ -20,19 +20,19 @@ def import_example_data(data_name):
         psoriasis_names = ['GSE13355', 'GSE30999', 'GSE34248', 'GSE41662', 'GSE14905']
         return SDE.extract_multiple_data_sets(psoriasis_names, normalization=True)
     elif data_name == 'RSCTC':
-        table_path = r'C:\Users\s119104\Documents\GitHub\GraduationFilesGithub\Testing\DataSets\RSCTCMicroArraySet\RSCTC_micro_array_data.csv'
+        table_path = r'..\DataSets\RSCTCMicroArraySet\RSCTC_micro_array_data.csv'
     elif data_name == 'Arcene':
-        table_path = r'C:\Users\s119104\Documents\GitHub\GraduationFilesGithub\Testing\DataSets\ArceneMassSpectometrySet\arcene_mass_spect_data.csv'
+        table_path = r'..\DataSets\ArceneMassSpectometrySet\arcene_mass_spect_data.csv'
     elif data_name == 'MicroOrganisms':
-        table_path = r'C:\Users\s119104\Documents\GitHub\GraduationFilesGithub\Testing\DataSets\BioMassSpectometrySet\bio_mass_spect_data.csv'
+        table_path = r'..\DataSets\BioMassSpectometrySet\bio_mass_spect_data.csv'
     elif data_name == 'HeartAttack':
-        table_path = r'C:\Users\s119104\Documents\GitHub\GraduationFilesGithub\Testing\DataSets\EchoDataSet\EchoDataset.csv'
+        table_path = r'..\DataSets\EchoDataSet\EchoDataset.csv'
     elif data_name == 'Hepatitis':
-        table_path = r'C:\Users\s119104\Documents\GitHub\GraduationFilesGithub\Testing\DataSets\HepatitisSet\HepatitisDataset.csv'
+        table_path = r'..\DataSets\HepatitisSet\HepatitisDataset.csv'
     elif data_name == 'Cirrhosis':
-        table_path = r'C:\Users\s119104\Documents\GitHub\GraduationFilesGithub\Testing\DataSets\CirrhosisSet\CirrhosisDataset.csv'
+        table_path = r'..\DataSets\CirrhosisSet\CirrhosisDataset.csv'
     elif data_name == 'Cervical':
-        table_path = r'C:\Users\s119104\Documents\GitHub\GraduationFilesGithub\Testing\DataSets\CervicalCancerSet\CervicalCancerData.csv'
+        table_path = r'..\DataSets\CervicalCancerSet\CervicalCancerData.csv'
     else:
         raise ValueError('A data set with reference name "%s" does not exist' % data_name)
 

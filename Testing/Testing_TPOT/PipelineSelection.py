@@ -72,18 +72,18 @@ def create_experiment_tpot(data_names, selection_types, algorithm_types, train_s
                 try:
                     # Use tpot to find the best pipeline
                     if selection_type == 'regular_selection' and algorithm_type == 'regular_algorithms':
-                        tpot = TPOTClassifier(verbosity=2, max_time_mins=max_opt_time, population_size=pop_size, generations=n_gen,
+                        tpot = TPOTClassifier(verbosity=3, max_time_mins=max_opt_time, population_size=pop_size, generations=n_gen,
                                           feature_selection=False, fs_modifier=0.001)
                     elif selection_type == 'regular_selection' and algorithm_type == 'FS_algorithms':
-                        tpot = HighFSTPOTClassifier(verbosity=2, max_time_mins=max_opt_time, population_size=pop_size,
+                        tpot = HighFSTPOTClassifier(verbosity=3, max_time_mins=max_opt_time, population_size=pop_size,
                                                 generations=n_gen,
                                                 feature_selection=False, fs_modifier=0.001)
                     elif selection_type == 'FS_selection' and algorithm_type == 'regular_algorithms':
-                        tpot = TPOTClassifier(verbosity=2, max_time_mins=max_opt_time, population_size=pop_size,
+                        tpot = TPOTClassifier(verbosity=3, max_time_mins=max_opt_time, population_size=pop_size,
                                           generations=n_gen,
                                           feature_selection=True, fs_modifier=0.001)
                     elif selection_type == 'FS_selection' and algorithm_type == 'FS_algorithms':
-                        tpot = HighFSTPOTClassifier(verbosity=2, max_time_mins=max_opt_time, population_size=pop_size,
+                        tpot = HighFSTPOTClassifier(verbosity=3, max_time_mins=max_opt_time, population_size=pop_size,
                                                 generations=n_gen,
                                                 feature_selection=True, fs_modifier=0.001)
                     else:
