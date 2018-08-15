@@ -611,6 +611,21 @@
 	\end{tabular}
 \end{table}
 	
+	\subsection{TPOT integration}
+	\label{subsec:TPOTIntegration}
+	
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+\begin{table}[]
+	\begin{tabular}{ll|ll|ll}
+		\multirow{2}{*}{\textbf{Algorithm}} & selection      & \multicolumn{2}{l|}{regular selection}                                                                                                 & \multicolumn{2}{l}{always feature selection}                                               \\ \cline{3-6} 
+		& availability   & \begin{tabular}[c]{@{}l@{}}regular\\ algorithms\end{tabular} & \begin{tabular}[c]{@{}l@{}}feature selection\\ algorithms\end{tabular} & regular algorithms & \begin{tabular}[c]{@{}l@{}}feature selection\\ algorithms\end{tabular} \\ \hline
+		\multirow{4}{*}{\textbf{Datasets}}  & MicroOrganisms & -0.36                                                        & -0.37                                                                  & 0.79               & 0.73                                                                   \\
+		& Arcene         & -9.08                                                        & -9.13                                                                  & 0.76               & 0.76                                                                   \\
+		& RSCTC          & -53.76                                                       & -53.72                                                                 & 0.20               &                                                                        \\
+		& Psoriasis      & -53.76                                                       & -53.77                                                                 &                    &                                                                       
+	\end{tabular}
+\end{table}
 	\section{Results}
 	\label{sec:Results}
 	

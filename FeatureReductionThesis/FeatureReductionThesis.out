@@ -9,10 +9,11 @@
 \BOOKMARK [2][-]{subsection.3.1}{Feature Selection Quality}{section.3}% 9
 \BOOKMARK [2][-]{subsection.3.2}{Feature Selection Exploration}{section.3}% 10
 \BOOKMARK [2][-]{subsection.3.3}{Feature Selection Algorithms Evaluation}{section.3}% 11
-\BOOKMARK [1][-]{section.4}{Results}{}% 12
-\BOOKMARK [2][-]{subsection.4.1}{Feature Selection Exploration Results}{section.4}% 13
-\BOOKMARK [2][-]{subsection.4.2}{Feature Selection Algorithms Evaluation Results}{section.4}% 14
-\BOOKMARK [1][-]{section.5}{Discussion}{}% 15
-\BOOKMARK [1][-]{section.6}{Conclusions}{}% 16
-\BOOKMARK [1][-]{appendix.A}{Feature Selection Exploration Plots}{}% 17
-\BOOKMARK [1][-]{appendix.B}{Feature Selection Exploration Precision And Recall}{}% 18
+\BOOKMARK [2][-]{subsection.3.4}{TPOT integration}{section.3}% 12
+\BOOKMARK [1][-]{section.4}{Results}{}% 13
+\BOOKMARK [2][-]{subsection.4.1}{Feature Selection Exploration Results}{section.4}% 14
+\BOOKMARK [2][-]{subsection.4.2}{Feature Selection Algorithms Evaluation Results}{section.4}% 15
+\BOOKMARK [1][-]{section.5}{Discussion}{}% 16
+\BOOKMARK [1][-]{section.6}{Conclusions}{}% 17
+\BOOKMARK [1][-]{appendix.A}{Feature Selection Exploration Plots}{}% 18
+\BOOKMARK [1][-]{appendix.B}{Feature Selection Exploration Precision And Recall}{}% 19
