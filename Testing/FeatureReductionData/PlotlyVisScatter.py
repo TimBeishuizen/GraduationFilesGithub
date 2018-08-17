@@ -64,6 +64,7 @@ F1_score = []
 text_label = []
 marker_type = []
 
+FS_acc = []
 
 if data_name == 'average':
     # Remove backward elimination
@@ -86,11 +87,15 @@ if data_name == 'average':
             avg_values[j, i] = (float(MO_values[j, i]) + float(Arcene_values[j, i]) + float(RSCTC_values[j, i]) + float(Psoriasis_values[j, i])) / 4
 
     values = avg_values
+else:
+    values = values[:, values[0, :] == data_name]
 
 # Plotting values
 for i in range(values.shape[1]):
         if str(values[0, i]) != data_name:
             continue
+
+        FS_acc.append(float(values[5, i]) - float(values[6, i]) * 0.005)
 
         val_score.append(float(values[4, i]))
         test_score.append(float(values[5, i]))
@@ -116,10 +121,10 @@ for i in range(values.shape[1]):
             text_label.append('PTA <br> [l, r] = ' + values[1, i] + '<br> order: ' + values[3, i] + '<br> threshold: ' + values[2, i])
             marker_type.append(4)
         elif values[1, i] in ['embedded forward'] and values[3, i] in ['svm']:
-            text_label.append(values[1, i] + '<br> ML: ' + values[3, i] + '<br> threshold: ' + values[2, i])
+            text_label.append(values[1, i] + '<br> ML: ' + values[3, i] + '<br> threshold: ' + values[6, i])
             marker_type.append(13)
         elif values[1, i] in ['embedded forward'] and values[3, i] in ['rf']:
-            text_label.append(values[1, i] + '<br> ML: ' + values[3, i] + '<br> threshold: ' + values[2, i])
+            text_label.append(values[1, i] + '<br> ML: ' + values[3, i] + '<br> threshold: ' + values[6, i])
             marker_type.append(17)
         elif values[1, i] == 'filter' and values[3, i] in ['MI']:
             text_label.append(values[1, i] + '<br> ranking method: ' + values[3, i] + '<br> threshold: ' + values[2, i])
@@ -135,13 +140,13 @@ trace_list = []
 
 for i in range(len(n_feat)):
     trace_list.append(go.Scatter(
-            x=np.asarray(n_feat)[i],
-            y=np.asarray(F1_score)[i],
+            x=[np.asarray(comp_time)[i]],
+            y=[np.asarray(FS_acc)[i]],
             mode='markers',
             legendgroup=values[1, i],
             name=text_label[i],
             marker=dict(
-                size='16',
+                size=16,
                 symbol=marker_type[i],
                 color=comp_time[i],
                 colorscale='Viridis',
@@ -153,21 +158,21 @@ for i in range(len(n_feat)):
         ))
 
 layout = go.Layout(
-    title='Feature selection algorithm F1 score',
+    title='Feature selection algorithm FS_Accuracy',
     hovermode='closest',
-    xaxis=dict(tickfont=dict(size=25),
-               titlefont=dict(size=25),
-        title='Number of preserved features'),
-    yaxis=dict(tickfont=dict(size=25),
-               titlefont=dict(size=25),
-        title='Performance score ([0, 1]'),
+    xaxis=dict(tickfont=dict(size=18),
+               titlefont=dict(size=18),
+        title='Average computation time (s)'),
+    yaxis=dict(tickfont=dict(size=18),
+               titlefont=dict(size=18),
+        title='FS_accuracy'),
     legend=dict(x=0,
-                y=-0.1,
+                y=-0.2,
                 orientation="h"),
     showlegend=True,
     font = dict(
     color="black",
-    size=29)
+    size=12)
 )
 
 updatemenus=list([
