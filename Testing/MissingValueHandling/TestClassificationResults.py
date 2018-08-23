@@ -1,18 +1,12 @@
-from DataExtraction import DataSetExtraction as DSE
-from MissingValueHandling import HotEncoder as HE
-
-from MissingValueHandlingMethods import ListDeletionMethods as LDM, \
-    SingleImputationMethods as SIM, \
-    MultipleImputationMethods as MIM
-
-from sklearn import model_selection as SMS, \
-    linear_model as SLM, \
-    preprocessing as PP, \
-    metrics as SME
-
-import numpy as np
 import csv
 import time
+
+import numpy as np
+
+from DataExtraction import DataSetExtraction as DSE
+from MissingValueHandlingMethods import ListDeletionMethods as LDM, \
+    SingleImputationMethods as SIM, \
+    MultipleImputationMethods as MIM, PreprocessingMethods as HE
 
 missing_value_methods = ['WCA']#['CCA', 'ACA', 'WCA', 'mean', 'hot deck', 'missing indicator mean', 'missing indicator zeros',
                         # 'regression', 'kNN k=1', 'kNN k=3',
@@ -86,8 +80,6 @@ for data in data_names:
         elapsed = time.clock() - start_time
         T_time.append(elapsed)
         print("Time elapsed: %f" % elapsed)
-
-
 
         if not 'MICE' in method:
 

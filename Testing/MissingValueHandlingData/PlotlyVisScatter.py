@@ -77,7 +77,7 @@ trace_list = []
 
 for i in range(len(comp_time)):
     trace_list.append(go.Scatter(
-        x=[np.asarray(comp_time)[i]],
+        x=[np.log(np.asarray(comp_time)[i])],
         y=[np.asarray(test_score)[i]],
         mode='markers',
         legendgroup=values[1, i],

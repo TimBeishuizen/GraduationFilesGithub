@@ -74,6 +74,7 @@ def wca(X, missing_values=None):
 
     # Make np arrays of the input
     X = np.asarray(X)
+    new_X = np.copy(X)
 
     # Find missing locations
     missing_loc = np.argwhere(X == missing_values)
@@ -134,8 +135,6 @@ def wca(X, missing_values=None):
         scaled_row = scaled_row[:, complete_locs]
         temp_scaled_data = scaled_data[:, complete_locs]
 
-        neighbours.append(nearest_neighbour(scaled_row, temp_scaled_data))
+        new_X[row, :] = complete_data[nearest_neighbour(scaled_row, temp_scaled_data), :]
 
-    new_data = np.append(complete_data, complete_data[neighbours, :], axis=0)
-
-    return new_data
+    return new_X

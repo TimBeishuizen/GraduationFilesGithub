@@ -1,12 +1,6 @@
 import numpy as np
-import random
-import scipy.stats as stats
 
 from MissingValueHandlingMethods import SingleImputationMethods as SIM
-
-from sklearn import neighbors
-from sklearn import preprocessing as PP
-from sklearn import linear_model as LM
 
 
 def MICE(X, missing_values=None, s=1, m=1):
