@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2017.11.1)  15 AUG 2018 09:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2017.11.1)  10 SEP 2018 19:02
 entering extended mode
 **./FeatureReductionThesis.tex
 (FeatureReductionThesis.tex
@@ -963,303 +963,397 @@ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.98 	\clearpage
-                 [1]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 126.
+                 [1] [2
+
+]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 128.
 
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 126.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 128.
 
-[2
-
-]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 135.
+               Default added (so using `tbp') on input line 137.
 
 
-Overfull \hbox (40.14009pt too wide) in paragraph at lines 139--146
+Overfull \hbox (40.14009pt too wide) in paragraph at lines 141--148
  [][] 
  []
 
-[3]
-Overfull \hbox (35.15163pt too wide) in paragraph at lines 183--215
+[3] [4]
+Overfull \hbox (35.15163pt too wide) in paragraph at lines 195--227
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[4]
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 275.
-
-
-LaTeX Warning: Command \O invalid in math mode on input line 278.
-
-
-LaTeX Warning: Command \O invalid in math mode on input line 279.
 
 [5]
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
+put line 287.
 
-LaTeX Warning: Command \O invalid in math mode on input line 295.
+
+LaTeX Warning: Command \O invalid in math mode on input line 290.
+
+
+LaTeX Warning: Command \O invalid in math mode on input line 291.
 
 [6]
 
-LaTeX Warning: Command \O invalid in math mode on input line 334.
+LaTeX Warning: Command \O invalid in math mode on input line 307.
 
 [7]
 
-LaTeX Warning: Command \O invalid in math mode on input line 375.
+LaTeX Warning: Command \O invalid in math mode on input line 346.
+
+[8]
+
+LaTeX Warning: Command \O invalid in math mode on input line 387.
 
 
-LaTeX Warning: Command \O invalid in math mode on input line 409.
+LaTeX Warning: Command \O invalid in math mode on input line 421.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 428--429
+Underfull \hbox (badness 10000) in paragraph at lines 440--441
 
  []
 
-[8] [9]
-Underfull \hbox (badness 10000) in paragraph at lines 482--483
+[9] [10]
+Underfull \hbox (badness 10000) in paragraph at lines 494--495
 
  []
 
-[10]
+[11]
 
-LaTeX Warning: Command \O invalid in math mode on input line 494.
+LaTeX Warning: Command \O invalid in math mode on input line 506.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 506--507
+Underfull \hbox (badness 10000) in paragraph at lines 518--519
 
  []
 
-[11] [12]
+[12]
+
+Package caption Warning: \label without proper reference on input line 581.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:Meta-LearningLayout' on page 13 undefined on inpu
+t line 578.
+
+[13]
+<./ThesisFigures/Meta-LearningLayout.png, id=446, 343.2825pt x 258.21469pt>
+File: ./ThesisFigures/Meta-LearningLayout.png Graphic file (type png)
+<use ./ThesisFigures/Meta-LearningLayout.png>
+Package pdftex.def Info: ./ThesisFigures/Meta-LearningLayout.png  used on input
+ line 582. on input line 582.
+Package pdftex.def Info: Requested size: 343.28165pt x 258.21405pt on input lin
+e 582.
+ [14 <./ThesisFigures/Meta-LearningLayout.png>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 568.
+               Default added (so using `tbp') on input line 602.
 
 
-Overfull \hbox (63.28694pt too wide) in paragraph at lines 572--579
+Overfull \hbox (9.30696pt too wide) in paragraph at lines 606--618
  [][] 
  []
 
-[13]
+<./ThesisFigures/MachineLearningPipeline.png, id=464, 370.38374pt x 182.18062pt
+>
+File: ./ThesisFigures/MachineLearningPipeline.png Graphic file (type png)
+<use ./ThesisFigures/MachineLearningPipeline.png>
+Package pdftex.def Info: ./ThesisFigures/MachineLearningPipeline.png  used on i
+nput line 621. on input line 621.
+Package pdftex.def Info: Requested size: 370.38283pt x 182.18016pt on input lin
+e 621.
+[15 <./ThesisFigures/MachineLearningPipeline.png>]
+<./ThesisFigures/TPOTMutations.png, id=475, 354.57469pt x 247.67531pt>
+File: ./ThesisFigures/TPOTMutations.png Graphic file (type png)
+<use ./ThesisFigures/TPOTMutations.png>
+Package pdftex.def Info: ./ThesisFigures/TPOTMutations.png  used on input line 
+630. on input line 630.
+Package pdftex.def Info: Requested size: 354.57382pt x 247.6747pt on input line
+ 630.
+<./ThesisFigures/TPOTCrossover.png, id=479, 372.64218pt x 142.28156pt>
+File: ./ThesisFigures/TPOTCrossover.png Graphic file (type png)
+<use ./ThesisFigures/TPOTCrossover.png>
+Package pdftex.def Info: ./ThesisFigures/TPOTCrossover.png  used on input line 
+639. on input line 639.
+Package pdftex.def Info: Requested size: 372.64127pt x 142.2812pt on input line
+ 639.
+ [16 <./ThesisFigures/TPOTMutations.png> <./ThesisFigures/TPOTCrossover.png>] [
+17] [18]
+<./ThesisFigures/FS_accuracy_alpha.png, id=513, 666.3294pt x 504.4446pt>
+File: ./ThesisFigures/FS_accuracy_alpha.png Graphic file (type png)
+<use ./ThesisFigures/FS_accuracy_alpha.png>
+Package pdftex.def Info: ./ThesisFigures/FS_accuracy_alpha.png  used on input l
+ine 685. on input line 685.
+Package pdftex.def Info: Requested size: 424.58624pt x 321.43484pt on input lin
+e 685.
+ [19]
+<./ThesisFigures/FS_accuracy_example.png, id=527, 462.528pt x 344.0052pt>
+File: ./ThesisFigures/FS_accuracy_example.png Graphic file (type png)
+<use ./ThesisFigures/FS_accuracy_example.png>
+Package pdftex.def Info: ./ThesisFigures/FS_accuracy_example.png  used on input
+ line 698. on input line 698.
+Package pdftex.def Info: Requested size: 462.52686pt x 344.00435pt on input lin
+e 698.
 
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 600.
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 619.
-
-
-Overfull \hbox (39.70041pt too wide) in paragraph at lines 620--628
+Overfull \hbox (37.94061pt too wide) in paragraph at lines 698--699
 [][] 
  []
 
-[14]
-<./ThesisFigures/Val_Test_Scores.png, id=439, 462.528pt x 344.0052pt>
+[20 <./ThesisFigures/FS_accuracy_alpha.png>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 709.
+
+
+Overfull \hbox (63.28694pt too wide) in paragraph at lines 713--720
+ [][] 
+ []
+
+[21 <./ThesisFigures/FS_accuracy_example.png>] [22]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 741.
+
+[23] [24]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 807.
+
+
+Overfull \hbox (56.03485pt too wide) in paragraph at lines 810--818
+[][] 
+ []
+
+[25]
+<./ThesisFigures/Val_Test_Scores.png, id=596, 462.528pt x 344.0052pt>
 File: ./ThesisFigures/Val_Test_Scores.png Graphic file (type png)
 <use ./ThesisFigures/Val_Test_Scores.png>
 Package pdftex.def Info: ./ThesisFigures/Val_Test_Scores.png  used on input lin
-e 641. on input line 641.
+e 833. on input line 833.
 Package pdftex.def Info: Requested size: 297.20906pt x 221.06017pt on input lin
-e 641.
-<./ThesisFigures/Machine_Learning_Val_Scores.png, id=444, 462.528pt x 344.0052p
+e 833.
+<./ThesisFigures/Machine_Learning_Val_Scores.png, id=600, 462.528pt x 344.0052p
 t>
 File: ./ThesisFigures/Machine_Learning_Val_Scores.png Graphic file (type png)
 <use ./ThesisFigures/Machine_Learning_Val_Scores.png>
 Package pdftex.def Info: ./ThesisFigures/Machine_Learning_Val_Scores.png  used 
-on input line 651. on input line 651.
+on input line 843. on input line 843.
 Package pdftex.def Info: Requested size: 297.20906pt x 221.06017pt on input lin
-e 651.
- [15 <./ThesisFigures/Val_Test_Scores.png>]
-<./ThesisFigures/Data_Rank_Val_Scores.png, id=454, 462.528pt x 344.0052pt>
+e 843.
+ [26 <./ThesisFigures/Val_Test_Scores.png>]
+<./ThesisFigures/Data_Rank_Val_Scores.png, id=610, 462.528pt x 344.0052pt>
 File: ./ThesisFigures/Data_Rank_Val_Scores.png Graphic file (type png)
 <use ./ThesisFigures/Data_Rank_Val_Scores.png>
 Package pdftex.def Info: ./ThesisFigures/Data_Rank_Val_Scores.png  used on inpu
-t line 661. on input line 661.
+t line 853. on input line 853.
 Package pdftex.def Info: Requested size: 297.20906pt x 221.06017pt on input lin
-e 661.
- [16 <./ThesisFigures/Machine_Learning_Val_Scores.png> <./ThesisFigures/Data_Ra
+e 853.
+ [27 <./ThesisFigures/Machine_Learning_Val_Scores.png> <./ThesisFigures/Data_Ra
 nk_Val_Scores.png>]
-<./ThesisFigures/Data_Rank_F1_Scores.png, id=464, 462.528pt x 344.0052pt>
+<./ThesisFigures/Data_Rank_F1_Scores.png, id=620, 462.528pt x 344.0052pt>
 File: ./ThesisFigures/Data_Rank_F1_Scores.png Graphic file (type png)
 <use ./ThesisFigures/Data_Rank_F1_Scores.png>
 Package pdftex.def Info: ./ThesisFigures/Data_Rank_F1_Scores.png  used on input
- line 674. on input line 674.
+ line 866. on input line 866.
 Package pdftex.def Info: Requested size: 297.20906pt x 221.06017pt on input lin
-e 674.
-<./ThesisFigures/Accuracy_new.png, id=469, 2890.8pt x 1647.15375pt>
+e 866.
+<./ThesisFigures/Accuracy_new.png, id=625, 2890.8pt x 1647.15375pt>
 File: ./ThesisFigures/Accuracy_new.png Graphic file (type png)
 <use ./ThesisFigures/Accuracy_new.png>
-Package pdftex.def Info: ./ThesisFigures/Accuracy_new.png  used on input line 6
-91. on input line 691.
+Package pdftex.def Info: ./ThesisFigures/Accuracy_new.png  used on input line 8
+83. on input line 883.
 Package pdftex.def Info: Requested size: 2890.79298pt x 1647.14975pt on input l
-ine 691.
- [17 <./ThesisFigures/Data_Rank_F1_Scores.png>]
+ine 883.
+ [28 <./ThesisFigures/Data_Rank_F1_Scores.png>]
 Overfull \vbox (18.42636pt too high) has occurred while \output is active []
 
 
-[18 <./ThesisFigures/Accuracy_new.png>]
-<./ThesisFigures/Precision_new.png, id=488, 2890.8pt x 1647.15375pt>
+[29 <./ThesisFigures/Accuracy_new.png>]
+<./ThesisFigures/Precision_new.png, id=643, 2890.8pt x 1647.15375pt>
 File: ./ThesisFigures/Precision_new.png Graphic file (type png)
 <use ./ThesisFigures/Precision_new.png>
 Package pdftex.def Info: ./ThesisFigures/Precision_new.png  used on input line 
-699. on input line 699.
+891. on input line 891.
 Package pdftex.def Info: Requested size: 2890.79298pt x 1647.14975pt on input l
-ine 699.
+ine 891.
 
 Overfull \vbox (18.42636pt too high) has occurred while \output is active []
 
 
-[19 <./ThesisFigures/Precision_new.png>]
-<./ThesisFigures/Recall_new.png, id=494, 2890.8pt x 1647.15375pt>
+[30 <./ThesisFigures/Precision_new.png>]
+<./ThesisFigures/Recall_new.png, id=650, 2890.8pt x 1647.15375pt>
 File: ./ThesisFigures/Recall_new.png Graphic file (type png)
 <use ./ThesisFigures/Recall_new.png>
-Package pdftex.def Info: ./ThesisFigures/Recall_new.png  used on input line 707
-. on input line 707.
+Package pdftex.def Info: ./ThesisFigures/Recall_new.png  used on input line 899
+. on input line 899.
 Package pdftex.def Info: Requested size: 2890.79298pt x 1647.14975pt on input l
-ine 707.
+ine 899.
 
 Overfull \vbox (18.42636pt too high) has occurred while \output is active []
 
 
-[20 <./ThesisFigures/Recall_new.png>]
-<./ThesisFigures/F1_new.png, id=500, 2890.8pt x 1647.15375pt>
+[31 <./ThesisFigures/Recall_new.png>]
+<./ThesisFigures/F1_new.png, id=656, 2890.8pt x 1647.15375pt>
 File: ./ThesisFigures/F1_new.png Graphic file (type png)
 <use ./ThesisFigures/F1_new.png>
-Package pdftex.def Info: ./ThesisFigures/F1_new.png  used on input line 715. on
- input line 715.
+Package pdftex.def Info: ./ThesisFigures/F1_new.png  used on input line 907. on
+ input line 907.
 Package pdftex.def Info: Requested size: 2890.79298pt x 1647.14975pt on input l
-ine 715.
+ine 907.
 
 Overfull \vbox (18.42636pt too high) has occurred while \output is active []
 
 
-[21 <./ThesisFigures/F1_new.png>]
-<./ThesisFigures/ComputationTimeBarChart.png, id=507, 2890.8pt x 1647.15375pt>
+[32 <./ThesisFigures/F1_new.png>]
+<./ThesisFigures/ComputationTimeBarChart.png, id=663, 2890.8pt x 1647.15375pt>
 File: ./ThesisFigures/ComputationTimeBarChart.png Graphic file (type png)
 <use ./ThesisFigures/ComputationTimeBarChart.png>
 Package pdftex.def Info: ./ThesisFigures/ComputationTimeBarChart.png  used on i
-nput line 726. on input line 726.
+nput line 918. on input line 918.
 Package pdftex.def Info: Requested size: 2890.79298pt x 1647.14975pt on input l
-ine 726.
- [22]
+ine 918.
+ [33]
 Overfull \vbox (18.42636pt too high) has occurred while \output is active []
 
 
-[23 <./ThesisFigures/ComputationTimeBarChart.png>] [24]
-(FeatureReductionThesis.bbl [25] [26] [27] [28])
-<./ThesisFigures/MO_MI_Val_Test_Score.png, id=555, 462.528pt x 344.0052pt>
+[34 <./ThesisFigures/ComputationTimeBarChart.png>]
+<./ThesisFigures/FS_Accuracy_99.png, id=675, 2890.8pt x 1647.15375pt>
+File: ./ThesisFigures/FS_Accuracy_99.png Graphic file (type png)
+<use ./ThesisFigures/FS_Accuracy_99.png>
+Package pdftex.def Info: ./ThesisFigures/FS_Accuracy_99.png  used on input line
+ 935. on input line 935.
+Package pdftex.def Info: Requested size: 2890.79298pt x 1647.14975pt on input l
+ine 935.
+ [35]
+Overfull \vbox (18.42636pt too high) has occurred while \output is active []
+
+
+[36 <./ThesisFigures/FS_Accuracy_99.png>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 943.
+
+
+Overfull \hbox (39.70041pt too wide) in paragraph at lines 944--952
+[][] 
+ []
+
+[37] [38] (FeatureReductionThesis.bbl [39] [40] [41] [42] [43])
+<./ThesisFigures/MO_MI_Val_Test_Score.png, id=733, 462.528pt x 344.0052pt>
 File: ./ThesisFigures/MO_MI_Val_Test_Score.png Graphic file (type png)
 <use ./ThesisFigures/MO_MI_Val_Test_Score.png>
 Package pdftex.def Info: ./ThesisFigures/MO_MI_Val_Test_Score.png  used on inpu
-t line 774. on input line 774.
+t line 1004. on input line 1004.
 Package pdftex.def Info: Requested size: 297.20906pt x 221.06017pt on input lin
-e 774.
- [29]
-<./ThesisFigures/MO_T_Val_Test_Score.png, id=568, 462.528pt x 344.0052pt>
+e 1004.
+<./ThesisFigures/MO_T_Val_Test_Score.png, id=734, 462.528pt x 344.0052pt>
 File: ./ThesisFigures/MO_T_Val_Test_Score.png Graphic file (type png)
 <use ./ThesisFigures/MO_T_Val_Test_Score.png>
 Package pdftex.def Info: ./ThesisFigures/MO_T_Val_Test_Score.png  used on input
- line 781. on input line 781.
+ line 1011. on input line 1011.
 Package pdftex.def Info: Requested size: 297.20906pt x 221.06017pt on input lin
-e 781.
-<./ThesisFigures/Arcene_MI_Val_Test_Score.png, id=569, 462.528pt x 344.0052pt>
+e 1011.
+ [44 <./ThesisFigures/MO_MI_Val_Test_Score.png>]
+<./ThesisFigures/Arcene_MI_Val_Test_Score.png, id=748, 462.528pt x 344.0052pt>
 File: ./ThesisFigures/Arcene_MI_Val_Test_Score.png Graphic file (type png)
 <use ./ThesisFigures/Arcene_MI_Val_Test_Score.png>
 Package pdftex.def Info: ./ThesisFigures/Arcene_MI_Val_Test_Score.png  used on 
-input line 788. on input line 788.
+input line 1018. on input line 1018.
 Package pdftex.def Info: Requested size: 297.20906pt x 221.06017pt on input lin
-e 788.
- [30 <./ThesisFigures/MO_MI_Val_Test_Score.png> <./ThesisFigures/MO_T_Val_Test_
-Score.png>]
-<./ThesisFigures/Arcene_T_Val_Test_Score.png, id=577, 462.528pt x 344.0052pt>
+e 1018.
+<./ThesisFigures/Arcene_T_Val_Test_Score.png, id=749, 462.528pt x 344.0052pt>
 File: ./ThesisFigures/Arcene_T_Val_Test_Score.png Graphic file (type png)
 <use ./ThesisFigures/Arcene_T_Val_Test_Score.png>
 Package pdftex.def Info: ./ThesisFigures/Arcene_T_Val_Test_Score.png  used on i
-nput line 795. on input line 795.
+nput line 1025. on input line 1025.
 Package pdftex.def Info: Requested size: 297.20906pt x 221.06017pt on input lin
-e 795.
-<./ThesisFigures/RSCTC_MI_Val_Test_Score.png, id=578, 462.528pt x 344.0052pt>
+e 1025.
+ [45 <./ThesisFigures/MO_T_Val_Test_Score.png> <./ThesisFigures/Arcene_MI_Val_T
+est_Score.png>]
+<./ThesisFigures/RSCTC_MI_Val_Test_Score.png, id=756, 462.528pt x 344.0052pt>
 File: ./ThesisFigures/RSCTC_MI_Val_Test_Score.png Graphic file (type png)
 <use ./ThesisFigures/RSCTC_MI_Val_Test_Score.png>
 Package pdftex.def Info: ./ThesisFigures/RSCTC_MI_Val_Test_Score.png  used on i
-nput line 802. on input line 802.
+nput line 1032. on input line 1032.
 Package pdftex.def Info: Requested size: 297.20906pt x 221.06017pt on input lin
-e 802.
- [31 <./ThesisFigures/Arcene_MI_Val_Test_Score.png> <./ThesisFigures/Arcene_T_V
-al_Test_Score.png>]
-<./ThesisFigures/RSCTC_T_Val_Test_Score.png, id=585, 462.528pt x 344.0052pt>
+e 1032.
+<./ThesisFigures/RSCTC_T_Val_Test_Score.png, id=757, 462.528pt x 344.0052pt>
 File: ./ThesisFigures/RSCTC_T_Val_Test_Score.png Graphic file (type png)
 <use ./ThesisFigures/RSCTC_T_Val_Test_Score.png>
 Package pdftex.def Info: ./ThesisFigures/RSCTC_T_Val_Test_Score.png  used on in
-put line 809. on input line 809.
+put line 1039. on input line 1039.
 Package pdftex.def Info: Requested size: 297.20906pt x 221.06017pt on input lin
-e 809.
-<./ThesisFigures/Psoriasis_MI_Val_Test_Score.png, id=586, 462.528pt x 344.0052p
+e 1039.
+ [46 <./ThesisFigures/Arcene_T_Val_Test_Score.png> <./ThesisFigures/RSCTC_MI_Va
+l_Test_Score.png>]
+<./ThesisFigures/Psoriasis_MI_Val_Test_Score.png, id=764, 462.528pt x 344.0052p
 t>
 File: ./ThesisFigures/Psoriasis_MI_Val_Test_Score.png Graphic file (type png)
 <use ./ThesisFigures/Psoriasis_MI_Val_Test_Score.png>
 Package pdftex.def Info: ./ThesisFigures/Psoriasis_MI_Val_Test_Score.png  used 
-on input line 816. on input line 816.
+on input line 1046. on input line 1046.
 Package pdftex.def Info: Requested size: 297.20906pt x 221.06017pt on input lin
-e 816.
- [32 <./ThesisFigures/RSCTC_MI_Val_Test_Score.png> <./ThesisFigures/RSCTC_T_Val
-_Test_Score.png>]
-<./ThesisFigures/Psoriasis_T_Val_Test_Score.png, id=593, 462.528pt x 344.0052pt
+e 1046.
+<./ThesisFigures/Psoriasis_T_Val_Test_Score.png, id=765, 462.528pt x 344.0052pt
 >
 File: ./ThesisFigures/Psoriasis_T_Val_Test_Score.png Graphic file (type png)
 <use ./ThesisFigures/Psoriasis_T_Val_Test_Score.png>
 Package pdftex.def Info: ./ThesisFigures/Psoriasis_T_Val_Test_Score.png  used o
-n input line 823. on input line 823.
+n input line 1053. on input line 1053.
 Package pdftex.def Info: Requested size: 297.20906pt x 221.06017pt on input lin
-e 823.
-<./ThesisFigures/Data_Rank_Prec_Scores.png, id=596, 462.528pt x 344.0052pt>
+e 1053.
+ [47 <./ThesisFigures/RSCTC_T_Val_Test_Score.png> <./ThesisFigures/Psoriasis_MI
+_Val_Test_Score.png>]
+<./ThesisFigures/Data_Rank_Prec_Scores.png, id=774, 462.528pt x 344.0052pt>
 File: ./ThesisFigures/Data_Rank_Prec_Scores.png Graphic file (type png)
 <use ./ThesisFigures/Data_Rank_Prec_Scores.png>
 Package pdftex.def Info: ./ThesisFigures/Data_Rank_Prec_Scores.png  used on inp
-ut line 836. on input line 836.
+ut line 1066. on input line 1066.
 Package pdftex.def Info: Requested size: 297.20906pt x 221.06017pt on input lin
-e 836.
- [33 <./ThesisFigures/Psoriasis_MI_Val_Test_Score.png> <./ThesisFigures/Psorias
-is_T_Val_Test_Score.png>]
-<./ThesisFigures/Data_Rank_Rec_Scores.png, id=605, 462.528pt x 344.0052pt>
+e 1066.
+<./ThesisFigures/Data_Rank_Rec_Scores.png, id=775, 462.528pt x 344.0052pt>
 File: ./ThesisFigures/Data_Rank_Rec_Scores.png Graphic file (type png)
 <use ./ThesisFigures/Data_Rank_Rec_Scores.png>
 Package pdftex.def Info: ./ThesisFigures/Data_Rank_Rec_Scores.png  used on inpu
-t line 843. on input line 843.
+t line 1073. on input line 1073.
 Package pdftex.def Info: Requested size: 297.20906pt x 221.06017pt on input lin
-e 843.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 849.
- [34 <./ThesisFigures/Data_Rank_Prec_Scores.png> <./ThesisFigures/Data_Rank_Rec
-_Scores.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 849.
+e 1073.
+ [48 <./ThesisFigures/Psoriasis_T_Val_Test_Score.png> <./ThesisFigures/Data_Ran
+k_Prec_Scores.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1079.
+ [49 <./ThesisFigures/Data_Rank_Rec_Scores.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1079.
 
 (FeatureReductionThesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 849.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 849.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1079.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1079.
+
 Package rerunfilecheck Info: File `FeatureReductionThesis.out' has not changed.
 
-(rerunfilecheck)             Checksum: 7A14F80B1ACB9A78BA3B55F89F3682C7;1285.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 849.
+(rerunfilecheck)             Checksum: 689F7C0C02D76516E8094CED3B10D504;1692.
+
+
+LaTeX Warning: There were undefined references.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1079.
  ) 
 Here is how much of TeX's memory you used:
- 13099 strings out of 493318
- 196502 string characters out of 3139046
- 322837 words of memory out of 3000000
- 16232 multiletter control sequences out of 15000+200000
- 10244 words of font info for 38 fonts, out of 3000000 for 9000
+ 13219 strings out of 493318
+ 199087 string characters out of 3139046
+ 324243 words of memory out of 3000000
+ 16294 multiletter control sequences out of 15000+200000
+ 10412 words of font info for 39 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,15n,43p,1732b,575s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
@@ -1279,10 +1373,11 @@ ype1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
 ts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
 ti12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti7.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on FeatureReductionThesis.pdf (35 pages, 2215748 bytes).
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on FeatureReductionThesis.pdf (50 pages, 2627951 bytes).
 PDF statistics:
- 710 PDF objects out of 1000 (max. 8388607)
- 165 named destinations out of 1000 (max. 500000)
- 248 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 902 PDF objects out of 1000 (max. 8388607)
+ 215 named destinations out of 1000 (max. 500000)
+ 323 words of extra memory for PDF output out of 10000 (max. 10000000)
 

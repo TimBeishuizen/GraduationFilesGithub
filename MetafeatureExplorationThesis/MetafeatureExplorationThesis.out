@@ -1,0 +1,31 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Background}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Datasets}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Preprocessing and Analysis}{section.2}% 4
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Feature Types}{subsection.2.2}% 5
+\BOOKMARK [3][-]{subsubsection.2.2.2}{Feature Importance Imbalance}{subsection.2.2}% 6
+\BOOKMARK [3][-]{subsubsection.2.2.3}{Output Imbalance}{subsection.2.2}% 7
+\BOOKMARK [3][-]{subsubsection.2.2.4}{Missing Values}{subsection.2.2}% 8
+\BOOKMARK [3][-]{subsubsection.2.2.5}{Feature relevance}{subsection.2.2}% 9
+\BOOKMARK [3][-]{subsubsection.2.2.6}{Multicollinearity}{subsection.2.2}% 10
+\BOOKMARK [2][-]{subsection.2.3}{Meta-features Package}{section.2}% 11
+\BOOKMARK [1][-]{section.3}{Hypotheses}{}% 12
+\BOOKMARK [1][-]{section.4}{Methods}{}% 13
+\BOOKMARK [2][-]{subsection.4.1}{Existing Meta-features Evaluation}{section.4}% 14
+\BOOKMARK [2][-]{subsection.4.2}{Additional Exploration Evaluation}{section.4}% 15
+\BOOKMARK [1][-]{section.5}{Results}{}% 16
+\BOOKMARK [2][-]{subsection.5.1}{Existing Meta-features Evaluation}{section.5}% 17
+\BOOKMARK [3][-]{subsubsection.5.1.1}{Hepatitis Dataset}{subsection.5.1}% 18
+\BOOKMARK [3][-]{subsubsection.5.1.2}{Micro-organisms Dataset}{subsection.5.1}% 19
+\BOOKMARK [2][-]{subsection.5.2}{Additional Exploration Evaluation}{section.5}% 20
+\BOOKMARK [3][-]{subsubsection.5.2.1}{Hepatitis Dataset}{subsection.5.2}% 21
+\BOOKMARK [3][-]{subsubsection.5.2.2}{Micro-organisms Dataset}{subsection.5.2}% 22
+\BOOKMARK [1][-]{section.6}{Discussion}{}% 23
+\BOOKMARK [1][-]{section.7}{Conclusion}{}% 24
+\BOOKMARK [1][-]{appendix.A}{Meta-features}{}% 25
+\BOOKMARK [2][-]{subsection.A.1}{Basic Meta-features}{appendix.A}% 26
+\BOOKMARK [2][-]{subsection.A.2}{Statistical Meta-features}{appendix.A}% 27
+\BOOKMARK [2][-]{subsection.A.3}{Information-theoretic Meta-features}{appendix.A}% 28
+\BOOKMARK [2][-]{subsection.A.4}{Landmarking Meta-features}{appendix.A}% 29
+\BOOKMARK [1][-]{appendix.B}{Meta-feature Values Hepatitis}{}% 30
+\BOOKMARK [1][-]{appendix.C}{Meta-feature Values Micro-Organisms}{}% 31

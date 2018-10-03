@@ -97,6 +97,7 @@
 	
 	\clearpage
 	
+	\newpage
 	\section{Introduction}
 	\label{sec:Introduction}
 	
@@ -109,11 +110,12 @@
 	% Data sets	
 	Four data sets were used as a case study for the feature selection algorithms. Two sets are micro-array datasets that are used for research on psoriasis\cite{nair2009genome, suarez2012expanding, bigler2013cross, yao2008type} and cancer\cite{wojnarski2010rsctc}. Two other sets are mass spectrometry data sets, used for research on cancer\cite{NIPS2004_2728} and micro organisms\cite{doi:10.1093/bioinformatics/btu022}. These four datasets all have a high number of features varying from 1000 to 54675 features with a number of samples varying from 200 to 580 samples. All of these datasets are based on classification as tests are done for different test subject groups, therefore the focus on feature selection algorithms will also be based on on classification. Many features are expected to be irrelevant in this classification and therefore could be removed with feature selection.	
 	
+	\newpage
 	\section{Background}
 	\label{sec:Background}
 	
 	% Introduction background & layout background
-	Before testing several feature selection methods, first the background of the study is explained. Firstly, the datasets used as a case study and their characteristics are briefly given. Secondly, feature selection methods are discussed.
+	Before testing several feature selection methods, first the background of the study is explained. Firstly, the datasets used as a case study and their characteristics are briefly given. Secondly, feature selection methods are discussed. Thirdly the concept automated machine learning is discussed as a possible technique to add to the framework, combined with a tool that implements automated machine learning.
 	
 	\subsection{Datasets}
 	\label{subsec:Datasets}
@@ -150,6 +152,16 @@
 	
 	% Introduction feature selection
 	Feature selection is a way to perform dimensionality reduction. In feature selection a subset of features is chosen to represent the complete sample space\cite{Guyon2006}. Several techniques are available to choose a representation subset and the effectiveness of these techniques is tested multiple times\cite{CATAL20091040, molina2002feature, chandrashekar2014survey}. These techniques can be grouped in accordingly in three different categories: filter methods, wrapper methods and embedded methods\cite{saeys2007review}. Each of these methods is explained in more detail.
+	
+	% Preprocessing
+	Before actually performing feature selection, usually some kind of preparation or preparation is done. This preparation consists of making the data able for feature selection to be possible as well as preprocessing so all features are processed evenly. Common preprocessing steps include hot encoding categorical values and normalization of numerical values:
+	
+	\begin{itemize}
+		\item \textit{Hot encoding}:\\
+		Hot encoding is used when numerical, ordinal and categorical values are combined in the dataset. Whereas numerical and ordinal features have numbers as values, categorical features usually correspond to text with no clear order. Hot encoding is used to give numerical values to the features. This is done by creating a new separate feature for every category and differ the values between presence of this category (e.g. the feature value becomes $1$) and absence of this category (e.g. the feature value becomes $0$). An example would be for a patient either undergoing treatment 'A', 'B' or 'C'. The categorical feature 'treatment' then has the options {'A', 'B', 'C'}. After hot encoding the 'treatment' feature is replaced by features 'treatment A', 'treatment B' and 'treatment C', and the values of these features are either $1$ if that treatment is performed or $0$ if that treatment is not performed. This way no ordering is made possible between categories and they are treated evenly.
+		\item \textit{Normalization}:\\
+		The difference in value size between numerical features can differ greatly. For example, if both the length of a patient's body and tongue are measured, the value of body length is much bigger than the value for tongue length. On top of that the variance in the features body length and tongue length differ in size, too. To prevent this potential bias in data analysis, all features are normalized on both mean and variance. This normalization is usually done in two steps for a feature with mean $\mu_0$ and standard deviation $\sigma_0$: Step one is changing to a mean value $\mu_1$ with value $\mu_1 = 0$ by subtracting all values by the mean $\mu_0$. Step two is to divide all features by the standard deviation $\sigma_0$, so the new standard deviation $\sigma_1$ becomes $\sigma_1 = 1$.
+	\end{itemize}
 
 	% Pseudo-algorithms
 	Since these filter methods can usually be best explained by showing example algorithms, several pseudo-algorithms were created for visual clarity. Variables used in these algorithms include:
@@ -546,7 +558,108 @@
 	
 	% https://arxiv.org/pdf/1610.09543.pdf
 	
+	\subsection{Automated Machine Learning}
+	\label{subsec:AutomatedMachineLearning}
 	
+	% History autoML
+	Before automated machine learning (autoML) existed, a dataset was mined by hand. First a preprocessing algorithm was chosen and used to prepare the data. Next a (machine learning) algorithm was chosen to mine the desired results out of the data. At last the hyper-parameters of the chosen algorithm were tuned to optimize the desired results. These three steps are vastly different and significant issues arise when combining these. Several ideas arose to combine the steps, called Combined Algorithm Selection and Hyperparameter optimization (CASH)\cite{thornton2013auto}. After some time, when preprocessing was added in the mix as well, the name autoML was being used\cite{Gijsbers2017Thesis}. The first autoML approach tool was published as \texttt{Auto-WEKA} that focused on classification methods, spanning 2 ensemble methods, 10 meta-methods, 27 base classifiers and their hyperparameter settings\cite{thornton2013auto}. An upgrade was published that added regression and parallellism\cite{kotthoff2016auto}.   
+	
+	% Introduction to pipelines
+	As explained shortly before, to go from data and results several steps must be taken: Preprocessing, algorithm selection and hyperparameter optimization. This sequencing is called a machine learning pipeline. Such a pipeline can consists of zero, one or multiple preprocessing steps for data preparation, can be one of many different machine learning algorithms which on their part have wide ranges for multiple hyper-parameters. The explosion of possible pipelines makes it hard to choose the right one. Knowing successful combinations is useful, however every data set has different features that ask for different pipelines\cite{Gijsbers2017Thesis}.
+	
+	% Introduction autoML
+	AutoML tries to find the best machine learning pipelines to compute which algorithms must be selected, combined with tuning the hyper-parameters and preprocessing. This algorithm selection usually is done in a meta-learning approach, which focuses on finding how the machine learning algorithms perform for a task interval. Hyperparameter optimization has challenges on his own to find the right ones and there are many different approaches to tackle preprocessing. The concept of meta-learning is briefly explained in more detail (Subsection \ref{subsec:Meta-Learning}). Aside from that, a tool that makes use of AutoML, TPOT, is also discussed (Subsection \ref{subsec:TPOT}). 	
+	
+	
+	\subsubsection{Meta-Learning}
+	\label{subsec:Meta-Learning}
+	
+	% Introduction meta-learning
+Machine learning algorithms show different behaviour for different tasks. Meta-learning tries to find out how their performance changes between those tasks (Figure \ref{fig:Meta-LearningLayout}). It tries to link the datasets with a suitable algorithm for high performance and tries to improve this performance by finetuning its hyper-parameters. In combination with the machine learning pipelines, meta-learning tries to find the best ones available. Since not only algorithms must be selected, but also hyper-parameters must be optimized and preprocessing must be done, the time and space needed for meta-learning causes a combinatorial explosion. This can be lessened by stopping the investigation of bad pipelines and limiting the range of hyper-parameters, machine learning- and preprocessing algorithms as much as possible. 
+
+\begin{figure}
+	\label{fig:Meta-LearningLayout}
+	\includegraphics[scale=1]{Meta-LearningLayout.png}
+	\caption{A layout of how meta-learning works. 1. Data sets are collected. 2. Meta-data is computed for each dataset. 3. A meta-dataset is created and a meta-model is learned\cite{Gijsbers2017Thesis}.}
+\end{figure}
+
+% Meta-features
+Features of the meta-learning phenomenon are used to predict the performance. There are three types of these meta-features. The first type is simple, statistical and information-theoretic. They can be a basic feature of the data set, as well as a value after a statistical computation or a specific theoretical value. The second meta-feature type can be called landmarks. Landmarks give the performance of algorithms, how well they are doing with the given data set. The last meta-feature category is model-based. Specific characteristics of the used model can be used as meta-features as well\cite{brazdil1994characterizing, vilalta2004using}.
+
+% Meta-learners
+For using those meta-features in picking the best machine learning algorithm meta-learners can be used. Meta-learners are algorithms that choose between the possible choices. There are four ways of doing that. The first is plainly choosing the best algorithm in the set, this choice speeds up the process but is prone to being a bad choice. Second a subset of good algorithms can be chosen, which is slower, but has a higher chance to give a good outcome. Thirdly the algorithms can be ranked, which makes the chance of picking a good algorithm quicker starting at the top. Fourth is to use estimations of performance which gives information expectations over all algorithms\cite{brazdil2009development}.
+	
+	
+	\subsubsection{Tree-based Pipeline Optimization Tool}
+	\label{subsec:TPOT}
+	
+	% Introduction TPOT
+	A tool that implements autoML is tree-based pipeline optimization tool (TPOT). It uses the machine learning pipelines and evolutionary optimization to find the best solution for every data set. This evolutionary optimization is done by genetic programming. Genetic programming evolves possible solutions to find a better solution. This evolution is done by first evaluating them and selecting the best ones to continue to the next generation. Then both crossovers between and mutations on possible solutions are performed. After that again evaluation and selection, followed by crossovers and mutations, take place a number of times until a certain quality is found, time has run out or another ending condition has been met.
+	
+	% TPOT layout
+	TPOT makes use of this genetic programming with using the machine learning pipelines in a tree (Figure \ref{fig:MachineLearningPipeline}). TPOT consists of preprocessing and machine learning algorithms, that form the backbone of the pipelines (Table \ref{tab:TPOTAlgorithms}). Their hyper-parameters are the variables. TPOT makes mostly use of the machine learning and preprocessing algorithms of skikit-learn from Python in which it is also written, but also several additional algorithms are present (e.g. a hot encoding algorithm).
+	
+	\begin{table}[]
+		\centering
+		\caption{All TPOT Algorithms used for the TPOT classifier function. Not only the algorithms differ, but also the hyper-parameters within these algorithms.}
+		\label{tab:TPOTAlgorithms}
+		\begin{tabular}{ll|l}
+			\textbf{Algorithm type} & \textbf{Specification}  & \textbf{Algorithms}                                                                                                        \\ \hline
+			\textbf{Classifier}     & Naïve Bayes             & GaussianNB, BernoulliNB, MultinomialNB                                                                                     \\
+			\textbf{}               & Decision Tree           & \begin{tabular}[c]{@{}l@{}}DecisionTree, ExtraTrees, RandomForest, \\ GradientBoosting\end{tabular}                        \\
+			\textbf{}               & Nearest Neighbor        & KNeighbors                                                                                                                 \\
+			\textbf{}               & Support Vector Machines & LinearSVC                                                                                                                  \\
+			\textbf{}               & Logistic Regression     & Logistic Regression                                                                                                        \\ \hline
+			\textbf{Preprocessors}  & Scaler                  & \begin{tabular}[c]{@{}l@{}}Binarizer, MaxAbsScaler, MinMaxScaler, \\ Normalizer, RobustScaler, StandardScaler\end{tabular} \\
+			\textbf{}               & Feature reduction       & \begin{tabular}[c]{@{}l@{}}PCA, FastICA, RBFSampler, Nystroem,\\ FeatureAgglomeration\end{tabular}                         \\
+			\textbf{}               & Feature Modifier        & Polynomial, OneHotEncoder,ZeroCount                                                                                        \\
+			\textbf{}               & Feature Selectors       & \begin{tabular}[c]{@{}l@{}}SelectFwe, SelectPercentile, VarianceThreshold, \\ RFE, SelectFromModel\end{tabular}           
+		\end{tabular}
+	\end{table}
+	
+	\begin{figure}[h!]
+		\includegraphics[scale=1]{MachineLearningPipeline.png}
+		\caption{An example of a machine learning pipeline in TPOT. It only shows the primitive algorithms and not hyperparameter terminals. At the root is the machine learning algorithm\cite{Gijsbers2017Thesis}.}
+		\label{fig:MachineLearningPipeline}
+	\end{figure}
+	
+	% TPOT mutation operators
+	TPOT has three different types of mutations within one pipeline.The first one is insertion, inserting a primitive somewhere in the tree. An example would be the insertion of an additional preprocessing algorithm. The second one is replacement, which replaces a random terminal. It can for example change a binary hyper parameter from true to false. The third one is shrinking. A primitive is replaced by a terminal. For example a preprocessing step can be replaced by just raw data. This different mutations can all be seen visually (Figure \ref{fig:TPOTMutations})
+	
+	\begin{figure}[h!]
+		\includegraphics[scale=1]{TPOTMutations.png}
+		\caption{Examples of the three mutations in the TPOT algorithm: insertion, replacement and shrinking\cite{Gijsbers2017Thesis}.}
+		\label{fig:TPOTMutations}
+	\end{figure}
+	
+	% Crossover
+	TPOT also focuses on mutations between two pipelines through the means of crossovers. Between two pipelines, sub-trees and primitives can be changed, given that the both pipelines remain valid (Figure \ref{fig:TPOTCrossover}). Every time a crossover is performed, two separate pipelines are used and changed, creating two new ones.
+	
+	\begin{figure}[h!]
+		\includegraphics[scale=1]{TPOTCrossover.png}
+		\caption{An example of a TPOT crossover\cite{Gijsbers2017Thesis}.}
+		\label{fig:TPOTCrossover}
+	\end{figure}
+	
+	% Biomedical preprocessing
+	Comparing the possibilities from TPOT and the challenges in biomedical data, it seems that TPOT has some implementations to tackle them. It has several different scalers (StandardScaler, RobustScaler, MinMaxScaler) to tackle feature heterogeneity between different data sets and errors. It also has some feature selection operators to tackle errors (VarianceThreshold, SelectKBest, SelectPercentile). For missing values, the algorithm imputes the median as estimation for the missing value.
+	
+	\newpage
+	\section{Hypotheses}
+	\label{sec:hypotheses}
+	
+	The main goal for this project is to find more insight in feature selection and add that insight to the final framework. Several hypotheses are made before designing experiments to test them and are discussed here:
+	
+	\begin{enumerate}
+		\item \textbf{Optimum in number of selected features} \\
+		An optimum should be found in the number of selected features. Whereas using too many features may cause issues for a machine learning algorithms to extract the correct information from them, preserving too few features may result in lost information. Previous research scaled down the number of features from 400 to 96\cite{pazzani1997learning}, 500 to 13 and for even bigger datasets from 5000-100000 features to between 200 and 900 relevant features\cite{chen2006combining}. Interestingly, the number of relevant features was not related to the original feature set size, indicating the optimum to be an absolute number. The value of this absolute optimum is estimated to be lower than 1000, as no study before ever used a lower number of relevant features.
+		\item \textbf{Best feature selection methods} \\
+		Three types of feature selection methods are discussed, all of them having a their own advantages. Out of these three, the embedded methods are expected to outperform the others. Whereas filter methods are quick and easy, their efficiency should be lower the lower than the other methods. Wrapper methods are more close to trying to find the optimal solution the exhaustive way and therefore are expected to perform the best feature selection at a cost of computation efficiency. At last the embedded methods are expected to be in between of the two. The embedded methods use machine learning methods that are fairly quick and easy to understand to find the results and those machine learning methods somewhat use relative contributions between features. This would mean that embedded methods are quicker and easier than wrapper methods and more efficient than filter methods and therefore combining the best of both.
+		\item \textbf{TPOT feature selection integration} \\
+		Integration of feature selection in TPOT for the framework can be done in different ways. Two ways are thought to be an addition to the tool. First expanding the number of feature selection methods should improve TPOT in finding better pipelines. Secondly having TPOT start with an initial pool of pipelines including feature selection methods should give it a head-start and therefore be quicker and better and finding good pipelines.		
+	\end{enumerate}
+	
+	\newpage
 	\section{Methods}
 	\label{sec:Methods}
 
@@ -557,13 +670,41 @@
 	\label{subsec:DimensionalityReductionQuality}
 	
 	% Machine learning for testing
-	To find out the quality of the feature selection, multiple machine learning algorithms are used\cite{hall1998practical}.  Classification of the datasets can be done with several machine learning algorithms and validation and tests scores show how well the data can be classified after feature selection. The quality will be described with the accuracy of machine learning algorithms: the number of right classifications divided by the total number of classifications. Five different machine learning classifiers are used from scikit-learn: logistic regression, decision trees, nearest neighbour, support vector machines and Naive Bayes. Better feature selection algorithms have relatively higher accuracy, as they are better at removing the right features. Since overfitting sometimes happens when fitting data in a machine learning algorithm, bot a validation and a test score is computed for the accuracy. For every experiment a training set and a test set is created, making the test set 20\% of the complete dataset. A validation score is computed by using leave one out (scikit-learn) on the training set and a test score is computed by testing the classification score of the test set. Since the samples are not evenly distributed over the classes the precision, recall and F1 scores are also computed to find potential bias in the result.
+	To find out the quality of the feature selection, multiple machine learning algorithms are used\cite{hall1998practical}.  Classification of the datasets can be done with several machine learning algorithms and validation and tests scores show how well the data can be classified after feature selection. The quality will be described with the accuracy of machine learning algorithms: the number of right classifications divided by the total number of classifications. Five different machine learning classifiers are used from scikit-learn: logistic regression, decision trees, nearest neighbour, support vector machines and Naive Bayes. Better feature selection algorithms have relatively higher accuracy, as they are better at preserving the right features. Since overfitting sometimes happens when fitting data in a machine learning algorithm, both a validation and a test score is computed for the accuracy. For every experiment a training set and a test set is created, making the test set 20\% of the complete dataset. A validation score is computed by using leave one out (scikit-learn) on the training set and a test score is computed by testing the classification score of the test set. Since the samples are not evenly distributed over the classes the precision, recall and F1 scores are also computed to find potential bias in the result.
+
+	% Addition to number of features
+	In some cases the quality of the machine learning algorithm lacks a factor of feature subset size. The accuracy in those cases is not sufficient enough to evaluate the result. To incorporate the quality of feature selection a new modified quality term FS\_accuracy is created (Equation \ref{eq:FSAccuracy}). In FS\_accuracy a modified version of the original accuracy is given by first multiplying it by a a factor dependent on the number of features. This factor consists of a constant $\alpha$, a value in range $[0, 1]$ which can be chosen for the influence of the  value that represent the number of features. In practice $\alpha > 0.95$ so the reduction does not have too much influence on the accuracy. An example plot of how the correction factor changes is given (Figure \ref{fig:FSAccuracyPlot}).
+	
+	\begin{equation*}
+	\label{eq:FSAccuracy}
+	\text{FS\_accuracy} = \text{accuracy} \times \alpha^{\text{\#features}}
+	\end{equation*}
+		
+		% Insert figures
+	\begin{figure}[H]
+		\includegraphics[width=1\textwidth]{FS_accuracy_alpha.png}
+		\caption{The correction factor for the FS\_accuracy from Equation \ref{eq:FSAccuracy}. Every graph corresponds to a different value of $\alpha$.}
+		\label{fig:FSAccuracyPlot}
+	\end{figure}
+	
+	% Absolute number of features
+	The factor $\#features$ is an absolute count, instead of a relative count (for example a percentage of features). The goal of data analysis is the main reason for using an absolute count. In data analysis the number of features that can be relevant are very limited. Useful results need relations between the input and the output, and these relations need to be as simple as possible. If the number of features is relative to the total number of features, the input size can change significantly. Take for example the Micro Organisms and the RSCTC datasets provided for this study (Subsection \ref{subsec:Datasets}). 2\% of the total features would be 26 and 1100 features for these datasets respectively. Whereas relations between 26 features and the output is possible to understand, relations between 1100 features and the output is much harder. Taking an absolute number of features lets you more actively choose for the input size.
+	
+	% Selection proper alpha
+	To put the impact of the FS\_accuracy in perspective, an exemplary figure is made how the outcome is computed (Figure \ref{fig:FSAccuracyExample}). This figure shows the impact on the performance of a method when using a certain number of features. After using a correction factor, a new optimum is created for which the number of features is important. The example (with $\alpha = 0.99$) seems to give a good indication of the desired outcome. For every $10$ features, the FS\_accuracy is reduced by about 10\% (Figure \ref{fig:FSAccuracyPlot}), which meant for the exemplary filter method that for 50 features an optimum was reached (Figure \ref{fig:FSAccuracyExample}). Because of this empirically found desired trade-off, $\alpha = 0.99$ will be chosen in this project when using FS\_accuracy. 
+	
+	% Insert figures
+	\begin{figure}[H]
+		\includegraphics[]{FS_accuracy_example.png}
+		\caption{An example of the impact of the correction factor on the accuracy. The shown correction factor uses $\alpha = 0.99$. On the x-axis the number of features is shown and on the y-axis the value for the original accuracy, the correction factor and the FS\_accuracy.}
+		\label{fig:FSAccuracyExample}
+	\end{figure}
 	
 	\subsection{Feature Selection Exploration}
 	\label{subsec:FeatureSelectionExploration}
 	
 	% First experiment
-	The first set of experiments is used to explore a combination of the basic filter method combined with the quality measurements. The basic filter method algorithm selecting the top $n$ features (Algorithm \ref{alg:FilterTopNAlgorithm}) is used. The changing variables are the dataset, the ranking method, the feature preservation values and the accuracy computation methods (Table \ref{tab:FirstExperimentRequirements}). The range of chosen feature preservation values comes from both its ability to show impact of separate features (more impact from fewer features) and the relevance of keeping that number of features (irrelevant feature selection with more than 1000 features). All of this together means a total of $4 (\text{datasets}) \times 2 (\text{ranking methods}) \times 11 (\text{top } n \text{ features}) \times 5 (\text{accuracy computation methods}) = 440$ experiments are conducted. These experiments are visualized in eight plots, one plot for every combination of data set and ranking method. These plots then show the change in quality for different number of preserved features.
+	The first set of experiments is used to explore a combination of the basic filter method combined with the quality measurements. The basic filter method algorithm selecting the top $n$ features (Algorithm \ref{alg:FilterTopNAlgorithm}) is used. The changing variables are the dataset, the ranking method, the feature preservation values and the accuracy computation methods (Table \ref{tab:FirstExperimentRequirements}). The range of chosen feature preservation values comes from both its ability to show impact of separate features (more impact from fewer features) and the relevance of keeping that number of features (irrelevant feature selection when having more than 1000 features). All of this together means a total of $4 (\text{datasets}) \times 2 (\text{ranking methods}) \times 11 (\text{top } n \text{ features}) \times 5 (\text{accuracy computation methods}) = 440$ experiments are conducted. These experiments are visualized in eight plots, one plot for every combination of data set and ranking method. These plots then show the change in quality for different number of preserved features.
 	
 	\begin{table}[]
 	\centering
@@ -594,7 +735,7 @@
 		
 		
 	\end{itemize}
-	 Spectra are made with the results of the experiment that show the performance of all different combinations, showing the accuracy, precision, recall and F1-score. On top of that the computation time is computed and shown per algorithm, as well, in a separate bar chart.
+	 Spectra are made with the results of the experiment that show the performance of all different combinations, showing the accuracy, precision, recall and F1-score. On top of that the computation time is computed and shown per algorithm, as well, in a separate bar chart. At last a combination of the newly proposed FS\_accuracy and the computation time is shown as well for $\alpha = 0.99$ (Subsection \ref{subsec:DimensionalityReductionQuality}) to show the relation between computation time on one hand and the FS\_accuracy on the other hand. 
 	Several discussed algorithms  are chosen to be excluded from the evaluation. This choice is based on their poor scalability with regards to computation time and therefore unfit for datasets with this many features. These excluded algorithms are the backwards elimination sequential method, the simulated annealing stochastic search method and the embedded backwards elimination method (Section \ref{subsec:FeatureSelection}). 
 
 \begin{table}[]
@@ -611,21 +752,72 @@
 	\end{tabular}
 \end{table}
 	
-	\subsection{TPOT integration}
-	\label{subsec:TPOTIntegration}
+	\subsection{TPOT Feature selection integration}
+	\label{subsec:TPOTEvaluationIntegration}
 	
-% Please add the following required packages to your document preamble:
-% \usepackage{multirow}
-\begin{table}[]
-	\begin{tabular}{ll|ll|ll}
-		\multirow{2}{*}{\textbf{Algorithm}} & selection      & \multicolumn{2}{l|}{regular selection}                                                                                                 & \multicolumn{2}{l}{always feature selection}                                               \\ \cline{3-6} 
-		& availability   & \begin{tabular}[c]{@{}l@{}}regular\\ algorithms\end{tabular} & \begin{tabular}[c]{@{}l@{}}feature selection\\ algorithms\end{tabular} & regular algorithms & \begin{tabular}[c]{@{}l@{}}feature selection\\ algorithms\end{tabular} \\ \hline
-		\multirow{4}{*}{\textbf{Datasets}}  & MicroOrganisms & -0.36                                                        & -0.37                                                                  & 0.79               & 0.73                                                                   \\
-		& Arcene         & -9.08                                                        & -9.13                                                                  & 0.76               & 0.76                                                                   \\
-		& RSCTC          & -53.76                                                       & -53.72                                                                 & 0.20               &                                                                        \\
-		& Psoriasis      & -53.76                                                       & -53.77                                                                 &                    &                                                                       
-	\end{tabular}
-\end{table}
+	% Introduction
+	TPOT is an effective tool to find the best machine learning pipeline for a certain dataset (Subsection \ref{subsec:TPOT}). TPOT however has three restrictions on finding the correct pipeline when a high number of features is involved:
+	
+	\begin{enumerate}
+		\item \textit{Input versus output} \\
+		The goal of feature selection is to directly link a smaller number of features to the output. Whereas TPOT has possibilities to find pipelines with feature selection, it gives no advantage to pipelines that actively use feature selection if needed.
+		\item \textit{Memory/Invalid dataset issues} \\
+		Firstly, not all algorithms are suitable for handling more than 10000 features. The feature agglomeration algorithm, one of the algorithms present in TPOT, will create memory issues in those cases. This makes this algorithm unfit for usage. Similarly, The scikit-learn multinomial naive bayes algorithm cannot be used with negative values. Biomedical data does not have that restriction and therefore possibly gives errors because of this. On top of that, several preprocessing algorithms also change values to be negative.
+		\item \textit{General insert issue} \\
+		TPOT seemed to have an issue inserting new algorithms. This issue resulted in a very low number of insertion mutations, which caused a suboptimal search for the best machine learning pipeline that includes feature selection methods and insertion of those.
+	\end{enumerate}
+	
+	% Sulotion to this three restrictions
+	These three initial restrictions must first be tackled for proper use of TPOT with feature selection. This resulted in three measures, explained here in identical order.
+	
+	\begin{enumerate}
+		\item \textit{Feature modifier addition to accuracy} \\
+		In the case of feature selection, the possibility is given to change the performance measurement to the earlier proposed FS\_accuracy (Subsection \ref{subsec:DimensionalityReductionQuality}). Using this FS\_accuracy instead of normal accuracy creates an incentive for TPOT to prefer feature selection algorithms in the resulting pipeline, due to higher performance.
+		\item \textit{Algorithm removal} \\
+		For this restriction, simply the feature agglomeration algorithm is removed. This type of feature selection is not essential in biomedical research and therefore removal is not expected to hinder removal. The multinomial naive bayes algorithm is removed, as well, with the same reasoning.
+		\item \textit{Change in insert method} \\
+		This insert issue was removed by rewriting the code for the insert function. This insert function originally attempted to insert algorithms for every possible hyper-parameter as well as at the start of the pipeline. This is replaced by only having insertion at the start of the pipeline This is an improvement because no algorithm in TPOT actually has a hyper-parameter that can be changed by a different algorithm in TPOT.
+	\end{enumerate}
+	
+	On top of these three restrictions and the measures taken to tackle them, two additional restrictions hinder optimization with regards to feature selection:
+	
+	\begin{enumerate}
+				\item \textit{Lack of warm start} \\
+		TPOT has a vast array of machine learning and preprocessing algorithms to find the best possible pipeline. Due to the number of possibilities being very high, a lot of time may be wasted due to searching in wrong directions. For feature selection, a pre-defined selection of pipelines (also known as a warm start) would improve efficiency.
+		\item \textit{Feature selection possibilities} \\
+		Several filter (Subsection \ref{subsec:FilterMethods}) and embedded (subsection \ref{subsec:EmbeddedMethods}) are present. Both of these select percentages of feature selection, though, which can still result in a high number of features. On top of that, no wrapper methods (Subsection \ref{subsec:WrapperMethods}) are available, either.
+	\end{enumerate}
+	
+	For both of these optimization restrictions, two additions are made to the TPOT code structure for increased functionality with regards to feature selection, in the same order as the restrictions:
+	
+	\begin{enumerate}
+		\item \textit{Focused feature selection addition} \\
+		The possibility is created to start the original population with guaranteed a feature selection algorithm in the feature selection pipeline. Due to this start the expected search for a good feature selection method is bypassed immediately, which should result in more optimized final pipeline.
+		\item \textit{Alternative feature selection algorithm set} \\
+		The possibility is created to start with an alternative feature selection algorithms set. This selection consists of filter, wrapper and embedded methods and the hyper-parameters are predefined to create an upper bound of 200 features.
+	\end{enumerate}
+	
+	% Outcome explanations
+	The outcome of the first initial measures are trivial: the use of FS\_accuracy makes TPOT search for solutions with fewer features, the removal of algorithms that cause errors and memory issues creates better optimization and the more effective use of the insert evolution, makes the algorithm search that possibility better. The outcome of optimization additions however, may not necessarily improve the performance of TPOT for feature selection. Therefore the changes for these two solutions are tested with an experiment. 
+	
+	% Experiment set-up
+	The experiment consists of multiple runs of TPOT and all of these steps are also shown in an explanatory table (Table \ref{tab:TPOTExpDetails}). All four datasets are tested (Subsection \ref{subsec:Datasets}) and the accuracy is changed to the feature sensitive FS\_accuracy with $\alpha = 0.99$ (Equation \ref{eq:FSAccuracy}). For testing TPOT an optimization time of 720 minutes (12 hours) was chosen as a reasonable time constraint (one night), an algorithm was not allowed to run for longer than ten minutes, a population size of 20 was chosen to not be to selective at the start and a training set size of $0.90$ which is a general training set size when not many samples are present. Furthermore tests were done for pipeline selection both with and without focused feature selection  and for both with and without alternative feature selection algorithms set, as these additions must be tested for their quality. This gives a total of $4 (\text{datasets}) \times 2 (\text{pipeline selction}) \times 2 (\text{feature selection set}) = 16$ different experiments.
+	
+	
+	\begin{table}[]
+		\caption{The experiment details for testing the non-trivial changes in TPOT.}
+		\label{tab:TPOTExpDetails}
+		\begin{tabular}{l|l|l}
+				\textbf{\begin{tabular}[c]{@{}l@{}}Experiment \\ factors\end{tabular}}                           & \textbf{Detailed values}                                                                                                                                                                    & \textbf{Remarks}                                                                                                                                                                                                                                    \\ \hline
+				\textbf{Datasets}                                                                                & \begin{tabular}[c]{@{}l@{}}MicroOrganisms\\ Arcene\\ RSCTC\\ Psoriasis\end{tabular}                                                                                                         & \begin{tabular}[c]{@{}l@{}}High number of features\\ (Subsection \ref{subsec:Datasets})\end{tabular}                                                                                                                                                                  \\ \hline
+				\textbf{\begin{tabular}[c]{@{}l@{}}Performance \\ measurement\end{tabular}}                      & \begin{tabular}[c]{@{}l@{}}One type: FS\_accuracy\\ - $\alpha = 0.99$\end{tabular}                                                                                                             & \begin{tabular}[c]{@{}l@{}}Addition of correction factor\\ (Equation \ref{eq:FSAccuracy})\end{tabular}                                                                                                                                                              \\ \hline
+				\textbf{\begin{tabular}[c]{@{}l@{}}TPOT input \\ parameters\end{tabular}}                        & \begin{tabular}[c]{@{}l@{}}One set of input values:\\ - max. optimization time = 720 min\\ - max. alg. evaluation time = 10 min\\ - population size = 20\\ - train size = 0.9\end{tabular} & \begin{tabular}[c]{@{}l@{}}Explanation of input values:\\ - The time one run should take (12 hours)\\ - The evaluation time of one pipeline \\ - The number of pipelines in one generation\\ - The number of samples used for training\end{tabular} \\ \hline
+				\textbf{\begin{tabular}[c]{@{}l@{}}Pipeline\\ selection\end{tabular}}                           & \begin{tabular}[c]{@{}l@{}}Regular selection\\ Feature selection focused\end{tabular}                                                                                                       & \begin{tabular}[c]{@{}l@{}}Possible obligatory addition \\ of a feature selection algorithm\end{tabular}                                                                                                                                            \\ \hline
+				\textbf{\begin{tabular}[c]{@{}l@{}}Change in \\ feature selection \\ algorithm set\end{tabular}} & \begin{tabular}[c]{@{}l@{}}Regular feature selection algorithm set\\ New feature selection algorithm set\end{tabular}                                                                       & \begin{tabular}[c]{@{}l@{}}A change between several basic \\ feature selection algorithms to \\ feature selection algorithms designed \\ for at most 200 features preservation\end{tabular}                                                        
+			\end{tabular}
+		\end{table}
+	
+	\newpage
 	\section{Results}
 	\label{sec:Results}
 	
@@ -689,7 +881,7 @@
 	\begin{figure}[H]
 		\centering
 		\includegraphics[angle=90,height=1.4\textwidth]{Accuracy_new.png}
-		\caption{The accuracy spectrum for the average dataset. The x-axis shows the average number of features that are preserved and the y-axis shows the accuracy of logistic regression. The legend indicates the algorithms (Table \ref{tab:SecondExperimentMethods}) and their matching shapes, as well as the chosen parameters with their matching colours. Abbreviations in legend: Mutual Information (MI), Pick l-Take Away r (PTA), Machine Learning algorithm (ML), Support Vector Machine (svm), random forest (rf)}
+		\caption{The accuracy spectrum for the average dataset. The x-axis shows the average number of features that are preserved and the y-axis shows the accuracy of logistic regression. The legend indicates the algorithms (Table \ref{tab:SecondExperimentMethods}) and their corresponding shapes, as well as the chosen parameters with their matching colours. Abbreviations in legend: Mutual Information (MI), Pick l-Take Away r (PTA), Machine Learning algorithm (ML), Support Vector Machine (svm), random forest (rf)}
 		\label{fig:Avg_Accuracy_Spectrum}
 	\end{figure}
 
@@ -697,7 +889,7 @@
 \begin{figure}[H]
 	\centering
 	\includegraphics[angle=90,height=1.4\textwidth]{Precision_new.png}
-	\caption{The precision spectrum for the average dataset. The x-axis shows the average number of features that are preserved and the y-axis shows the precision of logistic regression. The legend indicates the algorithms and their matching shapes, as well as the chosen parameters with their matching colours. Abbreviations in legend: Mutual Information (MI), Pick l-Take Away r (PTA), Machine Learning algorithm (ML), Support Vector Machine (svm), random forest (rf)}
+	\caption{The precision spectrum for the average dataset. The x-axis shows the average number of features that are preserved and the y-axis shows the precision of logistic regression. The legend indicates the algorithms and their corresponding shapes, as well as the chosen parameters with their matching colours. Abbreviations in legend: Mutual Information (MI), Pick l-Take Away r (PTA), Machine Learning algorithm (ML), Support Vector Machine (svm), random forest (rf)}
 	\label{fig:Avg_Precision_Spectrum}
 \end{figure}
 
@@ -705,7 +897,7 @@
 \begin{figure}[H]
 	\centering
 	\includegraphics[angle=90,height=1.4\textwidth]{Recall_new.png}
-	\caption{The recall spectrum for the average dataset. The x-axis shows the average number of features that are preserved and the y-axis shows the recall of logistic regression. The legend indicates the algorithms and their matching shapes, as well as the chosen parameters with their matching colours. Abbreviations in legend: Mutual Information (MI), Pick l-Take Away r (PTA), Machine Learning algorithm (ML), Support Vector Machine (svm), random forest (rf)}
+	\caption{The recall spectrum for the average dataset. The x-axis shows the average number of features that are preserved and the y-axis shows the recall of logistic regression. The legend indicates the algorithms and their corresponding shapes, as well as the chosen parameters with their matching colours. Abbreviations in legend: Mutual Information (MI), Pick l-Take Away r (PTA), Machine Learning algorithm (ML), Support Vector Machine (svm), random forest (rf)}
 	\label{fig:Avg_Recall_Spectrum}
 \end{figure}
 
@@ -713,7 +905,7 @@
 \begin{figure}[H]
 	\centering
 	\includegraphics[angle=90,height=1.4\textwidth]{F1_new.png}
-	\caption{The F1 spectrum for the average dataset. The x-axis shows the average number of features that are preserved and the y-axis shows the F1 score of logistic regression. The legend indicates the algorithms and their matching shapes, as well as the chosen parameters with their matching colours. Abbreviations in legend: Mutual Information (MI), Pick l-Take Away r (PTA), Machine Learning algorithm (ML), Support Vector Machine (svm), random forest (rf)}
+	\caption{The F1 spectrum for the average dataset. The x-axis shows the average number of features that are preserved and the y-axis shows the F1 score of logistic regression. The legend indicates the algorithms and their corresponding shapes, as well as the chosen parameters with their matching colours. Abbreviations in legend: Mutual Information (MI), Pick l-Take Away r (PTA), Machine Learning algorithm (ML), Support Vector Machine (svm), random forest (rf)}
 	\label{fig:Avg_F1_Spectrum}
 \end{figure}
 
@@ -727,7 +919,39 @@
 	\caption{A bar chart showing the average computation time of all evaluated algorithms. The x-axis corresponded to the different algorithms, for which the computation time for multiple parameter combinations were given. The y-axis corresponded to the computation time in seconds. Abbreviations in legend: Mutual Information (MI), Pick l-Take Away r (PTA), Support Vector Machine (svm), random forest (rf)}
 	\label{fig:Comp_Time_Bar}
 \end{figure}
+
+	% FS_Accuracy
+	At last the relation between the computation time and FS\_accuracy, the corrected accuracy, are visualized (Figure \ref{fig:Comp_Time_FS_Acc}). In this chart the trade-of between computation time and quality of a feature selection algorithm is  shown by the following statements: 
+	\begin{itemize}
+		\item Filter and embedded methods take the shortest time, but have the worst performance. Floating methods takes the longest time, but are not necessarily better than other wrapper methods
+		\item For both filter and embedded methods using T-test and svm over mutual information and random forests respectively seems to greatly reduce computation time for little to no improvement in FS\_accuracy.
+		\item For all wrapper methods the addition of an ordering and choosing a threshold of $\alpha = 0.01$ over $\alpha = 0.001$ gives better results. Using these hyper-parameters however usually add computation time.
+		\item Forward selection and PTA do not show a big difference between each other.
+	\end{itemize}
 	
+	% Insert figures
+\begin{figure}[H]
+	\centering
+	\includegraphics[angle=90,height=1.4\textwidth]{FS_Accuracy_99.png}
+	\caption{The relation between the FS\_accuracy and the computation time. The x-axis shows the computation time the y-axis shows the FS\_accuracy score of logistic regression. The legend indicates the algorithms and their corresponding shapes, as well as the chosen parameters with their matching colours. Abbreviations in legend: Mutual Information (MI), Pick l-Take Away r (PTA), Machine Learning algorithm (ML), Support Vector Machine (svm), random forest (rf)}
+	\label{fig:Comp_Time_FS_Acc}
+\end{figure}
+	
+	\subsection{TPOT Feature Selection Integration Results}
+	
+	
+	\begin{table}[]
+		\begin{tabular}{ll|ll|ll}
+			\multirow{2}{*}{\textbf{Algorithm}} & selection      & \multicolumn{2}{l|}{regular selection}                                                                                                 & \multicolumn{2}{l}{always feature selection}                                               \\ \cline{3-6} 
+			& availability   & \begin{tabular}[c]{@{}l@{}}regular\\ algorithms\end{tabular} & \begin{tabular}[c]{@{}l@{}}feature selection\\ algorithms\end{tabular} & regular algorithms & \begin{tabular}[c]{@{}l@{}}feature selection\\ algorithms\end{tabular} \\ \hline
+			\multirow{4}{*}{\textbf{Datasets}}  & MicroOrganisms & 0.79                                                        & 0.65                                                                  & 0.89               & 0.85                                                                   \\
+			& Arcene         & 0.89                                                        & 0.89                                                                  & 0.88               & 0.84                                                                   \\
+			& RSCTC          & 0                                                       & 0.55                                                                 & 0.91               & 0.60                                                                       \\
+			& Psoriasis      & 0.78                                                       & 0.77                                                                 & 0.91                   & 0.72                                                                      
+		\end{tabular}
+	\end{table}
+	
+	\newpage
 	\section{Discussion}
 	\label{sec:Discussion}
 	
@@ -745,10 +969,13 @@
 	After evaluation of the results in the first experiment set-up, it can be concluded that there is not a big difference between using T-test/ANOVA or Mutual Information as a ranking method. Both seem to give similar results, with the exception of one dataset (Figure \ref{fig:DatasetRankScores}). The T-test/ANOVA is computationally faster than Mutual Information as could be seen in the second experiment (Figure \ref{fig:Comp_Time_Bar}), however also works with the assumption that the classes are normally distributed. This may not always be the case. A rule of thumb for choice of ranking method would be to use t-test, except for when the data is not normally distributed. Both of them should definitely be considered to be used in the framework.
 	
 	% Second conclusion exploration
-	A second conclusion can be drawn from looking at the accuracy with the number of features preserved. After a threshold of 200 features, additional features do not raise the validation score as much as the first 200 features seem to do. This can indicate a second rule of thumb, that at least 200 features must be preserved after using a filter method.
+	A second conclusion can be drawn from looking at the accuracy with the number of features preserved. After a threshold of 200 features, additional features do not raise the validation score as much as the first 200 features seem to do. This can indicate a second rule of thumb, that at least 200 features must be preserved after using a filter method. This rule of thumb is according to the hypothesized notion that at most 1000 features should be preserved to still show an efficient result, however is much lower than the expected than the upper bound.
 	
 	% Second experiment - filter vs wrapper methods
-	After evaluation of both filter, wrapper and embedded methods, wrapper methods seem to be significantly better at selecting a smaller fraction of features while preserving a similar test score. Since wrapper methods take dependencies between features into account, they are able to keep these dependencies at a minimum. If these dependencies are unwanted, wrapper methods seem to be more useful than filter methods and embedded and should be recommended. A downside of the wrapper methods however is that they take much more computation time than the filter methods and embedded. Therefore if it does not matter if features have dependencies with each other, a filter method should be recommended
+	After evaluation of both filter, wrapper and embedded methods, wrapper methods seem to be significantly better at selecting a smaller fraction of features while preserving a similar test score.  Whereas the expectation was for wrapper methods to be best in efficiency, embedded methods were expected to outperform both filter methods and wrapper methods when looking at both quality and computation time. This is not the case however as embedded methods had a near identical quality to filter methods and performed much worse than wrapper methods. The outcome indicates that wrapper methods are significantly different in results and filter and embedded methods being near identical.
+	
+	% Further conclusions
+	Since wrapper methods take dependencies between features into account, they are able to keep these dependencies at a minimum. If these dependencies are unwanted, wrapper methods seem to be more useful than filter methods and embedded and should be recommended. A downside of the wrapper methods however is that they take much more computation time than the filter methods and embedded. Therefore if it does not matter if features have dependencies with each other, a filter method should be recommended.
 	
 	% Wrapper methods with each other
 	There is a difference in quality within the wrapper methods. The forward selection and PTA all showed promising results and therefore should be considered for the framework. Floating search showed the best results, however took significantly longer in computation time. Within the wrapper methods, an ordering beforehand is recommended for improved results. Backward elimination wrapper algorithms, stochastic search algorithms and embedded backwards elimination algorithms all were significantly worse in computation time than the other wrapper algorithms and therefore should not be considered in these cases.
@@ -758,6 +985,9 @@
 	
 	% Combinations
 	In this research only separate feature selection methods were tested. Whereas the filter methods needed very little computation time, the feature subset size and quality of the wrapper methods are much more interesting for further research. A combination of a filter and a wrapper method might create a better result. If first the majority of the features is filtered out by a filter method and then a wrapper method computes the best combination of feature, the result could be relatively quicker than the wrapper method while still maintaining a high enough quality. This combination is worth investigating into in future research.
+	
+	% TPOT conclusion
+	% Inser here
 	
 	\bibliography{../References/Citings} 
 	\bibliographystyle{ieeetr}

@@ -8,9 +8,9 @@ from MissingValueHandlingMethods import ListDeletionMethods as LDM, \
     SingleImputationMethods as SIM, \
     MultipleImputationMethods as MIM, PreprocessingMethods as HE
 
-missing_value_methods = ['WCA']#['CCA', 'ACA', 'WCA', 'mean', 'hot deck', 'missing indicator mean', 'missing indicator zeros',
-                        # 'regression', 'kNN k=1', 'kNN k=3',
-                        # 'MICE s=3, m=3', 'MICE s=3, m=5', 'MICE s=5, m=3', 'MICE s=5, m=5']
+missing_value_methods = ['ACA']#['CCA', 'ACA', 'WCA', 'mean', 'hot deck', 'missing indicator mean', 'missing indicator zeros',
+                        #'regression', 'kNN k=1', 'kNN k=3', 'kNN k=5',
+                        #'MICE s=3, m=3', 'MICE s=3, m=5', 'MICE s=5, m=3', 'MICE s=5, m=5']
 data_names = ['Hepatitis', 'Cirrhosis', 'Cervical']
 # data_names = 'HeartAttack' needs regression
 
@@ -25,15 +25,16 @@ recall = []
 F1 = []
 
 for data in data_names:
+
+    # Extract data
+    X, y, features = DSE.import_example_data(data)
+
     for method in missing_value_methods:
 
         print("Currently at data %s combined with method %s" % (data, method))
 
         data_name.append(data)
         missing_value_method_name.append(method)
-
-        # Extract data
-        X, y, features = DSE.import_example_data(data)
 
         new_y = y
 
@@ -48,7 +49,7 @@ for data in data_names:
 
         elif method == 'ACA':
             test_name.append('LD')
-            new_X, new_y = LDM.cca(LDM.aca(X, missing_values='', removal_fraction=0.10), y, missing_values='')
+            new_X, new_y = LDM.cca(LDM.aca(X, missing_values='', removal_fraction=0.001), y, missing_values='')
 
         elif method == 'WCA':
             test_name.append('LD')
@@ -85,7 +86,7 @@ for data in data_names:
 
             new_X = HE.hot_encode_categorical_values(new_X)
 
-            val, test, prec, rec, Fbeta = HE.compute_scores(new_X, new_y)
+            val, test, prec, rec, Fbeta = HE.compute_scores(new_X, new_y, nr_cross_val=10)
         else:
 
             tot_val = []
@@ -99,7 +100,7 @@ for data in data_names:
 
                 temp_new_X = HE.hot_encode_categorical_values(temp_X)
 
-                temp_val, temp_test, temp_prec, temp_rec, temp_Fbeta = HE.compute_scores(temp_new_X, new_y)
+                temp_val, temp_test, temp_prec, temp_rec, temp_Fbeta = HE.compute_scores(temp_new_X, new_y, nr_cross_val=10)
 
                 tot_val.append(temp_val)
                 tot_test.append(temp_test)
@@ -122,7 +123,7 @@ for data in data_names:
 
         print("Validation score is %f, test score is %f" % (T_val[-1], T_test[-1]))
 
-with open('MissingValueHandlingClassificationValuesWCA.csv', 'w', newline='') as csv_file:
+with open('MissingValueHandlingBlankTest.csv', 'w', newline='') as csv_file:
     csv_writer = csv.writer(csv_file)
     csv_writer.writerow(data_name)
     csv_writer.writerow(test_name)

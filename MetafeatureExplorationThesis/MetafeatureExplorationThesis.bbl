@@ -1,0 +1,229 @@
+\begin{thebibliography}{10}
+
+\bibitem{gehlenborg2010visualization}
+N.~Gehlenborg, S.~I. O'donoghue, N.~S. Baliga, A.~Goesmann, M.~A. Hibbs,
+  H.~Kitano, O.~Kohlbacher, H.~Neuweger, R.~Schneider, D.~Tenenbaum, {\em
+  et~al.}, ``Visualization of omics data for systems biology,'' {\em Nature
+  methods}, vol.~7, no.~3s, p.~S56, 2010.
+
+\bibitem{brazma2001minimum}
+A.~Brazma, P.~Hingamp, J.~Quackenbush, G.~Sherlock, P.~Spellman, C.~Stoeckert,
+  J.~Aach, W.~Ansorge, C.~A. Ball, H.~C. Causton, {\em et~al.}, ``Minimum
+  information about a microarray experiment (miame)—toward standards for
+  microarray data,'' {\em Nature genetics}, vol.~29, no.~4, p.~365, 2001.
+
+\bibitem{cottrell1999probability}
+J.~S. Cottrell and U.~London, ``Probability-based protein identification by
+  searching sequence databases using mass spectrometry data,'' {\em
+  electrophoresis}, vol.~20, no.~18, pp.~3551--3567, 1999.
+
+\bibitem{dettmer2007mass}
+K.~Dettmer, P.~A. Aronov, and B.~D. Hammock, ``Mass spectrometry-based
+  metabolomics,'' {\em Mass spectrometry reviews}, vol.~26, no.~1, pp.~51--78,
+  2007.
+
+\bibitem{capitani2017nuclear}
+D.~Capitani, A.~P. Sobolev, and L.~Mannina, ``Nuclear magnetic
+  resonance--metabolomics,'' {\em Food Authentication: Management, Analysis and
+  Regulation}, p.~177, 2017.
+
+\bibitem{liu2012data}
+B.~Liu, X.~Zhou, Y.~Wang, J.~Hu, L.~He, R.~Zhang, S.~Chen, and Y.~Guo, ``Data
+  processing and analysis in real-world traditional chinese medicine clinical
+  data: challenges and approaches,'' {\em Statistics in medicine}, vol.~31,
+  no.~7, pp.~653--660, 2012.
+
+\bibitem{sittig2008grand}
+D.~F. Sittig, A.~Wright, J.~A. Osheroff, B.~Middleton, J.~M. Teich, J.~S. Ash,
+  E.~Campbell, and D.~W. Bates, ``Grand challenges in clinical decision
+  support,'' {\em Journal of biomedical informatics}, vol.~41, no.~2,
+  pp.~387--392, 2008.
+
+\bibitem{magni1990chronic}
+G.~Magni, C.~Caldieron, S.~Rigatti-Luchini, and H.~Merskey, ``Chronic
+  musculoskeletal pain and depressive symptoms in the general population. an
+  analysis of the 1st national health and nutrition examination survey data,''
+  {\em Pain}, vol.~43, no.~3, pp.~299--307, 1990.
+
+\bibitem{bertolazzi2008logic}
+P.~Bertolazzi, G.~Felici, P.~Festa, and G.~Lancia, ``Logic classification and
+  feature selection for biomedical data,'' {\em Computers \& Mathematics with
+  Applications}, vol.~55, no.~5, pp.~889--899, 2008.
+
+\bibitem{piatetsky2003microarray}
+G.~Piatetsky-Shapiro and P.~Tamayo, ``Microarray data mining: facing the
+  challenges,'' {\em ACM SIGKDD Explorations Newsletter}, vol.~5, no.~2,
+  pp.~1--5, 2003.
+
+\bibitem{lommen2009metalign}
+A.~Lommen, ``Metalign: interface-driven, versatile metabolomics tool for
+  hyphenated full-scan mass spectrometry data preprocessing,'' {\em Analytical
+  chemistry}, vol.~81, no.~8, pp.~3079--3086, 2009.
+
+\bibitem{holzinger2014knowledge}
+A.~Holzinger, M.~Dehmer, and I.~Jurisica, ``Knowledge discovery and interactive
+  data mining in bioinformatics-state-of-the-art, future challenges and
+  research directions,'' {\em BMC bioinformatics}, vol.~15, no.~6, p.~I1, 2014.
+
+\bibitem{wilkins2009proteomics}
+M.~Wilkins, ``Proteomics data mining,'' {\em Expert review of proteomics},
+  vol.~6, no.~6, pp.~599--603, 2009.
+
+\bibitem{teodoro2009biomedical}
+D.~Teodoro, R.~Choquet, E.~Pasche, J.~Gobeill, C.~Daniel, P.~Ruch, and
+  C.~Lovis, ``Biomedical data management: a proposal framework.,'' in {\em
+  MIE}, pp.~175--179, Citeseer, 2009.
+
+\bibitem{doi:10.1093/nar/gkm1037}
+M.~Y. Galperin, ``The molecular biology database collection: 2008 update,''
+  {\em Nucleic Acids Research}, vol.~36, no.~suppl1, pp.~D2--D4, 2008.
+
+\bibitem{sturn2002genesis}
+A.~Sturn, J.~Quackenbush, and Z.~Trajanoski, ``Genesis: cluster analysis of
+  microarray data,'' {\em Bioinformatics}, vol.~18, no.~1, pp.~207--208, 2002.
+
+\bibitem{karnovsky2011metscape}
+A.~Karnovsky, T.~Weymouth, T.~Hull, V.~G. Tarcea, G.~Scardoni, C.~Laudanna,
+  M.~A. Sartor, K.~A. Stringer, H.~Jagadish, C.~Burant, {\em et~al.},
+  ``Metscape 2 bioinformatics tool for the analysis and visualization of
+  metabolomics and gene expression data,'' {\em Bioinformatics}, vol.~28,
+  no.~3, pp.~373--380, 2011.
+
+\bibitem{tabas2012genecodis3}
+D.~Tabas-Madrid, R.~Nogales-Cadenas, and A.~Pascual-Montano, ``Genecodis3: a
+  non-redundant and modular enrichment analysis tool for functional genomics,''
+  {\em Nucleic acids research}, vol.~40, no.~W1, pp.~W478--W483, 2012.
+
+\bibitem{faul2007g}
+F.~Faul, E.~Erdfelder, A.-G. Lang, and A.~Buchner, ``G* power 3: A flexible
+  statistical power analysis program for the social, behavioral, and biomedical
+  sciences,'' {\em Behavior research methods}, vol.~39, no.~2, pp.~175--191,
+  2007.
+
+\bibitem{kluegl2009meta}
+P.~Kluegl, M.~Atzmueller, and F.~Puppe, ``Meta-level information extraction,''
+  in {\em Annual Conference on Artificial Intelligence}, pp.~233--240,
+  Springer, 2009.
+
+\bibitem{doi:10.1093/bioinformatics/btu022}
+P.~Mahé, M.~Arsac, S.~Chatellier, V.~Monnin, N.~Perrot, S.~Mailler, V.~Girard,
+  M.~Ramjeet, J.~Surre, B.~Lacroix, A.~van Belkum, and J.-B. Veyrieras,
+  ``Automatic identification of mixed bacterial species fingerprints in a
+  maldi-tof mass-spectrum,'' {\em Bioinformatics}, vol.~30, no.~9,
+  pp.~1280--1286, 2014.
+
+\bibitem{madigan2017brock}
+M.~T. Madigan, J.~M. Martinko, J.~Parker, {\em et~al.}, {\em Brock biology of
+  microorganisms}, vol.~13.
+\newblock Pearson, 2017.
+
+\bibitem{diaconis1983computer}
+P.~Diaconis and B.~Efron, ``Computer-intensive methods in statistics,'' {\em
+  Scientific American}, vol.~248, no.~5, pp.~116--131, 1983.
+
+\bibitem{cestnikkononenkoj}
+B.~Cestnik, ``Kononenkoj., bratkoj.(1987): Assistant-86: A knowledge
+  elicitation tool for sophisticated users,'' {\em Progress in machine
+  learning}.
+
+\bibitem{agresti2003categorical}
+A.~Agresti, {\em Categorical data analysis}, vol.~482.
+\newblock John Wiley \& Sons, 2003.
+
+\bibitem{congdon2005bayesian}
+P.~Congdon, {\em Bayesian models for categorical data}.
+\newblock John Wiley \& Sons, 2005.
+
+\bibitem{safavian1991survey}
+S.~R. Safavian and D.~Landgrebe, ``A survey of decision tree classifier
+  methodology,'' {\em IEEE transactions on systems, man, and cybernetics},
+  vol.~21, no.~3, pp.~660--674, 1991.
+
+\bibitem{edwards2002explaining}
+A.~Edwards, G.~Elwyn, and A.~Mulley, ``Explaining risks: turning numerical data
+  into meaningful pictures,'' {\em Bmj}, vol.~324, no.~7341, pp.~827--830,
+  2002.
+
+\bibitem{gelman2006data}
+A.~Gelman and J.~Hill, {\em Data analysis using regression and
+  multilevel/hierarchical models}.
+\newblock Cambridge university press, 2006.
+
+\bibitem{han2011data}
+J.~Han, J.~Pei, and M.~Kamber, {\em Data mining: concepts and techniques}.
+\newblock Elsevier, 2011.
+
+\bibitem{guo2016entity}
+C.~Guo and F.~Berkhahn, ``Entity embeddings of categorical variables,'' {\em
+  arXiv preprint arXiv:1604.06737}, 2016.
+
+\bibitem{larose2014discovering}
+D.~T. Larose and C.~D. Larose, {\em Discovering knowledge in data: an
+  introduction to data mining}.
+\newblock John Wiley \& Sons, 2014.
+
+\bibitem{al2006normalization}
+L.~Al~Shalabi and Z.~Shaaban, ``Normalization as a preprocessing engine for
+  data mining and the approach of preference matrix,'' in {\em Dependability of
+  Computer Systems, 2006. DepCos-RELCOMEX'06. International Conference on},
+  pp.~207--214, IEEE, 2006.
+
+\bibitem{patro2015normalization}
+S.~Patro and K.~K. Sahu, ``Normalization: A preprocessing stage,'' {\em arXiv
+  preprint arXiv:1503.06462}, 2015.
+
+\bibitem{peng2005feature}
+H.~Peng, F.~Long, and C.~Ding, ``Feature selection based on mutual information
+  criteria of max-dependency, max-relevance, and min-redundancy,'' {\em IEEE
+  Transactions on pattern analysis and machine intelligence}, vol.~27, no.~8,
+  pp.~1226--1238, 2005.
+
+\bibitem{rokach2005clustering}
+L.~Rokach and O.~Maimon, ``Clustering methods,'' in {\em Data mining and
+  knowledge discovery handbook}, pp.~321--352, Springer, 2005.
+
+\bibitem{castiello2005meta}
+C.~Castiello, G.~Castellano, and A.~M. Fanelli, ``Meta-data: Characterization
+  of input features for meta-learning,'' in {\em International Conference on
+  Modeling Decisions for Artificial Intelligence}, pp.~457--468, Springer,
+  2005.
+
+\bibitem{vilalta2002perspective}
+R.~Vilalta and Y.~Drissi, ``A perspective view and survey of meta-learning,''
+  {\em Artificial Intelligence Review}, vol.~18, no.~2, pp.~77--95, 2002.
+
+\bibitem{bourbakis2011extracting}
+N.~Bourbakis, A.~Esposito, and D.~Kavraki, ``Extracting and associating
+  meta-features for understanding people’s emotional behaviour: Face and
+  speech,'' {\em Cognitive Computation}, vol.~3, no.~3, pp.~436--448, 2011.
+
+\bibitem{wold1987principal}
+S.~Wold, K.~Esbensen, and P.~Geladi, ``Principal component analysis,'' {\em
+  Chemometrics and intelligent laboratory systems}, vol.~2, no.~1-3,
+  pp.~37--52, 1987.
+
+\bibitem{yu2003feature}
+L.~Yu and H.~Liu, ``Feature selection for high-dimensional data: A fast
+  correlation-based filter solution,'' in {\em Proceedings of the 20th
+  international conference on machine learning (ICML-03)}, pp.~856--863, 2003.
+
+\bibitem{hall2000correlation}
+M.~A. Hall, ``Correlation-based feature selection of discrete and numeric class
+  machine learning,'' 2000.
+
+\bibitem{chow1968approximating}
+C.~Chow and C.~Liu, ``Approximating discrete probability distributions with
+  dependence trees,'' {\em IEEE transactions on Information Theory}, vol.~14,
+  no.~3, pp.~462--467, 1968.
+
+\bibitem{pfahringer2000meta}
+B.~Pfahringer, H.~Bensusan, and C.~G. Giraud-Carrier, ``Meta-learning by
+  landmarking various learning algorithms.,'' in {\em ICML}, pp.~743--750,
+  2000.
+
+\bibitem{blackman2000interval}
+N.~J.-M. Blackman and J.~J. Koval, ``Interval estimation for cohen's kappa as a
+  measure of agreement,'' {\em Statistics in medicine}, vol.~19, no.~5,
+  pp.~723--741, 2000.
+
+\end{thebibliography}

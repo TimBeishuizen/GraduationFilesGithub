@@ -61,8 +61,10 @@ def mean_imputation(X, missing_values=None, imputation_type='mean'):
     for j in range(X.shape[1]):
 
         # Foolproof if categorical values, while not given categorical values
-        complete_values = np.delete(X[:, j], np.argwhere(X[:, j] == missing_values))
-        unique_values = np.unique(complete_values)
+        complete_values = np.delete(X[:, j], np.argwhere(X[:, j] is missing_values))
+
+        unique_values = np.unique(complete_values.astype(str))
+
         try:
             unique_values.astype(float)
             if unique_values.shape[0] <= 2:
@@ -161,9 +163,10 @@ def kNN_imputation(X, missing_values=None, k=1):
     missing_loc = np.argwhere(X == missing_values)
     missing_rows = np.unique(missing_loc[:, 0])
 
-    # Find complete rows and scale data
-    complete_rows = np.delete(np.asarray(range(X.shape[0])), missing_rows, axis=0)
-    complete_data = X[complete_rows, :]
+    loc_missing_var = [[]] * X.shape[1]
+
+    for i in range(missing_loc.shape[0]):
+            loc_missing_var[missing_loc[i, 1]].append(missing_loc[i, 0])
 
     # Find hot encoders for categorical data
     hot_encoders = PM.find_hot_encoders(X, missing_values=missing_values)
@@ -174,6 +177,9 @@ def kNN_imputation(X, missing_values=None, k=1):
     # Find imputation value for every missing value
     for i in range(missing_loc.shape[0]):
 
+        if (i + 1) % 500 == 0:
+            print("Currently at %i of %i" %(i, missing_loc.shape[0]))
+
         # Find missing row and missing var in example:
         missing_row = X[missing_loc[i, 0]:missing_loc[i, 0] + 1, :]
         output_var = missing_loc[i, 1]
@@ -182,22 +188,15 @@ def kNN_imputation(X, missing_values=None, k=1):
         missing_vars = np.argwhere(missing_row == missing_values)[:, 1]
         extra_missing_vars = np.delete(missing_vars, np.argwhere(missing_vars == missing_loc[i, 1]))
 
-        # Find remaining variables for rest of the data set
-        if extra_missing_vars.tolist() == []:
-            remaining_vars = np.asarray(range(X.shape[1]))
-        else:
-            remaining_vars = np.delete(np.asarray(range(X.shape[1])), extra_missing_vars.tolist(), axis=0)
+        missing_samples = [missing_loc[i, 0]]
 
-        # Remove additional missing variables in the missing row and select new location for missing value
-        reduced_X = np.copy(X[:, remaining_vars])
+        for var in range(X.shape[1]):
+            if var not in extra_missing_vars:
+                missing_samples.extend(loc_missing_var[var])
 
-        # Find missing locations in rest of dataset
-        reduced_missing_loc = np.argwhere(reduced_X == missing_values)
-        reduced_missing_rows = np.unique(reduced_missing_loc[:, 0])
+        removing_samples = np.unique(missing_samples)
 
-        # Find complete rows and scale data
-        reduced_complete_rows = np.delete(np.asarray(range(reduced_X.shape[0])), reduced_missing_rows, axis=0)
-        complete_data = X[reduced_complete_rows, :]
+        complete_data = np.delete(np.copy(X), removing_samples, 0)
 
         try:
             complete_data[:, output_var].astype(float)
@@ -243,6 +242,11 @@ def regression_imputation(X, missing_values=None):
     # Find missing locations
     missing_loc = np.argwhere(X == missing_values)
 
+    loc_missing_var = [[]] * X.shape[1]
+
+    for i in range(missing_loc.shape[0]):
+            loc_missing_var[missing_loc[i, 1]].append(missing_loc[i, 0])
+
     # Find hot encoders for categorical data
     hot_encoders = PM.find_hot_encoders(X, missing_values=missing_values)
 
@@ -252,6 +256,9 @@ def regression_imputation(X, missing_values=None):
     # Find imputation value for every missing value
     for i in range(missing_loc.shape[0]):
 
+        if (i + 1) % 500 == 0:
+            print("Currently at %i of %i" %(i, missing_loc.shape[0]))
+
         # Find missing row and missing var in example:
         missing_row = X[missing_loc[i, 0]:missing_loc[i, 0] + 1, :]
         output_var = missing_loc[i, 1]
@@ -260,22 +267,15 @@ def regression_imputation(X, missing_values=None):
         missing_vars = np.argwhere(missing_row == missing_values)[:, 1]
         extra_missing_vars = np.delete(missing_vars, np.argwhere(missing_vars == missing_loc[i, 1]))
 
-        # Find remaining variables for rest of the data set
-        if extra_missing_vars.tolist() == []:
-            remaining_vars = np.asarray(range(X.shape[1]))
-        else:
-            remaining_vars = np.delete(np.asarray(range(X.shape[1])), extra_missing_vars.tolist(), axis=0)
+        missing_samples = [missing_loc[i, 0]]
 
-        # Remove additional missing variables in the missing row and select new location for missing value
-        reduced_X = np.copy(X[:, remaining_vars])
+        for var in range(X.shape[1]):
+            if var not in extra_missing_vars:
+                missing_samples.extend(loc_missing_var[var])
 
-        # Find missing locations in rest of dataset
-        reduced_missing_loc = np.argwhere(reduced_X == missing_values)
-        reduced_missing_rows = np.unique(reduced_missing_loc[:, 0])
+        removing_samples = np.unique(missing_samples)
 
-        # Find complete rows and scale data
-        reduced_complete_rows = np.delete(np.asarray(range(reduced_X.shape[0])), reduced_missing_rows, axis=0)
-        complete_data = X[reduced_complete_rows, :]
+        complete_data = np.delete(np.copy(X), removing_samples, 0)
 
         try:
             complete_data[:, output_var].astype(float)
@@ -287,6 +287,10 @@ def regression_imputation(X, missing_values=None):
         except ValueError:
             linear_model = LM.LogisticRegression()
 
+            if len(np.unique(complete_data[:, output_var]).tolist()) == 1:
+                new_X[missing_loc[i, 0], missing_loc[i, 1]] = np.unique(complete_data[:, output_var])[0]
+                continue
+
             output = complete_data[:, output_var]
 
         # Remove missing rows, add scaling and hot encoding
@@ -294,8 +298,8 @@ def regression_imputation(X, missing_values=None):
         processed_data = PM.hot_encode_categorical_values(scaled_data, hot_encoders, missing_vars, missing_values)
 
         # Select the sample with the missing value, scale it and remove the missing value
-        scaled_missing_row = PM.scale_numerical_values(missing_row, scalers, output_var, missing_values)
-        processed_missing_row = PM.hot_encode_categorical_values(scaled_missing_row, hot_encoders, output_var, missing_values)
+        scaled_missing_row = PM.scale_numerical_values(missing_row, scalers, missing_vars, missing_values)
+        processed_missing_row = PM.hot_encode_categorical_values(scaled_missing_row, hot_encoders, missing_vars, missing_values)
 
         linear_model.fit(processed_data, output)
 

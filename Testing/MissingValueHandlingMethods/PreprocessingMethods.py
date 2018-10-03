@@ -28,7 +28,6 @@ def hot_encode_categorical_values(X, hot_encoders=None, missing_locations=None, 
             new_col = new_col.astype(float)
 
         except:
-
             if hot_encoders is None:
                 # Create hot encoder en use it for fitting and transformation
                 hot_encoder = PP.MultiLabelBinarizer()
@@ -154,7 +153,7 @@ def find_scalers(X, missing_values=None):
 
     return scalers
 
-def compute_scores(X, y):
+def compute_scores(X, y, nr_cross_val):
     """
 
     :param X: 
@@ -162,35 +161,48 @@ def compute_scores(X, y):
     :return: 
     """
 
-    # Split data in training and test data.
-    X_train, X_test, y_train, y_test = SMS.train_test_split(X, y)
-
-    # Cross validation data
-    cross_val = SMS.LeaveOneOut()
-    # cross_val = SMS.KFold(n_splits=10)
     val_score = []
+    test_score = []
+    prec_score = []
+    rec_score = []
+    F1_score = []
 
     print("Starting cross validation")
-    # Compute validation score
-    for train_index, test_index in cross_val.split(X_train):
+
+    for i in range(nr_cross_val):
+        print("At %i of %i cross validations" % (i, nr_cross_val))
+        # Split data in training and test data.
+        X_train, X_test, y_train, y_test = SMS.train_test_split(X, y)
+
+        # Cross validation data
+        cross_val = SMS.LeaveOneOut()
+        # cross_val = SMS.KFold(n_splits=10)
+        val = []
+
+
+        # Compute validation score
+        for train_index, test_index in cross_val.split(X_train):
+            ml = SLM.LogisticRegression()
+            ml.fit(X_train[train_index], y_train[train_index])
+            val.append(ml.score(X_train[test_index], y_train[test_index]))
+
+        # Compute the mean of the validation score
+        # T_val.append(np.mean(np.asarray(val_score)))
+
+        # Compute test score
         ml = SLM.LogisticRegression()
-        ml.fit(X_train[train_index], y_train[train_index])
-        val_score.append(ml.score(X_train[test_index], y_train[test_index]))
+        ml.fit(X_train, y_train)
+        y_pred = ml.predict(X_test)
+        prec, rec, Fbeta, _ = SME.precision_recall_fscore_support(y_test, y_pred, average='weighted')
 
-    # Compute the mean of the validation score
-    # T_val.append(np.mean(np.asarray(val_score)))
+        test =  ml.score(X_test, y_test)
 
-    # Compute test score
-    ml = SLM.LogisticRegression()
-    ml.fit(X_train, y_train)
-    # T_test.append(ml.score(X_test, y_test))
-    y_pred = ml.predict(X_test)
-    prec, rec, Fbeta, _ = SME.precision_recall_fscore_support(y_test, y_pred, average='weighted')
+        val_score.append(val)
+        test_score.append(test)
+        prec_score.append(prec)
+        rec_score.append(rec)
+        F1_score.append(Fbeta)
 
-    # precision.append(prec)
-    # recall.append(rec)
-    # F1.append(Fbeta)
-
-    return np.mean(np.asarray(val_score)), ml.score(X_test, y_test), prec, rec, Fbeta
+    return np.mean(val_score), np.mean(test_score), np.mean(prec_score), np.mean(rec_score), np.mean(F1_score)
 
 

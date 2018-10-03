@@ -95,10 +95,21 @@ line_arg = ['-g', '--g', '-b', '--b', '-y', '--y', '-r', '--r', '-c', '--c']
 
 
 for i in range(feat_complete.shape[0]):
-    feat_viz.append(np.mean(feat_complete[i, :, :], axis=0))
-    test_viz.append(np.mean(test_complete[i, :, :], axis=0))
-    val_viz.append(np.mean(rec_complete[i, :, :], axis=0))
-    PLT.plot(feat_viz[i], val_viz[i], line_arg[i])
+    feat_mean = np.mean(feat_complete[i, :, :], axis=0)
+    test_mean = np.mean(test_complete[i, :, :], axis=0)
+    val_mean = np.mean(rec_complete[i, :, :], axis=0)
+
+    # pre_val_mean = [0]
+    # pre_val_mean.extend(val_mean[:-1])
+    # pre_feat_mean = [0]
+    # pre_feat_mean.extend(feat_mean[:-1])
+
+
+    feat_viz.append(feat_mean)
+    test_viz.append(test_mean)
+    val_viz.append(val_mean)
+    # val_viz.append((val_mean - pre_val_mean) / (feat_mean - pre_feat_mean))
+    PLT.plot(feat_viz[i - 1], val_viz[i - 1], line_arg[i - 1])
 legend_final = legend_complete
 
 
@@ -114,9 +125,11 @@ legend_final = legend_complete
 
 # print(feat_viz)
 PLT.legend(legend_final)
-PLT.xlabel('Number of features preserved')
-PLT.ylabel('Scores for recall')
-PLT.title('The recall score by number of features preserved')
+PLT.xlabel('Number of the feature added')
+PLT.ylabel('Score quality addition ([0, 1])')
+PLT.title('The quality addition of every feature after adding them to the dataset')
+
+PLT.axis([0, 300, 0, 0.1])
 
 PLT.show()
 

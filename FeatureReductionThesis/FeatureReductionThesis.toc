@@ -1,20 +1,25 @@
 \select@language {english}
 \contentsline {section}{\numberline {1}Introduction}{2}{section.1}
-\contentsline {section}{\numberline {2}Background}{2}{section.2}
-\contentsline {subsection}{\numberline {2.1}Datasets}{2}{subsection.2.1}
+\contentsline {section}{\numberline {2}Background}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}Datasets}{3}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Feature Selection}{3}{subsection.2.2}
-\contentsline {subsubsection}{\numberline {2.2.1}Filter Methods}{4}{subsubsection.2.2.1}
-\contentsline {subsubsection}{\numberline {2.2.2}Wrapper Methods}{6}{subsubsection.2.2.2}
-\contentsline {subsubsection}{\numberline {2.2.3}Embedded Methods}{10}{subsubsection.2.2.3}
-\contentsline {section}{\numberline {3}Methods}{12}{section.3}
-\contentsline {subsection}{\numberline {3.1}Feature Selection Quality}{12}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Feature Selection Exploration}{13}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Feature Selection Algorithms Evaluation}{13}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}TPOT integration}{15}{subsection.3.4}
-\contentsline {section}{\numberline {4}Results}{15}{section.4}
-\contentsline {subsection}{\numberline {4.1}Feature Selection Exploration Results}{15}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Feature Selection Algorithms Evaluation Results}{17}{subsection.4.2}
-\contentsline {section}{\numberline {5}Discussion}{24}{section.5}
-\contentsline {section}{\numberline {6}Conclusions}{24}{section.6}
-\contentsline {section}{\numberline {A}Feature Selection Exploration Plots}{29}{appendix.A}
-\contentsline {section}{\numberline {B}Feature Selection Exploration Precision And Recall}{33}{appendix.B}
+\contentsline {subsubsection}{\numberline {2.2.1}Filter Methods}{5}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}Wrapper Methods}{7}{subsubsection.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.3}Embedded Methods}{11}{subsubsection.2.2.3}
+\contentsline {subsection}{\numberline {2.3}Automated Machine Learning}{13}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}Meta-Learning}{14}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}Tree-based Pipeline Optimization Tool}{15}{subsubsection.2.3.2}
+\contentsline {section}{\numberline {3}Hypotheses}{18}{section.3}
+\contentsline {section}{\numberline {4}Methods}{19}{section.4}
+\contentsline {subsection}{\numberline {4.1}Feature Selection Quality}{19}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Feature Selection Exploration}{21}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Feature Selection Algorithms Evaluation}{21}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}TPOT Feature selection integration}{23}{subsection.4.4}
+\contentsline {section}{\numberline {5}Results}{26}{section.5}
+\contentsline {subsection}{\numberline {5.1}Feature Selection Exploration Results}{26}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Feature Selection Algorithms Evaluation Results}{28}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}TPOT Feature Selection Integration Results}{37}{subsection.5.3}
+\contentsline {section}{\numberline {6}Discussion}{38}{section.6}
+\contentsline {section}{\numberline {7}Conclusions}{38}{section.7}
+\contentsline {section}{\numberline {A}Feature Selection Exploration Plots}{44}{appendix.A}
+\contentsline {section}{\numberline {B}Feature Selection Exploration Precision And Recall}{48}{appendix.B}

@@ -11,7 +11,7 @@ missing_percentage = []
 
 rows = []
 
-with open('combined_p_val_extra_ACA.csv', 'r', newline='') as csv_file:
+with open('combined_p_val.csv', 'r', newline='') as csv_file:
     csv_reader = csv.reader(csv_file)
     for row in csv_reader:
         rows.append(row)
@@ -41,7 +41,7 @@ order = np.argsort(missing_percentage)
 
 mp = np.asarray(missing_percentage)[order]
 
-x = np.arange(0.0, 0.15, step=0.01)
+x = np.arange(0.0, 1, step=0.01)
 fit_degree = 1
 
 def poly_fit(x, args):
@@ -66,8 +66,9 @@ fig, axes = plt.subplots(4, 3, sharex='all', sharey='all')
 
 fig.text(0.5, 0.04, 'Missing values (%)', ha='center', va='center')
 fig.text(0.06, 0.5, 'p-value mean distribution', ha='center', va='center', rotation='vertical')
-fig.suptitle('Probability of the mean originating from both the old and new distribution,'
-                                             '\nboth data points and linear regression line')
+fig.suptitle('Probability of the mean originating from both the old and new distribution'
+             #'\nafter removing features with more than 15% missing values,'
+             '\nboth data points, linear regression line and R2 for validation of regression line')
 
 
 for j in range(11):
@@ -100,8 +101,9 @@ fig, axes = plt.subplots(4, 3, sharex='all', sharey='all')
 
 fig.text(0.5, 0.04, 'Missing values (%)', ha='center', va='center')
 fig.text(0.06, 0.5, 'p-value variance distribution', ha='center', va='center', rotation='vertical')
-fig.suptitle('Probability of the variance originating from both the old and new distribution,'
-                                             '\nboth data points and linear regression line')
+fig.suptitle('Probability of the variance originating from both the old and new distribution'
+             #'\nremoving features with more than 15% missing values,'
+             '\nboth data points, linear regression line and R2 for validation of regression line')
 
 
 for j in range(11):

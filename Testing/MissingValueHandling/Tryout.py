@@ -1,10 +1,10 @@
 from DataExtraction import DataSetExtraction as DSE
 from MissingValueHandlingMethods import ListDeletionMethods as LDM, SingleImputationMethods as SIM, \
-    MultipleImputationMethods as MIM
+   MultipleImputationMethods as MIM
 
 import numpy as np
 
-X, y, features = DSE.import_example_data('HeartAttack')
+X, y, features = DSE.import_example_data('Cervical')
 
 print(X.shape)
 print(y.shape)
@@ -22,7 +22,7 @@ print(y.shape)
 # MII_X, MII_y = SIM.missing_indicator_imputation(X, y, missing_values='')
 # MII_X2, MII_y2 = SIM.value_imputation(MII_X, MII_y, missing_values='', imputation_value=0)
 
-NNI_X = SIM.kNN_imputation(X, missing_values='', k=3)
+# NNI_X = SIM.kNN_imputation(X, missing_values='', k=3)
 
 MRI_X = SIM.regression_imputation(X, missing_values='')
 
@@ -31,4 +31,4 @@ MRI_X = SIM.regression_imputation(X, missing_values='')
 # print(np.argwhere(X == ''))
 # print(np.argwhere(MICE_X == ''))
 
-print(NNI_X.shape)
+print([[]] * 5)

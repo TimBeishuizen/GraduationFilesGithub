@@ -125,7 +125,7 @@
 		\item \textit{Hepatitis dataset} \\ The mortality rate of hepatitis was tested using 19 features over 155 samples. Two class types are distinguished as "died" and "lived" with thirteen boolean and six numeric attributes. The total number of missing values is 167 spread over 15 classes, with the feature labeled "histology" having the majority of 67 missing values. Two previous articles were written, using this dataset as an example for their methods\cite{diaconis1983computer, cestnikkononenkoj}.
 		% Hepatitis - https://www.openml.org/d/55 (source unknown)
 		\item \textit{Primary Biliary Cirrhosis dataset} \\ Patients were classified in three groups in this dataset: alive, transplanted and dead. 18 features are present in the dataset: one date-specific, two categorical, five boolean and ten numeric attributes. The dataset consists of 1945 instances and 1133 missing values. The missing values are distributed over six features, the feature "serum\_cholesterol" having 821 and the other five around 60 missing values. The missing values are noted as most likely not missing completely at random\cite{murtaugh1994primary}. % Cirrhosis -  https://aasldpubs.onlinelibrary.wiley.com/doi/abs/10.1002/hep.1840200120
-		\item \textit{Cervical Cancer dataset} \\ This dataset is consisting of 858 samples and is based on the increased risk of subjects becoming cervical cancer patients. Since a risk can be fairly subjective, four aspects were used to determine whether an increased risk is present are not: two doctors, a cytologic examination and a bioptic examination. For analysis a new increased risk factor was made by giving each subject a value in $[0, 4]$, implying the number of times this subject has been classified as an increased risk subject. The dataset consists of 31 features, 24 boolean and numeric features originated from a survey and 7 boolean and numeric features originated from the hospital. A total of 3622 values are missing of which 787 times the hospital features "STDs: Time since first diagnosis" and "STDs: Time since last diagnosis" caused by no sexually transmitted disease (STD) ever being present. All other missing values originate from subjects not answering survey questions, the "Age" feature being the only survey question that was always answered\cite{fernandes2017transfer}.
+		\item \textit{Cervical Cancer dataset} \\ This dataset is consisting of 858 samples and is based on the increased risk of subjects becoming cervical cancer patients. Since a risk can be fairly subjective, four aspects were used to determine whether an increased risk is present or not: two doctors, a cytologic examination and a bioptic examination. For analysis a new increased risk factor was made by giving each subject a value in $[0, 4]$, implying the number of times this subject has been classified as an increased risk subject. The dataset consists of 31 features, 24 boolean and numeric features originated from a survey and 7 boolean and numeric features originated from the hospital. A total of 3622 values are missing of which 787 times the hospital features "STDs: Time since first diagnosis" and "STDs: Time since last diagnosis" caused by no sexually transmitted disease (STD) ever being present. All other missing values originate from subjects not answering survey questions, the "Age" feature being the only survey question that was always answered\cite{fernandes2017transfer}.
 	\end{itemize}
 	
 
@@ -504,11 +504,24 @@
 	%\subsection{Outlier Detection}
 	%\label{subsec:OutlierDetection}
 	
+	\section{Hypotheses}
+	\label{sec:Hypothesis}
+	
+	The main goal for this project is to find more insight in quality enhancement and add that insight to the final framework. Several hypotheses are made before designing experiments to test them and are discussed here:
+	
+	\begin{enumerate}
+		\item \textbf{Distribution preservation} \\
+		One thing missing value handling algorithms should do is preserve the distribution of a feature, not creating any bias in it. List Deletion methods CCA and ACA are not expected to do that properly in most cases, as most values are not MCAR. WCA might be able to efficiently tackle distribution problems, but is expected to be outperformed by imputation methods. Of the imputation methods MICE is expected to perform best, followed by kNN and regression imputation. Hot deck and mean imputation obviously are also expected to preserve distribution characteristics very well as their imputation method is based on it.
+		\item \textbf{Quality improvement}
+		Missing values handling algorithms are necessary, however can show different levels of quality improvement. This difference in quality indicates best approaches to cope with missing values. Again, list deletion algorithms are expected to perform worst in quality improvement. Next are the easy single imputation methods, the mean imputation, hot encoding and missing indicator algorithms. These are followed by the more advanced single imputation algorithms the kNN and regression algorithms and the multiple imputation algorithm MICE is expected to outperform all.
+	\end{enumerate}
+	
 	\section{Methods}
 	\label{sec:Methods}
 	
 	% Introduction
-	To determine the quality of different missing value handling algorithms, two different approaches are used. The first approach focuses on the distributions of the different features and whether the algorithms create a bias in feature distributions. The second approach focuses on the evaluation quality and which missing value handling algorithm works best on predicting output.
+	To determine the quality of different missing value handling algorithms, two different approaches are used. The first approach focuses on the distributions of the different features and whether the algorithms create a bias in feature distributions. The second approach focuses on the evaluation quality and which missing value handling algorithm works best on predicting output. The tests are done in Python, using the Anaconda distribution, as with Anaconda external packages can be used quickly. The missing value handling alrogithms are custom made with several help functions from the pacakages scikit-learn\cite{pedregosa2011scikit} and NumPy\cite{walt2011numpy}. The four example datasets (Subsection \ref{subsec:Datasets}) were used as exemplary datasets for the experiments.
+	
 	
 	\subsection{Bias Evaluation}
 	\label{subsec:BiasEvaluation}
@@ -542,10 +555,36 @@
 	\end{table}
 	
 	% Tables
-	The outcome of all the tests are shown in multiple tables. In those tables tests that show a rejection of H0 are highlighted. For the list deletion algorithms, additionally the type of missing values is evaluated by also testing the change in distribution in values without missing values. If a feature distribution changes for a feature without missing values after removing all missing values, a relation is present and the missing values are not MCAR. Aside from these tables plots of the relation between the percentage of missing values and probability of bias being present are made for every algorithm. This can indicate quality between the different algorithms with regards of the statistical hypothesis.
+	The outcome of all the tests are shown in multiple tables. In those tables tests that show a rejection of H0 are highlighted. For the list deletion algorithms, additionally the type of missing values is evaluated by also testing the change in distribution in values without missing values. If a feature distribution changes for a feature without missing values after removing all missing values, a relation is present and the missing values are not MCAR. Aside from these tables plots of the relation between the percentage of missing values and probability of bias being present are made for every algorithm. This can indicate quality between the different algorithms with regards of the statistical hypothesis. In those plots also a regression line is shown with also the $R^2$ value, to show the quality of the regression\cite{draper2014applied}. $R^2$ is measured by first measuring the variance sum towards the mean ($SS_{tot}$, $y_i$ is the value for datapoint $i$, $\bar{y}$ is the mean of datapoints $y$) and the variance sum towards the regression line ($SS_{reg}$, $f_i$ is regression value for $i$). Secondly the difference is measured and this difference is normalized by dividing it by the mean variance sum. $R^2$ should be a value on interval $[0, 1]$ with $1$ being a good fit and $0$ being a bad fit.
+	
+	\begin{equation}
+	R^2 = \frac{SS_{tot} - SS_{res}}{SS_{tot}}), SS_{tot} = \sum(y_i -\ bar{y})^2, SS_{res} = \sum(y_i - f_i)^2 
+	\end{equation} 
 
 	\subsection{Quality Evaluation}
 	\label{subsec:QualityEvaluation}
+	
+	To determine the quality of the missing value imputation methods, the classification quality of the dataset was tested after handling the missing values. This is done for the Hepatitis, Cirrhosis and Cervical Cancer datasets, as on the Heart Attack dataset regression should be performed. This classification quality was tested by using the basic logistic regression algorithm from scikit-learn. This classification algorithm only accepts numerical data, therefore all categorical features are first hot encoded. Previously discussed missing value handling algorithms (Table \ref{tab:MethodsExplanation}) are tested on their accuracy, precision, recall and F1s score with a 10-fold cross validation. For the datasets an additional classification was done after removing the values with more than 15\% missing values, to find out if that would give a difference in quality, as well. 
+	
+	\begin{table}[H]
+		\caption{All tested missing value handling methods and possible parameters used during testing}
+		\label{tab:MethodsExplanation}
+		\begin{tabular}{l|ll}
+			\textbf{Type}                & \multicolumn{1}{l|}{\textbf{Method}}                                          & \textbf{Parameters}                                                                \\ \hline
+			\textbf{List Deletion}       & \begin{tabular}[c]{@{}l@{}}CCA\\ (Algorithm \ref{alg:CCA})\end{tabular}                 &                                                                                    \\
+			\textbf{}                    & \begin{tabular}[c]{@{}l@{}}ACA\\ (Algorithm \ref{alg:ACA})\end{tabular}                 & \begin{tabular}[c]{@{}l@{}}--\\ - threshold: 10\% missing values\\ --\end{tabular} \\
+			\textbf{}                    & \begin{tabular}[c]{@{}l@{}}WCA\\ (Algorithm \ref{alg:WCA})\end{tabular}                 &                                                                                    \\ \hline
+			\textbf{Single Imputation}   & \begin{tabular}[c]{@{}l@{}}Mean/Median/Mode\\ (Algorithm \ref{alg:MeanImputation})\end{tabular}    &                                                                                    \\
+			\textbf{}                    & \begin{tabular}[c]{@{}l@{}}Hot deck\\ (Algorithm \ref{alg:HotDeckImputation})\end{tabular}            &                                                                                    \\
+			\textbf{}                    & \begin{tabular}[c]{@{}l@{}}Missing indicator\\ (Algorithm \ref{alg:MissingIndicatorImputation})\end{tabular}   & \begin{tabular}[c]{@{}l@{}}--\\ - Imputed value: Mean, Zero\\ --\end{tabular}      \\
+			\textbf{}                    & \begin{tabular}[c]{@{}l@{}}Regression\\ (Algorithm \ref{alg:RegressionImputation})\end{tabular}          &                                                                                    \\
+			\textbf{}                    & \begin{tabular}[c]{@{}l@{}}k-Nearest neighbour\\ (Algorithm \ref{alg:kNNImputation})\end{tabular} & \begin{tabular}[c]{@{}l@{}}--\\ - k =  1, 3, 5\end{tabular}                        \\ \hline
+			\textbf{Multiple Imputation} & \begin{tabular}[c]{@{}l@{}}MICE\\ (Subsection \ref{subsec:MultipleImputation})\end{tabular}                & \begin{tabular}[c]{@{}l@{}}s = 3, 5\\ m = 3, 5\end{tabular}                       
+		\end{tabular}
+	\end{table}
+	
+	% Datasets tables
+	To show the differences between the datasets, the best outcomes are shown separately, as well as an average over the three datasets. This way interesting differences between the datasets can be located and discussed. 
 	
 	\section{Results}
 	\label{sec:Results}
@@ -585,8 +624,8 @@
 			\textbf{Dataset}      & \textbf{Total samples} & \textbf{\begin{tabular}[c]{@{}l@{}}Number of samples \\ after CCA\end{tabular}} \\ \hline
 			\textbf{Heart Attack} & 108                    & 61                                                                                \\
 			\textbf{Hepatitis}    & 155                    & 80                                                                                \\ \hline
-			Cirrhosis             & 1945                   & 1113                                                                              \\
-			Cervical Cancer       & 585                    & 59                                                                               
+			\textbf{Cirrhosis }            & 1945                   & 1113                                                                              \\
+			\textbf{Cervical Cancer}       & 585                    & 59                                                                               
 		\end{tabular}
 	\end{table}
 
@@ -611,30 +650,103 @@
 	Most imputation methods show an improvement in results The heart attack dataset has no bias in distributions after any of the five tested imputation methods, the hepatitis dataset only has bias when using mean imputation or MICE, the cirrhosis dataset only shows bias when using mean imputation and at last in the cervical cancer dataset all but the two features with 91.75\% missing values contain no bias between distributions. On top of that, the only features that had bias in the newly created distributions are features with more than 40\% missing values, indicating that imputation methods have more problems when a higher missing/not missing ratio is present. this gives an indication that removal of features with missing values higher than 40\% would greatly help the usefulness of a dataset.
 	
 	% Plotting imputation methods
-	A scatter plot with fitted linear curves is made to show a relation between the probability of the old and new mean (Figure \ref{fig:PMeanFits}) and variance (Figure \ref{fig:PVarianceFits}) originating from the same distribution and the percentage of values missing. For these fits, features with more than 15\% of missing values were removed due to not being properly represented by nominal features in the four datasets. The fitted lines by no means show a perfect fit, but they do show the trend of the missing value handling algorithms. 
+	A scatter plot with fitted linear curves is made to show a relation between the probability of the old and new mean (Figure \ref{fig:PMeanFits}) and variance (Figure \ref{fig:PVarianceFits}) originating from the same distribution and the percentage of values missing. Although the $R^2$ values for some of the regression lines seem plausible, the value distribution does not seem to support this. Most features are within the first 15\% of the missing values and the features above 15\% missing values seem to deviate significantly from the others.
 	
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=\textwidth]{P_mean.PNG}
-		\caption{The probability of the mean of the old and new distribution originating from the same distribution. On the x-axis the percentage of missing values is given for a feature and on the y-axis the p-value of the probability. For every missing value algorithm also a linear fit is made to show the trend of the scatter plot.}
+		\includegraphics[width=\textwidth]{Mean_Dist.PNG}
+		\caption{Plots showing the probability of the mean of the old and new distribution originating from the same distribution. On the x-axis the percentage of missing values is given for a feature and on the y-axis the p-value of the probability. For every missing value algorithm also a linear fit is made to show the trend of the scatter plot.}
 		\label{fig:PMeanFits}
 	\end{figure}
 	
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=\textwidth]{P_variance.PNG}
-		\caption{The probability of the variance of the old and new distribution originating from the same distribution. On the x-axis the percentage of missing values is given for a feature and on the y-axis the p-value of the probability. For every missing value algorithm also a linear fit is made to show the trend of the scatter plot.}
+		\includegraphics[width=\textwidth]{Var_Dist.PNG}
+		\caption{Plots showing the probability of the variance of the old and new distribution originating from the same distribution. On the x-axis the percentage of missing values is given for a feature and on the y-axis the p-value of the probability. For every missing value algorithm also a linear fit is made to show the trend of the scatter plot.}
 		\label{fig:PVarianceFits}
+	\end{figure}
+	
+	It seems that features with more than 15\% missing values are very hard to find proper values for using any missing value handling technique. Therefore an additional approach was used, by first performing ACA for features with more than 15\% missing values, followed by the known missing value handling techniques (Figure \ref{fig:PMeanFitsACA} and \ref{fig:PVarianceFitsACA}). 
+	
+		\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth]{Mean_Dist_Extra_ACA.PNG}
+		\caption{Plots showing the probability of the mean of the old and new distribution originating from the same distribution. On the x-axis the percentage of missing values is given for a feature and on the y-axis the p-value of the probability. For every missing value algorithm also a linear fit is made to show the trend of the scatter plot.}
+		\label{fig:PMeanFitsACA}
+	\end{figure}
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\textwidth]{Var_Dist_Extra_ACA.PNG}
+		\caption{Plots showing the probability of the variance of the old and new distribution originating from the same distribution. Features with more than 15\% missing values were removed before missing value handling was initiated. On the x-axis the percentage of missing values is given for a feature and on the y-axis the p-value of the probability. For every missing value algorithm also a linear fit is made to show the trend of the scatter plot.}
+		\label{fig:PVarianceFitsACA}
 	\end{figure}
 	
 	% List deletion
 	List Deletion algorithms seem to be better at creating a representative distribution when more missing values are present. This is explainable for these datasets as all of them have a at least one feature with more than 40\%. Most samples are removed because of this feature also removing significant portions of other features. This results in features having more missing values will leave them with a higher percentage of their original values, therefore being closer to the original values.
 	
 	% Imputation
-	The imputation algorithm seem to show big differences between the results. Hot deck imputation seems to create the best representative distribution, being the best when comparing mean and variance for the old and new distribution. Mean Imputation obviously shows a perfect fit for comparing means, however for variance imputation it is worse than both hot deck and MICE. It does show a less steep slope than MICE, so for more than 15\% missing values it may show a better result. kNN imputation, regression imputation and MICE all show good results at low percentages, however these results worsen significantly more when more missing values are present. Of these three, MICE shows the best distribution results, followed by kNN imputation and at last regression imputation.
+	The imputation algorithm seem to show big differences between the results. Hot deck imputation seems to create the best representative distribution, being the best when comparing mean and variance for the old and new distribution. Mean Imputation obviously shows a perfect fit for comparing means, however for variance imputation it is worse than both hot deck, kNN and regression. kNN imputation shows the best result after hot deck imputation. Interestingly kNN with k=1 neighbours shows the p-values for variance whereas k=3 and k=5 show the best p-values for the mean. Regression imputation shows good results as well, but is overall worse than kNN. MICE unexpectedly performs worse than regression and kNN in both mean and variance, even though it was expected to perform better.
+	
+	% Regression lines
+	The regression lines for all imputations seem reasonable in performance. Either the p-value is almost independent of the percentage missing values (mean, hot deck, regression, kNN) or the $R^2 \approx 0.5$, showing somewhat of a trend in the data. Interestingly the p-value seems to deviate much more for higher percentages, something that is to be expected since the distribution can also change more when more values are missing.  
 	
 	% Explanation quality mean and hot deck
 	The high quality for both mean and hot deck imputation can be explained by the evaluation methods. A mean comparison for mean imputation is obviously perfect, and the variance will always become smaller when more means are imputed. Hot deck imputation adds values according to the distribution of the features. This distribution follows the mean and variance of the original values and therefore the mean and variance will always be close to the original distribution. When looking at other aspects, for example the ability to predict the output with the dataset, hot deck imputation and mean imputation should show worse results as distribution specific estimations were imputed, instead of sample specific.
+	
+	\subsection{Quality Evaluation}
+	\label{subsec:QualityEvaluationResults}
+	
+	% Introduction
+	The averaged results of the classification after using the missing value handling algorithms (Table \ref{tab:MethodsExplanation}) are shown in several figures. The average accuracy is shown for all three datasets with (Figure \ref{fig:EvalAvgAccExtraACA}) and without (Figure \ref{fig:EvalAvgAcc}) the removal of features with more than 15\% missing values  and without. The F1-score is also shown for the averaged dataset (Figure \ref{fig:EvalAvgF1}). At last a table to show the accuracy and F1 score is shown when all features with missing values are deleted to detect improvement for missing value imputation, as well as the best missing values handling algorithm for comparison (Table \ref{tab:ClassResults}).
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[angle=90,height=0.9\textheight]{avg_acc.PNG}
+		\caption{A plot showing the average accuracy over for the datasets classified after using a missing value handling algorithm. The x-axis shows the computation time for the missing values, done on a 10-logarithmic scale due to the big differences between them. The y-axis shows the accuracy on a scale of 0 to 1. The explanation of every data point can be found both in the text on the top right of the data point as well as in the legend.}
+		\label{fig:EvalAvgAcc}
+	\end{figure}
+
+	\begin{figure}[H]
+	\centering
+	\includegraphics[angle=90,height=0.9\textheight]{avg_acc_15aca.PNG}
+	\caption{A plot showing the average accuracy over for the datasets classified after using a missing value handling algorithm and after removing all features with more than 15\% missing values. The x-axis shows the computation time for the missing values, done on a 10-logarithmic scale due to the big differences between them. The y-axis shows the accuracy on a scale of 0 to 1. The explanation of every data point can be found both in the text on the top right of the data point as well as in the legend.}
+	\label{fig:EvalAvgAccExtraACA}
+	\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[angle=90,height=0.9\textheight]{avg_F1.PNG}
+	\caption{A plot showing the F1-score over for the datasets classified after using a missing value handling algorithm. The x-axis shows the computation time for the missing values, done on a 10-logarithmic scale due to the big differences between them. The y-axis shows the accuracy on a scale of 0 to 1. The explanation of every data point can be found both in the text on the top right of the data point as well as in the legend.}
+	\label{fig:EvalAvgF1}
+\end{figure}
+
+	
+	\begin{table}[]
+		\caption{The classification results of the datasets and the average after removing all features with missing values, as well as the best results after handling missing values.}
+		\label{tab:ClassResults}
+		\begin{tabular}{l|ll|lll}
+			& \multicolumn{2}{l|}{\textbf{Without missing values}} & \multicolumn{3}{l}{\textbf{Best classification}}                                                                                                       \\
+			\textbf{Dataset} & \textbf{Accuracy}         & \textbf{F1-score}        & \textbf{Accuracy} & \textbf{F1-score} & \textbf{Algorithm}                                                                                             \\ \hline
+			Hepatitis        & 0.79                      & 0.75                     & 0.87              & 0.86              & Mean imputation                                                                                                \\
+			Cirrhosis        & 0.56                      & 0.50                     & 0.57              & 0.52              & \begin{tabular}[c]{@{}l@{}}--\\
+				1. CCA\\ 2. Missing indicator mean\\ 3. Missing indicator zeros\\ --\end{tabular} \\
+			Cervical         & 0.74                      & 0.64                     & 0.89              & 0.83              & Mean imputation                                                                                                \\ \hline
+			Average          & 0.70                      & 0.63                     & 0.77              & 0.74              & Mean imputation                                                                                               
+		\end{tabular}
+	\end{table}
+
+	% Interpretation accuracy
+	The values of the F1 score (Figure \ref{fig:EvalAvgF1}) are lower than the accuracy (Figure \ref{fig:EvalAvgAcc}), therefore the F1 score is also used in comparisons. The lack of difference in the accuracy in classification with (Figure \ref{fig:EvalAvgAccExtraACA}) and without features with more than 15\% missing values (Figure \ref{fig:EvalAvgAcc}), shows the lack of contribution of these values in the classification. Even though the distribution of the features improves (Subsection \ref{subsec:BiasEvaluationResults}), the classification does not show any difference. This was not the case for the dataset with regression imputation, though, as the accuracy severely dropped after removing features with more than 15\% missing values from $0.72$ to $0.54$. Apparently important information was removed for the regression imputation to be successful.  
+	
+	% Separate methods
+	When looking at separate methods, the difference in computation time can immediately be seen. List deletion algorithms and mean, missing indicator and hot deck single imputation algorithms all are very fast (less than a second), followed by k-nearest neighbour and regression single imputation (between 10 and 100 seconds) and at last multiple imputation methods (more than 1000 seconds). All imputation methods and WCA give the best accuracy, with little difference among them. The imputation methods and WCA all show an improvement compared with the accuracy when using only features without missing values (Table \ref{tab:ClassResults}), therefore using features with missing values does improve accuracy. The size of improvement differs per dataset, though, as the improvement for the Cervical dataset is 10 times higher than the improvement of the Cirrhosis dataset. 
+	
+	% Separate datasets
+	Since the accuracy and F1-score of the datasets are significantly different (Table \ref{tab:ClassResults}), the results are also plotted per dataset separately (Appendix \ref{app:ClassPlots}). The low accuracy for regression imputation seems to originate mainly for the Cervical Cancer dataset. This can be a result of features in the Cervical Cancer dataset mostly consisting of boolean values. Hot encoded boolean values contain less information for regression, making it harder to find good imputation values. 
+	
+	% Best method
+	The imputation methods show some differences in classification quality when looking at the results for the datasets separately. The Cirrhosis dataset shows hardly any improvement after using missing value handling algorithms, but its best results are when using a missing indicator method. The Hepatitis dataset result on the other hand is significantly worse when using the missing indicator method. This is supported by the bias evaluation (Subsection \ref{subsec:BiasEvaluationResults}) and the dataset description (Subsection \ref{subsec:Datasets}), as both showed that data in the Cirrhosis is confirmed MAR, whereas the data in the Hepatitis dataset was least likely to be MAR. This means that when data is very likely to be MAR, missing indicator value is more likely to be beneficial to the outcome. Aside from that, the kNN, regression and MICE methods seem not worth the additional computation time for these datasets, even though in theory these methods make a more detailed guess of the outcome. 
 	
 	\section{Conclusions}
 	\label{sec:Conclusions}
@@ -648,12 +760,13 @@
 	\appendix
 	
 	\section{Feature Distribution Tables}
+
 	\label{app:DistributionTables}
 	
 	% Introduction
 	The distribution tables for the hepatitis (Tables \ref{tab:LDHepatitis} and \ref{tab:ImputationHepatitis}), cirrhosis (Tables \ref{tab:LDCirrhosis} and \ref{tab:ImputationCirrhosis}) and cervical cancer (Table \ref{tab:LDCervical}) datasets. For the hepatitis and cirrhosis datasets the tables are split in list deletion (Tables \ref{tab:LDHepatitis} and \ref{tab:LDCirrhosis}) and imputation (Tables \ref{tab:ImputationHepatitis} and \ref{tab:ImputationCirrhosis}). For the cervical cancer dataset both tables were combined due to not being any significant difference between the imputation technique outcomes. 
 	
-	\begin{sidewaystable}[]
+	\begin{sidewaystable}[H]
 		\caption{Testing for the hepatitis data set whether the type of missing values can be represented by the remaining values. This is done by comparing distributions between all sample values and remaining sample values after CCA and WCA. For nominal values, two tests were used, an independent t-test for equality of mean and a Levene's test with the median in brackets to test equality of variance. For ordinal and categorical features the medians and modes where checked respectively to be similar as well as a chi squared test in brackets fro equality of distribution. P-values lower than $p < 0.05$ are marked red for failure of representation, p-values higher than $p > 0.05$ are marked green for correctly being represented. If at least one feature is not represented after CCA, the missing values cannot be MCAR. If at least one feature is not represented after WCA, the pseudo-randomness cannot be corrected by only using weights for other values.}
 		\label{tab:LDHepatitis}
 		\begin{tabular}{l|lll|lll|llll}
@@ -671,7 +784,7 @@
 		\end{tabular}
 	\end{sidewaystable}
 	
-	\begin{sidewaystable}[]
+	\begin{sidewaystable}[H]
 		\caption{Testing for the hepatitis data set if certain types of imputation create a vastly different distribution for features with missing values. The imputation values are generated with mean imputation, hot deck imputation, k-Nearest Neighbour imputation ($k = 3$), regression imputation and MICE (number of cycles is $s = 5$). For nominal values, two tests were used, an independent t-test for equality of mean and a Levene's test with the median in brackets to test equality of variance. For ordinal and categorical features the medians and modes where checked respectively to be similar as well as a chi squared test in brackets fro equality of distribution. P-values lower than $p < 0.05$ are marked red for failure of representation, p-values close to $p > 0.05$ are marked green for correctly being represented.}
 		\label{tab:ImputationHepatitis}
 		\begin{tabular}{l|lll|lll|lll|lll|lll}
@@ -686,7 +799,7 @@
 		\end{tabular}          
 	\end{sidewaystable}
 	
-	\begin{table}
+	\begin{table}[H]
 		\caption{Testing for the cirrhosis dataset whether the type of missing values can be represented by the remaining values. This is done by comparing distributions between all sample values and remaining sample values after CCA and WCA. For nominal values, two tests were used, an independent t-test for equality of mean and a Levene's test with the median in brackets to test equality of variance. For ordinal and categorical features the medians and modes where checked respectively to be similar as well as a chi squared test in brackets fro equality of distribution. P-values lower than $p < 0.05$ are marked red for failure of representation, p-values higher than $p > 0.05$ are marked green for correctly being represented. If at least one feature is not represented after CCA, the missing values cannot be MCAR. If at least one feature is not represented after WCA, the pseudo-randomness cannot be corrected by only using weights for other values.}
 		\label{tab:LDCirrhosis}
 		\begin{tabular}{l|lll|lll|lll}
@@ -703,7 +816,7 @@
 		\end{tabular}
 	\end{table}
 	
-	\begin{table}[]
+	\begin{table}[H]
 		\caption{Testing for the cirrhosis data set if certain types of imputation create a vastly different distribution for features with missing values. The imputation values are generated with mean imputation, hot deck imputation, k-Nearest Neighbour imputation ($k = 3$), regression imputation and MICE (number of cycles is $s = 5$). For nominal values, two tests were used, an independent t-test for equality of mean and a Levene's test with the median in brackets to test equality of variance. For ordinal and categorical features the medians and modes where checked respectively to be similar as well as a chi squared test in brackets fro equality of distribution. P-values lower than $p < 0.05$ are marked red for failure of representation, p-values close to $p > 0.05$ are marked green for correctly being represented.}
 		\label{tab:ImputationCirrhosis}
 		\begin{tabular}{l|lll|lll|}
@@ -718,7 +831,7 @@
 		\end{tabular}
 	\end{table}
 
-	\begin{sidewaystable}[]
+	\begin{sidewaystable}[H]
 		\caption{Testing for the cervical cancer dataset whether the type of missing values can be represented by the remaining values. This is done by comparing distributions between all sample values and remaining sample values after CCA and WCA. In this table the distribution comparisons of the mean imputation were also added as a representation of all imputation methods, as these comparisons were almost identical for every imputation method. For nominal values, two tests were used, an independent t-test for equality of mean and a Levene's test with the median in brackets to test equality of variance. For ordinal and categorical features the medians and modes where checked respectively to be similar as well as a chi squared test in brackets fro equality of distribution. P-values lower than $p < 0.05$ are marked red for failure of representation, p-values higher than $p > 0.05$ are marked green for correctly being represented. If at least one feature is not represented after CCA, the missing values cannot be MCAR. If at least one feature is not represented after WCA, the pseudo-randomness cannot be corrected by only using weights for other values. For the features "cervical condylomatsis" and "AIDS", no chi square p-value could be computed, due to only the category "False" being available.}
 		\label{tab:LDCervical}
 		\resizebox{\columnwidth}{!}{%
@@ -739,4 +852,30 @@
 	}
 	\end{sidewaystable}
 		
+\section{Classification Plots}
+\label{app:ClassPlots}
+
+The classification results for each dataset separately. A figure for the Hepatitis (Figure \ref{fig:EvalHepaAcc}), Cirrhosis (Figure \ref{fig:EvalCirrhAcc}) and the Cervical Cancer dataset (Figure \ref{fig:EvalCervhAcc}) are shown.
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[angle=90,height=0.9\textheight]{hepa_acc.PNG}
+		\caption{A plot showing the accuracy for the Hepatitis dataset after using a missing value handling algorithm. The x-axis shows the computation time for the missing values, done on a 10-logarithmic scale due to the big differences between them. The y-axis shows the accuracy on a scale of 0 to 1. The explanation of every data point can be found both in the text on the top right of the data point as well as in the legend.}
+		\label{fig:EvalHepaAcc}
+	\end{figure}
+
+	\begin{figure}[H]
+	\centering
+	\includegraphics[angle=90,height=0.9\textheight]{cirrh_acc.PNG}
+	\caption{A plot showing the accuracy for the Cirrhosis dataset after using a missing value handling algorithm. The x-axis shows the computation time for the missing values, done on a 10-logarithmic scale due to the big differences between them. The y-axis shows the accuracy on a scale of 0 to 1. The explanation of every data point can be found both in the text on the top right of the data point as well as in the legend.}
+	\label{fig:EvalCirrhAcc}
+\end{figure}
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[angle=90,height=0.9\textheight]{cerv_acc.PNG}
+		\caption{A plot showing the accuracy for the Cervical cancer dataset after using a missing value handling algorithm. The x-axis shows the computation time for the missing values, done on a 10-logarithmic scale due to the big differences between them. The y-axis shows the accuracy on a scale of 0 to 1. The explanation of every data point can be found both in the text on the top right of the data point as well as in the legend.}
+		\label{fig:EvalCervhAcc}
+	\end{figure}
+
 \end{document}

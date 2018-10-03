@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/FilterMethodsData/VisualizeFeaturePreservation.py" line="110" mnemonic="3" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="b04aae05-f1ae-43a2-afdf-32bb9ddcd72c" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -11,108 +14,85 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PlotDistributionResults.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MissingValueHandlingData/PlotDistributionResults.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="123" column="20" lean-forward="false" selection-start-line="123" selection-start-column="20" selection-end-line="123" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PlotlyVisScatter.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MissingValueHandlingData/PlotlyVisScatter.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1479">
-              <caret line="92" column="29" lean-forward="false" selection-start-line="92" selection-start-column="29" selection-end-line="92" selection-end-column="29" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestClassificationResults.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MissingValueHandling/TestClassificationResults.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SingleImputationMethods.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MissingValueHandlingMethods/SingleImputationMethods.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="228" column="19" lean-forward="false" selection-start-line="228" selection-start-column="19" selection-end-line="228" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-                <element signature="e#257#809#0" expanded="false" />
-                <element signature="e#885#2924#0" expanded="false" />
-                <element signature="e#2980#3545#0" expanded="false" />
-                <element signature="e#3610#4182#0" expanded="false" />
-                <element signature="e#4238#7379#0" expanded="false" />
-                <element signature="e#7437#10343#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.py" pinned="false" current-in-tab="true">
-        <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/tpot/base.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="1175" column="11" lean-forward="true" selection-start-line="1175" selection-start-column="11" selection-end-line="1175" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PreprocessingMethods.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MissingValueHandlingMethods/PreprocessingMethods.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="625">
-              <caret line="87" column="46" lean-forward="false" selection-start-line="87" selection-start-column="46" selection-end-line="87" selection-end-column="46" />
-              <folding>
-                <element signature="e#0#100#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ListDeletionMethods.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MissingValueHandlingMethods/ListDeletionMethods.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="27" column="4" lean-forward="false" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MultipleImputationMethods.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MissingValueHandlingMethods/MultipleImputationMethods.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="18" lean-forward="false" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
-              <folding>
-                <element signature="e#141#593#0" expanded="false" />
-                <element signature="e#652#1775#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Tryout.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MissingValueHandling/Tryout.py">
+      <file leaf-file-name="FindDatasetIssuesMethods.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DataExplorationMethods/FindDatasetIssuesMethods.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="374">
-              <caret line="22" column="25" lean-forward="false" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+              <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#34#0" expanded="true" />
+                <element signature="e#318#792#0" expanded="false" />
+                <element signature="e#881#1328#0" expanded="false" />
+                <element signature="e#2277#12213#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="order_methods.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DataExplorationMethods/order_methods.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VisualizeFeaturePreservation.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FilterMethodsData/VisualizeFeaturePreservation.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="529">
+              <caret line="130" column="0" lean-forward="false" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RemoveDatasetIssuesMethods.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DataExplorationMethods/RemoveDatasetIssuesMethods.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="54" lean-forward="false" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+                <element signature="e#446#3293#0" expanded="false" />
+                <element signature="e#3347#3776#0" expanded="false" />
+                <element signature="e#3833#4493#0" expanded="false" />
+                <element signature="e#4582#5154#0" expanded="false" />
+                <element signature="e#5218#5486#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wrapper_methods.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/DataExplorationMethods/wrapper_methods.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="901">
+              <caret line="53" column="36" lean-forward="false" selection-start-line="53" selection-start-column="36" selection-end-line="53" selection-end-column="36" />
+              <folding>
+                <element signature="e#924#969#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestAdditionalMethods.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DataExploration/TestAdditionalMethods.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="24" lean-forward="false" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FindDataSetIssues.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DataExploration/FindDataSetIssues.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="15" lean-forward="true" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
               </folding>
@@ -120,11 +100,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FeatureDistributionTesting.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MissingValueHandling/FeatureDistributionTesting.py">
+      <file leaf-file-name="Boxplot try out.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DataExploration/Boxplot try out.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="31" column="72" lean-forward="false" selection-start-line="31" selection-start-column="72" selection-end-line="31" selection-end-column="72" />
+            <state relative-caret-position="357">
+              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -141,7 +121,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>wrapped</find>
       <find>fs_config</find>
       <find>0.4324</find>
       <find>0.3131</find>
@@ -149,13 +128,40 @@
       <find>max_eval</find>
       <find>0.73483</find>
       <find>convert_bool</find>
-      <find>print</find>
       <find>missing_row</find>
       <find>HE</find>
+      <find>Cirrhosis</find>
+      <find>entr</find>
+      <find>Attribute</find>
+      <find>__file__</find>
+      <find>get_class_stats</find>
+      <find>_get_categorical_features</find>
+      <find>categorical</find>
+      <find>numerical</find>
+      <find>eigen</find>
+      <find>take_nd()</find>
+      <find>Most</find>
+      <find>attribute</find>
+      <find>joint_entropy</find>
+      <find>entropies</find>
+      <find>numeric</find>
+      <find>_get_binned_numeric_features_and_class_with_no_missing_values</find>
+      <find>explore_r</find>
+      <find>FeatureOrder</find>
+      <find>column_types</find>
+      <find>print</find>
+      <find>presence</find>
     </findStrings>
     <replaceStrings>
       <replace>output_var</replace>
       <replace>PM</replace>
+      <replace>numerical</replace>
+      <replace>numeric</replace>
+      <replace>joint</replace>
+      <replace>mutual_information</replace>
+      <replace>mi_scores</replace>
+      <replace>categorical</replace>
+      <replace>exploration_r</replace>
     </replaceStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -165,25 +171,59 @@
         <option value="$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/tpot/base.py" />
         <option value="$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/tpot/gp_deap.py" />
         <option value="$PROJECT_DIR$/Testing_TPOT/TPOT_test.py" />
-        <option value="$PROJECT_DIR$/MissingValueHandlingData/PlotlyVisScatter.py" />
         <option value="$PROJECT_DIR$/MissingValueHandling/combined_p_val.csv" />
-        <option value="$PROJECT_DIR$/MissingValueHandlingMethods/ListDeletionMethods.py" />
         <option value="$PROJECT_DIR$/MissingValueHandling/Fixer.py" />
-        <option value="$PROJECT_DIR$/MissingValueHandling/FeatureDistributionTesting.py" />
-        <option value="$PROJECT_DIR$/MissingValueHandlingData/PlotDistributionResults.py" />
-        <option value="$PROJECT_DIR$/MissingValueHandling/TestClassificationResults.py" />
-        <option value="$PROJECT_DIR$/MissingValueHandlingMethods/MultipleImputationMethods.py" />
         <option value="$PROJECT_DIR$/MissingValueHandlingMethods/HotEncoder.py" />
+        <option value="$PROJECT_DIR$/MissingValueHandling/FeatureDistributionTesting.py" />
+        <option value="$PROJECT_DIR$/FeatureReductionData/PlotlyVisScatter.py" />
+        <option value="$PROJECT_DIR$/MissingValueHandlingData/PlotDistributionResults.py" />
+        <option value="$PROJECT_DIR$/../../../Sollicitation/KPMG assessment/test.py" />
+        <option value="$PROJECT_DIR$/../../../Sollicitation/KPMG assessment/start.ipynb" />
+        <option value="$PROJECT_DIR$/FilterMethodsData/Tradeoff_FS_Accuracy.py" />
+        <option value="$PROJECT_DIR$/MissingValueHandlingMethods/MultipleImputationMethods.py" />
         <option value="$PROJECT_DIR$/MissingValueHandling/Tryout.py" />
+        <option value="$PROJECT_DIR$/GUI/GUI_Exe.py" />
+        <option value="$PROJECT_DIR$/GUI/GUI_Class.py" />
+        <option value="$PROJECT_DIR$/GUI/GUI_Main.py" />
+        <option value="$PROJECT_DIR$/GUI/GUI_Load_Dataset.py" />
+        <option value="$PROJECT_DIR$/GUI/guiMain.py" />
+        <option value="$PROJECT_DIR$/GUI/guiLoadDataset.py" />
+        <option value="$PROJECT_DIR$/MissingValueHandling/TestClassificationResults.py" />
+        <option value="$PROJECT_DIR$/MissingValueHandlingData/PlotlyVisScatter.py" />
+        <option value="$PROJECT_DIR$/DataExploration/Tryout.py" />
+        <option value="$PROJECT_DIR$/DataExploration/ordertryout.py" />
+        <option value="$PROJECT_DIR$/DataExploration/TestAdditionalMethods.py" />
+        <option value="$PROJECT_DIR$/DataExplorationMethods/common_operations.py" />
+        <option value="$PROJECT_DIR$/DataExplorationMethods/information_theoretic_metafeatures_separate.py" />
+        <option value="$PROJECT_DIR$/FilterMethodsData/VisualizeFeaturePreservation.py" />
+        <option value="$PROJECT_DIR$/DataExploration/metafeatures_relevant.json" />
+        <option value="$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/metalearn-0.4.7-py3.6.egg/metalearn/metafeatures/landmarking_metafeatures.py" />
+        <option value="$PROJECT_DIR$/DataExploration/Boxplot try out.py" />
+        <option value="$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/metalearn-0.4.7-py3.6.egg/metalearn/metafeatures/information_theoretic_metafeatures.py" />
+        <option value="$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/metalearn-0.4.7-py3.6.egg/metalearn/metafeatures/common_operations.py" />
+        <option value="$PROJECT_DIR$/DataExplorationMethods/FindDatasetIssues.py" />
+        <option value="$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/metalearn-0.4.7-py3.6.egg/metalearn/metafeatures/metafeatures.py" />
+        <option value="$PROJECT_DIR$/DataExploration/TestMetafeatures.py" />
+        <option value="$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/metalearn-0.4.7-py3.6.egg/metalearn/metafeatures/simple_metafeatures.py" />
+        <option value="$PROJECT_DIR$/DataExplorationMethods/ReduceDatasetIssuesMethods.py" />
+        <option value="$PROJECT_DIR$/MissingValueHandlingMethods/ListDeletionMethods.py" />
+        <option value="$PROJECT_DIR$/MissingValueHandlingMethods/PreprocessingMethods.py" />
         <option value="$PROJECT_DIR$/MissingValueHandlingMethods/SingleImputationMethods.py" />
+        <option value="$PROJECT_DIR$/FeatureReductionMethods/WrapperMethods.py" />
+        <option value="$PROJECT_DIR$/DataExplorationMethods/wrapper_methods.py" />
+        <option value="$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/metalearn-0.4.7-py3.6.egg/metalearn/metafeatures/statistical_metafeatures.py" />
+        <option value="$PROJECT_DIR$/DataExplorationMethods/RemoveDatasetIssuesMethods.py" />
+        <option value="$PROJECT_DIR$/DataExploration/FindDataSetIssues.py" />
+        <option value="$PROJECT_DIR$/DataExplorationMethods/FindDatasetIssuesMethods.py" />
+        <option value="$PROJECT_DIR$/Testing_TPOT/FS_accuracy_explanation.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="75" />
-    <option name="y" value="274" />
-    <option name="width" value="1616" />
-    <option name="height" value="886" />
+    <option name="x" value="701" />
+    <option name="y" value="167" />
+    <option name="width" value="960" />
+    <option name="height" value="728" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -200,6 +240,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -208,41 +249,24 @@
               <item name="Testing" type="b2602c69:ProjectViewProjectNode" />
               <item name="Testing" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Testing" type="462c0819:PsiDirectoryNode" />
-              <item name="MissingValueHandling" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Testing" type="462c0819:PsiDirectoryNode" />
-              <item name="MissingValueHandlingData" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Testing" type="462c0819:PsiDirectoryNode" />
-              <item name="MissingValueHandlingMethods" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Testing" type="462c0819:PsiDirectoryNode" />
-              <item name="Testing_TPOT" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Sollicitation/KPMG assessment/test.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\s119104\Documents\GitHub\GraduationFilesGithub\Testing\DataExplorationMethods" />
+      <recent name="C:\Users\s119104\Documents\GitHub\GraduationFilesGithub\Testing" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\s119104\Documents\GitHub\GraduationFilesGithub\Testing\MissingValueHandlingMethods" />
       <recent name="C:\Users\s119104\Documents\GitHub\GraduationFilesGithub\Testing\MissingValueHandlingData" />
+      <recent name="C:\Users\s119104\Documents\GitHub\GraduationFilesGithub\Testing\MissingValueHandlingMethods" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -257,106 +281,106 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Tryout">
-    <configuration name="FeatureDistributionTesting" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.FS_accuracy_explanation">
+    <configuration name="FS_accuracy_explanation" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MissingValueHandling" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Testing_TPOT" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Testing" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MissingValueHandling/FeatureDistributionTesting.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Testing_TPOT/FS_accuracy_explanation.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="Fixer" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="FindDataSetIssues" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MissingValueHandling" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DataExploration" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Testing" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MissingValueHandling/Fixer.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataExploration/FindDataSetIssues.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="PlotDistributionResults" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="FindDatasetIssuesMethods" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MissingValueHandlingData" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DataExplorationMethods" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Testing" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MissingValueHandlingData/PlotDistributionResults.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataExplorationMethods/FindDatasetIssuesMethods.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="SingleImputationMethods" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="RemoveDatasetIssuesMethods" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MissingValueHandlingMethods" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DataExplorationMethods" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Testing" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MissingValueHandlingMethods/SingleImputationMethods.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataExplorationMethods/RemoveDatasetIssuesMethods.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="Tryout" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="TestMetafeatures" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/MissingValueHandling" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DataExploration" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Testing" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MissingValueHandling/Tryout.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataExploration/TestMetafeatures.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.PlotDistributionResults" />
-      <item index="1" class="java.lang.String" itemvalue="Python.FeatureDistributionTesting" />
-      <item index="2" class="java.lang.String" itemvalue="Python.Fixer" />
-      <item index="3" class="java.lang.String" itemvalue="Python.Tryout" />
-      <item index="4" class="java.lang.String" itemvalue="Python.SingleImputationMethods" />
+      <item index="0" class="java.lang.String" itemvalue="Python.TestMetafeatures" />
+      <item index="1" class="java.lang.String" itemvalue="Python.FindDataSetIssues" />
+      <item index="2" class="java.lang.String" itemvalue="Python.FindDatasetIssuesMethods" />
+      <item index="3" class="java.lang.String" itemvalue="Python.RemoveDatasetIssuesMethods" />
+      <item index="4" class="java.lang.String" itemvalue="Python.FS_accuracy_explanation" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.Tryout" />
-        <item index="1" class="java.lang.String" itemvalue="Python.SingleImputationMethods" />
-        <item index="2" class="java.lang.String" itemvalue="Python.PlotDistributionResults" />
-        <item index="3" class="java.lang.String" itemvalue="Python.FeatureDistributionTesting" />
-        <item index="4" class="java.lang.String" itemvalue="Python.Fixer" />
+        <item index="0" class="java.lang.String" itemvalue="Python.FS_accuracy_explanation" />
+        <item index="1" class="java.lang.String" itemvalue="Python.FindDataSetIssues" />
+        <item index="2" class="java.lang.String" itemvalue="Python.RemoveDatasetIssuesMethods" />
+        <item index="3" class="java.lang.String" itemvalue="Python.FindDatasetIssuesMethods" />
+        <item index="4" class="java.lang.String" itemvalue="Python.TestMetafeatures" />
       </list>
     </recent_temporary>
   </component>
@@ -378,18 +402,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20948827" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22707888" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.25390625" sideWeight="0.16222222" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24975985" sideWeight="0.8377778" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32949087" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39865515" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -399,304 +422,448 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933334" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.25390625" sideWeight="0.16222222" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24975985" sideWeight="0.8377778" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18443497" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933334" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39941406" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/MissingValueHandlingData/PlotDistributionResults.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2040">
-          <caret line="123" column="20" lean-forward="false" selection-start-line="123" selection-start-column="20" selection-end-line="123" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MissingValueHandlingData/PlotlyVisScatter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1564">
-          <caret line="92" column="29" lean-forward="true" selection-start-line="92" selection-start-column="29" selection-end-line="92" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MissingValueHandling/TestClassificationResults.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MissingValueHandlingMethods/PreprocessingMethods.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2329">
-          <caret line="139" column="0" lean-forward="false" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#100#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MissingValueHandlingMethods/MultipleImputationMethods.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="18" lean-forward="true" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
-          <folding>
-            <element signature="e#141#593#0" expanded="false" />
-            <element signature="e#652#1775#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MissingValueHandling/Tryout.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="26" column="5" lean-forward="false" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="2210">
+          <caret line="138" column="0" lean-forward="false" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MissingValueHandling/FeatureDistributionTesting.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="31" column="72" lean-forward="false" selection-start-line="31" selection-start-column="72" selection-end-line="31" selection-end-column="72" />
-          <folding />
+        <state relative-caret-position="578">
+          <caret line="40" column="48" lean-forward="false" selection-start-line="40" selection-start-column="48" selection-end-line="40" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MissingValueHandlingMethods/SingleImputationMethods.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2669">
-          <caret line="280" column="48" lean-forward="false" selection-start-line="280" selection-start-column="48" selection-end-line="280" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <element signature="e#257#809#0" expanded="false" />
-            <element signature="e#885#2924#0" expanded="false" />
-            <element signature="e#2980#3545#0" expanded="false" />
-            <element signature="e#3610#4182#0" expanded="false" />
-            <element signature="e#4238#7379#0" expanded="false" />
-            <element signature="e#7437#10343#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Testing_TPOT/PipelineSelection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="74" column="36" lean-forward="false" selection-start-line="74" selection-start-column="36" selection-end-line="74" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/tpot/gp_deap.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="446" column="56" lean-forward="false" selection-start-line="446" selection-start-column="56" selection-end-line="446" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StatisticalAnalysisMethods/FeatureDistributionMethods.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-684">
-          <caret line="150" column="4" lean-forward="false" selection-start-line="150" selection-start-column="4" selection-end-line="150" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Pipelines/TPOT_MicroOrganisms_regular_selection_regular_algorithms_pipeline.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="53" lean-forward="false" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Testing_TPOT/TPOT_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="107" lean-forward="false" selection-start-line="8" selection-start-column="107" selection-end-line="8" selection-end-column="107" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/tpot/tpot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="33" column="24" lean-forward="false" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/tpot/config/feature_selection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="47" column="31" lean-forward="false" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MissingValueHandling/combined_p_val.csv" />
-    <entry file="file://$PROJECT_DIR$/MissingValueHandling/Fixer.py" />
-    <entry file="file://$PROJECT_DIR$/MissingValueHandlingData/MissingValueHandlingClassificationValues.csv">
+    <entry file="file://$PROJECT_DIR$/MissingValueHandling/MissingValueHandlingBlankTest.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MissingValueHandlingData/combined_p_val.csv">
+    <entry file="file://$PROJECT_DIR$/../../metalearn/metalearn/metafeatures/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MissingValueHandlingData/Cervical_p_val.csv">
+    <entry file="file://$PROJECT_DIR$/../../metalearn/setup.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MissingValueHandlingData/Cirrhosis_p_val.csv">
+    <entry file="file://$PROJECT_DIR$/../../metalearn/metalearn/metafeatures/metafeatures.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="204">
+          <caret line="12" column="32" lean-forward="false" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MissingValueHandlingData/HeartAttack_p_val.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MissingValueHandlingData/Hepatitis_p_val.csv">
+    <entry file="file://$PROJECT_DIR$/../../openml-python/openml/evaluations/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MissingValueHandlingData/combined_p_val.csv">
+    <entry file="file://$PROJECT_DIR$/../../openml-python/openml/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="152" lean-forward="true" selection-start-line="16" selection-start-column="152" selection-end-line="16" selection-end-column="152" />
+        <state relative-caret-position="153">
+          <caret line="9" column="14" lean-forward="false" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MissingValueHandling/FeatureDistributionTesting.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="31" column="72" lean-forward="false" selection-start-line="31" selection-start-column="72" selection-end-line="31" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MissingValueHandlingData/PlotDistributionResults.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="123" column="20" lean-forward="false" selection-start-line="123" selection-start-column="20" selection-end-line="123" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MissingValueHandlingMethods/MultipleImputationMethods.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="18" lean-forward="false" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
-          <folding>
-            <element signature="e#141#593#0" expanded="false" />
-            <element signature="e#652#1775#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/metafeatures/README.md" />
     <entry file="file://$PROJECT_DIR$/MissingValueHandlingData/PlotlyVisScatter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1479">
-          <caret line="92" column="29" lean-forward="false" selection-start-line="92" selection-start-column="29" selection-end-line="92" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="238">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MissingValueHandling/TestClassificationResults.py">
+    <entry file="file://$PROJECT_DIR$/DataExtraction/DataSetExtraction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-526">
+          <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../metalearn/metalearn/metafeatures/statistical_metafeatures.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1155">
+          <caret line="8" column="35" lean-forward="false" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../metalearn/metalearn/metafeatures/simple_metafeatures.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="4" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../metalearn/metalearn/metafeatures/landmarking_metafeatures.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-356">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataExploration/ordertryout.py" />
+    <entry file="file://$PROJECT_DIR$/DataExplorationMethods/common_operations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataExplorationMethods/information_theoretic_metafeatures_separate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="31" column="78" lean-forward="false" selection-start-line="31" selection-start-column="78" selection-end-line="31" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataExploration/metafeatures_relevant.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="384" column="0" lean-forward="false" selection-start-line="384" selection-start-column="0" selection-end-line="384" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/sklearn/utils/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="914">
+          <caret line="159" column="0" lean-forward="false" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/sklearn/model_selection/_validation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="38" column="4" lean-forward="false" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataSets/HepatitisSet/HepatitisDataset.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/metalearn-0.4.7-py3.6.egg/metalearn/metafeatures/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/metalearn-0.4.7-py3.6.egg/metalearn/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/metalearn-0.4.7-py3.6.egg/metalearn/metafeatures/landmarking_metafeatures.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="72" column="16" lean-forward="false" selection-start-line="72" selection-start-column="16" selection-end-line="72" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/metalearn-0.4.7-py3.6.egg/metalearn/metafeatures/information_theoretic_metafeatures.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="14" column="167" lean-forward="false" selection-start-line="14" selection-start-column="167" selection-end-line="14" selection-end-column="167" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MissingValueHandlingMethods/ListDeletionMethods.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="64" column="30" lean-forward="false" selection-start-line="64" selection-start-column="30" selection-end-line="64" selection-end-column="30" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MissingValueHandling/Tryout.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/metalearn-0.4.7-py3.6.egg/metalearn/metafeatures/simple_metafeatures.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="25" lean-forward="false" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="510">
+          <caret line="33" column="35" lean-forward="false" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/sklearn/neighbors/classification.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/metalearn-0.4.7-py3.6.egg/metalearn/metafeatures/common_operations.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="117" column="8" lean-forward="false" selection-start-line="117" selection-start-column="8" selection-end-line="117" selection-end-column="8" />
+        <state relative-caret-position="408">
+          <caret line="43" column="37" lean-forward="false" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MissingValueHandlingMethods/PreprocessingMethods.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="87" column="46" lean-forward="false" selection-start-line="87" selection-start-column="46" selection-end-line="87" selection-end-column="46" />
+        <state relative-caret-position="476">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding>
-            <element signature="e#0#100#0" expanded="true" />
+            <element signature="e#0#100#0" expanded="false" />
+            <element signature="e#1197#2225#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MissingValueHandlingMethods/ListDeletionMethods.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="27" column="4" lean-forward="false" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MissingValueHandlingMethods/SingleImputationMethods.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="228" column="19" lean-forward="false" selection-start-line="228" selection-start-column="19" selection-end-line="228" selection-end-column="19" />
+        <state relative-caret-position="493">
+          <caret line="65" column="60" lean-forward="false" selection-start-line="65" selection-start-column="60" selection-end-line="65" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FeatureReductionMethods/WrapperMethods.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1938">
+          <caret line="342" column="20" lean-forward="true" selection-start-line="342" selection-start-column="20" selection-end-line="342" selection-end-column="20" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <element signature="e#257#809#0" expanded="false" />
-            <element signature="e#885#2924#0" expanded="false" />
-            <element signature="e#2980#3545#0" expanded="false" />
-            <element signature="e#3610#4182#0" expanded="false" />
-            <element signature="e#4238#7379#0" expanded="false" />
-            <element signature="e#7437#10343#0" expanded="false" />
+            <element signature="e#0#18#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/tpot/base.py">
+    <entry file="file://$PROJECT_DIR$/FeatureReductionMethods/FilterMethods.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="1175" column="11" lean-forward="true" selection-start-line="1175" selection-start-column="11" selection-end-line="1175" selection-end-column="11" />
+        <state relative-caret-position="-510">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/metalearn-0.4.7-py3.6.egg/metalearn/metafeatures/statistical_metafeatures.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="112" column="0" lean-forward="true" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+          <folding>
+            <element signature="e#627#728#0" expanded="false" />
+            <element signature="e#781#883#0" expanded="false" />
+            <element signature="e#939#1040#0" expanded="false" />
+            <element signature="e#1096#1207#0" expanded="false" />
+            <element signature="e#1304#2260#0" expanded="false" />
+            <element signature="e#2329#2990#0" expanded="false" />
+            <element signature="e#4495#4933#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/tpot/builtins/order_methods.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="716">
+          <caret line="61" column="56" lean-forward="true" selection-start-line="61" selection-start-column="56" selection-end-line="61" selection-end-column="56" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataExploration/TestMetafeatures.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="11" lean-forward="true" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#34#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/metalearn-0.4.7-py3.6.egg/metalearn/metafeatures/metafeatures.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-289">
+          <caret line="55" column="31" lean-forward="true" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#9#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FilterMethodsData/PlotFilterMethods.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="58" column="30" lean-forward="false" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FeatureReduction/TestingFilterMethods.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-165">
+          <caret line="24" column="31" lean-forward="false" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FeatureReductionData/PlotlyVisBar.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3415">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FeatureReductionData/VisualizeFeatureReductionEvaluation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="107" column="0" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FilterMethodsData/Tradeoff_FS_Accuracy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#18#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataExplorationMethods/FindDatasetIssuesMethods.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+            <element signature="e#318#792#0" expanded="false" />
+            <element signature="e#881#1328#0" expanded="false" />
+            <element signature="e#2277#12213#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataExplorationMethods/order_methods.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataExplorationMethods/RemoveDatasetIssuesMethods.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="54" lean-forward="false" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#446#3293#0" expanded="false" />
+            <element signature="e#3347#3776#0" expanded="false" />
+            <element signature="e#3833#4493#0" expanded="false" />
+            <element signature="e#4582#5154#0" expanded="false" />
+            <element signature="e#5218#5486#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataExploration/TestAdditionalMethods.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="24" lean-forward="false" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataExploration/Boxplot try out.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataExploration/FindDataSetIssues.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="15" lean-forward="true" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing_TPOT/TPOTFeatureReduction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing_TPOT/FS_accuracy_explanation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="10" lean-forward="true" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FilterMethodsData/VisualizeFeaturePreservation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="130" column="0" lean-forward="false" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataExplorationMethods/wrapper_methods.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="53" column="36" lean-forward="false" selection-start-line="53" selection-start-column="36" selection-end-line="53" selection-end-column="36" />
+          <folding>
+            <element signature="e#924#969#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

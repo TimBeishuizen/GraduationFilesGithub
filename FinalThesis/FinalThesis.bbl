@@ -1,0 +1,1139 @@
+\begin{thebibliography}{100}
+
+\bibitem{gehlenborg2010visualization}
+N.~Gehlenborg, S.~I. O'donoghue, N.~S. Baliga, A.~Goesmann, M.~A. Hibbs,
+  H.~Kitano, O.~Kohlbacher, H.~Neuweger, R.~Schneider, D.~Tenenbaum, {\em
+  et~al.}, ``Visualization of omics data for systems biology,'' {\em Nature
+  methods}, vol.~7, no.~3s, p.~S56, 2010.
+
+\bibitem{brazma2001minimum}
+A.~Brazma, P.~Hingamp, J.~Quackenbush, G.~Sherlock, P.~Spellman, C.~Stoeckert,
+  J.~Aach, W.~Ansorge, C.~A. Ball, H.~C. Causton, {\em et~al.}, ``Minimum
+  information about a microarray experiment (miame)—toward standards for
+  microarray data,'' {\em Nature genetics}, vol.~29, no.~4, p.~365, 2001.
+
+\bibitem{cottrell1999probability}
+J.~S. Cottrell and U.~London, ``Probability-based protein identification by
+  searching sequence databases using mass spectrometry data,'' {\em
+  electrophoresis}, vol.~20, no.~18, pp.~3551--3567, 1999.
+
+\bibitem{dettmer2007mass}
+K.~Dettmer, P.~A. Aronov, and B.~D. Hammock, ``Mass spectrometry-based
+  metabolomics,'' {\em Mass spectrometry reviews}, vol.~26, no.~1, pp.~51--78,
+  2007.
+
+\bibitem{liu2012data}
+B.~Liu, X.~Zhou, Y.~Wang, J.~Hu, L.~He, R.~Zhang, S.~Chen, and Y.~Guo, ``Data
+  processing and analysis in real-world traditional chinese medicine clinical
+  data: challenges and approaches,'' {\em Statistics in medicine}, vol.~31,
+  no.~7, pp.~653--660, 2012.
+
+\bibitem{sittig2008grand}
+D.~F. Sittig, A.~Wright, J.~A. Osheroff, B.~Middleton, J.~M. Teich, J.~S. Ash,
+  E.~Campbell, and D.~W. Bates, ``Grand challenges in clinical decision
+  support,'' {\em Journal of biomedical informatics}, vol.~41, no.~2,
+  pp.~387--392, 2008.
+
+\bibitem{magni1990chronic}
+G.~Magni, C.~Caldieron, S.~Rigatti-Luchini, and H.~Merskey, ``Chronic
+  musculoskeletal pain and depressive symptoms in the general population. an
+  analysis of the 1st national health and nutrition examination survey data,''
+  {\em Pain}, vol.~43, no.~3, pp.~299--307, 1990.
+
+\bibitem{bertolazzi2008logic}
+P.~Bertolazzi, G.~Felici, P.~Festa, and G.~Lancia, ``Logic classification and
+  feature selection for biomedical data,'' {\em Computers \& Mathematics with
+  Applications}, vol.~55, no.~5, pp.~889--899, 2008.
+
+\bibitem{piatetsky2003microarray}
+G.~Piatetsky-Shapiro and P.~Tamayo, ``Microarray data mining: facing the
+  challenges,'' {\em ACM SIGKDD Explorations Newsletter}, vol.~5, no.~2,
+  pp.~1--5, 2003.
+
+\bibitem{lommen2009metalign}
+A.~Lommen, ``Metalign: interface-driven, versatile metabolomics tool for
+  hyphenated full-scan mass spectrometry data preprocessing,'' {\em Analytical
+  chemistry}, vol.~81, no.~8, pp.~3079--3086, 2009.
+
+\bibitem{holzinger2014knowledge}
+A.~Holzinger, M.~Dehmer, and I.~Jurisica, ``Knowledge discovery and interactive
+  data mining in bioinformatics-state-of-the-art, future challenges and
+  research directions,'' {\em BMC bioinformatics}, vol.~15, no.~6, p.~I1, 2014.
+
+\bibitem{wilkins2009proteomics}
+M.~Wilkins, ``Proteomics data mining,'' {\em Expert review of proteomics},
+  vol.~6, no.~6, pp.~599--603, 2009.
+
+\bibitem{teodoro2009biomedical}
+D.~Teodoro, R.~Choquet, E.~Pasche, J.~Gobeill, C.~Daniel, P.~Ruch, and
+  C.~Lovis, ``Biomedical data management: a proposal framework.,'' in {\em
+  MIE}, pp.~175--179, Citeseer, 2009.
+
+\bibitem{doi:10.1093/nar/gkm1037}
+M.~Y. Galperin, ``The molecular biology database collection: 2008 update,''
+  {\em Nucleic Acids Research}, vol.~36, no.~suppl1, pp.~D2--D4, 2008.
+
+\bibitem{sturn2002genesis}
+A.~Sturn, J.~Quackenbush, and Z.~Trajanoski, ``Genesis: cluster analysis of
+  microarray data,'' {\em Bioinformatics}, vol.~18, no.~1, pp.~207--208, 2002.
+
+\bibitem{karnovsky2011metscape}
+A.~Karnovsky, T.~Weymouth, T.~Hull, V.~G. Tarcea, G.~Scardoni, C.~Laudanna,
+  M.~A. Sartor, K.~A. Stringer, H.~Jagadish, C.~Burant, {\em et~al.},
+  ``Metscape 2 bioinformatics tool for the analysis and visualization of
+  metabolomics and gene expression data,'' {\em Bioinformatics}, vol.~28,
+  no.~3, pp.~373--380, 2011.
+
+\bibitem{tabas2012genecodis3}
+D.~Tabas-Madrid, R.~Nogales-Cadenas, and A.~Pascual-Montano, ``Genecodis3: a
+  non-redundant and modular enrichment analysis tool for functional genomics,''
+  {\em Nucleic acids research}, vol.~40, no.~W1, pp.~W478--W483, 2012.
+
+\bibitem{faul2007g}
+F.~Faul, E.~Erdfelder, A.-G. Lang, and A.~Buchner, ``G* power 3: A flexible
+  statistical power analysis program for the social, behavioral, and biomedical
+  sciences,'' {\em Behavior research methods}, vol.~39, no.~2, pp.~175--191,
+  2007.
+
+\bibitem{baumgartner2006data}
+R.~Baumgartner and R.~L. Somorjai, ``Data complexity assessment in undersampled
+  classification of high-dimensional biomedical data,'' {\em Pattern
+  Recognition Letters}, vol.~27, no.~12, pp.~1383--1389, 2006.
+
+\bibitem{welthagen2005comprehensive}
+W.~Welthagen, R.~A. Shellie, J.~Spranger, M.~Ristow, R.~Zimmermann, and
+  O.~Fiehn, ``Comprehensive two-dimensional gas chromatography--time-of-flight
+  mass spectrometry (gc$\times$ gc-tof) for high resolution metabolomics:
+  biomarker discovery on spleen tissue extracts of obese nzo compared to lean
+  c57bl/6 mice,'' {\em Metabolomics}, vol.~1, no.~1, pp.~65--73, 2005.
+
+\bibitem{donders2006gentle}
+A.~R.~T. Donders, G.~J. Van Der~Heijden, T.~Stijnen, and K.~G. Moons, ``A
+  gentle introduction to imputation of missing values,'' {\em Journal of
+  clinical epidemiology}, vol.~59, no.~10, pp.~1087--1091, 2006.
+
+\bibitem{cartwright2003dealing}
+M.~H. Cartwright, M.~J. Shepperd, and Q.~Song, ``Dealing with missing software
+  project data,'' in {\em Software Metrics Symposium, 2003. Proceedings. Ninth
+  International}, pp.~154--165, IEEE, 2003.
+
+\bibitem{haukoos2007advanced}
+J.~S. Haukoos and C.~D. Newgard, ``Advanced statistics: missing data in
+  clinical research—part 1: an introduction and conceptual framework,'' {\em
+  Academic Emergency Medicine}, vol.~14, no.~7, pp.~662--668, 2007.
+
+\bibitem{Deneer2017Thesis}
+R.~Deneer, ``Scoring co-morbidity severity in bariatric patients based on
+  biomarkers: a data mining approach,'' 2017.
+
+\bibitem{nair2009genome}
+R.~P. Nair, K.~C. Duffin, C.~Helms, J.~Ding, P.~E. Stuart, D.~Goldgar, J.~E.
+  Gudjonsson, Y.~Li, T.~Tejasvi, B.-J. Feng, {\em et~al.}, ``Genome-wide scan
+  reveals association of psoriasis with il-23 and nf-$\kappa$b pathways,'' {\em
+  Nature genetics}, vol.~41, no.~2, pp.~199--204, 2009.
+
+\bibitem{suarez2012expanding}
+M.~Su{\'a}rez-Farinas, K.~Li, J.~Fuentes-Duculan, K.~Hayden, C.~Brodmerkel, and
+  J.~G. Krueger, ``Expanding the psoriasis disease profile: interrogation of
+  the skin and serum of patients with moderate-to-severe psoriasis,'' {\em
+  Journal of Investigative Dermatology}, vol.~132, no.~11, pp.~2552--2564,
+  2012.
+
+\bibitem{bigler2013cross}
+J.~Bigler, H.~A. Rand, K.~Kerkof, M.~Timour, and C.~B. Russell, ``Cross-study
+  homogeneity of psoriasis gene expression in skin across a large expression
+  range,'' {\em PLoS One}, vol.~8, no.~1, p.~e52242, 2013.
+
+\bibitem{kim2016spectrum}
+J.~Kim, R.~Bissonnette, J.~Lee, J.~C. da~Rosa, M.~Su{\'a}rez-Fari{\~n}as, M.~A.
+  Lowes, and J.~G. Krueger, ``The spectrum of mild to severe psoriasis vulgaris
+  is defined by a common activation of il-17 pathway genes, but with key
+  differences in immune regulatory genes,'' {\em Journal of Investigative
+  Dermatology}, vol.~136, no.~11, pp.~2173--2182, 2016.
+
+\bibitem{yao2008type}
+Y.~Yao, L.~Richman, C.~Morehouse, M.~De~Los~Reyes, B.~W. Higgs, A.~Boutrin,
+  B.~White, A.~Coyle, J.~Krueger, P.~A. Kiener, {\em et~al.}, ``Type i
+  interferon: potential therapeutic target for psoriasis?,'' {\em PloS one},
+  vol.~3, no.~7, p.~e2737, 2008.
+
+\bibitem{suarez2011nonlesional}
+M.~Su{\'a}rez-Fari{\~n}as, S.~J. Tintle, A.~Shemer, A.~Chiricozzi, K.~Nograles,
+  I.~Cardinale, S.~Duan, A.~M. Bowcock, J.~G. Krueger, and E.~Guttman-Yassky,
+  ``Nonlesional atopic dermatitis skin is characterized by broad terminal
+  differentiation defects and variable immune abnormalities,'' {\em Journal of
+  Allergy and Clinical Immunology}, vol.~127, no.~4, pp.~954--964, 2011.
+
+\bibitem{tintle2011reversal}
+S.~Tintle, A.~Shemer, M.~Su{\'a}rez-Fari{\~n}as, H.~Fujita, P.~Gilleaudeau,
+  M.~Sullivan-Whalen, L.~Johnson-Huang, A.~Chiricozzi, I.~Cardinale, S.~Duan,
+  {\em et~al.}, ``Reversal of atopic dermatitis with narrow-band uvb
+  phototherapy and biomarkers for therapeutic response,'' {\em Journal of
+  Allergy and Clinical Immunology}, vol.~128, no.~3, pp.~583--593, 2011.
+
+\bibitem{gittler2012progressive}
+J.~K. Gittler, A.~Shemer, M.~Su{\'a}rez-Fari{\~n}as, J.~Fuentes-Duculan, K.~J.
+  Gulewicz, C.~Q. Wang, H.~Mitsui, I.~Cardinale, C.~de~Guzman~Strong, J.~G.
+  Krueger, {\em et~al.}, ``Progressive activation of t h 2/t h 22 cytokines and
+  selective epidermal proteins characterizes acute and chronic atopic
+  dermatitis,'' {\em Journal of Allergy and Clinical Immunology}, vol.~130,
+  no.~6, pp.~1344--1354, 2012.
+
+\bibitem{CIOS20021}
+K.~J. Cios and G.~W. Moore, ``Uniqueness of medical data mining,'' {\em
+  Artificial Intelligence in Medicine}, vol.~26, no.~1, pp.~1 -- 24, 2002.
+\newblock Medical Data Mining and Knowledge Discovery.
+
+\bibitem{Yoo2012}
+I.~Yoo, P.~Alafaireet, M.~Marinov, K.~Pena-Hernandez, R.~Gopidi, J.-F. Chang,
+  and L.~Hua, ``Data mining in healthcare and biomedicine: A survey of the
+  literature,'' {\em Journal of Medical Systems}, vol.~36, pp.~2431--2448, Aug
+  2012.
+
+\bibitem{chen2006medical}
+H.~Chen, S.~S. Fuller, C.~Friedman, and W.~Hersh, {\em Medical informatics:
+  knowledge management and data mining in biomedicine}, vol.~8.
+\newblock Springer Science \& Business Media, 2006.
+
+\bibitem{doi:10.1093/bib/bbx044}
+R.~Miotto, F.~Wang, S.~Wang, X.~Jiang, and J.~T. Dudley, ``Deep learning for
+  healthcare: review, opportunities and challenges,'' {\em Briefings in
+  Bioinformatics}, p.~bbx044, 2017.
+
+\bibitem{blythe2008rise}
+D.~Blythe, ``Rise of the graphics processor,'' {\em Proceedings of the IEEE},
+  vol.~96, no.~5, pp.~761--778, 2008.
+
+\bibitem{Turkay2014}
+C.~Turkay, F.~Jeanquartier, A.~Holzinger, and H.~Hauser, {\em On
+  Computationally-Enhanced Visual Analysis of Heterogeneous Data and Its
+  Application in Biomedical Informatics}, pp.~117--140.
+\newblock Berlin, Heidelberg: Springer Berlin Heidelberg, 2014.
+
+\bibitem{Holzinger2014}
+A.~Holzinger and I.~Jurisica, {\em Knowledge Discovery and Data Mining in
+  Biomedical Informatics: The Future Is in Integrative, Interactive Machine
+  Learning Solutions}, pp.~1--18.
+\newblock Berlin, Heidelberg: Springer Berlin Heidelberg, 2014.
+
+\bibitem{dubitzky2007fundamentals}
+W.~Dubitzky, M.~Granzow, and D.~P. Berrar, {\em Fundamentals of data mining in
+  genomics and proteomics}.
+\newblock Springer Science \& Business Media, 2007.
+
+\bibitem{PENG201015}
+Y.~Peng, Z.~Wu, and J.~Jiang, ``A novel feature selection approach for
+  biomedical data classification,'' {\em Journal of Biomedical Informatics},
+  vol.~43, no.~1, pp.~15 -- 23, 2010.
+
+\bibitem{dunbar2006spatial}
+D.~Dunbar and G.~Humphreys, ``A spatial data structure for fast poisson-disk
+  sample generation,'' in {\em ACM Transactions on Graphics (TOG)}, vol.~25,
+  pp.~503--508, ACM, 2006.
+
+\bibitem{devroye1986sample}
+L.~Devroye, ``Sample-based non-uniform random variate generation,'' in {\em
+  Proceedings of the 18th conference on Winter simulation}, pp.~260--265, ACM,
+  1986.
+
+\bibitem{van2002gene}
+L.~J. Van't~Veer, H.~Dai, M.~J. Van De~Vijver, Y.~D. He, A.~A. Hart, M.~Mao,
+  H.~L. Peterse, K.~Van Der~Kooy, M.~J. Marton, A.~T. Witteveen, {\em et~al.},
+  ``Gene expression profiling predicts clinical outcome of breast cancer,''
+  {\em nature}, vol.~415, no.~6871, p.~530, 2002.
+
+\bibitem{roff1989statistical}
+D.~A. Roff and P.~Bentzen, ``The statistical analysis of mitochondrial dna
+  polymorphisms: chi 2 and the problem of small samples.,'' {\em Molecular
+  biology and evolution}, vol.~6, no.~5, pp.~539--545, 1989.
+
+\bibitem{bellazzi2011data}
+R.~Bellazzi, M.~Diomidous, I.~N. Sarkar, K.~Takabayashi, A.~Ziegler, A.~T.
+  McCray, {\em et~al.}, ``Data analysis and data mining: current issues in
+  biomedical informatics,'' {\em Methods of information in medicine}, vol.~50,
+  no.~6, p.~536, 2011.
+
+\bibitem{Otasek2014}
+D.~Otasek, C.~Pastrello, A.~Holzinger, and I.~Jurisica, {\em Visual Data
+  Mining: Effective Exploration of the Biological Universe}, pp.~19--33.
+\newblock Berlin, Heidelberg: Springer Berlin Heidelberg, 2014.
+
+\bibitem{marenco2004qis}
+L.~Marenco, T.-Y. Wang, G.~Shepherd, P.~L. Miller, and P.~Nadkarni, ``Qis: A
+  framework for biomedical database federation,'' {\em Journal of the American
+  Medical Informatics Association}, vol.~11, no.~6, pp.~523--534, 2004.
+
+\bibitem{bichutskiy2006heterogeneous}
+V.~Y. Bichutskiy, R.~Colman, R.~K. Brachmann, and R.~H. Lathrop,
+  ``Heterogeneous biomedical database integration using a hybrid strategy: a
+  p53 cantcer research database,'' {\em Cancer informatics}, vol.~2, p.~277,
+  2006.
+
+\bibitem{sperzel1991biomedical}
+W.~Sperzel, R.~Abarbanel, S.~Nelson, M.~Erlbaum, D.~Sherertz, M.~Tuttle,
+  N.~Olson, and L.~Fuller, ``Biomedical database inter-connectivity: an
+  experiment linking mim, genbank, and meta-1 via medline.,'' in {\em
+  Proceedings of the Annual Symposium on Computer Application in Medical Care},
+  p.~190, American Medical Informatics Association, 1991.
+
+\bibitem{aubry1988design}
+F.~Aubry, S.~Badaoui, H.~Kaplan, and R.~D. Paola, ``Design and implementation
+  of a biomedical image database (bdim),'' {\em Medical Informatics}, vol.~13,
+  no.~4, pp.~241--248, 1988.
+
+\bibitem{Windridge2014}
+D.~Windridge and M.~Bober, {\em A Kernel-Based Framework for Medical Big-Data
+  Analytics}, pp.~197--208.
+\newblock Berlin, Heidelberg: Springer Berlin Heidelberg, 2014.
+
+\bibitem{selvaraj2011microarray}
+S.~Selvaraj and J.~Natarajan, ``Microarray data analysis and mining tools,''
+  {\em Bioinformation}, vol.~6, no.~3, p.~95, 2011.
+
+\bibitem{wojnarski2010rsctc}
+M.~Wojnarski, A.~Janusz, H.~S. Nguyen, J.~Bazan, C.~Luo, Z.~Chen, F.~Hu,
+  G.~Wang, L.~Guan, H.~Luo, {\em et~al.}, ``Rsctc’2010 discovery challenge:
+  Mining dna microarray data for medical diagnosis and treatment,'' in {\em
+  International Conference on Rough Sets and Current Trends in Computing},
+  pp.~4--19, Springer, 2010.
+
+\bibitem{matthiesen2008analysis}
+R.~Matthiesen and O.~N. Jensen, ``Analysis of mass spectrometry data in
+  proteomics,'' in {\em Bioinformatics}, pp.~105--122, Springer, 2008.
+
+\bibitem{watson2007introduction}
+J.~T. Watson and O.~D. Sparkman, {\em Introduction to mass spectrometry:
+  instrumentation, applications, and strategies for data interpretation}.
+\newblock John Wiley \& Sons, 2007.
+
+\bibitem{NIPS2004_2728}
+I.~Guyon, S.~Gunn, A.~Ben-Hur, and G.~Dror, ``Result analysis of the nips 2003
+  feature selection challenge,'' in {\em Advances in Neural Information
+  Processing Systems 17} (L.~K. Saul, Y.~Weiss, and L.~Bottou, eds.),
+  pp.~545--552, MIT Press, 2005.
+
+\bibitem{doi:10.1093/bioinformatics/btu022}
+P.~Mahé, M.~Arsac, S.~Chatellier, V.~Monnin, N.~Perrot, S.~Mailler, V.~Girard,
+  M.~Ramjeet, J.~Surre, B.~Lacroix, A.~van Belkum, and J.-B. Veyrieras,
+  ``Automatic identification of mixed bacterial species fingerprints in a
+  maldi-tof mass-spectrum,'' {\em Bioinformatics}, vol.~30, no.~9,
+  pp.~1280--1286, 2014.
+
+\bibitem{madigan2017brock}
+M.~T. Madigan, J.~M. Martinko, J.~Parker, {\em et~al.}, {\em Brock biology of
+  microorganisms}, vol.~13.
+\newblock Pearson, 2017.
+
+\bibitem{pocock2013clinical}
+S.~J. Pocock, {\em Clinical trials: a practical approach}.
+\newblock John Wiley \& Sons, 2013.
+
+\bibitem{bendele1999efficacy}
+A.~Bendele, T.~McAbee, G.~Sennello, J.~Frazier, E.~Chlipala, and D.~McCabe,
+  ``Efficacy of sustained blood levels of interleukin-1 receptor antagonist in
+  animal models of arthritis: comparison of efficacy in animal models with
+  human clinical data,'' {\em Arthritis \& Rheumatism: Official Journal of the
+  American College of Rheumatology}, vol.~42, no.~3, pp.~498--506, 1999.
+
+\bibitem{kan1986short}
+G.~Kan, C.~A. Visser, J.~J. Koolen, and A.~J. Dunning, ``Short and long term
+  predictive value of admission wall motion score in acute myocardial
+  infarction. a cross sectional echocardiographic study of 345 patients.,''
+  {\em Heart}, vol.~56, no.~5, pp.~422--427, 1986.
+
+\bibitem{diaconis1983computer}
+P.~Diaconis and B.~Efron, ``Computer-intensive methods in statistics,'' {\em
+  Scientific American}, vol.~248, no.~5, pp.~116--131, 1983.
+
+\bibitem{cestnikkononenkoj}
+B.~Cestnik, ``Kononenkoj., bratkoj.(1987): Assistant-86: A knowledge
+  elicitation tool for sophisticated users,'' {\em Progress in machine
+  learning}.
+
+\bibitem{murtaugh1994primary}
+P.~A. Murtaugh, E.~R. Dickson, G.~M. Van~Dam, M.~Malinchoc, P.~M. Grambsch,
+  A.~L. Langworthy, and C.~H. Gips, ``Primary biliary cirrhosis: prediction of
+  short-term survival based on repeated patient visits,'' {\em Hepatology},
+  vol.~20, no.~1, pp.~126--134, 1994.
+
+\bibitem{misery2011sensitive}
+L.~Misery, V.~Sibaud, C.~Merial-Kieny, and C.~Taieb, ``Sensitive skin in the
+  american population: prevalence, clinical data, and role of the
+  dermatologist,'' {\em International journal of dermatology}, vol.~50, no.~8,
+  pp.~961--967, 2011.
+
+\bibitem{fernandes2017transfer}
+K.~Fernandes, J.~S. Cardoso, and J.~Fernandes, ``Transfer learning with partial
+  observability applied to cervical cancer screening,'' in {\em Iberian
+  conference on pattern recognition and image analysis}, pp.~243--250,
+  Springer, 2017.
+
+\bibitem{mckinney2010data}
+W.~McKinney {\em et~al.}, ``Data structures for statistical computing in
+  python,'' in {\em Proceedings of the 9th Python in Science Conference},
+  vol.~445, pp.~51--56, SciPy Austin, TX, 2010.
+
+\bibitem{yan2018hands}
+Y.~Yan and J.~Yan, ``Hands-on data science with anaconda: Utilize the right mix
+  of tools to create high-performance data science applications,'' 2018.
+
+\bibitem{walt2011numpy}
+S.~v.~d. Walt, S.~C. Colbert, and G.~Varoquaux, ``The numpy array: a structure
+  for efficient numerical computation,'' {\em Computing in Science \&
+  Engineering}, vol.~13, no.~2, pp.~22--30, 2011.
+
+\bibitem{jones2014scipy}
+E.~Jones, T.~Oliphant, and P.~Peterson, ``$\{$SciPy$\}$: open source scientific
+  tools for $\{$Python$\}$,'' 2014.
+
+\bibitem{pedregosa2011scikit}
+F.~Pedregosa, G.~Varoquaux, A.~Gramfort, V.~Michel, B.~Thirion, O.~Grisel,
+  M.~Blondel, P.~Prettenhofer, R.~Weiss, V.~Dubourg, {\em et~al.},
+  ``Scikit-learn: Machine learning in python,'' {\em Journal of Machine
+  Learning Research}, vol.~12, no.~Oct, pp.~2825--2830, 2011.
+
+\bibitem{mckinney2012python}
+W.~McKinney, {\em Python for data analysis: Data wrangling with Pandas, NumPy,
+  and IPython}.
+\newblock " O'Reilly Media, Inc.", 2012.
+
+\bibitem{olson2016tpot}
+R.~S. Olson and J.~H. Moore, ``Tpot: A tree-based pipeline optimization tool
+  for automating machine learning,'' in {\em Workshop on Automatic Machine
+  Learning}, pp.~66--74, 2016.
+
+\bibitem{yu2003feature}
+L.~Yu and H.~Liu, ``Feature selection for high-dimensional data: A fast
+  correlation-based filter solution,'' in {\em Proceedings of the 20th
+  international conference on machine learning (ICML-03)}, pp.~856--863, 2003.
+
+\bibitem{hall2000correlation}
+M.~A. Hall, ``Correlation-based feature selection of discrete and numeric class
+  machine learning,'' 2000.
+
+\bibitem{kohavi1995study}
+R.~Kohavi {\em et~al.}, ``A study of cross-validation and bootstrap for
+  accuracy estimation and model selection,'' in {\em Ijcai}, vol.~14,
+  pp.~1137--1145, Montreal, Canada, 1995.
+
+\bibitem{agresti2003categorical}
+A.~Agresti, {\em Categorical data analysis}, vol.~482.
+\newblock John Wiley \& Sons, 2003.
+
+\bibitem{edwards2002explaining}
+A.~Edwards, G.~Elwyn, and A.~Mulley, ``Explaining risks: turning numerical data
+  into meaningful pictures,'' {\em Bmj}, vol.~324, no.~7341, pp.~827--830,
+  2002.
+
+\bibitem{han2011data}
+J.~Han, J.~Pei, and M.~Kamber, {\em Data mining: concepts and techniques}.
+\newblock Elsevier, 2011.
+
+\bibitem{peng2005feature}
+H.~Peng, F.~Long, and C.~Ding, ``Feature selection based on mutual information
+  criteria of max-dependency, max-relevance, and min-redundancy,'' {\em IEEE
+  Transactions on pattern analysis and machine intelligence}, vol.~27, no.~8,
+  pp.~1226--1238, 2005.
+
+\bibitem{battiti1994using}
+R.~Battiti, ``Using mutual information for selecting features in supervised
+  neural net learning,'' {\em IEEE Transactions on neural networks}, vol.~5,
+  no.~4, pp.~537--550, 1994.
+
+\bibitem{blackman2000interval}
+N.~J.-M. Blackman and J.~J. Koval, ``Interval estimation for cohen's kappa as a
+  measure of agreement,'' {\em Statistics in medicine}, vol.~19, no.~5,
+  pp.~723--741, 2000.
+
+\bibitem{kearns1999algorithmic}
+M.~Kearns and D.~Ron, ``Algorithmic stability and sanity-check bounds for
+  leave-one-out cross-validation,'' {\em Neural computation}, vol.~11, no.~6,
+  pp.~1427--1453, 1999.
+
+\bibitem{lim2003planar}
+I.~S. Lim, P.~de~Heras~Ciechomski, S.~Sarni, and D.~Thalmann, ``Planar
+  arrangement of high-dimensional biomedical data sets by isomap coordinates,''
+  in {\em Computer-Based Medical Systems, 2003. Proceedings. 16th IEEE
+  Symposium}, pp.~50--55, IEEE, 2003.
+
+\bibitem{peng2010novel}
+Y.~Peng, Z.~Wu, and J.~Jiang, ``A novel feature selection approach for
+  biomedical data classification,'' {\em Journal of Biomedical Informatics},
+  vol.~43, no.~1, pp.~15--23, 2010.
+
+\bibitem{biesiada2007feature}
+J.~Biesiada and W.~Duch, ``Feature selection for high-dimensional data—a
+  pearson redundancy based filter,'' in {\em Computer recognition systems 2},
+  pp.~242--249, Springer, 2007.
+
+\bibitem{ding2005minimum}
+C.~Ding and H.~Peng, ``Minimum redundancy feature selection from microarray
+  gene expression data,'' {\em Journal of bioinformatics and computational
+  biology}, vol.~3, no.~02, pp.~185--205, 2005.
+
+\bibitem{catal2009investigating}
+C.~Catal and B.~Diri, ``Investigating the effect of dataset size, metrics sets,
+  and feature selection techniques on software fault prediction problem,'' {\em
+  Information Sciences}, vol.~179, no.~8, pp.~1040--1058, 2009.
+
+\bibitem{liu2002comparative}
+H.~Liu, J.~Li, and L.~Wong, ``A comparative study on feature selection and
+  classification methods using gene expression profiles and proteomic
+  patterns,'' {\em Genome informatics}, vol.~13, pp.~51--60, 2002.
+
+\bibitem{Guyon2006}
+I.~Guyon and A.~Elisseeff, {\em An Introduction to Feature Extraction},
+  pp.~1--25.
+\newblock Berlin, Heidelberg: Springer Berlin Heidelberg, 2006.
+
+\bibitem{CATAL20091040}
+C.~Catal and B.~Diri, ``Investigating the effect of dataset size, metrics sets,
+  and feature selection techniques on software fault prediction problem,'' {\em
+  Information Sciences}, vol.~179, no.~8, pp.~1040 -- 1058, 2009.
+
+\bibitem{molina2002feature}
+L.~C. Molina, L.~Belanche, and {\`A}.~Nebot, ``Feature selection algorithms: A
+  survey and experimental evaluation,'' in {\em Data Mining, 2002. ICDM 2003.
+  Proceedings. 2002 IEEE International Conference on}, pp.~306--313, IEEE,
+  2002.
+
+\bibitem{chandrashekar2014survey}
+G.~Chandrashekar and F.~Sahin, ``A survey on feature selection methods,'' {\em
+  Computers \& Electrical Engineering}, vol.~40, no.~1, pp.~16--28, 2014.
+
+\bibitem{saeys2007review}
+Y.~Saeys, I.~Inza, and P.~Larra{\~n}aga, ``A review of feature selection
+  techniques in bioinformatics,'' {\em bioinformatics}, vol.~23, no.~19,
+  pp.~2507--2517, 2007.
+
+\bibitem{Duch2006}
+W.~Duch, {\em Filter Methods}, pp.~89--117.
+\newblock Berlin, Heidelberg: Springer Berlin Heidelberg, 2006.
+
+\bibitem{heiberger2004statistical}
+R.~M. Heiberger and B.~Holland, {\em Statistical analysis and data display}.
+\newblock Springer, 2004.
+
+\bibitem{donoho2008higher}
+D.~Donoho and J.~Jin, ``Higher criticism thresholding: Optimal feature
+  selection when useful features are rare and weak,'' {\em Proceedings of the
+  National Academy of Sciences}, vol.~105, no.~39, pp.~14790--14795, 2008.
+
+\bibitem{storey2003statistical}
+J.~D. Storey and R.~Tibshirani, ``Statistical significance for genomewide
+  studies,'' {\em Proceedings of the National Academy of Sciences}, vol.~100,
+  no.~16, pp.~9440--9445, 2003.
+
+\bibitem{higgins2003measuring}
+J.~P. Higgins, S.~G. Thompson, J.~J. Deeks, and D.~G. Altman, ``Measuring
+  inconsistency in meta-analyses,'' {\em BMJ: British Medical Journal},
+  vol.~327, no.~7414, p.~557, 2003.
+
+\bibitem{Reunanen2006}
+J.~Reunanen, {\em Search Strategies}, pp.~119--136.
+\newblock Berlin, Heidelberg: Springer Berlin Heidelberg, 2006.
+
+\bibitem{Alsallakh2016PowerSet}
+B.~Alsallakh and L.~Ren, ``Powerset: A comprehensive visualization of set
+  intersections,'' vol.~23, pp.~1--1, 01 2016.
+
+\bibitem{tsamardinos2017massively}
+I.~Tsamardinos, G.~Borboudakis, P.~Katsogridakis, P.~Pratikakis, and
+  V.~Christophides, ``Massively-parallel feature selection for big data,'' {\em
+  arXiv preprint arXiv:1708.07178}, 2017.
+
+\bibitem{huang2013automated}
+Y.-J. Huang, D.-Y. Chan, D.-C. Cheng, Y.-J. Ho, P.-P. Tsai, W.-C. Shen, and
+  R.-F. Chen, ``Automated feature set selection and its application to mcc
+  identification in digital mammograms for breast cancer detection,'' {\em
+  Sensors}, vol.~13, no.~4, pp.~4855--4875, 2013.
+
+\bibitem{zhang2004optimality}
+H.~Zhang, ``The optimality of naive bayes,'' {\em AA}, vol.~1, no.~2, p.~3,
+  2004.
+
+\bibitem{SENAWI201747}
+A.~Senawi, H.-L. Wei, and S.~A. Billings, ``A new maximum relevance-minimum
+  multicollinearity (mrmmc) method for feature selection and ranking,'' {\em
+  Pattern Recognition}, vol.~67, pp.~47 -- 61, 2017.
+
+\bibitem{el2009new}
+A.~El~Akadi, A.~Amine, A.~El~Ouardighi, and D.~Aboutajdine, ``A new gene
+  selection approach based on minimum redundancy-maximum relevance (mrmr) and
+  genetic algorithm (ga),'' in {\em Computer Systems and Applications, 2009.
+  AICCSA 2009. IEEE/ACS International Conference on}, pp.~69--75, IEEE, 2009.
+
+\bibitem{radovic2017minimum}
+M.~Radovic, M.~Ghalwash, N.~Filipovic, and Z.~Obradovic, ``Minimum redundancy
+  maximum relevance feature selection approach for temporal gene expression
+  data,'' {\em BMC bioinformatics}, vol.~18, no.~1, p.~9, 2017.
+
+\bibitem{kirkpatrick1983optimization}
+S.~Kirkpatrick, C.~D. Gelatt, and M.~P. Vecchi, ``Optimization by simulated
+  annealing,'' {\em science}, vol.~220, no.~4598, pp.~671--680, 1983.
+
+\bibitem{Jirapech-Umpai2005}
+T.~Jirapech-Umpai and S.~Aitken, ``Feature selection and classification for
+  microarray data analysis: Evolutionary methods for identifying predictive
+  genes,'' {\em BMC Bioinformatics}, vol.~6, p.~148, Jun 2005.
+
+\bibitem{Lal2006}
+T.~N. Lal, O.~Chapelle, J.~Weston, and A.~Elisseeff, {\em Embedded Methods},
+  pp.~137--165.
+\newblock Berlin, Heidelberg: Springer Berlin Heidelberg, 2006.
+
+\bibitem{blum1997selection}
+A.~L. Blum and P.~Langley, ``Selection of relevant features and examples in
+  machine learning,'' {\em Artificial intelligence}, vol.~97, no.~1-2,
+  pp.~245--271, 1997.
+
+\bibitem{jong2004feature}
+K.~Jong, E.~Marchiori, M.~Sebag, and A.~Van Der~Vaart, ``Feature selection in
+  proteomic pattern data with support vector machines,'' in {\em Computational
+  Intelligence in Bioinformatics and Computational Biology, 2004. CIBCB'04.
+  Proceedings of the 2004 IEEE Symposium on}, pp.~41--48, IEEE, 2004.
+
+\bibitem{prados2004mining}
+J.~Prados, A.~Kalousis, J.-C. Sanchez, L.~Allard, O.~Carrette, and M.~Hilario,
+  ``Mining mass spectra for diagnosis and biomarker discovery of cerebral
+  accidents,'' {\em Proteomics}, vol.~4, no.~8, pp.~2320--2332, 2004.
+
+\bibitem{zhang2006recursive}
+X.~Zhang, X.~Lu, Q.~Shi, X.-q. Xu, E.~L. Hon-chiu, L.~N. Harris, J.~D.
+  Iglehart, A.~Miron, J.~S. Liu, and W.~H. Wong, ``Recursive svm feature
+  selection and sample classification for mass-spectrometry and microarray
+  data,'' {\em BMC bioinformatics}, vol.~7, no.~1, p.~197, 2006.
+
+\bibitem{guyon2002gene}
+I.~Guyon, J.~Weston, S.~Barnhill, and V.~Vapnik, ``Gene selection for cancer
+  classification using support vector machines,'' {\em Machine learning},
+  vol.~46, no.~1-3, pp.~389--422, 2002.
+
+\bibitem{geurts2005proteomic}
+P.~Geurts, M.~Fillet, D.~De~Seny, M.-A. Meuwis, M.~Malaise, M.-P. Merville, and
+  L.~Wehenkel, ``Proteomic mass spectra classification using decision tree
+  based ensemble methods,'' {\em Bioinformatics}, vol.~21, no.~14,
+  pp.~3138--3145, 2005.
+
+\bibitem{wu2003comparison}
+B.~Wu, T.~Abbott, D.~Fishman, W.~McMurray, G.~Mor, K.~Stone, D.~Ward,
+  K.~Williams, and H.~Zhao, ``Comparison of statistical methods for
+  classification of ovarian cancer using mass spectrometry data,'' {\em
+  Bioinformatics}, vol.~19, no.~13, pp.~1636--1643, 2003.
+
+\bibitem{liaw2002classification}
+A.~Liaw, M.~Wiener, {\em et~al.}, ``Classification and regression by
+  randomforest,'' {\em R news}, vol.~2, no.~3, pp.~18--22, 2002.
+
+\bibitem{thornton2013auto}
+C.~Thornton, F.~Hutter, H.~H. Hoos, and K.~Leyton-Brown, ``Auto-weka: Combined
+  selection and hyperparameter optimization of classification algorithms,'' in
+  {\em Proceedings of the 19th ACM SIGKDD international conference on Knowledge
+  discovery and data mining}, pp.~847--855, ACM, 2013.
+
+\bibitem{Gijsbers2017Thesis}
+P.~Gijsbers, ``Automatic construction of machine learning pipelines,'' 2017.
+
+\bibitem{kotthoff2016auto}
+L.~Kotthoff, C.~Thornton, H.~H. Hoos, F.~Hutter, and K.~Leyton-Brown,
+  ``Auto-weka 2.0: Automatic model selection and hyperparameter optimization in
+  weka,'' {\em Journal of Machine Learning Research}, vol.~17, pp.~1--5, 2016.
+
+\bibitem{brazdil1994characterizing}
+P.~Brazdil, J.~Gama, and B.~Henery, ``Characterizing the applicability of
+  classification algorithms using meta-level learning,'' in {\em European
+  conference on machine learning}, pp.~83--102, Springer, 1994.
+
+\bibitem{vilalta2004using}
+R.~Vilalta, C.~G. Giraud-Carrier, P.~Brazdil, and C.~Soares, ``Using
+  meta-learning to support data mining.,'' {\em IJCSA}, vol.~1, no.~1,
+  pp.~31--45, 2004.
+
+\bibitem{brazdil2009development}
+P.~Brazdil, C.~Giraud-Carrier, C.~Soares, and R.~Vilalta, ``Development of
+  metalearning systems for algorithm recommendation,'' {\em Metalearning:
+  Applications to Data Mining}, pp.~31--59, 2009.
+
+\bibitem{pazzani1997learning}
+M.~Pazzani and D.~Billsus, ``Learning and revising user profiles: The
+  identification of interesting web sites,'' {\em Machine learning}, vol.~27,
+  no.~3, pp.~313--331, 1997.
+
+\bibitem{chen2006combining}
+Y.-W. Chen and C.-J. Lin, ``Combining svms with various feature selection
+  strategies,'' in {\em Feature extraction}, pp.~315--324, Springer, 2006.
+
+\bibitem{hall1998practical}
+M.~A. Hall and L.~A. Smith, ``Practical feature subset selection for machine
+  learning,'' 1998.
+
+\bibitem{patrician2002multiple}
+P.~A. Patrician, ``Multiple imputation for missing data,'' {\em Research in
+  Nursing \& Health}, vol.~25, no.~1, pp.~76--84, 2002.
+
+\bibitem{sterne2009multiple}
+J.~A. Sterne, I.~R. White, J.~B. Carlin, M.~Spratt, P.~Royston, M.~G. Kenward,
+  A.~M. Wood, and J.~R. Carpenter, ``Multiple imputation for missing data in
+  epidemiological and clinical research: potential and pitfalls,'' {\em Bmj},
+  vol.~338, p.~b2393, 2009.
+
+\bibitem{myrtveit2001analyzing}
+I.~Myrtveit, E.~Stensrud, and U.~H. Olsson, ``Analyzing data sets with missing
+  data: An empirical evaluation of imputation methods and likelihood-based
+  methods,'' {\em IEEE Transactions on Software Engineering}, vol.~27, no.~11,
+  pp.~999--1013, 2001.
+
+\bibitem{pedersen2017missing}
+A.~B. Pedersen, E.~M. Mikkelsen, D.~Cronin-Fenton, N.~R. Kristensen, T.~M.
+  Pham, L.~Pedersen, and I.~Petersen, ``Missing data and multiple imputation in
+  clinical epidemiological research,'' {\em Clinical Epidemiology}, vol.~9,
+  p.~157, 2017.
+
+\bibitem{raghunathan2001multivariate}
+T.~E. Raghunathan, J.~M. Lepkowski, J.~Van~Hoewyk, and P.~Solenberger, ``A
+  multivariate technique for multiply imputing missing values using a sequence
+  of regression models,'' {\em Survey methodology}, vol.~27, no.~1, pp.~85--96,
+  2001.
+
+\bibitem{chevret2015multiple}
+S.~Chevret, S.~Seaman, and M.~Resche-Rigon, ``Multiple imputation: a mature
+  approach to dealing with missing data,'' {\em Intensive care medicine},
+  vol.~41, no.~2, pp.~348--350, 2015.
+
+\bibitem{rubin1976inference}
+D.~B. Rubin, ``Inference and missing data,'' {\em Biometrika}, vol.~63, no.~3,
+  pp.~581--592, 1976.
+
+\bibitem{white2011multiple}
+I.~R. White, P.~Royston, and A.~M. Wood, ``Multiple imputation using chained
+  equations: issues and guidance for practice,'' {\em Statistics in medicine},
+  vol.~30, no.~4, pp.~377--399, 2011.
+
+\bibitem{he2010multiple}
+Y.~He, A.~M. Zaslavsky, M.~Landrum, D.~Harrington, and P.~Catalano, ``Multiple
+  imputation in a large-scale complex survey: a practical guide,'' {\em
+  Statistical methods in medical research}, vol.~19, no.~6, pp.~653--670, 2010.
+
+\bibitem{van2007multiple}
+S.~Van~Buuren, ``Multiple imputation of discrete and continuous data by fully
+  conditional specification,'' {\em Statistical methods in medical research},
+  vol.~16, no.~3, pp.~219--242, 2007.
+
+\bibitem{van1999multiple}
+S.~Van~Buuren, H.~C. Boshuizen, D.~L. Knook, {\em et~al.}, ``Multiple
+  imputation of missing blood pressure covariates in survival analysis,'' {\em
+  Statistics in medicine}, vol.~18, no.~6, pp.~681--694, 1999.
+
+\bibitem{van2006imputation}
+G.~J. Van~der Heijden, A.~R.~T. Donders, T.~Stijnen, and K.~G. Moons,
+  ``Imputation of missing values is superior to complete case analysis and the
+  missing-indicator method in multivariable diagnostic research: a clinical
+  example,'' {\em Journal of clinical epidemiology}, vol.~59, no.~10,
+  pp.~1102--1109, 2006.
+
+\bibitem{azur2011multiple}
+M.~J. Azur, E.~A. Stuart, C.~Frangakis, and P.~J. Leaf, ``Multiple imputation
+  by chained equations: what is it and how does it work?,'' {\em International
+  journal of methods in psychiatric research}, vol.~20, no.~1, pp.~40--49,
+  2011.
+
+\bibitem{royston2004multiple}
+P.~Royston {\em et~al.}, ``Multiple imputation of missing values,'' {\em Stata
+  journal}, vol.~4, no.~3, pp.~227--41, 2004.
+
+\bibitem{martin2018impact}
+E.~Mart{\'\i}n-Merino, A.~Calder{\'o}n-Larra{\~n}aga, S.~Hawley,
+  B.~Poblador-Plou, A.~Llorente-Garc{\'\i}a, I.~Petersen, and
+  D.~Prieto-Alhambra, ``The impact of different strategies to handle missing
+  data on both precision and bias in a drug safety study: a multidatabase
+  multinational population-based cohort study,'' {\em Clinical epidemiology},
+  vol.~10, p.~643, 2018.
+
+\bibitem{horton2001multiple}
+N.~J. Horton and S.~R. Lipsitz, ``Multiple imputation in practice: comparison
+  of software packages for regression models with missing variables,'' {\em The
+  American Statistician}, vol.~55, no.~3, pp.~244--254, 2001.
+
+\bibitem{allison2000multiple}
+P.~D. Allison, ``Multiple imputation for missing data: A cautionary tale,''
+  {\em Sociological methods \& research}, vol.~28, no.~3, pp.~301--309, 2000.
+
+\bibitem{royston2011multiple}
+P.~Royston, I.~R. White, {\em et~al.}, ``Multiple imputation by chained
+  equations (mice): implementation in stata,'' {\em J Stat Softw}, vol.~45,
+  no.~4, pp.~1--20, 2011.
+
+\bibitem{brown1974robust}
+M.~B. Brown and A.~B. Forsythe, ``Robust tests for the equality of variances,''
+  {\em Journal of the American Statistical Association}, vol.~69, no.~346,
+  pp.~364--367, 1974.
+
+\bibitem{satorra2001scaled}
+A.~Satorra and P.~M. Bentler, ``A scaled difference chi-square test statistic
+  for moment structure analysis,'' {\em Psychometrika}, vol.~66, no.~4,
+  pp.~507--514, 2001.
+
+\bibitem{draper2014applied}
+N.~R. Draper and H.~Smith, {\em Applied regression analysis}, vol.~326.
+\newblock John Wiley \& Sons, 2014.
+
+\bibitem{kluegl2009meta}
+P.~Kluegl, M.~Atzmueller, and F.~Puppe, ``Meta-level information extraction,''
+  in {\em Annual Conference on Artificial Intelligence}, pp.~233--240,
+  Springer, 2009.
+
+\bibitem{congdon2005bayesian}
+P.~Congdon, {\em Bayesian models for categorical data}.
+\newblock John Wiley \& Sons, 2005.
+
+\bibitem{safavian1991survey}
+S.~R. Safavian and D.~Landgrebe, ``A survey of decision tree classifier
+  methodology,'' {\em IEEE transactions on systems, man, and cybernetics},
+  vol.~21, no.~3, pp.~660--674, 1991.
+
+\bibitem{gelman2006data}
+A.~Gelman and J.~Hill, {\em Data analysis using regression and
+  multilevel/hierarchical models}.
+\newblock Cambridge university press, 2006.
+
+\bibitem{guo2016entity}
+C.~Guo and F.~Berkhahn, ``Entity embeddings of categorical variables,'' {\em
+  arXiv preprint arXiv:1604.06737}, 2016.
+
+\bibitem{larose2014discovering}
+D.~T. Larose and C.~D. Larose, {\em Discovering knowledge in data: an
+  introduction to data mining}.
+\newblock John Wiley \& Sons, 2014.
+
+\bibitem{al2006normalization}
+L.~Al~Shalabi and Z.~Shaaban, ``Normalization as a preprocessing engine for
+  data mining and the approach of preference matrix,'' in {\em Dependability of
+  Computer Systems, 2006. DepCos-RELCOMEX'06. International Conference on},
+  pp.~207--214, IEEE, 2006.
+
+\bibitem{patro2015normalization}
+S.~Patro and K.~K. Sahu, ``Normalization: A preprocessing stage,'' {\em arXiv
+  preprint arXiv:1503.06462}, 2015.
+
+\bibitem{rokach2005clustering}
+L.~Rokach and O.~Maimon, ``Clustering methods,'' in {\em Data mining and
+  knowledge discovery handbook}, pp.~321--352, Springer, 2005.
+
+\bibitem{woolson2011statistical}
+R.~F. Woolson and W.~R. Clarke, {\em Statistical methods for the analysis of
+  biomedical data}, vol.~371.
+\newblock John Wiley \& Sons, 2011.
+
+\bibitem{sapsford2006data}
+R.~Sapsford and V.~Jupp, {\em Data collection and analysis}.
+\newblock Sage, 2006.
+
+\bibitem{FISHER200993}
+M.~J. Fisher and A.~P. Marshall, ``Understanding descriptive statistics,'' {\em
+  Australian Critical Care}, vol.~22, no.~2, pp.~93 -- 97, 2009.
+
+\bibitem{dupont2009statistical}
+W.~D. Dupont and W.~D. Dupont, {\em Statistical modeling for biomedical
+  researchers: a simple introduction to the analysis of complex data}.
+\newblock Cambridge University Press, 2009.
+
+\bibitem{shiavi2010introduction}
+R.~Shiavi, {\em Introduction to applied statistical signal analysis: Guide to
+  biomedical and electrical engineering applications}.
+\newblock Academic Press, 2010.
+
+\bibitem{o2013step}
+N.~O'Rourke and L.~Hatcher, {\em A step-by-step approach to using SAS for
+  factor analysis and structural equation modeling}.
+\newblock Sas Institute, 2013.
+
+\bibitem{muijs2010doing}
+D.~Muijs, {\em Doing quantitative research in education with SPSS}.
+\newblock Sage, 2010.
+
+\bibitem{muenchen2011r}
+R.~A. Muenchen, {\em R for SAS and SPSS users}.
+\newblock Springer Science \& Business Media, 2011.
+
+\bibitem{martinez2007computational}
+W.~L. Martinez and A.~R. Martinez, {\em Computational statistics handbook with
+  MATLAB}, vol.~22.
+\newblock CRC press, 2007.
+
+\bibitem{BlogKromme2017}
+J.~Kromme, ``Python \& r vs. spss \& sas,'' March 2017.
+\newblock https://www.r-bloggers.com/python-r-vs-spss-sas/.
+
+\bibitem{BlogJain2017}
+K.~Jain, ``Python vs. r (vs. sas) – which tool should i learn?,'' September
+  2017.
+\newblock
+  https://www.analyticsvidhya.com/blog/2017/09/sas-vs-vs-python-tool-learn/.
+
+\bibitem{BlogWillems2014}
+K.~Willems, ``What is the best statistical programming language? infograph,''
+  June 2014.
+\newblock
+  https://www.datacamp.com/community/tutorials/statistical-language-wars-the-infograph.
+
+\bibitem{BlogSupport2017}
+Support, ``R vs sas vs spss – top 3 data analytics tools comparison,'' March
+  2017.
+\newblock
+  http://data-flair.training/blogs/r-sas-spss-data-analytics-tools-comparison/.
+
+\bibitem{Goodfellow-et-al-2016}
+I.~Goodfellow, Y.~Bengio, and A.~Courville, {\em Deep Learning}.
+\newblock MIT Press, 2016.
+\newblock \url{http://www.deeplearningbook.org}.
+
+\bibitem{greenspan2016guest}
+H.~Greenspan, B.~van Ginneken, and R.~M. Summers, ``Guest editorial deep
+  learning in medical imaging: Overview and future promise of an exciting new
+  technique,'' {\em IEEE Transactions on Medical Imaging}, vol.~35, no.~5,
+  pp.~1153--1159, 2016.
+
+\bibitem{rojas2013neural}
+R.~Rojas, {\em Neural networks: a systematic introduction}.
+\newblock Springer Science \& Business Media, 2013.
+
+\bibitem{Wang2003}
+S.-C. Wang, {\em Artificial Neural Network}, pp.~81--100.
+\newblock Boston, MA: Springer US, 2003.
+
+\bibitem{bergstra2010theano}
+J.~Bergstra, O.~Breuleux, F.~Bastien, P.~Lamblin, R.~Pascanu, G.~Desjardins,
+  J.~Turian, D.~Warde-Farley, and Y.~Bengio, ``Theano: A cpu and gpu math
+  compiler in python,'' in {\em Proc. 9th Python in Science Conf}, pp.~1--7,
+  2010.
+
+\bibitem{rampasek2016tensorflow}
+L.~Rampasek and A.~Goldenberg, ``Tensorflow: Biology’s gateway to deep
+  learning?,'' {\em Cell systems}, vol.~2, no.~1, pp.~12--14, 2016.
+
+\bibitem{al2016theano}
+R.~Al-Rfou, G.~Alain, A.~Almahairi, C.~Angermueller, D.~Bahdanau, N.~Ballas,
+  F.~Bastien, J.~Bayer, A.~Belikov, A.~Belopolsky, {\em et~al.}, ``Theano: A
+  python framework for fast computation of mathematical expressions,'' {\em
+  arXiv preprint}, 2016.
+
+\bibitem{abadi2016tensorflow}
+M.~Abadi, P.~Barham, J.~Chen, Z.~Chen, A.~Davis, J.~Dean, M.~Devin,
+  S.~Ghemawat, G.~Irving, M.~Isard, {\em et~al.}, ``Tensorflow: A system for
+  large-scale machine learning.,'' in {\em OSDI}, vol.~16, pp.~265--283, 2016.
+
+\bibitem{DBLP:journals/corr/JiaSDKLGGD14}
+Y.~Jia, E.~Shelhamer, J.~Donahue, S.~Karayev, J.~Long, R.~B. Girshick,
+  S.~Guadarrama, and T.~Darrell, ``Caffe: Convolutional architecture for fast
+  feature embedding,'' {\em CoRR}, vol.~abs/1408.5093, 2014.
+
+\bibitem{collobert2002torch}
+R.~Collobert, S.~Bengio, and J.~Mari{\'e}thoz, ``Torch: a modular machine
+  learning software library,'' tech. rep., Idiap, 2002.
+
+\bibitem{kovalev2016deep}
+V.~Kovalev, A.~Kalinovsky, and S.~Kovalev, ``Deep learning with theano, torch,
+  caffe, tensorflow, and deeplearning4j: Which one is the best in speed and
+  accuracy?,'' 2016.
+
+\bibitem{bahrampour2016comparative}
+S.~Bahrampour, N.~Ramakrishnan, L.~Schott, and M.~Shah, ``Comparative study of
+  caffe, neon, theano, and torch for deep learning,'' 2016.
+
+\bibitem{DBLP:journals/corr/ShiWXC16}
+S.~Shi, Q.~Wang, P.~Xu, and X.~Chu, ``Benchmarking state-of-the-art deep
+  learning software tools,'' {\em CoRR}, vol.~abs/1608.07249, 2016.
+
+\bibitem{fox2016software}
+J.~Fox, Y.~Zou, and J.~Qiu, ``Software frameworks for deep learning at scale,''
+  {\em Internal Indiana University Technical Report}, 2016.
+
+\bibitem{parvat2017survey}
+A.~Parvat, J.~Chavan, S.~Kadam, S.~Dev, and V.~Pathak, ``A survey of
+  deep-learning frameworks,'' in {\em Inventive Systems and Control (ICISC),
+  2017 International Conference on}, pp.~1--7, IEEE, 2017.
+
+\bibitem{erickson2017toolkits}
+B.~J. Erickson, P.~Korfiatis, Z.~Akkus, T.~Kline, and K.~Philbrick, ``Toolkits
+  and libraries for deep learning,'' {\em Journal of Digital Imaging},
+  pp.~1--6, 2017.
+
+\bibitem{rapp1999psoriasis}
+S.~R. Rapp, S.~R. Feldman, M.~L. Exum, A.~B. Fleischer, and D.~M. Reboussin,
+  ``Psoriasis causes as much disability as other major medical diseases,'' {\em
+  Journal of the American Academy of Dermatology}, vol.~41, no.~3,
+  pp.~401--407, 1999.
+
+\bibitem{jowett1985skin}
+S.~Jowett and T.~Ryan, ``Skin disease and handicap: an analysis of the impact
+  of skin conditions,'' {\em Social science \& medicine}, vol.~20, no.~4,
+  pp.~425--429, 1985.
+
+\bibitem{edgar2002gene}
+R.~Edgar, M.~Domrachev, and A.~E. Lash, ``Gene expression omnibus: Ncbi gene
+  expression and hybridization array data repository,'' {\em Nucleic acids
+  research}, vol.~30, no.~1, pp.~207--210, 2002.
+
+\bibitem{dixon2007genome}
+A.~L. Dixon, L.~Liang, M.~F. Moffatt, W.~Chen, S.~Heath, K.~C. Wong, J.~Taylor,
+  E.~Burnett, I.~Gut, M.~Farrall, {\em et~al.}, ``A genome-wide association
+  study of global gene expression,'' {\em Nature genetics}, vol.~39, no.~10,
+  p.~1202, 2007.
+
+\bibitem{roberson2010psoriasis}
+E.~D. Roberson and A.~M. Bowcock, ``Psoriasis genetics: breaking the barrier,''
+  {\em Trends in Genetics}, vol.~26, no.~9, pp.~415--423, 2010.
+
+\bibitem{leigh1995keratins}
+I.~Leigh, H.~Navsaria, P.~Purkis, I.~McKay, P.~Bowden, and P.~Riddle,
+  ``Keratins (kl6 and kl7) as markers of keratinocyte hyperproliferation in
+  psoriasis in vivo and in vitro,'' {\em British Journal of Dermatology},
+  vol.~133, no.~4, pp.~501--511, 1995.
+
+\bibitem{vegfors2012expression}
+J.~Vegfors, S.~Petersson, A.~Kovacs, K.~Polyak, and C.~Enerb{\"a}ck, ``The
+  expression of psoriasin (s100a7) and cd24 is linked and related to the
+  differentiation of mammary epithelial cells,'' {\em PloS one}, vol.~7,
+  no.~12, p.~e53119, 2012.
+
+\bibitem{kainu2009association}
+K.~Kainu, K.~Kivinen, M.~Zucchelli, S.~Suomela, J.~Kere, A.~Inerot, B.~S.
+  Baker, A.~V. Powles, L.~Fry, L.~Samuelsson, {\em et~al.}, ``Association of
+  psoriasis to pglyrp and sprr genes at psors4 locus on 1q shows heterogeneity
+  between finnish, swedish and irish families,'' {\em Experimental
+  dermatology}, vol.~18, no.~2, pp.~109--115, 2009.
+
+\bibitem{bergboer2012genetics}
+J.~G. Bergboer, P.~L. Zeeuwen, and J.~Schalkwijk, ``Genetics of psoriasis:
+  evidence for epistatic interaction between skin barrier abnormalities and
+  immune deviation,'' {\em Journal of Investigative Dermatology}, vol.~132,
+  no.~10, pp.~2320--2331, 2012.
+
+\bibitem{michibata2004identification}
+H.~Michibata, H.~Chiba, K.~Wakimoto, M.~Seishima, S.~Kawasaki, K.~Okubo,
+  H.~Mitsui, H.~Torii, and Y.~Imai, ``Identification and characterization of a
+  novel component of the cornified envelope, cornifelin,'' {\em Biochemical and
+  biophysical research communications}, vol.~318, no.~4, pp.~803--813, 2004.
+
+\bibitem{marrakchi2011interleukin}
+S.~Marrakchi, P.~Guigue, B.~R. Renshaw, A.~Puel, X.-Y. Pei, S.~Fraitag,
+  J.~Zribi, E.~Bal, C.~Cluzeau, M.~Chrabieh, {\em et~al.},
+  ``Interleukin-36--receptor antagonist deficiency and generalized pustular
+  psoriasis,'' {\em New England Journal of Medicine}, vol.~365, no.~7,
+  pp.~620--628, 2011.
+
+\bibitem{niehues2017psoriasis}
+H.~Niehues, L.~C. Tsoi, D.~A. van~der Krieken, P.~A. Jansen, M.~A. Oortveld,
+  D.~Rodijk-Olthuis, I.~M. van Vlijmen, W.~J. Hendriks, R.~W. Helder, J.~A.
+  Bouwstra, {\em et~al.}, ``Psoriasis-associated late cornified envelope (lce)
+  proteins have antibacterial activity,'' {\em Journal of Investigative
+  Dermatology}, vol.~137, no.~11, pp.~2380--2388, 2017.
+
+\bibitem{jiang2015biomarkers}
+S.~Jiang, T.~E. Hinchliffe, and T.~Wu, ``Biomarkers of an autoimmune skin
+  disease—psoriasis,'' {\em Genomics, proteomics \& bioinformatics}, vol.~13,
+  no.~4, pp.~224--233, 2015.
+
+\bibitem{sun2010association}
+L.-D. Sun, H.~Cheng, Z.-X. Wang, A.-P. Zhang, P.-G. Wang, J.-H. Xu, Q.-X. Zhu,
+  H.-S. Zhou, E.~Ellinghaus, F.-R. Zhang, {\em et~al.}, ``Association analyses
+  identify six new psoriasis susceptibility loci in the chinese population,''
+  {\em Nature genetics}, vol.~42, no.~11, p.~1005, 2010.
+
+\bibitem{djalilian2006connexin}
+A.~R. Djalilian, D.~McGaughey, S.~Patel, E.~Y. Seo, C.~Yang, J.~Cheng,
+  M.~Tomic, S.~Sinha, A.~Ishida-Yamamoto, and J.~A. Segre, ``Connexin 26
+  regulates epidermal barrier and wound remodeling and promotes psoriasiform
+  response,'' {\em The Journal of clinical investigation}, vol.~116, no.~5,
+  pp.~1243--1253, 2006.
+
+\bibitem{algermissen1996differential}
+B.~Algermissen, J.~Sitzmann, P.~LeMotte, and B.~Czarnetzki, ``Differential
+  expression of crabp ii, psoriasin and cytokeratin 1 mrna in human skin
+  diseases,'' {\em Archives of dermatological research}, vol.~288, no.~8,
+  p.~426, 1996.
+
+\bibitem{bruch2003arginase}
+D.~Bruch-Gerharz, O.~Schnorr, C.~Suschek, K.-F. Beck, J.~Pfeilschifter,
+  T.~Ruzicka, and V.~Kolb-Bachofen, ``Arginase 1 overexpression in psoriasis:
+  limitation of inducible nitric oxide synthase activity as a molecular
+  mechanism for keratinocyte hyperproliferation,'' {\em The American journal of
+  pathology}, vol.~162, no.~1, pp.~203--211, 2003.
+
+\bibitem{nestle2005plasmacytoid}
+F.~O. Nestle, C.~Conrad, A.~Tun-Kyi, B.~Homey, M.~Gombert, O.~Boyman, G.~Burg,
+  Y.-J. Liu, and M.~Gilliet, ``Plasmacytoid predendritic cells initiate
+  psoriasis through interferon-$\alpha$ production,'' {\em Journal of
+  Experimental Medicine}, vol.~202, no.~1, pp.~135--143, 2005.
+
+\bibitem{suomela2004interferon}
+S.~Suomela, L.~Cao, A.~Bowcock, and U.~Saarialho-Kere, ``Interferon
+  $\alpha$-inducible protein 27 (ifi27) is upregulated in psoriatic skin and
+  certain epithelial cancers,'' {\em Journal of Investigative Dermatology},
+  vol.~122, no.~3, pp.~717--721, 2004.
+
+\bibitem{chiricozzi2011integrative}
+A.~Chiricozzi, E.~Guttman-Yassky, M.~Su{\'a}rez-Farinas, K.~E. Nograles,
+  S.~Tian, I.~Cardinale, S.~Chimenti, and J.~G. Krueger, ``Integrative
+  responses to il-17 and tnf-$\alpha$ in human keratinocytes account for key
+  inflammatory pathogenic circuits in psoriasis,'' {\em Journal of
+  Investigative Dermatology}, vol.~131, no.~3, pp.~677--687, 2011.
+
+\bibitem{lowes2008psoriasis}
+M.~A. Lowes, T.~Kikuchi, J.~Fuentes-Duculan, I.~Cardinale, L.~C. Zaba, A.~S.
+  Haider, E.~P. Bowman, and J.~G. Krueger, ``Psoriasis vulgaris lesions contain
+  discrete populations of th1 and th17 t cells,'' {\em Journal of Investigative
+  Dermatology}, vol.~128, no.~5, pp.~1207--1211, 2008.
+
+\bibitem{jansen2009beta}
+P.~A. Jansen, D.~Rodijk-Olthuis, E.~J. Hollox, M.~Kamsteeg, G.~S. Tjabringa,
+  G.~J. de~Jongh, I.~M. van Vlijmen-Willems, J.~G. Bergboer, M.~M. van Rossum,
+  E.~M. de~Jong, {\em et~al.}, ``$\beta$-defensin-2 protein is a serum
+  biomarker for disease activity in psoriasis and reaches biologically relevant
+  concentrations in lesional skin,'' {\em PloS one}, vol.~4, no.~3, p.~e4725,
+  2009.
+
+\bibitem{gudjonsson2010assessment}
+J.~E. Gudjonsson, J.~Ding, A.~Johnston, T.~Tejasvi, A.~M. Guzman, R.~P. Nair,
+  J.~J. Voorhees, G.~R. Abecasis, and J.~T. Elder, ``Assessment of the
+  psoriatic transcriptome in a large sample: additional regulated genes and
+  comparisons with in vitro models,'' {\em Journal of Investigative
+  Dermatology}, vol.~130, no.~7, pp.~1829--1840, 2010.
+
+\bibitem{roesner2017inflammatory}
+L.~M. Roesner, P.~Kienlin, G.~Begemann, O.~Dittrich-Breiholz, and T.~Werfel,
+  ``Inflammatory marker analysis in psoriatic skin under topical
+  phosphodiesterase 4 inhibitor treatment,'' {\em Journal of Allergy and
+  Clinical Immunology}, vol.~140, no.~4, pp.~1184--1187, 2017.
+
+\bibitem{castiello2005meta}
+C.~Castiello, G.~Castellano, and A.~M. Fanelli, ``Meta-data: Characterization
+  of input features for meta-learning,'' in {\em International Conference on
+  Modeling Decisions for Artificial Intelligence}, pp.~457--468, Springer,
+  2005.
+
+\bibitem{vilalta2002perspective}
+R.~Vilalta and Y.~Drissi, ``A perspective view and survey of meta-learning,''
+  {\em Artificial Intelligence Review}, vol.~18, no.~2, pp.~77--95, 2002.
+
+\bibitem{bourbakis2011extracting}
+N.~Bourbakis, A.~Esposito, and D.~Kavraki, ``Extracting and associating
+  meta-features for understanding people’s emotional behaviour: Face and
+  speech,'' {\em Cognitive Computation}, vol.~3, no.~3, pp.~436--448, 2011.
+
+\bibitem{wold1987principal}
+S.~Wold, K.~Esbensen, and P.~Geladi, ``Principal component analysis,'' {\em
+  Chemometrics and intelligent laboratory systems}, vol.~2, no.~1-3,
+  pp.~37--52, 1987.
+
+\bibitem{chow1968approximating}
+C.~Chow and C.~Liu, ``Approximating discrete probability distributions with
+  dependence trees,'' {\em IEEE transactions on Information Theory}, vol.~14,
+  no.~3, pp.~462--467, 1968.
+
+\bibitem{pfahringer2000meta}
+B.~Pfahringer, H.~Bensusan, and C.~G. Giraud-Carrier, ``Meta-learning by
+  landmarking various learning algorithms.,'' in {\em ICML}, pp.~743--750,
+  2000.
+
+\end{thebibliography}

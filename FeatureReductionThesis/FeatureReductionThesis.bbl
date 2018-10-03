@@ -370,6 +370,44 @@ B.~Wu, T.~Abbott, D.~Fishman, W.~McMurray, G.~Mor, K.~Stone, D.~Ward,
 A.~Liaw, M.~Wiener, {\em et~al.}, ``Classification and regression by
   randomforest,'' {\em R news}, vol.~2, no.~3, pp.~18--22, 2002.
 
+\bibitem{thornton2013auto}
+C.~Thornton, F.~Hutter, H.~H. Hoos, and K.~Leyton-Brown, ``Auto-weka: Combined
+  selection and hyperparameter optimization of classification algorithms,'' in
+  {\em Proceedings of the 19th ACM SIGKDD international conference on Knowledge
+  discovery and data mining}, pp.~847--855, ACM, 2013.
+
+\bibitem{Gijsbers2017Thesis}
+P.~Gijsbers, ``Automatic construction of machine learning pipelines,'' 2017.
+
+\bibitem{kotthoff2016auto}
+L.~Kotthoff, C.~Thornton, H.~H. Hoos, F.~Hutter, and K.~Leyton-Brown,
+  ``Auto-weka 2.0: Automatic model selection and hyperparameter optimization in
+  weka,'' {\em Journal of Machine Learning Research}, vol.~17, pp.~1--5, 2016.
+
+\bibitem{brazdil1994characterizing}
+P.~Brazdil, J.~Gama, and B.~Henery, ``Characterizing the applicability of
+  classification algorithms using meta-level learning,'' in {\em European
+  conference on machine learning}, pp.~83--102, Springer, 1994.
+
+\bibitem{vilalta2004using}
+R.~Vilalta, C.~G. Giraud-Carrier, P.~Brazdil, and C.~Soares, ``Using
+  meta-learning to support data mining.,'' {\em IJCSA}, vol.~1, no.~1,
+  pp.~31--45, 2004.
+
+\bibitem{brazdil2009development}
+P.~Brazdil, C.~Giraud-Carrier, C.~Soares, and R.~Vilalta, ``Development of
+  metalearning systems for algorithm recommendation,'' {\em Metalearning:
+  Applications to Data Mining}, pp.~31--59, 2009.
+
+\bibitem{pazzani1997learning}
+M.~Pazzani and D.~Billsus, ``Learning and revising user profiles: The
+  identification of interesting web sites,'' {\em Machine learning}, vol.~27,
+  no.~3, pp.~313--331, 1997.
+
+\bibitem{chen2006combining}
+Y.-W. Chen and C.-J. Lin, ``Combining svms with various feature selection
+  strategies,'' in {\em Feature extraction}, pp.~315--324, Springer, 2006.
+
 \bibitem{walt2011numpy}
 S.~v.~d. Walt, S.~C. Colbert, and G.~Varoquaux, ``The numpy array: a structure
   for efficient numerical computation,'' {\em Computing in Science \&

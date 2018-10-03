@@ -263,6 +263,17 @@ P.~Royston, I.~R. White, {\em et~al.}, ``Multiple imputation by chained
   equations (mice): implementation in stata,'' {\em J Stat Softw}, vol.~45,
   no.~4, pp.~1--20, 2011.
 
+\bibitem{pedregosa2011scikit}
+F.~Pedregosa, G.~Varoquaux, A.~Gramfort, V.~Michel, B.~Thirion, O.~Grisel,
+  M.~Blondel, P.~Prettenhofer, R.~Weiss, V.~Dubourg, {\em et~al.},
+  ``Scikit-learn: Machine learning in python,'' {\em Journal of Machine
+  Learning Research}, vol.~12, no.~Oct, pp.~2825--2830, 2011.
+
+\bibitem{walt2011numpy}
+S.~v.~d. Walt, S.~C. Colbert, and G.~Varoquaux, ``The numpy array: a structure
+  for efficient numerical computation,'' {\em Computing in Science \&
+  Engineering}, vol.~13, no.~2, pp.~22--30, 2011.
+
 \bibitem{heiberger2004statistical}
 R.~M. Heiberger and B.~Holland, {\em Statistical analysis and data display}.
 \newblock Springer, 2004.
@@ -276,5 +287,9 @@ M.~B. Brown and A.~B. Forsythe, ``Robust tests for the equality of variances,''
 A.~Satorra and P.~M. Bentler, ``A scaled difference chi-square test statistic
   for moment structure analysis,'' {\em Psychometrika}, vol.~66, no.~4,
   pp.~507--514, 2001.
+
+\bibitem{draper2014applied}
+N.~R. Draper and H.~Smith, {\em Applied regression analysis}, vol.~326.
+\newblock John Wiley \& Sons, 2014.
 
 \end{thebibliography}

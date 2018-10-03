@@ -9,7 +9,7 @@ plotly.tools.set_credentials_file(username='TPABeishuizen', api_key='2A6fAPOKHrp
 
 class_results = []
 
-data_name = 'average'
+data_name = 'Hepatitis'
 
 with open('MissingValueHandlingClassificationValues.csv') as csv_file:
     csv_reader = csv.reader(csv_file)
@@ -28,7 +28,7 @@ F1_score = []
 text_label = []
 marker_type = []
 
-if data_name == 'average':
+if data_name == 'Average':
     # Remove backward elimination
 
     # Find values per dataset
@@ -41,13 +41,14 @@ if data_name == 'average':
 
     # Fill average value array
     for i in range(Hepatitis_values.shape[1]):
-        avg_values[0, i] = 'average'
+        avg_values[0, i] = 'Average'
         avg_values[1:3, i] = Hepatitis_values[1:3, i]
         for j in range(4, 9):
             avg_values[j, i] = (float(Hepatitis_values[j, i]) + float(Cirrhosis_values[j, i]) +
                                 float(Cervical_values[j, i])) / 3
 
     values = avg_values
+
 else:
     values = values[:, values[0, :] == data_name]
 
@@ -76,14 +77,15 @@ for i in range(values.shape[1]):
 trace_list = []
 
 for i in range(len(comp_time)):
+
     trace_list.append(go.Scatter(
-        x=[np.log(np.asarray(comp_time)[i])],
-        y=[np.asarray(test_score)[i]],
-        mode='markers',
+        x=[np.log10(np.asarray(comp_time)[i])],
+        y=[np.asarray(F1_score)[i]],
+        mode='markers+text',
         legendgroup=values[1, i],
         name=text_label[i],
         marker=dict(
-            size=16,
+            size=20,
             symbol=marker_type[i],
             color=comp_time[i],
             colorscale='Viridis',
@@ -91,20 +93,23 @@ for i in range(len(comp_time)):
                 title='Average computation time'
             ),
             showscale=False),
-        text=text_label[i]
+        text=text_label[i],
+        textfont=dict(size=20),
+        textposition='top right'
     ))
 
 layout = go.Layout(
-    title='Missing value handling algorithm accuracy',
+    title="%s %s " % (data_name, 'missing value handling algorithm F1 score,<br> after removing features with more than 15% missing values'),
     hovermode='closest',
     xaxis=dict(tickfont=dict(size=20),
                titlefont=dict(size=20),
-               title='Computation time (s)'),
+               title='Computation time, logarithmic scale (s)'),
     yaxis=dict(tickfont=dict(size=20),
                titlefont=dict(size=20),
                title='Accuracy ([0, 1])'),
+               #range=[0.50, 0.8]),
     legend=dict(x=0,
-                y=-0.2,
+                y=-0.1,
                 orientation="h"),
     showlegend=True,
     font=dict(

@@ -60,7 +60,7 @@ def chained_equations(X, missing_values=None, s=1):
 
         # Replace missing values per feature
         for feat in missing_feat:
-            print("\t\t at feature %i" % feat)
+            #print("\t\t at feature %i" % feat)
 
             # Remove imputed values for the feature
             for loc in missing_feat_loc[feat]:

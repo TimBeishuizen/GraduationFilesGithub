@@ -12,9 +12,6 @@ from sklearn import tree as T
 from sklearn import naive_bayes as NB
 from sklearn import linear_model as LM
 
-def wrapper_methods_classifier():
-    return None
-
 
 def sequential_search(X, y, features, sel_seq='F', n_sel_seq=10, scoring_method='svm', scoring_cv=10,
                       improvement_threshold=0.01, ranking_method=None, max_iter=100, continued_search=False):

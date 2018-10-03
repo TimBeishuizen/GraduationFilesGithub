@@ -95,7 +95,7 @@ for i in range(values.shape[1]):
         if str(values[0, i]) != data_name:
             continue
 
-        FS_acc.append(float(values[5, i]) - float(values[6, i]) * 0.005)
+        FS_acc.append(float(values[5, i]) * 0.99 ** float(values[6, i]))
 
         val_score.append(float(values[4, i]))
         test_score.append(float(values[5, i]))
@@ -146,7 +146,7 @@ for i in range(len(n_feat)):
             legendgroup=values[1, i],
             name=text_label[i],
             marker=dict(
-                size=16,
+                size=20,
                 symbol=marker_type[i],
                 color=comp_time[i],
                 colorscale='Viridis',
@@ -172,7 +172,7 @@ layout = go.Layout(
     showlegend=True,
     font = dict(
     color="black",
-    size=12)
+    size=20)
 )
 
 updatemenus=list([

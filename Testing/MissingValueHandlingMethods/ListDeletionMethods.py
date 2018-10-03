@@ -25,7 +25,7 @@ def cca(X, y, missing_values=None):
     return new_X, new_y
 
 
-def aca(X, missing_values=None, important_features=None, removal_fraction=None):
+def aca(X, features, missing_values=None, important_features=None, removal_fraction=None):
     """
 
     :param X:
@@ -53,14 +53,16 @@ def aca(X, missing_values=None, important_features=None, removal_fraction=None):
     count_columns = [np.count_nonzero(missing_columns == column) for column in unique_columns]
 
     new_X = np.copy(X)
+    new_features = np.copy(features)
 
     # Remove features if not deemed important and if a big enough fraction is missing
     for i in reversed(range(unique_columns.shape[0])):
         if unique_columns[i] not in important_features and removal_fraction < count_columns[i] / X.shape[0]:
             new_X = np.delete(new_X, i, axis=1)
+            new_features = np.delete(new_features, i, axis=0)
 
     # Return deleted data, after removing last missing values with CCA
-    return new_X
+    return new_X, new_features
 
 
 def wca(X, missing_values=None):

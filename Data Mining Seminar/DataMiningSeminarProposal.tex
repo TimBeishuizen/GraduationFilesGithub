@@ -266,7 +266,7 @@
 	\label{subsubsec:Meta-Learning}
 	
 	% Introduction meta-learning
-	Machine learning algorithms show different behaviour for different tasks. Meta-learning tries to find out how their performance changes between those tasks (Figure \ref{fig:Meta-LearningLayout}). It tries to link the algorithm with data sets it would do good for and tries to find which hyperparameters give a good performance. In combination with the machine learning pipelines, meta-learning would try to find the best ones available. Since not only algorithms must be selected, but also hyperparameters must be optimized and preprocessing must be done, the time and space needed for meta-learning explodes. This can be lessened when removing bad pipelines and limiting the range of hyperparameters, machine learning- and preprocessing algorithms as much as possible. 
+	Machine learning algorithms show different behaviour for different tasks. Meta-learning tries to find out how their performance changes between those tasks (Figure \ref{fig:Meta-LearningLayout}). It tries to link the datasets with a suitable algorithm for high performance and tries to improve this performance by finetuning its hyperparameters. In combination with the machine learning pipelines, meta-learning tries to find the best ones available. Since not only algorithms must be selected, but also hyperparameters must be optimized and preprocessing must be done, the time and space needed for meta-learning causes a combinatorial explosion. This can be lessened by stopping the investigation of bad pipelines and limiting the range of hyperparameters, machine learning- and preprocessing algorithms as much as possible. 
 
 	\begin{figure}
 		\label{fig:Meta-LearningLayout}
@@ -331,7 +331,7 @@
  	% Rawness challenges
  	Aside from data problems, another reason for preprocessing can be present. \cite{famili1997data} Data can also be very raw. STo reach a certain goal, a data set has the necessary iformation, but only indirectly. An example would be hypertension. To know if someone has hypertension, its blood pressure must be measured and checked if that value is high enough. this preprocessing is highly data set specific, as computers do not know the specifications of blood pressure for someone having hypertension. 
  	
-	\subsection{Tree-based Pipeline Optimization Tool}
+	\subsubsection{Tree-based Pipeline Optimization Tool}
 	\label{subsec:TPOT}
 	
 	% Introduction TPOT
@@ -339,6 +339,8 @@
 	
 	% TPOT layout
 	TPOT makes use of this genetic programming with using the machine learning pipelines in a tree (Figure \ref{fig:MachineLearningPipeline}). TPOT consists of preprocessing and machine learning algorithms, that form the backbone of the pipelines. Their hyperparameters and the data set are the variables. TPOT makes mostly use of the machine learning and preprocessing algorithms of skikit-learn from Python in which it is also written.
+	
+	
 	
 	\begin{figure}[h!]
 		\includegraphics[scale=1]{MachineLearningPipeline.png}

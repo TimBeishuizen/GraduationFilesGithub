@@ -22,8 +22,8 @@ for data_name in data_names:
 
     missing_percentage = np.count_nonzero(X == '', axis=0).astype(float) / X.shape[0]
 
-    ACA = True
-    if ACA == True:
+    ACA = False
+    if ACA:
         X = LDM.aca(X, missing_values='', removal_fraction=0.15)
         for i in reversed(range(missing_percentage.shape[0])):
             if missing_percentage[i] > 0.15:
@@ -38,9 +38,11 @@ for data_name in data_names:
 
     MI_X = SIM.mean_imputation(X, missing_values='')
     HDI_X = SIM.hot_deck_imputation(X, missing_values='')
+    print("Starting with nearest neighbours...")
     NN1I_X = SIM.kNN_imputation(X, missing_values='', k=1)
     NN3I_X = SIM.kNN_imputation(X, missing_values='', k=3)
     NN5I_X = SIM.kNN_imputation(X, missing_values='', k=5)
+    print("Starting with regression...")
     MRI_X = SIM.regression_imputation(X, missing_values='')
 
     print("Gathering p-values...")
@@ -100,7 +102,7 @@ for data_name in data_names:
 
 
 # Opening CSV file
-with open('combined_p_val_extra_ACA.csv', 'w', newline='') as csv_file:
+with open('combined_p_val.csv', 'w', newline='') as csv_file:
     csv_writer = csv.writer(csv_file)
     csv_writer.writerow(data)
     csv_writer.writerow(missing)
