@@ -9,7 +9,7 @@ plotly.tools.set_credentials_file(username='TPABeishuizen', api_key='2A6fAPOKHrp
 
 class_results = []
 
-data_name = 'Hepatitis'
+data_name = 'Average'
 
 with open('MissingValueHandlingClassificationValues.csv') as csv_file:
     csv_reader = csv.reader(csv_file)
@@ -81,7 +81,7 @@ for i in range(len(comp_time)):
     trace_list.append(go.Scatter(
         x=[np.log10(np.asarray(comp_time)[i])],
         y=[np.asarray(F1_score)[i]],
-        mode='markers+text',
+        mode='markers',
         legendgroup=values[1, i],
         name=text_label[i],
         marker=dict(
@@ -106,12 +106,12 @@ layout = go.Layout(
                title='Computation time, logarithmic scale (s)'),
     yaxis=dict(tickfont=dict(size=20),
                titlefont=dict(size=20),
-               title='Accuracy ([0, 1])'),
+               title='F1 score ([0, 1])'),
                #range=[0.50, 0.8]),
     legend=dict(x=0,
                 y=-0.1,
                 orientation="h"),
-    showlegend=True,
+    showlegend=False,
     font=dict(
         color="black",
         size=20)

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2017.11.1)  21 SEP 2018 17:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2017.11.1)  11 OCT 2018 18:12
 entering extended mode
 **./MetafeatureExplorationThesis.tex
 (MetafeatureExplorationThesis.tex
@@ -1290,6 +1290,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 903--910
  []
 
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 924--926
 
  []
@@ -1316,9 +1319,6 @@ Overfull \hbox (27.80214pt too wide) in paragraph at lines 961--971
 Underfull \hbox (badness 10000) in paragraph at lines 972--977
 
  []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [29]
 Underfull \hbox (badness 10000) in paragraph at lines 1004--1006
@@ -1360,22 +1360,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 1071--1073
 
  []
 
-
+[31]
 Overfull \hbox (27.80214pt too wide) in paragraph at lines 1081--1091
 [][] 
  []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1092--1097
 
  []
 
-[31]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1117.
- [32]
+[32]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 1117.
  (MetafeatureExplorationThesis.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1117.
@@ -1410,7 +1406,7 @@ s/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7
 /Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program
  Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/M
 iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on MetafeatureExplorationThesis.pdf (33 pages, 588319 bytes).
+Output written on MetafeatureExplorationThesis.pdf (33 pages, 588475 bytes).
 PDF statistics:
  631 PDF objects out of 1000 (max. 8388607)
  189 named destinations out of 1000 (max. 500000)

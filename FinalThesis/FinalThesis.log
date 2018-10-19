@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2017.11.1)  2 OCT 2018 18:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2017.11.1)  16 OCT 2018 17:08
 entering extended mode
 **./FinalThesis.tex
 (FinalThesis.tex
@@ -883,22 +883,22 @@ Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
 (FinalThesis.aux)
 \openout1 = `FinalThesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 50.
+LaTeX Font Info:    ... okay on input line 50.
 \AtBeginShipoutBox=\box38
-Package hyperref Info: Link coloring OFF on input line 48.
+Package hyperref Info: Link coloring OFF on input line 50.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
@@ -906,9 +906,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count152
 )
-LaTeX Info: Redefining \ref on input line 48.
-LaTeX Info: Redefining \pageref on input line 48.
-LaTeX Info: Redefining \nameref on input line 48.
+LaTeX Info: Redefining \ref on input line 50.
+LaTeX Info: Redefining \pageref on input line 50.
+LaTeX Info: Redefining \nameref on input line 50.
 
 (FinalThesis.out) (FinalThesis.out)
 \@outlinefile=\write4
@@ -957,641 +957,721 @@ Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
  [1
 
-{C:/Users/s119104/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (FinalThe
-sis.toc
-LaTeX Font Info:    Try loading font information for U+msa on input line 3.
+{C:/Users/s119104/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+Chapter 1.
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.109 	\tableofcontents
+                        [1
+
+] (FinalThesis.toc
+LaTeX Font Info:    Try loading font information for U+msa on input line 4.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 3.
+LaTeX Font Info:    Try loading font information for U+msb on input line 4.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
- been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.50 ...\numberline {4.5}Results}{61}{section.4.5}
-                                                   [1
+) [2
 
-] [2])
+] [3])
 \tf@toc=\write5
 \openout5 = `FinalThesis.toc'.
 
- [3]
-Chapter 1.
+ [4]
+Chapter 2.
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--123
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 118--123
+Underfull \hbox (badness 10000) in paragraph at lines 149--154
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--123
+Underfull \hbox (badness 10000) in paragraph at lines 149--154
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--128
+Underfull \hbox (badness 10000) in paragraph at lines 149--154
 
  []
 
-[4
+
+Underfull \hbox (badness 10000) in paragraph at lines 158--159
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 160--161
+
+ []
+
+[5
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 129--130
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
 
  []
 
+[6]
+Chapter 3.
+[7
 
-Underfull \hbox (badness 10000) in paragraph at lines 131--132
+]
+<./ThesisFigures/MicroArray.png, id=824, 853.1875pt x 618.31pt>
+File: ./ThesisFigures/MicroArray.png Graphic file (type png)
+<use ./ThesisFigures/MicroArray.png>
+Package pdftex.def Info: ./ThesisFigures/MicroArray.png  used on input line 226
+. on input line 226.
+Package pdftex.def Info: Requested size: 339.67029pt x 246.1686pt on input line
+ 226.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 236.
 
- []
-
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 142.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 142.
- [5] [6]
-Chapter 2.
-[7
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 236.
+ [8]
+<./ThesisFigures/MassSpect.jpg, id=852, 687.56876pt x 515.9275pt>
+File: ./ThesisFigures/MassSpect.jpg Graphic file (type jpg)
+<use ./ThesisFigures/MassSpect.jpg>
+Package pdftex.def Info: ./ThesisFigures/MassSpect.jpg  used on input line 247.
+ on input line 247.
+Package pdftex.def Info: Requested size: 424.58624pt x 318.5964pt on input line
+ 247.
+ [9 <./ThesisFigures/MicroArray.png>] [10 <./ThesisFigures/MassSpect.jpg>] [11]
 
-] [8] [9] [10] [11] [12] [13] [14]
-Chapter 3.
-[15
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 312.
+
+[12] [13] [14] [15] [16]
+Chapter 4.
+[17
 
 ]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 415.
+               Default added (so using `tbp') on input line 470.
 
 
-Overfull \hbox (40.13997pt too wide) in paragraph at lines 419--426
+Overfull \hbox (40.69551pt too wide) in paragraph at lines 474--481
  [][] 
  []
 
-[16]
+
+LaTeX Warning: Citation `chandrasheto split bykar2014survey' on page 18 undefin
+ed on input line 487.
+
+[18]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 465.
+put line 520.
 
 
-LaTeX Warning: Command \O invalid in math mode on input line 468.
+LaTeX Warning: Command \O invalid in math mode on input line 523.
 
-
-LaTeX Warning: Command \O invalid in math mode on input line 469.
-
-
-LaTeX Warning: Command \O invalid in math mode on input line 485.
-
-[17] [18]
 
 LaTeX Warning: Command \O invalid in math mode on input line 524.
 
 
-LaTeX Warning: Command \O invalid in math mode on input line 565.
+LaTeX Warning: Command \O invalid in math mode on input line 540.
 
-[19]
+[19] [20]
 
-LaTeX Warning: Command \O invalid in math mode on input line 599.
+LaTeX Warning: Command \O invalid in math mode on input line 579.
+
+
+LaTeX Warning: Command \O invalid in math mode on input line 620.
+
+[21]
+
+LaTeX Warning: Command \O invalid in math mode on input line 654.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 618--619
+Underfull \hbox (badness 10000) in paragraph at lines 673--674
 
  []
 
-[20] [21]
-Underfull \hbox (badness 10000) in paragraph at lines 672--673
+[22] [23]
+Underfull \hbox (badness 10000) in paragraph at lines 727--728
 
  []
 
-[22]
 
-LaTeX Warning: Command \O invalid in math mode on input line 684.
+LaTeX Warning: Command \O invalid in math mode on input line 739.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 696--697
+Underfull \hbox (badness 10000) in paragraph at lines 751--752
 
  []
 
-[23] [24]
-<./ThesisFigures/Meta-LearningLayout.png, id=1160, 343.2825pt x 258.21469pt>
+[24] [25]
+<./ThesisFigures/Meta-LearningLayout.png, id=1183, 343.2825pt x 258.21469pt>
 File: ./ThesisFigures/Meta-LearningLayout.png Graphic file (type png)
 <use ./ThesisFigures/Meta-LearningLayout.png>
 Package pdftex.def Info: ./ThesisFigures/Meta-LearningLayout.png  used on input
- line 757. on input line 757.
+ line 814. on input line 814.
 Package pdftex.def Info: Requested size: 343.28165pt x 258.21405pt on input lin
-e 757.
- [25 <./ThesisFigures/Meta-LearningLayout.png>]
+e 814.
+ [26]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 778.
+               Default added (so using `tbp') on input line 831.
 
-
-Overfull \hbox (9.3069pt too wide) in paragraph at lines 782--794
- [][] 
- []
-
-<./ThesisFigures/MachineLearningPipeline.png, id=1179, 370.38374pt x 182.18062p
+<./ThesisFigures/MachineLearningPipeline.png, id=1203, 370.38374pt x 182.18062p
 t>
 File: ./ThesisFigures/MachineLearningPipeline.png Graphic file (type png)
 <use ./ThesisFigures/MachineLearningPipeline.png>
 Package pdftex.def Info: ./ThesisFigures/MachineLearningPipeline.png  used on i
-nput line 797. on input line 797.
+nput line 832. on input line 832.
 Package pdftex.def Info: Requested size: 370.38283pt x 182.18016pt on input lin
-e 797.
-[26 <./ThesisFigures/MachineLearningPipeline.png>]
-<./ThesisFigures/TPOTMutations.png, id=1190, 354.57469pt x 247.67531pt>
-File: ./ThesisFigures/TPOTMutations.png Graphic file (type png)
-<use ./ThesisFigures/TPOTMutations.png>
-Package pdftex.def Info: ./ThesisFigures/TPOTMutations.png  used on input line 
-806. on input line 806.
-Package pdftex.def Info: Requested size: 354.57382pt x 247.6747pt on input line
- 806.
-<./ThesisFigures/TPOTCrossover.png, id=1194, 372.64218pt x 142.28156pt>
-File: ./ThesisFigures/TPOTCrossover.png Graphic file (type png)
-<use ./ThesisFigures/TPOTCrossover.png>
-Package pdftex.def Info: ./ThesisFigures/TPOTCrossover.png  used on input line 
-815. on input line 815.
-Package pdftex.def Info: Requested size: 372.64127pt x 142.2812pt on input line
- 815.
- [27 <./ThesisFigures/TPOTMutations.png> <./ThesisFigures/TPOTCrossover.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 830--835
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 830--835
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 830--835
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 835--840
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 835--840
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 835--840
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 840--845
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 840--845
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 840--845
-
- []
-
-[28]
-<./ThesisFigures/FS_accuracy_alpha.png, id=1220, 656.9343pt x 476.982pt>
-File: ./ThesisFigures/FS_accuracy_alpha.png Graphic file (type png)
-<use ./ThesisFigures/FS_accuracy_alpha.png>
-Package pdftex.def Info: ./ThesisFigures/FS_accuracy_alpha.png  used on input l
-ine 872. on input line 872.
-Package pdftex.def Info: Requested size: 424.58624pt x 308.28786pt on input lin
-e 872.
- [29]
-<./ThesisFigures/FS_accuracy_example.png, id=1233, 462.528pt x 344.0052pt>
-File: ./ThesisFigures/FS_accuracy_example.png Graphic file (type png)
-<use ./ThesisFigures/FS_accuracy_example.png>
-Package pdftex.def Info: ./ThesisFigures/FS_accuracy_example.png  used on input
- line 885. on input line 885.
-Package pdftex.def Info: Requested size: 462.52686pt x 344.00435pt on input lin
-e 885.
-
-Overfull \hbox (37.94061pt too wide) in paragraph at lines 885--886
-[][] 
- []
-
-[30 <./ThesisFigures/FS_accuracy_alpha.png>]
+e 832.
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 896.
+               Default added (so using `tbp') on input line 837.
 
 
-Overfull \hbox (71.06467pt too wide) in paragraph at lines 900--908
+Overfull \hbox (9.3069pt too wide) in paragraph at lines 841--853
  [][] 
  []
 
-[31 <./ThesisFigures/FS_accuracy_example.png>] [32]
+<./ThesisFigures/TPOTMutations.png, id=1207, 354.57469pt x 247.67531pt>
+File: ./ThesisFigures/TPOTMutations.png Graphic file (type png)
+<use ./ThesisFigures/TPOTMutations.png>
+Package pdftex.def Info: ./ThesisFigures/TPOTMutations.png  used on input line 
+859. on input line 859.
+Package pdftex.def Info: Requested size: 354.57382pt x 247.6747pt on input line
+ 859.
 
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 929.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[33] [34]
+<./ThesisFigures/TPOTCrossover.png, id=1211, 372.64218pt x 142.28156pt>
+File: ./ThesisFigures/TPOTCrossover.png Graphic file (type png)
+<use ./ThesisFigures/TPOTCrossover.png>
+Package pdftex.def Info: ./ThesisFigures/TPOTCrossover.png  used on input line 
+868. on input line 868.
+Package pdftex.def Info: Requested size: 372.64127pt x 142.2812pt on input line
+ 868.
 
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 995.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[27 <./ThesisFigures/Meta-LearningLayout.png>] [28 <./ThesisFigures/MachineLear
+ningPipeline.png>] [29 <./ThesisFigures/TPOTMutations.png> <./ThesisFigures/TPO
+TCrossover.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 886--891
+
+ []
 
 
-Overfull \hbox (56.03476pt too wide) in paragraph at lines 998--1006
+Underfull \hbox (badness 10000) in paragraph at lines 886--891
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 886--891
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 891--896
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 891--896
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 891--896
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 896--901
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 896--901
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 896--901
+
+ []
+
+[30]
+<./ThesisFigures/FS_accuracy_alpha.png, id=1251, 656.9343pt x 476.982pt>
+File: ./ThesisFigures/FS_accuracy_alpha.png Graphic file (type png)
+<use ./ThesisFigures/FS_accuracy_alpha.png>
+Package pdftex.def Info: ./ThesisFigures/FS_accuracy_alpha.png  used on input l
+ine 928. on input line 928.
+Package pdftex.def Info: Requested size: 424.58624pt x 308.28786pt on input lin
+e 928.
+ [31]
+<./ThesisFigures/FS_accuracy_example.png, id=1264, 462.528pt x 346.896pt>
+File: ./ThesisFigures/FS_accuracy_example.png Graphic file (type png)
+<use ./ThesisFigures/FS_accuracy_example.png>
+Package pdftex.def Info: ./ThesisFigures/FS_accuracy_example.png  used on input
+ line 941. on input line 941.
+Package pdftex.def Info: Requested size: 462.52686pt x 346.89514pt on input lin
+e 941.
+
+Overfull \hbox (37.94061pt too wide) in paragraph at lines 941--942
 [][] 
  []
 
-[35]
-<./ThesisFigures/Val_Test_Scores.png, id=1299, 462.528pt x 344.0052pt>
+[32 <./ThesisFigures/FS_accuracy_alpha.png>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 952.
+
+
+Overfull \hbox (71.60913pt too wide) in paragraph at lines 956--964
+ [][] 
+ []
+
+[33 <./ThesisFigures/FS_accuracy_example.png>] [34]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 985.
+
+[35] [36]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 1051.
+
+
+Overfull \hbox (56.03476pt too wide) in paragraph at lines 1054--1062
+[][] 
+ []
+
+[37]
+<./ThesisFigures/Val_Test_Scores.png, id=1330, 462.528pt x 344.0052pt>
 File: ./ThesisFigures/Val_Test_Scores.png Graphic file (type png)
 <use ./ThesisFigures/Val_Test_Scores.png>
 Package pdftex.def Info: ./ThesisFigures/Val_Test_Scores.png  used on input lin
-e 1021. on input line 1021.
+e 1077. on input line 1077.
 Package pdftex.def Info: Requested size: 297.20906pt x 221.06017pt on input lin
-e 1021.
-<./ThesisFigures/Machine_Learning_Val_Scores.png, id=1303, 462.528pt x 344.0052
+e 1077.
+<./ThesisFigures/Machine_Learning_Val_Scores.png, id=1334, 462.528pt x 344.0052
 pt>
 File: ./ThesisFigures/Machine_Learning_Val_Scores.png Graphic file (type png)
 <use ./ThesisFigures/Machine_Learning_Val_Scores.png>
 Package pdftex.def Info: ./ThesisFigures/Machine_Learning_Val_Scores.png  used 
-on input line 1031. on input line 1031.
+on input line 1087. on input line 1087.
 Package pdftex.def Info: Requested size: 297.20906pt x 221.06017pt on input lin
-e 1031.
- [36 <./ThesisFigures/Val_Test_Scores.png>]
-<./ThesisFigures/Data_Rank_Val_Scores.png, id=1314, 462.528pt x 344.0052pt>
+e 1087.
+ [38 <./ThesisFigures/Val_Test_Scores.png>]
+<./ThesisFigures/Data_Rank_Val_Scores.png, id=1344, 462.528pt x 344.0052pt>
 File: ./ThesisFigures/Data_Rank_Val_Scores.png Graphic file (type png)
 <use ./ThesisFigures/Data_Rank_Val_Scores.png>
 Package pdftex.def Info: ./ThesisFigures/Data_Rank_Val_Scores.png  used on inpu
-t line 1041. on input line 1041.
+t line 1097. on input line 1097.
 Package pdftex.def Info: Requested size: 297.20906pt x 221.06017pt on input lin
-e 1041.
- [37 <./ThesisFigures/Machine_Learning_Val_Scores.png> <./ThesisFigures/Data_Ra
+e 1097.
+ [39 <./ThesisFigures/Machine_Learning_Val_Scores.png> <./ThesisFigures/Data_Ra
 nk_Val_Scores.png>]
-<./ThesisFigures/Data_Rank_F1_Scores.png, id=1325, 462.528pt x 344.0052pt>
+<./ThesisFigures/Data_Rank_F1_Scores.png, id=1355, 462.528pt x 344.0052pt>
 File: ./ThesisFigures/Data_Rank_F1_Scores.png Graphic file (type png)
 <use ./ThesisFigures/Data_Rank_F1_Scores.png>
 Package pdftex.def Info: ./ThesisFigures/Data_Rank_F1_Scores.png  used on input
- line 1054. on input line 1054.
+ line 1110. on input line 1110.
 Package pdftex.def Info: Requested size: 297.20906pt x 221.06017pt on input lin
-e 1054.
-<./ThesisFigures/Accuracy_new.png, id=1330, 2890.8pt x 1647.15375pt>
+e 1110.
+<./ThesisFigures/Accuracy_new.png, id=1360, 2890.8pt x 1647.15375pt>
 File: ./ThesisFigures/Accuracy_new.png Graphic file (type png)
 <use ./ThesisFigures/Accuracy_new.png>
 Package pdftex.def Info: ./ThesisFigures/Accuracy_new.png  used on input line 1
-071. on input line 1071.
+127. on input line 1127.
 Package pdftex.def Info: Requested size: 2890.79298pt x 1647.14975pt on input l
-ine 1071.
- [38 <./ThesisFigures/Data_Rank_F1_Scores.png>]
+ine 1127.
+ [40 <./ThesisFigures/Data_Rank_F1_Scores.png>]
 Overfull \vbox (30.42636pt too high) has occurred while \output is active []
 
 
-[39 <./ThesisFigures/Accuracy_new.png>]
-<./ThesisFigures/F1_new.png, id=1346, 2890.8pt x 1647.15375pt>
+[41 <./ThesisFigures/Accuracy_new.png>]
+<./ThesisFigures/F1_new.png, id=1376, 2890.8pt x 1647.15375pt>
 File: ./ThesisFigures/F1_new.png Graphic file (type png)
 <use ./ThesisFigures/F1_new.png>
-Package pdftex.def Info: ./ThesisFigures/F1_new.png  used on input line 1079. o
-n input line 1079.
+Package pdftex.def Info: ./ThesisFigures/F1_new.png  used on input line 1135. o
+n input line 1135.
 Package pdftex.def Info: Requested size: 2890.79298pt x 1647.14975pt on input l
-ine 1079.
+ine 1135.
 
 Overfull \vbox (18.42636pt too high) has occurred while \output is active []
 
 
-[40 <./ThesisFigures/F1_new.png>]
-<./ThesisFigures/ComputationTimeBarChart.png, id=1353, 2890.8pt x 1647.15375pt>
+[42 <./ThesisFigures/F1_new.png>]
+<./ThesisFigures/ComputationTimeBarChart.png, id=1384, 2890.8pt x 1647.15375pt>
 
 File: ./ThesisFigures/ComputationTimeBarChart.png Graphic file (type png)
 <use ./ThesisFigures/ComputationTimeBarChart.png>
 Package pdftex.def Info: ./ThesisFigures/ComputationTimeBarChart.png  used on i
-nput line 1090. on input line 1090.
+nput line 1146. on input line 1146.
 Package pdftex.def Info: Requested size: 2890.79298pt x 1647.14975pt on input l
-ine 1090.
- [41]
-Overfull \vbox (18.42636pt too high) has occurred while \output is active []
-
-
-[42 <./ThesisFigures/ComputationTimeBarChart.png>]
-<./ThesisFigures/FS_Accuracy_99.png, id=1366, 2890.8pt x 1647.15375pt>
-File: ./ThesisFigures/FS_Accuracy_99.png Graphic file (type png)
-<use ./ThesisFigures/FS_Accuracy_99.png>
-Package pdftex.def Info: ./ThesisFigures/FS_Accuracy_99.png  used on input line
- 1107. on input line 1107.
-Package pdftex.def Info: Requested size: 2890.79298pt x 1647.14975pt on input l
-ine 1107.
+ine 1146.
  [43]
 Overfull \vbox (18.42636pt too high) has occurred while \output is active []
 
 
-[44 <./ThesisFigures/FS_Accuracy_99.png>]
+[44 <./ThesisFigures/ComputationTimeBarChart.png>]
+<./ThesisFigures/Pareto_FSscore_Comp.png, id=1396, 1830.84pt x 1299.85625pt>
+File: ./ThesisFigures/Pareto_FSscore_Comp.png Graphic file (type png)
+<use ./ThesisFigures/Pareto_FSscore_Comp.png>
+Package pdftex.def Info: ./ThesisFigures/Pareto_FSscore_Comp.png  used on input
+ line 1163. on input line 1163.
+Package pdftex.def Info: Requested size: 1830.83556pt x 1299.85309pt on input l
+ine 1163.
+ [45]
+Overfull \vbox (18.40137pt too high) has occurred while \output is active []
+
+
+[46 <./ThesisFigures/Pareto_FSscore_Comp.png>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 1116.
+               Default added (so using `tbp') on input line 1172.
 
 
-Overfull \hbox (39.70027pt too wide) in paragraph at lines 1119--1127
+Overfull \hbox (40.25581pt too wide) in paragraph at lines 1175--1183
 [][] 
  []
 
-<./ThesisFigures/TPOT_avg_MO.PNG, id=1382, 630.9171pt x 484.9317pt>
+<./ThesisFigures/TPOT_avg_MO.PNG, id=1412, 661.9932pt x 500.8311pt>
 File: ./ThesisFigures/TPOT_avg_MO.PNG Graphic file (type png)
 <use ./ThesisFigures/TPOT_avg_MO.PNG>
 Package pdftex.def Info: ./ThesisFigures/TPOT_avg_MO.PNG  used on input line 11
-31. on input line 1131.
-Package pdftex.def Info: Requested size: 339.67029pt x 261.07487pt on input lin
-e 1131.
-<./ThesisFigures/TPOT_avg_Arcene.PNG, id=1383, 630.9171pt x 484.9317pt>
+87. on input line 1187.
+Package pdftex.def Info: Requested size: 339.67029pt x 256.97946pt on input lin
+e 1187.
+<./ThesisFigures/TPOT_avg_Arcene.PNG, id=1413, 661.2705pt x 503.7219pt>
 File: ./ThesisFigures/TPOT_avg_Arcene.PNG Graphic file (type png)
 <use ./ThesisFigures/TPOT_avg_Arcene.PNG>
 Package pdftex.def Info: ./ThesisFigures/TPOT_avg_Arcene.PNG  used on input lin
-e 1138. on input line 1138.
-Package pdftex.def Info: Requested size: 339.67029pt x 261.07487pt on input lin
-e 1138.
-[45 <./ThesisFigures/TPOT_avg_MO.PNG>]
-<./ThesisFigures/TPOT_avg_RSCTC.PNG, id=1394, 630.9171pt x 484.209pt>
+e 1194. on input line 1194.
+Package pdftex.def Info: Requested size: 339.67029pt x 258.74713pt on input lin
+e 1194.
+[47 <./ThesisFigures/TPOT_avg_MO.PNG>]
+<./ThesisFigures/TPOT_avg_RSCTC.PNG, id=1424, 662.7159pt x 500.1084pt>
 File: ./ThesisFigures/TPOT_avg_RSCTC.PNG Graphic file (type png)
 <use ./ThesisFigures/TPOT_avg_RSCTC.PNG>
 Package pdftex.def Info: ./ThesisFigures/TPOT_avg_RSCTC.PNG  used on input line
- 1145. on input line 1145.
-Package pdftex.def Info: Requested size: 339.67029pt x 260.68579pt on input lin
-e 1145.
-<./ThesisFigures/TPOT_avg_Psoriasis.PNG, id=1395, 631.6398pt x 485.6544pt>
+ 1201. on input line 1201.
+Package pdftex.def Info: Requested size: 339.67029pt x 256.33392pt on input lin
+e 1201.
+<./ThesisFigures/TPOT_avg_Psoriasis.PNG, id=1425, 661.9932pt x 500.1084pt>
 File: ./ThesisFigures/TPOT_avg_Psoriasis.PNG Graphic file (type png)
 <use ./ThesisFigures/TPOT_avg_Psoriasis.PNG>
 Package pdftex.def Info: ./ThesisFigures/TPOT_avg_Psoriasis.PNG  used on input 
-line 1152. on input line 1152.
-Package pdftex.def Info: Requested size: 339.67029pt x 261.16754pt on input lin
-e 1152.
- [46 <./ThesisFigures/TPOT_avg_Arcene.PNG> <./ThesisFigures/TPOT_avg_RSCTC.PNG>
-] [47 <./ThesisFigures/TPOT_avg_Psoriasis.PNG>]
-Overfull \hbox (11.66455pt too wide) in paragraph at lines 1168--1169
-\OT1/cmr/m/n/10 Several works fo-cused on the pos-si-bil-ity of fea-ture se-lec
--tion are present, both with a data analytical[[]]
- []
+line 1208. on input line 1208.
+Package pdftex.def Info: Requested size: 339.67029pt x 256.60864pt on input lin
+e 1208.
+ [48 <./ThesisFigures/TPOT_avg_Arcene.PNG> <./ThesisFigures/TPOT_avg_RSCTC.PNG>
+] [49 <./ThesisFigures/TPOT_avg_Psoriasis.PNG>] [50] [51]
+Chapter 5.
+[52
 
-[48] [49]
-Chapter 4.
-[50
-
-] [51] [52] [53] [54] [55] [56]
-<./ThesisFigures/MultipleImputationPicture.PNG, id=1546, 805.50937pt x 356.8331
+] [53] [54] [55] [56] [57] [58]
+<./ThesisFigures/MultipleImputationPicture.PNG, id=1576, 805.50937pt x 356.8331
 3pt>
 File: ./ThesisFigures/MultipleImputationPicture.PNG Graphic file (type png)
 <use ./ThesisFigures/MultipleImputationPicture.PNG>
 Package pdftex.def Info: ./ThesisFigures/MultipleImputationPicture.PNG  used on
- input line 1543. on input line 1543.
+ input line 1552. on input line 1552.
 Package pdftex.def Info: Requested size: 424.58624pt x 188.08614pt on input lin
-e 1543.
- [57 <./ThesisFigures/MultipleImputationPicture.PNG>] [58]
+e 1552.
+ [59 <./ThesisFigures/MultipleImputationPicture.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 1598--1603
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1598--1603
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1598--1603
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1603--1608
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1603--1608
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1603--1608
+
+ []
+
+[60] [61]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 1623.
+               Default added (so using `tbp') on input line 1638.
 
 
-Overfull \hbox (12.13348pt too wide) in paragraph at lines 1626--1631
+Overfull \hbox (12.13348pt too wide) in paragraph at lines 1641--1646
 [][] 
  []
 
-[59] [60]
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 1681
+[62]
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 1698
 .
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
 File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 1681.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 1698.
 
- [61]
-[62]
+
+Overfull \hbox (13.3106pt too wide) in paragraph at lines 1694--1701
+[][] 
+ []
+
+[63] [64]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 1714.
+               Default added (so using `tbp') on input line 1731.
 
-[63]
-<./ThesisFigures/Mean_Dist.PNG, id=1671, 738.5994pt x 541.3023pt>
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 1752.
+
+<./ThesisFigures/Mean_Dist.PNG, id=1699, 627.3036pt x 534.798pt>
 File: ./ThesisFigures/Mean_Dist.PNG Graphic file (type png)
 <use ./ThesisFigures/Mean_Dist.PNG>
-Package pdftex.def Info: ./ThesisFigures/Mean_Dist.PNG  used on input line 1737
-. on input line 1737.
-Package pdftex.def Info: Requested size: 424.58624pt x 311.1638pt on input line
- 1737.
-<./ThesisFigures/Var_Dist.PNG, id=1672, 737.8767pt x 534.0753pt>
+Package pdftex.def Info: ./ThesisFigures/Mean_Dist.PNG  used on input line 1754
+. on input line 1754.
+Package pdftex.def Info: Requested size: 424.58624pt x 361.98495pt on input lin
+e 1754.
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 1759.
+
+<./ThesisFigures/Var_Dist.PNG, id=1700, 594.0594pt x 542.025pt>
 File: ./ThesisFigures/Var_Dist.PNG Graphic file (type png)
 <use ./ThesisFigures/Var_Dist.PNG>
-Package pdftex.def Info: ./ThesisFigures/Var_Dist.PNG  used on input line 1744.
- on input line 1744.
-Package pdftex.def Info: Requested size: 424.58624pt x 307.32724pt on input lin
-e 1744.
- [64 <./ThesisFigures/Mean_Dist.PNG>]
-<./ThesisFigures/Mean_Dist_Extra_ACA.PNG, id=1682, 614.295pt x 527.571pt>
+Package pdftex.def Info: ./ThesisFigures/Var_Dist.PNG  used on input line 1761.
+ on input line 1761.
+Package pdftex.def Info: Requested size: 424.58624pt x 387.4126pt on input line
+ 1761.
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 1768.
+
+<./ThesisFigures/Mean_Dist_Extra_ACA.PNG, id=1703, 596.9502pt x 585.387pt>
 File: ./ThesisFigures/Mean_Dist_Extra_ACA.PNG Graphic file (type png)
 <use ./ThesisFigures/Mean_Dist_Extra_ACA.PNG>
 Package pdftex.def Info: ./ThesisFigures/Mean_Dist_Extra_ACA.PNG  used on input
- line 1753. on input line 1753.
-Package pdftex.def Info: Requested size: 424.58624pt x 364.64424pt on input lin
-e 1753.
- [65 <./ThesisFigures/Var_Dist.PNG>]
-<./ThesisFigures/Var_Dist_Extra_ACA.PNG, id=1690, 630.9171pt x 556.479pt>
+ line 1770. on input line 1770.
+Package pdftex.def Info: Requested size: 424.58624pt x 416.36905pt on input lin
+e 1770.
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 1775.
+
+<./ThesisFigures/Var_Dist_Extra_ACA.PNG, id=1704, 548.5293pt x 534.0753pt>
 File: ./ThesisFigures/Var_Dist_Extra_ACA.PNG Graphic file (type png)
 <use ./ThesisFigures/Var_Dist_Extra_ACA.PNG>
 Package pdftex.def Info: ./ThesisFigures/Var_Dist_Extra_ACA.PNG  used on input 
-line 1760. on input line 1760.
-Package pdftex.def Info: Requested size: 424.58624pt x 374.49478pt on input lin
-e 1760.
-
-[66 <./ThesisFigures/Mean_Dist_Extra_ACA.PNG>] [67 <./ThesisFigures/Var_Dist_Ex
+line 1777. on input line 1777.
+Package pdftex.def Info: Requested size: 424.58624pt x 413.41512pt on input lin
+e 1777.
+[65] [66 <./ThesisFigures/Mean_Dist.PNG>] [67 <./ThesisFigures/Var_Dist.PNG>]
+[68 <./ThesisFigures/Mean_Dist_Extra_ACA.PNG>] [69 <./ThesisFigures/Var_Dist_Ex
 tra_ACA.PNG>]
-<./ThesisFigures/avg_acc.PNG, id=1707, 1927.2pt x 1048.91875pt>
+<./ThesisFigures/avg_acc.PNG, id=1740, 1927.2pt x 1048.91875pt>
 File: ./ThesisFigures/avg_acc.PNG Graphic file (type png)
 <use ./ThesisFigures/avg_acc.PNG>
-Package pdftex.def Info: ./ThesisFigures/avg_acc.PNG  used on input line 1785. 
-on input line 1785.
+Package pdftex.def Info: ./ThesisFigures/avg_acc.PNG  used on input line 1802. 
+on input line 1802.
 Package pdftex.def Info: Requested size: 1927.19533pt x 1048.91618pt on input l
-ine 1785.
- [68]
+ine 1802.
+ [70]
 Overfull \vbox (5.3698pt too high) has occurred while \output is active []
 
 
-[69 <./ThesisFigures/avg_acc.PNG>]
-<./ThesisFigures/avg_acc_15aca.PNG, id=1721, 1927.2pt x 1048.91875pt>
+[71 <./ThesisFigures/avg_acc.PNG>]
+<./ThesisFigures/avg_acc_15aca.PNG, id=1754, 1927.2pt x 1048.91875pt>
 File: ./ThesisFigures/avg_acc_15aca.PNG Graphic file (type png)
 <use ./ThesisFigures/avg_acc_15aca.PNG>
 Package pdftex.def Info: ./ThesisFigures/avg_acc_15aca.PNG  used on input line 
-1792. on input line 1792.
+1809. on input line 1809.
 Package pdftex.def Info: Requested size: 1927.19533pt x 1048.91618pt on input l
-ine 1792.
+ine 1809.
 
 Overfull \vbox (17.3698pt too high) has occurred while \output is active []
 
 
-[70 <./ThesisFigures/avg_acc_15aca.PNG>]
-<./ThesisFigures/avg_F1.PNG, id=1727, 1927.2pt x 1098.1025pt>
+[72 <./ThesisFigures/avg_acc_15aca.PNG>]
+<./ThesisFigures/avg_F1.PNG, id=1761, 1927.2pt x 1098.1025pt>
 File: ./ThesisFigures/avg_F1.PNG Graphic file (type png)
 <use ./ThesisFigures/avg_F1.PNG>
-Package pdftex.def Info: ./ThesisFigures/avg_F1.PNG  used on input line 1799. o
-n input line 1799.
+Package pdftex.def Info: ./ThesisFigures/avg_F1.PNG  used on input line 1816. o
+n input line 1816.
 Package pdftex.def Info: Requested size: 1927.19533pt x 1098.09981pt on input l
-ine 1799.
+ine 1816.
 
 Overfull \vbox (5.3698pt too high) has occurred while \output is active []
 
 
-[71 <./ThesisFigures/avg_F1.PNG>]
+[73 <./ThesisFigures/avg_F1.PNG>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 1805.
+               Default added (so using `tbp') on input line 1822.
 
-[72] [73]
-Chapter 5.
-[74
+[74] [75]
+Chapter 6.
+[76
 
-] [75] [76]
-Underfull \hbox (badness 10000) in paragraph at lines 1984--1986
-
- []
-
-[77]
-Underfull \hbox (badness 10000) in paragraph at lines 1997--1999
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2004--2006
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2027--2030
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2027--2030
-
- []
-
-[78]
-Underfull \hbox (badness 10000) in paragraph at lines 2031--2035
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2036--2042
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2036--2042
+] [77] [78]
+Underfull \hbox (badness 10000) in paragraph at lines 2003--2005
 
  []
 
 [79]
-Underfull \hbox (badness 10000) in paragraph at lines 2114--2118
+Underfull \hbox (badness 10000) in paragraph at lines 2016--2018
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2121--2124
+Underfull \hbox (badness 10000) in paragraph at lines 2023--2025
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2046--2049
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2046--2049
 
  []
 
 [80]
-Underfull \hbox (badness 10000) in paragraph at lines 2127--2133
+Underfull \hbox (badness 10000) in paragraph at lines 2050--2059
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2136--2139
+Underfull \hbox (badness 10000) in paragraph at lines 2050--2059
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2142--2145
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2148--2155
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2158--2161
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2161--2166
+Underfull \hbox (badness 10000) in paragraph at lines 2050--2059
 
  []
 
 [81]
-Underfull \hbox (badness 10000) in paragraph at lines 2169--2175
+Underfull \hbox (badness 10000) in paragraph at lines 2131--2135
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2189--2194
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2197--2199
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2202--2205
+Underfull \hbox (badness 10000) in paragraph at lines 2138--2141
 
  []
 
 [82]
-Underfull \hbox (badness 10000) in paragraph at lines 2208--2211
+Underfull \hbox (badness 10000) in paragraph at lines 2144--2150
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2214--2221
+Underfull \hbox (badness 10000) in paragraph at lines 2153--2156
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2224--2229
+Underfull \hbox (badness 10000) in paragraph at lines 2159--2162
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2232--2236
+Underfull \hbox (badness 10000) in paragraph at lines 2165--2172
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2175--2178
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2181--2186
 
  []
 
 [83]
-Underfull \hbox (badness 10000) in paragraph at lines 2257--2260
+Underfull \hbox (badness 10000) in paragraph at lines 2189--2195
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2263--2265
+Underfull \hbox (badness 10000) in paragraph at lines 2209--2214
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2268--2269
+Underfull \hbox (badness 10000) in paragraph at lines 2217--2219
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2222--2225
+
+ []
+
+[84]
+Underfull \hbox (badness 10000) in paragraph at lines 2228--2231
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2234--2241
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2244--2249
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2252--2256
+
+ []
+
+[85]
+Underfull \hbox (badness 10000) in paragraph at lines 2277--2280
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2283--2285
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2288--2289
 
  []
 
@@ -1599,866 +1679,884 @@ Underfull \hbox (badness 10000) in paragraph at lines 2268--2269
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2301--2302
+Underfull \hbox (badness 10000) in paragraph at lines 2321--2322
 
  []
 
-<./ThesisFigures/Hep_Class.png, id=1863, 462.528pt x 346.896pt>
+[86]
+<./ThesisFigures/Hep_Class.png, id=1908, 462.528pt x 346.896pt>
 File: ./ThesisFigures/Hep_Class.png Graphic file (type png)
 <use ./ThesisFigures/Hep_Class.png>
-Package pdftex.def Info: ./ThesisFigures/Hep_Class.png  used on input line 2311
-. on input line 2311.
-Package pdftex.def Info: Requested size: 339.67029pt x 254.767pt on input line 
-2311.
-[84]
-<./ThesisFigures/Hep_Dist.png, id=1878, 462.528pt x 346.896pt>
+Package pdftex.def Info: ./ThesisFigures/Hep_Class.png  used on input line 2331
+. on input line 2331.
+Package pdftex.def Info: Requested size: 254.75433pt x 191.06862pt on input lin
+e 2331.
+<./ThesisFigures/Hep_Dist.png, id=1910, 462.528pt x 346.896pt>
 File: ./ThesisFigures/Hep_Dist.png Graphic file (type png)
 <use ./ThesisFigures/Hep_Dist.png>
-Package pdftex.def Info: ./ThesisFigures/Hep_Dist.png  used on input line 2321.
- on input line 2321.
+Package pdftex.def Info: ./ThesisFigures/Hep_Dist.png  used on input line 2341.
+ on input line 2341.
 Package pdftex.def Info: Requested size: 339.67029pt x 254.767pt on input line 
-2321.
- [85 <./ThesisFigures/Hep_Class.png>]
-<./ThesisFigures/Hep_Card_Cat.png, id=1888, 668.4975pt x 511.6716pt>
+2341.
+ [87 <./ThesisFigures/Hep_Class.png>]
+<./ThesisFigures/Hep_Card_Cat.png, id=1922, 668.4975pt x 511.6716pt>
 File: ./ThesisFigures/Hep_Card_Cat.png Graphic file (type png)
 <use ./ThesisFigures/Hep_Card_Cat.png>
 Package pdftex.def Info: ./ThesisFigures/Hep_Card_Cat.png  used on input line 2
-331. on input line 2331.
+351. on input line 2351.
 Package pdftex.def Info: Requested size: 339.67029pt x 259.98874pt on input lin
-e 2331.
-<./ThesisFigures/Hep_Card_Num.png, id=1889, 462.528pt x 346.896pt>
+e 2351.
+ [88 <./ThesisFigures/Hep_Dist.png>]
+<./ThesisFigures/Hep_Card_Num.png, id=1931, 462.528pt x 346.896pt>
 File: ./ThesisFigures/Hep_Card_Num.png Graphic file (type png)
 <use ./ThesisFigures/Hep_Card_Num.png>
 Package pdftex.def Info: ./ThesisFigures/Hep_Card_Num.png  used on input line 2
-338. on input line 2338.
+358. on input line 2358.
 Package pdftex.def Info: Requested size: 339.67029pt x 254.767pt on input line 
-2338.
- [86 <./ThesisFigures/Hep_Dist.png> <./ThesisFigures/Hep_Card_Cat.png>]
-<./ThesisFigures/Hep_AttEnt_Cat.png, id=1901, 714.7503pt x 549.252pt>
+2358.
+
+[89 <./ThesisFigures/Hep_Card_Cat.png> <./ThesisFigures/Hep_Card_Num.png>]
+<./ThesisFigures/Hep_AttEnt_Cat.png, id=1943, 714.7503pt x 549.252pt>
 File: ./ThesisFigures/Hep_AttEnt_Cat.png Graphic file (type png)
 <use ./ThesisFigures/Hep_AttEnt_Cat.png>
 Package pdftex.def Info: ./ThesisFigures/Hep_AttEnt_Cat.png  used on input line
- 2348. on input line 2348.
+ 2368. on input line 2368.
 Package pdftex.def Info: Requested size: 339.67029pt x 261.0315pt on input line
- 2348.
- [87 <./ThesisFigures/Hep_Card_Num.png>]
-<./ThesisFigures/Hep_AttEnt_Num.png, id=1910, 690.1785pt x 620.0766pt>
+ 2368.
+<./ThesisFigures/Hep_AttEnt_Num.png, id=1944, 690.1785pt x 620.0766pt>
 File: ./ThesisFigures/Hep_AttEnt_Num.png Graphic file (type png)
 <use ./ThesisFigures/Hep_AttEnt_Num.png>
 Package pdftex.def Info: ./ThesisFigures/Hep_AttEnt_Num.png  used on input line
- 2355. on input line 2355.
+ 2375. on input line 2375.
 Package pdftex.def Info: Requested size: 339.67029pt x 305.17427pt on input lin
-e 2355.
+e 2375.
 
-[88 <./ThesisFigures/Hep_AttEnt_Cat.png>]
-
-LaTeX Warning: Reference `app:AdditionalMO' on page 89 undefined on input line 
-2372.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2375--2376
+[90 <./ThesisFigures/Hep_AttEnt_Cat.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 2395--2396
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2379--2381
+Underfull \hbox (badness 10000) in paragraph at lines 2399--2401
 
  []
 
-[89 <./ThesisFigures/Hep_AttEnt_Num.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 2419--2420
+[91 <./ThesisFigures/Hep_AttEnt_Num.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 2439--2440
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2423--2424
+Underfull \hbox (badness 10000) in paragraph at lines 2443--2444
 
  []
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 2427.
+               Default added (so using `tbp') on input line 2447.
 
-<./ThesisFigures/MO_Class.png, id=1926, 462.528pt x 346.896pt>
+<./ThesisFigures/MO_Class.png, id=1962, 462.528pt x 346.896pt>
 File: ./ThesisFigures/MO_Class.png Graphic file (type png)
 <use ./ThesisFigures/MO_Class.png>
-Package pdftex.def Info: ./ThesisFigures/MO_Class.png  used on input line 2429.
- on input line 2429.
+Package pdftex.def Info: ./ThesisFigures/MO_Class.png  used on input line 2449.
+ on input line 2449.
 Package pdftex.def Info: Requested size: 339.67029pt x 254.767pt on input line 
-2429.
+2449.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2434--2435
+Underfull \hbox (badness 10000) in paragraph at lines 2454--2455
 
  []
 
-[90]
+[92]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 2438.
+               Default added (so using `tbp') on input line 2458.
 
-<./ThesisFigures/MO_Dist.png, id=1938, 514.5624pt x 419.8887pt>
+<./ThesisFigures/MO_Dist.png, id=1974, 514.5624pt x 419.8887pt>
 File: ./ThesisFigures/MO_Dist.png Graphic file (type png)
 <use ./ThesisFigures/MO_Dist.png>
-Package pdftex.def Info: ./ThesisFigures/MO_Dist.png  used on input line 2440. 
-on input line 2440.
+Package pdftex.def Info: ./ThesisFigures/MO_Dist.png  used on input line 2460. 
+on input line 2460.
 Package pdftex.def Info: Requested size: 339.67029pt x 277.18506pt on input lin
-e 2440.
+e 2460.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2445--2446
+Underfull \hbox (badness 10000) in paragraph at lines 2465--2466
 
  []
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 2449.
+               Default added (so using `tbp') on input line 2469.
 
-<./ThesisFigures/MO_Card_Num.png, id=1940, 643.9257pt x 526.1256pt>
+<./ThesisFigures/MO_Card_Num.png, id=1976, 643.9257pt x 526.1256pt>
 File: ./ThesisFigures/MO_Card_Num.png Graphic file (type png)
 <use ./ThesisFigures/MO_Card_Num.png>
 Package pdftex.def Info: ./ThesisFigures/MO_Card_Num.png  used on input line 24
-51. on input line 2451.
+71. on input line 2471.
 Package pdftex.def Info: Requested size: 339.67029pt x 277.53667pt on input lin
-e 2451.
+e 2471.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2456--2457
+Underfull \hbox (badness 10000) in paragraph at lines 2476--2477
 
  []
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 2460.
+               Default added (so using `tbp') on input line 2480.
 
-<./ThesisFigures/MO_AttEnt_Num.png, id=1942, 602.7318pt x 471.9231pt>
+<./ThesisFigures/MO_AttEnt_Num.png, id=1978, 602.7318pt x 471.9231pt>
 File: ./ThesisFigures/MO_AttEnt_Num.png Graphic file (type png)
 <use ./ThesisFigures/MO_AttEnt_Num.png>
 Package pdftex.def Info: ./ThesisFigures/MO_AttEnt_Num.png  used on input line 
-2462. on input line 2462.
+2482. on input line 2482.
 Package pdftex.def Info: Requested size: 339.67029pt x 265.95294pt on input lin
-e 2462.
-[91 <./ThesisFigures/MO_Class.png>] [92 <./ThesisFigures/MO_Dist.png> <./Thesis
-Figures/MO_Card_Num.png>] [93 <./ThesisFigures/MO_AttEnt_Num.png>]
-Chapter 6.
-
-Underfull \hbox (badness 10000) in paragraph at lines 2504--2509
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2504--2509
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2504--2509
-
- []
-
-[94
-
-] [95]
+e 2482.
+[93 <./ThesisFigures/MO_Class.png>] [94 <./ThesisFigures/MO_Dist.png> <./Thesis
+Figures/MO_Card_Num.png>] [95 <./ThesisFigures/MO_AttEnt_Num.png>]
 Chapter 7.
-(FinalThesis.bbl [96
+<FrameworkLayout.jpg, id=1998, 1450.23412pt x 1087.67558pt>
+File: FrameworkLayout.jpg Graphic file (type jpg)
+<use FrameworkLayout.jpg>
+Package pdftex.def Info: FrameworkLayout.jpg  used on input line 2525. on input
+ line 2525.
+Package pdftex.def Info: Requested size: 424.58624pt x 318.43842pt on input lin
+e 2525.
 
-] [97
+Underfull \hbox (badness 10000) in paragraph at lines 2538--2542
 
-] [98] [99] [100] [101] [102] [103] [104] [105]
-Underfull \hbox (badness 1077) in paragraph at lines 868--872
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2538--2542
+
+ []
+
+[96
+
+] [97 <./FrameworkLayout.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 2560--2564
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2560--2564
+
+ []
+
+[98]
+Underfull \hbox (badness 10000) in paragraph at lines 2597--2601
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2597--2601
+
+ []
+
+[99]
+Underfull \hbox (badness 10000) in paragraph at lines 2626--2630
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2626--2630
+
+ []
+
+[100]
+Chapter 8.
+[101
+
+] (FinalThesis.bbl [102] [103
+
+] [104] [105] [106] [107] [108] [109] [110]
+[111] [112]
+Underfull \hbox (badness 1077) in paragraph at lines 880--884
 []\OT1/cmr/m/n/10 K. Jain, ``Python vs. r (vs. sas) { which tool should i learn
 ?,'' Septem-ber 2017.
  []
 
-[106] [107]
-Underfull \hbox (badness 1242) in paragraph at lines 1033--1036
+[113]
+Underfull \hbox (badness 1242) in paragraph at lines 1045--1048
 []\OT1/cmr/m/n/10 S. Jiang, T. E. Hinch-liffe, and T. Wu, ``Biomark-ers of an a
 u-toim-mune skin dis-
  []
 
-[108] [109]) [110]
+[114] [115]) [116]
 Appendix A.
-[111
+[117
 
 ]
 Appendix B.
-[112
+[118
 
-] [113
+] [119
 
 ]
-<./ThesisFigures/HistogramExample.PNG, id=2137, 256.70906pt x 157.33781pt>
+<./ThesisFigures/HistogramExample.PNG, id=2204, 256.70906pt x 157.33781pt>
 File: ./ThesisFigures/HistogramExample.PNG Graphic file (type png)
 <use ./ThesisFigures/HistogramExample.PNG>
 Package pdftex.def Info: ./ThesisFigures/HistogramExample.PNG  used on input li
-ne 2664. on input line 2664.
+ne 2809. on input line 2809.
 Package pdftex.def Info: Requested size: 256.70842pt x 157.33742pt on input lin
-e 2664.
+e 2809.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./ThesisFigures/BoxplotExample.PNG, id=2140, 252.19218pt x 86.57344pt>
+<./ThesisFigures/BoxplotExample.PNG, id=2207, 252.19218pt x 86.57344pt>
 File: ./ThesisFigures/BoxplotExample.PNG Graphic file (type png)
 <use ./ThesisFigures/BoxplotExample.PNG>
 Package pdftex.def Info: ./ThesisFigures/BoxplotExample.PNG  used on input line
- 2670. on input line 2670.
+ 2815. on input line 2815.
 Package pdftex.def Info: Requested size: 252.19156pt x 86.57321pt on input line
- 2670.
+ 2815.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[114
+[120
 
 ]
-<./ThesisFigures/BinomDistExample.PNG, id=2158, 392.96812pt x 281.55188pt>
+<./ThesisFigures/BinomDistExample.PNG, id=2225, 392.96812pt x 281.55188pt>
 File: ./ThesisFigures/BinomDistExample.PNG Graphic file (type png)
 <use ./ThesisFigures/BinomDistExample.PNG>
 Package pdftex.def Info: ./ThesisFigures/BinomDistExample.PNG  used on input li
-ne 2706. on input line 2706.
+ne 2851. on input line 2851.
 Package pdftex.def Info: Requested size: 196.48357pt x 140.77559pt on input lin
-e 2706.
- [115 <./ThesisFigures/HistogramExample.PNG> <./ThesisFigures/BoxplotExample.PN
+e 2851.
+ [121 <./ThesisFigures/HistogramExample.PNG> <./ThesisFigures/BoxplotExample.PN
 G> <./ThesisFigures/BinomDistExample.PNG>]
-<./ThesisFigures/NormDistExample.PNG, id=2172, 378.66469pt x 356.0803pt>
+<./ThesisFigures/NormDistExample.PNG, id=2239, 378.66469pt x 356.0803pt>
 File: ./ThesisFigures/NormDistExample.PNG Graphic file (type png)
 <use ./ThesisFigures/NormDistExample.PNG>
 Package pdftex.def Info: ./ThesisFigures/NormDistExample.PNG  used on input lin
-e 2722. on input line 2722.
+e 2867. on input line 2867.
 Package pdftex.def Info: Requested size: 189.33188pt x 178.03972pt on input lin
-e 2722.
-<./ThesisFigures/StudTDistExample.PNG, id=2177, 394.47375pt x 374.14781pt>
+e 2867.
+<./ThesisFigures/StudTDistExample.PNG, id=2244, 394.47375pt x 374.14781pt>
 File: ./ThesisFigures/StudTDistExample.PNG Graphic file (type png)
 <use ./ThesisFigures/StudTDistExample.PNG>
 Package pdftex.def Info: ./ThesisFigures/StudTDistExample.PNG  used on input li
-ne 2742. on input line 2742.
+ne 2887. on input line 2887.
 Package pdftex.def Info: Requested size: 197.23639pt x 187.07344pt on input lin
-e 2742.
- [116 <./ThesisFigures/NormDistExample.PNG> <./ThesisFigures/StudTDistExample.P
+e 2887.
+ [122 <./ThesisFigures/NormDistExample.PNG> <./ThesisFigures/StudTDistExample.P
 NG>]
-Overfull \hbox (35.15154pt too wide) in paragraph at lines 2802--2834
+Overfull \hbox (35.15154pt too wide) in paragraph at lines 2947--2979
  [][] 
  []
 
-[117] [118]
-<./ThesisFigures/StatProgComp.PNG, id=2227, 634.62094pt x 219.82124pt>
+[123] [124]
+<./ThesisFigures/StatProgComp.PNG, id=2294, 634.62094pt x 219.82124pt>
 File: ./ThesisFigures/StatProgComp.PNG Graphic file (type png)
 <use ./ThesisFigures/StatProgComp.PNG>
-Package pdftex.def Info: ./ThesisFigures/StatProgComp.PNG  used on input line 2
-972. on input line 2972.
+Package pdftex.def Info: ./ThesisFigures/StatProgComp.PNG  used on input line 3
+117. on input line 3117.
 Package pdftex.def Info: Requested size: 424.58624pt x 147.07484pt on input lin
-e 2972.
+e 3117.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./ThesisFigures/StatProgGrades.PNG, id=2232, 770.88pt x 295.1025pt>
+<./ThesisFigures/StatProgGrades.PNG, id=2299, 770.88pt x 295.1025pt>
 File: ./ThesisFigures/StatProgGrades.PNG Graphic file (type png)
 <use ./ThesisFigures/StatProgGrades.PNG>
 Package pdftex.def Info: ./ThesisFigures/StatProgGrades.PNG  used on input line
- 2986. on input line 2986.
+ 3131. on input line 3131.
 Package pdftex.def Info: Requested size: 424.58624pt x 162.53651pt on input lin
-e 2986.
+e 3131.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[119
+[125
 
-] [120 <./ThesisFigures/StatProgComp.PNG> <./ThesisFigures/StatProgGrades.PNG>]
- [121] [122
+] [126 <./ThesisFigures/StatProgComp.PNG> <./ThesisFigures/StatProgGrades.PNG>]
+ [127
 
-] [123
+] [128
 
-] [124]
-<./ThesisFigures/NeuronExample.PNG, id=2300, 334.24875pt x 109.1578pt>
+] [129]
+<./ThesisFigures/NeuronExample.PNG, id=2363, 334.24875pt x 109.1578pt>
 File: ./ThesisFigures/NeuronExample.PNG Graphic file (type png)
 <use ./ThesisFigures/NeuronExample.PNG>
 Package pdftex.def Info: ./ThesisFigures/NeuronExample.PNG  used on input line 
-3213. on input line 3213.
+3358. on input line 3358.
 Package pdftex.def Info: Requested size: 334.24792pt x 109.15753pt on input lin
-e 3213.
-<./ThesisFigures/NeuralNetworkExample.PNG, id=2303, 390.70969pt x 204.765pt>
+e 3358.
+<./ThesisFigures/NeuralNetworkExample.PNG, id=2366, 390.70969pt x 204.765pt>
 File: ./ThesisFigures/NeuralNetworkExample.PNG Graphic file (type png)
 <use ./ThesisFigures/NeuralNetworkExample.PNG>
 Package pdftex.def Info: ./ThesisFigures/NeuralNetworkExample.PNG  used on inpu
-t line 3221. on input line 3221.
+t line 3366. on input line 3366.
 Package pdftex.def Info: Requested size: 390.70872pt x 204.76448pt on input lin
-e 3221.
- [125
+e 3366.
+ [130
 
  <./ThesisFigures/NeuronExample.PNG> <./ThesisFigures/NeuralNetworkExample.PNG>
-] [126]
-<./ThesisFigures/TheanoPipeline.PNG, id=2332, 135.50626pt x 193.47281pt>
+] [131]
+<./ThesisFigures/TheanoPipeline.PNG, id=2394, 135.50626pt x 193.47281pt>
 File: ./ThesisFigures/TheanoPipeline.PNG Graphic file (type png)
 <use ./ThesisFigures/TheanoPipeline.PNG>
 Package pdftex.def Info: ./ThesisFigures/TheanoPipeline.PNG  used on input line
- 3292. on input line 3292.
+ 3437. on input line 3437.
 Package pdftex.def Info: Requested size: 135.5059pt x 193.47234pt on input line
- 3292.
- [127
+ 3437.
+ [132
 
  <./ThesisFigures/TheanoPipeline.PNG>]
-<./ThesisFigures/CaffeMachineLearningComparisons.PNG, id=2355, 477.28313pt x 10
+<./ThesisFigures/CaffeMachineLearningComparisons.PNG, id=2418, 477.28313pt x 10
 3.88812pt>
 File: ./ThesisFigures/CaffeMachineLearningComparisons.PNG Graphic file (type pn
 g)
 <use ./ThesisFigures/CaffeMachineLearningComparisons.PNG>
 Package pdftex.def Info: ./ThesisFigures/CaffeMachineLearningComparisons.PNG  u
-sed on input line 3393. on input line 3393.
+sed on input line 3538. on input line 3538.
 Package pdftex.def Info: Requested size: 477.28195pt x 103.88786pt on input lin
-e 3393.
+e 3538.
 
-Overfull \hbox (52.69571pt too wide) in paragraph at lines 3393--3396
+Overfull \hbox (52.69571pt too wide) in paragraph at lines 3538--3541
 [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[128]
-<./ThesisFigures/FrameworkComparisons.PNG, id=2371, 550.30594pt x 315.42844pt>
+[133]
+<./ThesisFigures/FrameworkComparisons.PNG, id=2434, 550.30594pt x 315.42844pt>
 File: ./ThesisFigures/FrameworkComparisons.PNG Graphic file (type png)
 <use ./ThesisFigures/FrameworkComparisons.PNG>
 Package pdftex.def Info: ./ThesisFigures/FrameworkComparisons.PNG  used on inpu
-t line 3433. on input line 3433.
+t line 3578. on input line 3578.
 Package pdftex.def Info: Requested size: 440.24535pt x 252.34308pt on input lin
-e 3433.
+e 3578.
 
-Overfull \hbox (15.6591pt too wide) in paragraph at lines 3433--3435
+Overfull \hbox (15.6591pt too wide) in paragraph at lines 3578--3580
 [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[129 <./ThesisFigures/CaffeMachineLearningComparisons.PNG>] [130 <./ThesisFigur
+[134 <./ThesisFigures/CaffeMachineLearningComparisons.PNG>] [135 <./ThesisFigur
 es/FrameworkComparisons.PNG>]
 Appendix C.
-[131
+[136
 
 ]
 
-Package caption Warning: \label without proper reference on input line 3517.
+Package caption Warning: \label without proper reference on input line 3658.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `tab:DataMarkers' on page 132 undefined on input line 
-3514.
+LaTeX Warning: Reference `tab:DataMarkers' on page 137 undefined on input line 
+3655.
 
 
-Overfull \hbox (16.33125pt too wide) in paragraph at lines 3519--3532
+Overfull \hbox (16.33125pt too wide) in paragraph at lines 3660--3673
 [][] 
  []
 
 
-Package caption Warning: \label without proper reference on input line 3517.
+Package caption Warning: \label without proper reference on input line 3658.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `tab:DataMarkers' on page 132 undefined on input line 
-3547.
+LaTeX Warning: Reference `tab:DataMarkers' on page 137 undefined on input line 
+3688.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 3552.
+               Default added (so using `tbp') on input line 3693.
 
-[132] [133] [134] [135
+[137] [138] [139] [140
 
-] [136]
+] [141]
 
-Package caption Warning: \label without proper reference on input line 3680.
+Package caption Warning: \label without proper reference on input line 3821.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:FinVar' on page 137 undefined on input line 3676.
+LaTeX Warning: Reference `fig:FinVar' on page 142 undefined on input line 3817.
 
 
 
-Package caption Warning: \label without proper reference on input line 3686.
+Package caption Warning: \label without proper reference on input line 3827.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:FinPat' on page 137 undefined on input line 3676.
+LaTeX Warning: Reference `fig:FinPat' on page 142 undefined on input line 3817.
 
 
-<./ThesisFigures/FinalVariables.PNG, id=2440, 508.14844pt x 761.84625pt>
+<./ThesisFigures/FinalVariables.PNG, id=2503, 508.14844pt x 761.84625pt>
 File: ./ThesisFigures/FinalVariables.PNG Graphic file (type png)
 <use ./ThesisFigures/FinalVariables.PNG>
 Package pdftex.def Info: ./ThesisFigures/FinalVariables.PNG  used on input line
- 3679. on input line 3679.
+ 3820. on input line 3820.
 Package pdftex.def Info: Requested size: 406.51929pt x 609.47783pt on input lin
-e 3679.
-<./ThesisFigures/FinalPAtients.PNG, id=2443, 511.9125pt x 333.49594pt>
+e 3820.
+<./ThesisFigures/FinalPAtients.PNG, id=2506, 511.9125pt x 333.49594pt>
 File: ./ThesisFigures/FinalPAtients.PNG Graphic file (type png)
 <use ./ThesisFigures/FinalPAtients.PNG>
 Package pdftex.def Info: ./ThesisFigures/FinalPAtients.PNG  used on input line 
-3685. on input line 3685.
+3826. on input line 3826.
 Package pdftex.def Info: Requested size: 409.53056pt x 266.7971pt on input line
- 3685.
-[137
+ 3826.
+[142
 
-] [138 <./ThesisFigures/FinalVariables.PNG>] [139 <./ThesisFigures/FinalPAtient
-s.PNG>] [140
+] [143 <./ThesisFigures/FinalVariables.PNG>] [144 <./ThesisFigures/FinalPAtient
+s.PNG>] [145
 
-] [141] [142
+] [146] [147
 
-] [143] [144]
+] [148] [149]
 Appendix D.
 
-Overfull \hbox (27.8808pt too wide) in paragraph at lines 3880--3892
+Overfull \hbox (27.8808pt too wide) in paragraph at lines 4021--4033
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[145
+[150
 
-] [146] [147]
-<./ThesisFigures/FeatureReductionLayout.png, id=2547, 780.0342pt x 408.3255pt>
+] [151] [152]
+<./ThesisFigures/FeatureReductionLayout.png, id=2610, 780.0342pt x 408.3255pt>
 File: ./ThesisFigures/FeatureReductionLayout.png Graphic file (type png)
 <use ./ThesisFigures/FeatureReductionLayout.png>
 Package pdftex.def Info: ./ThesisFigures/FeatureReductionLayout.png  used on in
-put line 3948. on input line 3948.
+put line 4089. on input line 4089.
 Package pdftex.def Info: Requested size: 382.12502pt x 200.03139pt on input lin
-e 3948.
- [148 <./ThesisFigures/FeatureReductionLayout.png>]
-<./ThesisFigures/GreedyClustering.png, id=2564, 601.2864pt x 310.761pt>
+e 4089.
+ [153 <./ThesisFigures/FeatureReductionLayout.png>]
+<./ThesisFigures/GreedyClustering.png, id=2627, 601.2864pt x 310.761pt>
 File: ./ThesisFigures/GreedyClustering.png Graphic file (type png)
 <use ./ThesisFigures/GreedyClustering.png>
 Package pdftex.def Info: ./ThesisFigures/GreedyClustering.png  used on input li
-ne 3994. on input line 3994.
+ne 4135. on input line 4135.
 Package pdftex.def Info: Requested size: 382.12502pt x 197.49226pt on input lin
-e 3994.
- [149 <./ThesisFigures/GreedyClustering.png>]
-<./ThesisFigures/DecisionTreeFeatureSpace.png, id=2573, 317.68687pt x 180.675pt
+e 4135.
+ [154 <./ThesisFigures/GreedyClustering.png>]
+<./ThesisFigures/DecisionTreeFeatureSpace.png, id=2636, 317.68687pt x 180.675pt
 >
 File: ./ThesisFigures/DecisionTreeFeatureSpace.png Graphic file (type png)
 <use ./ThesisFigures/DecisionTreeFeatureSpace.png>
 Package pdftex.def Info: ./ThesisFigures/DecisionTreeFeatureSpace.png  used on 
-input line 4004. on input line 4004.
+input line 4145. on input line 4145.
 Package pdftex.def Info: Requested size: 254.75433pt x 144.8903pt on input line
- 4004.
-<./ThesisFigures/DecisionTreeExample.png, id=2574, 134.00063pt x 178.41656pt>
+ 4145.
+<./ThesisFigures/DecisionTreeExample.png, id=2637, 134.00063pt x 178.41656pt>
 File: ./ThesisFigures/DecisionTreeExample.png Graphic file (type png)
 <use ./ThesisFigures/DecisionTreeExample.png>
 Package pdftex.def Info: ./ThesisFigures/DecisionTreeExample.png  used on input
- line 4006. on input line 4006.
+ line 4147. on input line 4147.
 Package pdftex.def Info: Requested size: 127.37717pt x 169.59547pt on input lin
-e 4006.
+e 4147.
 
-Underfull \hbox (badness 2142) in paragraph at lines 4006--4006
+Underfull \hbox (badness 2142) in paragraph at lines 4147--4147
 []\OT1/cmr/m/n/8 (b) |The cor-re-spond-ing de-ci-sion
  []
 
-<./ThesisFigures/ClusteringLayout.png, id=2580, 553.1064pt x 564.4287pt>
+<./ThesisFigures/ClusteringLayout.png, id=2643, 553.1064pt x 564.4287pt>
 File: ./ThesisFigures/ClusteringLayout.png Graphic file (type png)
 <use ./ThesisFigures/ClusteringLayout.png>
 Package pdftex.def Info: ./ThesisFigures/ClusteringLayout.png  used on input li
-ne 4021. on input line 4021.
+ne 4162. on input line 4162.
 Package pdftex.def Info: Requested size: 297.20906pt x 303.297pt on input line 
-4021.
-[150 <./ThesisFigures/DecisionTreeFeatureSpace.png> <./ThesisFigures/DecisionTr
+4162.
+[155 <./ThesisFigures/DecisionTreeFeatureSpace.png> <./ThesisFigures/DecisionTr
 eeExample.png>]
-<./ThesisFigures/Normalization.png, id=2592, 1188.8415pt x 523.4757pt>
+<./ThesisFigures/Normalization.png, id=2654, 1188.8415pt x 523.4757pt>
 File: ./ThesisFigures/Normalization.png Graphic file (type png)
 <use ./ThesisFigures/Normalization.png>
 Package pdftex.def Info: ./ThesisFigures/Normalization.png  used on input line 
-4030. on input line 4030.
+4171. on input line 4171.
 Package pdftex.def Info: Requested size: 424.58624pt x 186.95743pt on input lin
-e 4030.
- [151 <./ThesisFigures/ClusteringLayout.png>]
-Overfull \hbox (36.24062pt too wide) in paragraph at lines 4057--4063
+e 4171.
+ [156 <./ThesisFigures/ClusteringLayout.png>]
+Overfull \hbox (36.24062pt too wide) in paragraph at lines 4198--4204
  [][] 
  []
 
-[152 <./ThesisFigures/Normalization.png>] [153]
-Overfull \hbox (56.07524pt too wide) in paragraph at lines 4136--4145
+[157 <./ThesisFigures/Normalization.png>] [158]
+Overfull \hbox (59.40857pt too wide) in paragraph at lines 4277--4286
  [][] 
  []
 
-[154]
-<./ThesisFigures/Sign_Processes_Psoriasis.png, id=2638, 1271.2293pt x 732.0951p
+[159]
+<./ThesisFigures/Sign_Processes_Psoriasis.png, id=2701, 1271.2293pt x 732.0951p
 t>
 File: ./ThesisFigures/Sign_Processes_Psoriasis.png Graphic file (type png)
 <use ./ThesisFigures/Sign_Processes_Psoriasis.png>
 Package pdftex.def Info: ./ThesisFigures/Sign_Processes_Psoriasis.png  used on 
-input line 4162. on input line 4162.
+input line 4303. on input line 4303.
 Package pdftex.def Info: Requested size: 424.58624pt x 244.50772pt on input lin
-e 4162.
- [155]
-<./ThesisFigures/Cluster_Results.png, id=2645, 1175.8329pt x 659.5842pt>
+e 4303.
+ [160]
+<./ThesisFigures/Cluster_Results.png, id=2708, 1175.8329pt x 659.5842pt>
 File: ./ThesisFigures/Cluster_Results.png Graphic file (type png)
 <use ./ThesisFigures/Cluster_Results.png>
 Package pdftex.def Info: ./ThesisFigures/Cluster_Results.png  used on input lin
-e 4171. on input line 4171.
+e 4312. on input line 4312.
 Package pdftex.def Info: Requested size: 424.58624pt x 238.17476pt on input lin
-e 4171.
- [156 <./ThesisFigures/Sign_Processes_Psoriasis.png>]
-Overfull \hbox (9.3664pt too wide) in paragraph at lines 4198--4203
+e 4312.
+ [161 <./ThesisFigures/Sign_Processes_Psoriasis.png>]
+Overfull \hbox (9.3664pt too wide) in paragraph at lines 4339--4344
  [][] 
  []
 
-[157 <./ThesisFigures/Cluster_Results.png>] [158]
-<./ThesisFigures/Sign_Processes_Psoriasis_Scaled.png, id=2668, 1387.584pt x 771
+[162 <./ThesisFigures/Cluster_Results.png>] [163]
+<./ThesisFigures/Sign_Processes_Psoriasis_Scaled.png, id=2731, 1387.584pt x 771
 .1209pt>
 File: ./ThesisFigures/Sign_Processes_Psoriasis_Scaled.png Graphic file (type pn
 g)
 <use ./ThesisFigures/Sign_Processes_Psoriasis_Scaled.png>
 Package pdftex.def Info: ./ThesisFigures/Sign_Processes_Psoriasis_Scaled.png  u
-sed on input line 4243. on input line 4243.
+sed on input line 4384. on input line 4384.
 Package pdftex.def Info: Requested size: 424.58624pt x 235.95045pt on input lin
-e 4243.
-<./ThesisFigures/Sign_Organelles_Psoriasis.png, id=2669, 1194.6231pt x 663.4386
+e 4384.
+<./ThesisFigures/Sign_Organelles_Psoriasis.png, id=2732, 1194.6231pt x 663.4386
 pt>
 File: ./ThesisFigures/Sign_Organelles_Psoriasis.png Graphic file (type png)
 <use ./ThesisFigures/Sign_Organelles_Psoriasis.png>
 Package pdftex.def Info: ./ThesisFigures/Sign_Organelles_Psoriasis.png  used on
- input line 4249. on input line 4249.
+ input line 4390. on input line 4390.
 Package pdftex.def Info: Requested size: 424.58624pt x 235.80074pt on input lin
-e 4249.
- [159 <./ThesisFigures/Sign_Processes_Psoriasis_Scaled.png>]
-<./ThesisFigures/Sign_Organelles_Psoriasis_Scaled.png, id=2676, 1387.584pt x 77
+e 4390.
+ [164 <./ThesisFigures/Sign_Processes_Psoriasis_Scaled.png>]
+<./ThesisFigures/Sign_Organelles_Psoriasis_Scaled.png, id=2739, 1387.584pt x 77
 1.1209pt>
 File: ./ThesisFigures/Sign_Organelles_Psoriasis_Scaled.png Graphic file (type p
 ng)
 <use ./ThesisFigures/Sign_Organelles_Psoriasis_Scaled.png>
 Package pdftex.def Info: ./ThesisFigures/Sign_Organelles_Psoriasis_Scaled.png  
-used on input line 4256. on input line 4256.
+used on input line 4397. on input line 4397.
 Package pdftex.def Info: Requested size: 424.58624pt x 235.95045pt on input lin
-e 4256.
-<./ThesisFigures/Sign_Molecular_Psoriasis.png, id=2677, 1206.909pt x 670.6656pt
+e 4397.
+<./ThesisFigures/Sign_Molecular_Psoriasis.png, id=2740, 1206.909pt x 670.6656pt
 >
 File: ./ThesisFigures/Sign_Molecular_Psoriasis.png Graphic file (type png)
 <use ./ThesisFigures/Sign_Molecular_Psoriasis.png>
 Package pdftex.def Info: ./ThesisFigures/Sign_Molecular_Psoriasis.png  used on 
-input line 4262. on input line 4262.
+input line 4403. on input line 4403.
 Package pdftex.def Info: Requested size: 424.58624pt x 235.93379pt on input lin
-e 4262.
- [160 <./ThesisFigures/Sign_Organelles_Psoriasis.png> <./ThesisFigures/Sign_Org
+e 4403.
+ [165 <./ThesisFigures/Sign_Organelles_Psoriasis.png> <./ThesisFigures/Sign_Org
 anelles_Psoriasis_Scaled.png>]
-<./ThesisFigures/Sign_Molecular_Psoriasis_Scaled.png, id=2686, 1387.584pt x 768
+<./ThesisFigures/Sign_Molecular_Psoriasis_Scaled.png, id=2749, 1387.584pt x 768
 .2301pt>
 File: ./ThesisFigures/Sign_Molecular_Psoriasis_Scaled.png Graphic file (type pn
 g)
 <use ./ThesisFigures/Sign_Molecular_Psoriasis_Scaled.png>
 Package pdftex.def Info: ./ThesisFigures/Sign_Molecular_Psoriasis_Scaled.png  u
-sed on input line 4269. on input line 4269.
+sed on input line 4410. on input line 4410.
 Package pdftex.def Info: Requested size: 424.58624pt x 235.06592pt on input lin
-e 4269.
- [161 <./ThesisFigures/Sign_Molecular_Psoriasis.png> <./ThesisFigures/Sign_Mole
+e 4410.
+ [166 <./ThesisFigures/Sign_Molecular_Psoriasis.png> <./ThesisFigures/Sign_Mole
 cular_Psoriasis_Scaled.png>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 4280.
+               Default added (so using `tbp') on input line 4421.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4300--4300
+Underfull \hbox (badness 10000) in paragraph at lines 4441--4441
 []|\OT1/cmr/m/n/10 serpin pep-ti-dase in-hibitor
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4305--4305
+Underfull \hbox (badness 10000) in paragraph at lines 4446--4446
 []|\OT1/cmr/m/n/10 interferon, alpha-inducible
  []
 
 
-Overfull \hbox (38.33815pt too wide) in paragraph at lines 4284--4310
+Overfull \hbox (38.33815pt too wide) in paragraph at lines 4425--4451
  [][] 
  []
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 4312.
+               Default added (so using `tbp') on input line 4453.
 
 
-Underfull \hbox (badness 2409) in paragraph at lines 4318--4318
+Underfull \hbox (badness 2409) in paragraph at lines 4459--4459
 []|\OT1/cmr/m/n/10 S100 cal-cium bind-ing pro-tein
  []
 
 
-Underfull \hbox (badness 1102) in paragraph at lines 4323--4324
-[]|\OT1/cmr/m/n/10 antibiotic pep-tide which is lo-cally reg-u-lated by
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 4324--4324
+Underfull \hbox (badness 10000) in paragraph at lines 4465--4465
 []|\OT1/cmr/m/n/10 peptidase in-hibitor 3 skin-
  []
 
 
-Underfull \hbox (badness 2401) in paragraph at lines 4324--4325
+Underfull \hbox (badness 2401) in paragraph at lines 4465--4466
 []|\OT1/cmr/m/n/10 Upregulated in pso-ri-a-sis, his gene en-codes an
  []
 
 
-Underfull \hbox (badness 3514) in paragraph at lines 4324--4325
+Underfull \hbox (badness 3514) in paragraph at lines 4465--4466
 \OT1/cmr/m/n/10 elastase-specific in-hibitor that func-tions as an
  []
 
 
-Underfull \hbox (badness 1112) in paragraph at lines 4324--4325
+Underfull \hbox (badness 1112) in paragraph at lines 4465--4466
 \OT1/cmr/m/n/10 an-timi-cro-bial pep-tide against Gram-positive and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4325--4325
+Underfull \hbox (badness 10000) in paragraph at lines 4466--4466
 []|\OT1/cmr/m/n/10 peptidase in-hibitor 3 skin-
  []
 
 
-Underfull \hbox (badness 2401) in paragraph at lines 4325--4325
+Underfull \hbox (badness 2401) in paragraph at lines 4466--4466
 []|\OT1/cmr/m/n/10 Upregulated in pso-ri-a-sis, his gene en-codes an
  []
 
 
-Underfull \hbox (badness 3514) in paragraph at lines 4325--4325
+Underfull \hbox (badness 3514) in paragraph at lines 4466--4466
 \OT1/cmr/m/n/10 elastase-specific in-hibitor that func-tions as an
  []
 
 
-Underfull \hbox (badness 1112) in paragraph at lines 4325--4325
+Underfull \hbox (badness 1112) in paragraph at lines 4466--4466
 \OT1/cmr/m/n/10 an-timi-cro-bial pep-tide against Gram-positive and
  []
 
 
-Overfull \hbox (38.33815pt too wide) in paragraph at lines 4316--4327
+Overfull \hbox (38.33815pt too wide) in paragraph at lines 4457--4468
  [][] 
  []
 
-[162] [163] [164]
+[167] [168] [169]
 Appendix E.
-<./ThesisFigures/MO_MI_Val_Test_Score.png, id=2757, 462.528pt x 344.0052pt>
+<./ThesisFigures/MO_MI_Val_Test_Score.png, id=2820, 462.528pt x 344.0052pt>
 File: ./ThesisFigures/MO_MI_Val_Test_Score.png Graphic file (type png)
 <use ./ThesisFigures/MO_MI_Val_Test_Score.png>
 Package pdftex.def Info: ./ThesisFigures/MO_MI_Val_Test_Score.png  used on inpu
-t line 4337. on input line 4337.
+t line 4478. on input line 4478.
 Package pdftex.def Info: Requested size: 297.20906pt x 221.06017pt on input lin
-e 4337.
-<./ThesisFigures/MO_T_Val_Test_Score.png, id=2758, 462.528pt x 344.0052pt>
+e 4478.
+<./ThesisFigures/MO_T_Val_Test_Score.png, id=2821, 462.528pt x 344.0052pt>
 File: ./ThesisFigures/MO_T_Val_Test_Score.png Graphic file (type png)
 <use ./ThesisFigures/MO_T_Val_Test_Score.png>
 Package pdftex.def Info: ./ThesisFigures/MO_T_Val_Test_Score.png  used on input
- line 4344. on input line 4344.
+ line 4485. on input line 4485.
 Package pdftex.def Info: Requested size: 297.20906pt x 221.06017pt on input lin
-e 4344.
-[165
+e 4485.
+[170
 
  <./ThesisFigures/MO_MI_Val_Test_Score.png>]
-<./ThesisFigures/Arcene_MI_Val_Test_Score.png, id=2772, 462.528pt x 344.0052pt>
+<./ThesisFigures/Arcene_MI_Val_Test_Score.png, id=2835, 462.528pt x 344.0052pt>
 
 File: ./ThesisFigures/Arcene_MI_Val_Test_Score.png Graphic file (type png)
 <use ./ThesisFigures/Arcene_MI_Val_Test_Score.png>
 Package pdftex.def Info: ./ThesisFigures/Arcene_MI_Val_Test_Score.png  used on 
-input line 4351. on input line 4351.
+input line 4492. on input line 4492.
 Package pdftex.def Info: Requested size: 297.20906pt x 221.06017pt on input lin
-e 4351.
-<./ThesisFigures/Arcene_T_Val_Test_Score.png, id=2773, 462.528pt x 344.0052pt>
+e 4492.
+<./ThesisFigures/Arcene_T_Val_Test_Score.png, id=2836, 462.528pt x 344.0052pt>
 File: ./ThesisFigures/Arcene_T_Val_Test_Score.png Graphic file (type png)
 <use ./ThesisFigures/Arcene_T_Val_Test_Score.png>
 Package pdftex.def Info: ./ThesisFigures/Arcene_T_Val_Test_Score.png  used on i
-nput line 4358. on input line 4358.
+nput line 4499. on input line 4499.
 Package pdftex.def Info: Requested size: 297.20906pt x 221.06017pt on input lin
-e 4358.
- [166 <./ThesisFigures/MO_T_Val_Test_Score.png> <./ThesisFigures/Arcene_MI_Val_
+e 4499.
+ [171 <./ThesisFigures/MO_T_Val_Test_Score.png> <./ThesisFigures/Arcene_MI_Val_
 Test_Score.png>]
-<./ThesisFigures/RSCTC_MI_Val_Test_Score.png, id=2780, 462.528pt x 344.0052pt>
+<./ThesisFigures/RSCTC_MI_Val_Test_Score.png, id=2843, 462.528pt x 344.0052pt>
 File: ./ThesisFigures/RSCTC_MI_Val_Test_Score.png Graphic file (type png)
 <use ./ThesisFigures/RSCTC_MI_Val_Test_Score.png>
 Package pdftex.def Info: ./ThesisFigures/RSCTC_MI_Val_Test_Score.png  used on i
-nput line 4365. on input line 4365.
+nput line 4506. on input line 4506.
 Package pdftex.def Info: Requested size: 297.20906pt x 221.06017pt on input lin
-e 4365.
-<./ThesisFigures/RSCTC_T_Val_Test_Score.png, id=2781, 462.528pt x 344.0052pt>
+e 4506.
+<./ThesisFigures/RSCTC_T_Val_Test_Score.png, id=2844, 462.528pt x 344.0052pt>
 File: ./ThesisFigures/RSCTC_T_Val_Test_Score.png Graphic file (type png)
 <use ./ThesisFigures/RSCTC_T_Val_Test_Score.png>
 Package pdftex.def Info: ./ThesisFigures/RSCTC_T_Val_Test_Score.png  used on in
-put line 4372. on input line 4372.
+put line 4513. on input line 4513.
 Package pdftex.def Info: Requested size: 297.20906pt x 221.06017pt on input lin
-e 4372.
- [167 <./ThesisFigures/Arcene_T_Val_Test_Score.png> <./ThesisFigures/RSCTC_MI_V
+e 4513.
+ [172 <./ThesisFigures/Arcene_T_Val_Test_Score.png> <./ThesisFigures/RSCTC_MI_V
 al_Test_Score.png>]
-<./ThesisFigures/Psoriasis_MI_Val_Test_Score.png, id=2788, 462.528pt x 344.0052
+<./ThesisFigures/Psoriasis_MI_Val_Test_Score.png, id=2851, 462.528pt x 344.0052
 pt>
 File: ./ThesisFigures/Psoriasis_MI_Val_Test_Score.png Graphic file (type png)
 <use ./ThesisFigures/Psoriasis_MI_Val_Test_Score.png>
 Package pdftex.def Info: ./ThesisFigures/Psoriasis_MI_Val_Test_Score.png  used 
-on input line 4379. on input line 4379.
+on input line 4520. on input line 4520.
 Package pdftex.def Info: Requested size: 297.20906pt x 221.06017pt on input lin
-e 4379.
-<./ThesisFigures/Psoriasis_T_Val_Test_Score.png, id=2789, 462.528pt x 344.0052p
+e 4520.
+<./ThesisFigures/Psoriasis_T_Val_Test_Score.png, id=2852, 462.528pt x 344.0052p
 t>
 File: ./ThesisFigures/Psoriasis_T_Val_Test_Score.png Graphic file (type png)
 <use ./ThesisFigures/Psoriasis_T_Val_Test_Score.png>
 Package pdftex.def Info: ./ThesisFigures/Psoriasis_T_Val_Test_Score.png  used o
-n input line 4386. on input line 4386.
+n input line 4527. on input line 4527.
 Package pdftex.def Info: Requested size: 297.20906pt x 221.06017pt on input lin
-e 4386.
- [168 <./ThesisFigures/RSCTC_T_Val_Test_Score.png> <./ThesisFigures/Psoriasis_M
+e 4527.
+ [173 <./ThesisFigures/RSCTC_T_Val_Test_Score.png> <./ThesisFigures/Psoriasis_M
 I_Val_Test_Score.png>]
-<./ThesisFigures/Data_Rank_Prec_Scores.png, id=2799, 462.528pt x 344.0052pt>
+<./ThesisFigures/Data_Rank_Prec_Scores.png, id=2861, 462.528pt x 344.0052pt>
 File: ./ThesisFigures/Data_Rank_Prec_Scores.png Graphic file (type png)
 <use ./ThesisFigures/Data_Rank_Prec_Scores.png>
 Package pdftex.def Info: ./ThesisFigures/Data_Rank_Prec_Scores.png  used on inp
-ut line 4399. on input line 4399.
+ut line 4540. on input line 4540.
 Package pdftex.def Info: Requested size: 297.20906pt x 221.06017pt on input lin
-e 4399.
-<./ThesisFigures/Data_Rank_Rec_Scores.png, id=2800, 462.528pt x 344.0052pt>
+e 4540.
+<./ThesisFigures/Data_Rank_Rec_Scores.png, id=2862, 462.528pt x 344.0052pt>
 File: ./ThesisFigures/Data_Rank_Rec_Scores.png Graphic file (type png)
 <use ./ThesisFigures/Data_Rank_Rec_Scores.png>
 Package pdftex.def Info: ./ThesisFigures/Data_Rank_Rec_Scores.png  used on inpu
-t line 4406. on input line 4406.
+t line 4547. on input line 4547.
 Package pdftex.def Info: Requested size: 297.20906pt x 221.06017pt on input lin
-e 4406.
- [169 <./ThesisFigures/Psoriasis_T_Val_Test_Score.png> <./ThesisFigures/Data_Ra
+e 4547.
+ [174 <./ThesisFigures/Psoriasis_T_Val_Test_Score.png> <./ThesisFigures/Data_Ra
 nk_Prec_Scores.png>]
-<./ThesisFigures/Precision_new.png, id=2809, 2890.8pt x 1647.15375pt>
+<./ThesisFigures/Precision_new.png, id=2872, 2890.8pt x 1647.15375pt>
 File: ./ThesisFigures/Precision_new.png Graphic file (type png)
 <use ./ThesisFigures/Precision_new.png>
 Package pdftex.def Info: ./ThesisFigures/Precision_new.png  used on input line 
-4420. on input line 4420.
+4561. on input line 4561.
 Package pdftex.def Info: Requested size: 2890.79298pt x 1647.14975pt on input l
-ine 4420.
- [170 <./ThesisFigures/Data_Rank_Rec_Scores.png>]
+ine 4561.
+ [175 <./ThesisFigures/Data_Rank_Rec_Scores.png>]
 Overfull \vbox (18.42636pt too high) has occurred while \output is active []
 
 
-[171 <./ThesisFigures/Precision_new.png>]
-<./ThesisFigures/Recall_new.png, id=2821, 2890.8pt x 1647.15375pt>
+[176 <./ThesisFigures/Precision_new.png>]
+<./ThesisFigures/Recall_new.png, id=2884, 2890.8pt x 1647.15375pt>
 File: ./ThesisFigures/Recall_new.png Graphic file (type png)
 <use ./ThesisFigures/Recall_new.png>
-Package pdftex.def Info: ./ThesisFigures/Recall_new.png  used on input line 442
-8. on input line 4428.
+Package pdftex.def Info: ./ThesisFigures/Recall_new.png  used on input line 456
+9. on input line 4569.
 Package pdftex.def Info: Requested size: 2890.79298pt x 1647.14975pt on input l
-ine 4428.
+ine 4569.
 
 Overfull \vbox (18.42636pt too high) has occurred while \output is active []
 
 
-[172 <./ThesisFigures/Recall_new.png>]
+[177 <./ThesisFigures/Recall_new.png>]
 Appendix F.
 
-LaTeX Warning: Reference `tab:LDHepatitis' on page 173 undefined on input line 
-4441.
+LaTeX Warning: Reference `tab:LDHepatitis' on page 178 undefined on input line 
+4582.
 
 
-LaTeX Warning: Reference `tab:ImputationHepatitis' on page 173 undefined on inp
-ut line 4441.
+LaTeX Warning: Reference `tab:ImputationHepatitis' on page 178 undefined on inp
+ut line 4582.
 
 
-LaTeX Warning: Reference `tab:LDCervical' on page 173 undefined on input line 4
-441.
+LaTeX Warning: Reference `tab:LDCervical' on page 178 undefined on input line 4
+582.
 
 
-LaTeX Warning: Reference `tab:LDHepatitis' on page 173 undefined on input line 
-4441.
+LaTeX Warning: Reference `tab:LDHepatitis' on page 178 undefined on input line 
+4582.
 
 
-LaTeX Warning: Reference `tab:ImputationHepatitis' on page 173 undefined on inp
-ut line 4441.
+LaTeX Warning: Reference `tab:ImputationHepatitis' on page 178 undefined on inp
+ut line 4582.
 
 
-Overfull \hbox (30.36145pt too wide) in paragraph at lines 4464--4474
+Overfull \hbox (30.36145pt too wide) in paragraph at lines 4605--4615
 [][] 
  []
 
 
-Overfull \hbox (59.389pt too wide) in paragraph at lines 4479--4491
+Overfull \hbox (59.389pt too wide) in paragraph at lines 4620--4632
 [][] 
  []
 
-[173
+[178
 
-] [174]
-<./ThesisFigures/hepa_acc.PNG, id=2846, 1927.2pt x 1048.91875pt>
+] [179]
+<./ThesisFigures/hepa_acc.PNG, id=2908, 1927.2pt x 1048.91875pt>
 File: ./ThesisFigures/hepa_acc.PNG Graphic file (type png)
 <use ./ThesisFigures/hepa_acc.PNG>
-Package pdftex.def Info: ./ThesisFigures/hepa_acc.PNG  used on input line 4536.
- on input line 4536.
+Package pdftex.def Info: ./ThesisFigures/hepa_acc.PNG  used on input line 4677.
+ on input line 4677.
 Package pdftex.def Info: Requested size: 1927.19533pt x 1048.91618pt on input l
-ine 4536.
- [175]
+ine 4677.
+ [180]
 Overfull \vbox (5.3698pt too high) has occurred while \output is active []
 
 
-[176 <./ThesisFigures/hepa_acc.PNG>]
-<./ThesisFigures/cirrh_acc.PNG, id=2859, 1927.2pt x 1048.91875pt>
+[181 <./ThesisFigures/hepa_acc.PNG>]
+<./ThesisFigures/cirrh_acc.PNG, id=2922, 1927.2pt x 1048.91875pt>
 File: ./ThesisFigures/cirrh_acc.PNG Graphic file (type png)
 <use ./ThesisFigures/cirrh_acc.PNG>
-Package pdftex.def Info: ./ThesisFigures/cirrh_acc.PNG  used on input line 4543
-. on input line 4543.
+Package pdftex.def Info: ./ThesisFigures/cirrh_acc.PNG  used on input line 4684
+. on input line 4684.
 Package pdftex.def Info: Requested size: 1927.19533pt x 1048.91618pt on input l
-ine 4543.
+ine 4684.
 
 Overfull \vbox (5.3698pt too high) has occurred while \output is active []
 
 
-[177 <./ThesisFigures/cirrh_acc.PNG>]
-<./ThesisFigures/cerv_acc.PNG, id=2865, 1927.2pt x 1048.91875pt>
+[182 <./ThesisFigures/cirrh_acc.PNG>]
+<./ThesisFigures/cerv_acc.PNG, id=2928, 1927.2pt x 1048.91875pt>
 File: ./ThesisFigures/cerv_acc.PNG Graphic file (type png)
 <use ./ThesisFigures/cerv_acc.PNG>
-Package pdftex.def Info: ./ThesisFigures/cerv_acc.PNG  used on input line 4550.
- on input line 4550.
+Package pdftex.def Info: ./ThesisFigures/cerv_acc.PNG  used on input line 4691.
+ on input line 4691.
 Package pdftex.def Info: Requested size: 1927.19533pt x 1048.91618pt on input l
-ine 4550.
+ine 4691.
 
 Overfull \vbox (5.3698pt too high) has occurred while \output is active []
 
 
-[178 <./ThesisFigures/cerv_acc.PNG>]
+[183 <./ThesisFigures/cerv_acc.PNG>]
 Appendix G.
-[179
+[184
 
-]
-Overfull \hbox (2.2757pt too wide) in paragraph at lines 4619--4621
-\OT1/cmr/m/n/10 ing a fea-ture to pre-dict the out-put is used in the equa-tion
- to com-pute mu-tual information[[]]. 
- []
-
-[180]
-Underfull \hbox (badness 10000) in paragraph at lines 4656--4658
+] [185]
+Underfull \hbox (badness 10000) in paragraph at lines 4797--4799
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4658--4663
+Underfull \hbox (badness 10000) in paragraph at lines 4799--4804
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4663--4668
+Underfull \hbox (badness 10000) in paragraph at lines 4804--4809
 
  []
 
-[181]
-Underfull \hbox (badness 10000) in paragraph at lines 4668--4675
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 4675--4682
+[186]
+Underfull \hbox (badness 10000) in paragraph at lines 4809--4816
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4696--4698
+Underfull \hbox (badness 10000) in paragraph at lines 4816--4823
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4714--4722
-
- []
-
-[182]
-Underfull \hbox (badness 10000) in paragraph at lines 4723--4725
+Underfull \hbox (badness 10000) in paragraph at lines 4837--4839
 
  []
 
 
-Overfull \hbox (27.80214pt too wide) in paragraph at lines 4733--4743
+Underfull \hbox (badness 10000) in paragraph at lines 4855--4863
+
+ []
+
+[187]
+Underfull \hbox (badness 10000) in paragraph at lines 4864--4866
+
+ []
+
+
+Overfull \hbox (27.80214pt too wide) in paragraph at lines 4874--4884
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4744--4749
+Underfull \hbox (badness 10000) in paragraph at lines 4885--4890
 
  []
 
@@ -2466,35 +2564,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 4744--4749
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4776--4778
+Underfull \hbox (badness 10000) in paragraph at lines 4917--4919
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4778--4783
+Underfull \hbox (badness 10000) in paragraph at lines 4919--4924
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4783--4788
+Underfull \hbox (badness 10000) in paragraph at lines 4924--4929
 
  []
 
-[183]
-Underfull \hbox (badness 10000) in paragraph at lines 4788--4795
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 4795--4802
+[188]
+Underfull \hbox (badness 10000) in paragraph at lines 4929--4936
 
  []
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 4816--4818
+Underfull \hbox (badness 10000) in paragraph at lines 4936--4943
 
  []
 
@@ -2502,49 +2592,57 @@ Underfull \hbox (badness 10000) in paragraph at lines 4816--4818
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4834--4842
-
- []
-
-[184]
-Underfull \hbox (badness 10000) in paragraph at lines 4843--4845
+Underfull \hbox (badness 10000) in paragraph at lines 4957--4959
 
  []
 
 
-Overfull \hbox (27.80214pt too wide) in paragraph at lines 4853--4863
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4975--4983
+
+ []
+
+[189]
+Underfull \hbox (badness 10000) in paragraph at lines 4984--4986
+
+ []
+
+
+Overfull \hbox (27.80214pt too wide) in paragraph at lines 4994--5004
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4864--4869
+Underfull \hbox (badness 10000) in paragraph at lines 5005--5010
 
  []
 
-[185]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 4889.
- [186]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 4889.
+[190]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 5030.
+ [191]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 5030.
  (FinalThesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 4889.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 4889.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 5030.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 5030.
 
 Package rerunfilecheck Info: File `FinalThesis.out' has not changed.
-(rerunfilecheck)             Checksum: D357DB66F0520CAC99F2AB6BC588A325;8890.
+(rerunfilecheck)             Checksum: ED4955E1484F7A99E8E9DA0294402574;8870.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 4889.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 5030.
  ) 
 Here is how much of TeX's memory you used:
- 14821 strings out of 493318
- 228960 string characters out of 3139046
- 419091 words of memory out of 3000000
- 17216 multiletter control sequences out of 15000+200000
+ 14860 strings out of 493318
+ 229683 string characters out of 3139046
+ 420895 words of memory out of 3000000
+ 17234 multiletter control sequences out of 15000+200000
  15072 words of font info for 56 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,19n,49p,2124b,589s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,19n,49p,2107b,589s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -2573,9 +2671,9 @@ Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti8.pfb><C:/Program Files/MiK
 TeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
 pe1/public/amsfonts/symbols/msbm10.pfb>
-Output written on FinalThesis.pdf (187 pages, 6622414 bytes).
+Output written on FinalThesis.pdf (192 pages, 9503683 bytes).
 PDF statistics:
- 3207 PDF objects out of 3580 (max. 8388607)
- 819 named destinations out of 1000 (max. 500000)
- 1423 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3273 PDF objects out of 3580 (max. 8388607)
+ 836 named destinations out of 1000 (max. 500000)
+ 1438 words of extra memory for PDF output out of 10000 (max. 10000000)
 

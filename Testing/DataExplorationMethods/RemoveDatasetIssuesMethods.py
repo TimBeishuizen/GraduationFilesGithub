@@ -1,8 +1,10 @@
 import numpy as np
-from MissingValueHandlingMethods import ListDeletionMethods as LDM, SingleImputationMethods as SIM
+from sklearn.feature_selection import SelectFwe as SF, f_classif
 from sklearn.preprocessing import StandardScaler as SS, MinMaxScaler as MMS, MultiLabelBinarizer as MLB
-from sklearn.feature_selection import SelectFwe as SF, f_classif, mutual_info_classif
+
 from DataExplorationMethods import wrapper_methods as WM, order_methods as OM
+from MissingValueHandlingMethods import ListDeletionMethods as LDM, SingleImputationMethods as SIM
+
 
 def preprocess_dataset(dfX, dfy, exploration_results):
     """

@@ -290,6 +290,12 @@ D.~Windridge and M.~Bober, {\em A Kernel-Based Framework for Medical Big-Data
 S.~Selvaraj and J.~Natarajan, ``Microarray data analysis and mining tools,''
   {\em Bioinformation}, vol.~6, no.~3, p.~95, 2011.
 
+\bibitem{afzal2015fast}
+M.~Afzal, I.~Manzoor, and O.~P. Kuipers, ``A fast and reliable pipeline for
+  bacterial transcriptome analysis case study: serine-dependent gene regulation
+  in streptococcus pneumoniae,'' {\em Journal of visualized experiments: JoVE},
+  no.~98, 2015.
+
 \bibitem{wojnarski2010rsctc}
 M.~Wojnarski, A.~Janusz, H.~S. Nguyen, J.~Bazan, C.~Luo, Z.~Chen, F.~Hu,
   G.~Wang, L.~Guan, H.~Luo, {\em et~al.}, ``Rsctc’2010 discovery challenge:
@@ -305,6 +311,12 @@ R.~Matthiesen and O.~N. Jensen, ``Analysis of mass spectrometry data in
 J.~T. Watson and O.~D. Sparkman, {\em Introduction to mass spectrometry:
   instrumentation, applications, and strategies for data interpretation}.
 \newblock John Wiley \& Sons, 2007.
+
+\bibitem{neves2018mass}
+A.~C. Neves, C.~L. Morais, T.~P. Mendes, B.~G. Vaz, and K.~M. Lima, ``Mass
+  spectrometry and multivariate analysis to classify cervical intraepithelial
+  neoplasia from blood plasma: an untargeted lipidomic study,'' {\em Scientific
+  reports}, vol.~8, no.~1, p.~3954, 2018.
 
 \bibitem{NIPS2004_2728}
 I.~Guyon, S.~Gunn, A.~Ben-Hur, and G.~Dror, ``Result analysis of the nips 2003
@@ -377,12 +389,12 @@ W.~McKinney {\em et~al.}, ``Data structures for statistical computing in
 Y.~Yan and J.~Yan, ``Hands-on data science with anaconda: Utilize the right mix
   of tools to create high-performance data science applications,'' 2018.
 
-\bibitem{walt2011numpy}
+\bibitem{walt2011NumPy}
 S.~v.~d. Walt, S.~C. Colbert, and G.~Varoquaux, ``The numpy array: a structure
   for efficient numerical computation,'' {\em Computing in Science \&
   Engineering}, vol.~13, no.~2, pp.~22--30, 2011.
 
-\bibitem{jones2014scipy}
+\bibitem{jones2014SciPy}
 E.~Jones, T.~Oliphant, and P.~Peterson, ``$\{$SciPy$\}$: open source scientific
   tools for $\{$Python$\}$,'' 2014.
 
@@ -392,7 +404,7 @@ F.~Pedregosa, G.~Varoquaux, A.~Gramfort, V.~Michel, B.~Thirion, O.~Grisel,
   ``Scikit-learn: Machine learning in python,'' {\em Journal of Machine
   Learning Research}, vol.~12, no.~Oct, pp.~2825--2830, 2011.
 
-\bibitem{mckinney2012python}
+\bibitem{mckinney2012Python}
 W.~McKinney, {\em Python for data analysis: Data wrangling with Pandas, NumPy,
   and IPython}.
 \newblock " O'Reilly Media, Inc.", 2012.
@@ -415,6 +427,11 @@ M.~A. Hall, ``Correlation-based feature selection of discrete and numeric class
 R.~Kohavi {\em et~al.}, ``A study of cross-validation and bootstrap for
   accuracy estimation and model selection,'' in {\em Ijcai}, vol.~14,
   pp.~1137--1145, Montreal, Canada, 1995.
+
+\bibitem{kearns1999algorithmic}
+M.~Kearns and D.~Ron, ``Algorithmic stability and sanity-check bounds for
+  leave-one-out cross-validation,'' {\em Neural computation}, vol.~11, no.~6,
+  pp.~1427--1453, 1999.
 
 \bibitem{agresti2003categorical}
 A.~Agresti, {\em Categorical data analysis}, vol.~482.
@@ -444,11 +461,6 @@ R.~Battiti, ``Using mutual information for selecting features in supervised
 N.~J.-M. Blackman and J.~J. Koval, ``Interval estimation for cohen's kappa as a
   measure of agreement,'' {\em Statistics in medicine}, vol.~19, no.~5,
   pp.~723--741, 2000.
-
-\bibitem{kearns1999algorithmic}
-M.~Kearns and D.~Ron, ``Algorithmic stability and sanity-check bounds for
-  leave-one-out cross-validation,'' {\em Neural computation}, vol.~11, no.~6,
-  pp.~1427--1453, 1999.
 
 \bibitem{lim2003planar}
 I.~S. Lim, P.~de~Heras~Ciechomski, S.~Sarni, and D.~Thalmann, ``Planar
@@ -497,10 +509,6 @@ L.~C. Molina, L.~Belanche, and {\`A}.~Nebot, ``Feature selection algorithms: A
   Proceedings. 2002 IEEE International Conference on}, pp.~306--313, IEEE,
   2002.
 
-\bibitem{chandrashekar2014survey}
-G.~Chandrashekar and F.~Sahin, ``A survey on feature selection methods,'' {\em
-  Computers \& Electrical Engineering}, vol.~40, no.~1, pp.~16--28, 2014.
-
 \bibitem{saeys2007review}
 Y.~Saeys, I.~Inza, and P.~Larra{\~n}aga, ``A review of feature selection
   techniques in bioinformatics,'' {\em bioinformatics}, vol.~23, no.~19,
@@ -547,10 +555,6 @@ Y.-J. Huang, D.-Y. Chan, D.-C. Cheng, Y.-J. Ho, P.-P. Tsai, W.-C. Shen, and
   R.-F. Chen, ``Automated feature set selection and its application to mcc
   identification in digital mammograms for breast cancer detection,'' {\em
   Sensors}, vol.~13, no.~4, pp.~4855--4875, 2013.
-
-\bibitem{zhang2004optimality}
-H.~Zhang, ``The optimality of naive bayes,'' {\em AA}, vol.~1, no.~2, p.~3,
-  2004.
 
 \bibitem{SENAWI201747}
 A.~Senawi, H.-L. Wei, and S.~A. Billings, ``A new maximum relevance-minimum
@@ -638,6 +642,9 @@ P.~Gijsbers, ``Automatic construction of machine learning pipelines,'' 2017.
 L.~Kotthoff, C.~Thornton, H.~H. Hoos, F.~Hutter, and K.~Leyton-Brown,
   ``Auto-weka 2.0: Automatic model selection and hyperparameter optimization in
   weka,'' {\em Journal of Machine Learning Research}, vol.~17, pp.~1--5, 2016.
+
+\bibitem{koza1997genetic}
+J.~R. Koza, ``Genetic programming,'' 1997.
 
 \bibitem{brazdil1994characterizing}
 P.~Brazdil, J.~Gama, and B.~Henery, ``Characterizing the applicability of
@@ -762,6 +769,11 @@ P.~D. Allison, ``Multiple imputation for missing data: A cautionary tale,''
 P.~Royston, I.~R. White, {\em et~al.}, ``Multiple imputation by chained
   equations (mice): implementation in stata,'' {\em J Stat Softw}, vol.~45,
   no.~4, pp.~1--20, 2011.
+
+\bibitem{bartlett1935effect}
+M.~Bartlett, ``The effect of non-normality on the t distribution,'' in {\em
+  mathematical proceedings of the cambridge philosophical society}, vol.~31,
+  pp.~223--231, Cambridge University Press, 1935.
 
 \bibitem{brown1974robust}
 M.~B. Brown and A.~B. Forsythe, ``Robust tests for the equality of variances,''

@@ -1,170 +1,170 @@
 \select@language {english}
-\contentsline {chapter}{\numberline {1}Introduction}{4}{chapter.1}
-\contentsline {section}{\numberline {1.1}Introduction}{4}{section.1.1}
-\contentsline {section}{\numberline {1.2}Problem Statement}{4}{section.1.2}
-\contentsline {section}{\numberline {1.3}Approach}{5}{section.1.3}
-\contentsline {chapter}{\numberline {2}Preliminaries}{7}{chapter.2}
-\contentsline {section}{\numberline {2.1}Datasets}{7}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Micro-array Datasets}{8}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Mass Spectrometry Datasets}{9}{subsection.2.1.2}
-\contentsline {subsection}{\numberline {2.1.3}Clinical Datasets}{9}{subsection.2.1.3}
-\contentsline {subsection}{\numberline {2.1.4}Survey Datasets}{10}{subsection.2.1.4}
-\contentsline {subsection}{\numberline {2.1.5}Data Symbols}{10}{subsection.2.1.5}
-\contentsline {section}{\numberline {2.2}Software}{11}{section.2.2}
-\contentsline {section}{\numberline {2.3}Concepts}{12}{section.2.3}
-\contentsline {chapter}{\numberline {3}Feature Selection}{15}{chapter.3}
-\contentsline {section}{\numberline {3.1}Introduction}{15}{section.3.1}
-\contentsline {section}{\numberline {3.2}Background}{16}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Datasets}{16}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Feature Selection Methods}{16}{subsection.3.2.2}
-\contentsline {subsubsection}{Filter Methods}{16}{section*.3}
-\contentsline {subsubsection}{Wrapper Methods}{18}{section*.4}
-\contentsline {subsubsection}{Embedded Methods}{22}{section*.5}
-\contentsline {subsection}{\numberline {3.2.3}Automated Machine Learning}{24}{subsection.3.2.3}
-\contentsline {subsubsection}{Meta-Learning}{24}{section*.6}
-\contentsline {subsubsection}{Tree-based Pipeline Optimization Tool}{25}{section*.8}
-\contentsline {section}{\numberline {3.3}Hypotheses}{28}{section.3.3}
-\contentsline {section}{\numberline {3.4}Methods}{29}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Feature Selection Quality}{29}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Feature Selection Exploration}{31}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Feature Selection Algorithms Evaluation}{31}{subsection.3.4.3}
-\contentsline {subsection}{\numberline {3.4.4}TPOT Feature selection integration}{33}{subsection.3.4.4}
-\contentsline {section}{\numberline {3.5}Results}{36}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Feature Selection Exploration Results}{36}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}Feature Selection Algorithms Evaluation Results}{38}{subsection.3.5.2}
-\contentsline {subsection}{\numberline {3.5.3}TPOT Feature Selection Integration Results}{45}{subsection.3.5.3}
-\contentsline {section}{\numberline {3.6}Discussion}{48}{section.3.6}
-\contentsline {section}{\numberline {3.7}Conclusions}{48}{section.3.7}
-\contentsline {chapter}{\numberline {4}Missing Value Handling}{50}{chapter.4}
-\contentsline {section}{\numberline {4.1}Introduction}{50}{section.4.1}
-\contentsline {section}{\numberline {4.2}Background}{50}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Datasets}{50}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Missing Value Handling}{51}{subsection.4.2.2}
-\contentsline {subsubsection}{List Deletion}{51}{section*.32}
-\contentsline {subsubsection}{Single Imputation}{53}{section*.33}
-\contentsline {subsubsection}{Multiple Imputation}{56}{section*.34}
-\contentsline {section}{\numberline {4.3}Hypotheses}{58}{section.4.3}
-\contentsline {section}{\numberline {4.4}Methods}{59}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Bias Evaluation}{59}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Quality Evaluation}{60}{subsection.4.4.2}
-\contentsline {section}{\numberline {4.5}Results}{61}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}Bias Evaluation Results}{61}{subsection.4.5.1}
-\contentsline {subsection}{\numberline {4.5.2}Quality Evaluation}{68}{subsection.4.5.2}
-\contentsline {section}{\numberline {4.6}Discussion}{73}{section.4.6}
-\contentsline {section}{\numberline {4.7}Conclusions}{73}{section.4.7}
-\contentsline {chapter}{\numberline {5}Dataset Exploration}{74}{chapter.5}
-\contentsline {section}{\numberline {5.1}Introduction}{74}{section.5.1}
-\contentsline {section}{\numberline {5.2}Background}{74}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Datasets}{74}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Preprocessing and Analysis}{75}{subsection.5.2.2}
-\contentsline {subsubsection}{Feature Types}{75}{section*.49}
-\contentsline {subsubsection}{Feature Importance Imbalance}{75}{section*.50}
-\contentsline {subsubsection}{Output Imbalance}{76}{section*.51}
-\contentsline {subsubsection}{Missing Values}{76}{section*.52}
-\contentsline {subsubsection}{Feature relevance}{76}{section*.53}
-\contentsline {subsubsection}{Multicollinearity}{77}{section*.54}
-\contentsline {subsection}{\numberline {5.2.3}Meta-features Package}{77}{subsection.5.2.3}
-\contentsline {section}{\numberline {5.3}Hypotheses}{79}{section.5.3}
-\contentsline {section}{\numberline {5.4}Methods}{79}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Existing Meta-features Evaluation}{79}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Additional Exploration Evaluation}{79}{subsection.5.4.2}
-\contentsline {section}{\numberline {5.5}Results}{80}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Existing Meta-features Evaluation}{80}{subsection.5.5.1}
-\contentsline {subsubsection}{Hepatitis Dataset}{80}{section*.55}
-\contentsline {subsubsection}{Micro-organisms Dataset}{82}{section*.56}
-\contentsline {subsection}{\numberline {5.5.2}Additional Exploration Evaluation}{84}{subsection.5.5.2}
-\contentsline {subsubsection}{Hepatitis Dataset}{84}{section*.57}
-\contentsline {subsubsection}{Micro-organisms Dataset}{89}{section*.65}
-\contentsline {section}{\numberline {5.6}Discussion}{91}{section.5.6}
-\contentsline {section}{\numberline {5.7}Conclusion}{93}{section.5.7}
-\contentsline {chapter}{\numberline {6}Framework Implementation}{94}{chapter.6}
-\contentsline {section}{\numberline {6.1}Introduction}{94}{section.6.1}
-\contentsline {section}{\numberline {6.2}Dataset type}{94}{section.6.2}
-\contentsline {section}{\numberline {6.3}Dataset Exploration}{95}{section.6.3}
-\contentsline {section}{\numberline {6.4}Analysis Recommendations}{95}{section.6.4}
-\contentsline {section}{\numberline {6.5}Flowchart}{95}{section.6.5}
-\contentsline {chapter}{\numberline {7}Conclusions}{96}{chapter.7}
-\contentsline {section}{\numberline {7.1}Conclusions}{96}{section.7.1}
-\contentsline {section}{\numberline {7.2}Future Work}{96}{section.7.2}
-\contentsline {chapter}{\numberline {A}Abbreviations}{111}{appendix.A}
-\contentsline {chapter}{\numberline {B}Biomedical Data Analysis}{112}{appendix.B}
-\contentsline {section}{\numberline {B.1}Introduction}{112}{section.B.1}
-\contentsline {section}{\numberline {B.2}Statistical Analysis}{113}{section.B.2}
-\contentsline {subsection}{\numberline {B.2.1}Statistical Research Topics}{114}{subsection.B.2.1}
-\contentsline {subsubsection}{Descriptive Statistics}{114}{section*.72}
-\contentsline {subsubsection}{Probability Concepts}{114}{section*.76}
-\contentsline {subsubsection}{Interval testing}{117}{section*.80}
-\contentsline {subsubsection}{Group comparisons}{117}{section*.81}
-\contentsline {subsection}{\numberline {B.2.2}Statistical Programs}{119}{subsection.B.2.2}
-\contentsline {subsubsection}{SAS}{119}{section*.84}
-\contentsline {subsubsection}{SPSS}{119}{section*.85}
-\contentsline {subsubsection}{R}{119}{section*.86}
-\contentsline {subsubsection}{Python}{119}{section*.87}
-\contentsline {subsubsection}{MATLAB}{119}{section*.88}
-\contentsline {subsubsection}{Comparisons programs}{119}{section*.89}
-\contentsline {subsubsection}{Personal comparisons}{120}{section*.92}
-\contentsline {section}{\numberline {B.3}Deep Learning}{122}{section.B.3}
-\contentsline {subsection}{\numberline {B.3.1}Basic Machine Learning}{123}{subsection.B.3.1}
-\contentsline {subsubsection}{Tasks}{123}{section*.93}
-\contentsline {subsubsection}{Performance Measurement}{123}{section*.94}
-\contentsline {subsubsection}{Experience}{123}{section*.95}
-\contentsline {subsubsection}{Challenges}{124}{section*.96}
-\contentsline {subsection}{\numberline {B.3.2}Neural Networks}{125}{subsection.B.3.2}
-\contentsline {subsubsection}{Convolutional Neural Networks}{126}{section*.99}
-\contentsline {subsection}{\numberline {B.3.3}Deep Learning Frameworks}{127}{subsection.B.3.3}
-\contentsline {subsubsection}{Skikit-learn Python}{127}{section*.100}
-\contentsline {subsubsection}{Theano}{127}{section*.101}
-\contentsline {subsubsection}{TensorFlow}{128}{section*.103}
-\contentsline {subsubsection}{Caffe}{128}{section*.104}
-\contentsline {subsubsection}{Torch}{128}{section*.105}
-\contentsline {subsubsection}{Comparing Frameworks}{128}{section*.106}
-\contentsline {chapter}{\numberline {C}Case Study 1 - Bariatric Comorbidities}{131}{appendix.C}
-\contentsline {section}{\numberline {C.1}Introduction}{131}{section.C.1}
-\contentsline {subsection}{\numberline {C.1.1}Data Sets}{131}{subsection.C.1.1}
-\contentsline {subsection}{\numberline {C.1.2}Co-morbidity Marker Relation}{132}{subsection.C.1.2}
-\contentsline {section}{\numberline {C.2}First Proposal}{135}{section.C.2}
-\contentsline {subsection}{\numberline {C.2.1}Research Questions}{135}{subsection.C.2.1}
-\contentsline {subsection}{\numberline {C.2.2}Hypothesis}{135}{subsection.C.2.2}
-\contentsline {subsection}{\numberline {C.2.3}Methods}{136}{subsection.C.2.3}
-\contentsline {section}{\numberline {C.3}Original research}{137}{section.C.3}
-\contentsline {subsection}{\numberline {C.3.1}Preprocessing}{137}{subsection.C.3.1}
-\contentsline {subsection}{\numberline {C.3.2}Modelling}{137}{subsection.C.3.2}
-\contentsline {section}{\numberline {C.4}Proposal Comparisons}{140}{section.C.4}
-\contentsline {subsection}{\numberline {C.4.1}Data Omission}{140}{subsection.C.4.1}
-\contentsline {subsection}{\numberline {C.4.2}Scoring System}{140}{subsection.C.4.2}
-\contentsline {subsection}{\numberline {C.4.3}Modelling Tools}{141}{subsection.C.4.3}
-\contentsline {section}{\numberline {C.5}Final Proposal}{142}{section.C.5}
-\contentsline {subsection}{\numberline {C.5.1}Research Questions}{142}{subsection.C.5.1}
-\contentsline {subsection}{\numberline {C.5.2}Hypotheses}{142}{subsection.C.5.2}
-\contentsline {subsection}{\numberline {C.5.3}Methods}{143}{subsection.C.5.3}
-\contentsline {chapter}{\numberline {D}Case Study 2 - Skin Diseases}{145}{appendix.D}
-\contentsline {section}{\numberline {D.1}Introduction}{145}{section.D.1}
-\contentsline {section}{\numberline {D.2}Skin Diseases Datasets}{145}{section.D.2}
-\contentsline {subsection}{\numberline {D.2.1}Additional Data}{147}{subsection.D.2.1}
-\contentsline {section}{\numberline {D.3}Methods}{147}{section.D.3}
-\contentsline {subsection}{\numberline {D.3.1}Feature Reduction}{148}{subsection.D.3.1}
-\contentsline {subsection}{\numberline {D.3.2}Clustering}{150}{subsection.D.3.2}
-\contentsline {subsection}{\numberline {D.3.3}Psoriasis Versus Atopic Dermatitis}{153}{subsection.D.3.3}
-\contentsline {section}{\numberline {D.4}Results}{154}{section.D.4}
-\contentsline {subsection}{\numberline {D.4.1}Feature Reduction}{154}{subsection.D.4.1}
-\contentsline {subsection}{\numberline {D.4.2}Clustering}{155}{subsection.D.4.2}
-\contentsline {subsection}{\numberline {D.4.3}Psoriasis Versus Atopic Dermatitis}{157}{subsection.D.4.3}
-\contentsline {section}{\numberline {D.5}Discussion}{158}{section.D.5}
-\contentsline {section}{\numberline {D.6}Conclusion for Framework}{158}{section.D.6}
-\contentsline {section}{\numberline {D.7}Appendix: Biomedical relation graphs}{159}{section.D.7}
-\contentsline {section}{\numberline {D.8}Appendix: Cluster Gene Specifications}{162}{section.D.8}
-\contentsline {chapter}{\numberline {E}Feature Selection Results}{165}{appendix.E}
-\contentsline {section}{\numberline {E.1}Feature Selection Exploration Plots}{165}{section.E.1}
-\contentsline {section}{\numberline {E.2}Feature Selection Exploration Precision And Recall}{169}{section.E.2}
-\contentsline {section}{\numberline {E.3}Feature Selection Evaluation Plots}{170}{section.E.3}
-\contentsline {chapter}{\numberline {F}Missing Value Handling Results}{173}{appendix.F}
-\contentsline {section}{\numberline {F.1}Feature Distribution Tables}{173}{section.F.1}
-\contentsline {section}{\numberline {F.2}Classification Plots}{175}{section.F.2}
-\contentsline {chapter}{\numberline {G}Dataset Exploration Meta-features}{179}{appendix.G}
-\contentsline {section}{\numberline {G.1}Meta-features}{179}{section.G.1}
-\contentsline {subsection}{\numberline {G.1.1}Basic Meta-features}{179}{subsection.G.1.1}
-\contentsline {subsection}{\numberline {G.1.2}Statistical Meta-features}{180}{subsection.G.1.2}
-\contentsline {subsection}{\numberline {G.1.3}Information-theoretic Meta-features}{180}{subsection.G.1.3}
-\contentsline {subsection}{\numberline {G.1.4}Landmarking Meta-features}{181}{subsection.G.1.4}
-\contentsline {section}{\numberline {G.2}Meta-feature Values Hepatitis}{181}{section.G.2}
-\contentsline {section}{\numberline {G.3}Meta-feature Values Micro-Organisms}{183}{section.G.3}
+\contentsline {chapter}{\numberline {1}Abstract}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2}Introduction}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Introduction}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}Problem Statement}{5}{section.2.2}
+\contentsline {section}{\numberline {2.3}Approach}{6}{section.2.3}
+\contentsline {chapter}{\numberline {3}Preliminaries}{7}{chapter.3}
+\contentsline {section}{\numberline {3.1}Datasets}{7}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Micro-array Datasets}{8}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Mass Spectrometry Datasets}{9}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Clinical Datasets}{11}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}Survey Datasets}{11}{subsection.3.1.4}
+\contentsline {subsection}{\numberline {3.1.5}Data Symbols}{12}{subsection.3.1.5}
+\contentsline {section}{\numberline {3.2}Software}{12}{section.3.2}
+\contentsline {section}{\numberline {3.3}Concepts}{13}{section.3.3}
+\contentsline {chapter}{\numberline {4}Feature Selection}{17}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introduction}{17}{section.4.1}
+\contentsline {section}{\numberline {4.2}Background}{18}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Datasets}{18}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Feature Selection Methods}{18}{subsection.4.2.2}
+\contentsline {subsubsection}{Filter Methods}{18}{section*.6}
+\contentsline {subsubsection}{Wrapper Methods}{20}{section*.7}
+\contentsline {subsubsection}{Embedded Methods}{24}{section*.8}
+\contentsline {subsection}{\numberline {4.2.3}Automated Machine Learning}{25}{subsection.4.2.3}
+\contentsline {subsubsection}{Meta-Learning}{26}{section*.9}
+\contentsline {subsubsection}{Tree-based Pipeline Optimization Tool}{27}{section*.11}
+\contentsline {section}{\numberline {4.3}Hypotheses}{30}{section.4.3}
+\contentsline {section}{\numberline {4.4}Methods}{31}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Feature Selection Quality}{31}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Feature Selection Exploration}{33}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Feature Selection Algorithms Evaluation}{33}{subsection.4.4.3}
+\contentsline {subsection}{\numberline {4.4.4}TPOT Feature selection integration}{35}{subsection.4.4.4}
+\contentsline {section}{\numberline {4.5}Results}{38}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Feature Selection Exploration Results}{38}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Feature Selection Algorithms Evaluation Results}{40}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.3}TPOT Feature Selection Integration Results}{47}{subsection.4.5.3}
+\contentsline {section}{\numberline {4.6}Discussion}{50}{section.4.6}
+\contentsline {section}{\numberline {4.7}Conclusions}{50}{section.4.7}
+\contentsline {chapter}{\numberline {5}Missing Value Handling}{52}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introduction}{52}{section.5.1}
+\contentsline {section}{\numberline {5.2}Background}{52}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Datasets}{52}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Missing Value Handling}{53}{subsection.5.2.2}
+\contentsline {subsubsection}{List Deletion}{53}{section*.35}
+\contentsline {subsubsection}{Single Imputation}{55}{section*.36}
+\contentsline {subsubsection}{Multiple Imputation}{58}{section*.37}
+\contentsline {section}{\numberline {5.3}Hypotheses}{60}{section.5.3}
+\contentsline {section}{\numberline {5.4}Methods}{61}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Bias Evaluation}{61}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Quality Evaluation}{63}{subsection.5.4.2}
+\contentsline {section}{\numberline {5.5}Results}{63}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Bias Evaluation Results}{63}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Quality Evaluation}{70}{subsection.5.5.2}
+\contentsline {section}{\numberline {5.6}Discussion}{75}{section.5.6}
+\contentsline {section}{\numberline {5.7}Conclusions}{75}{section.5.7}
+\contentsline {chapter}{\numberline {6}Dataset Exploration}{76}{chapter.6}
+\contentsline {section}{\numberline {6.1}Introduction}{76}{section.6.1}
+\contentsline {section}{\numberline {6.2}Background}{76}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Datasets}{76}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Preprocessing and Analysis}{77}{subsection.6.2.2}
+\contentsline {subsubsection}{Feature Types}{77}{section*.52}
+\contentsline {subsubsection}{Feature Importance Imbalance}{77}{section*.53}
+\contentsline {subsubsection}{Output Imbalance}{78}{section*.54}
+\contentsline {subsubsection}{Missing Values}{78}{section*.55}
+\contentsline {subsubsection}{Feature relevance}{78}{section*.56}
+\contentsline {subsubsection}{Multicollinearity}{79}{section*.57}
+\contentsline {subsection}{\numberline {6.2.3}Meta-features Package}{79}{subsection.6.2.3}
+\contentsline {section}{\numberline {6.3}Hypotheses}{81}{section.6.3}
+\contentsline {section}{\numberline {6.4}Methods}{81}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Existing Meta-features Evaluation}{81}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Additional Exploration Evaluation}{81}{subsection.6.4.2}
+\contentsline {section}{\numberline {6.5}Results}{82}{section.6.5}
+\contentsline {subsection}{\numberline {6.5.1}Existing Meta-features Evaluation}{82}{subsection.6.5.1}
+\contentsline {subsubsection}{Hepatitis Dataset}{82}{section*.58}
+\contentsline {subsubsection}{Micro-organisms Dataset}{84}{section*.59}
+\contentsline {subsection}{\numberline {6.5.2}Additional Exploration Evaluation}{86}{subsection.6.5.2}
+\contentsline {subsubsection}{Hepatitis Dataset}{86}{section*.60}
+\contentsline {subsubsection}{Micro-organisms Dataset}{91}{section*.68}
+\contentsline {section}{\numberline {6.6}Discussion}{93}{section.6.6}
+\contentsline {section}{\numberline {6.7}Conclusions}{95}{section.6.7}
+\contentsline {chapter}{\numberline {7}Framework Overview}{96}{chapter.7}
+\contentsline {section}{\numberline {7.1}Introduction}{96}{section.7.1}
+\contentsline {section}{\numberline {7.2}Dataset type}{96}{section.7.2}
+\contentsline {section}{\numberline {7.3}Dataset Exploration}{98}{section.7.3}
+\contentsline {section}{\numberline {7.4}Preprocessing}{99}{section.7.4}
+\contentsline {section}{\numberline {7.5}Automated Analysis}{100}{section.7.5}
+\contentsline {chapter}{\numberline {8}Conclusions}{101}{chapter.8}
+\contentsline {section}{\numberline {8.1}Future Work}{102}{section.8.1}
+\contentsline {chapter}{\numberline {A}Abbreviations}{117}{appendix.A}
+\contentsline {chapter}{\numberline {B}Biomedical Data Analysis}{118}{appendix.B}
+\contentsline {section}{\numberline {B.1}Introduction}{118}{section.B.1}
+\contentsline {section}{\numberline {B.2}Statistical Analysis}{119}{section.B.2}
+\contentsline {subsection}{\numberline {B.2.1}Statistical Research Topics}{120}{subsection.B.2.1}
+\contentsline {subsubsection}{Descriptive Statistics}{120}{section*.76}
+\contentsline {subsubsection}{Probability Concepts}{120}{section*.80}
+\contentsline {subsubsection}{Interval testing}{123}{section*.84}
+\contentsline {subsubsection}{Group comparisons}{123}{section*.85}
+\contentsline {subsection}{\numberline {B.2.2}Statistical Programs}{125}{subsection.B.2.2}
+\contentsline {subsubsection}{SAS}{125}{section*.88}
+\contentsline {subsubsection}{SPSS}{125}{section*.89}
+\contentsline {subsubsection}{R}{125}{section*.90}
+\contentsline {subsubsection}{Python}{125}{section*.91}
+\contentsline {subsubsection}{MATLAB}{125}{section*.92}
+\contentsline {subsubsection}{Comparisons programs}{125}{section*.93}
+\contentsline {subsubsection}{Personal comparisons}{126}{section*.96}
+\contentsline {section}{\numberline {B.3}Deep Learning}{127}{section.B.3}
+\contentsline {subsection}{\numberline {B.3.1}Basic Machine Learning}{128}{subsection.B.3.1}
+\contentsline {subsubsection}{Tasks}{128}{section*.97}
+\contentsline {subsubsection}{Performance Measurement}{128}{section*.98}
+\contentsline {subsubsection}{Experience}{128}{section*.99}
+\contentsline {subsubsection}{Challenges}{129}{section*.100}
+\contentsline {subsection}{\numberline {B.3.2}Neural Networks}{130}{subsection.B.3.2}
+\contentsline {subsubsection}{Convolutional Neural Networks}{131}{section*.103}
+\contentsline {subsection}{\numberline {B.3.3}Deep Learning Frameworks}{132}{subsection.B.3.3}
+\contentsline {subsubsection}{Scikit-learn Python}{132}{section*.104}
+\contentsline {subsubsection}{Theano}{132}{section*.105}
+\contentsline {subsubsection}{TensorFlow}{133}{section*.107}
+\contentsline {subsubsection}{Caffe}{133}{section*.108}
+\contentsline {subsubsection}{Torch}{133}{section*.109}
+\contentsline {subsubsection}{Comparing Frameworks}{133}{section*.110}
+\contentsline {chapter}{\numberline {C}Case Study 1 - Bariatric Co-morbidities}{136}{appendix.C}
+\contentsline {section}{\numberline {C.1}Introduction}{136}{section.C.1}
+\contentsline {subsection}{\numberline {C.1.1}Data Sets}{136}{subsection.C.1.1}
+\contentsline {subsection}{\numberline {C.1.2}Co-morbidity Marker Relation}{137}{subsection.C.1.2}
+\contentsline {section}{\numberline {C.2}First Proposal}{140}{section.C.2}
+\contentsline {subsection}{\numberline {C.2.1}Research Questions}{140}{subsection.C.2.1}
+\contentsline {subsection}{\numberline {C.2.2}Hypothesis}{140}{subsection.C.2.2}
+\contentsline {subsection}{\numberline {C.2.3}Methods}{141}{subsection.C.2.3}
+\contentsline {section}{\numberline {C.3}Original research}{142}{section.C.3}
+\contentsline {subsection}{\numberline {C.3.1}Preprocessing}{142}{subsection.C.3.1}
+\contentsline {subsection}{\numberline {C.3.2}Modelling}{142}{subsection.C.3.2}
+\contentsline {section}{\numberline {C.4}Proposal Comparisons}{145}{section.C.4}
+\contentsline {subsection}{\numberline {C.4.1}Data Omission}{145}{subsection.C.4.1}
+\contentsline {subsection}{\numberline {C.4.2}Scoring System}{145}{subsection.C.4.2}
+\contentsline {subsection}{\numberline {C.4.3}Modelling Tools}{146}{subsection.C.4.3}
+\contentsline {section}{\numberline {C.5}Final Proposal}{147}{section.C.5}
+\contentsline {subsection}{\numberline {C.5.1}Research Questions}{147}{subsection.C.5.1}
+\contentsline {subsection}{\numberline {C.5.2}Hypotheses}{147}{subsection.C.5.2}
+\contentsline {subsection}{\numberline {C.5.3}Methods}{148}{subsection.C.5.3}
+\contentsline {chapter}{\numberline {D}Case Study 2 - Skin Diseases}{150}{appendix.D}
+\contentsline {section}{\numberline {D.1}Introduction}{150}{section.D.1}
+\contentsline {section}{\numberline {D.2}Skin Diseases Datasets}{150}{section.D.2}
+\contentsline {subsection}{\numberline {D.2.1}Additional Data}{152}{subsection.D.2.1}
+\contentsline {section}{\numberline {D.3}Methods}{152}{section.D.3}
+\contentsline {subsection}{\numberline {D.3.1}Feature Reduction}{153}{subsection.D.3.1}
+\contentsline {subsection}{\numberline {D.3.2}Clustering}{155}{subsection.D.3.2}
+\contentsline {subsection}{\numberline {D.3.3}Psoriasis Versus Atopic Dermatitis}{158}{subsection.D.3.3}
+\contentsline {section}{\numberline {D.4}Results}{159}{section.D.4}
+\contentsline {subsection}{\numberline {D.4.1}Feature Reduction}{159}{subsection.D.4.1}
+\contentsline {subsection}{\numberline {D.4.2}Clustering}{160}{subsection.D.4.2}
+\contentsline {subsection}{\numberline {D.4.3}Psoriasis Versus Atopic Dermatitis}{162}{subsection.D.4.3}
+\contentsline {section}{\numberline {D.5}Discussion}{163}{section.D.5}
+\contentsline {section}{\numberline {D.6}Conclusion for Framework}{163}{section.D.6}
+\contentsline {section}{\numberline {D.7}Appendix: Biomedical relation graphs}{164}{section.D.7}
+\contentsline {section}{\numberline {D.8}Appendix: Cluster Gene Specifications}{167}{section.D.8}
+\contentsline {chapter}{\numberline {E}Feature Selection Results}{170}{appendix.E}
+\contentsline {section}{\numberline {E.1}Feature Selection Exploration Plots}{170}{section.E.1}
+\contentsline {section}{\numberline {E.2}Feature Selection Exploration Precision And Recall}{174}{section.E.2}
+\contentsline {section}{\numberline {E.3}Feature Selection Evaluation Plots}{175}{section.E.3}
+\contentsline {chapter}{\numberline {F}Missing Value Handling Results}{178}{appendix.F}
+\contentsline {section}{\numberline {F.1}Feature Distribution Tables}{178}{section.F.1}
+\contentsline {section}{\numberline {F.2}Classification Plots}{180}{section.F.2}
+\contentsline {chapter}{\numberline {G}Dataset Exploration Meta-features}{184}{appendix.G}
+\contentsline {section}{\numberline {G.1}Meta-features}{184}{section.G.1}
+\contentsline {subsection}{\numberline {G.1.1}Basic Meta-features}{184}{subsection.G.1.1}
+\contentsline {subsection}{\numberline {G.1.2}Statistical Meta-features}{185}{subsection.G.1.2}
+\contentsline {subsection}{\numberline {G.1.3}Information-theoretic Meta-features}{185}{subsection.G.1.3}
+\contentsline {subsection}{\numberline {G.1.4}Landmarking Meta-features}{186}{subsection.G.1.4}
+\contentsline {section}{\numberline {G.2}Meta-feature Values Hepatitis}{186}{section.G.2}
+\contentsline {section}{\numberline {G.3}Meta-feature Values Micro-Organisms}{188}{section.G.3}

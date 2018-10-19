@@ -1,6 +1,8 @@
 from DataExtraction import DataSetExtraction as DSE
 from DataExplorationMethods.FindDatasetIssuesMethods import find_dataset_issues as fdi
 
+from sklearn.impute import SimpleImputer
+
 X, y, features = DSE.import_example_data('Hepatitis')
 
 missing_values = ''

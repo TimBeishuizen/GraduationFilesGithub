@@ -172,6 +172,11 @@ L.~Al~Shalabi and Z.~Shaaban, ``Normalization as a preprocessing engine for
 S.~Patro and K.~K. Sahu, ``Normalization: A preprocessing stage,'' {\em arXiv
   preprint arXiv:1503.06462}, 2015.
 
+\bibitem{blackman2000interval}
+N.~J.-M. Blackman and J.~J. Koval, ``Interval estimation for cohen's kappa as a
+  measure of agreement,'' {\em Statistics in medicine}, vol.~19, no.~5,
+  pp.~723--741, 2000.
+
 \bibitem{peng2005feature}
 H.~Peng, F.~Long, and C.~Ding, ``Feature selection based on mutual information
   criteria of max-dependency, max-relevance, and min-redundancy,'' {\em IEEE
@@ -220,10 +225,5 @@ C.~Chow and C.~Liu, ``Approximating discrete probability distributions with
 B.~Pfahringer, H.~Bensusan, and C.~G. Giraud-Carrier, ``Meta-learning by
   landmarking various learning algorithms.,'' in {\em ICML}, pp.~743--750,
   2000.
-
-\bibitem{blackman2000interval}
-N.~J.-M. Blackman and J.~J. Koval, ``Interval estimation for cohen's kappa as a
-  measure of agreement,'' {\em Statistics in medicine}, vol.~19, no.~5,
-  pp.~723--741, 2000.
 
 \end{thebibliography}
