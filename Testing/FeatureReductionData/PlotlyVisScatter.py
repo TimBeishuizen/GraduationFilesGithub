@@ -140,8 +140,8 @@ trace_list = []
 
 for i in range(len(n_feat)):
     trace_list.append(go.Scatter(
-            x=[np.asarray(n_feat)[i]],
-            y=[np.asarray(test_score)[i]],
+            x=[np.asarray(comp_time)[i]],
+            y=[np.asarray(FS_acc)[i]],
             mode='markers',
             legendgroup=values[1, i],
             name=text_label[i],
@@ -158,14 +158,14 @@ for i in range(len(n_feat)):
         ))
 
 layout = go.Layout(
-    title='Feature selection algorithm accuracy',
+    title='Feature selection algorithm FS_accuracy',
     hovermode='closest',
-    xaxis=dict(tickfont=dict(size=15),
-               titlefont=dict(size=15),
-        title='Features preserved'),
-    yaxis=dict(tickfont=dict(size=15),
-               titlefont=dict(size=15),
-        title='Test accuracy'),
+    xaxis=dict(tickfont=dict(size=25),
+               titlefont=dict(size=25),
+        title='Computation time (s)'),
+    yaxis=dict(tickfont=dict(size=25),
+               titlefont=dict(size=25),
+        title='FS_accuracy ([0, 1])'),
     legend=dict(x=0,
                 y=-0.2,
                 orientation="h"),

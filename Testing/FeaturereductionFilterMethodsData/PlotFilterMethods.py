@@ -60,12 +60,12 @@ F1 = np.array(F1, dtype=float)
 
 plot_list = val
 
-PLT.plot(feat[1, 1:], plot_list[1, 1:], 'b-', feat[2, 1:], plot_list[2, 1:], 'r-', feat[3, 1:], plot_list[3, 1:], 'g-',
-         feat[0, 1:], plot_list[0, 1:], 'c-', feat[4, 1:], plot_list[4, 1:], 'y-')
+# PLT.plot(feat[1, 1:], plot_list[1, 1:], 'b-', feat[2, 1:], plot_list[2, 1:], 'r-', feat[3, 1:], plot_list[3, 1:], 'g-',
+#          feat[0, 1:], plot_list[0, 1:], 'c-', feat[4, 1:], plot_list[4, 1:], 'y-')
 
-# PLT.plot(feat[1, 1:], val[1, 1:], 'b-', feat[1, 1:], test[1, 1:], 'b--', feat[2, 1:], val[2, 1:], 'r-', feat[2, 1:], test[2, 1:], 'r--',
-#          feat[3, 1:], val[3, 1:], 'g-', feat[3, 1:], test[3, 1:], 'g--', feat[0, 1:], val[0, 1:], 'c-', feat[0, 1:], test[0, 1:], 'c--',
-#          feat[4, 1:], val[4, 1:], 'y-', feat[4, 1:], test[4, 1:], 'y--')
+PLT.plot(feat[1, 1:], val[1, 1:], 'b-', feat[1, 1:], test[1, 1:], 'b--', feat[2, 1:], val[2, 1:], 'r-', feat[2, 1:], test[2, 1:], 'r--',
+         feat[3, 1:], val[3, 1:], 'g-', feat[3, 1:], test[3, 1:], 'g--', feat[0, 1:], val[0, 1:], 'c-', feat[0, 1:], test[0, 1:], 'c--',
+         feat[4, 1:], val[4, 1:], 'y-', feat[4, 1:], test[4, 1:], 'y--')
 #
 PLT.legend(["Decision tree", "Nearest Neighbour",
            "SVM", "Logistic regression", "Naive Bayes"])
