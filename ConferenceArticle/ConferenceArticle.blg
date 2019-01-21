@@ -1,0 +1,28 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: ConferenceArticle.aux
+White space in argument---line 216 of file ConferenceArticle.aux
+ : \citation{chandrasheto
+ :                        split bykar2014survey}
+I'm skipping whatever remains of this command
+The style file: ieeetr.bst
+Database file #1: ../References/Citings.bib
+Repeated entry---line 2689 of file ../References/Citings.bib
+ : @article{magni1990chronic
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2770 of file ../References/Citings.bib
+ : @book{pocock2013clinical
+ :                         ,
+I'm skipping whatever remains of this entry
+Warning--empty journal in Deneer2017Thesis
+Warning--empty year in cestnikkononenkoj
+Warning--empty journal in yan2018hands
+Warning--empty journal in jones2014SciPy
+Warning--empty journal in hall2000correlation
+Warning--can't use both volume and number fields in kohavi1995study
+Warning--can't use both author and editor fields in Reunanen2006
+Warning--empty journal in Alsallakh2016PowerSet
+Warning--can't use both author and editor fields in Lal2006
+Warning--empty journal in Gijsbers2017Thesis
+Warning--empty journal in koza1997genetic
+Warning--empty journal in hall1998practical
+(There were 3 error messages)

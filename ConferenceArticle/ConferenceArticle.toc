@@ -1,0 +1,24 @@
+\select@language {english}
+\contentsline {chapter}{\numberline {1}Feature Selection}{2}{chapter.1}
+\contentsline {section}{\numberline {1.1}Introduction}{2}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Data Symbols}{3}{subsection.1.1.1}
+\contentsline {section}{\numberline {1.2}Software}{3}{section.1.2}
+\contentsline {section}{\numberline {1.3}Methods}{5}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Datasets}{5}{subsection.1.3.1}
+\contentsline {subsubsection}{Micro-array Datasets}{5}{section*.4}
+\contentsline {subsubsection}{Mass Spectrometry Datasets}{6}{section*.6}
+\contentsline {subsection}{\numberline {1.3.2}Feature Selection Methods}{8}{subsection.1.3.2}
+\contentsline {subsubsection}{Filter Methods}{8}{section*.8}
+\contentsline {subsubsection}{Wrapper Methods}{9}{section*.9}
+\contentsline {subsubsection}{Embedded Methods}{11}{section*.10}
+\contentsline {subsubsection}{Tree-based Pipeline Optimization Tool}{12}{section*.11}
+\contentsline {section}{\numberline {1.4}Methods}{14}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}Feature Selection Quality}{14}{subsection.1.4.1}
+\contentsline {subsection}{\numberline {1.4.2}Feature Selection Exploration}{15}{subsection.1.4.2}
+\contentsline {subsection}{\numberline {1.4.3}Feature Selection Algorithms Evaluation}{15}{subsection.1.4.3}
+\contentsline {subsection}{\numberline {1.4.4}TPOT Feature selection integration}{16}{subsection.1.4.4}
+\contentsline {section}{\numberline {1.5}Results}{18}{section.1.5}
+\contentsline {subsection}{\numberline {1.5.1}Feature Selection Exploration Results}{18}{subsection.1.5.1}
+\contentsline {subsection}{\numberline {1.5.2}Feature Selection Algorithms Evaluation Results}{19}{subsection.1.5.2}
+\contentsline {subsection}{\numberline {1.5.3}TPOT Feature Selection Integration Results}{21}{subsection.1.5.3}
+\contentsline {section}{\numberline {1.6}Discussion}{23}{section.1.6}
