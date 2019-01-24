@@ -90,6 +90,15 @@ if data_name == 'average':
 else:
     values = values[:, values[0, :] == data_name]
 
+forwards = []
+floatings = []
+PTA21s = []
+PTA52s = []
+filterTs = []
+filterMIs = []
+embeddedSVMs = []
+embeddedRFs = []
+
 # Plotting values
 for i in range(values.shape[1]):
         if str(values[0, i]) != data_name:
@@ -107,106 +116,94 @@ for i in range(values.shape[1]):
         # type.append(str(values[1, i]))
 
         if values[1, i] in ['forward', 'backward', 'floating'] and values[3, i] in ['Random', 'MI']:
-            text_label.append(values[1, i] + '<br> order: ' + values[3, i] + '<br> threshold: ' + values[2, i])
+            text_label.append(values[1, i])# + '<br> order: ' + values[3, i] + '<br> threshold: ' + values[2, i])
             if values[1, i] == 'forward':
                 marker_type.append(0)
+                forwards.append(i)
             elif values[1, i] == 'backward':
                 marker_type.append(1)
             elif values[1, i] == 'floating':
                 marker_type.append(2)
+                floatings.append(i)
         elif values[1, i][0:2] == '[2':
-            text_label.append('PTA <br> [l, r] = ' + values[1, i] + '<br> order: ' + values[3, i] + '<br> threshold: ' + values[2, i])
+            text_label.append('PTA, [l, r] = ' + values[1, i])# + '<br> order: ' + values[3, i] + '<br> threshold: ' + values[2, i])
             marker_type.append(3)
+            PTA21s.append(i)
         elif values[1, i][0:2] == '[5':
-            text_label.append('PTA <br> [l, r] = ' + values[1, i] + '<br> order: ' + values[3, i] + '<br> threshold: ' + values[2, i])
+            text_label.append('PTA, [l, r] = ' + values[1, i])# + '<br> order: ' + values[3, i] + '<br> threshold: ' + values[2, i])
             marker_type.append(4)
+            PTA52s.append(i)
         elif values[1, i] in ['embedded forward'] and values[3, i] in ['svm']:
-            text_label.append(values[1, i] + '<br> ML: ' + values[3, i] + '<br> threshold: ' + values[6, i])
+            text_label.append(values[1, i] + ', ML: ' + values[3, i])# + '<br> threshold: ' + values[6, i])
             marker_type.append(13)
+            embeddedSVMs.append(i)
         elif values[1, i] in ['embedded forward'] and values[3, i] in ['rf']:
-            text_label.append(values[1, i] + '<br> ML: ' + values[3, i] + '<br> threshold: ' + values[6, i])
+            text_label.append(values[1, i] + ', ML: ' + values[3, i])# + '<br> threshold: ' + values[6, i])
             marker_type.append(17)
+            embeddedRFs.append(i)
         elif values[1, i] == 'filter' and values[3, i] in ['MI']:
-            text_label.append(values[1, i] + '<br> ranking method: ' + values[3, i] + '<br> threshold: ' + values[2, i])
+            text_label.append(values[1, i] + ', ranking: ' + values[3, i])# + '<br> threshold: ' + values[2, i])
             marker_type.append(18)
+            filterMIs.append(i)
         elif values[1, i] == 'filter' and values[3, i] in ['T-test']:
-            text_label.append(values[1, i] + '<br> ranking method: ' + values[3, i] + '<br> threshold: ' + values[2, i])
+            text_label.append(values[1, i] + ', ranking: ' + values[3, i])# + '<br> threshold: ' + values[2, i])
             marker_type.append(22)
+            filterTs.append(i)
         else:
             print(values[1, i])
             raise ValueError
 
 trace_list = []
 
-for i in range(len(n_feat)):
-    trace_list.append(go.Scatter(
-            x=[np.asarray(n_feat)[i]],
-            y=[np.asarray(F1_score)[i]],
-            mode='markers',
-            legendgroup=marker_type[i],
-            name=text_label[i],
-            marker=dict(
-                size=20,
-                symbol=marker_type[i]),
-            text=text_label[i]
-        ))
+groups = [filterTs, filterMIs, forwards, PTA21s, PTA52s, floatings, embeddedSVMs, embeddedRFs]
 
-print(trace_list)
+import matplotlib.pyplot as plt
 
-layout = go.Layout(
-    title='Feature selection algorithms',
-    hovermode='closest',
-    xaxis=dict(tickfont=dict(size=25),
-               titlefont=dict(size=25),
-        title='Number of features'),
-    yaxis=dict(tickfont=dict(size=25),
-               titlefont=dict(size=25),
-        title='F1_score ([0, 1])'),
-    legend=dict(x=0,
-                y=-0.2,
-                orientation="h"),
-    showlegend=True,
-    font = dict(
-    color="black",
-    size=20)
-)
+legend = []
+marker = ['bo', 'bx', 'ms', 'gD', 'g>', 'r<', 'y^', 'yp']
 
-updatemenus=list([
-    dict(
-        buttons=list([
-            dict(
-                args=[{'y': [test_score]}],
-                label='Accuracy',
-                method='restyle'
-            ),
-            dict(
-                args=[{'y': [precision]}],
-                label='Precision',
-                method='restyle'
-            ),
-            dict(
-                args=[{'y': [recall]}],
-                label='Recall',
-                method='restyle'
-            ),
-            dict(
-                args=[{'y': [F1_score]}],
-                label='F1',
-                method='restyle'
-            )
-        ]),
-        direction = 'left',
-        pad = {'r': 10, 't': 10},
-        showactive = True,
-        type = 'buttons',
-        x = 0.1,
-        xanchor = 'left',
-        y = 1.1,
-        yanchor = 'top'
-    ),
-])
+for i in range(len(groups)):
+    plt.plot(np.asarray(n_feat)[groups[i]], np.asarray(F1_score)[groups[i]], marker[i])
+    legend.append(text_label[groups[i][0]])
 
-#layout['updatemenus'] = updatemenus
+plt.legend(legend)
+plt.show()
 
-fig = dict(data=trace_list, layout=layout)
-plotly.plotly.plot(fig, filename='tryout')
+# for i in [0]:#range(len(groups)):
+#     trace_list.append(go.Scatter(
+#             x=[np.asarray(n_feat)[groups[i]]],
+#             y=[np.asarray(F1_score)[groups[i]]],
+#             mode='markers',
+#             #legendgroup=marker_type[groups[i][0]],
+#             name=text_label[groups[i][0]],
+#             marker=dict(
+#                 size=20,
+#                 symbol=marker_type[groups[i][0]]),
+#             #text=text_label[groups[i][0]]
+#         ))
+#
+#
+# print(trace_list)
+#
+# layout = go.Layout(
+#     title='Feature selection algorithms',
+#     hovermode='closest',
+#     xaxis=dict(tickfont=dict(size=25),
+#                titlefont=dict(size=25),
+#         title='Number of features'),
+#     yaxis=dict(tickfont=dict(size=25),
+#                titlefont=dict(size=25),
+#         title='F1_score ([0, 1])'),
+#     legend=dict(x=0,
+#                 y=-0.2,
+#                 orientation="h"),
+#     showlegend=True,
+#     font = dict(
+#     color="black",
+#     size=20)
+# )
+#
+# #layout['updatemenus'] = updatemenus
+#
+# fig = dict(data=trace_list, layout=layout)
+# plotly.plotly.plot(fig, filename='tryout')
