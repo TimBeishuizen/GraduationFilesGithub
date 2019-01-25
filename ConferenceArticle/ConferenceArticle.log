@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2017.11.1)  21 JAN 2019 17:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6400 64-bit) (preloaded format=pdflatex 2017.11.1)  25 JAN 2019 13:52
 entering extended mode
 **./ConferenceArticle.tex
 (ConferenceArticle.tex
@@ -960,11 +960,16 @@ Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
 Chapter 1.
-LaTeX Font Info:    Try loading font information for U+msa on input line 132.
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--131
+
+ []
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 136.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 132.
+LaTeX Font Info:    Try loading font information for U+msb on input line 136.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -973,183 +978,168 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 {C:/Users/s119104/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 151.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 155.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 151.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 155.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 163.
+               Default added (so using `tbp') on input line 167.
 
 [2]
 
-LaTeX Warning: Reference `PLsec:Datasets' on page 3 undefined on input line 214
+LaTeX Warning: Reference `PLsec:Datasets' on page 3 undefined on input line 208
 .
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 216.
+               Default added (so using `tbp') on input line 210.
 
 
-Overfull \hbox (40.69551pt too wide) in paragraph at lines 220--227
+Overfull \hbox (40.69551pt too wide) in paragraph at lines 214--221
  [][] 
  []
 
-<./ThesisFigures/MicroArray.png, id=153, 853.1875pt x 618.31pt>
-File: ./ThesisFigures/MicroArray.png Graphic file (type png)
-<use ./ThesisFigures/MicroArray.png>
-Package pdftex.def Info: ./ThesisFigures/MicroArray.png  used on input line 236
-. on input line 236.
-Package pdftex.def Info: Requested size: 339.67029pt x 246.1686pt on input line
- 236.
-[3] [4 <./ThesisFigures/MicroArray.png>]
-<./ThesisFigures/MassSpect.jpg, id=191, 687.56876pt x 515.9275pt>
-File: ./ThesisFigures/MassSpect.jpg Graphic file (type jpg)
-<use ./ThesisFigures/MassSpect.jpg>
-Package pdftex.def Info: ./ThesisFigures/MassSpect.jpg  used on input line 257.
- on input line 257.
-Package pdftex.def Info: Requested size: 424.58624pt x 318.5964pt on input line
- 257.
- [5] [6 <./ThesisFigures/MassSpect.jpg>] [7]
+[3] [4] [5]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 309.
+put line 291.
 
 
-LaTeX Warning: Command \O invalid in math mode on input line 312.
+LaTeX Warning: Command \O invalid in math mode on input line 294.
 
 
-LaTeX Warning: Command \O invalid in math mode on input line 313.
+LaTeX Warning: Command \O invalid in math mode on input line 295.
 
-[8]
+[6]
 
-LaTeX Warning: Command \O invalid in math mode on input line 354.
+LaTeX Warning: Command \O invalid in math mode on input line 336.
 
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 407--408
+[7] [8]
+Underfull \hbox (badness 10000) in paragraph at lines 389--390
 
  []
 
 
-LaTeX Warning: Reference `alg:FilterAlgorithm' on page 10 undefined on input li
-ne 413.
+LaTeX Warning: Reference `alg:FilterAlgorithm' on page 9 undefined on input lin
+e 395.
 
 
-LaTeX Warning: Command \O invalid in math mode on input line 419.
+LaTeX Warning: Command \O invalid in math mode on input line 401.
+
+[9]
+
+LaTeX Warning: Reference `DEsubsec:Datasets' on page 10 undefined on input line
+ 434.
 
 [10]
-
-LaTeX Warning: Reference `DEsubsec:Datasets' on page 11 undefined on input line
- 452.
-
-[11]
-<./ThesisFigures/FS_accuracy_example.png, id=339, 462.528pt x 346.896pt>
+<./ThesisFigures/FS_accuracy_example.png, id=346, 462.528pt x 346.896pt>
 File: ./ThesisFigures/FS_accuracy_example.png Graphic file (type png)
 <use ./ThesisFigures/FS_accuracy_example.png>
 Package pdftex.def Info: ./ThesisFigures/FS_accuracy_example.png  used on input
- line 476. on input line 476.
+ line 458. on input line 458.
 Package pdftex.def Info: Requested size: 462.52686pt x 346.89514pt on input lin
-e 476.
+e 458.
 
-Overfull \hbox (37.94061pt too wide) in paragraph at lines 476--477
+Overfull \hbox (37.94061pt too wide) in paragraph at lines 458--459
 [][] 
  []
 
-[12]
+[11]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 487.
+               Default added (so using `tbp') on input line 469.
 
 
-Overfull \hbox (87.35913pt too wide) in paragraph at lines 491--499
+Overfull \hbox (87.35913pt too wide) in paragraph at lines 473--481
  [][] 
  []
 
-[13 <./ThesisFigures/FS_accuracy_example.png>]
+[12 <./ThesisFigures/FS_accuracy_example.png>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 509.
+               Default added (so using `tbp') on input line 491.
 
 
-LaTeX Warning: Reference `alg:PTA' on page 14 undefined on input line 517.
+LaTeX Warning: Reference `alg:PTA' on page 13 undefined on input line 499.
 
 
-LaTeX Warning: Reference `alg:FloatingSearch' on page 14 undefined on input lin
-e 518.
+LaTeX Warning: Reference `alg:FloatingSearch' on page 13 undefined on input lin
+e 500.
 
-[14]
+[13]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 549.
+               Default added (so using `tbp') on input line 531.
 
 
-Overfull \hbox (56.03476pt too wide) in paragraph at lines 552--560
+Overfull \hbox (56.03476pt too wide) in paragraph at lines 534--542
 [][] 
  []
 
-<./ThesisFigures/Data_Rank_F1_Scores.png, id=380, 462.528pt x 344.0052pt>
+<./ThesisFigures/Data_Rank_F1_Scores.png, id=386, 462.528pt x 344.0052pt>
 File: ./ThesisFigures/Data_Rank_F1_Scores.png Graphic file (type png)
 <use ./ThesisFigures/Data_Rank_F1_Scores.png>
 Package pdftex.def Info: ./ThesisFigures/Data_Rank_F1_Scores.png  used on input
- line 575. on input line 575.
+ line 557. on input line 557.
 Package pdftex.def Info: Requested size: 297.20906pt x 221.06017pt on input lin
-e 575.
-[15] [16 <./ThesisFigures/Data_Rank_F1_Scores.png>]
-<./ThesisFigures/F1_new.png, id=393, 2890.8pt x 1647.15375pt>
+e 557.
+[14] [15 <./ThesisFigures/Data_Rank_F1_Scores.png>]
+<./ThesisFigures/F1_new.png, id=399, 2890.8pt x 1647.15375pt>
 File: ./ThesisFigures/F1_new.png Graphic file (type png)
 <use ./ThesisFigures/F1_new.png>
-Package pdftex.def Info: ./ThesisFigures/F1_new.png  used on input line 592. on
- input line 592.
+Package pdftex.def Info: ./ThesisFigures/F1_new.png  used on input line 574. on
+ input line 574.
 Package pdftex.def Info: Requested size: 2890.79298pt x 1647.14975pt on input l
-ine 592.
- [17]
+ine 574.
+ [16]
 Overfull \vbox (18.42636pt too high) has occurred while \output is active []
 
 
-[18 <./ThesisFigures/F1_new.png>]
+[17 <./ThesisFigures/F1_new.png>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 601.
+               Default added (so using `tbp') on input line 583.
 
 
-Overfull \hbox (40.25581pt too wide) in paragraph at lines 604--612
+Overfull \hbox (40.25581pt too wide) in paragraph at lines 586--594
 [][] 
  []
 
-<./ThesisFigures/TPOT_avg_MO.PNG, id=406, 661.9932pt x 500.8311pt>
+<./ThesisFigures/TPOT_avg_MO.PNG, id=412, 661.9932pt x 500.8311pt>
 File: ./ThesisFigures/TPOT_avg_MO.PNG Graphic file (type png)
 <use ./ThesisFigures/TPOT_avg_MO.PNG>
-Package pdftex.def Info: ./ThesisFigures/TPOT_avg_MO.PNG  used on input line 61
-6. on input line 616.
+Package pdftex.def Info: ./ThesisFigures/TPOT_avg_MO.PNG  used on input line 59
+8. on input line 598.
 Package pdftex.def Info: Requested size: 339.67029pt x 256.97946pt on input lin
-e 616.
-[19 <./ThesisFigures/TPOT_avg_MO.PNG>] [20] (ConferenceArticle.bbl [21]
-[22
+e 598.
+[18 <./ThesisFigures/TPOT_avg_MO.PNG>] [19] (ConferenceArticle.bbl [20]
+[21
 
-] [23] [24] [25] [26] [27] [28])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 660.
- [29]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 660.
+] [22] [23] [24])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 642.
+ [25]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 642.
  (ConferenceArticle.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 660.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 660.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 642.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 642.
 Package rerunfilecheck Info: File `ConferenceArticle.out' has not changed.
-(rerunfilecheck)             Checksum: A3759C240058845F82D173669C4D6887;1279.
+(rerunfilecheck)             Checksum: 895469BDD4103D90B48AC27931964ABE;1290.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 660.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 642.
  ) 
 Here is how much of TeX's memory you used:
- 13322 strings out of 493318
- 197631 string characters out of 3139046
- 323289 words of memory out of 3000000
- 16419 multiletter control sequences out of 15000+200000
+ 13184 strings out of 493318
+ 194684 string characters out of 3139046
+ 320512 words of memory out of 3000000
+ 16349 multiletter control sequences out of 15000+200000
  10332 words of font info for 38 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,17n,43p,1407b,554s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1167,9 +1157,9 @@ es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmti7.pfb>
-Output written on ConferenceArticle.pdf (29 pages, 794918 bytes).
+Output written on ConferenceArticle.pdf (25 pages, 648786 bytes).
 PDF statistics:
- 613 PDF objects out of 1000 (max. 8388607)
- 204 named destinations out of 1000 (max. 500000)
- 167 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 536 PDF objects out of 1000 (max. 8388607)
+ 139 named destinations out of 1000 (max. 500000)
+ 157 words of extra memory for PDF output out of 10000 (max. 10000000)
 

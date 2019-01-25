@@ -128,6 +128,10 @@
 	% Topic dimensionality reduction
 	For a biomedical engineering framework dimensionality reduction is important.  Some biomedical datasets contain a high number of features, whereas only a selection of those features are interesting. A direct link of features to the output is desired, therefore especially dimensionality reduction based on feature selection is important. Multiple projects attempted to reduce the number of features \cite{baumgartner2006data, welthagen2005comprehensive} which resulted in multiple algorithm proposals \cite{lim2003planar, peng2010novel, biesiada2007feature, ding2005minimum} and tests on their performance \cite{catal2009investigating, liu2002comparative}. The research goal is \emph{to evaluate the performance of feature selection methods and make a choice on which methods should be added to the framework}. In this document several of those algorithms are presented and test their quality.
 	\\
+	
+	% Introduction
+	For this research one programming language is used, \textit{Python} version 3.6. This language was chosen, due to the numerous possibilities in preprocessing and analysis in the open source language \cite{mckinney2010data}. \textit{Python} makes use of packages containing additional classes and methods to be used in experiments. To easily import these packages the \textit{Anaconda} version 3 environment is used \cite{yan2018hands}. Packages available by \textit{Anaconda} and often used in the analyses are \textit{NumPy} \cite{walt2011NumPy}, \textit{SciPy} \cite{jones2014SciPy} and \textit{Scikit-learn} \cite{pedregosa2011scikit}. Aside from these widely used packages, the package \textit{TPOT} \cite{olson2016tpot} is used, as well.
+	
 	% To be added
 	\textit{Dimensionality} \underline{TO BE ADDED}\\
 	The dimensionality of a dataset in literature is the number of features of that dataset\cite{yu2003feature,lim2003planar,biesiada2007feature}. A high dimensionality therefore indicates a high number of features. The package \textit{metalearn} calls dimensionality the number of features divided by the number of instances. If this definition of dimensionality is used it is specifically stated. This definition is used to show possible imbalance between the number of features and instances and normally the dimensionality should be very low, at least $<1$.
@@ -176,30 +180,20 @@
 		\end{tabular}
 	\end{table}
 	
-		\section{Software} \underline{TO BE DISCUSSED - ONLY MENTIONS OF THEM?}
-	\label{PLsec:Software}
+	\subsection{Related work}
 	
-	% Introduction
-	For this research one programming language is used, \textit{Python} version 3.6. This language was chosen, due to the numerous possibilities in preprocessing and analysis in the open source language \cite{mckinney2010data}. \textit{Python} makes use of packages containing additional classes and methods to be used in experiments. To easily import these packages the \textit{Anaconda} version 3 environment is used \cite{yan2018hands}. Packages available by \textit{Anaconda} and often used in the analyses are:
-	
+	% Related work
+	A good overview of all the techniques used can be found in a survey article \cite{saeys2007review} explaining all the algorithms used, as well as several others.
+	Similar research has been done prior to this one. Numerous algorithms have been proposed for feature selection \cite{lim2003planar, peng2010novel, biesiada2007feature, ding2005minimum, donoho2008higher, SENAWI201747} and simple performance tests are done to do research on both these and other algorithms \cite{baumgartner2006data, catal2009investigating, liu2002comparative, CATAL20091040, huang2013automated}. Most of these focus on a much smaller number of features than in this research however, not testing the algorithms for data with more than 1000 features. Other feature selection research focus more on one type of the feature selection, being wrapper methods \cite{tsamardinos2017massively, el2009new, radovic2017minimum} or embedded methods \cite{jong2004feature}. 
+	A select number of articles focused on bigger feature set sizes. One research looked at bigger not necessarily biomedical datasets and tried to use support vector machines for feature selection, one of these datasets also being the Arcene dataset \cite{chen2006combining}. A similar research focused on feature selection for a microarray dataset of 7000 and showed that feature selection is beneficial \cite{xing2001feature}. Another research looked at 35 datasets with a range of features between 37 and 50000 and what type of feature selection works best \cite{song2013fast}. They used five advanced algorithms and therefore harder to understand, whereas the ones used in our research are more intuitive. Another very similar research evaluated feature selection algorithms, too, but did not have the focus on the number of features.
+	Much research is done on feature selection algorithms, as can be found in the related work. This work was made for using feature selection for biomedical data however, containing several benefits:
 	\begin{itemize}
-		\item \textit{NumPy} \cite{walt2011NumPy} \\
-		\textit{NumPy} provides data structures efficient in use for data analysis. On top of that it also provides multiple methods to alter and preprocess these data structures, improving data analysis efficiency significantly.
-		\item \textit{SciPy} \cite{jones2014SciPy} \\
-		\textit{SciPy} provides analysis methods, mainly focused on statistics. These methods are compatible with the \textit{NumPy} data structures and provide a way to simply perform statistical analyses.
-		\item \textit{Scikit-learn} \cite{pedregosa2011scikit} \\
-		\textit{Scikit-learn}, also known and shortened as \textit{sklearn}, is focused around machine learning. It provides numerous simple machine learning algorithms as well as several other algorithms and classes that are often used in analysis, such as preprocessing methods and environment testing creation.
-		\item \textit{Pandas} \cite{mckinney2012Python} \\
-		\textit{Pandas} is also used in parts of this research. \textit{Pandas} creates a very intuitive way of distributing data, presenting datasets that are easy to understand for users and in analysis. It is an overlay of the \textit{NumPy} data structure and often used in \textit{Python}.
+	\item	The main goal was to create a feature subset as small as possible with a performance as high as possible, which only rarely was a goal in other research \cite{prados2004mining}. This resulted in both a score being made that incorporates both the feature subset size and the performance as the FS\_score and the usage of this score to evaluate the usefulness of every feature. While not being a main goal, the computation time is also stored for additional investigations on that.
+	\item	Feature selection is done on very big biomedical datasets of more than 1000 features, therefore the feature selection has a big influence. This is not often done, whereas these datasets will become more available as well as investigated in the future.
+	\item	Only basic feature selection algorithms are used so other users can easily understand the basic principles and many different ones are investigated, making this work a very extensive search for well performing feature selection algorithms. Moreover, these algorithms are also very different in their feature selection, also showing the benefits and drawbacks of every type of algorithm.
+	\item	At last automation of feature selection techniques is added, too. Automated machine learning is a very interesting approach to extracting information out of a dataset. Properly implementing feature selection in automated machine learning opens it up for high dimensional datasets, as well.
 	\end{itemize}
 	
-	Two other packages were used in this research that are not part of \textit{Anaconda}. These packages have to be downloaded separately:
-	
-	\begin{itemize}
-		\item \textit{TPOT} \cite{olson2016tpot} \\
-		\textit{TPOT} is an abbreviation for "Tree-based Pipeline Optimization Tool" and uses automated machine learning to find the best machine learning pipeline. It makes use of several other packages, such as the \textit{NumPy}, \textit{SciPy} and \textit{Scikit-learn}, all of these being available in \textit{Anaconda}.
-		% Should this be
-	\end{itemize} 
 	
 	\section{Methods}
 	\label{FSsec:Background}
@@ -211,7 +205,7 @@
 	\label{FSsubsec:Datasets}
 	
 	% Data sets	
-	Four datasets were used as a case study for the feature selection algorithms . Two sets are microarray datasets that are used for research on psoriasis \cite{nair2009genome, suarez2012expanding, bigler2013cross, yao2008type} and cancer \cite{wojnarski2010rsctc}. Two other sets are mass spectrometry data sets, used for research on cancer \cite{NIPS2004_2728} and micro organisms \cite{doi:10.1093/bioinformatics/btu022} (Subsection \ref{PLsec:Datasets}). These four datasets all have a high number of features varying from 1300 to 54675 features with a number of samples varying from 200 to 580 samples (Table \ref{tab:DataSetDescriptions}). All of these datasets are based on classification as tests are done for different test subject groups, therefore the focus on feature selection algorithms will also be based on classification. Many features are expected to be irrelevant in this classification and therefore could be removed with feature selection.	
+	Four datasets were used as a case study for the feature selection algorithms . Two sets are microarray datasets that are used for research on psoriasis \cite{nair2009genome, suarez2012expanding, bigler2013cross, yao2008type} and cancer \cite{wojnarski2010rsctc}. Two other sets are mass spectrometry data sets, used for research on cancer \cite{NIPS2004_2728} and micro organisms \cite{doi:10.1093/bioinformatics/btu022}. These four datasets all have a high number of features varying from 1300 to 54675 features with a number of samples varying from 200 to 580 samples (Table \ref{tab:DataSetDescriptions}). All of these datasets are based on classification as tests are done for different test subject groups, therefore the focus on feature selection algorithms will also be based on classification. Many features are expected to be irrelevant in this classification and therefore could be removed with feature selection.	
 
 	\begin{table}[]
 		\centering
@@ -230,13 +224,7 @@
 	\label{PLsubsec:Microarray}
 	
 	% Introduction
-	Micro-array data is a fairly new type of biomedical data. Datasets of this kind have information on expression levels of a high number of genes \cite{brazma2001minimum}. These expression levels can be used for gene level research, such as genome mapping, transcription factor activity and pathogen identifications. The data is gathered by fixing DNA molecules on a glass slide on specific spots. The nucleotide base pairs of those fixed DNA molecules can form hydrogen bonds with RNA corresponding to genes, testing the expression of those genes by how many bonds are made \cite{selvaraj2011microarray} (Figure \ref{fig:MicroArray}).
-	
-	\begin{figure}
-		\includegraphics[width=0.8\textwidth]{MicroArray.png}
-		\caption{A picture showing the creation of microarray datasets \cite{afzal2015fast}.}
-		\label{fig:MicroArray}
-	\end{figure}
+	Micro-array data is a fairly new type of biomedical data. Datasets of this kind have information on expression levels of a high number of genes \cite{brazma2001minimum}. These expression levels can be used for gene level research, such as genome mapping, transcription factor activity and pathogen identifications. The data is gathered by fixing DNA molecules on a glass slide on specific spots. The nucleotide base pairs of those fixed DNA molecules can form hydrogen bonds with RNA corresponding to genes, testing the expression of those genes by how many bonds are made \cite{selvaraj2011microarray}.
 	
 	% Challenges
 	Micro-array data is known to present challenges in data quality and needs normalisation for the data to be useful \cite{selvaraj2011microarray}. The thousands of features that are based in the data also indicate that feature selection is very important, so the irrelevant genes can be removed. Aside from that, size may also be an issue. Due to the sheer size of the data not all analyses will perform optimally in both time and quality. In this research two microarray datasets are used for research:
@@ -252,12 +240,6 @@
 	\label{PLsubsec:MassSpect}
 	
 	Mass spectrometry data contains information on proteins and peptides \cite{cottrell1999probability, dettmer2007mass}. Analysis of this information is used in studies about proteins, also known as proteomics \cite{matthiesen2008analysis}. Mass spectrometry is a technique that can be used to find how much of a certain protein is present. This is done by measuring the mass of gas-phase ions originating from molecules of that protein, showing that protein is present. On top of that it can also measure the quantity of the mass, therefore showing how much of a protein is present \cite{watson2007introduction}.
-	
-	\begin{figure}
-		\includegraphics[width=\textwidth]{MassSpect.jpg}
-		\caption{Four example figures of the data created by mass spectrometry. The measured molecule masses correspond to the peaks in the figures \cite{neves2018mass}.}
-		\label{fig:MassSpect}
-	\end{figure}
 	
 	
 	% Challenges
